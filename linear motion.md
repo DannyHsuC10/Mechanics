@@ -5,8 +5,8 @@
 The object is not moving : $x_{initial} = x_{final}$
 The object moved　: $x_{initial} \not= x_{final}$
 
-* Distance & path
-Distance : Distance is the magnitude (length) of the displacement vector.
+* Displacement & path
+Displacement : Displacement is the magnitude (length) of the displacement vector.
 Path : Path length is how far the object moved as it traveled from its initial position to its final position.
 
 
@@ -20,7 +20,7 @@ $$V = \lim_{{Δt \to 0}}\frac{Δx}{Δt} = \frac{dx}{dt}$$
 * Speed & Velocity
 Velocity is a vector but speed is a scalar.
 
-$$speed = \frac{path}{time} \qquad velocity = \frac{distance}{time}$$
+$$speed = \frac{path}{time} \qquad velocity = \frac{Displacement}{time}$$
 
 
 ## Acceleration
