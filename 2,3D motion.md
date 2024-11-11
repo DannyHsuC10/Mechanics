@@ -4,7 +4,7 @@ position vector $= \vec{r}$
 $$\vec{r} = x\vec{i}+y\vec{j}+z\vec{k}$$
 
 ## Moving distance
-$$r = \sqrt{x^2-y^2}$$
+$$r = \sqrt{x^2 + y^2 + z^2}$$
 
 $$Δ\vec{r} = \vec{r_f}-\vec{r_i}$$ 
 
@@ -60,11 +60,11 @@ $$= y_i+V_isin𝜃(\frac{Δx}{V_icos𝜃})+\frac{1}{2}g(\frac{Δx}{V_icos𝜃})^
 
 $$ = y_i+Δx⋅V_itan𝜃+\frac{1}{2}g(\frac{Δx}{V_icos𝜃})^2$$
 
-* $V_y^2 = (V_isin𝜃)^2-2g(y-y_i)$
+* $V_y^2 = (V_isin𝜃)^2+2g(y-y_i)$
 
 $$V^2 = V_i^2+2aS$$
 
-$$V_y^2 = (V_isin𝜃)^2-2g(y-y_i)$$
+$$V_y^2 = (V_isin𝜃)^2+2g(y-y_i)$$
 
 * $x_{max} = \frac{V_i^2sin2𝜃}{g}$
 
