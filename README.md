@@ -59,13 +59,19 @@ $F_{x} \not= 0$ , Moving at constant speed : $F_x = f \qquad F_y = N$
 $F_{x} \not= 0$ , Moving at constant acceleration : $F_x > f \quad F_y = N \quad F_{netx} = F_x-f \not= 0$
 
 * Dynamic friction & static friction
+  
 when $V = 0$ & $F = 0 \qquad f_s = F = 0$
+
 when $V = 0 \qquad f_s = F =$ static friction
+
 when $V = 0 \qquad f_{smax} = 𝜇_sN = 𝜇_smg =$ static friction max
+
 when $V \not= 0 \qquad f_k = 𝜇_kN = 𝜇_kmg =$ Dynamic friction
 	
 ## slope & force
+
 When an object is on a slope and $𝜇_f = 0$
+
 $$N = mg⋅cos𝜃$$
 
 $$(mg⋅cos𝜃)^2+(mg⋅sin𝜃)^2 = mg$$
@@ -74,15 +80,24 @@ $$a = g⋅sin𝜃$$
 
 ## Backward force & Terminal rate
 * Backward force
+
 Air resistance : $D$ unit : $N = \frac{kg⋅m}{s^2}$
+
 Fluid density : $p$
+
 Area : $A$
+
 Constant : $C$
+
 Velocity : $V$
+
 $$D = \frac{1}{2}CpAV^2$$ 
+
 * Terminal velocity
 when $a \not= 0$ Terminal velocity has not been reached yet
+
 when $a = 0 \qquad V = V_T =$ Terminal velocity 
+
 $$D-mg = 0$$
 
 $$\frac{1}{2}CpAV_T^2-mg = 0$$
@@ -99,6 +114,7 @@ Definition: Centrifugal force is a pseudo force (apparent force) experienced by 
 Direction: It always points outward, away from the center of the circular path.
 
 if $W$ is a constant
+
 $$𝛼 = 0$$
 
 $$a = \frac{V^2}{r}$$
