@@ -1,5 +1,8 @@
- # Force & motion
+# Force & motion
 ## acceleration of gravity
+
+[![hackmd-github-sync-badge](https://hackmd.io/iVZhndnGSximkERcn61N4A/badge)](https://hackmd.io/iVZhndnGSximkERcn61N4A)
+
 The universal gravitational constant is not the acceleration due to gravity
 $G = 6.6743⋅10^{-11}⋅(Nm^2/kg^2)$
 $\not= g = \frac{GM}{R^2} = 9.8 ⋅(m/s^2)$
