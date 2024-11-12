@@ -41,13 +41,21 @@ Moving at constant acceleration : $F_{net} =T-mg \qquad a = (F-mg)/m
 ## Friction
 * Friction of objects under different conditions
 There are four common conditions below
+
 ![Fx=0 fiction](https://hackmd.io/_uploads/S1Nv9zZGye.png)
+
 $F_{x} = 0$ , Stationary : $F_{netx} = f = 0 \qquad F_y = N$
+
 ![Stationary Fx fiction](https://hackmd.io/_uploads/HJjt9fWfke.png)
+
 $F_{x} \not= 0$ , Stationary : $F_x = f \qquad F_y = N$
+
 ![moving constant fiction](https://hackmd.io/_uploads/Bkg35fWGJg.png)
+
 $F_{x} \not= 0$ , Moving at constant speed : $F_x = f \qquad F_y = N$
+
 ![moving acceleration fiction](https://hackmd.io/_uploads/S1n35MbGJe.png)
+
 $F_{x} \not= 0$ , Moving at constant acceleration : $F_x > f \quad F_y = N \quad F_{netx} = F_x-f \not= 0$
 
 * Dynamic friction & static friction
