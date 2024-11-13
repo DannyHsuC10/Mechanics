@@ -25,7 +25,7 @@ $$F_{net} = F_N-F_g+F_x+F_y+F_z$$
 $$a = m(a_x\vec{i}+a_y\vec{j}+a_z\vec{k})$$
 
 ## Tension
-![tension](https://hackmd.io/_uploads/ryvKxz-Mkx.png)
+![tension](picture/tension.png)
 
 Tension : $T \qquad$ Friction : $f$
 Stationary : $F_{net} =0 \qquad \vec{T} = -\vec{f}$
