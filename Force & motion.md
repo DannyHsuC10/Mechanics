@@ -42,7 +42,7 @@ Moving at constant acceleration : $F_{net} =T-mg \qquad a = (F-mg)/m
 * Friction of objects under different conditions
 There are four common conditions below
 
-![Fx=0 fiction](https://hackmd.io/_uploads/S1Nv9zZGye.png)
+![Fx=0 fiction](picture/Fx=0 fiction.png)
 
 $F_{x} = 0$ , Stationary : $F_{netx} = f = 0 \qquad F_y = N$
 
