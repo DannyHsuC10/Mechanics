@@ -51,7 +51,9 @@
 ## Pressure
 * $P = \frac{F}{A}$
 * $\frac{F_1}{A_1} = \frac{F_2}{A_2}$
+
 ## Buoyancy
 * $F_b = DgV$
 
-## 
+## spring
+* $F = Kx$
