@@ -1,5 +1,5 @@
 # Light
-* Speed of light $C \approx 300,000km/hr$
+* Speed of light $C \approx 300,000km/s$
 * Wave–particle duality
 ## Characteristic of light
 * Scattering
@@ -30,5 +30,5 @@ $$n_1 \sin \theta_1 = n_2 \sin \theta_2$$
 | Purple |   Small    | Large  |
 
 * Diffusion
-Diffuse reflection obey the law of reflection
+Diffuse reflection obeys the law of reflection
 
