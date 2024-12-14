@@ -3,6 +3,7 @@
 * Wave–particle duality
 ## Characteristic of light
 * Scattering
+
 Blue light is more scattered than rad light
 
 * Diffraction
