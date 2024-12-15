@@ -57,9 +57,15 @@ if $\theta = 0$ then $\vec c = \vec 0$
 $\vec a\times\vec b \not= \vec b\times\vec a$
 
 
-* $\vec a\times\vec b = (a_yb_z-b_ya_z)\vec i+(a_zb_x-b_za_x)\vec j+(a_xb_y-b_xa_y)\vec k = 
+* $\vec a\times\vec b = (a_yb_z-b_ya_z)\vec i+(a_zb_x-b_za_x)\vec j+(a_xb_y-b_xa_y)\vec k$
+
+
+
+$$
+\vec{a} \times \vec{b} = 
 \begin{vmatrix}
-\vec i & \vec j & \vec k\\
+\vec{i} & \vec{j} & \vec{k} \\
 a_x & a_y & a_z \\
 b_x & b_y & b_z 
-\end{vmatrix}$
+\end{vmatrix}
+$$
