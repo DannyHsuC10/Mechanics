@@ -17,7 +17,7 @@ As the temperature increases, matter enters a liquid state. The molecular motion
 With further increase in temperature, matter becomes gaseous. The molecular motion is high, and molecules move freely throughout the entire container, with fast and widely distributed velocities.
 
 ## Energy and interaction within the atom
-> ![atom](https://hackmd.io/_uploads/r1VRSaSBJl.png)
+> ![atom](https://media.geeksforgeeks.org/wp-content/uploads/20230617135835/Structure-of-Atom.png)
 > https://www.geeksforgeeks.org/what-is-an-atom/
 
 **interaction**
@@ -31,7 +31,7 @@ Atomic mass $\simeq$ Nucleus mass $\simeq$ Nuclear energy
 $$E = mc^2$$
 
 ## Nuclear reaction
-> ![Fission_Fusion](https://hackmd.io/_uploads/Hy1_jpBrJx.jpg)
+> ![Fission_Fusion](https://www.ansto.gov.au/sites/default/files/styles/wysiwyg_image/public/2023-08/Fission-Fusion-3.jpg?itok=47eSOJSz)
 > https://www.ansto.gov.au/news/fission-vs-fusion-an-explainer
 
 ## Nuclear power plant
