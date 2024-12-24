@@ -17,6 +17,7 @@ $$\vec u' = \vec u-\vec V$$
 $$\vec c' = \vec c-\vec V$$
 
 ~~u2 = u1 - V~~
+
 c2 = c1 - ~~v~~
 
 $$x' = x-Vt$$
@@ -24,6 +25,7 @@ $$x' = x-Vt$$
 $$t' = t$$
 
 ~~x2 = x1 - Vt~~
+
 ~~t2 = t1~~
 ***
 $$i = \sqrt{-1}$$
