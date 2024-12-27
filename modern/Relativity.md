@@ -7,7 +7,7 @@ $$E = mc^2$$
 ## Relative length
 $$l' = l\sqrt{1-\frac{V^2}{c^2}}$$
 ## Relative mass
-$$m' = =m\frac{m_o}{\sqrt{\frac{V^2}{c^2}}}$$
+$$m' = \frac{m_0}{\sqrt{1-\frac{V2}{c2}}}$$
 ## Relative time
 $$\Delta t' = \frac{\Delta t}{\sqrt{1-\frac{V^2}{c^2}}}$$
 ## length in relativity
