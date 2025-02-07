@@ -4,7 +4,7 @@ tags: [SHM, mechanics]
 
 ---
 
-# Wave7
+# Wave777
 
 1. Electromagnetic Wave
 * travel without medium and can travel through a vacuum.
