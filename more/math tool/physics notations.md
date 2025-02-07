@@ -1,8 +1,3 @@
----
-title: physics notations
-
----
-
 # Physics notations
 * $A$ : area
 * $a$ : Acceleration
@@ -74,3 +69,4 @@ title: physics notations
 * $y$ : y Displacement
 * $Z$ : Section coefficient
 * $z$ : z Displacement
+* abcde
