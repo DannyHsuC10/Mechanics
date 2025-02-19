@@ -1,21 +1,22 @@
----
-title: Equivalent system of force
-tags: [statics, mechanics]
-
----
-
 # Equivalent system of force
+
 ## Exteral and internal forces
+
 1. exteral forces : represent the action of other bodies on the rigid body.
 2. internal forces : the force which hold together the particles forming the rigid body.
+
 ## Vector product of twe vector
+
 $$V = P\times Q$$
+
 1. $V\perp P, V\perp Q$
 2. $|V| = |P||Q|sin(\theta)$
 3. $P\times Q = -Q\times P$
 4. $P\times(Q_1+Q_2) = P\times Q_1+P\times Q_2$
 5. $P\times (Q\times S) \not= (P\times Q)\times S$
+
 ## Vector products expressed in terms of xyz component
+
 $$\vec x\times \vec x = 0$$
 
 $$\vec x\times \vec y = \vec z$$
@@ -30,23 +31,27 @@ $$V = P\times Q = \begin{vmatrix}
 \vec x &\vec y&\vec z\\
 P_x&P_y&P_z\\
 Q_x&Q_y&Q_z
-\end{vmatrix}
-$$
+\end{vmatrix}$$
+
 ## Moment of a force about a point
+
 $$M = r\times F$$
 
 $$M = rFjsin(\theta) = Fd$$
 
 ## varignon's theorem
+
 $$F_{tt} = F_1+F_2+F_3...F_n$$
 
 $$M_{tt} = r_1\times F_1+r_2\times F_2+r_3\times F_3+...r_n\times F_n$$
+
 ## xyz components of the moment of a force
+
 $$r = x\vec x+y\vec y+z\vec z$$
 
 $$F = F_x\vec x+F_y\vec y+F_z\vec z$$
 
-$$M = r\times F = 
+$$M = r\times F =
 \begin{vmatrix}
 \vec x &\vec y&\vec z\\
 x&y&z\\

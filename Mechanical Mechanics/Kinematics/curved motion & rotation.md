@@ -1,9 +1,3 @@
----
-title: curved motion & rotation
-tags: [Kinematics, Mechanical Mechanics]
-
----
-
 # curved motion & rotation
 
 ## projectile

@@ -1,22 +1,26 @@
----
-title: Relativity
-tags: [modern, mechanics]
-
----
-
 # Relativity
+
 ## Mass–energy equivalence
+
 $c \simeq 3\times 10^8m/s$
 $E$ : energy(J)
 $M$ : mass(kg)
 $$E = mc^2$$
+
 ## Relative length
+
 $$l' = l\sqrt{1-\frac{v^2}{c^2}}$$
+
 ## Relative mass
+
 $$m' = \frac{m_0}{\sqrt{1-\frac{v2}{c2}}}$$
+
 ## Relative time
+
 $$\Delta t' = \frac{\Delta t}{\sqrt{1-\frac{v^2}{c^2}}}$$
+
 ## length in relativity
+
 The position is not equal to the original position plus time multiplied by time
 $$\vec u' = \vec u-\vec v$$
 

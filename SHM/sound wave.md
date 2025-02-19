@@ -1,10 +1,5 @@
----
-title: sound wave
-tags: [SHM, mechanics]
-
----
-
 # Sound wave
+
 $$v = \sqrt{\frac\tau\mu} = \sqrt{\frac{force}{inertia}}$$
 
 * Bulk modulus : $B$
@@ -32,10 +27,15 @@ $$-\Delta PA = \rho Av\Delta t\frac{\Delta v}{\Delta t} = \rho v^2$$
 $$-\Delta PA = \rho\frac{B}{\rho} = B = \frac{P}{\Delta V/V}$$
 
 ## Displacement
+
 $$S(\lambda,t) = S_mcos(k\lambda-\omega t)$$
+
 ## Pressure
+
 $$\Delta P(\lambda,t) = \Delta P_msin(k\lambda-\omega t)$$
+
 ## Pressure amplitude
+
 $$a = \frac{\partial^2 S}{\partial t^2} = -\omega^2 S_m \cos(k\lambda - \omega t)$$
 
 $$\Delta P = -\rho \omega^2 S_m \cos(k\lambda - \omega t)$$
@@ -68,6 +68,7 @@ $$\Delta P_m = BkS_m = (\rho v^2k)S_m$$
 $$\Delta P_m = (v \rho \omega) S_m$$
 
 ## Interference
+
 $$S_1 = S_mcos(k\lambda-\omega t+\phi)$$
 
 $$S_2 = S_mcos(k\lambda-\omega t)$$
@@ -91,6 +92,7 @@ fully constructive interference
 
 if $\frac{\Delta  L}\lambda =$ $0.5$ , $1.5$ , $2.5$ ...
 fully destructive interference
+
 ## Acoustic resonance
 
 |              Single open               |              Double open               |
@@ -127,10 +129,13 @@ $$\frac PA = \frac12(\rho v)(\omega S_m)^2$$
 $$I = \frac12(\rho v)(\omega S_m)^2$$
 
 ## Decibel
+
 $$dB = 10log_{10}(\frac II_0)$$
 
 * $I_0$ : $10^{-12}W/m^2$
+
 ## Beat
+
 $$f_1 \simeq f_2$$
 
 $$S_1 = S_mcos\omega_1t$$
@@ -154,8 +159,11 @@ $$\omega = 2\pi f$$
 $$f_{beat} = f_1-f_2$$
 
 ## Doppler effect
+
 * $v_s$ : sound speed
+
 $$f' = f\frac{v_A\pm v_s}{-v_B\pm v_s}$$
+
 1. Moving listener
 listener velocity : $v_A$
 $$f = \frac v\lambda = \frac{vt/\lambda}{t}$$
@@ -175,6 +183,7 @@ $$= \frac {v_s}{(-v_B+v_s)t} = \frac {v_s}{(-v_B+v_s)/f}$$
 $$f' = f\frac {v_s}{(-v_B+v_s)}$$
 
 ## Supersonic speed & shock wave
+
 * Mach number : $M$
 $$M = \frac v{v_s}$$
 

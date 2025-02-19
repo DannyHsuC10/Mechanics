@@ -1,14 +1,11 @@
----
-title: simple harmonic pendulum
-tags: [SHM, mechanics]
-
----
-
 # simple harmonic pendulum
+
 $$\tau = -k\theta$$
 
 $$T = 2\pi\sqrt{\frac{I}{k}}$$
+
 ## Swing motion
+
 * $F_T = F_gcos\theta$
 $(F_T)^2+(F_gsin\theta)^2 = F_g^2$
 
@@ -31,6 +28,7 @@ $$T = 2\pi\sqrt{\frac{mL^2}{mgL}}$$
 $$T = 2\pi\sqrt{\frac{L}{g}}$$
 
 ## Gravity measurement
+
 $$T = 2\pi\sqrt{\frac{L}{g}}$$
 
 $$(\frac{T}{2\pi})^2 = \frac{L}{g}$$

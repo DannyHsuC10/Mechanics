@@ -1,13 +1,10 @@
----
-title: Entropy & Second Law of Thermodynamics
-tags: [Thermodynamics & Fluid Mechanics, mechanics]
-
----
-
 # Entropy & Second Law of Thermodynamics
+
 * **Entropy** : the measure of a system's thermal energy per unit temperature that is unavailable for doing useful work
 * Entropy is irreversible
+
 ## Entropy change definition
+
 $$S_f-S_i = \Delta S = \int_i^f\frac{dQ}{T}$$
 
 * isotonic
@@ -27,12 +24,17 @@ $$\int_i^f\frac{dQ}{T} = \int_i^fnR\frac{dV}{V}+\int_i^fnC_V\frac{dT}{T}$$
 ## Second Law of Thermodynamics
 
 $$\Delta S \ge 0$$
-* Endothermic 
+
+* Endothermic
+
 $$\Delta S_{gas} = \frac{+|Q|}{T}$$
+
 * Exothermic
+
 $$\Delta S_{res} = \frac{-|Q|}{T}$$
 
 ## Heat engine
+
 It is a machine that can convert part of the heat provided by the heat source into mechanical energy output.
 heat $\Longrightarrow$ work
 
@@ -57,6 +59,7 @@ $$\eta_e \le 1-\frac{T_L}{T_H}$$
 Engine efficiency : $\eta_e$
 
 ## Heat pump
+
 A machine that uses energy to transfer heat
 work $\Longrightarrow$ heat
 $$\eta = \frac{|Q_L|}{|W|}$$
@@ -66,19 +69,24 @@ $$\eta = \frac{|Q_L|}{|Q_H|-|Q_L|}$$
 $$\eta = \frac{|T_L|}{|T_H|-|T_L|}$$
 
 ## Entropy statistics
+
 if the probability of microstate is equal
 
 $$W = \frac{N!}{n_1!n_2!}$$
+
 * number of microstates : $W$
 * number of particles : $N$
-* Number of particles in different states : $n$ 
+* Number of particles in different states : $n$
 eg : Ground state, excited state, plasma state, Solid, liquid, gas
 $$S = k\ln W$$
 
 $$S = k\ln W = \int_i^fnR\frac{dV}{V}+\int_i^fnC_V\frac{dT}{T}$$
+
 ## Enthalpy & Free Energy
+
 Enthalpy : Represents the total heat content of the system
 $$H = E_{int}+PV$$
+
 * Enthalpy : $H$
 $$dH = dE_{int}+PdV+VdP$$
 
@@ -94,7 +102,9 @@ $$dQ = \left(\frac{\partial H}{\partial T}\right)_PdT+\left(\frac{\partial H}{\p
 $$dQ = C_pn\Delta T $$
 
 $$C_p = \left(\frac{\partial H}{\partial T}\right)_P$$
+
 ## Helmholtz Free Energy
+
 The maximum work that a system can do under constant temperature and Isovolumetric condition.
 
 * Helmholtz Free Energy : $F$
@@ -106,8 +116,11 @@ $$dF = -PdV-SdT$$
 $$P = -\left(\frac{\partial F}{\partial V}\right)_T$$
 
 $$S = -\left(\frac{\partial F}{\partial T}\right)_V$$
+
 ## Gibbs Free Energy
+
 The maximum work that a system can do under constant temperature and Constant pressure condition.
+
 * Gibbs Free Energy : $G$
 
 $$G = H-TS  = E_{int}+PV-TS$$
@@ -119,10 +132,12 @@ $$V = \left(\frac{\partial G}{\partial P}\right)_T$$
 $$S = -\left(\frac{\partial G}{\partial T}\right)_P$$
 
 ## Maxwell's Equation
+
 * $H = H(S,P)$
 * $F = F(T,V)$
 * $G = G(T,P)$
 * $E_{int} = E_{int}(S,V)$
+
 1. from internal energy:
 $dE_{int} = TdS-PdV$
 $$\left(\frac{\partial T}{\partial V}\right)_S = -\left(\frac{\partial P}{\partial S}\right)_V$$
@@ -134,9 +149,13 @@ $dF = -SdT-PdV$
 $$\left(\frac{\partial S}{\partial V}\right)_T = \left(\frac{\partial P}{\partial T}\right)_V$$
 4. from Gibbs free energy:
 $dG = -SdT+VdP$
+
 $$\left(\frac{\partial S}{\partial P}\right)_T = -\left(\frac{\partial V}{\partial T}\right)_P$$
+
 ## consider Van der Waals force
+
 $$(P+\frac{a}{V^2})(V-b) = RT$$
+
 * pressure : $P$
 * volume : $V$
 * temperature : $T$

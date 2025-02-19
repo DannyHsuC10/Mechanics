@@ -1,9 +1,3 @@
----
-title: Greek alphabet
-tags: [math tools, mechanics]
-
----
-
 # Greek alphabet
 
 | Lowercase  | Uppercase  | English |  name   |
@@ -32,5 +26,3 @@ tags: [math tools, mechanics]
 |   $\chi$   |    $X$     |  H/ch   |   chi   |
 |   $\psi$   |   $\Psi$   |   ps    |   psi   |
 |  $\omega$  |  $\Omega$  |   O'    |  omega  |
-
-

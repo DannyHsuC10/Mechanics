@@ -1,9 +1,3 @@
----
-title: Linear motion
-tags: [Kinematics, Mechanical Mechanics]
-
----
-
 # Linear motion
 
 * time : $t$

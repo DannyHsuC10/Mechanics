@@ -1,15 +1,13 @@
----
-title: Damping harmonics moion
-tags: [SHM, mechanics]
-
----
-
 # Damping harmonics motion
+
 common harmonics
+
 * $x(t)$ : $x_mcos(\omega t+\phi)$
 * $v(t)$ : $-\omega x_msin(\omega t+\phi)$
 * $a(t)$ : $-\omega^2x_mcos(\omega t+\phi)$
+
 ## Damping force
+
 * Damping force : $F_d = D_1(\text{backward force})$
 * Damping coefficient : $b$
 $$F_d = -bv$$
@@ -30,6 +28,7 @@ $$m𝜆^2e^{𝜆t}+b𝜆e^{𝜆t}+ke^{𝜆t} = 0$$
 $$m𝜆^2+b𝜆+k = 0$$
 
 ## Overdamping, critical damping, underdamping
+
 $$m𝜆^2+b𝜆+k = 0$$
 
 $$𝜆 = \frac{-b\pm\sqrt{b^2-4mk}}{2m}$$
@@ -74,7 +73,9 @@ $$𝜆 = \frac{-b}{2m}$$
 $$x(t) = Ce^{𝜆t} = Ce^{\frac{-bt}{2m}}$$
 
 when $𝜆$ is not a real number : $b^2-4mk < 0$ ( Underdamped )
+
 ## Damped oscillation
+
 $$m𝜆^2+b𝜆+k = 0$$
 
 let $2𝛾 = \frac bm,\omega_i^2 = \frac km$
@@ -110,7 +111,9 @@ by Trigonometric Identities
 $$= e^{-\frac {bt}{2m}}x_mcos(\omega't+\phi)$$
 
 ## Damping coefficient
+
 1. $b = 2m\sqrt{(\frac{k}{m}-\frac{4\pi^2}{T^2})}$
+
 $$\omega' = \frac{2\pi}{T} = \sqrt{\frac{k}{m}-\frac{b^2}{4m^2}}$$
 
 $$\frac{b^2}{4m^2} = \frac{k}{m}-\frac{4\pi^2}{T^2}$$
@@ -146,4 +149,5 @@ $$b = 2m\sqrt{\frac km}$$
 $$b = 2\sqrt{km}$$
 
 ## Graph
+
 ![damping](https://hackmd.io/_uploads/SkpZZ00S1l.png)

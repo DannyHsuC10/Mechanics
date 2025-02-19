@@ -1,9 +1,5 @@
----
-title: physics notations
-
----
-
 # Physics notations
+
 * $A$ : area
 * $a$ : Acceleration
 * $\alpha$ : Angular acceleration
@@ -40,7 +36,7 @@ title: physics notations
 * $\lambda$ : Wavelength
 * $M$ : Molar mass
 * $m$ : Mass
-* $N$ : normal force , Number of particles 
+* $N$ : normal force , Number of particles
 * $n$ : Number of moles
 * $\eta$ : Efficiency
 * $\theta$ : Angle

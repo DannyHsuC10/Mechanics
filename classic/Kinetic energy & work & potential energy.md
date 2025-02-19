@@ -1,12 +1,7 @@
----
-title: Kinetic energy & work & potential energy
-tags: ["classic\_", mechanics]
-
----
-
 # Kinetic energy & work & potential energy
 
 ## Kinetic energy conservation
+
 unit : $1 jonle = 1 J =kg^2⋅m^2/s^2$
 $$K = \frac{1}{2}mv^2$$
 
@@ -168,7 +163,7 @@ $$U(x)+K(x) = E(x)$$
 $$K(x) = E(x)-U(x)$$
 
 * Stable equilibrium
-The system resists the disturbance and returns to its original position. 
+The system resists the disturbance and returns to its original position.
 
 * Unstable equilibrium
 The system moves further away from its original position after the disturbance.
@@ -192,6 +187,7 @@ $$Fx = E_{mec}+f_kx$$
 $$E_{th} = f_kx$$
 
 $$Fx = E_{mec}+E_{th}$$
+
 ## Law of conservation of energy
 
 $$W = ΔE_{int}+ΔE_{mec}+ΔE_{th}$$

@@ -1,11 +1,7 @@
----
-title: Mathematical formula
-tags: [math tools, mechanics]
-
----
-
 # Mathematical formula
+
 ## Trigonometric function
+
 $$sin^2\theta+cos^2\theta = 1$$
 
 $$sec^2\theta = 1+tan^2\theta$$
@@ -37,6 +33,7 @@ $$cosA+cosB = 2cos(\frac{1}{2}(A+B))cos(\frac{1}{2}(A-B))$$
 $$cosA-cosB = 2cos(\frac{1}{2}(A+B))sin(\frac{1}{2}(B-A))$$
 
 ## Expansion
+
 $$(a+b)^n = a^n+\frac{n}{1!}a^{n-1}b+\frac{n}{2!(n-2)!}a^{n-2}b^2+...$$
 
 $$(1+x)^n = 1+nx+\frac{n}{2!(n-2)!}x^2+...$$
@@ -52,6 +49,7 @@ $$cosx = 1-\frac{x^2}{2!}+\frac{x^4}{4!}-...$$
 $$tanx = x+\frac{x^3}{3}+\frac{2x^5}{15}+... , \mid x\mid<\frac{\pi}{2}$$
 
 ## Differential
+
 $$\frac{d}{dx}a = 0$$
 
 $$\frac{d}{dx}ax^n = nax^{n-1}$$
@@ -73,6 +71,7 @@ $$\frac{d}{dx}cscx = -cotx\cdot cscx$$
 $$\frac{d}{dx}ln(ax) = \frac{a}{x}$$
 
 ## Integration
+
 $$\int x^ndx = \frac{x^{n+1}}{n+1}$$
 
 $$\int\frac{dx}{x} = lnx$$

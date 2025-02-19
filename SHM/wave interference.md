@@ -1,11 +1,7 @@
----
-title: wave interference
-tags: [SHM, mechanics]
-
----
-
 # Wave interference
+
 ## Principle of superposition of waves
+
 $$y'(x,t) = y_1(x,t)+y_2(x,t)$$
 
 $$y_1(x,t) = y_msin(kx-\omega t)$$
@@ -30,9 +26,11 @@ if $\phi = n\pi$ and $n$ is a natural number
 
 $$y'(x,t) = 0$$
 ## Wave graph
+
 ![Wave_superposition](https://hackmd.io/_uploads/S1eFzad981l.jpg)
 
 ## Phase and offset
+
 $$y_1(x,t) = y_msin(kd_1-\omega t)$$
 
 $$y_2(x,t) = y_msin(kd_2-\omega t)$$
@@ -51,6 +49,7 @@ $$\phi = \pi\frac{d_1-d_2}{\lambda}$$
 * weakest $d_1-d_2 = n(k+\frac12)\lambda$ and $n$ is a natural number
 
 ## stationary wave
+
 $$y_1(x,t) = y_msin(kx-\omega t)$$
 
 $$y_2(x,t) = y_msin(kx+\omega t)$$

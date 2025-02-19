@@ -1,10 +1,5 @@
----
-title: Constant
-tags: [math tools, mechanics]
-
----
-
 # Constants
+
 Alpha particle mass : $m_a = 6.6446565\times10^{-27}kg$
 
 Atomic mass constant : $m_\mu = 1.66053886\times10^{-27}kg$

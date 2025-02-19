@@ -1,18 +1,16 @@
----
-title: heat
-tags: [General Physics, mechanics]
-
----
-
 # heat
+
 ## Specific heat
+
 $$Q=mc\Delta T$$
 
 $Q =$ heat energy
 $m =$ mass
 $c =$ specific heat capacity
 $\Delta T =$ change in temperature
+
 ## Temperature conversion
+
 $$\frac{C^o}{100} = \frac{F^o-32}{180}$$
 
 ## Heat transfer

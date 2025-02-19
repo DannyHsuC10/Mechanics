@@ -1,11 +1,7 @@
----
-title: Center of Mass & Momentum
-tags: ["classic\_", mechanics]
-
----
-
 # Center of Mass & Momentum
+
 ## Center of mass
+
 $$r_{com} =\sum\frac{m_ir_i}{m_i} $$
 
 $$ = \frac{(m_1r_1+m_2r_2+...m_nr_n)}{(m_1+m_2+...m_n)}$$
@@ -23,11 +19,15 @@ $$z_{com} = \sum\frac{m_iz_i}{m_i} $$
 $$XYZ_{moc}(x,y,z) = \frac{1}{M}\sum{(m_ix_i,m_iy_i,m_iz_i)}$$
 
 ## Density
+
 $$D = \frac{m}{V}$$
 
 ## Momentum and Impulse
+
 $$\vec{F_{net}} = m\vec{a_{com}}$$
+
 * Momentum
+
 $$\vec{p} = m\vec{v}$$
 
 $$\vec{F} = \frac{d\vec{p}}{dt} = \frac{md\vec{v}}{dt} = m\vec{a}$$
@@ -42,7 +42,9 @@ $p_{com}$ is a constant
 $p_{comi} = p_{comf}$
 
 ## Collision
+
 $$p_1i+p_2i = p_1f+p_2f$$
+
 * Inelastic collision
 
 $$m_1v_{1i}+m_2v_{2i} = m_1v_{1f}+m_2v_{2f}$$
@@ -59,11 +61,12 @@ $$\vec{p_{com}} = Mv_{comi} = Mv_{comf}$$
 $$\vec{p_{com}} = \vec{p_{1i}}+\vec{p_{2i}}$$
 
 $$v_{comf} = \frac{\vec{p_{com}}}{M} = \frac{\vec{p_{com}}}{m_1+m_2}$$
+
 * Elastic collision
 
 if $m_1 = m_2$ and $m_{2i} = 0$ , then $v_{1i} = v_{2f}$ and $v_{1f} = 0$
 
-if $m_1 >> m_2$ and $m_{2i} = 0$ , then $v_{1f} \simeq v_{2f} \simeq v_{1i}$ 
+if $m_1 >> m_2$ and $m_{2i} = 0$ , then $v_{1f} \simeq v_{2f} \simeq v_{1i}$
 
 if $m_1 << m_2$ and $m_{2i} = 0$ , then $v_{1f} \simeq -v_{1i}$ and $v_{2f} \simeq 0$
 
@@ -91,6 +94,7 @@ linear equation in two variables
 $$(4)\Longrightarrow(2),(3)$$
 
 ## 2D collisionc (Elastic)
+
 $$p_{1i}+p_{2i} = p_{1f}+p_{2f}$$
 
 $$K_{1i}+K_{2i} = K_{1f}+K_{2f}$$
@@ -137,6 +141,7 @@ $$0=2(v_{1yf}^2+v_{1xf}^2-v_{1xf}v_{1xi})$$
 $$v_{1xf}v_{1xi} = v_{1yf}^2+v_{1xf}^2 = v_{1f}^2$$
 
 ## Variable mass system
+
 * rocket formula 1
 
 $v_e =$ Exhaust gas speed

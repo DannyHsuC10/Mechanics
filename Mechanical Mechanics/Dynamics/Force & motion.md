@@ -1,9 +1,3 @@
----
-title: Force & motion
-tags: [Dynamics, Mechanical Mechanics]
-
----
-
 # Force & motion
 
 ## Newton's laws of motion
@@ -57,6 +51,7 @@ consider spring mass $m_s$
 $$x = x_i+\frac{mg}{k}+\frac{m_sg}{2k}$$
 
 ## Vehicle turning
+
 $$F = f$$
 
 $$w = N$$
@@ -68,13 +63,17 @@ $$\mu mg = m\frac{v^2}{r}$$
 $$v = \sqrt{\mu gr}$$
 
 ## Superelevation
+
 $$\frac{F}{sin(\theta)} = \frac{w}{sin(90^o-\theta)}$$
 
 $$\frac{ma}{sin(\theta)} = \frac{mg}{sin(90^o-\theta)}$$
-* when $\theta >> 1$ , then $cos(\theta) \simeq 1$ 
+
+* when $\theta >> 1$ , then $cos(\theta) \simeq 1$
+
 $$a = gsin(\theta)$$
 
 $$\frac{v^2}{r} = g\frac{h}{d}$$
+
 * height : $h$
 * Track : $d$
 

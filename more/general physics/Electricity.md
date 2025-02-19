@@ -1,18 +1,17 @@
----
-title: Electricity
-tags: [General Physics, mechanics]
-
----
-
 # Electricity
+
 ## Voltage
+
 $$V = IR$$
 
 $$V  = \frac{E}{Q}$$
+
 ## Current
+
 $$I = \frac{Q}{t}$$
 
 ## Resistance
+
 $$R = \frac{V}{I}$$
 
 $$R = \frac{Pl}{A}$$
@@ -22,13 +21,14 @@ $l =$ length
 $A =$ area
 
 ## Energy
+
 $$E = QV = IVt$$
 
 ## Power
+
 $$P = \frac{E}{t} = IV = I^2R = \frac{V^2}{R}$$
 
 ## Series and parallel circuits
-
 
 |         |            Series             |           parallel            |
 |:-------:|:-----------------------------:|:-----------------------------:|

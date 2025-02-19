@@ -1,9 +1,3 @@
----
-title: '2,3D motion'
-tags: ["classic\_", mechanics]
-
----
-
 # 2,3D motion
 
 position vector $= \vec{r}$
@@ -14,7 +8,7 @@ $$\vec{r} = x\vec{i}+y\vec{j}+z\vec{k}$$
 
 $$r = \sqrt{x^2 + y^2 + z^2}$$
 
-$$Δ\vec{r} = \vec{r_f}-\vec{r_i}$$ 
+$$Δ\vec{r} = \vec{r_f}-\vec{r_i}$$
 
 $$Δ\vec{r}= (x_f-x_i)\vec{i}+(y_f-y_i)\vec{j}+(z_f-z_i)\vec{k}$$
 

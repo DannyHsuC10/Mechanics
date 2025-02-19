@@ -1,18 +1,17 @@
----
-title: Roll & Angular Momentum
-tags: ["classic\_", mechanics]
-
----
-
 # Roll & Angular Momentum
+
 ## Cylinder rolling
+
 * center
 $$v_{com} = 𝜔r$$
 * vertex
 $$v_{top} = 2𝜔r = 2v_{com}$$
 * energy
+
 $$\frac{1}{2}mv_{com}^2+\frac{1}{2}I_{com}^2$$
+
 ## Down hill rolling
+
 * Downhill force
 $$f_s = \mu mg\cdot cos\theta$$
 
@@ -32,6 +31,7 @@ $$a = (mg\cdot sin\theta-\frac{Ia}{R^2})/m$$
 $$a = g\cdot sin\theta-\frac{Ia}{mR^2}$$
 
 ## YO-YO
+
 $$𝜏 = Fr = f_sr = r\mu mg\cdot cos\theta = I𝛼$$
 
 $$f_s = \frac{Ia}{R^2}$$
@@ -41,23 +41,27 @@ $$F_{net} = mg-\frac{Ia}{R^2}$$
 $$a = F_{net}/m = \frac{Ia}{mR^2}+g$$
 
 ## Angular Momentum
+
 $$\vec L = \vec r\times\vec p = m(\vec r\times\vec v)$$
 
 $$L = rmvsin\theta$$
+
 * if $\theta = \frac{\pi}{2}$
+
 $$L = rp = rmv = I𝜔$$
 
 $$𝜏 = \frac{dL}{dt}$$
 
 $$F = \frac{dL}{rdt}$$
 
-
 ## Conservation of angular momentum
+
 $$L_i = L_f$$
 
 $$I_i𝜔_i = I_f𝜔_f$$
 
 ## Precession & Nutation
+
 angular velocity of precession : $𝜔_p$
 
 angular velocity of spin : $𝜔_s$
@@ -75,8 +79,7 @@ $$𝜏 = mgr\cdot sin\theta$$
 $$mgr\cdot sin\theta = I𝜔_s𝜔_p$$
 
 $$𝜔_p = \frac{mgr\cdot sin\theta}{I𝜔_s}$$
-$$T_p = 2\pi/𝜔_p = \frac{2\pi I𝜔_s}{mgr\cdot sin\theta} = 
-\frac{4\pi^2 I}{T_s𝜏}$$
+$$T_p = 2\pi/𝜔_p = \frac{2\pi I𝜔_s}{mgr\cdot sin\theta} = \frac{4\pi^2 I}{T_s𝜏}$$
 
 * Angular velocity of spin
 

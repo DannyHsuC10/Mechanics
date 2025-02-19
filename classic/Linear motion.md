@@ -1,9 +1,3 @@
----
-title: Linear motion
-tags: ["classic\_", mechanics]
-
----
-
 # Linear motion
 
 ## Moving distance

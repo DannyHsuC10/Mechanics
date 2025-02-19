@@ -1,24 +1,25 @@
----
-title: Kinetic theory of gases
-tags: [Thermodynamics & Fluid Mechanics, mechanics]
-
----
-
 # Kinetic theory of gases
+
 ## Mole
+
 $$n = \frac{N}{N_{A}}$$
+
 * number of moles : $n$
 * Number of particles : $N$
 * Avogadro constant : $N_A = 6.02\times 10^{23}$
 
 $$M = N_Am = \frac{N}{n}m$$
+
 * mass : $m$
 * molar mass : $M$
 $$N_A = \frac Nn$$
 
 $$m = M\frac{n}{N} = \frac M{N_A}$$
+
 ## Ideal gas law
+
 $$PV = nRT$$
+
 * pressure : $P$
 * volume : $V$
 * number of moles : $n$
@@ -31,7 +32,9 @@ Boltzmann constant : $k$
 $$PV = NkT$$
 
 $$P = \frac{nRT}{V}$$
+
 ## Ideal gas work
+
 $$W = \int_{V_i}^{V_f}PdV = \int_{V_i}^{V_f}\frac{nRT}{V}dV$$
 
 $$= nRT\int_{V_i}^{V_f}\frac{dV}{V}$$
@@ -39,12 +42,15 @@ $$= nRT\int_{V_i}^{V_f}\frac{dV}{V}$$
 $$= nRT(ln(V_df)-ln(V_i))$$
 
 $$= nRT\cdot ln(\frac{V_f}{V_i})$$
+
 ## Root mean square speed
+
 Gas can move in all directions
+
 1. Left ($x_+$)
 1. Right ($x_-$)
 1. Front($y_+$)
-1. back($y_-$) 
+1. back($y_-$)
 1. up($z_+$)
 1. down($z_-$)
 
@@ -74,7 +80,7 @@ $$F_x = F_y = F_z = \frac13F$$
 
 $$F = \frac13\frac{2mv^2}{x}+\frac13\frac{2mv^2}{y}+\frac13\frac{2mv^2}{z}$$
 
-assume that the volume is symmetrical about its three dimensions. 
+assume that the volume is symmetrical about its three dimensions.
 
 $$x = y = z = L$$
 
@@ -119,7 +125,9 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 $$v_{rms} = \sqrt{\frac{3RT}{M}}$$
 
 * Root mean square velocity : $v_{rms}$
+
 ## gas kinetic energy
+
 $$K = \frac12mv^2$$
 
 * kinetic energy : $K$
@@ -127,10 +135,13 @@ $$K = \frac12mv^2$$
 $$v_{avg}^2 = \frac{3kT}{m}$$
 
 $$K = N\frac12m\frac{3kT}{m}$$
+
 * number of particles : $N$
+
 $$K = \frac{3N}2kT$$
 
 ## mean free path
+
 mean free path is the average distance over which a moving particle travels before substantially changing its direction.
 
 $$\lambda = \frac{\text {path length}}{\text {number of collisions}}$$
@@ -184,11 +195,14 @@ $$N = (P/kT)V$$
 $$\lambda = \frac {V}{\pi d^2\sqrt2N} = \frac {V}{\pi d^2\sqrt2(P/kT)V}$$
 
 $$\lambda = \frac {1}{\pi d^2\sqrt2(P/kT)} = \frac {kT}{\sqrt2\pi d^2P}$$
+
 ## [Maxwell–Boltzmann distribution](https://hackmd.io/BL9CLkpUQY-TAHmx-w0Z3g)
+
 * Maxwell–Boltzmann distribution is a Probability density function (PDF).
 $$f(v) = (\frac{m}{2\pi kT})^{\frac{3}{2}}4\pi v^2e^{(-mv^2/2kT)}$$
 
 ### Most probable speed (by Maxwell–Boltzmann distribution)
+
 The maximum value occurs when the slope is 0
 $$\frac{df(v)}{dv} = 0$$
 
@@ -219,7 +233,9 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$v_{rms} = \sqrt{\frac{2RT}{M}}$$
+
 ### Average speed (by Maxwell–Boltzmann distribution)
+
 $$v_{avg} = \sum_{i=1}^{n} v_i \cdot P_i$$
 
 * Probability : $P$
@@ -259,7 +275,8 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$v_{rms} = \sqrt{\frac{8RT}{\pi M}}$$
-###  Root mean square speed(by Maxwell–Boltzmann distribution)
+
+### Root mean square speed(by Maxwell–Boltzmann distribution)
 
 $$v_{rms} = \sqrt{v^2} = (\int_0^\infty v^2f(v)dv)^{1/2}$$
 
@@ -308,8 +325,11 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$v_{rms} = \sqrt{\frac{3RT}{M}}$$
+
 ## Ideal gas specific heat (monatomic ideal gas)
-**Isochoric Process** : the volume of the system remains constant. so $\Delta V = 0$ and $E_{int} = Q$ 
+
+**Isochoric Process** : the volume of the system remains constant. so $\Delta V = 0$ and $E_{int} = Q$
+
 $$PV = NkT$$
 
 $$E_{int} = K = \frac32NkT = \frac12Nmv^2$$
@@ -344,6 +364,7 @@ $$C_pn\Delta T = \frac{3}{2}nR\Delta T+n R \Delta T$$
 $$C_P = \frac{5}{2}R$$
 
 $$C_P = C_V+R$$
+
 ## Degrees of freedom and molar heat capacity
 
 |  Molecule  |      Gas      | Movement | Rotation | Degrees of Freedom($f$) |
@@ -361,9 +382,13 @@ $$C_V = \frac{f}{2}R$$
 $$C_P = C_V+R$$
 
 $$C_P = \frac{f}{2}R+R$$
+
 ## Temperature vs Degrees of Freedom
+
 ![Tf graph](https://i.sstatic.net/706T7.png)
+
 ## Ideal gas adiabatic expansion
+
 $$PV^{\gamma} = \text{constant}$$
 
 $$\frac{nRT}{V}V^{\gamma} = \text{constant}$$

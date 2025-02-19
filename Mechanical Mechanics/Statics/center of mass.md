@@ -1,10 +1,5 @@
----
-title: center of mass
-tags: [Statics, Mechanical Mechanics]
-
----
-
 # center of mass
+
 $$M_{cen}(x,y)$$
 
 $$x = \frac{\sum m_ix_i}{\sum m_i}$$
@@ -12,8 +7,11 @@ $$x = \frac{\sum m_ix_i}{\sum m_i}$$
 $$y = \frac{\sum m_iy_i}{\sum m_i}$$
 if density is uniform , then $M_{cen} = A_{cen}$
 if gravitational field is uniform , then $G_{cen} = M_{cen}$
+
 ## Centroid of line
+
 $$\frac{\sum L_ir_i}{\sum L_i}$$
+
 1. **Straight line**
 $$x_{cen} = \int_0^L\frac{(m/L)xdx}{m} = \left[\frac{x^2}{2L}\right]_o^L$$
 $$= \frac{L^2}{2L} = \frac L2$$
@@ -34,7 +32,7 @@ $$\int_0^L\frac{ydL}{L} = \int_{\pi/2-\alpha}^{\pi/2+\alpha}\frac{r\ sin(\theta)
  d\theta}{2rm\alpha}$$
 
 $$= \frac{r}{2\alpha}\int_{\pi/2-\alpha}^{\pi/2+\alpha}sin(\theta)= \frac{r}{2\alpha}\left[-cos(\theta)\right]_{\pi/2-\alpha}^{\pi/2+\alpha}$$
- 
+
 $$= (\frac{-r}{2\alpha}cos(\frac\pi2+\alpha))-(\frac{-rcos(\frac\pi2-\alpha)}{2\alpha})$$
 
 $$= -r(-sin(\alpha)-sin(\alpha))\cdot\frac{1}{2\alpha}$$

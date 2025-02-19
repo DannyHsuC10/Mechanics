@@ -1,28 +1,27 @@
----
-title: wave
-tags: [SHM, mechanics]
-
----
-
 # Wave
 
 1. Electromagnetic Wave
+
 * travel without medium and can travel through a vacuum.
-* Vacuum speed = $c$: 
+* Vacuum speed = $c$:
 
 2. Matter Wave
+
 * describe the wave-like properties of particles.
 * Small mass and high speed cause significant wave properties.
 
 3. Mechanical Wave
+
 * follow Newton's laws of motion.
 * mechanical waves require a medium to travel.
 
-#### Types of mechanical waves.
+#### Types of mechanical waves
+
 1. shear wave
 2. longitudinal wave
 
 ## Wavelength & Frequency
+
 * $k =$ wave number
 * $x =$ position
 * $\omega =$ angular frequency
@@ -33,7 +32,9 @@ $$y(x,t) = y_msin(kx-\omega t)$$
 where $\omega t$ t is the phase
 
 $$k = \frac{2\pi}{\lambda}$$
+
 ## Cycle & Angle Frequency & Frequency
+
 * when $x = 0$
 $$y(0,t) = y_msin(-\omega t)$$
 
@@ -42,7 +43,9 @@ $$y(0,t) = y_msin(-\omega t_i-\omega \Delta t)$$
 $$f = \frac1T = \frac\omega {2\pi}$$ 
 
 $$\omega = \frac{2\pi}{T}$$
+
 ## Velocity of travel wave
+
 $$kx-\omega t = constant$$
 
 $$k\frac{dx}{dt} = \omega$$
@@ -54,6 +57,7 @@ $$v = \frac{2\pi}{k}\cdot\frac\omega{2\pi}$$
 $$v = \lambda f$$
 
 ## Wave analysis
+
 $$v \Longrightarrow LT^{-1}$$
 
 $$\tau = MLT^{-2}$$

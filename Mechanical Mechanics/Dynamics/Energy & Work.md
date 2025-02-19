@@ -1,9 +1,3 @@
----
-title: Energy & Work
-tags: [Dynamics, Mechanical Mechanics]
-
----
-
 # Energy & Work
 
 ## Energy
@@ -26,6 +20,7 @@ $$E_i = E_f$$
 $$K_i+U_i = K_f+U_f$$
 
 ## Mechanical efficiency
+
 * $\eta<1$
 
 $$W_{in} = W_{out}+W_f$$
