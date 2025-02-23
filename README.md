@@ -1,3 +1,3 @@
 # Mechanics
+[Page B](/page-b/)
 
-[A](https://dannyhsuc10.github.io/Mechanics/main/classic/Linear%20motion.md)
