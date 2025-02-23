@@ -1,1 +1,2 @@
 # Mechanics
+theme: slate
