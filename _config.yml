@@ -1,1 +1,4 @@
-theme : jekyll-theme-Cayman
+theme: jekyll-theme-Cayman
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
