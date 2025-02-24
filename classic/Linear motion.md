@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Linear Motion"
+---
+
 # Linear motion
 
 ## Moving distance
