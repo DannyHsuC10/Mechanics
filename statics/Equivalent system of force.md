@@ -133,7 +133,7 @@ $$M = rFsin(\theta) = Fd$$
 ![couples](https://hackmd.io/_uploads/B1tbOGotyx.png)
 ## Equipollent system
 ![Equipollent system](https://hackmd.io/_uploads/BJRrMQoYyg.png)
-if the force $//$ y axis, then the moment about y axis is zero.
+if the force y axis, then the moment about y axis is zero.
 $$M = r\times F$$
 
 $$r = 0,\ M = 0$$
