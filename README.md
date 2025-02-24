@@ -4,5 +4,5 @@ title: "Rename"
 ---
 
 # Mechanics
-[test](classic/Linear%20motion.md)
+[LM](classic/Linear%20motion.md)
 
