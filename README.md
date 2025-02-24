@@ -1,3 +1,3 @@
 # Mechanics
-[test](test.md)
+[test](classic/Linear motion.md)
 
