@@ -1,6 +1,4 @@
 # Mechanics
-# Linear Motion
-
 ## Moving Distance
 
 * Stationary or moving?  
