@@ -1,1 +1,2 @@
-theme: jekyll-theme-Cayman
+remote_theme: b2a3e8/jekyll-theme-console
+math: true
