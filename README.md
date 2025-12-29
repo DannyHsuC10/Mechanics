@@ -1,2 +1,2 @@
 # Mechanics
-[Energy and momentum methods](Dynamics/Energy and momentum methods.md)
+[Energy and momentum methods](Dynamics/Energy%20and%20momentum%20methods.md)
