@@ -16,7 +16,7 @@ Mechanics-->Gear & Non-transmission & transmission
 
 :::
 
-:::info
+::: info
 
 ## transmission
 1. [Sprocket](Mechanical_Principle/transmission/Sprocket/Sprocket.md)
