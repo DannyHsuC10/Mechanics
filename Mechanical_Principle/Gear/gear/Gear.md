@@ -80,11 +80,15 @@ $$\frac{\phi_B}{\phi_A} = \frac{N_A}{N_B} = \frac{\omega_A}{\omega_B} = \frac{D_
 > Two involute gears, the left driving the right: Blue arrows show the contact forces between them downward force applied by the left gear and upward resistance by the right gear. The force line (or line of action) runs along the long leg of dashed blue line which is a tangent common to both base circles. The involutes here are traced out in converse fashion: points of contact move along the stationary force-vector "string" as if it was being unwound from the left rotating base circle, and wound onto the right rotating base circle. In this situation, there is no force, and so no contact needed, along the opposite [lower left to upper right] common tangent (not shown). In other words, if the teeth were slightly narrower while everything else remained the same there would be a gap above each tooth on the left gear, because downward force is being applied by it.
 >https://en.wikipedia.org/wiki/Involute_gear
 
-![638886533699114590](https://hackmd.io/_uploads/Bk56E59Ulg.png)
-Top land : <font color="#f00">**Red**</font>
-Involute : <font color="#1936C9">**Blue**</font>
-Radial Line : <font color="#75ff33">**green**</font>
-Bottom land : <font color="#efe514">**yellow**</font>
+<div style="text-align: center;">
+<img src="upload_4b68550429a48b52688e00c2522b88a7.png" alt="image" width="800">
+</div>
+
+Top land : **<font color="#f00">Red</font>**
+Involute : **<font color="#1936C9">Blue</font>**
+Radial Line : **<font color="#75ff33">green</font>**
+Bottom land : **<font color="#efe514">yellow</font>**
+
 ## Gear mesh interference
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/HJVOmDjLxx.png" alt="image" width="350">

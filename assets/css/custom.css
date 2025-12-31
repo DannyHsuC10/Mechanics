@@ -98,7 +98,7 @@ body {
   padding: 0.2em 0.4em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(175,184,193,0.2);
+  background-color: #cfcfcf;
   border-radius: 6px;
   font-family: ui-monospace, SFMono-Regular,
                Menlo, Consolas, monospace;
@@ -108,14 +108,14 @@ body {
 .markdown-body pre {
   padding: 16px;
   overflow: auto;
-  background-color: #f6f8fa;
+  background-color: #cfcfcf;
   border-radius: 6px;
   font-size: 85%;
   line-height: 1.45;
 }
 
 .markdown-body pre code {
-  background: none;
+  background: #cfcfcf;
   padding: 0;
 }
 
