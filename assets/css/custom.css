@@ -1,0 +1,143 @@
+/* ===== Base ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html { font-size: 16px; }
+
+body {
+  margin: 0;
+  background-color: #f6f8fa;
+}
+
+/* ====================================================== 文字設定 ============================================ */
+/* ===== 全站文字設定 ===== */
+.page-intro,
+.markdown-body,
+.page-end {
+  font-family: -apple-system, BlinkMacSystemFont,
+               "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: ##909191;
+}
+
+.page-intro {
+  background-image: linear-gradient(
+    120deg,
+    #155799,
+    #159957
+  );
+  color: #ffffff;
+  padding: 3rem 2rem;
+}
+
+.page-end {
+  margin: 3rem auto 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #57606a;
+}
+
+.page-end a {
+  color: #0969da;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.page-end a:hover {
+  text-decoration: underline;
+}
+
+
+/* 小框框內容 */
+.content {
+  max-width: 900px;
+  margin: 0.1rem auto 2rem; /* 上 0.5rem，下 2rem */
+  padding: 2rem 2.5rem;      /* 內距 */
+  background: #f6f8fa;
+  border: none;
+  border-radius: 6px;
+}
+/* ====================================================== md細節文字設定============================================ */
+/* Markdown 內文標題 */
+.markdown-body h1,
+.markdown-body h2 {
+  color: #159957;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #d0d7de;
+}
+
+/* 段落 */
+.markdown-body p {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+/* 清單 */
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+  margin-bottom: 16px;
+}
+
+/* 連結 */
+.markdown-body a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+/* 行內程式碼 */
+.markdown-body code {
+  padding: 0.2em 0.4em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(175,184,193,0.2);
+  border-radius: 6px;
+  font-family: ui-monospace, SFMono-Regular,
+               Menlo, Consolas, monospace;
+}
+
+/* 程式碼區塊 */
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  background-color: #f6f8fa;
+  border-radius: 6px;
+  font-size: 85%;
+  line-height: 1.45;
+}
+
+.markdown-body pre code {
+  background: none;
+  padding: 0;
+}
+
+/* 引言 */
+.markdown-body blockquote {
+  padding: 0 1em;
+  color: #57606a;
+  border-left: 0.25em solid #d0d7de;
+}
+
+/* 表格 */
+.markdown-body table {
+  border-collapse: collapse;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid #d0d7de;
+  padding: 6px 13px;
+}
+
+/* MathJax */
+.markdown-body mjx-container {
+  font-size: 100%;
+}
