@@ -5,6 +5,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   <title>{{ page.title }}</title>
 
+  <!-- Mermaid -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'default'
+    });
+  </script>
+
   <!-- MathJax -->
   <script>
     window.MathJax = {
