@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Cam and follower
 >https://www.theengineeringchoice.com/![cam and follower](https://i0.wp.com/www.theengineeringchoice.com/wp-content/uploads/2024/06/Cam-And-Follower-Terminology.webp?w=1280&ssl=1)
 >![types of cam](https://i0.wp.com/www.theengineeringchoice.com/wp-content/uploads/2024/06/Types-of-Cam.webp?w=1280&ssl=1)

@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Keys and Pins
 ## Unit conversion and Basic calculations
 * RPM

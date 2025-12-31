@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Belt pulley
 ## Transmission method
 ### Open Belt Drive

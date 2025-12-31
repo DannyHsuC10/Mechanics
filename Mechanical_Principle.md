@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Mechanical Principle
 ```mermaid
 graph TD;
@@ -15,7 +19,7 @@ Mechanics-->Gear & Non-transmission & transmission
 ## transmission
 1. [Sprocket](Mechanical_Principle/transmission/Sprocket/Sprocket.md)
 2. [Thread](Mechanical_Principle/transmission/Thread/Thread.md)
-3. [pulley](Mechanical_Principle/transmission/Thread/Thread.md)
+3. [pulley](Mechanical_Principle/transmission/pulley/pulley.md)
 4. [Belt pulley](Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md)
 5. [Cam](Mechanical_Principle/transmission/Cam/Cam.md)
 6. [Friction wheel](Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md)

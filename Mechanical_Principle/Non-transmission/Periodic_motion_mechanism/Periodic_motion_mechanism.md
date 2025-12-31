@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Periodic motion mechanism
 ## Periodic motion gear
 * Time : $t$

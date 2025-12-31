@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Pulley
 ## Lever
 <div style="text-align: center;">

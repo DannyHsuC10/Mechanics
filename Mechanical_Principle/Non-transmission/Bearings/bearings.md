@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Bearings
 ## Friction
 ### Sliding friction

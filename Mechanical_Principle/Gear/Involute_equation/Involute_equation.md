@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Involute equation
 ![maxresdefault](https://hackmd.io/_uploads/SkbbxwOUlg.jpg)
 https://youtu.be/NIGw_dlEzQ4?si=U7IsNVaTh7h40MlH

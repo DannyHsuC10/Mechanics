@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Involute Polar coordinates
 $$x = a(\cos \phi+\phi\sin \phi)$$
 

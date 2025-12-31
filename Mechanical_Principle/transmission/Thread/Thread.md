@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Thread
 ## Lead 
 ![lead](https://upload.wikimedia.org/wikipedia/commons/2/2e/Lead_and_pitch_in_screws.png?20110403171447)

@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # gear
 ## Gear parts
 <div style="text-align: center;">

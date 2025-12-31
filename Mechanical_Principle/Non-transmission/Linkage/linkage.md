@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Linkage
 
 ## Four-bar linkage

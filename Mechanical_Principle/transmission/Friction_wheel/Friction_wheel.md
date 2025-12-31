@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Friction wheel
 ## Power
 $$P = Fv = fv$$

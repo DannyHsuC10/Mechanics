@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Gear geometry
 ## Parameter
 <div style="text-align: center;">

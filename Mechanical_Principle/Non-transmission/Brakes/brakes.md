@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Brakes
 ## Block brake
 <div style="text-align: center;">

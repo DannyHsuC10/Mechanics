@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Gear Train
 ## Type of mechanical transmission element
 ![type of mechanical transmission element_S](https://hackmd.io/_uploads/B1IOdn3Llg.png)

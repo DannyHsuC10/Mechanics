@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Spring
  ## Diameter
 * Outer diameter : $D_o$

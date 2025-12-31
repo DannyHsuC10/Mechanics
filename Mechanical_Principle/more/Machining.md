@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Machining
 ## Cutting
 ### Cutting Speed
