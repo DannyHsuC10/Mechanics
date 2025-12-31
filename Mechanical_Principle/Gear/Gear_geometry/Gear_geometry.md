@@ -5,7 +5,7 @@ layout: base
 # Gear geometry
 ## Parameter
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/BkXF-v_Ixe.png" alt="image" width="400">
+<img src="upload_711de5c7f2aab0dcf0092f088bee6449.png" alt="image" width="400">
 </div>
 
 * $\theta_0$ : circular pitch Angle
@@ -203,7 +203,7 @@ plt.show()
 
 ## Generate graphics
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/H1zrOMhHxe.png" alt="image" width="300">
+<img src="upload_f1d4dfefc1911d4d7e03fda2a7f62abd.png" alt="image" width="300">
 
-<img src="https://hackmd.io/_uploads/HJR6uz3Sex.png" alt="image" width="300">
+<img src="upload_7fe0a8ff42b38bf4618e5fc5b0f8b62e.png" alt="image" width="300">
 </div>
