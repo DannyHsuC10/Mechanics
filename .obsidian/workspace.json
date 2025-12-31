@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "experiment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "experiment"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "experiment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for README"
+              "title": "Backlinks for experiment"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "experiment.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from README"
+              "title": "Outgoing links from experiment"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "experiment.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of README"
+              "title": "Outline of experiment"
             }
           }
         ]
@@ -185,8 +185,10 @@
   },
   "active": "95945da1c24137f5",
   "lastOpenFiles": [
-    "Analysis_of_structures.md",
     "README.md",
+    "experiment.md",
+    "md_updater.py",
+    "Analysis_of_structures.md",
     "matlab_sim/wave_superposition.m",
     "matlab_sim/Thermodynamic_Processes.m",
     "matlab_sim/SHM_energy.m",
@@ -195,7 +197,6 @@
     "matlab_sim/Projectile.m",
     "matlab_sim/Oscillation.m",
     "matlab_sim/linear motion.m",
-    "matlab_sim/fiction.m",
-    "matlab_sim/energy.m"
+    "matlab_sim/fiction.m"
   ]
 }
