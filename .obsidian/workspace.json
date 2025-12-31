@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanical_Principle/transmission/pulley/pulley.md",
+                "file": "Mechanical_Principle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "pulley"
+              "title": "Mechanical_Principle"
             }
           }
         ]
@@ -185,21 +185,22 @@
   },
   "active": "62622a015a87d5f2",
   "lastOpenFiles": [
-    "Mechanical_Principle.md",
-    "Mechanical_Principle/transmission/Pulley/pulley.md",
-    "Mechanical_Principle/transmission/pulley/upload_f707410eadc6f874702197e210aed46d.png",
-    "Mechanical_Principle/transmission/pulley/upload_ed5b831f702ac119a5f51e48e7f7ddb5.png",
-    "Mechanical_Principle/transmission/pulley/upload_d3f42c3402227cee7e0c7a21f6bc035e.png",
-    "Mechanical_Principle/transmission/pulley/upload_ab397451910615a52177219ec34d7020.png",
-    "Mechanical_Principle/transmission/pulley/upload_9da2906ec050c766a5c84a248472e173.png",
-    "Mechanical_Principle/transmission/pulley/upload_6a3bf6c9f80f0ce7b5b4b6750231997b.png",
-    "Mechanical_Principle/transmission/pulley/upload_010b31297ae2522e9e1a52697d5fe21b.png",
     "Mechanical_Principle/transmission/pulley/pulley.md",
-    "Mechanical_Principle/transmission/pulley/Lever_(PSF).png",
-    "Mechanical_Principle/transmission/pulley/570px-Tackles.png",
+    "Mechanical_Principle/transmission/Pulley/upload_f707410eadc6f874702197e210aed46d.png",
+    "Mechanical_Principle/transmission/Pulley/upload_ed5b831f702ac119a5f51e48e7f7ddb5.png",
+    "Mechanical_Principle/transmission/Pulley/upload_d3f42c3402227cee7e0c7a21f6bc035e.png",
+    "Mechanical_Principle/transmission/Pulley/upload_ab397451910615a52177219ec34d7020.png",
+    "Mechanical_Principle/transmission/Pulley/upload_6a3bf6c9f80f0ce7b5b4b6750231997b.png",
+    "Mechanical_Principle/transmission/Pulley/upload_9da2906ec050c766a5c84a248472e173.png",
+    "Mechanical_Principle/transmission/Pulley/pulley.md",
+    "Mechanical_Principle/transmission/Pulley/upload_010b31297ae2522e9e1a52697d5fe21b.png",
+    "Mechanical_Principle/transmission/Pulley/Lever_(PSF).png",
+    "Mechanical_Principle/transmission/Pulley/570px-Tackles.png",
+    "Mechanical_Principle/transmission/Pulley",
+    "Mechanical_Principle.md",
+    "Mechanical_Principle/transmission/pulley/upload_f707410eadc6f874702197e210aed46d.png",
     "Mechanical_Principle/transmission/pulley",
     "Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md",
-    "Mechanical_Principle/transmission/Cam/upload_099696ad2dddab72bd71a5e00679a734.png",
     "Mechanical_Principle/transmission/Cam/Cam.md",
     "Mechanical_Principle/transmission/Cam",
     "Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md",
@@ -207,7 +208,6 @@
     "Mechanical_Principle/transmission/Thread",
     "Mechanical_Principle/transmission/Sprocket/Sprocket.md",
     "Mechanical_Principle/transmission/Sprocket",
-    "Mechanical_Principle/transmission/Pulley",
     "Mechanical_Principle/transmission/Friction_wheel/Friction wheel.md",
     "Mechanical_Principle/transmission/Friction_wheel",
     "Mechanical_Principle/transmission/Friction wheel/Friction wheel.md",
