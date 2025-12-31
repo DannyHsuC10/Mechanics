@@ -141,8 +141,9 @@ body {
 .markdown-body mjx-container {
   font-size: 100%;
 }
+
 /* html 中置圖片 */
-.image {
+.center-img {
   display: block;
   margin: 1em auto;
   max-width: 100%;
