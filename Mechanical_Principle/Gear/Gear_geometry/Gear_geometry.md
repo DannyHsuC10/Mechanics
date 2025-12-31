@@ -88,7 +88,8 @@ $$(18)\Longrightarrow(20)\to(21)\to(22)\to(19)\to(23)\to(21)\to(20)\to...$$
 :::
 
 ## Code
-```python = 
+
+```python
 import matplotlib.pyplot as plt # Import plotting module
 import math # Import math module
 import numpy as np # Import numerical module
@@ -199,6 +200,7 @@ draw_hole(rh)
 plt.axis('off')
 plt.show()
 ```
+
 ## Generate graphics
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/H1zrOMhHxe.png" alt="image" width="300">

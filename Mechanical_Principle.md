@@ -3,6 +3,7 @@ layout: base
 ---
 
 # Mechanical Principle
+
 ```mermaid
 graph TD;
 Mechanics-->Gear & Non-transmission & transmission
