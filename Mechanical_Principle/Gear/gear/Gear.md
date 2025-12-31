@@ -9,6 +9,7 @@ layout: base
 </div>
 
 ## Gear parameters
+
 * Module : $M$
 * Pitch diameter : $D$
 * Teeth : $T$
@@ -24,11 +25,13 @@ $$p = (\pi D)/T = \pi M$$
 $$p\times DP = \pi$$
 
 ## Gear contact
+
 * Arc of action : $S$
 
 $$S = r\phi$$
 
 $$\text{contact} = \frac{r\phi}{p}>1.4$$
+
 ## Standard involute spur gear geometry and calculation formula
 
 |     Gear parts      |             Formula              |
@@ -57,22 +60,26 @@ $$\text{contact} = \frac{r\phi}{p}>1.4$$
 |   Center distance   |       $cd = M(T_A+T_B)/2$        |
 |   Diametral Pitch   |          $DP = 25.4/M$           |
 
-
-
 ## Bevel gear parts
+
 <div style="text-align: center;">
 <img src="https://roymech.org/images/gear_bevel_3.gif" alt="image" width="600">
 </div>
 
 >https://roymech.org/
+
 ## Transmission characteristics of gear
+
 * Tangential speed is equal
+
 $$v_A = v_B$$
 
 $$S = \frac{D_A\phi_A}{2} = \frac{D_B\phi_B}{2}$$
 
 $$\frac{\phi_B}{\phi_A} = \frac{N_A}{N_B} = \frac{\omega_A}{\omega_B} = \frac{D_A}{D_B} = \frac{R_A}{R_B} = \frac{T_A}{T_B}$$
+
 ## Involute gear
+
 <div style="text-align: center;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Involute_wheel.gif" alt="image" width="400">
 </div>
@@ -90,12 +97,14 @@ Radial Line : **<font color="#75ff33">green</font>**
 Bottom land : **<font color="#efe514">yellow</font>**
 
 ## Gear mesh interference
+
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/HJVOmDjLxx.png" alt="image" width="350">
 </div>
 
 >Gear interference is the act of when the involute portion of one tooth contacts the mating gear tooth, the non-involute section (below the base circle). This causes a mechanical wear condition, hence the term, interference. 
 >https://covalomotion.com/gear-mesh-interference/
+
 ## Gear Involute Interference Formulas
 
 * Pinion number of teeth : $N_P$
@@ -114,15 +123,20 @@ sin^2\phi})$$
 $$N_G = \frac{N_p^2\sin^2\phi-4k^2}{4k-2N_p\sin^2\phi}$$
 
 **Minimum number of teeth**
+
 $$N_P = \frac{2k}{\sin^2\phi}$$
+
 ## Eliminate interference
+
 * Reduce tip circle
 * Reduce tip extension
 * Increase pressure angle
 * Increase center distance
 * Increase Side reduction
 * Use cycloidal gear
+
 ## Cycloidal gear
+
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/r1po6Ps8ll.png" alt="image" width="350">
 </div>
