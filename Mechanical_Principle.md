@@ -4,8 +4,6 @@ graph TD;
 Mechanics-->Gear & Non-transmission & transmission
 ```
 
-:::success
-
 ## Gear
 1. [Gear](Mechanical_Principle/Gear/gear/Gear.md)
 2. [Gear Train](Mechanical_Principle/Gear/Gear_Train/Gear_Train.md)
@@ -13,10 +11,6 @@ Mechanics-->Gear & Non-transmission & transmission
 4. [Involute Polar coordinates](Mechanical_Principle/Gear/Involute_Polar_coordinates/Involute_Polar_coordinates.md)
 5. [Gear geometry](Mechanical_Principle/Gear/Gear_geometry/Gear_geometry.md)
 6. [Special Angle](Mechanical_Principle/Gear/Special_Angle/Special_Angle.md)
-
-:::
-
-::: info
 
 ## transmission
 1. [Sprocket](Mechanical_Principle/transmission/Sprocket/Sprocket.md)
@@ -26,10 +20,6 @@ Mechanics-->Gear & Non-transmission & transmission
 5. [Cam](Mechanical_Principle/transmission/Cam/Cam.md)
 6. [Friction wheel](Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md)
 
-:::
-
-:::dangers
-
 ## Non-transmission
 1. [bearings](Mechanical_Principle/Non-transmission/bearings/bearings.md)
 2. [Keys and Pins](Mechanical_Principle/Non-transmission/Keys_and_Pins/Keys_and_Pins.md)
@@ -38,10 +28,5 @@ Mechanics-->Gear & Non-transmission & transmission
 5. [Periodic motion mechanism](Mechanical_Principle/Non-transmission/Periodic_motion_mechanism/Periodic_motion_mechanism.md)
 6. [brakes](Mechanical_Principle/Non-transmission/brakes/brakes.md)
 
-:::
-
-:::spoiler more
-
+## more
 [Machining](Mechanical_Principle/more/Machining)
-
-:::
