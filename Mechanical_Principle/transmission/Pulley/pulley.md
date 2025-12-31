@@ -3,7 +3,9 @@ layout: base
 ---
 
 # Pulley
+
 ## Lever
+
 <div style="text-align: center;">
 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Lever_%28PSF%29.png" alt="image"width="600">
 </div>
@@ -11,29 +13,43 @@ layout: base
 >https://en.wikipedia.org/wiki/Lever
 
 $$\text{IMA} = \frac WF$$
+
 ### Class 1 lever
+
 $$\text{IMA} = \frac WF \in R$$
+
 ### Class 2 lever
+
 $$\text{IMA} = \frac WF > 1$$
+
 ### Class 3 lever
+
 $$\text{IMA} = \frac WF < 1$$
+
 ## Pulley type
+
 ### Fixed pulley (Class 1 lever)
+
 $\text{IMA}  = 1$
+
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/H1_PEzYwex.png" alt="image"width="150">
 </div>
 
-
 $$\frac WF = \frac{v_F}{v_w} = 1$$
+
 ### Movable pulley (Class 2 lever)
+
 $\text{IMA}  = 2$
+
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/SkPKVfFvll.png" alt="image"width="140">
 </div>
 
 $$\frac WF = \frac{v_F}{v_w} = 2$$
+
 ### Movable pulley (Class 3 lever)
+
 $\text{IMA}  = 1/2$
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/rykhNMKvxx.png" alt="image"width="140">

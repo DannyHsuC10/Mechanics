@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanical_Principle.md",
+                "file": "Mechanical_Principle/transmission/pulley/pulley.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mechanical_Principle"
+              "title": "pulley"
             }
           }
         ]
@@ -185,6 +185,7 @@
   },
   "active": "62622a015a87d5f2",
   "lastOpenFiles": [
+    "Mechanical_Principle.md",
     "Mechanical_Principle/transmission/Pulley/pulley.md",
     "Mechanical_Principle/transmission/pulley/upload_f707410eadc6f874702197e210aed46d.png",
     "Mechanical_Principle/transmission/pulley/upload_ed5b831f702ac119a5f51e48e7f7ddb5.png",
@@ -197,7 +198,6 @@
     "Mechanical_Principle/transmission/pulley/Lever_(PSF).png",
     "Mechanical_Principle/transmission/pulley/570px-Tackles.png",
     "Mechanical_Principle/transmission/pulley",
-    "Mechanical_Principle.md",
     "Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md",
     "Mechanical_Principle/transmission/Cam/upload_099696ad2dddab72bd71a5e00679a734.png",
     "Mechanical_Principle/transmission/Cam/Cam.md",
