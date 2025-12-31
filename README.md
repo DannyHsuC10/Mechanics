@@ -3,4 +3,4 @@
 
 111
 
-[link](Analysis_of_structures.md)
+[link](Mechanical_Principle.md)

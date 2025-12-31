@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "f899ffbe5188363b",
+        "id": "a3f1838c20ab5cee",
         "type": "tabs",
         "children": [
           {
-            "id": "95945da1c24137f5",
+            "id": "62622a015a87d5f2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "experiment.md",
+                "file": "Mechanical_Principle.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "experiment"
+              "title": "Mechanical_Principle"
             }
           }
         ]
@@ -41,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 558.5
   },
   "right": {
     "id": "0c0d364cee72d57b",
@@ -183,20 +183,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "95945da1c24137f5",
+  "active": "51f81e81f9813966",
   "lastOpenFiles": [
+    "Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md",
+    "Mechanical_Principle/transmission/Cam/upload_099696ad2dddab72bd71a5e00679a734.png",
+    "Mechanical_Principle/transmission/Cam/Types-of-Cam.webp",
+    "Mechanical_Principle/transmission/Cam/Cam.md",
+    "Mechanical_Principle/transmission/Cam",
+    "Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md",
+    "Mechanical_Principle/transmission/Thread/Thread.md",
+    "Mechanical_Principle/transmission/Thread/Lead_and_pitch_in_screws.png",
+    "Mechanical_Principle/transmission/Thread/ISO_and_UTS_Thread_Dimensions.svg.png",
+    "Mechanical_Principle/transmission/Thread",
+    "Mechanical_Principle/transmission/Sprocket/Sprocket.md",
+    "Mechanical_Principle/transmission/Sprocket/qada_spr_ans53_en.jpg",
+    "Mechanical_Principle/transmission/Sprocket",
+    "Mechanical_Principle/transmission/Pulley/upload_010b31297ae2522e9e1a52697d5fe21b.png",
+    "Mechanical_Principle/transmission/Pulley/upload_f707410eadc6f874702197e210aed46d.png",
+    "Mechanical_Principle/transmission/Pulley/upload_ed5b831f702ac119a5f51e48e7f7ddb5.png",
+    "Mechanical_Principle/transmission/Pulley/upload_d3f42c3402227cee7e0c7a21f6bc035e.png",
+    "Mechanical_Principle/transmission/Pulley/upload_ab397451910615a52177219ec34d7020.png",
+    "Mechanical_Principle/transmission/Pulley/pulley.md",
+    "Mechanical_Principle/transmission/Pulley",
+    "Mechanical_Principle/transmission/Friction_wheel/Friction wheel.md",
+    "Mechanical_Principle/transmission/Friction_wheel",
+    "Mechanical_Principle/transmission/Friction wheel/Friction wheel.md",
+    "Mechanical_Principle/transmission/Friction wheel",
+    "Mechanical_Principle/transmission/Cam_and_follower/Cam.md",
+    "Mechanical_Principle/transmission/Cam_and_follower",
+    "Mechanical_Principle/transmission/Belt_pulley/Belt pulley.md",
+    "Mechanical_Principle/transmission/Belt_pulley",
+    "Mechanical_Principle/Non-transmission/Spring/Spring.md",
+    "Mechanical_Principle.md",
+    "Mechanical_Principle/Non-transmission/Keys_and_Pins/Keys_and_Pins.md",
+    "Mechanical_Principle/Non-transmission/Periodic_motion_mechanism/Periodic_motion_mechanism.md",
+    "Mechanical_Principle/Non-transmission/Spring",
+    "Mechanical_Principle/Non-transmission/Periodic_motion_mechanism/Periodic motion mechanism.md",
+    "Mechanical_Principle/Non-transmission/Periodic_motion_mechanism",
+    "Mechanical_Principle/Gear/Special_Angle/Special_Angle.md",
+    "Mechanical_Principle/Gear/Involute_Polar_coordinates/Involute_Polar_coordinates.md",
+    "Mechanical_Principle/Gear/Involute_equation/Involute_equation.md",
+    "Mechanical_Principle/Gear/Gear_geometry/Gear_geometry.md",
+    "Mechanical_Principle/Gear/Gear_Train/Gear_Train.md",
     "README.md",
-    "experiment.md",
-    "md_updater.py",
-    "Analysis_of_structures.md",
-    "matlab_sim/wave_superposition.m",
-    "matlab_sim/Thermodynamic_Processes.m",
-    "matlab_sim/SHM_energy.m",
-    "matlab_sim/rocket.m",
-    "matlab_sim/relative_motion.m",
-    "matlab_sim/Projectile.m",
-    "matlab_sim/Oscillation.m",
-    "matlab_sim/linear motion.m",
-    "matlab_sim/fiction.m"
+    "Mechanical_Principle/Gear/gear/Gear.md",
+    "Mechanical_Principle/Gear/Mechanical_Principle_gear_gear/Gear_Train.md",
+    "Mechanical_Principle/Non-transmission/Linkage/linkage.md",
+    "Mechanical_Principle/Non-transmission/Keys_and_Pins/Keys and Pins.md",
+    "Mechanical_Principle/Non-transmission/Brakes/brakes.md"
   ]
 }
