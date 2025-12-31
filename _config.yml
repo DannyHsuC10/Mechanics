@@ -1,1 +1,6 @@
+<<<<<<< HEAD
 theme: jekyll-theme-cayman
+=======
+remote_theme: b2a3e8/jekyll-theme-console
+math: true
+>>>>>>> 894754e79c9840658174885af28b9845a0a09e8f
