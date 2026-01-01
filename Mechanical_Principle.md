@@ -4,13 +4,6 @@ layout: base
 
 # Mechanical Principle
 
-```mermaid
-graph TD;
-Mechanics-->Gear
-Mechanics-->Non-transmission
-Mechanics-->transmission
-```
-
 ## Gear
 
 1. [Gear](Mechanical_Principle/Gear/gear/Gear.md)

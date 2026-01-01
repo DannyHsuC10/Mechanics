@@ -3,12 +3,19 @@ layout: base
 ---
 
 # Sprocket
+
 ## contact angle
->![contact angle](https://tt-net.tsubakimoto.co.jp/tecs/qada/spr/img/qada_spr_ans53_en.jpg)
+
+<div style="text-align: center;">
+<img src="qada_spr_ans53_en.jpg" alt="image" width="300">
+</div>
+
 > https://tt-net.tsubakimoto.co.jp/tecs/engd/cdc/engd_cdc_tri_sue.as
 
 $$\theta_A,\theta_B>120^o$$
+
 ## Chain length
+
 $$D = \frac P{\sin\theta}$$
 
 $$D = \frac{PT}\pi$$

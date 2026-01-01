@@ -21,7 +21,7 @@ $$C_{rr} = \sqrt{Z/d}$$
 ## Axle friection (journal bearings)
 
 <div style="text-align: center;">
-<img src="upload_3976adf43d01150918dc44e89c53db21.png" alt="image"width="400">
+<img src="upload_3976adf43d01150918dc44e89c53db21.png" alt="image" width="400">
 </div>
 
 $$\sum F_y = 0$$
@@ -37,7 +37,7 @@ $$M = Nd$$
 ## Disk friction (thrust bearing)
 
 <div style="text-align: center;">
-<img src="upload_6e99615ad7835ef52eba842d68a54a33.png" alt="image"width="400">
+<img src="upload_6e99615ad7835ef52eba842d68a54a33.png" alt="image" width="400">
 </div>
 
 $$\Delta N = (F/A)\Delta A$$

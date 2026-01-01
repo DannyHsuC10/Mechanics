@@ -6,7 +6,7 @@ layout: base
 
 <div style="text-align: center;">
 <img src="upload_c579a4bf8d82b4447efff50502ce8bf3.jpg
-" alt="image"width="500
+" alt="image" width="500
 ">
 </div>
 

@@ -8,7 +8,7 @@ layout: base
 
 <div style="text-align: center;">
 <img src="upload_18e74879215d4eecc9987409180abf6f.png
-" alt="image"width="300">
+" alt="image" width="300">
 </div>
 
 ## Speed Ratio
@@ -17,7 +17,7 @@ layout: base
 
 <div style="text-align: center;">
 <img src="large.png
-" alt="image"width="300">
+" alt="image" width="300">
 </div>
 
 >https://grabcad.com/library/simple-gear-train-3
@@ -39,7 +39,7 @@ $$\frac{T_A}{T_B} = \frac{\tau_A}{\tau_B} = \frac{N_B}{N_A}$$
 **Compound Gear Train**
 
 <div style="text-align: center;">
-<img src="7-21-9-30.png" alt="image"width="300">
+<img src="7-21-9-30.png" alt="image" width="300">
 </div>
 
 >https://woodgears.ca/gear/ratio.html
@@ -61,7 +61,7 @@ $$\frac{T_A}{T_B}\frac{T_C}{T_D} = \frac{N_B}{N_A}\frac{N_D}{N_C} = \frac{N_D}{N
 **Epicyclic Gear Train**
 
 <div style="text-align: center;">
-<img src="planetary.gif" alt="image"width="300">
+<img src="planetary.gif" alt="image" width="300">
 </div>
 
 >https://ww2.mathworks.cn/help/sdl/ref/planetarygear.html
@@ -70,7 +70,7 @@ $$\frac{N_A-N_m}{N_B-N_m} = \frac{T_B}{T_A}$$
 
 **Compound Epicyclic Gear Train**
 <div style="text-align: center;">
-<img src="compound_planetary.gif" alt="image"width="300">
+<img src="compound_planetary.gif" alt="image" width="300">
 </div>
 
 >https://ww2.mathworks.cn/help/sdl/ref/compoundplanetarygear.html

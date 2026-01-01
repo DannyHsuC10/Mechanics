@@ -9,13 +9,13 @@ layout: base
 ### Open Belt Drive
 
 <div style="text-align: center;">
-<img src="OPEN-BELT-DRIVE.png" alt="image"width="400">
+<img src="OPEN-BELT-DRIVE.png" alt="image" width="400">
 </div>
 
 ### Cross Belt Drive
 
 <div style="text-align: center;">
-<img src="CROSS-BELT-DRIVE-LINE-DIAGRAM.jpg" alt="image"width="400">
+<img src="CROSS-BELT-DRIVE-LINE-DIAGRAM.jpg" alt="image" width="400">
 </div>
 
 > https://themechanicalengineering.com/open-belt-drive-and-cross-belt-drive/
@@ -23,7 +23,7 @@ layout: base
 ## Belt length
 
 <div style="text-align: center;">
-<img src="TwoPulleyBeltLength-illustration.png" alt="image"width="400">
+<img src="TwoPulleyBeltLength-illustration.png" alt="image" width="400">
 </div>
 
 >https://www.vcalc.com/equation/?uuid=788be105-ed67-11e3-b7aa-bc764e2038f2
@@ -117,7 +117,7 @@ $$\text{PS} = \frac P{735} = \frac{Fv}{735} = (F_1-F_2)\frac{\pi DN}{735\times60
 ## Tensions ratio
 
 <div style="text-align: center;">
-<img src="upload_a07b9ebd460a378e3f16895a7380d7e4.png" alt="image"width="400">
+<img src="upload_a07b9ebd460a378e3f16895a7380d7e4.png" alt="image" width="400">
 </div>
 
 $$\frac{F_1}{F_2} = e^{\mu\theta}$$

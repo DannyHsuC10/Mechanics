@@ -7,7 +7,7 @@ layout: base
 ## Block brake
 
 <div style="text-align: center;">
-<img src="upload_3a66df00ffed3b7331d046d77b158520.png" alt="image"width="300">
+<img src="upload_3a66df00ffed3b7331d046d77b158520.png" alt="image" width="300">
 </div>
 
 $$\tau = fr = \mu Nr$$
@@ -25,7 +25,7 @@ $$F = \frac{\tau(a-\mu b)}{\mu rl}$$
 ## Band brake
 
 <div style="text-align: center;">
-<img src="upload_4d6e704eb00e99fee8d7425723f7207c.png" alt="image"width="300">
+<img src="upload_4d6e704eb00e99fee8d7425723f7207c.png" alt="image" width="300">
 </div>
 
 $$\frac{F_1}{F_2} = e^{\mu\theta}$$
@@ -48,7 +48,7 @@ $$F = \frac{Tae^{\mu\theta}}{rl(e^{\mu\theta}-1)}$$
 ## Disc brake
 
 <div style="text-align: center;">
-<img src="upload_a3958b838da480d7f147ef1ba74f1334.png" alt="image"width="300">
+<img src="upload_a3958b838da480d7f147ef1ba74f1334.png" alt="image" width="300">
 </div>
 
 $$D_m = \frac{D_o+D_i}{2}$$

@@ -7,7 +7,7 @@ layout: base
 ## Four-bar linkage
 
 <div style="text-align: center;">
-<img src="Linkage_four_bar_fixed.svg.png" alt="image"width="200">
+<img src="Linkage_four_bar_fixed.svg.png" alt="image" width="200">
 </div>
 
 ## Quick return mechanism

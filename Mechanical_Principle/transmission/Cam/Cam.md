@@ -5,11 +5,11 @@ layout: base
 # Cam and follower
 
 <div style="text-align: center;">
-<img src="Cam-And-Follower-Terminology.webp" alt="image"width="300">
+<img src="Cam-And-Follower-Terminology.webp" alt="image" width="300">
 </div>
 
 <div style="text-align: center;">
-<img src="Types-of-Cam.webp" alt="image"width="300">
+<img src="Types-of-Cam.webp" alt="image" width="300">
 </div>
 
 >https://www.theengineeringchoice.com/
@@ -39,5 +39,5 @@ $$r(\theta)= \sqrt{r^2+(r\tan\theta33)^2}-r$$
 $$v(\theta) = \frac{\sqrt{r^2(r\tan\theta)^2}-r}{\omega}$$
 
 <div style="text-align: center;">
-<img src="upload_099696ad2dddab72bd71a5e00679a734.png" alt="image"width="300">
+<img src="upload_099696ad2dddab72bd71a5e00679a734.png" alt="image" width="300">
 </div>
