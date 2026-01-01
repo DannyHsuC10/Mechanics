@@ -41,8 +41,8 @@ layout: base
 
 ## Modern
 
-1. [Relativity](https://hackmd.io/StkGoIUtSQS1bOzlObTqrw)
-1. [Fundamental interaction & Nuclear physics](https://hackmd.io/KVthDWjnSKS6slHlBQSR-w)
+1. [Relativity](Mechanics_Physics\Modern\Relativity\Relativity.md)
+1. [Fundamental interaction & Nuclear physics](Mechanics_Physics\Modern\Fundamental_interaction_and_Nuclear_physics\Fundamental_interaction_and_Nuclear_physics.md)
 
 ****
 
@@ -69,6 +69,6 @@ layout: base
 
 ## Special
 
-1. [spring](/bkcNhrbuRreR-OI7OkTOJQ)
-1. [Maxwell-Boltzmann distribution](/BL9CLkpUQY-TAHmx-w0Z3g)
-1. [Energy & Coefficient of restitution](/2hz1NLTtQwSdnrbFQj2iBA)
+1. [spring](Mechanics_Physics\Special\spring.md)
+1. [Maxwell-Boltzmann distribution](Mechanics_Physics\Special\Maxwell-Boltzmann_distribution.md)
+1. [Energy & Coefficient of restitution](Mechanics_Physics\Special\Energy_and_Coefficient_of_restitution.md)

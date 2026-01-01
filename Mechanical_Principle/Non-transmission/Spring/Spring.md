@@ -47,4 +47,4 @@ $$k_\text{total} = k_1+k_2+k_3+...k_n = \sum k_i$$
 
 ## Something special?
 
-[Click it](https://hackmd.io/bkcNhrbuRreR-OI7OkTOJQ)
+[Click it](../../../Mechanics_Physics/Special/spring.md)
