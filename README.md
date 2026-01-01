@@ -1,6 +1,5 @@
 # HOME
+
 ## 123
 
-111
-
-[link](Mechanical_Principle.md)
+[MechanicalPrinciple](Mechanical_Principle.md)

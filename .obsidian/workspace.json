@@ -185,11 +185,16 @@
   },
   "active": "62622a015a87d5f2",
   "lastOpenFiles": [
+    "Mechanical_Principle/transmission/Cam/Cam.md",
+    "Mechanical_Principle.md",
+    "Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md",
+    "Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md",
+    "Mechanical_Principle/Gear/Gear_Train/Gear_Train.md",
+    "Mechanical_Principle/Gear/gear/Gear.md",
     "Mechanical_Principle/transmission/Cam/Cam-And-Follower-Terminology.webp",
     "python/experiment.md",
     "Mechanical_Principle/Non-transmission/Brakes/brakes.md",
     "Mechanical_Principle/Non-transmission/Brakes/upload_3a66df00ffed3b7331d046d77b158520.png",
-    "Mechanical_Principle.md",
     "Mechanical_Principle/transmission/pulley/pulley.md",
     "Mechanical_Principle/transmission/Pulley/upload_f707410eadc6f874702197e210aed46d.png",
     "Mechanical_Principle/transmission/Pulley/upload_ed5b831f702ac119a5f51e48e7f7ddb5.png",
@@ -200,13 +205,9 @@
     "Mechanical_Principle/transmission/Pulley/pulley.md",
     "Mechanical_Principle/transmission/Pulley/upload_010b31297ae2522e9e1a52697d5fe21b.png",
     "Mechanical_Principle/transmission/Pulley/Lever_(PSF).png",
-    "Mechanical_Principle/transmission/Pulley/570px-Tackles.png",
     "Mechanical_Principle/transmission/Pulley",
     "Mechanical_Principle/transmission/pulley",
-    "Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md",
-    "Mechanical_Principle/transmission/Cam/Cam.md",
     "Mechanical_Principle/transmission/Cam",
-    "Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md",
     "Mechanical_Principle/transmission/Thread/Thread.md",
     "Mechanical_Principle/transmission/Thread",
     "Mechanical_Principle/transmission/Sprocket/Sprocket.md",
@@ -228,8 +229,6 @@
     "Mechanical_Principle/Gear/Involute_Polar_coordinates/Involute_Polar_coordinates.md",
     "Mechanical_Principle/Gear/Involute_equation/Involute_equation.md",
     "Mechanical_Principle/Gear/Gear_geometry/Gear_geometry.md",
-    "Mechanical_Principle/Gear/Gear_Train/Gear_Train.md",
-    "README.md",
-    "Mechanical_Principle/Gear/gear/Gear.md"
+    "README.md"
   ]
 }
