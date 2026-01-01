@@ -46,30 +46,28 @@ layout: base
 
 ****
 
-## more
+## Math tools
 
-**Math tools**
+1. [Vector](Mechanics_Physics\Math_tools\Vector.md)
+1. [Mathematical formula](Mechanics_Physics\Math_tools\Mathematical_formula.md)
+1. [Physics notations](Mechanics_Physics\Math_tools\physics_notations.md)
+1. [Constants](Mechanics_Physics\Math_tools\Constant.md)
+1. [Greek alphabet](Mechanics_Physics\Math_tools\Greek_alphabet.md)
 
-1. [Vector](https://hackmd.io/7aE62HNwT_a063nY-lr9Hg)
-1. [Mathematical formula](https://hackmd.io/4ZY1LRZfR-2JASASMAHrNg)
-1. [Physics notations](https://hackmd.io/tH-DXQs2QHWSvg5PEJEZxw)
-1. [Constants](https://hackmd.io/PQdt-_geR8-tkNDRFdBDzQ)
-1. [Greek alphabet](https://hackmd.io/rsVJbpc5QFWEXk62S-alfw)
+## General Physics
 
-**General Physics**
+1. [Force & motion](Mechanics_Physics\General_Physics\force_and_motion\force_and_motion.md)
+1. [Heat](Mechanics_Physics\General_Physics\heat\heat.md)
+1. [Wave](Mechanics_Physics\General_Physics\wave\wave.md)
+1. [Light](Mechanics_Physics\General_Physics\Light\Light.md)
+1. [Electricity](Mechanics_Physics\General_Physics\Electricity\Electricity.md)
 
-1. [Force & motion ](https://hackmd.io/tD5lA619TC2YtpWj9n1ZHg)
-1. [Heat](https://hackmd.io/GfG8OeQoSB-ZPoEnXCLlcQ)
-1. [Wave](https://hackmd.io/aUd9FnYFRhWwYv2xGNFvxw)
-1. [Light](https://hackmd.io/d57WmBiwS4Gsg67gYKYUMA)
-1. [Electricity](https://hackmd.io/Q90jyjiOQOyVa_h2TqsaBg)
+## formulas
 
-**Important formula**
+1. [Mechanics](Mechanics_Physics\formulas\Mechanics\Mechanics.md)
+1. [Energy](Mechanics_Physics\formulas\Energy\Energy.md)
 
-1. [Mechanics](https://hackmd.io/spKQ07Q-Td25RRghSWpx9g)
-1. [Energy](https://hackmd.io/DJLcQOFERYCrmlwpzFJfvQ)
-
-**Special**
+## Special
 
 1. [spring](/bkcNhrbuRreR-OI7OkTOJQ)
 1. [Maxwell-Boltzmann distribution](/BL9CLkpUQY-TAHmx-w0Z3g)
