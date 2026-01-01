@@ -6,23 +6,24 @@ $$\vec{r} = x\vec{i}+y\vec{j}+z\vec{k}$$
 ## Moving distance
 $$r = \sqrt{x^2 + y^2 + z^2}$$
 
-$$Δ\vec{r} = \vec{r_f}-\vec{r_i}$$ 
+$$Δ\vec{r} = \vec{r_f}-\vec{r_i}$$
 
 <div style="text-align: center;">
 <img src="https://hackmd.io/_uploads/BkJH61xExe.png" alt="image"width="300" height="250">
 </div>
 
-:::success
 $$Δ\vec{r}= (x_f-x_i)\vec{i}+(y_f-y_i)\vec{j}+(z_f-z_i)\vec{k}$$
-:::
+
 ## Velocity
+
 $$v = \frac{dr}{dt}$$
 
 $$\vec{v}= v_x\vec{i}+v_y\vec{j}+v_z\vec{k}$$
-:::success
+
 $$vx = \frac{dx}{dt}\qquad vy = \frac{dy}{dt}\qquad vz = \frac{dz}{dt}$$
-:::
+
 ## Acceleration
+
 $$\vec{a_{avg}} = \frac{\vec{v_f}-\vec{v_i}}{t_f-t_i} = \frac{Δ\vec{v}}{Δt}$$
 
 $$\vec{a}= a_x\vec{i}+a_y\vec{j}+a_z\vec{k}$$

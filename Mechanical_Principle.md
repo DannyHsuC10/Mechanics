@@ -31,6 +31,8 @@ layout: base
 5. [Periodic motion mechanism](Mechanical_Principle/Non-transmission/Periodic_motion_mechanism/Periodic_motion_mechanism.md)
 6. [brakes](Mechanical_Principle/Non-transmission/Brakes/brakes.md)
 
+***
+
 ## more
 
 [Machining](Mechanical_Principle/more/Machining)
