@@ -1,21 +1,33 @@
+---
+layout: base
+---
+
 # Rotation
+
 $$\theta = \frac{S}{r}$$
+
 * unit
 $1rev = 360^\circ = (2\pi) rad$
 $1rad = 57.3^\circ = (0.159)rev$
+
 ## Angle
+
 $$\Delta \theta = \theta_f-\theta_i$$
+
 ## Angular velocity
+
 $$𝜔_{avg} = \frac{\Delta\theta}{\Delta t}$$
-:::success
+
 $$𝜔 = \lim_{\Delta t\to0}\frac{\Delta\theta}{\Delta t} = \frac{d\theta}{dt}$$
-:::
+
 ## Angular acceleration
+
 $$𝛼_{avg} = \frac{\Delta\theta}{\Delta t}$$
-:::success
+
 $$𝛼 = \lim_{\Delta t\to0}\frac{\Delta𝜔}{\Delta t} = \frac{d𝜔}{dt} = \frac{d^2\theta}{dt^2}$$
-:::
+
 ## rotational energy
+
 $$K = \frac{1}{2}mv^2$$
 
 $$K = \frac{1}{2}\sum mv^2$$
@@ -25,13 +37,13 @@ $$v = r𝜔$$
 $$K = \frac{1}{2}(\sum m_ir_i^2)𝜔^2$$
 
 $$I = \sum m_ir_i^2$$
-:::success
+
 $$K = \frac{1}{2}I𝜔^2$$
-:::
+
 ## Moment of inertia
-:::success
+
 $$I = \sum m_ir_i^2$$
-:::
+
 $$F = ma$$
 
 $$𝜏 = I𝛼$$
@@ -41,8 +53,13 @@ $$Fr = I\frac{a}{r}$$
 $$Fr = (mr^2)\frac{a}{r}$$
 
 * moment of inertia of different shapes
-> ![moment of inertia of different shapes](https://hackmd.io/_uploads/HkP6LQ8mke.png)
+
+<div style="text-align: center;">
+<img src="upload_2a7aeb77a9beee7d8813a4e98d5afe8e.png" alt="image" width="800">
+</div>
+
 >by University of Tennessee Knoxville
+
 ## Parallel Axis Theorem
 
 $$K_r = \frac{1}{2}I𝜔^2$$
@@ -58,27 +75,30 @@ $$K_r^{\prime} = \frac{1}{2}(I_{com}𝜔^2+m(𝜔r)^2)$$
 $$K_r^{\prime} = \frac{1}{2}𝜔^2(I_{com}+mr^2)$$
 
 $$K_r^{\prime} = \frac{1}{2}𝜔^2I^{\prime}$$
-:::success
+
 $$I^{\prime} = I_{com}+mr^2$$
-:::
+
 ## Torque
-![image](https://hackmd.io/_uploads/S1u5nexExx.png)
+
+<div style="text-align: center;">
+<img src="upload_5a3bb78d843a257f6fab02da4956cf53.png" alt="image" width="300">
+</div>
 
 * $𝜏 = Fr$
 $$𝜏 = Frsin(\theta)$$
-:::success
+
 $$\vec{𝜏} = \vec{r}\times \vec{F} = -\vec{F}\times \vec{r}$$
-:::
-if $\theta = \frac{\pi}{2}$ , then $𝜏 = Fr$ 
+
+if $\theta = \frac{\pi}{2}$ , then $𝜏 = Fr$
 
 * $𝜏 = I𝛼$
 
 $$F_𝜏 = ma_𝜏$$
 
 $$F_𝜏r = ma_𝜏r = m𝛼r^2$$
-:::success
+
 $$𝜏 = I𝛼$$
-:::
+
 * $𝜏 = \frac{dL}{dt}$
 
 $$p = mv$$
@@ -86,19 +106,21 @@ $$p = mv$$
 $$\frac{dp}{dt} = F$$
 
 $$\frac{dpr}{dt} = Fr$$
-:::success
+
 $$\frac{dL}{dt} = 𝜏$$
-:::
+
 ## Rotation work
+
 $$\Delta K = K_f-K_i$$
 
 $$\Delta K = W = \frac{1}{2}I𝜔_f^2-\frac{1}{2}I𝜔_i^2$$
-:::success
+
 $$W = Fs = F(r\theta) = 𝜏\theta$$
 
 $$P = FV = F(𝜔r) = 𝜏𝜔$$
-:::
-## Formula comparison 
+
+## Formula comparison
+
 * Dynamics
 
 |         Linear          |            rotation            |
@@ -125,6 +147,7 @@ if $a$ and $𝛼$ is a constant
 |   $Δx = \frac{1}{2}(v_i+v)t$   |   $Δ𝜃 = \frac{1}{2}(𝜔_i+𝜔)t$   |
 
 ## Circular motion
+
 $$S = r𝜃$$
 
 $$v = \frac{ds}{dt} = \frac{d\theta r}{dt} = r𝜔$$

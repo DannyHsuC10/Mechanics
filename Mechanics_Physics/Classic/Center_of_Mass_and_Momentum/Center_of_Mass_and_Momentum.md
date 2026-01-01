@@ -1,5 +1,11 @@
+---
+layout: base
+---
+
 # Center of Mass & Momentum
+
 ## Center of mass
+
 $$r_{com} =\sum\frac{m_ir_i}{m_i} $$
 
 $$ = \frac{(m_1r_1+m_2r_2+...m_nr_n)}{(m_1+m_2+...m_n)}$$
@@ -13,13 +19,15 @@ $$x_{com} = \sum\frac{m_ix_i}{m_i} $$
 $$y_{com} = \sum\frac{m_iy_i}{m_i} $$
 
 $$z_{com} = \sum\frac{m_iz_i}{m_i} $$
-:::success
+
 $$XYZ_{moc}(x,y,z) = \frac{1}{M}\sum{(m_ix_i,m_iy_i,m_iz_i)}$$
-:::
+
 ## Density
+
 $$D = \frac{m}{V}$$
 
 ## Momentum and Impulse
+
 $$\vec{F_{net}} = m\vec{a_{com}}$$
 * Momentum
 $$\vec{p} = m\vec{v}$$
@@ -78,15 +86,16 @@ $$m_1v_{1i}^2+m_2v_{2i}^2 = m_1v_{1f}^2+m_2v_{2f}^2$$
 $$m_1(v_{1i}^2-v_{1f}^2) = m_2(v_{2f}^2-v_{2i}^2)$$
 
 $$(1)\Longrightarrow m_1(v_{1i}-v_{1f})(v_{1i}+v_{1f}) = m_2(v_{2i}-v_{2f})(v_{2i}+v_{2f})$$
-:::success
+
 $$v_{1i}+v_{1f} = v_{2i}+v_{2f}\quad-(4)$$
 
 linear equation in two variables
 $$(4)\Longrightarrow(2),(3)$$
-:::
+
 ## 2D collisionc (Elastic)
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/S16OoxgNxl.png" alt="image"width="400">
+<img src="upload_835aefbec8a0fc59da90f802a2f66369.png" alt="image">
 </div>
 
 $$p_{1i}+p_{2i} = p_{1f}+p_{2f}$$
@@ -101,19 +110,20 @@ $$p_{xi} = p_{xf}$$
 $$p_{1xi}+p_{2xi} = p_{1xf}+p_{2xf}$$
 
 $$m_1v_{1xi}+m_2v_{2xi} = m_1v_{1xf}+m_2v_{2xf}$$
-:::success
+
 $$m_1(v_{1xi}-v_{1xf}) = m_2(v_{2xi}-v_{2xf})$$
-:::
+
 * Y direction
 $$p_{yi} = p_{yf}$$
 
 $$p_{1yi}+p_{2yi} = p_{1yf}+p_{2yf}$$
 
 $$m_1v_{1yi}+m_2v_{2yi} = m_1v_{1yf}+m_2v_{2yf}$$
-:::success
+
 $$m_1(v_{1yi}-v_{1yf}) = m_2(v_{2yi}-v_{2yf})$$
-:::
+
 * if $v_2i = 0$ , $m_1 = m_2$ and $v_{1yi} = 0$
+
 $$v_{1yf} = -v_{2yf}\quad-(1)$$
 
 $$v_{1xi}-v_{1xf} = -v_{2xf}\quad-(2)$$
@@ -131,27 +141,28 @@ $$v_{1xi}^2-v_{1yf}^2-v_{1xf}^2 =v_{1yf}^2+(v_{1xi}-v_{1xf})^2$$
 $$v_{1xi}^2-v_{1yf}^2-v_{1xf}^2 =v_{1yf}^2+v_{1xi}^2+v_{1xf}^2-2v_{1xf}v_{1xi}$$
 
 $$0=2(v_{1yf}^2+v_{1xf}^2-v_{1xf}v_{1xi})$$
-:::success
+
 $$v_{1xf}v_{1xi} = v_{1yf}^2+v_{1xf}^2 = v_{1f}^2$$
-:::
+
 ## Variable mass system
 * rocket formula 1
 
 $v_e =$ Exhaust gas speed
 $R =m/t$ fuel loss rate (loss mass)
 $$F = ma$$
-:::success
+
 $$Rv_e = ma$$
-:::
+
 * rocket formula 2
 $$\Delta v = v_eln\frac{m_i}{m_f}$$
 
 $$P = mv = v_edm$$
 
 $$\Delta v = \int_{m_i}^{m_f}\frac{v_e}{-m}dm = v_e\int_{m_i}^{m_f}\frac{-1}{m}dm $$
-:::success
-$$= v_e(ln(m_i)-ln(m_f)) = v_eln\frac{m_i}{m_f}$$
-:::
-* graph (speed vs time)
-![rocket](https://hackmd.io/_uploads/ByuVVFXX1g.png)
 
+$$= v_e(ln(m_i)-ln(m_f)) = v_eln\frac{m_i}{m_f}$$
+
+* graph (speed vs time)
+<div style="text-align: center;">
+<img src="upload_c174b8fb4e3320d8c3bd276c204aac11.png" alt="image">
+</div>

@@ -1,19 +1,26 @@
+---
+layout: base
+---
+
 # Kinetic energy & work & potential energy
+
 ## Kinetic energy conservation
+
 unit : $1 jonle = 1 J =kg^2⋅m^2/s^2$
 $$K = \frac{1}{2}mv^2$$
 
 $$ΔK = K_f-K_i$$
 
 $$K_f = K_i+W$$
-:::success
+
 $$F_xΔx = \frac{1}{2}mv^2-\frac{1}{2}mv_i^2$$
-:::
+
 * Useful relation : $v^2 = v_i+2ax$
 
 ## Work
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/HJG6OxgEgl.png" alt="image"width="400" height="450">
+<img src="upload_26fa58c97dfab7012b45360a14b2b0bd.png" alt="image" width="400">
 </div>
 
 $$W = F_xΔx$$
@@ -23,18 +30,22 @@ $$W = \vec{F}⋅\vec{x}$$
 $$W = Fcos𝜃⋅Δx$$
 
 $$W = ΔE$$
+
 ## Gravity work
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/Syq_FeeExl.png" alt="image"width="250">
+<img src="upload_ba2fff633de126d479c23b6ea7d2281a.png" alt="image" width="250">
 </div>
 
 $$W_g = mg⋅cos𝜃⋅Δx$$
+
 * rise
 $$W_g = mg⋅cos(\pi)⋅Δx = -mg⋅Δx$$
 
 $$W_a+W_g = 0$$
 
 $$W_a = W_g$$
+
 * fall
 $$W_g = mg⋅cos(0)⋅Δx = -mg⋅Δx$$
 
@@ -43,8 +54,9 @@ $$W_a-W_g = 0$$
 $$W_a = -W_g$$
 
 ## Elastic work
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/ByezFgxVll.png" alt="image"width="250">
+<img src="upload_ac23b50a0495e9ae44dc573cd9d3d8ba.png" alt="image" width="250">
 </div>
 
 $$F = kx$$
@@ -59,14 +71,15 @@ $$W_s = -k\int_{x_i}^{x_f}x, dx$$
 
 $$W_s = -\frac{1}{2}kx^2 \Big|_{x_i}^{x_f} = -\frac{1}{2}kx_f^2 + \frac{1}{2}kx_i^2$$
 If $x_i = 0$
-:::success
+
 $$W_s = U_s = -\frac{1}{2}kx^2$$
 
 $$ΔK = K_f-K_i = U_s$$
-:::
+
 ## Variables force
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/Bk2PKxg4le.png" alt="image"width="400">
+<img src="upload_1938f1f986f980b72e0de7a84c4de4cf.png" alt="image" width="400">
 </div>
 $$ΔW = ΔFx$$
 
@@ -89,11 +102,13 @@ $$\frac{dv}{dt} = \frac{dV}{dx}\frac{dx}{dt}$$
 $$ma⋅dx = m\frac{dv}{dt}⋅dx$$
 
 $$ma⋅dx = m\frac{dv}{dx}\frac{dx}{dt}⋅dx = mVdV$$
-:::success
+
 $$W = \int_{v_i}^{v_f}mv, dv = \frac{1}{2}m(v_f^2-v_i^2)$$
-:::
+
 (y,z) same concept repeat
+
 ## Power
+
 unit:
 $1watt = 1W = 1J/s = 0.738ft⋅1b/s$
 
@@ -105,9 +120,13 @@ $$P = \frac{dW}{dt} = Fdx/dt$$
 
 $$P = Fv$$
 ## Conservation force
-![image](https://hackmd.io/_uploads/SynXsxxVle.png)
+
+<div style="text-align: center;">
+<img src="upload_19f8ce980e000e5bddeff3eef059f7f4.png" alt="image" width="400">
+</div>
 
 $$ΔU = -W$$
+
 * Premise of energy conservation
 
 1. System with multiple object
@@ -117,29 +136,34 @@ $$ΔU = -W$$
 5. $Wi = Wf$ established and Other energy is potential energy
 
 if the condition always holds the force is conservation force
+
 * $W_{net} = 0$
 * close path
+
 ## Gravitational potential energy
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/BJmsAxeNxe.png" alt="image"width="200">
+<img src="upload_3d29cbc72a3dafdc730fde534cc65b71.png" alt="image" width="200">
 </div>
 
 $$ΔU = \int_{y_i}^{y_f}-mg, dy = mgy\Big|_{y_i}^{y_f}$$
 
 $$ΔU = mg(y_f-y_i) = mgΔy$$
 if $y_i = 0$
-:::success
+
 $$U = mgy$$
-:::
+
 ## elastic potential energy
+
 $$ΔU = \int_{x_i}^{x_f}-kx, dx = -\frac{1}{2}kx^2\Big|_{y_i}^{y_f}$$
 
 $$ΔU = -\frac{1}{2}k(x_f^2-x_i^2) = Δx$$
 if $x_i = 0$
-:::success
+
 $$U = -\frac{1}{2}kx^2$$
-:::
+
 ## Law of conservation of mechanical energy
+
 $$E = K+U$$
 
 $$ΔK = W_K$$
@@ -153,7 +177,10 @@ $$K_f-K_i = U_f-U_i$$
 $$K_i+U_i = K_f+U_f$$
 
 ## Potential energy curve
-![energy](https://hackmd.io/_uploads/rkoF4Rufye.png)
+
+<div style="text-align: center;">
+<img src="upload_1dfd2eb2c1859623e32722de493229df.png" alt="image" width="450">
+</div>
 
 $$ΔU(x) = F(x)Δx$$
 
@@ -186,7 +213,9 @@ $$Fx = E_{mec}+f_kx$$
 $$E_{th} = f_kx$$
 
 $$Fx = E_{mec}+E_{th}$$
+
 ## Law of conservation of energy
+
 $$W = ΔE_{int}+ΔE_{mec}+ΔE_{th}$$
 
 $$0 = ΔE_{int}+ΔE_{mec}+ΔE_{th}$$
@@ -194,6 +223,5 @@ $$0 = ΔE_{int}+ΔE_{mec}+ΔE_{th}$$
 $$ΔE_{mec2} = ΔE_{int}+ΔE_{mec1}+ΔE_{th}$$
 
 $$P_{avg} = ΔE/Δt$$
-:::success
+
 $$P = dE/dt$$
-:::

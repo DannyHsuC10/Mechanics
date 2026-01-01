@@ -1,5 +1,11 @@
+---
+layout: base
+---
+
 # Force & motion
+
 ## acceleration of gravity
+
 The universal gravitational constant is not the acceleration due to gravity
 $G = 6.6743⋅10^{-11}⋅(Nm^2/kg^2)$
 $\not= g = \frac{GM}{R^2} = 9.8 ⋅(m/s^2)$
@@ -16,7 +22,7 @@ $$a = 0$$
 $$w = mg = F_g = F_N$$
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/ByJJmleVgg.png" alt="image"width="300">
+<img src="upload_b3ccecc6380c8353f7493352ddd0730a.png" alt="image" width="300">
 </div>
 
 * When $\vec{F_{net}} \not= 0$
@@ -28,9 +34,13 @@ $$F_{net} = F_N-F_g+F_x+F_y+F_z$$
 $$a = m(a_x\vec{i}+a_y\vec{j}+a_z\vec{k})$$
 
 ## Tension
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/Hke_QllExg.png" alt="image"width="200" height="175">
-<img src="https://hackmd.io/_uploads/rybDQllEge.png" alt="image"width="300" height="175">
+<img src="upload_e072da04c35a41efee855e5baa60deeb.png" alt="image" width="200">
+</div>
+
+<div style="text-align: center;">
+<img src="upload_8500ce30315d13d59ce60b8c3643f5cd.png" alt="image" width="300">
 </div>
 
 Tension : $T \qquad$ Friction : $f$
@@ -44,10 +54,8 @@ Moving at constant acceleration : $F_{net} = \vec{T}+\vec{F}-\vec{f} \qquad \vec
 ## Pulley
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/SyMIVgl4le.png" alt="image"width="250" height="250">
+<img src="upload_98c71e35e799b10f0f158b4fcb0a572d.png" alt="image" width="250">
 </div>
-
-
 
 Tension : $T \qquad$ weight : $mg$
 
@@ -58,30 +66,33 @@ Moving at constant speed : $F_{net} =0 \qquad \vec{T} = \vec{mg}$
 Moving at constant acceleration : $F_{net} =T-mg \qquad a = (F-mg)/m$
 
 ## Friction
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/B1wSvel4xl.png" alt="image"width="350" height="">
+<img src="upload_a1c1f1b01e3df4104895b9b6f26abf16.png" alt="image" width="250">
 </div>
 
 * Friction of objects under different conditions
 There are four common conditions below
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/BkSAVgl4xg.png" alt="image"width="250" height="">
+<img src="upload_9306d40bd9481ec86a8512eaf4dd7de1.png" alt="image" width="250">
 </div>
 
 $F_{x} = 0$ , Stationary : $F_{netx} = f = 0 \qquad F_y = N$
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/r1pMSgg4el.png" alt="image"width="250" height="250">
+<img src="upload_4f1a762c8168fbad45f4f89d397f69b0.png" alt="image" width="250">
 </div>
 
 $F_{x} \not= 0$ , Stationary : $F_x = f \qquad F_y = N$
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/Hy5oBexExl.png" alt="image"width="250" height="">
+<img src="upload_52d2cde294c08877de16520e4d6f479d.png" alt="image" width="250">
 </div>
 
 $F_{x} \not= 0$ , Moving at constant speed : $F_x = f \qquad F_y = N$
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/S1U5HllEel.png" alt="image"width="250" height="">
+<img src="upload_01645ef37f1dd3229076e32aff805f00.png" alt="image" width="250">
 </div>
 
 $F_{x} \not= 0$ , Moving at constant acceleration : $F_x > f \quad F_y = N \quad F_{netx} = F_x-f \not= 0$
@@ -89,7 +100,7 @@ $F_{x} \not= 0$ , Moving at constant acceleration : $F_x > f \quad F_y = N \quad
 * Dynamic friction & static friction
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/SJ4oLxxEle.png" alt="image"width="400" height="">
+<img src="upload_4802f3a033a35a4e5f6cc0184ce08364.png" alt="image" width="250">
 </div>
 
 when $v = 0$ & $F = 0 \qquad f_s = F = 0$
@@ -99,18 +110,22 @@ when $v = 0 \qquad f_s = F =$ static friction
 when $v = 0 \qquad f_{smax} = 𝜇_sN = 𝜇_smg =$ static friction max
 
 when $v \not= 0 \qquad f_k = 𝜇_kN = 𝜇_kmg =$ Dynamic friction
-	
+
 ## slope & force
-![image](https://hackmd.io/_uploads/SJITwelElg.png)
+
+<div style="text-align: center;">
+<img src="upload_b4842689cef46ed10fa1e48653edad5f.png" alt="image" width="400">
+</div>
 
 When an object is on a slope and $𝜇_f = 0$
 $$N = mg⋅cos𝜃$$
 
 $$(mg⋅cos𝜃)^2+(mg⋅sin𝜃)^2 = mg$$
-:::success
+
 $$a = g⋅sin𝜃$$
-:::
+
 ## Damping force
+
 $$D_1 = bv$$
 
 $$mg-bv = ma$$
@@ -147,17 +162,18 @@ $$g-\frac bmv = e^{-\frac bm(t-\frac mbln(g))}$$
 $$g-\frac bmv = ge^{-\frac bmt}$$
 
 $$1-\frac {bv}{mg} = e^{-\frac bmt}$$
-:::success
+
 $$v = \frac{mg}{b}(1-e^{-bt/m})$$
-:::
+
 when $a = 0$ then $v = v_T =$ Terminal velocity
 $$0 = g-\frac{bv_T}{m}$$
-:::success
+
 $$v_T = \frac{mg}{b}$$
-:::
+
 ## Backward force & Terminal velocity
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/HJoeOll4el.png" alt="image"width="220" height="300">
+<img src="upload_f1607747eb7de7a90124fde42b84906c.png" alt="image" width="150">
 </div>
 
 * Air resistance : $D_2$ unit : $N = \frac{kg⋅m}{s^2}$
@@ -165,21 +181,24 @@ $$v_T = \frac{mg}{b}$$
 * Area : $A$
 * Constant : $C$
 * Velocity : $v$
-:::success
+
 $$D_2 = \frac{1}{2}C\rho Av^2$$
-:::
+
 when $a \not= 0$ Terminal velocity has not been reached yet
 
-when $a = 0$ then $v = v_T =$ Terminal velocity 
+when $a = 0$ then $v = v_T =$ Terminal velocity
 
 $$D_2-mg = 0$$
 
 $$\frac{1}{2}C\rho Av_T^2-mg = 0$$
-:::success
+
 $$v_T = \sqrt\frac{2mg}{C\rho A}$$
-:::
+
 ## Centripetal force & Centrifugal force
-![image](https://hackmd.io/_uploads/Syu8_llVex.png)
+
+<div style="text-align: center;">
+<img src="upload_523a1aae95162e4154c44f8a4a36e963.png" alt="image" width="350">
+</div>
 
 * Centripetal Force
 

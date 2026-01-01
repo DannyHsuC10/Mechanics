@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Linear motion
 
 ## Moving distance
@@ -9,9 +13,8 @@ The object moved　: $x_{initial} \not= x_{final}$
 The object is not moving : $x_{initial} = x_{final}$
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/rkJWjJl4gx.png" alt="image" width="300" height="250">
+<img src="upload_e6cc7269e2fbbc205478da3ac05a506f.png" alt="image" width="300">
 </div>
-
 
 * Displacement  & path
 
@@ -19,34 +22,33 @@ Displacement  : Displacement  is the magnitude (length) of the displacement vect
 
 Path : Path length is how far the object moved as it traveled from its initial position to its final position.
 
-
 ## Velocity
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/H1Da9JgVlg.png" alt="image" width="300" height="200">
+<img src="upload_eefcf40b3fa5e555de723c0dff95d902.png" alt="image" width="300">
 </div>
 
 Velocity is slope of position versus time.
 
 $$v_{avg} = \frac{Δx}{Δt} = \frac{x_f-x_i}{t_f-t_i}$$
-:::success
+
 $$v = \lim_{{Δt \to 0}}\frac{Δx}{Δt} = \frac{dx}{dt}$$
-:::
+
 * Speed & Velocity
 Velocity is a vector but speed is a scalar.
 
 $$speed = \frac{path}{time} \qquad velocity = \frac{displacement}{time}$$
 
-
 ## Acceleration
+
 Acceleration is slope of velocity versus time.
 
 $$a_{avg} = \frac{Δv}{Δt} = \frac{v_f-v_i}{t_f-t_i}$$
-:::success
+
 $$a = \lim_{{Δt \to 0}}\frac{Δv}{Δt} = \frac{dv}{dt} = \frac{d^2x}{dt^2}$$
-:::
 
 ## Relationship between position, velocity and acceleration
+
 * if a is a constant
 
 $$v = v_i+at$$
@@ -66,14 +68,14 @@ $x_i = 0 \qquad v_i = 0 \qquad a = g$
 
 $$x_f = x_i+v_it+\frac{1}{2}at^2 ⇒ h = \frac{1}{2}gt^2$$
 
-
 ## Graph
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/Syc9ikgExg.png" alt="image"width="300" height="800">
+<img src="upload_1ad05b31dda77dc6a8125e31edbf2f49.png" alt="image" width="300">
 </div>
 
 ## Differentiation and Integration
+
 The integral of acceleration with respect to time is velocity.
 
 The integral of velocity with respect to time is position.
@@ -83,6 +85,5 @@ $$a = \frac{dv}{dt} \qquad v = ∫adt$$
 $$v = at+v_i$$
 
 $$x = \frac{dV}{dt} \qquad x = ∫vdt = ∫(at+v_i)dt$$
-:::success
+
 $$x =  x_i+v_it+\frac{1}{2}at^2$$
-:::
