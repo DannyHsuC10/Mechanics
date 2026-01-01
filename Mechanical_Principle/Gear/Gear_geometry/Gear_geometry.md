@@ -17,7 +17,9 @@ layout: base
 * $r_2$ : base circle radius
 * $r_3$ : pitch circle radius
 * $r_4$ : tip circle radius
+
 ## Geometric relations
+
 $$\theta_0 = \frac{2\pi}{T} = \frac{360^o}{T}\qquad-(0)$$
 
 $$\theta_1+2\theta_2+2\theta_3+\theta_4\qquad-(1)$$
@@ -45,7 +47,7 @@ $$(0)\Longrightarrow\frac{2\pi}{2T} = \frac\pi T = \theta_    1+2\theta_2 = \the
 $$(4)\Longrightarrow(6)\qquad2(4)+\theta_1=\frac{\pi}{T}\qquad-(7)$$
 
 $$(5)\Longrightarrow(6)\qquad2(5)+\theta_4 = \frac\pi T\qquad-(8)$$
-:::success
+
 $$\theta_1 = \frac\pi T-2(4)\qquad-(7)$$
 
 $$\theta_4 = \frac\pi T-2(5)-(4)\qquad-(8)$$
@@ -53,12 +55,13 @@ $$\theta_4 = \frac\pi T-2(5)-(4)\qquad-(8)$$
 $$\theta_2 = (4)$$
 
 $$\theta_3 = (5)-(4)\qquad-(9)$$
-:::
+
 * module
 $M = \frac DT$
 $D = 2r_3$
+
 $$M = \frac{r_3*2}{T}$$
-:::success
+
 $$r_3 = TM/2\qquad-(10)$$
 
 $$r_2 = \cos(\frac\pi9)r_3 = \cos(\frac\pi9)MT/2\qquad-(11)$$
@@ -66,7 +69,6 @@ $$r_2 = \cos(\frac\pi9)r_3 = \cos(\frac\pi9)MT/2\qquad-(11)$$
 $$r_1 = (T-2.5)M/2\qquad-(12)$$
 
 $$r_4 = (T+2)M/2\qquad-(13)$$
-:::
 
 $$(10),(11)\Longrightarrow(4)\qquad-(14)$$
 
@@ -77,7 +79,7 @@ $$(10),(11)\Longrightarrow(8)\qquad-(16)$$
 $$(10),(11),(13)\Longrightarrow(9)\qquad-(17)$$
 
 $$\theta_i = \theta_i+\theta,\qquad S = r\theta\qquad-(18)$$
-:::success
+
 Topland : $R = r_4,\theta_i>\theta>\theta_i+\theta_4\qquad-(19)$
 Bottomland : $R = r_1,\theta_i>\theta>\theta_i+\theta_1\qquad-(20)$
 straight line : $r_2>R>r_3,\theta = (\theta_i+\pi M)\qquad-(21)$
@@ -85,7 +87,6 @@ Involute Left : $R = \theta\Longrightarrow(6),\theta_i>\theta = \theta_i+\theta_
 Involute right : $R = -\theta\Longrightarrow(6),\theta_i>\theta = \theta_i+\theta_2+\theta_3\qquad-(23)$
 
 $$(18)\Longrightarrow(20)\to(21)\to(22)\to(19)\to(23)\to(21)\to(20)\to...$$
-:::
 
 ## Code
 
@@ -202,6 +203,7 @@ plt.show()
 ```
 
 ## Generate graphics
+
 <div style="text-align: center;">
 <img src="upload_f1d4dfefc1911d4d7e03fda2a7f62abd.png" alt="image" width="300">
 

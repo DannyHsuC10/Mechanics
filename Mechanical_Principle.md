@@ -6,7 +6,9 @@ layout: base
 
 ```mermaid
 graph TD;
-Mechanics-->Gear & Non-transmission & transmission
+Mechanics-->Gear
+Mechanics-->Non-transmission
+Mechanics-->transmission
 ```
 
 ## Gear

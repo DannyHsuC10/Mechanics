@@ -3,6 +3,7 @@ layout: base
 ---
 
 # Special Angle
+
 $$\theta = |\tan^{-1}(\frac{1+(\sqrt{((\frac{r_3}{r_2})^2-1})\tan(\sqrt{((\frac{r_3}{r_2})^2-1})}{\tan(\sqrt{((\frac{r_3}{r_2})^2-1})-\sqrt{((\frac{r_3}{r_2})^2-1})})|$$
 
 $$r_2 = r_3\cos(\frac\pi9)$$

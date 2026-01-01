@@ -3,20 +3,29 @@ layout: base
 ---
 
 # Belt pulley
+
 ## Transmission method
+
 ### Open Belt Drive
+
 <div style="text-align: center;">
-<img src="https://themechanicalengineering.com/wp-content/uploads/2022/01/OPEN-BELT-DRIVE.png" alt="image"width="400">
+<img src="OPEN-BELT-DRIVE.png" alt="image"width="400">
 </div>
 
 ### Cross Belt Drive
+
 <div style="text-align: center;">
-<img src="https://themechanicalengineering.com/wp-content/uploads/2022/01/CROSS-BELT-DRIVE-LINE-DIAGRAM.jpg" alt="image"width="400">
+<img src="CROSS-BELT-DRIVE-LINE-DIAGRAM.jpg" alt="image"width="400">
 </div>
 
 > https://themechanicalengineering.com/open-belt-drive-and-cross-belt-drive/
+
 ## Belt length
->![Belt length](https://www.vcalc.com/attachments/788be105-ed67-11e3-b7aa-bc764e2038f2/TwoPulleyBeltLength-illustration.png)
+
+<div style="text-align: center;">
+<img src="TwoPulleyBeltLength-illustration.png" alt="image"width="400">
+</div>
+
 >https://www.vcalc.com/equation/?uuid=788be105-ed67-11e3-b7aa-bc764e2038f2
 
 $$\text{BL} = (\pi\frac D2+2u)+(\pi\frac d2-2v)+2b = \frac{\pi(D+d)}2+2(u-v)+2b$$
@@ -45,15 +54,21 @@ $$L-2L(\frac\theta2)^2 = L-2L(\frac{D-d}{4L})^2 = L-\frac{(D-d)^2}{8L}$$
 $$2b = 2L-\frac{(D-d)^2}{4L}$$
 ****
 $$\text{BL} = \frac{\pi(D+d)}2+\frac{(D-d)^2}{2L}+2L-\frac{(D-d)^2}{4L}$$
-:::success
+
 $$\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D-d)^2}{4L}$$
-:::
+
 ### Open Belt Drive
+
 $$\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D-d)^2}{4L}$$
+
 ### Cross Belt Drive
+
 $$\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D+d)^2}{4L}$$
+
 ## Contact angle
+
 ### Open Belt Drive
+
 $$\theta_1+\theta_2 = 360$$
 
 $$\theta_1>180^o\qquad180^o>\theta_2>120^o$$
@@ -61,9 +76,13 @@ $$\theta_1>180^o\qquad180^o>\theta_2>120^o$$
 $$\theta_1 = \frac\pi2+2\phi$$
 
 $$\theta_2 = \frac\pi2-2\phi$$
+
 ### Cross Belt Drive
+
 $$\theta_1 = \theta_2 = \frac\pi2+2\phi = \frac\pi2+(\frac{D+d}{2L})$$
+
 ## Speed ratio
+
 $$v_1 = \pi(D_1+t)N_1$$
 
 $$v_2 = \pi(D_2+t)N_2$$
@@ -84,6 +103,7 @@ if $t<<1$
 $$\frac{N_1}{N_2} = \frac{D_2}{D_1}(1-\eta)$$
 
 ## Power
+
 $$F_0 = \frac12(F_1-F_2)$$
 
 $$F_\text{efficient} = F_1-F_2$$
@@ -93,8 +113,11 @@ $$F_1>F_0>F_2$$
 $$P = Fv = (F_1-F_2)\frac{\pi DN}{60}$$
 
 $$\text{PS} = \frac P{735} = \frac{Fv}{735} = (F_1-F_2)\frac{\pi DN}{735\times60}$$
+
 ## Tensions ratio
-![image](https://hackmd.io/_uploads/HJ-rn9GNel.png)
+
+<div style="text-align: center;">
+<img src="upload_a07b9ebd460a378e3f16895a7380d7e4.png" alt="image"width="400">
 </div>
 
 $$\frac{F_1}{F_2} = e^{\mu\theta}$$
@@ -136,8 +159,11 @@ $$\ln(F_1)-\ln(F_2) = \mu\theta$$
 $$\ln(\frac{F_2}{F_1}) = \mu\theta$$
 
 $$\frac{F_2}{F_1} = e^{\mu\theta}$$
+
 ## Step pulley
+
 ### Open Belt Drive
+
 $$\frac{n_x}{N} =\frac{D_x}{d_x}$$
 
 $$\text{BL} = \frac{\pi(D_1+d_1)}2+2L+\frac{(D_1-d_1)^2}{4L}$$
@@ -147,7 +173,9 @@ $$\frac{\pi(D_1+d_1)}2+2L+\frac{(D_1-d_1)^2}{4L} = \frac{\pi(D_2+d_2)}2+2L+\frac
 $$\frac{\pi(D_1+d_1)}2+2L+\frac{(D_1-d_1)^2}{4L} = \frac{\pi(D_3+d_3)}2+2L+\frac{(D_3-d_3)^2}{4L}$$
 
 $$\frac{\pi(D_1+d_1)}2+2L+\frac{(D_1-d_1)^2}{4L} = \frac{\pi(D_x+d_x)}2+2L+\frac{(D_x-d_x)^2}{4L}$$
+
 ### Cross Belt Drive
+
 $$\frac{n_x}{N} =\frac{D_x}{d_x}$$
 
 $$D_1+d_1 = D_2+d_2$$
@@ -155,5 +183,7 @@ $$D_1+d_1 = D_2+d_2$$
 $$D_1+d_1 = D_3+d_3$$
 
 $$D_1+d_1 = D_x+d_x$$
+
 ## Equal step pulley
+
 $$N_1n_1 = N_2n_2 = N_xn_x$$

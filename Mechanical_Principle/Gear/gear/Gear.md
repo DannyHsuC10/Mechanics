@@ -3,9 +3,11 @@ layout: base
 ---
 
 # gear
+
 ## Gear parts
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/BkVJ2YcUgl.png" alt="image" width="1000">
+<img src="upload_bff2dab04d8b79eb85cd6a36b9f5bcaa.png" alt="image" width="900">
 </div>
 
 ## Gear parameters
@@ -63,7 +65,7 @@ $$\text{contact} = \frac{r\phi}{p}>1.4$$
 ## Bevel gear parts
 
 <div style="text-align: center;">
-<img src="https://roymech.org/images/gear_bevel_3.gif" alt="image" width="600">
+<img src="gear_bevel_3.gif" alt="image" width="600">
 </div>
 
 >https://roymech.org/
@@ -81,7 +83,7 @@ $$\frac{\phi_B}{\phi_A} = \frac{N_A}{N_B} = \frac{\omega_A}{\omega_B} = \frac{D_
 ## Involute gear
 
 <div style="text-align: center;">
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Involute_wheel.gif" alt="image" width="400">
+<img src="Involute_wheel.gif" alt="image" width="400">
 </div>
 
 > Two involute gears, the left driving the right: Blue arrows show the contact forces between them downward force applied by the left gear and upward resistance by the right gear. The force line (or line of action) runs along the long leg of dashed blue line which is a tangent common to both base circles. The involutes here are traced out in converse fashion: points of contact move along the stationary force-vector "string" as if it was being unwound from the left rotating base circle, and wound onto the right rotating base circle. In this situation, there is no force, and so no contact needed, along the opposite [lower left to upper right] common tangent (not shown). In other words, if the teeth were slightly narrower while everything else remained the same there would be a gap above each tooth on the left gear, because downward force is being applied by it.
@@ -99,10 +101,10 @@ Bottom land : **<font color="#efe514">yellow</font>**
 ## Gear mesh interference
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/HJVOmDjLxx.png" alt="image" width="350">
+<img src="upload_d187171302ef608fe75fb8701bd67fcb.png" alt="image" width="350">
 </div>
 
->Gear interference is the act of when the involute portion of one tooth contacts the mating gear tooth, the non-involute section (below the base circle). This causes a mechanical wear condition, hence the term, interference. 
+>Gear interference is the act of when the involute portion of one tooth contacts the mating gear tooth, the non-involute section (below the base circle). This causes a mechanical wear condition, hence the term, interference.
 >https://covalomotion.com/gear-mesh-interference/
 
 ## Gear Involute Interference Formulas
@@ -138,7 +140,7 @@ $$N_P = \frac{2k}{\sin^2\phi}$$
 ## Cycloidal gear
 
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/r1po6Ps8ll.png" alt="image" width="350">
+<img src="upload_cbacbb7c31d420523761c516b9cbaa94.png" alt="image" width="350">
 </div>
 
 > https://mech.poriyaan.in/topic/conjugate-profiles-31896/#google_vignette

@@ -3,9 +3,11 @@ layout: base
 ---
 
 # Brakes
+
 ## Block brake
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/Hyzijozuel.png" alt="image"width="300">
+<img src="upload_3a66df00ffed3b7331d046d77b158520.png" alt="image"width="300">
 </div>
 
 $$\tau = fr = \mu Nr$$
@@ -19,9 +21,11 @@ $$F = \frac{\tau(a-\mu b)}{\mu rl}$$
 **reverse**
 $$F = \frac{\tau(a-\mu b)}{\mu rl}$$
 * if $a-\mu b<0$, self lock
+
 ## Band brake
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/HkKnisMuee.png" alt="image"width="300">
+<img src="upload_4d6e704eb00e99fee8d7425723f7207c.png" alt="image"width="300">
 </div>
 
 $$\frac{F_1}{F_2} = e^{\mu\theta}$$
@@ -42,8 +46,9 @@ $$F = \frac{Ta}{rl(e^{\mu\theta}-1)}$$
 $$F = \frac{Tae^{\mu\theta}}{rl(e^{\mu\theta}-1)}$$
 
 ## Disc brake
+
 <div style="text-align: center;">
-<img src="https://hackmd.io/_uploads/ryN0ojz_eg.png" alt="image"width="300">
+<img src="upload_a3958b838da480d7f147ef1ba74f1334.png" alt="image"width="300">
 </div>
 
 $$D_m = \frac{D_o+D_i}{2}$$
@@ -51,11 +56,15 @@ $$D_m = \frac{D_o+D_i}{2}$$
 $$\tau = f\frac{D_m}2 = \mu F\frac{D_m}2$$
 
 $$F = \frac{2\tau}{\mu D_m}$$
+
 ## Brake cooling
+
 $$W = fS = \mu FS$$
 
 $$K = \frac12mv^2$$
+
 ## Braking power
+
 $$\sigma = \frac FA$$
 
 $$F = \sigma A$$
