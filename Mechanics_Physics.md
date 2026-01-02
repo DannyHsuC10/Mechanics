@@ -30,14 +30,14 @@ layout: base
 
 ## SHM
 
-1. [Oscillation](https://hackmd.io/-tIJbtiaR-iSaB6kGRgF9w)
-1. [Simple Harmonic Oscillation](https://hackmd.io/0sXCYKfMRQ6mWLOu7cKLFQ)
-1. [simple harmonic pendulum](https://hackmd.io/q5N7fhrfR8yz8SOfTWSStQ)
-1. [Damping harmonics motion](https://hackmd.io/fWqU96XdT2KS4SK798fSxQ)
-1. [Resonance](https://hackmd.io/9bjjhuSlQQecSWf8BP8D7w)
-1. [Wave](https://hackmd.io/CMWCkcxjS5arPMWlh5x4JQ)
-1. [Wave interference](https://hackmd.io/-ljFbSh9SQeKST0khrQpVQ)
-1. [Sound wave](https://hackmd.io/aO-kOVc0SrKNH3MQK4r1VQ)
+1. [Oscillation](Mechanics_Physics/SHM/Oscillation/Oscillation.md)
+1. [Simple Harmonic Oscillation](Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md)
+1. [simple harmonic pendulum](Mechanics_Physics/SHM/simple_harmonic_pendulum/simple_harmonic_pendulum.md)
+1. [Damping harmonics motion](Mechanics_Physics/SHM/Damping_harmonics_moion/Damping_harmonics_moion.md)
+1. [Resonance](Mechanics_Physics/SHM/Resonance/Resonance.md)
+1. [Wave](Mechanics_Physics/SHM/wave/wave.md)
+1. [Wave interference](Mechanics_Physics/SHM/wave_interference/wave_interference.md)
+1. [Sound wave](Mechanics_Physics/SHM/sound_wave/sound_wave.md)
 
 ## Modern
 
