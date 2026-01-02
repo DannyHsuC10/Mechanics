@@ -19,14 +19,14 @@ layout: base
 
 ## Fluid & Gas & Heat & statistic
 
-1. [Fluid](https://hackmd.io/9LKzSDEBQAyy6-NpeDFtSA)
-1. [ideal fluid](https://hackmd.io/096AUQm1Taq98uD9MfQ7eQ)
-1. [Fluid properties](https://hackmd.io/QQTm6LwvTF-nrsvPubcS2w)
-1. [Zeroth & First Laws of Thermodynamics](https://hackmd.io/pCFarKGVRFGthtvHVYe6tQ)
-1. [Kinetic theory of gases](https://hackmd.io/hpfMMzq5SACPecke6xQQpA)
-1. [Entropy & Second Law of Thermodynamics](https://hackmd.io/SxRejJrzStqnwVeGESaz-Q)
-1. [ black hole thermodynamics](https://hackmd.io/ghzPXCs3SpmGHUEyuY3YZA)
-1. [What is statistical mechanics ?](https://hackmd.io/Pim41w-qSsi2YxWfMKB_ew)
+1. [Fluid](Mechanics_Physics/Fluid_Gas_Heat_statistic/Fluid/Fluid.md)
+1. [ideal fluid](Mechanics_Physics/Fluid_Gas_Heat_statistic/ideal_fluid/ideal_fluid.md)
+1. [Fluid properties](Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md)
+1. [Zeroth & First Laws of Thermodynamics](Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md)
+1. [Kinetic theory of gases](Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md)
+1. [Entropy & Second Law of Thermodynamics](Mechanics_Physics/Fluid_Gas_Heat_statistic/Entropy_and_Second_Law_of_Thermodynamics/Entropy_and_Second_Law_of_Thermodynamics.md)
+1. [black hole thermodynamics](Mechanics_Physics/Fluid_Gas_Heat_statistic/black_hole_thermodynamics/black_hole_thermodynamics.md)
+1. [What is statistical mechanics ?](Mechanics_Physics/Fluid_Gas_Heat_statistic/What_is_statistical_mechanics/What_is_statistical_mechanics.md)
 
 ## SHM
 
