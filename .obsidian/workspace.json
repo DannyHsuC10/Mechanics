@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Mechanical_Principle/Gear/Involute_equation/Involute_equation.md",
+                "file": "Mechanics_Mechanical.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Involute_equation"
+              "title": "Mechanics_Mechanical"
             }
           }
         ]
@@ -185,6 +185,14 @@
   },
   "active": "f4445f3a33e92905",
   "lastOpenFiles": [
+    "Mechanics_Mechanical/Statics",
+    "Mechanics_Mechanical/新增資料夾",
+    "Mechanical_Principle.md",
+    "Mechanical_Principle/Gear/Involute_equation/Involute_equation.md",
+    "Mechanics_Mechanical",
+    "新增資料夾",
+    "Mechanics_Mechanical.md",
+    "Mechanics (Mechanical).md",
     "Mechanics_Physics/SHM/Oscillation/upload_cafc64f07b95a81de0bbc7256920aa9a.png",
     "Mechanics_Physics/SHM/Oscillation/upload_f81f78af4be5bd7435163ec595d8ffbf.png",
     "Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/upload_6fea7e8f383b8d35d78b45fc6869f1d6.png",
@@ -205,9 +213,7 @@
     "Mechanics_Physics/SHM/sound_wave/sound_wave.md",
     "Mechanics_Physics/SHM/sound_wave",
     "Mechanics_Physics/SHM/wave/wave.md",
-    "Mechanics_Physics/SHM/wave",
     "Mechanics_Physics/SHM/wave_interference/wave_interference.md",
-    "Mechanics_Physics/SHM/wave_interference",
     "Mechanics_Physics/SHM/wave_interference.md",
     "Mechanics_Physics/SHM/sound_wave.md",
     "Mechanics_Physics/SHM/simple_harmonic_pendulum.md",
@@ -221,15 +227,9 @@
     "Mechanics_Physics/SHM/Resonance.md",
     "Mechanics_Physics/SHM/Oscillation.md",
     "Mechanics_Physics/SHM/Damping harmonics moion.md",
-    "Mechanics_Physics/SHM/Simple Harmonic Oscillation (1).md",
-    "Mechanics_Physics/SHM/simple harmonic pendulum (1).md",
-    "Mechanics_Physics/SHM/Damping harmonics moion (2).md",
-    "Mechanics_Physics/SHM/Resonance (1).md",
-    "Mechanics_Physics/SHM",
     "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/upload_b155551cb8e0319ca15915d75cc0cfa9.png",
     "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/upload_f4ad888b82aea8a9fe077e8720c6ea49.png",
     "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/upload_d6a49262849f1e235e0baab62961a0ca.png",
-    "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/upload_7aa6725293e379ceb5078bbd8db281c2.png",
-    "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/upload_0a10cabe4e672abcbd8fe42aa3fa31e4.png"
+    "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/upload_7aa6725293e379ceb5078bbd8db281c2.png"
   ]
 }
