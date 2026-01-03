@@ -117,11 +117,11 @@ $$\sum F_y = 0$$
 
 $$\Delta N-(T+\Delta T)sin(\Delta\theta/2)-Tsin(\Delta\theta/2) = 0$$
 
-$$\Delta T\cos(\Delta\theta /2)-\mu_s(2T+\Delta T)\sin(\Delta\theta /2)= 0$$
+$$\Delta T\cos(\Delta \theta /2)-\mu_s(2T+\Delta T)\sin(\Delta \theta /2)= 0$$
 
 $\Delta \to 0$
 
-$$\lim_{{\Delta\theta} \to {0}}\frac{sin\Delta\theta/2}{\Delta\theta/2} = \lim_{{\Delta\theta\to0}}\frac{1/2cos(\Delta\theta/2)}{1/2(\Delta\theta/2)} = 1$$
+$$\lim_{{\Delta \theta} \to {0}}\frac{sin\Delta \theta/2}{\Delta \theta/2} = \lim_{{\Delta \theta\to0}}\frac{1/2cos(\Delta \theta/2)}{1/2(\Delta\theta/2)} = 1$$
 
 $$dT/d\theta-\mu_sT=0$$
 
