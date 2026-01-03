@@ -13,7 +13,7 @@ layout: base
 ## Kinematics
 
 1. [Linear motion](Mechanics_Mechanical/Kinematics/Linear_motion.md)
-2. [curved motion & rotation](Mechanics_Mechanical/Kinematics/curved_motion_and_rotation.md)
+2. [Curved motion & rotation](Mechanics_Mechanical/Kinematics/curved_motion_and_rotation.md)
 
 ## Dynamics
 
@@ -45,16 +45,16 @@ layout: base
 9. [Second moment of area](Mechanics_Mechanical/Statics_more/Second_moment_of_area/Second_moment_of_area.md)
 10. [Method of virtual work](Mechanics_Mechanical/Statics_more/Method_of_virtual_work/Method_of_virtual_work.md)
 
-## dynamics (more)
+## Dynamics (more)
 
 1. [Kinematics of particles](Mechanics_Mechanical/dynamics_more/Kinematics_of_particles/Kinematics_of_particles.md)
-1. [kinetics of particles](Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md)
+1. [Kinetics of particles](Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md)
 1. [Energy](Mechanics_Mechanical/dynamics_more/Energy/Energy.md)
 1. [Rotation of rigid bodies](Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md)
 1. [Kinetic energy and momentum methods](Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md)
 1. [Scalar Vector Tensor](Mechanics_Mechanical/dynamics_more/Scalar_Vector_Tensor/Scalar_Vector_Tensor.md)
 
-## thermodynamique (more)
+## Thermodynamique (more)
 
 1. [Definition of Thermodynamic Terms](Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md)
 1. [Ideal gas law](Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md)
@@ -63,7 +63,7 @@ layout: base
 1. [Maxwell relations](Mechanics_Mechanical/thermodynamique_more/Maxwell_relations.md)
 1. [Fluid](Mechanics_Mechanical/thermodynamique_more/Fluid.md)
 
-## hydromechanics (more)
+## Hydromechanics (more)
 
 Under construction!!!
 

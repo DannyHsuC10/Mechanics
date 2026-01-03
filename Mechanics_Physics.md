@@ -20,19 +20,19 @@ layout: base
 ## Fluid & Gas & Heat & statistic
 
 1. [Fluid](Mechanics_Physics/Fluid_Gas_Heat_statistic/Fluid/Fluid.md)
-1. [ideal fluid](Mechanics_Physics/Fluid_Gas_Heat_statistic/ideal_fluid/ideal_fluid.md)
+1. [Ideal fluid](Mechanics_Physics/Fluid_Gas_Heat_statistic/ideal_fluid/ideal_fluid.md)
 1. [Fluid properties](Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md)
 1. [Zeroth & First Laws of Thermodynamics](Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md)
 1. [Kinetic theory of gases](Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md)
 1. [Entropy & Second Law of Thermodynamics](Mechanics_Physics/Fluid_Gas_Heat_statistic/Entropy_and_Second_Law_of_Thermodynamics/Entropy_and_Second_Law_of_Thermodynamics.md)
-1. [black hole thermodynamics](Mechanics_Physics/Fluid_Gas_Heat_statistic/black_hole_thermodynamics/black_hole_thermodynamics.md)
+1. [Black hole thermodynamics](Mechanics_Physics/Fluid_Gas_Heat_statistic/black_hole_thermodynamics/black_hole_thermodynamics.md)
 1. [What is statistical mechanics ?](Mechanics_Physics/Fluid_Gas_Heat_statistic/What_is_statistical_mechanics/What_is_statistical_mechanics.md)
 
 ## SHM
 
 1. [Oscillation](Mechanics_Physics/SHM/Oscillation/Oscillation.md)
 1. [Simple Harmonic Oscillation](Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md)
-1. [simple harmonic pendulum](Mechanics_Physics/SHM/simple_harmonic_pendulum/simple_harmonic_pendulum.md)
+1. [Simple harmonic pendulum](Mechanics_Physics/SHM/simple_harmonic_pendulum/simple_harmonic_pendulum.md)
 1. [Damping harmonics motion](Mechanics_Physics/SHM/Damping_harmonics_moion/Damping_harmonics_moion.md)
 1. [Resonance](Mechanics_Physics/SHM/Resonance/Resonance.md)
 1. [Wave](Mechanics_Physics/SHM/wave/wave.md)
@@ -69,6 +69,6 @@ layout: base
 
 ## Special
 
-1. [spring](Mechanics_Physics/Special/spring.md)
+1. [Spring](Mechanics_Physics/Special/spring.md)
 1. [Maxwell-Boltzmann distribution](Mechanics_Physics/Special/Maxwell-Boltzmann_distribution.md)
 1. [Energy & Coefficient of restitution](Mechanics_Physics/Special/Energy_and_Coefficient_of_restitution.md)
