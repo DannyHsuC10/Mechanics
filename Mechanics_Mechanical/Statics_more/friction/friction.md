@@ -98,6 +98,7 @@ $$= \frac{\mu_kF}{\pi(R^2_1-R^2_2)}\int_0^{2\pi}1/3(R_1^3-R_2^3)\ d\theta$$
 $$\frac{2\mu_kF(R^3_1-R^3_2)}{3\pi(R^2_1-R^2_2)}$$
 
 if $R_2 = 0$ and $R_2 = R$
+
 $$M = 2/3\mu_kFR$$
 
 $$M_{max} = 2/3\mu_sFR$$
@@ -116,9 +117,11 @@ $$\sum F_y = 0$$
 
 $$\Delta N-(T+\Delta T)sin(\Delta\theta/2)-Tsin(\Delta\theta/2) = 0$$
 
-$$\Delta T\cos(\Delta\theta /2)-\mu_s(2T+\Delta T)\sin(\Delta\theta /2)= 0$$
+$$\Delta T\cos(\Delta\theta /2)-\mu_s(2T+\Delta T)\sin(\Delta\theta/2)= 0$$
 
-$\Delta\theta, \Delta N, \Delta F, \Delta T\to 0$ and $cos(\Delta\theta/2)\to1$
+$\Delta\theta, \Delta N, \Delta F, \Delta T\to 0$
+ and
+$\cos(\Delta\theta/2)\to 1$
 
 $$\lim_{{\Delta\theta} \to {0}}\frac{sin\Delta\theta/2}{\Delta\theta/2} = \lim_{{\Delta\theta\to0}}\frac{1/2cos(\Delta\theta/2)}{1/2(\Delta\theta/2)} = 1$$
 
