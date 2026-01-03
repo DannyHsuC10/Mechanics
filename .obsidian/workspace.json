@@ -11,10 +11,10 @@
             "id": "e397c9c59a868070",
             "type": "leaf",
             "state": {
-              "type": "empty",
+              "type": "graph",
               "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -181,6 +181,8 @@
   },
   "active": "e397c9c59a868070",
   "lastOpenFiles": [
+    "Untitled.canvas",
+    "Untitled 1.canvas",
     "Untitled.md",
     "Mechanics_Mechanical/Materials_Mechanics/Compressive_stress_and_Tensile_stress/Compressive_stress_and_Tensile_stress.md",
     "Mechanics_Mechanical.md",
@@ -225,7 +227,6 @@
     "Mechanics_Mechanical/dynamics_more/Scalar_Vector_Tensor/Scalar_Vector_Tensor.md",
     "Mechanics_Mechanical/dynamics_more/Scalar_Vector_Tensor",
     "Mechanics_Mechanical/dynamics_more/新增資料夾",
-    "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods.md",
     "Mechanics_Mechanical/dynamics_more"
   ]
 }
