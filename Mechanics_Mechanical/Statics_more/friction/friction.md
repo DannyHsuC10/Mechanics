@@ -119,8 +119,7 @@ $$\Delta N-(T+\Delta T)sin(\Delta\theta/2)-Tsin(\Delta\theta/2) = 0$$
 
 $$\Delta T\cos(\Delta\theta /2)-\mu_s(2T+\Delta T)\sin(\Delta\theta/2)= 0$$
 
-$\Delta\theta$, $\Delta N$, $\Delta F$, $\Delta T\to 0$
- and $\cos(\Delta\theta/2)\to 1$
+$\Delta \to 0$
 
 $$\lim_{{\Delta\theta} \to {0}}\frac{sin\Delta\theta/2}{\Delta\theta/2} = \lim_{{\Delta\theta\to0}}\frac{1/2cos(\Delta\theta/2)}{1/2(\Delta\theta/2)} = 1$$
 
