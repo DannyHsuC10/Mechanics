@@ -116,7 +116,7 @@ $$\sum F_y = 0$$
 
 $$\Delta N-(T+\Delta T)sin(\Delta\theta/2)-Tsin(\Delta\theta/2) = 0$$
 
-$$\Delta T\cos(\Delta\theta /2)-\mu_s(2T+\Delta T)\sin(\Delta\theta /2) = 0$$
+$$\Delta T\cos(\Delta\theta /2)-\mu_s(2T+\Delta T)\sin(\Delta\theta /2)= 0$$
 
 $\Delta\theta, \Delta N, \Delta F, \Delta T\to 0$ and $cos(\Delta\theta/2)\to1$
 
