@@ -1,63 +1,67 @@
+---
+layout: base
+---
+
 # Mechanics (Mechanical)
 
 ## Statics
 
-1. [Plane force system](https://hackmd.io/g4zFNZpWTLa9q5B1w1BltQ)
-2. [Friction](https://hackmd.io/YtvZ3UrFRIiXvxNUh7CUdg)
-3. [Center of mass](https://hackmd.io/LLVLb8IEQiacb6yl7DzDMA)
+1. [Plane force system](Mechanics_Mechanical/Statics/Plane_force_system/Plane_force_system.md)
+2. [Friction](Mechanics_Mechanical/Statics/Friction/Friction.md)
+3. [Center of mass](Mechanics_Mechanical/Statics/center_of_mass/center_of_mass.md)
 
 ## Kinematics
 
-1. [Linear motion](https://hackmd.io/awftTLALQ6aeAaI-XfrvHw)
-2. [curved motion & rotation](https://hackmd.io/osQu1fkyRMq3u8MdYQ4QCA)
+1. [Linear motion](Mechanics_Mechanical/Kinematics/Linear_motion.md)
+2. [curved motion & rotation](Mechanics_Mechanical/Kinematics/curved_motion_and_rotation.md)
 
 ## Dynamics
 
-1. [Force & motion](https://hackmd.io/4QREG3PSRIWShx6S_hskCQ)
-2. [Energy & Work](https://hackmd.io/4AUw5BzcR5yrIc8Ckul8yQ)
+1. [Force & motion](Mechanics_Mechanical/Dynamics/Force_and_motion.md)
+2. [Energy & Work](Mechanics_Mechanical/Dynamics/Energy_and_Work.md)
 
 ## Materials Mechanics
 
-1. [Compressive stress & Tensile stress](https://hackmd.io/wRIHyP3hTkWv-ftf4rEvAA)
-2. [Poisson's ratio](https://hackmd.io/wl4FSA0hQcOVCdMBtko9Hw)
-3. [Volumetric strain](https://hackmd.io/FZM7XMAgQMKcNXifsV399g)
-4. [Shear stress](https://hackmd.io/KrJes-ojTvCxMLXZWhNGEg?view)
-5. [Second moment of area](https://hackmd.io/@DH3868/BkCd5of4el)
-6. [Bending moment](https://hackmd.io/hEAGEZI9QIm0glY8Mfx43w)
-7. [Torsion](https://hackmd.io/-ooClyhTQWit0dMwYdCELQ)
+1. [Compressive stress & Tensile stress](Mechanics_Mechanical/Materials_Mechanics/Compressive_stress_and_Tensile_stress/Compressive_stress_and_Tensile_stress.md)
+2. [Poisson's ratio](Mechanics_Mechanical/Materials_Mechanics/Poissons_ratio/Poissons_ratio.md)
+3. [Volumetric strain](Mechanics_Mechanical/Materials_Mechanics/Volumetric_strain/Volumetric_strain.md)
+4. [Shear stress](Mechanics_Mechanical/Materials_Mechanics/Shear/Shear.md)
+5. [Second moment of area](Mechanics_Mechanical/Materials_Mechanics/Second_moment_of_area/Second_moment_of_area.md)
+6. [Bending moment](Mechanics_Mechanical/Materials_Mechanics/Bending_moment/Bending_moment.md)
+7. [Torsion](Mechanics_Mechanical/Materials_Mechanics/Torsion/Torsion.md)
 
 ***
 
 ## Statics (more)
 
-1. [Statics concepts](https://hackmd.io/xzVZ_fXfSPmWvvLgBBdehg)
-2. [Statics of particles](https://hackmd.io/QplPyIfRQ7ujlm7xik00lA)
-3. [Equivalent system of force](https://hackmd.io/nSccHDw5S2qJKXvLsENCJA)
-4. [Equilibrium of rigid bodies](https://hackmd.io/EFE1N8G2Rr6WFE0aOAYkcw)
-5. [Centroids and Centers of Gravity](https://hackmd.io/FozXeseVRRmGQzmrXT4UUw)
-6. [Analysis of structures](https://hackmd.io/ZJXI9ColQ12Y5F4JlLM-Bw)
-7. [Forces in beams and cables](https://hackmd.io/YDmbNDxBQ7aETEqJ1jqbZA)
-8. [Friction](https://hackmd.io/5vPwuB29R7GZ3Cnk0lkdEA)
-9. [Second moment of area](https://hackmd.io/KAMtAovSSOyBDOLjJaBXRg)
-10. [Method of virtual work](https://hackmd.io/xepFy0s2SzS616R69_yjfA)
+1. [Statics concepts](Mechanics_Mechanical/Statics_more/Statics_concepts/Statics_concepts.md)
+2. [Statics of particles](Mechanics_Mechanical/Statics_more/Statics_of_particles/Statics_of_particles.md)
+3. [Equivalent system of force](Mechanics_Mechanical/Statics_more/Equivalent_system_of_force/Equivalent_system_of_force.md)
+4. [Equilibrium of rigid bodies](Mechanics_Mechanical/Statics_more/Equilibrium_of_rigid_bodies/Equilibrium_of_rigid_bodies.md)
+5. [Centroids and Centers of Gravity](Mechanics_Mechanical/Statics_more/Centroids_and_Centers_of_Gravity/Centroids_and_Centers_of_Gravity.md)
+6. [Analysis of structures](Mechanics_Mechanical/Statics_more/Analysis_of_structures/Analysis_of_structures.md)
+7. [Forces in beams and cables](Mechanics_Mechanical/Statics_more/Forces_in_beams_and_cables/Forces_in_beams_and_cables.md)
+8. [Friction](Mechanics_Mechanical/Statics_more/friction/friction.md)
+9. [Second moment of area](Mechanics_Mechanical/Statics_more/Second_moment_of_area/Second_moment_of_area.md)
+10. [Method of virtual work](Mechanics_Mechanical/Statics_more/Method_of_virtual_work/Method_of_virtual_work.md)
 
 ## dynamics (more)
 
-1. [Kinematics of particles](https://hackmd.io/Oe722A5eQlau7qdExHsWTg)
-1. [kinetics of particles](https://hackmd.io/12pWfWUiShaTvx_2QOZBvw)
-1. [Energy](https://hackmd.io/XrmB6_FZRBKh6DGF_xi1sQ?both)
-1. [Rotation of rigid bodies](https://hackmd.io/7orVttFKSBmtL_4AIOGloA?both)
-1. [Kinetic energy and momentum methods](https://hackmd.io/VxEJlqJqS46nos96Xh9L4w)
-1. [Scalar Vector Tensor](https://hackmd.io/Yz5mi6dgRJyFRUnh5xunoQ)
+1. [Kinematics of particles](Mechanics_Mechanical/dynamics_more/Kinematics_of_particles/Kinematics_of_particles.md)
+1. [kinetics of particles](Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md)
+1. [Energy](Mechanics_Mechanical/dynamics_more/Energy/Energy.md)
+1. [Rotation of rigid bodies](Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md)
+1. [Kinetic energy and momentum methods](Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md)
+1. [Scalar Vector Tensor](Mechanics_Mechanical/dynamics_more/Scalar_Vector_Tensor/Scalar_Vector_Tensor.md)
 
 ## thermodynamique (more)
 
-1. [Definition of Thermodynamic Terms](https://hackmd.io/6UgKhKSkTCSEGoWEx7w4kw)
-1. [Ideal gas law](https://hackmd.io/e5kXWG3PSna_6GM_yqEXng)
-1. [Entropy](https://hackmd.io/SEIzROG5RtaxV40vR1nKWg)
-1. [Efficiency](https://hackmd.io/4vBmPbLkTtqF7aGeoOBgyQ)
-1. [Maxwell relations](https://hackmd.io/YrntG3dBTbaYSx8KwBwNYA)
-1. [Fluid](https://hackmd.io/NKODY9jrQdSdFCDxZsMdrQ)
+1. [Definition of Thermodynamic Terms](Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md)
+1. [Ideal gas law](Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md)
+1. [Entropy](Mechanics_Mechanical/thermodynamique_more/entropy.md)
+1. [Efficiency](Mechanics_Mechanical/thermodynamique_more/Efficiency.md)
+1. [Maxwell relations](Mechanics_Mechanical/thermodynamique_more/Maxwell_relations.md)
+1. [Fluid](Mechanics_Mechanical/thermodynamique_more/Fluid.md)
 
 ## hydromechanics (more)
 
