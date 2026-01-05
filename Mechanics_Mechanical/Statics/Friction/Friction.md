@@ -85,7 +85,7 @@ $$F \ge w\ tan(\phi+\theta)$$
 
 **Pull downhill**
 
-$$F \ge w\frac{tan(\phi)-tan(\theta)}{1+tan(\phi)tan(\theta)}$$
+$$F \ge w\frac{\tan(\phi)-\tan(\theta)}{1+\tan(\phi) \tan(\theta)}$$
 
 $$F \ge w\ tan(\phi-\theta)$$
 
