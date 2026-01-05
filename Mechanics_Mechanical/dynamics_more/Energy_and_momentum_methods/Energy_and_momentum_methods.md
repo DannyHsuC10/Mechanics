@@ -103,7 +103,7 @@ $$e(v_{1i}-v_{2i}) = (v_{2f}-v_{1f})$$
 
 $$e = \sqrt{\frac{E_{sys\ f}}{E_{sys\ i}}}$$
 
-[why?](../../../Mechanics_Physics/Special/Energy_and_Coefficient_of_restitution.md)
+[why?](../../../Special/Energy_and_Coefficient_of_restitution.md)
 
 ## 2D Collision
 

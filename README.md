@@ -7,3 +7,7 @@
 [Mechanics (Mechanical)](Mechanics_Mechanical.md)
 
 [Mechanical Principle](Mechanical_Principle.md)
+
+[Special](Special.md)
+
+[Other](Other.md)

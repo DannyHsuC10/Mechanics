@@ -11,10 +11,14 @@
             "id": "e397c9c59a868070",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Mechanical_Principle.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mechanical_Principle"
             }
           }
         ]
@@ -74,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 558.5
+    "width": 355.5
   },
   "right": {
     "id": "0c0d364cee72d57b",
@@ -181,11 +185,25 @@
   },
   "active": "e397c9c59a868070",
   "lastOpenFiles": [
+    "Mechanics_Mechanical.md",
+    "Special/inertia.md",
+    "Other.md",
+    "Special/Maxwell-Boltzmann_distribution.md",
+    "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "Mechanical_Principle/Non-transmission/Spring/Spring.md",
+    "Special/spring.md",
+    "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "Special/Energy_and_Coefficient_of_restitution.md",
+    "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md",
+    "Special.md",
+    "other",
+    "新增資料夾",
+    "Special/upload_412f797991cf63a5ce1198f36ccf8f15.png",
+    "Special",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "Untitled.md",
     "Mechanics_Mechanical/Materials_Mechanics/Compressive_stress_and_Tensile_stress/Compressive_stress_and_Tensile_stress.md",
-    "Mechanics_Mechanical.md",
     "Mechanics_Mechanical/Statics/Plane_force_system/upload_f62daa9ddff11e3c7f0a7f05d553bf2b.png",
     "Mechanics_Mechanical/Statics/Plane_force_system/upload_b14fc87a7ad14e2cd9009eac9534c4e5.png",
     "Mechanics_Mechanical/Statics/Plane_force_system/upload_abdd12b7b850eaed1cb698d77cc71087.png",
@@ -208,25 +226,12 @@
     "Mechanics_Mechanical/dynamics_more/thermodynamique_more/Maxwell relations.md",
     "Mechanics_Mechanical/dynamics_more/thermodynamique_more/Efficiency.md",
     "Mechanics_Mechanical/dynamics_more/thermodynamique_more/entropy.md",
-    "Mechanics_Mechanical/dynamics_more/thermodynamique_more/Ideal gas law.md",
-    "Mechanics_Mechanical/dynamics_more/thermodynamique_more/Definition of Thermodynamic Terms.md",
-    "Mechanics_Mechanical/dynamics_more/thermodynamique_more/Flow.md",
     "Mechanics_Mechanical/dynamics_more/thermodynamique_more",
     "Mechanics_Mechanical/dynamics_more/Kinematics_of_particles/upload_0b5d9a6532dba24d2c0248a7a7db9320.png",
-    "Mechanics_Mechanical/dynamics_more/Kinematics_of_particles/upload_176e0c99f1c35201a131e22a64e079f2.png",
-    "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
     "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods",
-    "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
     "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies",
-    "Mechanics_Mechanical/dynamics_more/Energy/Energy.md",
     "Mechanics_Mechanical/dynamics_more/Energy",
-    "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
     "Mechanics_Mechanical/dynamics_more/kinetics_of_particles",
-    "Mechanics_Mechanical/dynamics_more/Kinematics_of_particles/Kinematics_of_particles.md",
-    "Mechanics_Mechanical/dynamics_more/Kinematics_of_particles",
-    "Mechanics_Mechanical/dynamics_more/Scalar_Vector_Tensor/Scalar_Vector_Tensor.md",
-    "Mechanics_Mechanical/dynamics_more/Scalar_Vector_Tensor",
-    "Mechanics_Mechanical/dynamics_more/新增資料夾",
-    "Mechanics_Mechanical/dynamics_more"
+    "Mechanics_Mechanical/dynamics_more/Kinematics_of_particles"
   ]
 }

@@ -17,7 +17,7 @@ $$\omega = \sqrt{\frac{k}{m}}$$
 $$T = 2\pi/\omega = 2\pi\sqrt{\frac{m}{k}}$$
 
 * Consider the mass of the spring ($m_s$):
-[why ??](../../Special/spring.md)
+[why ??](../../../Special/spring.md)
 
 $$T = 2\pi\sqrt{\frac{m+\frac{1}{3}m_s}{k}}$$
 

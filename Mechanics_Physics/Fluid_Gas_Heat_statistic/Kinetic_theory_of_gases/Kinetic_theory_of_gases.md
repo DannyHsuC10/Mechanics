@@ -185,7 +185,7 @@ $$N = (P/kT)V$$
 $$\lambda = \frac {V}{\pi d^2\sqrt2N} = \frac {V}{\pi d^2\sqrt2(P/kT)V}$$
 
 $$\lambda = \frac {1}{\pi d^2\sqrt2(P/kT)} = \frac {kT}{\sqrt2\pi d^2P}$$
-## [Maxwell–Boltzmann distribution](../../Special/Maxwell-Boltzmann_distribution.md)
+## [Maxwell–Boltzmann distribution](../../../Special/Maxwell-Boltzmann_distribution.md)
 
 * Maxwell–Boltzmann distribution is a Probability density function (PDF).
 $$f(v) = (\frac{m}{2\pi kT})^{\frac{3}{2}}4\pi v^2e^{(-mv^2/2kT)}$$

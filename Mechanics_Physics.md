@@ -66,9 +66,3 @@ layout: base
 
 1. [Mechanics](Mechanics_Physics/formulas/Mechanics/Mechanics.md)
 1. [Energy](Mechanics_Physics/formulas/Energy/Energy.md)
-
-## Special
-
-1. [Spring](Mechanics_Physics/Special/spring.md)
-1. [Maxwell-Boltzmann distribution](Mechanics_Physics/Special/Maxwell-Boltzmann_distribution.md)
-1. [Energy & Coefficient of restitution](Mechanics_Physics/Special/Energy_and_Coefficient_of_restitution.md)
