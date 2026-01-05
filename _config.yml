@@ -1,9 +1,1 @@
 theme: jekyll-theme-cayman
-
-markdown: kramdown
-kramdown:
-  input: GFM
-
-exclude:
-  - notes/
-  - drafts/
