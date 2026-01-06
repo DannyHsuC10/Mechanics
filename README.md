@@ -10,4 +10,4 @@
 
 [Special](Special.md)
 
-[Other](Other.md)
+[Private](Private/Private.md)
