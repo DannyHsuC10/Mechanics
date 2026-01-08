@@ -1,10 +1,11 @@
-# HOME
+# DH3868
 
-## Learning Resources
-
+## Mechanics
 [Mechanics (Physics)](Mechanics_Physics.md)
 
 [Mechanics (Mechanical)](Mechanics_Mechanical.md)
+
+[Mechanics (Advanced)](Mechanics_Advanced.md)
 
 [Mechanical Principle](Mechanical_Principle.md)
 
