@@ -1,5 +1,11 @@
+---
+layout: base
+---
+
 # Lagrange example
+
 ## System Settings
+
 FL,FR,RL,RR : 1,2,3,4
 
 * sprung mass　: $m_s$

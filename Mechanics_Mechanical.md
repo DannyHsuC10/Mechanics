@@ -69,4 +69,8 @@ Under construction!!!
 
 ## Materials Mechanics (more)
 
-Under construction!!!
+1. [Tension Compression & Shear](Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md)
+1. [Axial Loaded Members](Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md)
+1. [Torsion](Mechanics_Mechanical/Materials_Mechanics_more/Torsion/Torsion.md)
+1. [Shear Forces and Bending Moment](Mechanics_Mechanical/Materials_Mechanics_more/Shear_Forces_and_Bending_Moment/Shear_Forces_and_Bending_Moment.md)
+1. [Analysis of Stresses and Strains](Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md)
