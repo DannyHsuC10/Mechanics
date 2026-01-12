@@ -11,10 +11,14 @@
             "id": "2beefc180563a3a7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Mechanics_Advanced.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mechanics_Advanced"
             }
           }
         ]
@@ -181,6 +185,24 @@
   },
   "active": "2beefc180563a3a7",
   "lastOpenFiles": [
+    "Mechanics_Advanced/Analytical_mechanics/Appellian_Mechanics.md",
+    "Mechanics_Advanced/Analytical_mechanics/Analytical_mechanics.md",
+    "Mechanics_Advanced/Analytical_mechanics/Actions_principle.md",
+    "Mechanics_Advanced/Analytical_mechanics/Routhian_Mechanics.md",
+    "Mechanics_Advanced/Analytical_mechanics/Newtonian_mechanics.md",
+    "Mechanics_Advanced/Analytical_mechanics/Least_action_principle.svg.png",
+    "Mechanics_Advanced/Analytical_mechanics/Lagrangian_mechanics.md",
+    "Mechanics_Advanced/Analytical_mechanics/Lagrange_example.md",
+    "Mechanics_Advanced/Analytical_mechanics/Hamiltonian-Jacobi_mechanics.md",
+    "Mechanics_Advanced/Analytical_mechanics/Hamiltonian_Mechanics.md",
+    "Mechanics_Advanced/Analytical_mechanics/d'Alembert's_principle.md",
+    "Mechanics_Advanced/Analytical_mechanics",
+    "Mechanics_Advanced/新增資料夾 (2)",
+    "Mechanics_Advanced/新增資料夾/Ensembles.md",
+    "Mechanics_Advanced/新增資料夾/Boltzmann factor.md",
+    "Mechanics_Advanced/新增資料夾/Particle probability dynamics.md",
+    "Mechanics_Advanced/新增資料夾/Maximum Entropy Principle.md",
+    "Mechanics_Advanced/新增資料夾",
     "Private/programming/latex.md",
     "Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear/upload_1aa20fff89450b7fd931e6454dcf3a77.png",
     "Mechanics_Mechanical/Materials_Mechanics_more/Torsion/upload_9fe19d6d64dca571a1d4fe4c243426d2.png",
@@ -191,7 +213,6 @@
     "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/upload_4a240dc6050045932a3cf86b8ef94ba2.png",
     "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/upload_e26ef0760fee32626bc2ef18214ad5b0.png",
     "Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/upload_0336245eb88bd4e79b5dc210b0c61bf2.png",
-    "Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/upload_e85b20abd6320648e379ceec5f0d30cc.png",
     "Mechanics_Mechanical/Materials_Mechanics_more/Torsion/Torsion.md",
     "Mechanics_Mechanical/Materials_Mechanics_more/Torsion",
     "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
@@ -209,23 +230,7 @@
     "Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear.md",
     "Mechanics_Mechanical/Materials_Mechanics_more/_Tension, Compression & Shear .md",
     "Mechanics_Mechanical/Materials_Mechanics_more/Torsion.md",
-    "Mechanics_Mechanical/Materials_Mechanics_more/Shear Forces and Bending Moment.md",
-    "Mechanics_Mechanical/Materials_Mechanics_more/Axial Loaded Members.md",
-    "Mechanics_Mechanical/Materials_Mechanics_more/Analysis of Stresses and Strains.md",
     "Mechanics_Mechanical/Materials_Mechanics_more",
-    "Mechanics_Mechanical/新增資料夾/Axial Loaded Members.md",
-    "Mechanics_Mechanical/新增資料夾/Torsion.md",
-    "Mechanics_Mechanical/新增資料夾/Shear Forces and Bending Moment.md",
-    "Mechanics_Mechanical/新增資料夾/Analysis of Stresses and Strains.md",
-    "Mechanics_Mechanical/新增資料夾/_Tension, Compression & Shear .md",
-    "Mechanics_Mechanical/新增資料夾",
-    "Mechanical_Principle/more/Engineering_materials.md",
-    "Mechanical_Principle/more/Engineering materials.md",
-    "README.md",
-    "Mechanics_Mechanical/Kinematics/curved_motion_and_rotation.md",
-    "Mechanics_Mechanical.md",
-    "Mechanics_Advanced",
-    "新增資料夾",
     "Untitled.canvas",
     "Untitled 1.canvas"
   ]
