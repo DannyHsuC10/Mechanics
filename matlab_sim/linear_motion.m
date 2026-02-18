@@ -1,3 +1,4 @@
+
 % Set time range
 t = linspace(0, 10, 100); % 100 points from 0 to 10 seconds
 
