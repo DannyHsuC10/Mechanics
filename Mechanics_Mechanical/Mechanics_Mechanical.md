@@ -4,9 +4,7 @@ layout: base
 
 # Mechanics (Mechanical)
 
-[Mechanics Mechanical and maltab modle](Mechanics_Mechanical_base.md)
-
-## Statics
+## [Statics](Statics_base.md)
 
 1. [Statics concepts](Statics_more/Statics_concepts/Statics_concepts.md)
 2. [Statics of particles](Statics_more/Statics_of_particles/Statics_of_particles.md)
@@ -19,7 +17,7 @@ layout: base
 9. [Second moment of area](Statics_more/Second_moment_of_area/Second_moment_of_area.md)
 10. [Method of virtual work](Statics_more/Method_of_virtual_work/Method_of_virtual_work.md)
 
-## Dynamics
+## [Dynamics](Dynamics_base.md)
 
 1. [Kinematics of particles](dynamics_more/Kinematics_of_particles/Kinematics_of_particles.md)
 1. [Kinetics of particles](dynamics_more/kinetics_of_particles/kinetics_of_particles.md)
@@ -41,7 +39,7 @@ layout: base
 
 Under construction!!!
 
-## Materials Mechanics
+## [Materials Mechanics](Materials_Mechanics_base.md)
 
 1. [Tension Compression & Shear](Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md)
 1. [Axial Loaded Members](Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md)
