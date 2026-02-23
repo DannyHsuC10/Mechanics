@@ -1,3 +1,4 @@
+clear; clc; close all;
 % Parameters
 V_e = 2500; % Exhaust velocity in m/s (example value)
 m_i = 50000; % Initial mass in kg (example value)

@@ -115,7 +115,7 @@ $$E = -\frac{GMm}{2r} = -K$$
 * Circular orbit $E = -\frac{GMm}{2r}$
 radius :　$r$
 * Elliptical orbit $E = -\frac{GMm}{2\alpha}$
-longest diameter of ellipse : $2\alpha
+longest diameter of ellipse : $2\alpha$
 
 ## Gravity & Space
 

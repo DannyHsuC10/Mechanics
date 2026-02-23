@@ -1,4 +1,5 @@
-% Projectile motion parameters
+clear;
+
 v0 = 20; % Initial velocity (m/s)
 theta = 45; % Launch angle (degrees)
 g = 9.81; % Gravitational acceleration (m/s^2)

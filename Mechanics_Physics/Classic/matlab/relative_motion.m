@@ -1,4 +1,5 @@
-% Relative motion parameters
+clear;
+
 t = linspace(0, 10, 100); % Time vector (s)
 v0_1 = 10; % Initial velocity of object 1 (m/s)
 a1 = 2; % Acceleration of object 1 (m/s^2)

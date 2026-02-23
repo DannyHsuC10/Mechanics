@@ -22,7 +22,10 @@ $$\tau = \mu\frac{𝜕u}{𝜕y}$$
 * Kinematic viscosity : $\nu$
 
 $$\nu = \frac{\mu}{\rho}$$
-
+## Turbulent power-law 
+* velocity of the fluid : $u$
+* Location radius : $r$
+$$\frac{u}{u_{\max}} = (1-\frac{r}{R})^{1/n}$$
 ## Raynolds number
 
 <div style="text-align: center;">

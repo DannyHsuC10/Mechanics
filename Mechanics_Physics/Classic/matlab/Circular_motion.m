@@ -1,3 +1,4 @@
+clear;
 % Parameters
 R  = 2;           % radius (m)
 v_range = linspace(0,10,200);   % range of speeds for a_c plot (m/s)

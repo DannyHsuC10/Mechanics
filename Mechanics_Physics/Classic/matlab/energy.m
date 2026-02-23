@@ -1,3 +1,4 @@
+clear;
 % Spring constant and mass
 k = 1;  % Spring constant
 m = 1;  % Mass
@@ -34,3 +35,4 @@ title('Conservation of Mechanical Energy in a Spring');
 legend();
 grid on;
 hold off;
+

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "47105bd3d8ec11c5",
+        "id": "c2ee6d4f9b20c9ed",
         "type": "tabs",
         "children": [
           {
-            "id": "47a3b6a6aca9284b",
+            "id": "31d1b22f1c2236e3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Private/Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Fx.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "magic_formula_Fx"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -180,16 +176,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "47a3b6a6aca9284b",
+  "active": "31d1b22f1c2236e3",
   "lastOpenFiles": [
-    "LICENSE",
+    "Mechanics_Mechanical/matlab_base",
+    "Mechanics_Mechanical/New folder",
+    "Private/Data_collection/FSG2024.md",
+    "Private/Private.md",
+    "Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md",
+    "Mechanics_Mechanical/Mechanics_Mechanical_base.md",
+    "Mechanics_Mechanical/Mechanics_base.md",
+    "Mechanics_Mechanical/Mechanics_Mechanical - Copy.md",
+    "Special/spring.md",
+    "Mechanics_Mechanical/Mechanics_Mechanical.md",
+    "Mechanics_Physics/Modern/matlab/relativistic_mass.m",
+    "Mechanics_Physics/Modern/matlab/time_dilation.m",
+    "Mechanics_Physics/Modern/matlab/length_contraction.m",
+    "Mechanics_Physics/Modern/matlab",
+    "Mechanics_Physics/Modern/New folder",
+    "Mechanics_Physics/SHM/matlab/Decibel.m",
+    "Mechanics_Physics/SHM/matlab/Mach_Cone_Angle.m",
+    "Mechanics_Physics/SHM/matlab/Doppler_effect.m",
+    "Mechanics_Physics/SHM/matlab/wave_superposition.m",
+    "Mechanics_Physics/Fluid_Gas_Heat_statistic/Fluid_Gas_Heat_statistic.md",
+    "Mechanics_Physics/Modern/Modern.md",
+    "Mechanics_Physics/Modern/Fluid_Gas_Heat_statistic.md",
+    "Mechanics_Physics/SHM/SHM.md",
+    "Mechanics_Physics/SHM/Fluid_Gas_Heat_statistic.md",
+    "Mechanics_Physics/Mechanics_Physics.md",
+    "Mechanics_Physics/Fluid_Gas_Heat_statistic/Classic.md",
+    "Mechanics_Physics/Classic/Classic.md",
+    "Mechanics_Physics/Classic/classic.md",
+    "Mechanics_Physics/Classic/Mechanics_Physics_matlab.md",
+    "Private/Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Fx.md",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula.md",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Fy.md",
     "README.md",
-    "Private/Private.md",
     "Private/Practical_considerations_for_Molecular_Dynamics.md",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Mz.md",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Fx.md",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image.png",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-7.png",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-8.png",
@@ -200,33 +223,6 @@
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-4.png",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-2.png",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-1.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/Friction_circle.md",
-    "Private/Vehicle_Dynamics/車輛懸吊系統名詞筆記/車輛懸吊系統名詞筆記.md",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula",
-    "Private/Vehicle_Dynamics/motor_vehicle_dynamics_modeling/motor_vehicle_dynamics_modeling.md",
-    "Private/Vehicle_Dynamics/車輛懸吊系統名詞筆記",
-    "Private/Vehicle_Dynamics/magic_formula",
-    "Private/Vehicle_Dynamics/motor_vehicle_dynamics_modeling",
-    "Private/Vehicle_Dynamics",
-    "Private/Fundamentals_Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Mz.md",
-    "Private/Fundamentals_Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Fy.md",
-    "Private/Fundamentals_Vehicle_Dynamics/magic_formula/magic_formula/magic_formula_Fx.md",
-    "Private/Fundamentals_Vehicle_Dynamics/magic_formula/magic_formula/Friction_circle.md",
-    "Private/Fundamentals_Vehicle_Dynamics/magic_formula/magic_formula.md",
-    "Private/Fundamentals_Vehicle_Dynamics/magic_formula/magic_formula",
-    "Private/Fundamentals_Vehicle_Dynamics/magic_formula",
-    "Private/Fundamentals_Vehicle_Dynamics/車輛懸吊系統名詞筆記/車輛懸吊系統名詞筆記.md",
-    "Private/Fundamentals_Vehicle_Dynamics/motor_vehicle_dynamics_modeling/motor_vehicle_dynamics_modeling.md",
-    "Private/magic_formula/magic_formula.md",
-    "Private/magic_formula/magic_formula/Friction_circle.md",
-    "2026-02-05.md",
-    "Private/magic_formula/magic_formula/magic_formula_Fx.md",
-    "Private/Vehicle_dynamics.md",
-    "Private/programming.md",
-    "Private/Vehicle_dynamics_concept/Vehicle_load.md",
-    "Mechanics_Advanced/Analytical_mechanics/Hamiltonian_Mechanics.md",
-    "Mechanical_Principle/transmission/Pulley/~syncthing~Lever_(PSF).png.tmp",
-    "Mechanics_Advanced/Analytical_mechanics/~syncthing~Hamiltonian_Mechanics.md.tmp",
-    "Mechanics_Physics/Modern/Fundamental_interaction_and_Nuclear_physics/~syncthing~upload_89559e3e3364494ebe398256b399d35d.png.tmp"
+    "Private/Vehicle_Dynamics/magic_formula/magic_formula/Friction_circle.md"
   ]
 }
