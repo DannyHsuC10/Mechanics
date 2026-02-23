@@ -11,10 +11,14 @@
             "id": "31d1b22f1c2236e3",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "Mechanical_Principle/Mechanical_Principle.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Mechanical_Principle"
             }
           }
         ]
@@ -178,6 +182,10 @@
   },
   "active": "31d1b22f1c2236e3",
   "lastOpenFiles": [
+    "Mechanical_Principle/Gear/gear.md",
+    "Mechanical_Principle/Mechanical_Principle.md",
+    "Mechanical_Principle/Gear/Mechanical_Principle - Copy.md",
+    "Mechanical_Principle/Mechanical_Principle - Copy.md",
     "Mechanics_Mechanical/Materials_Mechanics_base.md",
     "Mechanics_Mechanical/Statics_base.md",
     "Mechanics_Mechanical/Statics.md",
@@ -204,16 +212,12 @@
     "Mechanical_Principle/matlab/gear.m",
     "Mechanical_Principle/matlab",
     "Mechanical_Principle/Gear/matlab",
-    "Mechanical_Principle/Mechanical_Principle.md",
     "Private/Data_collection/FSG2024.md",
     "Private/Private.md",
     "Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md",
     "Mechanics_Mechanical/Mechanics_Mechanical_base.md",
     "Mechanics_Mechanical/Mechanics_base.md",
     "Mechanics_Mechanical/Mechanics_Mechanical - Copy.md",
-    "Mechanics_Mechanical/Mechanics_Mechanical.md",
-    "Mechanics_Physics/Fluid_Gas_Heat_statistic/Fluid_Gas_Heat_statistic.md",
-    "Mechanics_Physics/Modern/Fluid_Gas_Heat_statistic.md",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image.png",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-7.png",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-8.png",
