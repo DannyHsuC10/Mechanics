@@ -28,13 +28,13 @@ $$n = \frac LP$$
 
 ## Chain tension effect
 
-$$r_\min = r\cos\theta$$
+$$r_{\min} = r\cos\theta$$
 
 $$\Delta r = r(1-\cos\theta)$$
 
-$$v_\min = r\cos\theta2\pi N$$
+$$v_{\min} = r\cos\theta2\pi N$$
 
-$$v_\max = r2\pi N$$
+$$v_{\max} = r2\pi N$$
 
 ## Power
 

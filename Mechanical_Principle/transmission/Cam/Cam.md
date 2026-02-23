@@ -28,11 +28,11 @@ $$a = \frac{dv}{dt} = \omega\frac{d^2r}{dt^2}$$
 
 $$v = \frac{s}{t}$$
 
-$$\Delta S = r_\max-r$$
+$$\Delta S = r_{\max}-r$$
 
-$$\Delta S= \sqrt{r^2+(r\tan\theta_\max)^2}-r$$
+$$\Delta S= \sqrt{r^2+(r\tan\theta_{\max})^2}-r$$
 
-$$r(\theta)= \sqrt{r^2+(r\tan\theta33)^2}-r$$
+$$r(\theta)= \sqrt{r^2+(r\tan\theta)^2}-r$$
 
 * $\omega$ is a constant
 

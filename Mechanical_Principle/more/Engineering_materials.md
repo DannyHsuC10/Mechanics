@@ -54,9 +54,9 @@ $$TS = 3.45 HB$$
 ## safety factor
 $$SF = \frac{\sigma}{\sigma_\text{work}}$$
 ## fracture
-* Fracture stress : $\sigma_\max$
+* Fracture stress : $\sigma_{\max}$
 
-$$\sigma_\max = 2\sigma_0(\frac a2)^{\frac12}$$
+$$\sigma_{\max} = 2\sigma_0(\frac a2)^{\frac12}$$
 
 * Critical stress : $\sigma_c$
 

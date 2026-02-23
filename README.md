@@ -8,7 +8,7 @@
 
 [Mechanics (Advanced)](Mechanics_Advanced.md)
 
-[Mechanical Principle](Mechanical_Principle.md)
+[Mechanical Principle](Mechanical_Principle/Mechanical_Principle.md)
 
 [Special](Special.md)
 

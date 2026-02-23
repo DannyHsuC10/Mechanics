@@ -4,9 +4,9 @@ layout: base
 
 # Mechanics (Mechanical)
 
-[base of Mechanics Mechanical](Mechanics_Mechanical_base.md)
+[Mechanics Mechanical and maltab modle](Mechanics_Mechanical_base.md)
 
-## Statics (more)
+## Statics
 
 1. [Statics concepts](Statics_more/Statics_concepts/Statics_concepts.md)
 2. [Statics of particles](Statics_more/Statics_of_particles/Statics_of_particles.md)
@@ -19,7 +19,7 @@ layout: base
 9. [Second moment of area](Statics_more/Second_moment_of_area/Second_moment_of_area.md)
 10. [Method of virtual work](Statics_more/Method_of_virtual_work/Method_of_virtual_work.md)
 
-## Dynamics (more)
+## Dynamics
 
 1. [Kinematics of particles](dynamics_more/Kinematics_of_particles/Kinematics_of_particles.md)
 1. [Kinetics of particles](dynamics_more/kinetics_of_particles/kinetics_of_particles.md)
@@ -28,7 +28,7 @@ layout: base
 1. [Kinetic energy and momentum methods](dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md)
 1. [Scalar Vector Tensor](dynamics_more/Scalar_Vector_Tensor/Scalar_Vector_Tensor.md)
 
-## Thermodynamique (more)
+## Thermodynamique
 
 1. [Definition of Thermodynamic Terms](thermodynamique_more/Definition_of_Thermodynamic_Terms.md)
 1. [Ideal gas law](thermodynamique_more/Ideal_gas_law.md)
@@ -37,11 +37,11 @@ layout: base
 1. [Maxwell relations](thermodynamique_more/Maxwell_relations.md)
 1. [Fluid](thermodynamique_more/Fluid.md)
 
-## Hydromechanics (more)
+## Hydromechanics
 
 Under construction!!!
 
-## Materials Mechanics (more)
+## Materials Mechanics
 
 1. [Tension Compression & Shear](Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md)
 1. [Axial Loaded Members](Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md)
