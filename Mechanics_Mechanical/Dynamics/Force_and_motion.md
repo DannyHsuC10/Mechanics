@@ -76,7 +76,6 @@ $$x = \frac{mg}{k}$$
 $$x = x_i+\frac{mg}{k}$$
 
 * consider spring mass : $m_s$
-[why ??](../../../Special/spring.md)
 
 $$x = x_i+\frac{mg}{k}+\frac{m_sg}{2k}$$
 
