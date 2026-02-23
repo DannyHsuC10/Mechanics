@@ -5,29 +5,37 @@ layout: base
 # Classic
 ## [Linear motion](Linear_motion/Linear_motion.md)
 1. [linear motion](matlab/linear_motion.m)
+
 ## [2,3D motion](2_3D_motion/2_3D_motion.md)
 1. [Circular motion](matlab/Circular_motion.m)
 1. [Projectile](matlab/Projectile.m)
 1. [relative motion](matlab/relative_motion.m)
+
 ## [Newton's laws of motion](Newtons_laws_of_motion/Newtons_laws_of_motion.md)
 ## [Force & motion](Force_and_motion/Force_and_motion.md)
 1. [fiction](matlab/fiction.m)
 1. [damping force](matlab/damping_force.m)
 1. [Backward force](matlab/Backward_force.m)
+
 ## [Kinetic energy & work & potential energy](Kinetic_energy_and_work_and_potential_energy/Kinetic_energy_and_work_and_potential_energy.md)
 1. [Energy](matlab/energy.m)
+
 ## [Center of Mass & Momentum](Center_of_Mass_and_Momentum/Center_of_Mass_and_Momentum.md)
 1. [Collision](matlab/Collision.m)
 1. [rocket](matlab/rocket.m)
+
 ## [Rotation](Rotation/Rotation.md)
 1. [Rotation](matlab/Rotation.m)
+
 ## [Roll & Angular Momentum](Roll_and_Angular_Momentum/Roll_and_Angular_Momentum.md)
 1. [Cylinder rolling](matlab/Cylinder_rolling.m)
 1. [slope rolling](matlab/slope_rolling.m)
 1. [precession](matlab/precession.m)
+
 [Nutation](matlab/Nutation.m)
 ## [Elasticity & Balance](Elasticity_and_Balance/Elasticity_and_Balance.md)
 1. [Hooke's law](matlab/Hooke_law.m)
+
 ## [Gravity](Gravity/Gravity.md)
 1. [Gravity](matlab/Gravity.m)
 1. [Orbital energy](matlab/Orbital_energy.m)
