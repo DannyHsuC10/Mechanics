@@ -20,7 +20,7 @@ title('Cam profile: r(\theta) = sin\theta - 2');
 subplot(2,2,2);
 x = r_theta .* cos(theta);
 y = r_theta .* sin(theta);
-plot(x, y, 'k', 'LineWidth', 1.4);
+plot(x, y, 'g', 'LineWidth', 1.4);
 axis equal; grid on;
 xlabel('x (m)'); ylabel('y (m)');
 title('Cam profile (Cartesian)');

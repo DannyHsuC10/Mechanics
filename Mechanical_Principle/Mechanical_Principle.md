@@ -4,7 +4,7 @@ layout: base
 
 # Mechanical Principle
 
-### [Gear](gear/gear.md)
+### [Gear](Gear/gear.md)
 A gear also called a toothed wheel, is a rotating machine part typically used to transmit rotational motion or torque by means of a series of "teeth" that engage with compatible teeth of another gear or other part.
 
 ## Transmission
