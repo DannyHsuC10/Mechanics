@@ -1,5 +1,5 @@
 clc;clear;
-
+function tools = physicsToolkit()
 tools.speed             = @(path, time) path./time;
 tools.velocity          = @(displ, time) displ./time;
 tools.instantaneous_v   = @(dx, dt) dx./dt;
