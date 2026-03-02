@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Kinetics of particles
 
 ## Newton's second law of motion

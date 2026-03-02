@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Rotation of rigid bodies
 
 ## Rotation

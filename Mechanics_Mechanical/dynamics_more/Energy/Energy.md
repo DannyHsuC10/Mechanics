@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Energy
 
 ## work of a force

@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Kinematics of particles
 
 ## Linear motion of particles

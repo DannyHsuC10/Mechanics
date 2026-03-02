@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Kinetic energy and momentum methods
 
 ## Kinetic energy

@@ -2,7 +2,7 @@
 layout: base
 ---
 
-# Mechanics
+# [Mechanics](Mechanics.m)
 
 ## Newton's laws of motion
 

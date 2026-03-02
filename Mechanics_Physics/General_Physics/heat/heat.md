@@ -2,7 +2,7 @@
 layout: base
 ---
 
-# heat
+# [heat](heat.m)
 
 ## Specific heat
 

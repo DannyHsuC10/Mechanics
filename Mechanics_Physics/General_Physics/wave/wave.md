@@ -2,7 +2,7 @@
 layout: base
 ---
 
-# Wave
+# [Wave](wave.m)
 
 **transverse wave**
 

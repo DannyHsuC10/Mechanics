@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Scalar, Vector, Tensor
 
 ## inner product
