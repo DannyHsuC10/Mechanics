@@ -2,7 +2,7 @@
 layout: base
 ---
 
-# [Electricity](Electricity.m)
+# [Electricity](electricity.m)
 
 $$F = \frac{kQq}{r^2}$$
 
@@ -36,9 +36,11 @@ $$R = \frac{V}{I}$$
 
 $$R = \frac{Pl}{A}$$
 
-$P =$ resistivity, unit : $\Omega\cdot m$
-$l =$ length
-$A =$ area
+* $P =$ resistivity, unit : $\Omega\cdot m$
+
+* $l =$ length
+
+* A =$ area
 
 ## Energy
 

@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Mechanical_Principle"
             }
+          },
+          {
+            "id": "f074dc85a0824d0e",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.12.4"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.12.4"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,8 +193,29 @@
       "bases:Create new base": false
     }
   },
-  "active": "31d1b22f1c2236e3",
+  "active": "f074dc85a0824d0e",
   "lastOpenFiles": [
+    "Mechanical_Principle/Other_components/Spring/Spring.md",
+    "Mechanical_Principle/Other_components/Periodic_motion_mechanism/upload_2f31654b19dc3d988f07fab6ca004d0d.png",
+    "Mechanical_Principle/Other_components/Periodic_motion_mechanism/Periodic_motion_mechanism.md",
+    "Mechanical_Principle/Other_components/Periodic_motion_mechanism/geneva wheel.jpg",
+    "Mechanical_Principle/Other_components/Linkage/Linkage_four_bar_fixed.svg.png",
+    "Mechanical_Principle/Other_components/Linkage/linkage.md",
+    "Mechanical_Principle/Other_components/Keys_and_Pins/Keys_and_Pins.md",
+    "Mechanical_Principle/Other_components/Brakes/upload_a3958b838da480d7f147ef1ba74f1334.png",
+    "Mechanical_Principle/Other_components/Brakes/upload_4d6e704eb00e99fee8d7425723f7207c.png",
+    "Mechanical_Principle/Other_components/Brakes/upload_3a66df00ffed3b7331d046d77b158520.png",
+    "Mechanical_Principle/Other_components/Brakes/brakes.md",
+    "Mechanical_Principle/Other_components/Bearings/upload_6e99615ad7835ef52eba842d68a54a33.png",
+    "Mechanical_Principle/Other_components/Bearings/upload_3976adf43d01150918dc44e89c53db21.png",
+    "Mechanical_Principle/Other_components/Bearings/bearings.md",
+    "Mechanical_Principle/Other_components/Spring",
+    "Mechanical_Principle/Other_components/Periodic_motion_mechanism",
+    "Mechanical_Principle/Other_components/Linkage",
+    "Mechanical_Principle/Other_components/Keys_and_Pins",
+    "Mechanical_Principle/Other_components/Brakes",
+    "Mechanical_Principle/Other_components/Bearings",
+    "Mechanical_Principle/Other_components",
     "Mechanical_Principle/Gear/gear.md",
     "Mechanical_Principle/Mechanical_Principle.md",
     "Mechanical_Principle/Gear/Mechanical_Principle - Copy.md",
@@ -205,28 +239,7 @@
     "Mechanical_Principle/matlab/cam.m",
     "Mechanical_Principle/matlab/Tensions_ratio.m",
     "Mechanical_Principle/matlab/Thread_Friction.m",
-    "Mechanical_Principle/matlab/chain_gear.m",
-    "Mechanical_Principle/gear.py",
-    "Mechanical_Principle/Gear/gear/gear.py",
-    "Mechanical_Principle/matlab/GearRatio.m",
-    "Mechanical_Principle/matlab/gear.m",
-    "Mechanical_Principle/matlab",
-    "Mechanical_Principle/Gear/matlab",
-    "Private/Data_collection/FSG2024.md",
-    "Private/Private.md",
-    "Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md",
-    "Mechanics_Mechanical/Mechanics_Mechanical_base.md",
-    "Mechanics_Mechanical/Mechanics_base.md",
-    "Mechanics_Mechanical/Mechanics_Mechanical - Copy.md",
     "Private/Vehicle_Dynamics/magic_formula/magic_formula/image.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-7.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-8.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-9.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-6.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-5.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-3.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-4.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-2.png",
-    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-1.png"
+    "Private/Vehicle_Dynamics/magic_formula/magic_formula/image-7.png"
   ]
 }

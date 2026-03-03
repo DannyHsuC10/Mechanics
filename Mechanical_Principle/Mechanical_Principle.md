@@ -30,12 +30,12 @@ A gear also called a toothed wheel, is a rotating machine part typically used to
 
 ## Other components
 
-1. [Bearings](Non-transmission/bearings/bearings.md)
-2. [Keys and Pins](Non-transmission/Keys_and_Pins/Keys_and_Pins.md)
-3. [Spring](Non-transmission/Spring/Spring.md)
-4. [Linkage](Non-transmission/linkage/linkage.md)
-5. [Periodic motion mechanism](Non-transmission/Periodic_motion_mechanism/Periodic_motion_mechanism.md)
-6. [Brakes](Non-transmission/Brakes/brakes.md)
+1. [Bearings](Other_components/bearings/bearings.md)
+2. [Keys and Pins](Other_components/Keys_and_Pins/Keys_and_Pins.md)
+3. [Spring](Other_components/Spring/Spring.md)
+4. [Linkage](Other_components/linkage/linkage.md)
+5. [Periodic motion mechanism](Other_components/Periodic_motion_mechanism/Periodic_motion_mechanism.md)
+6. [Brakes](Other_components/Brakes/brakes.md)
 
 ## More
 
