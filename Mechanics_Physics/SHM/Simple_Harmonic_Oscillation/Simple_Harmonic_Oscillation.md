@@ -14,6 +14,8 @@ $$k = m\omega^2$$
 
 $$\omega = \sqrt{\frac{k}{m}}$$
 
+* [How to solve SHM by ODE ?](../../../Special/SHM_ODE.md)
+
 $$T = 2\pi/\omega = 2\pi\sqrt{\frac{m}{k}}$$
 
 * Consider the mass of the spring ($m_s$):
