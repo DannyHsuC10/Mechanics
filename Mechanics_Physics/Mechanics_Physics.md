@@ -29,6 +29,10 @@ Relativity and Fundamental interaction, Nuclear physics.
 1. [Electricity](General_Physics/Electricity/Electricity.md)
 
 ## formulas
-* [formula tool box](formulas/ME_tool_box/)
+
 1. [Mechanics](formulas/Mechanics/Mechanics.md)
 1. [Energy](formulas/Energy/Energy.md)
+
+> The following tool demonstrates that simple physics formulas use the same common mathematical relationships. Both files must be downloaded to the same folder to use.
+
+* [formula tool box](formulas/ME_tool_box/Mechanics.py) & [mathematical relationships](formulas/ME_tool_box/number_relation.py)
