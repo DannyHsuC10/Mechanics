@@ -2,8 +2,8 @@
 layout: base
 ---
 
-# [Mechanics](Mechanics.m)
-
+# Mechanics
+* [Mechanics](Mechanics.m)
 ## Newton's laws of motion
 
 1.  $\vec{F_{net}} = 0 \qquad Δ\vec{v} = 0	\qquad a = 0$

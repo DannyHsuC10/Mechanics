@@ -2,8 +2,10 @@
 layout: base
 ---
 
-# [Light](Light.m)
+# Light
+* [Light](Light.m)
 
+---
 * Speed of light $C \approx 300,000km/s$
 * Wave–particle duality
 

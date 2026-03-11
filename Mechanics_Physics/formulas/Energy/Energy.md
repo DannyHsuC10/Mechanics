@@ -2,7 +2,8 @@
 layout: base
 ---
 
-# [Energy](Energy.m)
+# Energy
+* [Energy](Energy.m)
 
 ## Work
 

@@ -2,7 +2,8 @@
 layout: base
 ---
 
-# [Electricity](electricity.m)
+# Electricity
+* [Electricity](electricity.m)
 
 $$F = \frac{kQq}{r^2}$$
 

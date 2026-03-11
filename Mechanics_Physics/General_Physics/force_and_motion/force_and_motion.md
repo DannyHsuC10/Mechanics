@@ -2,7 +2,8 @@
 layout: base
 ---
 
-# [Force & motion](force_and_motion.m)
+# Force & motion
+* [Force & motion](force_and_motion.m)
 
 ## linear motion
 
