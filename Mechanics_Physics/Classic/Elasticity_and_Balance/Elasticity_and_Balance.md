@@ -4,6 +4,8 @@ layout: base
 
 # Elasticity & Balance
 
+Equilibrium concerns the balance of forces and moments, while elasticity describes deformation under load. The notes compare tensile, compressive, shear, and volumetric responses.
+
 ## Balance
 
 1. momentum is a constant : The system is not affected by external forces
@@ -21,7 +23,7 @@ layout: base
 * Modulus (Ratio of stress to Strain,Is a constant) : $\frac{Stress}{strain}$
 * Stress (Deformation force per unit area) : $\frac{F}{A}$
 
-1. Tensile stress and Compressive stress 
+1. Tensile stress and Compressive stress
 2. Shear stress
 3. Fluid stress
 
@@ -34,6 +36,7 @@ layout: base
 $$F = kx$$
 
 $E =$ elastic coefficient
+
 $$\frac{F}{A} = E\frac{\Delta L}{L}$$
 
 ## Shear stress

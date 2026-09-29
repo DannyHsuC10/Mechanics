@@ -4,6 +4,8 @@ layout: base
 
 # Energy & Coefficient of restitution
 
+The coefficient of restitution describes relative separation speed after an impact. These notes connect collision speed changes to kinetic energy and rebound height.
+
 $$e = \frac{E_f}{E_i}$$
 
 ## kinetic energy
@@ -23,6 +25,7 @@ $$e^2 = \frac{K_{sys\ f}}{K_{sys\ i}}$$
 $$e = \sqrt{\frac{K_{sys\ f}}{K_{sys\ i}}}$$
 
 ## potential energy
+
 Hitting the wall $F = ma\ \ (m \to  \infty,\ a \to 0)$
 
 $$P_i = P_f$$

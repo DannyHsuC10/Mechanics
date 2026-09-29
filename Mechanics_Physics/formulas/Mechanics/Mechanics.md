@@ -3,7 +3,11 @@ layout: base
 ---
 
 # Mechanics
+
+This formula reference collects common relationships for forces, motion, energy, and simple mechanical systems. Use the topic headings to identify the relevant assumptions and variables.
+
 * [Mechanics](Mechanics.m)
+
 ## Newton's laws of motion
 
 1.  $\vec{F_{net}} = 0 \qquad Δ\vec{v} = 0	\qquad a = 0$
@@ -18,11 +22,13 @@ layout: base
 
 ## Kepler's laws of planetary motion
 
-1. the sun is at the focus of the elliptical orbit of planetary motion 
+1. the sun is at the focus of the elliptical orbit of planetary motion
 2. $\frac{dA}{dt}$ is a constant
 3. $\frac{T^2}{r^3}$ is comstant
 
 ## Gravity
+
+Use the masses and separation of the interacting bodies to evaluate the gravitational force.
 
 * $\frac{GMm}{r^2}$
 
@@ -36,16 +42,19 @@ layout: base
 * $a = v^2/r$
 
 ## Linear motion
+
 * $a = \frac{dv}{dt}$
 * $v = \frac{dx}{dt}$
 * $x = x_i+v_it+\frac{1}{2}at^2$
 
 ## Momentum
+
 * $P = mv$
 * $P_i = P_f$
 * $J = \Delta P$
 
 ## Free fall
+
 <div style="text-align: center;">
 <img src="upload_e419312f504a84de598c759ceede1973.png" alt="image" width="250">
 </div>
@@ -54,9 +63,13 @@ layout: base
 * $\Delta h = \frac12gt^2$
 
 ## Torque
+
+Torque measures the rotational effect of a force about a specified point or axis. The perpendicular lever arm determines its magnitude.
+
 * $𝜏 = r\times F$
 
 ## Slope
+
 <div style="text-align: center;">
 <img src="upload_474a2ea044be0c343df02e29cf4c990e.png" alt="image" width="250">
 </div>
@@ -65,6 +78,7 @@ layout: base
 * $F_s = mg\cdot sin\theta$
 
 ## Resistance
+
 <div style="text-align: center;">
 <img src="upload_67467164574af6f92a6c944c2a0279b9.png" alt="image" width="250">
 </div>
@@ -78,6 +92,9 @@ layout: base
 * $D_2 = \frac{1}{2}C_pAv^2$
 
 ## Pressure
+
+Pressure is normal force per unit area. Distinguish absolute pressure from pressure measured relative to the surroundings.
+
 * $P = \frac{F}{A}$
 <div style="text-align: center;">
 <img src="upload_51f654286a90b4664b4fc0af7977daf2.png" alt="image" width="150">
@@ -89,8 +106,11 @@ layout: base
 </div>
 
 * $\frac{F_1}{A_1} = \frac{F_2}{A_2}$
+
 ## Buoyancy
+
 * $F_b = \rho gV$
 
 ## spring
+
 * $F = kx$

@@ -4,6 +4,8 @@ layout: base
 
 # Statics of particles
 
+A particle in equilibrium has zero resultant force. Resolve forces into consistent components or use geometric force relations to determine unknown magnitudes and directions.
+
 ## Force on a particle (several concurrent force)
 
 * concurrent force : all force pass through a point.
@@ -12,7 +14,9 @@ layout: base
 **Common solutions**
 
 1. Law of sines :
+
 $$F^2 = F_1^2+F_2^2-2F_1F_2cos(\theta)$$
+
 2. Law of cosines :
 
 $$\frac{F_1}{sin(\theta_1)} = \frac{F_2}{sin(\theta_2)} = \frac{F_3}{sin(\theta_3)}$$
@@ -24,6 +28,7 @@ $$\frac{F_1}{sin(\theta_1)} = \frac{F_2}{sin(\theta_2)} = \frac{F_3}{sin(\theta_
 </div>
 
 $F$ may be resolved into a component $F_x$ and $F_y$ .
+
 $$F = F_x+F_y$$
 
 * x component $F_x$:

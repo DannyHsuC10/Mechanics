@@ -4,6 +4,8 @@ layout: base
 
 # Volumetric strain
 
+Volumetric strain measures the fractional change in volume. This derivation connects small strains in three directions with the bulk modulus under uniform pressure.
+
 $$\frac{dV+V}{V} = (\frac{x+dx}{x})(\frac{y+dy}{y})(\frac{z+dz}{z})$$
 
 $$= (1+\frac{dx}{x})(1+\frac{dy}{y})(1+\frac{dz}{z})$$

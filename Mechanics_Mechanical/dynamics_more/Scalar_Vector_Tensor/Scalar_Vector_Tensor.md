@@ -4,6 +4,8 @@ layout: base
 
 # Scalar, Vector, Tensor
 
+Scalars, vectors, and tensors represent quantities with different directional structure. The operations below show how components combine and how these objects appear in mechanics.
+
 ## inner product
 
 $$n_x = n\cdot\cos\theta_x\cdot\vec x$$
@@ -23,14 +25,12 @@ $n$ can be "$v$" , "$a$" , "$f$" , "$p$" , "$J$" , "$K$" , "$\omega$"...
 
 ## outer product
 
-$$
-(c_x,c_y,c_z) =
+$$(c_x,c_y,c_z) =
 \begin{vmatrix}
 \vec x & \vec y & \vec z\\
 a_x & a_y & a_z\\
 b_x & b_y & b_z\\
-\end{vmatrix}
-$$
+\end{vmatrix}$$
 
 $a,b,c$ can be "$v$" , "$a$" , "$f$" , "$p$" , "$J$" , "$K$" , "$\omega$"...
 
@@ -43,14 +43,12 @@ $a,b,c$ can be "$v$" , "$a$" , "$f$" , "$p$" , "$J$" , "$K$" , "$\omega$"...
 
 ## Tensor
 
-$$
-(A) =
+$$(A) =
 \begin{bmatrix}
 A_x & -A_{xy} & -A_{xz} \\
 -A_{xy} & A_y & -A_{yz} \\
 -A_{xz} & -A_{yz} & A_z \\
-\end{bmatrix}
-$$
+\end{bmatrix}$$
 
 $A$ can be "$I$","$\delta$","$\sigma$"...
 

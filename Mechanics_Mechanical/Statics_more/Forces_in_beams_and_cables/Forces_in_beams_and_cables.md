@@ -4,6 +4,8 @@ layout: base
 
 # Forces in beams and cables
 
+Distributed loading changes the internal shear and bending moment along a beam. The differential relationships below connect the load intensity to those internal resultants.
+
 ## Shear
 
 $$V-(W\Delta x)-(V+\Delta V) = 0$$

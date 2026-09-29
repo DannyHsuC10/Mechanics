@@ -4,6 +4,8 @@ layout: base
 
 # Greek alphabet
 
+Greek letters are frequently used for angles, material properties, and physical constants. This table helps match a symbol to its name and uppercase form.
+
 | Lowercase  | Uppercase  | English |  name   |
 |:----------:|:----------:|:-------:|:-------:|
 |  $\alpha$  |    $A$     |    A    |  alpha  |

@@ -4,6 +4,8 @@ layout: base
 
 # Brakes
 
+A brake converts mechanical energy into heat through friction. The equations relate applied force, contact geometry, braking torque, and the heat that must be dissipated.
+
 ## Block brake
 
 <div style="text-align: center;">
@@ -19,7 +21,9 @@ $$\frac{\tau}{\mu r}a-\frac{\tau}{r}b-Fl = 0$$
 $$F = \frac{\tau(a-\mu b)}{\mu rl}$$
 
 **reverse**
+
 $$F = \frac{\tau(a-\mu b)}{\mu rl}$$
+
 * if $a-\mu b<0$, self lock
 
 ## Band brake
@@ -43,6 +47,7 @@ $$\frac T{r(e^{\mu\theta}-1)}a-Fl = 0$$
 $$F = \frac{Ta}{rl(e^{\mu\theta}-1)}$$
 
 **reverse**
+
 $$F = \frac{Tae^{\mu\theta}}{rl(e^{\mu\theta}-1)}$$
 
 ## Disc brake

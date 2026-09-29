@@ -3,6 +3,9 @@ layout: base
 ---
 
 # Wave
+
+Wave motion transfers a disturbance through space. The relationships connect wavelength, frequency, propagation speed, and the displacement of the medium.
+
 * [Wave](wave.m)
 
 **transverse wave**

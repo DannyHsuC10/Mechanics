@@ -4,6 +4,8 @@ layout: base
 
 # Gravity
 
+Gravitational force determines surface weight, escape conditions, and orbital motion. Track the reference for potential energy and the assumptions about mass distribution in each model.
+
 <div style="text-align: center;">
 <img src="upload_1cb174a8e5011f584a3e3d6456a39ad3.png" alt="image" width="500">
 </div>
@@ -19,12 +21,15 @@ $$F = ma$$
 $$a_g = g = \frac{GM}{r^2}$$
 
 * Consider centrifugal force
+
 $$F_{net} = 0 = -mg+F_c+N$$
 
 $$F_c = mv^2/r = m𝜔^2r$$
 
 $$N = mg-F_c = mg-m𝜔^2r$$
+
 if $N = 0$
+
 $$a = g-𝜔^2r$$
 
 ## Gravitational potential energy
@@ -76,6 +81,7 @@ $\frac{dA}{dt}$ is a constant
 $$\frac{dA}{dt} = \frac{1}{2}r^2\frac{d\theta}{dt} = \frac{1}{2}r^2𝜔$$
 
 3. cycle law:
+
 $$L = rp = rmv = r^2m𝜔$$
 
 $$\frac{dA}{dt} = \frac{1}{2}r^2𝜔$$

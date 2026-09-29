@@ -4,6 +4,8 @@ layout: base
 
 # Newton's laws of motion
 
+Newton's laws connect inertia, acceleration, and interacting forces. Apply them in an inertial frame, or account for the additional terms required in an accelerating frame.
+
 ## Newton's first laws of motion
 
 $$\vec{F_{net}} = 0 \qquad Δ\vec{V} = 0\qquad a = 0$$

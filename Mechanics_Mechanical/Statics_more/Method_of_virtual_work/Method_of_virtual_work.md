@@ -4,18 +4,27 @@ layout: base
 
 # Method of virtual work
 
+Virtual work tests equilibrium through a small imagined displacement compatible with the constraints. The energy viewpoint also helps distinguish stable and unstable equilibrium positions.
+
 "When an object or structure is in equilibrium, the total virtual work done by all external and internal forces on it on any virtual displacement is zero."
+
 $$dU = F\cdot dr = F\ ds\ cos(\theta)$$
 
 $$dU = M\ d\theta$$
+
 ***
+
 $$\sum W_V = \sum F\cdot du = 0$$
 
 * virtual work : $W_V$
+
 $$\sum(T\cdot dL) = \sum(P\cdot du)$$
+
 * Internal force : $T$
 * External force : $P$
+
 $$U_{min} = U_{Strain}+U_{External}$$
+
 * Strain Energy : $U_{Strain}$
 * Potential Energy of External Forces : $U_{External}$
 
@@ -27,6 +36,8 @@ ideal machine : $\eta = 1$
 in general : $\eta<1$
 
 ## Energy
+
+Identify the energy stored in each part of the system and the transfers across its boundary.
 
 $$U_g = Wh = mgh$$
 

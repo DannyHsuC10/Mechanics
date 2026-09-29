@@ -4,6 +4,8 @@ layout: base
 
 # gear
 
+Gears transmit rotation through contacting teeth. The relationships below connect tooth count, module, pitch geometry, and meshing conditions; check the stated gear type before using a formula.
+
 ## Gear parts
 
 <div style="text-align: center;">
@@ -11,6 +13,8 @@ layout: base
 </div>
 
 ## Gear parameters
+
+These dimensions define the reference geometry of a gear. Keep tooth count, module, radius, and diameter distinct.
 
 * Module : $M$
 * Pitch diameter : $D$
@@ -27,6 +31,8 @@ $$p = (\pi D)/T = \pi M$$
 $$p\times DP = \pi$$
 
 ## Gear contact
+
+Contact geometry determines how motion and forces pass between meshing teeth.
 
 * Arc of action : $S$
 
@@ -86,7 +92,7 @@ $$\frac{\phi_B}{\phi_A} = \frac{N_A}{N_B} = \frac{\omega_A}{\omega_B} = \frac{D_
 <img src="Involute_wheel.gif" alt="image" width="400">
 </div>
 
-> Two involute gears, the left driving the right: Blue arrows show the contact forces between them downward force applied by the left gear and upward resistance by the right gear. The force line (or line of action) runs along the long leg of dashed blue line which is a tangent common to both base circles. The involutes here are traced out in converse fashion: points of contact move along the stationary force-vector "string" as if it was being unwound from the left rotating base circle, and wound onto the right rotating base circle. In this situation, there is no force, and so no contact needed, along the opposite [lower left to upper right] common tangent (not shown). In other words, if the teeth were slightly narrower while everything else remained the same there would be a gap above each tooth on the left gear, because downward force is being applied by it.
+> Two involute gears, the left driving the right: Blue arrows show the contact forces between them downward force applied by the left gear and upward resistance by the right gear. The force line (or line of action) runs along the long leg of dashed blue line which is a tangent common to both base circles. The involutes here are traced out in converse fashion: points of contact move along the stationary force-vector "string" as if it was being unwound from the left rotating base circle, and wound onto the right rotating base circle. In this situation, there is no force, and so no contact needed, along the opposite (lower left to upper right) common tangent (not shown). In other words, if the teeth were slightly narrower while everything else remained the same there would be a gap above each tooth on the left gear, because downward force is being applied by it.
 >https://en.wikipedia.org/wiki/Involute_gear
 
 <div style="text-align: center;">
@@ -118,10 +124,14 @@ Bottom land : **<font color="#efe514">yellow</font>**
 **Idler gear**
 
 $$N_p = \frac{2k}{3\sin^2\phi}(1+\sqrt{1+3\sin^2\phi})$$
+
 **Non-idler gear**
+
 $$N_P = \frac{2k}{(1+2m)\sin^2\phi}(m+\sqrt{m^2+(1+2m)\
 sin^2\phi})$$
+
 **Not incorporating the gear ratio**
+
 $$N_G = \frac{N_p^2\sin^2\phi-4k^2}{4k-2N_p\sin^2\phi}$$
 
 **Minimum number of teeth**

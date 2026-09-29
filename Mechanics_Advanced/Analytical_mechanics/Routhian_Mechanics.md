@@ -4,6 +4,8 @@ layout: base
 
 # Routhian Mechanics
 
+Routh's method combines Lagrangian and Hamiltonian variables when a system has cyclic coordinates. The polar-coordinate example illustrates how a conserved momentum can reduce the remaining problem.
+
 ## Cyclic coordinates
 
 $$\frac{\partial L}{\partial q_i} = 0$$
@@ -15,6 +17,7 @@ The entire system is insensitive to space.
 For example: translating the system does not change the physical properties at all.
 
 ## Definition
+
 * non-cyclic coordinates：( $q_\alpha$ )
 * cyclic coordinates：( $q_c$ )
 
@@ -22,7 +25,6 @@ $$p_c = \frac{\partial L}{\partial \dot q_c}$$
 
 $$R(q_\alpha, \dot q_\alpha;\ q_c, p_c)
 = L(q,\dot q) - \sum_c p_c \dot q_c$$
-
 
 ## Compared to other mechanics
 
@@ -38,9 +40,8 @@ $$R(q_\alpha, \dot q_\alpha;\ q_c, p_c)
 |     Cyclic coordinates     | Hamiltonian  |
 | Partial cyclic coordinates | **Routhian** |
 
-
-
 ## Routh equations
+
 ### non-cyclic（Lagrangian）
 
 $$\frac{d}{dt}\frac{\partial R}\partial \dot q_\alpha$$
@@ -55,6 +56,7 @@ $$\dot q_c = -\frac{\partial R}{\partial p_c}$$
 * Another Hamilton equation is automatically satisfied.
 
 ## example (Free particles in planar polar coordinates)
+
 ### Lagrangian
 
 $$L = \frac12 m (\dot r^2 + r^2 \dot\theta^2)$$

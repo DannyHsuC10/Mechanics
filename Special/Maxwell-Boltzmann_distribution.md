@@ -4,6 +4,8 @@ layout: base
 
 # Maxwell-Boltzmann distribution
 
+The Maxwell–Boltzmann speed distribution describes an equilibrium classical gas under the stated assumptions. The derivation uses probability constraints to connect particle speeds with temperature and mass.
+
 ## System Assumptions
 
 Consider an ideal gas system, assuming that:
@@ -38,6 +40,7 @@ $$\int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \int_{-\infty}^{\infty} \frac{
 $$S = - \int f \ln f \, d^3v$$
 
 * Maximize entropy $S$
+
 $$d^3v = dv_x dv_y dv_z$$
 
 ## Solution

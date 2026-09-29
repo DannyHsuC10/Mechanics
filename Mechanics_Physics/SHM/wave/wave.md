@@ -4,6 +4,8 @@ layout: base
 
 # Wave
 
+Wave motion transfers a disturbance through space. The relationships connect wavelength, frequency, propagation speed, and the displacement of the medium.
+
 1. Electromagnetic Wave
 
 * travel without medium and can travel through a vacuum.
@@ -31,6 +33,7 @@ layout: base
 * $\omega =$ angular frequency
 * $t =$ time
 * $y_m =$ amplitude
+
 $$y(x,t) = y_msin(kx-\omega t)$$
 
 where $\omega t$ t is the phase
@@ -40,6 +43,7 @@ $$k = \frac{2\pi}{\lambda}$$
 ## Cycle & Angle Frequency & Frequency
 
 * when $x = 0$
+
 $$y(0,t) = y_msin(-\omega t)$$
 
 $$y(0,t) = y_msin(-\omega t_i-\omega \Delta t)$$
@@ -86,7 +90,7 @@ $$\tau = \mu v^2$$
 
 $$v = \sqrt{\frac \tau\mu}$$
 
-$$\lambda = \frac vf = 
+$$\lambda = \frac vf =
 \sqrt{\frac \tau{\mu T^2}}$$
 
 ## Wave equation
@@ -98,6 +102,7 @@ $$dm = \mu dx$$
 $$a_y = \frac{d^2y}{dt^2}$$
 
 $$F_{2y}-F_{1y} = \mu dx\cdot \frac{d^2y}{dt^2} \quad -(1)$$
+
 ***
 when $F_{1y}$ & $F_{2y} \simeq 0$
 
@@ -114,7 +119,9 @@ $$\tau = \sqrt{F_{x}^2+F_{y}^2}/S = \sqrt{F_{y}^2+(F_{y}^4/F_{x}^2)} \simeq F_{y
 $$F_{1y} = \tau S_1	\quad -(2)$$
 
 $$F_{2y} = \tau S_2 \quad -(3)$$
+
 ***
+
 $$(2),(3)\Longrightarrow(1)$$
 
 $$\tau S_2-\tau S_1 = \mu dx\cdot \frac{d^2y}{dt^2}$$
@@ -137,6 +144,7 @@ dt} = \sqrt{\frac\tau\mu}$$
 $$v = \sqrt{\frac\tau\mu}$$
 
 ## Wave energy transmission rate
+
 $dK = \frac12dmv^2$ the kinetic energy of thw $(dm)$ area is $(dK)$
 
 $$dK = \frac12dmv^2$$

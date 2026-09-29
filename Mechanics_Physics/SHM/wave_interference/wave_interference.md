@@ -4,6 +4,8 @@ layout: base
 
 # Wave interference
 
+The superposition principle combines wave displacements where waves overlap. Phase differences determine interference patterns, while boundary conditions select standing-wave modes.
+
 ## Principle of superposition of waves
 
 $$y'(x,t) = y_1(x,t)+y_2(x,t)$$
@@ -52,7 +54,7 @@ $$y'(x,t) =2y_mcos(\pi\frac{d_1-d_2}{\lambda})sin(-2\pi f t+\pi\frac{d_1+d_2}{\l
 
 $$\phi = \pi\frac{d_1-d_2}{\lambda}$$
 
-* strongest $d_1-d_2 = nk\lambda$ and $n$ is a natural number 
+* strongest $d_1-d_2 = nk\lambda$ and $n$ is a natural number
 * weakest $d_1-d_2 = n(k+\frac12)\lambda$ and $n$ is a natural number
 
 ## stationary wave

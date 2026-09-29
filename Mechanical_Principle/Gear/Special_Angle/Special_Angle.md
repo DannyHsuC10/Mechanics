@@ -4,6 +4,8 @@ layout: base
 
 # Special Angle
 
+This calculation explores an angular relationship between the pitch and base circles of an involute gear. Follow the radius substitutions carefully and keep all trigonometric arguments in radians.
+
 $$\theta = |\tan^{-1}(\frac{1+(\sqrt{((\frac{r_3}{r_2})^2-1})\tan(\sqrt{((\frac{r_3}{r_2})^2-1})}{\tan(\sqrt{((\frac{r_3}{r_2})^2-1})-\sqrt{((\frac{r_3}{r_2})^2-1})})|$$
 
 $$r_2 = r_3\cos(\frac\pi9)$$

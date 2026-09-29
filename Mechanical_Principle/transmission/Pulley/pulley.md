@@ -4,10 +4,12 @@ layout: base
 
 # Pulley
 
+Levers and pulley systems trade input travel for output force. Identify the moving parts and supporting rope segments before applying the mechanical-advantage relationships.
+
 ## Lever
 
 <div style="text-align: center;">
-<img src="Lever_%28PSF%29.png" alt="image" width="600">
+<img src="Lever_(PSF).png" alt="image" width="600">
 </div>
 
 >https://en.wikipedia.org/wiki/Lever
@@ -56,8 +58,11 @@ $\text{IMA}  = 1/2$
 </div>
 
 $$\frac WF = \frac{v_F}{v_w} = \frac12$$
+
 ## Block and tackle
+
 ### Gun tackle pulleys
+
 <div style="text-align: center;">
 <img src="upload_6a3bf6c9f80f0ce7b5b4b6750231997b.png" alt="image" width="140">
 </div>
@@ -71,7 +76,9 @@ $$\text{IMA} = \frac WF =\frac {2F}{F} = 2$$
 >https://en.wikipedia.org/wiki/Block_and_tackle
 
 * Number of line : $n$
+
 $$\text{IMA} = \frac WF =\frac {nF}{F} = n$$
+
 ### Spanish burton
 
 <div style="text-align: center;">
@@ -79,6 +86,7 @@ $$\text{IMA} = \frac WF =\frac {nF}{F} = n$$
 </div>
 
 $$\text{IMA} = \frac WF =\frac {2F+F}{F} = 3$$
+
 **Multi-spanish burton**
 
 * Number of movable pulleys : $n$
@@ -92,7 +100,9 @@ $$M = 2^{(n+1)}-1$$
 </div>
 
 number of line : $m$,$n$
+
 $$M = \frac WF = mn$$
+
 ### Differential pulley block
 
 The smaller the difference between $D$ and $d$, the larger $F$

@@ -2,8 +2,9 @@
 layout: base
 ---
 
-
 # Spring
+
+This study connects spring extension, distributed effects, and oscillation. The integral approach shows how a continuous model can extend the familiar lumped spring relation.
 
 ## Hooke's Law
 
@@ -26,6 +27,7 @@ $$L = x_i+x_s+x_M$$
 * Elongation caused by the weight: $x_M$
 
 ## Integral solution
+
 $$\frac{mg}{k} = x$$
 
 $$\frac{x_i}{L}+\frac{(dm+dm_s)g}{k'} = dx$$

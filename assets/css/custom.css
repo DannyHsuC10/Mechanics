@@ -1,91 +1,159 @@
-/* ===== Base ===== */
+/* ===== Architect-style base ===== */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-html { font-size: 16px; }
+html {
+  font-size: 16px;
+}
 
 body {
   margin: 0;
-  background-color: #f6f8fa;
+  color: #373737;
+  background: #f2f2f2;
+  font-family: "Helvetica Neue", Helvetica, Arial, serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
-/* ====================================================== 文字設定 ============================================ */
-/* ===== 全站文字設定 ===== */
-.page-intro,
-.markdown-body,
-.page-end {
-  font-family: -apple-system, BlinkMacSystemFont,
-               "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #909191;
+.inner {
+  width: 940px;
+  max-width: calc(100% - 2rem);
+  margin: 0 auto;
 }
 
-.page-intro {
-  background-image: linear-gradient(
-    120deg,
-    #155799,
-    #159957
-  );
+.content-wrapper .inner {
+  width: 1120px;
+}
+
+.page-header {
+  min-height: 150px;
+  padding: 34px 0 30px;
+  background: #2e7bcf;
+  border-bottom: 1px solid #275da1;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.page-title {
+  margin: 0;
   color: #ffffff;
-  padding: 3rem 2rem;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35);
+}
+
+.page-tagline {
+  margin: 0.45rem 0 0;
+  color: #b7d1ef;
+  font-size: 18px;
+}
+
+.content-wrapper {
+  padding: 35px 0 45px;
+  background: #ffffff;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 720px) minmax(150px, 190px);
+  justify-content: center;
+  align-items: start;
+  gap: 32px;
+}
+
+.markdown-body {
+  width: 720px;
+  max-width: 100%;
+  margin: 0 auto;
+  min-width: 0;
+  color: #373737;
+}
+
+.sidebar {
+  position: sticky;
+  top: 1rem;
+  width: 100%;
+  max-height: calc(100vh - 2rem);
+  overflow: auto;
+  padding: 14px;
+  background: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.home-link {
+  display: block;
+  color: #2879d0;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  text-decoration: underline;
 }
 
 .page-end {
-  margin: 3rem auto 2rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #57606a;
+  padding: 24px 0 32px;
+  color: #777777;
+  font-size: 13px;
 }
 
 .page-end a {
-  color: #0969da;
+  color: #2879d0;
+  font-weight: 700;
   text-decoration: none;
-  font-weight: 500;
 }
 
 .page-end a:hover {
   text-decoration: underline;
 }
 
-
-/* 小框框內容 */
-.content {
-  max-width: 900px;
-  margin: 0.1rem auto 2rem; /* 上 0.5rem，下 2rem */
-  padding: 2rem 2.5rem;      /* 內距 */
-  background: #f6f8fa;
-  border: none;
-  border-radius: 6px;
-}
-/* ====================================================== md細節文字設定============================================ */
-/* Markdown 內文標題 */
+/* ===== Markdown content ===== */
 .markdown-body h1,
-.markdown-body h2 {
-  color: #159957;
-  padding-bottom: 0.3em;
-  border-bottom: 1px solid #d0d7de;
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  margin: 1.25em 0 0.55em;
+  color: #474747;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-/* 段落 */
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.35em;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 26px;
+}
+
+.markdown-body h3 {
+  font-size: 21px;
+}
+
 .markdown-body p {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-/* 清單 */
 .markdown-body ul,
 .markdown-body ol {
-  padding-left: 2em;
+  margin-top: 0;
   margin-bottom: 16px;
+  padding-left: 2em;
 }
 
-/* 連結 */
 .markdown-body a {
-  color: #0969da;
+  color: #2879d0;
+  font-weight: 700;
   text-decoration: none;
 }
 
@@ -93,58 +161,169 @@ body {
   text-decoration: underline;
 }
 
-/* 行內程式碼 */
 .markdown-body code {
-  padding: 0.2em 0.4em;
-  margin: 0;
-  font-size: 85%;
-  background-color: #cfcfcf;
-  border-radius: 6px;
-  font-family: ui-monospace, SFMono-Regular,
-               Menlo, Consolas, monospace;
+  padding: 0.15em 0.35em;
+  color: #333333;
+  background: #f4f4f4;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.9em;
 }
 
-/* 程式碼區塊 */
 .markdown-body pre {
-  padding: 16px;
+  margin: 0 0 16px;
+  padding: 14px;
   overflow: auto;
-  background-color: #cfcfcf;
-  border-radius: 6px;
-  font-size: 85%;
+  background: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
   line-height: 1.45;
 }
 
 .markdown-body pre code {
-  background: #cfcfcf;
   padding: 0;
+  background: transparent;
+  border: 0;
 }
 
-/* 引言 */
 .markdown-body blockquote {
-  padding: 0 1em;
-  color: #57606a;
-  border-left: 0.25em solid #d0d7de;
+  margin: 0 0 16px;
+  padding: 0 0 0 1em;
+  color: #666666;
+  border-left: 4px solid #cccccc;
 }
 
-/* 表格 */
 .markdown-body table {
+  margin-bottom: 16px;
   border-collapse: collapse;
 }
 
 .markdown-body th,
 .markdown-body td {
-  border: 1px solid #d0d7de;
-  padding: 6px 13px;
+  padding: 7px 12px;
+  border: 1px solid #d8d8d8;
 }
 
-/* MathJax */
+.markdown-body th {
+  background: #f2f2f2;
+  font-weight: 700;
+}
+
 .markdown-body mjx-container {
   font-size: 100%;
 }
 
-/* html 中置圖片 */
-.center-img {
-  display: block;
-  margin: 1em auto;
-  max-width: 100%;
+/* ===== Calculator ===== */
+.calculator {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f8f8f8;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 #ffffff;
 }
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.calculator label {
+  display: grid;
+  gap: 0.35rem;
+  color: #474747;
+  font-weight: 700;
+}
+
+.calculator input {
+  width: 100%;
+  padding: 0.48rem 0.6rem;
+  color: #373737;
+  background: #ffffff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  font: inherit;
+}
+
+.calculator input:focus {
+  outline: 2px solid rgba(46, 123, 207, 0.25);
+  border-color: #2e7bcf;
+}
+
+.calculator button {
+  padding: 0.55rem 0.9rem;
+  color: #ffffff;
+  background: #2e7bcf;
+  border: 1px solid #275da1;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+}
+
+.calculator button:hover {
+  background: #276cb5;
+}
+
+.calculator-message {
+  margin: 0.75rem 0 0;
+  color: #555555;
+}
+
+@media (max-width: 1000px) {
+  .page-header {
+    min-height: 0;
+    padding: 26px 0 24px;
+  }
+
+  .page-title {
+    font-size: 34px;
+  }
+
+  .page-tagline {
+    font-size: 16px;
+  }
+
+  .content-wrapper {
+    padding: 24px 0 34px;
+  }
+
+  .page-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+
+  .sidebar {
+    position: static;
+    width: auto;
+    order: 2;
+    max-height: none;
+  }
+
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.site-home { text-decoration: none; }
+.page-title { display: block; }
+.markdown-body img { max-width: 100%; height: auto; }
+.center-img { display: block; margin: 1em auto; }
+.markdown-body table { display: block; max-width: 100%; overflow-x: auto; }
+.math-display, .markdown-body mjx-container[display="true"] {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0;
+}
+.markdown-body p, .markdown-body li { overflow-wrap: anywhere; }
+#page-toc ul { padding-left: 1rem; }
+#page-toc li { margin: 0.5rem 0; }
+#page-toc a { color: #2879d0; text-decoration: none; }
+#page-toc a:hover { text-decoration: underline; }
+:target { scroll-margin-top: 1rem; }

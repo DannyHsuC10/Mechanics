@@ -4,6 +4,8 @@ layout: base
 
 # Oscillation
 
+Oscillatory motion repeats around an equilibrium position. The sinusoidal model connects amplitude, phase, frequency, velocity, and acceleration.
+
 <div style="text-align: center;">
 <img src="upload_f81f78af4be5bd7435163ec595d8ffbf.png" alt="image" width="500">
 </div>
@@ -37,6 +39,8 @@ $$𝜔T = 2\pi$$
 $$𝜔 = \frac{2\pi}{T} = 2\pi f$$
 
 ## Velocity
+
+Velocity is the time derivative of position. Its direction distinguishes it from scalar speed.
 
 $$v(t) = \frac{dx(t)}{dt} = \frac{d}{dt}(x_mcos(𝜔t+\phi))$$
 

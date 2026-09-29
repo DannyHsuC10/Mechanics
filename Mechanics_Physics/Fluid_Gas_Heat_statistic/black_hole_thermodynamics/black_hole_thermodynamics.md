@@ -4,6 +4,8 @@ layout: base
 
 # Black hole thermodynamics
 
+This conceptual overview draws parallels between black-hole properties and thermodynamic laws. Pay attention to the unit conventions when interpreting the displayed relations.
+
 ## Black hole
 
 <div style="text-align: center;">

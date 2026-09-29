@@ -3,6 +3,9 @@ layout: base
 ---
 
 # Electricity
+
+This reference connects electric charge, fields, circuits, and electromagnetic induction. The sections move from basic circuit quantities toward the field laws that describe electromagnetism.
+
 * [Electricity](electricity.m)
 
 $$F = \frac{kQq}{r^2}$$
@@ -41,13 +44,17 @@ $$R = \frac{Pl}{A}$$
 
 * $l =$ length
 
-* A =$ area
+* $A =$ area
 
 ## Energy
+
+Identify the energy stored in each part of the system and the transfers across its boundary.
 
 $$E = QV = IVt$$
 
 ## Power
+
+Power measures the rate of energy transfer. Use the translational or rotational expression that matches the mechanism.
 
 $$P = \frac{E}{t} = IV = I^2R = \frac{V^2}{R}$$
 
@@ -55,8 +62,8 @@ $$P = \frac{E}{t} = IV = I^2R = \frac{V^2}{R}$$
 
 |         |            Series             |           parallel            |
 |:-------:|:-----------------------------:|:-----------------------------:|
-| Voltage |   $$V_{tt} = V_1+V_2...+V_n$$   | $$V_{tt} = V_1 = V_2... = V_n$$ |
-| Current | $$I_{tt} = I_1 = I_2... = I_n$$ |   $$I_{tt} = I_1+I_2...+I_n$$   |
+| Voltage |   $V_{tt} = V_1+V_2...+V_n$   | $V_{tt} = V_1 = V_2... = V_n$ |
+| Current | $I_{tt} = I_1 = I_2... = I_n$ |   $I_{tt} = I_1+I_2...+I_n$   |
 
 ## Hall effect
 
@@ -99,7 +106,9 @@ $$\Phi_B = \int B\ dA = 0$$
 $$\int E\ ds = \frac{-d\Phi_B}{dt}$$
 
 $$\int B\ d = \mu_0 I+\mu_0\epsilon_0\frac{\Phi_E}{dt}$$
+
 ***
+
 $$\nabla\cdot E = \frac\rho\epsilon_0$$
 
 $$\nabla\cdot B = 0$$

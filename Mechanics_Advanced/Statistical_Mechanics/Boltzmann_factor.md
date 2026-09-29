@@ -4,6 +4,8 @@ layout: base
 
 # Boltzmann factor & probability distribution
 
+The Boltzmann factor weights states according to their energy and temperature. These notes connect equilibrium probabilities with free energy and introduce equations for stochastic motion.
+
 ## Boltzmann factor
 
 ### Ensembles limit
@@ -11,12 +13,15 @@ layout: base
 $$\sum p = 1$$
 
 $$\sum pE = E$$
+
 ### Definition of entropy
 
 $$S = k_B \ln(\frac1p)$$
 
 $$S(p) = k_B\sum p\ln p$$
+
 ### generic functions
+
 $$\Phi = k_B\sum p\ln p-\alpha(\sum p-1)-\beta(\sum pE-E)$$
 
 $$\frac{\partial \Phi}{\partial p} = 0$$
@@ -32,7 +37,9 @@ $$P = e^{-1-\alpha/k_B}e^{-(\beta/k_B)E}$$
 $$Z = e^{1+\alpha/k_B}$$
 
 $$P = \frac1Ze^{-\beta E}$$
+
 ### probability distribution
+
 $$\beta' = \frac\beta{k_B}$$
 
 $$\frac1T = \frac{\partial S}{\partial E}$$
@@ -44,12 +51,15 @@ $$P = \frac1Ze^{-E/k_BT}$$
 **continuous**
 
 $$P = \frac1Ze^{-\beta H}$$
+
 ### Boltzmann factor $e^{-\beta}$
+
 $$E\overbrace{\ \Longrightarrow\ }^{e^{-\beta}}\text{probability weight}$$
 
 Energy >> Probability Converter
 
 ## Langevin equation
+
 Environmental average effect + random disturbance result.
 
 * damping : $-\gamma v$
@@ -63,6 +73,7 @@ $$\xi(t)\xi(t)' = 2\gamma k_BT\Delta(t-t')$$
 Random but probabilistic results.
 
 ## Falk-Planck equations
+
 * probability : $P$
 
 $$\frac{\partial P}{\partial t} = \frac\partial{\partial x}(\frac1\gamma\frac{dV}{dx}P)+\frac{k_BT}{\gamma}\frac{\partial^2P}{\partial x^2}$$
@@ -71,7 +82,9 @@ $$\frac{\partial P}{\partial t} = \frac\partial{\partial x}(\frac1\gamma\frac{dV
 * Force Flow : $\frac\partial{\partial x}\text{drift}$
 
 ## Free energy
+
 Integrating the probability distribution of the Canonical ensemble.
+
 $$F(P) = \int dx P(x,t)(V(x)+kT\ln P(x,t))$$
 
 * Probability (not pressure) : $P(x,t)$
@@ -79,7 +92,9 @@ $$F(P) = \int dx P(x,t)(V(x)+kT\ln P(x,t))$$
 * $-TS$ : $kT\ln P(x,t)$
 
 $$\frac{dF}{dt} \le 0$$
+
 ### Minimum
+
 $$\Delta F = 0$$
 
 $$P(x) \propto e^{-\beta V(x)}$$

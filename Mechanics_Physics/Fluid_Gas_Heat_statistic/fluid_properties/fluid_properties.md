@@ -4,6 +4,8 @@ layout: base
 
 # Fluid properties
 
+Real fluids exhibit viscosity and surface effects that ideal-fluid models omit. The sections compare flow profiles, dimensionless flow measures, and forces associated with fluid motion.
+
 ## Viscous foece
 
 <div style="text-align: center;">
@@ -22,10 +24,14 @@ $$\tau = \mu\frac{𝜕u}{𝜕y}$$
 * Kinematic viscosity : $\nu$
 
 $$\nu = \frac{\mu}{\rho}$$
-## Turbulent power-law 
+
+## Turbulent power-law
+
 * velocity of the fluid : $u$
 * Location radius : $r$
+
 $$\frac{u}{u_{\max}} = (1-\frac{r}{R})^{1/n}$$
+
 ## Raynolds number
 
 <div style="text-align: center;">
@@ -48,7 +54,7 @@ $$u = \frac{1}{4\mu}\frac{dP}{dx}(r_o^2-r^2)$$
 
 * Pressure gradient : $\frac{dP}{dx}$
 This is the main force that propels the fluid to flow along the pipe
-* Dynamic viscosity : $𝜇$ 
+* Dynamic viscosity : $𝜇$
 viscosity represents the friction inside the fluid.
 * Velocity distribution :  $r_0^2−r^2$
 velocity changes with radial distance.
@@ -67,9 +73,9 @@ $$\frac{2\pi}{4\mu}\frac{dP}{dx}\int_{0}^{r_0}(r_o^2r-r^3) r dr$$
 
 $$= \frac{2\pi}{4\mu}\frac{dP}{dx}(\int_{0}^{r_0}r_o^2rdr-\int_{0}^{r_0}r^3dr)$$
 
-$$=\frac{2\pi}{4\mu}\frac{dP}{dx}(\frac{r_0^4}{2}-\frac{r_0^4}{4}) $$
+$$=\frac{2\pi}{4\mu}\frac{dP}{dx}(\frac{r_0^4}{2}-\frac{r_0^4}{4})$$
 
-$$=\frac{2\pi}{4\mu}\frac{dP}{dx}\frac{r_0^4}{4} $$
+$$=\frac{2\pi}{4\mu}\frac{dP}{dx}\frac{r_0^4}{4}$$
 
 $$Q = \frac{\pi r^4_0}{8\mu}(\frac{dP}{dx})$$
 
@@ -97,8 +103,11 @@ $$\gamma = \frac{2L}F$$
 ## Lift and Drag
 
 * **Lift**
+
 $$F_L = C_L(\frac12\rho A_N)u^2$$
+
 * **Drag**
+
 $$F_D = C_D(\frac12\rho A_N)u^2$$
 
 ## Coandă effect

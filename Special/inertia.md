@@ -4,6 +4,8 @@ layout: base
 
 # inertia
 
+Inertia describes resistance to changes in motion. The notes compare effective and reduced masses and explain how inertial forces appear in accelerating reference frames.
+
 ## inertia
 
 * The ability of an object to maintain its state of motion
@@ -42,10 +44,15 @@ $$\sum F_{real} = ma$$
 $$\sum F_{real}+F_{fict} = ma$$
 
 * Centrifugal force
+
 $$F_{cen} = m\omega^2r$$
+
 * Coriolis force
+
 $$F_{cor} = 2m\omega v$$
+
 * Euler force
+
 $$F_E = m\alpha r$$
 
 ### Fictitious force system

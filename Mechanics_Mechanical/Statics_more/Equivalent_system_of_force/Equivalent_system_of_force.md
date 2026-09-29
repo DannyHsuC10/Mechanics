@@ -4,6 +4,8 @@ layout: base
 
 # Equivalent system of force
 
+Equivalent force systems produce the same resultant force and moment on a rigid body. Vector products provide a systematic way to shift, combine, and resolve forces and couples.
+
 ## Exteral and internal forces
 
 <div style="text-align: center;">
@@ -39,8 +41,7 @@ $$V = P\times Q = \begin{vmatrix}
 \vec x &\vec y&\vec z\\
 P_x&P_y&P_z\\
 Q_x&Q_y&Q_z
-\end{vmatrix}
-$$
+\end{vmatrix}$$
 
 ## Moment of a force about a point
 
@@ -100,11 +101,15 @@ $$= P_xQ_x+P_yQ_y+P_zQ_z$$
 $$P\cdot P = P_x^2+P_y^2+P_z^2 = P^2$$
 
 $$cos(\theta) = \frac{P_xQ_x+P_yQ_y+P_zQ_z}{PQ}$$
+
 where $P = \sqrt{P_x^2+P_y^2+P_z^2}$ , $Q = \sqrt{Q_x^2+Q_y^2+Q_z^2}$
 
 * projection
+
 $$P_Q = \frac{P\cdot Q}{Q}  = \frac{P_xQ_x+P_yQ_y+P_zQ_z}{Q}$$
+
 ## mixed triple product of three vector
+
 * scalar : $S\cdot(P\times Q)$
 * vector : $S\cdot(P\times Q)$
 * volume : $U = S\cdot(P\times Q) = S\cdot V$
@@ -128,7 +133,9 @@ S_x &S_y&S_z\\
 P_x&P_y&P_z\\
 Q_x&Q_y&Q_z
 \end{vmatrix}$$
+
 ## Moment of a force about a given axis
+
 $$M = r\times F$$
 
 $$M_\lambda = \lambda\cdot M = \lambda\cdot (r\times F)$$
@@ -138,12 +145,15 @@ $$= \begin{vmatrix}
 x&y&z\\
 F_x&F_y&F_z
 \end{vmatrix}$$
+
 ## Moment of a couple
+
 $$M = r_A\times F+r_B\times(-F)$$
 
 $$=(r_A-r_B)\times F = r\times F$$
 
 $$M = rFsin(\theta) = Fd$$
+
 ## Couples may be represented by vector
 
 <div style="text-align: center;">
@@ -157,6 +167,7 @@ $$M = rFsin(\theta) = Fd$$
 </div>
 
 if the force $//$ y axis, then the moment about y axis is zero.
+
 $$M = r\times F$$
 
 $$r = 0,\ M = 0$$

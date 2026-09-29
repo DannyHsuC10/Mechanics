@@ -4,6 +4,8 @@ layout: base
 
 # Axial Loaded Members
 
+Axial loads stretch or shorten members along their length. The formulas account for geometry, elastic stiffness, temperature change, and the energy stored in deformation.
+
 $$\delta = \varepsilon L = \frac{\sigma L}{E} = \frac{PL}{AE}$$
 
 * stiffness (spring constant) : $k$

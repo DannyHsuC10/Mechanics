@@ -4,6 +4,8 @@ layout: base
 
 # Kinetics of particles
 
+Particle kinetics connects motion to forces and momentum. The central-force and orbital sections apply these ideas to gravitational trajectories.
+
 ## Newton's second law of motion
 
 $$F = ma$$
@@ -31,6 +33,7 @@ $$F = \dot p = \frac{d(mv)}{dt}$$
 if $m \not= \text{constant}$, $F = ma+\dot mv$
 
 * **conservation of momentum**
+
 $$p_{xi} = p_{xf} \qquad p_{yi} = p_{yf} \qquad p_{zi} = p_{zf}$$
 
 $$p_x = mv_{xi} = mv_{xf}$$
@@ -125,7 +128,9 @@ $$L/m = \frac{I\omega}{m} = l$$
 $$l = r^2\dot\theta = \text{constant}$$
 
 $$\dot\theta = l/r^2$$
+
 **velocity**
+
 $$\dot r = \frac{dr}{dt} = \frac{dr}{d\theta}\dot\theta = \frac{l}{r^2}\frac{dr}{d\theta} = -l\frac{d}{d\theta}(\frac1r)$$
 
 * Radial velocity : $\dot r$
@@ -150,6 +155,7 @@ $$\frac{l}{r} = r\omega = v_t$$
 $$\vec a_r = \frac{v_t^2}{r}\frac{d^2}{d\theta^2}$$
 
 ***
+
 $$\ddot r = r\dot\theta^2-\frac Fm = \frac1ul^2u^4-\frac Fm = -l^2u^2\frac{d^2u}{d\theta^2}$$
 
 $$\frac{d^2u}{d\theta^2}+u = \frac{F}{ml^2u^2}$$
@@ -175,6 +181,7 @@ $$\varepsilon = \frac{C}{GM/l^2} = \frac{Cl^2}{GM}$$
 eccentricity : $\varepsilon$
 
 $$\frac1r = \frac{GM}{l^2}(1+\varepsilon cos(\theta))$$
+
 the equation represents 4 possible trajectories
 
 1. $\varepsilon = 0$
@@ -197,6 +204,7 @@ $$l = rv = r^2\dot\theta$$
 $$W = mg = GMm/r^2$$
 
 when $\theta = 0$ and $\varepsilon = 1$
+
 $$\frac1r = \frac{GM}{l^2}(1+1)$$
 
 $$l^2 = 2GMr$$
@@ -211,7 +219,7 @@ if $R = r$
 
 $$v_{esc} = (2gR)^{1/2}$$
 
-1. if $v > v_{esc}$ , $\varepsilon > 1$ : hyperbolic　
+1. if $v > v_{esc}$ , $\varepsilon > 1$ : hyperbolic
 2. if $v = v_{esc}$ , $\varepsilon > 1$ : parabola
 3. if $v < v_{esc}$ , $\varepsilon > 1$ : ellipse
 

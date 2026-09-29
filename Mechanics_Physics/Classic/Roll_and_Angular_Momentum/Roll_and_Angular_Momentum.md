@@ -4,6 +4,8 @@ layout: base
 
 # Roll & Angular Momentum
 
+Rolling combines translation of the center of mass with rotation about it. These notes connect the rolling constraint to angular momentum and introduce precession and nutation.
+
 ## Cylinder rolling
 
 <div style="text-align: center;">
@@ -11,10 +13,15 @@ layout: base
 </div>
 
 * center
+
 $$v_{com} = 𝜔r$$
+
 * vertex
+
 $$v_{top} = 2𝜔r = 2v_{com}$$
+
 * energy
+
 $$\frac{1}{2}mv_{com}^2+\frac{1}{2}I_{com}^2$$
 
 ## Down hill rolling
@@ -32,6 +39,7 @@ $$F_{net} = -\mu mg\cdot cos\theta-mg\cdot sin\theta$$
 $$a = g(sin\theta-\mu cos\theta)$$
 
 * rolling moment
+
 $$𝜏 = Fr = f_sr = r\mu mg\cdot cos\theta = I𝛼$$
 
 $$f_s = \frac{Ia}{R^2}$$
@@ -70,6 +78,8 @@ $$F = \frac{dL}{rdt}$$
 
 ## Conservation of angular momentum
 
+Angular momentum remains constant when the resultant external torque about the chosen reference is zero.
+
 $$L_i = L_f$$
 
 $$I_i𝜔_i = I_f𝜔_f$$
@@ -97,11 +107,13 @@ $$𝜏 = mgr\cdot sin\theta$$
 $$mgr\cdot sin\theta = I𝜔_s𝜔_p$$
 
 $$𝜔_p = \frac{mgr\cdot sin\theta}{I𝜔_s}$$
+
 $$T_p = 2\pi/𝜔_p = \frac{2\pi I𝜔_s}{mgr\cdot sin\theta} = \frac{4\pi^2 I}{T_s𝜏}$$
 
 * Angular velocity of spin
 
 if $𝜔_p >>$ 0 and $\theta = 90^o$
+
 $$𝜏+L_p𝜔_p = L_s𝜔_p$$
 
 $$𝜏 = L_s𝜔_p-L_p𝜔_p$$
@@ -129,6 +141,7 @@ moment of inertia in Precession : $I_p$
 $$L = I_s𝜔_s+I_p𝜔_p+m𝜔_pr^2$$
 
 * Energy
+
 $$E = U+K$$
 
 $$U = mgr\cdot cos\theta$$

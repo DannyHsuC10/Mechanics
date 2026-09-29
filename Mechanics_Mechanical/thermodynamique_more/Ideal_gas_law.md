@@ -4,6 +4,8 @@ layout: base
 
 # Ideal gas law
 
+Gas equations of state relate pressure, volume, and temperature. This page begins with the ideal-gas model and then introduces corrections for nonideal behavior.
+
 $$PV = nPT$$
 
 ## Improve accuracy
@@ -16,6 +18,7 @@ $$Z = \frac{V_\text{actual}}{V_\text{ideal}}$$
 
 * Critical temperature : $T_{Cr}$
 * Critical pressure : $P_{Cr}$
+
 $$(P+\frac a{v^2})(v-b) = nRT$$
 
 $$a = \frac{27nR^2T^2_{Cr}}{64P_{Cr}}$$

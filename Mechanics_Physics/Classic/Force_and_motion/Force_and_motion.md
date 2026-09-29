@@ -4,6 +4,8 @@ layout: base
 
 # Force & motion
 
+These notes apply force balances to common mechanical situations such as pulleys, springs, and curved motion. Draw a free-body diagram and choose positive directions before substituting into the equations.
+
 ## acceleration of gravity
 
 The universal gravitational constant is not the acceleration due to gravity
@@ -118,6 +120,7 @@ when $v \not= 0 \qquad f_k = 𝜇_kN = 𝜇_kmg =$ Dynamic friction
 </div>
 
 When an object is on a slope and $𝜇_f = 0$
+
 $$N = mg⋅cos𝜃$$
 
 $$(mg⋅cos𝜃)^2+(mg⋅sin𝜃)^2 = mg$$
@@ -147,12 +150,15 @@ $$\int\frac{dv}{g-bv/m} = -\frac mb\int\frac{du}{u}$$
 $$=-\frac mbln(u)+C_1 = -\frac mbln(g-\frac bmv)+C_1$$
 
 $$-\frac mbln(g-\frac bmv)+C_1 = t+C_2$$
+
 let $C_1-C_2 = C'$
 
 $$ln(g-\frac bmv) = -\frac bm(t+C')$$
 
 $$g-\frac bmv = e^{-\frac bm(t+C')}$$
+
 when $t = 0$
+
 $$g = e^{bc'/m}$$
 
 $$C' = -\frac mbln(g)$$
@@ -166,6 +172,7 @@ $$1-\frac {bv}{mg} = e^{-\frac bmt}$$
 $$v = \frac{mg}{b}(1-e^{-bt/m})$$
 
 when $a = 0$ then $v = v_T =$ Terminal velocity
+
 $$0 = g-\frac{bv_T}{m}$$
 
 $$v_T = \frac{mg}{b}$$
@@ -213,6 +220,7 @@ Definition: Centrifugal force is a pseudo force (apparent force) experienced by 
 Direction: It always points outward, away from the center of the circular path.
 
 if $\omega$ is a constant
+
 $$𝛼 = 0$$
 
 $$a = \frac{v^2}{r}$$

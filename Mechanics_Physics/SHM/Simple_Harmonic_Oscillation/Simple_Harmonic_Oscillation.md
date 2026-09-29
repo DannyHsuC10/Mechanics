@@ -4,6 +4,8 @@ layout: base
 
 # Simple Harmonic Oscillation
 
+Simple harmonic motion occurs when the restoring force is proportional to displacement from equilibrium. The spring–mass model shows how kinetic and potential energy alternate during a cycle.
+
 $$F = ma = m\frac{v^2}{r} = m\omega^2r$$
 
 $$F = kr$$
@@ -24,6 +26,8 @@ $$T = 2\pi/\omega = 2\pi\sqrt{\frac{m}{k}}$$
 $$T = 2\pi\sqrt{\frac{m+\frac{1}{3}m_s}{k}}$$
 
 ## Energy
+
+Identify the energy stored in each part of the system and the transfers across its boundary.
 
 $$U(t) = \frac{1}{2}kx^2 = \frac{1}{2}kx_m^2cos^2(\omega t+\phi)$$
 

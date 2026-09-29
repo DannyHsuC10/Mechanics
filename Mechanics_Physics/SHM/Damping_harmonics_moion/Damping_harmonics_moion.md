@@ -4,6 +4,8 @@ layout: base
 
 # Damping harmonics motion
 
+Damping removes energy from an oscillating system. The response depends on the balance between inertia, stiffness, and damping, producing underdamped, critical, or overdamped motion.
+
 common harmonics
 
 * $x(t)$ : $x_mcos(\omega t+\phi)$
@@ -14,6 +16,7 @@ common harmonics
 
 * Damping force : $F_d = D_1(\text{backward force})$
 * Damping coefficient : $b$
+
 $$F_d = -bv$$
 
 $$F_{net} = F_d+F_s$$
@@ -86,6 +89,7 @@ $$m𝜆^2+b𝜆+k = 0$$
 
 let $2𝛾 = \frac bm,\omega_i^2 = \frac km$
 $𝛾$ is the decay rate, in the reciprocal of the time units of the independent variable $t$
+
 $$𝜆^2+2𝛾𝜆+\omega_i^2 = 0$$
 
 $$𝜆 = -𝛾\pm i\omega'$$
@@ -102,11 +106,11 @@ $$x(t) = e^{𝜆t} = e^{-t𝛾\pm it\sqrt{\omega_i^2-𝛾^2}}$$
 
 by Euler's formula : $e^{i\theta} = \cos(\theta)+i\sin(\theta)$
 
-$$ x(t) = e^{(-\gamma)t} \left( C_1 e^{i\omega' t} + C_2 e^{-i\omega' t} \right) $$
+$$x(t) = e^{(-\gamma)t} \left( C_1 e^{i\omega' t} + C_2 e^{-i\omega' t} \right)$$
 
-$$ x(t) = e^{-\gamma t} \left( C_1 (\cos(\omega' t) + i \sin(\omega' t)) + C_2 (\cos(\omega' t) - i \sin(\omega' t)) \right) $$
+$$x(t) = e^{-\gamma t} \left( C_1 (\cos(\omega' t) + i \sin(\omega' t)) + C_2 (\cos(\omega' t) - i \sin(\omega' t)) \right)$$
 
-$$ x(t) = e^{-\gamma t} \left( (C_1 + C_2) \cos(\omega' t) + i (C_1 - C_2) \sin(\omega' t) \right) $$
+$$x(t) = e^{-\gamma t} \left( (C_1 + C_2) \cos(\omega' t) + i (C_1 - C_2) \sin(\omega' t) \right)$$
 
 let $C'_1 = C_1 + C_2$ , $C'_2 = i (C_1 - C_2)$
 
@@ -137,6 +141,7 @@ $$-\frac {bt}{2m} = ln(x)$$
 $$b = \frac{-2m\cdot ln(x)}{t}$$
 
 3.$b = 2m\sqrt{\omega_i^2-\omega'^2}$
+
 $$2𝛾 = \frac bm$$
 
 $$b = 2m𝛾$$
@@ -146,6 +151,7 @@ $$\sqrt{\omega_i^2-𝛾^2} = \omega'$$
 $$b = 2m\sqrt{\omega_i^2-\omega'^2}$$
 
 * critical damping ($\omega' = 0$)
+
 $$b = 2m\sqrt{\omega_i^2-0}$$
 
 $$b = 2m\omega_i$$

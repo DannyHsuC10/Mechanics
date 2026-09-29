@@ -4,6 +4,8 @@ layout: base
 
 # Plane force system
 
+Coplanar force systems can be resolved into two force components and a moment. The diagrams illustrate force addition, support reactions, and equilibrium in a plane.
+
 ## Force Decomposition
 
 <div style="text-align: center;">
@@ -23,6 +25,7 @@ $$\frac{F}{r} = \frac{F_x}{x} = \frac{F_y}{y}$$
 </div>
 
 * **Two forces**
+
 $$F = F_A+F_B$$
 
 $$F_B = F-F_A$$
@@ -38,6 +41,7 @@ $$F_{tt} = \sqrt{F_A^2+F_B^2+2F_AF_Bcos(\theta)}$$
 $$\alpha = tan^{-1}\frac{F_Bsin(\theta)}{F_A+F_Bcos(\theta)}$$
 
 * **Multiple force**
+
 $$F_{tt} = \sqrt{(\sum F_{xi})^2+(\sum{F_{yi}})^2}$$
 
 $$F_x = \sum F_i\vec x$$
@@ -97,17 +101,23 @@ $$\tau = F\times r$$
 $$C = F\times d$$
 
 * **Decomposition**
+
 $$Fr = F_xy+F_yx$$
+
 * **synthesis**
+
 $$\tau_{tt} = \sum(F_i\times r_i)$$
+
 * $r_1,r_2,r_3 \le r_{tt}$
 
 ## Force and moment balances
 
 **Balance of 2 forces**
+
 $$\vec F_A = -\vec F_B$$
 
 $$\vec F_A+\vec F_B = 0$$
+
 **Balance of 3 forces**
 
 <div style="text-align: center;">
@@ -119,6 +129,7 @@ $$\vec F_A+\vec F_B = 0$$
 $$\frac{F_A}{sin(A)} = \frac{F_B}{sin(B)} = \frac{F_C}{sin(C)}$$
 
 **Balance of Multi-force**
+
 $$\sum F_{xi} = 0$$
 
 $$\sum F_{yi} = 0$$

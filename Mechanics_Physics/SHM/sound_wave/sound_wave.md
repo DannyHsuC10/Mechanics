@@ -4,6 +4,8 @@ layout: base
 
 # Sound wave
 
+Sound is a mechanical disturbance involving displacement and pressure variations in a medium. The sections connect propagation to intensity, interference, resonance, Doppler shifts, and shock waves.
+
 $$v = \sqrt{\frac\tau\mu} = \sqrt{\frac{force}{inertia}}$$
 
 * Bulk modulus : $B$
@@ -19,7 +21,7 @@ $$\Delta t = \frac{\Delta x}{v}$$
 
 $$F = PA-(P+\Delta P)A = -\Delta PA$$
 
-$$\Delta m = \rho A\Delta x = \rho Av\Delta t $$
+$$\Delta m = \rho A\Delta x = \rho Av\Delta t$$
 
 $$a = \frac{\Delta v}{\Delta t}$$
 
@@ -34,6 +36,8 @@ $$-\Delta PA = \rho\frac{B}{\rho} = B = \frac{P}{\Delta V/V}$$
 $$S(\lambda,t) = S_mcos(k\lambda-\omega t)$$
 
 ## Pressure
+
+Pressure is normal force per unit area. Distinguish absolute pressure from pressure measured relative to the surroundings.
 
 $$\Delta P(\lambda,t) = \Delta P_msin(k\lambda-\omega t)$$
 
@@ -52,9 +56,10 @@ $$\Delta P = -\rho \omega^2 S_m \cos\left(\frac{\omega}{v}\lambda - \omega t\rig
 $$\Delta P_m = (v \rho \omega) S_m$$
 
 ***
+
 $$\Delta P = B\frac {\Delta V}V$$
 
-$$ V = A\Delta \lambda$$
+$$V = A\Delta \lambda$$
 
 $$\Delta V = A\Delta s$$
 
@@ -72,6 +77,8 @@ $$\Delta P_m = (v \rho \omega) S_m$$
 
 ## Interference
 
+Combine the displacements or pressure variations with their phase relationship to obtain the resulting wave.
+
 $$S_1 = S_mcos(k\lambda-\omega t+\phi)$$
 
 $$S_2 = S_mcos(k\lambda-\omega t)$$
@@ -82,7 +89,7 @@ $$S' = S_mcos(k\lambda-\omega t+\phi)+S_mcos(k\lambda-\omega t)$$
 
 * $cosA+cosB = 2cos(\frac{A+B}{2})cos(\frac{A-B}{2})$
 
-$$S' = 2S_m(cos\frac\phi2)(cos(k\lambda-\omega t)) $$
+$$S' = 2S_m(cos\frac\phi2)(cos(k\lambda-\omega t))$$
 
 $$S'_m = 2S_m(cos\frac\phi2)$$
 
@@ -101,8 +108,8 @@ fully destructive interference
 |              Single open               |              Double open               |
 |:--------------------------------------:|:--------------------------------------:|
 |            $n = 1,3,5$...            |            $n = 1,2,3$...            |
-| $$f = \frac v\lambda = \frac{nv}{4L}$$ | $$f = \frac v\lambda = \frac{nv}{2L}$$ |
-|       $$\lambda = \frac{4L}{n}$$       |       $$\lambda = \frac{2L}{n}$$       |
+| $f = \frac v\lambda = \frac{nv}{4L}$ | $f = \frac v\lambda = \frac{nv}{2L}$ |
+|       $\lambda = \frac{4L}{n}$       |       $\lambda = \frac{2L}{n}$       |
 
 ## Sound intensity
 
@@ -164,11 +171,15 @@ $$f_{beat} = f_1-f_2$$
 
 ## Doppler effect
 
+Relative motion between a source and receiver changes the observed frequency. Define the velocity signs before using the formula.
+
 * $v_s$ : sound speed
+
 $$f' = f\frac{v_A\pm v_s}{-v_B\pm v_s}$$
 
 1. Moving listener
 listener velocity : $v_A$
+
 $$f = \frac v\lambda = \frac{vt/\lambda}{t}$$
 
 $$f' = \frac{(v_At+v_st)/\lambda}{t}$$
@@ -179,6 +190,7 @@ $$f' = f\frac{v_A + v_s}{v_s}$$
 
 2. Moving Sound Source
 Sound Source velocity : $v_B$
+
 $$f' = \frac {v_s}{\lambda} = \frac {v_s}{-v_Bt+v_st}$$
 
 $$= \frac {v_s}{(-v_B+v_s)t} = \frac {v_s}{(-v_B+v_s)/f}$$
@@ -188,6 +200,7 @@ $$f' = f\frac {v_s}{(-v_B+v_s)}$$
 ## Supersonic speed & shock wave
 
 * Mach number : $M$
+
 $$M = \frac v{v_s}$$
 
 * mach cone angle : $\theta$

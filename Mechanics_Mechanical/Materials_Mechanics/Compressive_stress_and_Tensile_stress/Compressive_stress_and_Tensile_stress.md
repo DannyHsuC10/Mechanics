@@ -2,8 +2,9 @@
 layout: base
 ---
 
-
 # Compressive stress & Tensile stress
+
+Axial tension and compression relate an applied load to normal stress and length change. The notes introduce elastic modulus, internal forces, and safety factors.
 
 ## Stress and strain
 
@@ -39,7 +40,9 @@ unit :
 $$\text{strain} = \frac{dL}{L}$$
 
 $$\varepsilon = \frac\delta L$$
+
 ## Elastic modulus
+
 <div style="text-align: center;">
 <img src="upload_0cb01621381eaae4f0fff2a9d955d454.png" alt="image" width="600">
 
@@ -57,9 +60,14 @@ $$\sum F_{int} = F_{int_1}+F_{int_2}+...+F_{int_n} = 0$$
 
 ## Safety Factor
 
+A safety factor compares an allowable or limiting capacity with the expected demand.
+
 $$SF > 1$$
 
 * Ductile Materials
+
 $$SF_{DM} = \frac{\text{Yield stress}}{\text{Allowable stress}}$$
+
 * Brittle materials
+
 $$SF_{BM} = \frac{\text{Ultimate stress}}{\text{Allowable stress}}$$

@@ -4,16 +4,25 @@ layout: base
 
 # Energy & Work
 
+Work describes energy transferred by a force acting through a displacement. These notes compare kinetic and potential energy and introduce mechanical efficiency.
+
 ## Energy
 
+Identify the energy stored in each part of the system and the transfers across its boundary.
+
 **Kinetic energy**
+
 $$K = \frac12mv^2$$
+
 **Potential energy**
+
 $$U_g = mgh = wh$$
 
 $$U_k = \frac12kx^2$$
 
 ## Work
+
+Work accumulates the component of force along a displacement. The integral form is useful when the force varies along the path.
 
 $$W = Fx$$
 

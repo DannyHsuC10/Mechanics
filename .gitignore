@@ -34,3 +34,10 @@ __pycache__/
 # 其他常見的備份檔
 *.old
 *.orig
+
+# Local website validation and generated output
+.site-check/
+.pnpm-store/
+.sass-cache/
+_site/
+_prepared_site/

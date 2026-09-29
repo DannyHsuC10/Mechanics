@@ -4,22 +4,30 @@ layout: base
 
 # center of mass
 
+A center of mass is a position weighted by the mass distribution. The geometric centroid coincides with it when density is uniform, allowing simple shape formulas to be used.
+
 $$M_{cen}(x,y)$$
 
 $$x = \frac{\sum m_ix_i}{\sum m_i}$$
 
 $$y = \frac{\sum m_iy_i}{\sum m_i}$$
+
 if density is uniform , then $M_{cen} = A_{cen}$
 if gravitational field is uniform , then $G_{cen} = M_{cen}$
+
 ## Centroid of line
+
 $$\frac{\sum L_ir_i}{\sum L_i}$$
+
 1. **Straight line**
 <div style="text-align: center;">
 <img src="upload_fbe19e7c22062f6e8c34d5fdacd5bc8c.png" alt="image" width="200">
 </div>
 
 $$x_{cen} = \int_0^L\frac{(m/L)xdx}{m} = \left[\frac{x^2}{2L}\right]_o^L$$
+
 $$= \frac{L^2}{2L} = \frac L2$$
+
 2. **Arc**
 <div style="text-align: center;">
 <img src="upload_905cb9d11b7e1fd3362028d01d4e6f8f.png" alt="image" width="200">
@@ -30,7 +38,9 @@ $$L = 2\pi r\frac{2\alpha}{2\pi} = 2r\alpha$$
 $$D = \frac{m}{2r\alpha}$$
 
 $$\sum m_i = m$$
+
 ***
+
 $$y_{cen} = \int_0^L\frac{ydL}{L}$$
 
 $$dL = Drd\theta = \frac{m}{2r\alpha}Rd\theta$$
@@ -41,7 +51,9 @@ $$\int_0^L\frac{ydL}{L} = \int_{\pi/2-\alpha}^{\pi/2+\alpha}\frac{r\ sin(\theta)
  d\theta}{2rm\alpha}$$
 
 $$= \frac{r}{2\alpha}\int_{\pi/2-\alpha}^{\pi/2+\alpha}sin(\theta)= \frac{r}{2\alpha}\left[-cos(\theta)\right]_{\pi/2-\alpha}^{\pi/2+\alpha}$$
- 
+
+
+
 $$= (\frac{-r}{2\alpha}cos(\frac\pi2+\alpha))-(\frac{-rcos(\frac\pi2-\alpha)}{2\alpha})$$
 
 $$= -r(-sin(\alpha)-sin(\alpha))\cdot\frac{1}{2\alpha}$$
@@ -49,7 +61,9 @@ $$= -r(-sin(\alpha)-sin(\alpha))\cdot\frac{1}{2\alpha}$$
 $$= \frac{-r(-2sin(\alpha))}{2\alpha}$$
 
 $$= \frac{rsin(\alpha)}{\alpha}$$
+
 ## Centroid
+
 1. **Rectangle**
 <div style="text-align: center;">
 <img src="upload_515cbb33d70a12d6be443c72893ec574.png" alt="image" width="200">
@@ -64,6 +78,7 @@ $$= \frac a2$$
 $$y_{cen} = \int_0^b\frac{A}{ab}\frac1Aay\ dy$$
 
 $$= \frac b2$$
+
 2. **Triangle**
 <div style="text-align: center;">
 <img src="upload_db48dada9ff5c6bc733c180a08445a64.png" alt="image" width="200">

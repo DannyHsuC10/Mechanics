@@ -4,7 +4,11 @@ layout: base
 
 # Kinetic energy and momentum methods
 
+Energy and momentum methods provide alternatives to solving every force component through time. The collision sections distinguish elastic, inelastic, and completely inelastic models.
+
 ## Kinetic energy
+
+Kinetic energy measures the energy associated with motion. Separate translational and rotational contributions when both are present.
 
 $$K = K_v+K_\omega$$
 
@@ -44,8 +48,12 @@ $$\tau = I\alpha = mr^2\alpha$$
 
 ## Momentum and Impulse
 
+Impulse accounts for the effect of a force over a time interval and equals the change in momentum.
+
 * Momentum : $P$
+
 $$P = mv$$
+
 * Impulse : $J$
 
 $$J = \frac{dp}{dt} = ma$$
@@ -144,6 +152,7 @@ $$K_{ti} = K_{tf}$$
 
 **step 3**
 Collision in this direction
+
 $$K_i = K_f$$
 
 $$K_{ni}+K_{ti} = K_{nf}+K_{tf}$$
@@ -189,18 +198,23 @@ Conditions
 **step 3**
 
 Solve for n directions
+
 $$e(v_{1ni}-v_{2ni}) = v_{2nf}-v_{1nf}$$
 
 $$ev_{1ni}-ev_{2ni} = v_{2nf}-v_{1nf}$$
 
 $$v_{1nf} = (v_{2nf})+ev_{2ni}-ev_{1ni}$$
+
 ****
+
 $$m_1v_{1ni}+m_2v_{2ni} = m_1v_{1nf}+m_2v_{2nf}$$
 
 $$v_{2nf} = \frac{m_1v_{1ni}+m_2v_{2ni}-m_1v_{1nf}}{m_2}$$
 
 $$v_{2nf} = \frac{m_1v_{1ni}+m_2v_{2ni}-m_1v_{1nf}}{m_2}$$
+
 ****
+
 $$v_{1nf} = (\frac{m_1v_{1ni}+m_2v_{2ni}-m_1v_{1nf}}{m_2})+ev_{2ni}-ev_{1ni}$$
 
 $$v_{1nf}+\frac{m_1v_{1nf}}{m_2} = (\frac{m_1v_{1ni}+m_2v_{2ni}}{m_2})+ev_{2ni}-ev_{1ni}$$
@@ -212,6 +226,7 @@ $$v_{1nf} = \frac{m_1v_{1ni}+m_2v_{2ni}+m_2ev_{2ni}-m_2ev_{1ni}}{m_2+m_1}$$
 $$v_{1nf} = \frac{v_{1ni}(m_1-m_2e)+m_2v_{2ni}(1+e)}{m_2+m_1}$$
 
 ****
+
 $$v_{2nf} = \frac{m_1v_{1ni} + m_2v_{2ni} - m_1v_{1nf}}{m_2}$$
 
 $$v_{2nf} = \frac{m_1v_{1ni} + m_2v_{2ni} - m_1 \left( \frac{v_{1ni}(m_1 - m_2e) + m_2v_{2ni}(1 + e)}{m_1 + m_2} \right)}{m_2}$$
@@ -223,8 +238,7 @@ $$= m_1v_{1ni}(m_1 + m_2) + m_2v_{2ni}(m_1 + m_2) - m_1v_{1ni}(m_1 - m_2e) - m_1
 $$m_1v_{1ni}(m_1 + m_2) - m_1v_{1ni}(m_1 - m_2e) = m_1v_{1ni}[m_1 + m_2 - (m_1 - m_2e)] = m_1v_{1ni}(m_2 + m_2e) = m_1v_{1ni}m_2(1 + e)$$
 
 $$m_2v_{2ni}(m_1 + m_2) - m_1m_2v_{2ni}(1 + e) = m_2v_{2ni}[m_1 + m_2 - m_1(1 + e)]
-= m_2v_{2ni}[m_2 - m_1e]
-$$
+= m_2v_{2ni}[m_2 - m_1e]$$
 
 $$v_{2nf} = \frac{m_1v_{1ni}m_2(1 + e) + m_2v_{2ni}(m_2 - m_1e)}{m_2(m_1 + m_2)}$$
 

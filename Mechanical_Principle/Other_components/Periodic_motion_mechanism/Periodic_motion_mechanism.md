@@ -4,6 +4,8 @@ layout: base
 
 # Periodic motion mechanism
 
+Intermittent mechanisms alternate between motion and dwell. The relationships below describe how gear engagement and Geneva-drive geometry set the timing of each cycle.
+
 ## Periodic motion gear
 
 * Time : $t$
@@ -14,7 +16,7 @@ $$t_A\frac{T_B}{T_A} = t_B$$
 ## Geneva drive
 
 <div style="text-align: center;">
-<img src="geneva wheel.JPG" alt="image" width="200">
+<img src="geneva%20wheel.jpg" alt="image" width="200">
 </div>
 
 >https://static.sdcpublications.com/multimedia/978-1-58503-767-4/files/krb/krb_gen_page3.htm
@@ -29,6 +31,7 @@ $$t_A\frac{T_B}{T_A} = t_B$$
 
 * transmission angle : $\theta_\text{on}$
 * Non-transmission angle : $\theta_\text{off}$
+
 $$\frac{2\pi}{2N} = \theta$$
 
 $$\theta_\text{on} = 2(\frac\pi2-\theta) = \pi-\frac{2\pi}N = \pi(1-\frac2N)$$
@@ -41,6 +44,7 @@ $$= \pi(2-(1-\frac2N)) =\pi(1+\frac2N)$$
 
 * transmission time : $t_\text{on}$
 * Non-transmission time : $t_\text{off}$
+
 $$t_\text{on} : \theta_\text{off} = \pi(1-\frac2N) : \pi(1+\frac2N)$$
 
 $$\omega = \frac t{2\pi}$$

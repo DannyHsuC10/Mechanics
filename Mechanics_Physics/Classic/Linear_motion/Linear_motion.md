@@ -4,6 +4,8 @@ layout: base
 
 # Linear motion
 
+Straight-line motion is described by position as a function of time. The equations and graphs connect displacement, velocity, and acceleration, including the constant-acceleration case.
+
 ## Moving distance
 
 * Stationary or moving
@@ -32,7 +34,7 @@ Velocity is slope of position versus time.
 
 $$v_{avg} = \frac{Δx}{Δt} = \frac{x_f-x_i}{t_f-t_i}$$
 
-$$v = \lim_{{Δt \to 0}}\frac{Δx}{Δt} = \frac{dx}{dt}$$
+$$v = \lim_{Δt \to 0}\frac{Δx}{Δt} = \frac{dx}{dt}$$
 
 * Speed & Velocity
 Velocity is a vector but speed is a scalar.
@@ -45,7 +47,7 @@ Acceleration is slope of velocity versus time.
 
 $$a_{avg} = \frac{Δv}{Δt} = \frac{v_f-v_i}{t_f-t_i}$$
 
-$$a = \lim_{{Δt \to 0}}\frac{Δv}{Δt} = \frac{dv}{dt} = \frac{d^2x}{dt^2}$$
+$$a = \lim_{Δt \to 0}\frac{Δv}{Δt} = \frac{dv}{dt} = \frac{d^2x}{dt^2}$$
 
 ## Relationship between position, velocity and acceleration
 

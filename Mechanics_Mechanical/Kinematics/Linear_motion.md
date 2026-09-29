@@ -4,6 +4,8 @@ layout: base
 
 # Linear motion
 
+Straight-line motion is described by position as a function of time. The equations and graphs connect displacement, velocity, and acceleration, including the constant-acceleration case.
+
 * time : $t$
 * height : $h$
 * velocity : $v$
@@ -20,6 +22,8 @@ $$speed = \frac{path}{time}$$
 $$velocity = \frac{displacement}{time}$$
 
 ## Acceleration
+
+Acceleration is the time derivative of velocity. A change in direction can produce acceleration even at constant speed.
 
 $$a_{avg} = \frac{Δv}{Δt} = \frac{v_f-v_i}{t_f-t_i}$$
 

@@ -4,6 +4,8 @@ layout: base
 
 # Shear
 
+Shear stress acts tangentially to a surface and produces angular distortion. The examples connect direct shear to elastic properties and stress transformation.
+
 $$\tau = \frac PA$$
 
 $$\gamma = \frac\delta L$$
@@ -73,7 +75,7 @@ $\theta = 0, \cos^2\theta = 1, \sin2\theta = 0, \sigma_\theta = \sigma_x = \sigm
 
 $\theta = 90^o, \cos^2\theta = 0, \sin2\theta = 0, \sigma_\theta = 0, \tau_\theta = 0$
 
-* Maximum shear stress plane : 
+* Maximum shear stress plane :
 
 $\theta = 45^o, \cos^2\theta = \frac12, \sin2\theta = 1,\sigma_\theta = \frac12\sigma_x, \tau_\theta = \frac12\sigma_x = \tau_\max$
 

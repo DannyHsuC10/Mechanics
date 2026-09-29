@@ -4,6 +4,8 @@ layout: base
 
 # Friction
 
+Friction models relate resistance to contact forces, geometry, and the direction of impending motion. Compare the assumptions for dry contacts, screws, bearings, and belts before using a relationship.
+
 ## The of Dry friction
 
 <div style="text-align: center;">
@@ -19,6 +21,7 @@ $$f_{max} = \mu_s N$$
 * not reach the maximum friction $$f_s \not=F$$
 
 **on motion**
+
 $$f_k = \mu_kN$$
 
 $$F = f_k$$
@@ -36,18 +39,22 @@ $$tan(\phi) = F/N = cos(\theta)/sin(\theta) = tan(\theta) <tan(\phi_s)$$
 
 no motion
 3. $\theta = \phi_s$
+
 $$N = Wcos(\theta) \qquad F = Wsin(\theta)$$
 
 $$tan(\phi) = F/N = cos(\theta)/sin(\theta) = tan(\theta) = tan(\phi_s)$$
 
 $$f = f_{max}
  = F = \mu_sN$$
+
 4. $\theta>\phi_s$
+
 $$N = Wcos(\theta)$$
 
 $$f_{max} = \mu_sN = Ntan(\phi_s)<Ntan(\theta)$$
 
 $$F = f_k = \mu_kN$$
+
 ## Square threaded screw
 
 $$\theta = tan^{-1}(\frac{P}{2\pi r})$$
@@ -59,7 +66,9 @@ double-threaded screw $L = 2P$
 triple-threaded screw $L = 3P$
 
 **self-locking**
+
 $$\phi_s>\theta$$
+
 ## Axle friection (journal bearings)
 
 <div style="text-align: center;">
@@ -73,6 +82,7 @@ $$N = W$$
 $$\sum M = 0$$
 
 $$M = Nd$$
+
 * offset position : $d$
 
 ## Disk friction (thrust bearing)

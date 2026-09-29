@@ -4,6 +4,8 @@ layout: base
 
 # Mechanics (Mechanical)
 
+This collection introduces the mechanics used to analyze machines and load-bearing parts. Follow the sections from force equilibrium to motion, energy, and material deformation.
+
 ## Statics
 
 1. [Plane force system](Statics/Plane_force_system/Plane_force_system.md)
@@ -16,7 +18,6 @@ layout: base
 >* [topple over](matlab_base/topple_over.m)
 >* [friction and slop](matlab_base/mu_slopes.m)
 >* [Centroid](matlab_base/Centroid.m)
-
 
 # Kinematics
 

@@ -4,6 +4,8 @@ layout: base
 
 # Statics concepts
 
+Statics uses idealized forces, bodies, and constraints to describe equilibrium. This reference introduces the basic concepts and units needed for subsequent calculations.
+
 ## Fundamental concepts
 
 1. Space : define the position of the point.
@@ -18,10 +20,15 @@ the condition of equilibrium or motion of rigid body will remains unchanged if a
 ## units unit
 
 * lenght : $m$
+
 $$1km = 1000m \qquad 1cm = 1/100m \qquad 1mm = 1/1000$$
+
 * mass : $kg$
+
 $$g : 1/1000kg \qquad Mg : 1000g$$
+
 * time : $sec$
+
 $$min = 60sec \qquad hr = 3600 sec$$
 
 ## The multiples and submultiples of the unit
@@ -36,6 +43,7 @@ $$min = 60sec \qquad hr = 3600 sec$$
 ## Other unit
 
 * force : $N$
+
 $$kN = 1000N \qquad MN = 10^6N$$
 
 $$1N = 1kg\cdot1m/s^2$$
@@ -57,4 +65,4 @@ $$w = mg = 1kg\cdot9.8m/s^2 = 9.8N$$
 $1ft = 0.3048m$
 $1mile = 10609km$
 $1in = 25.4mm$
-$1lbm = 0.4536kg$$
+$1lbm = 0.4536kg$

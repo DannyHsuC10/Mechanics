@@ -4,6 +4,8 @@ layout: base
 
 # Mechanics (Advanced)
 
+This collection develops energy-based and statistical descriptions of mechanical systems. The analytical mechanics notes include suspension models that connect abstract coordinates to engineering motion.
+
 ## Analytical mechanics
 
 1. [Analytical mechanics](Analytical_mechanics/Analytical_mechanics.md)

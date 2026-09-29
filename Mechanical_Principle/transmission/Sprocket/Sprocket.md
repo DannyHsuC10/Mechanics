@@ -4,6 +4,8 @@ layout: base
 
 # Sprocket
 
+A chain drive transfers motion through sprocket teeth engaging the chain. These notes connect tooth geometry, center distance, chain length, and transmitted power.
+
 ## contact angle
 
 <div style="text-align: center;">
@@ -37,6 +39,8 @@ $$v_{\min} = r\cos\theta2\pi N$$
 $$v_{\max} = r2\pi N$$
 
 ## Power
+
+Power measures the rate of energy transfer. Use the translational or rotational expression that matches the mechanism.
 
 $$P = Fv = F\frac{\pi DN}{60}$$
 

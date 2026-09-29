@@ -4,6 +4,8 @@ layout: base
 
 # Fluid
 
+These engineering relationships connect fluid flow to thermodynamic properties. The sections include mass flow, humidity, compressible flow, and two-phase mixture properties.
+
 ## Velocity of flow
 
 $$\dot m = \rho VA$$
@@ -18,7 +20,7 @@ $$\frac{P_1}{A_1} = \frac{P_2}{A_2}$$
 
 ## Flow work
 
-$$W/m = H+E_{int}+K=Q+PV+\frac{v^2}2+gh $$
+$$W/m = H+E_{int}+K=Q+PV+\frac{v^2}2+gh$$
 
 ## Humidity
 
@@ -28,6 +30,7 @@ $$W/m = H+E_{int}+K=Q+PV+\frac{v^2}2+gh $$
 * Absolute humidity : $\omega$
 * Air saturation humidity : $\omega_2$
 * Relative humidity : $\phi$
+
 $$\omega = \frac{m_v}{m_a} = \frac{0.622P_v}{P-P_v}$$
 
 $$\omega_2 = \frac{C_P(\Delta T)+\omega H_v}{H_a-H_v}$$
@@ -37,13 +40,17 @@ $$\phi = \frac{m_v}{m_g} = \frac{P_v}{P_g} = \frac{\omega P}{(0.622+\omega)P_g}$
 ## Enthalpy(air)
 
 * dry
-$$H_{\text{dryair}} = C_P\Delta T = 1.005kJ/kg\cdot^oC\Delta T $$
+
+$$H_{\text{dryair}} = C_P\Delta T = 1.005kJ/kg\cdot^oC\Delta T$$
+
 * humid
+
 $$H_{\text{humidair}} = H_{\text{dryair}}+\omega H_v$$
 
 ## Stagnant fluid
 
 Convert all kinetic energy into heat
+
 $$H_0 = H+\frac{v^2}{2}$$
 
 $$T_0 = T+\frac{v^2}{2C_P}$$
@@ -57,8 +64,11 @@ The speed of a very small pressure wave in a medium is the speed of sound.
 * Static density : $\rho_0$
 * Particle moving speed : $u$
 * Conservation of mass(Density and velocity remain constant)
+
 $$\frac{\partial \rho}{\partial t}+\rho_0\frac{\partial u}{\partial x} = 0$$
+
 * Conservation of Momentum(Acceleration equals gradient pressure)
+
 $$\rho_0\frac{\partial u}{\partial t} = -\frac{\partial P}{\partial x}$$
 
 $$\frac{\partial \rho}{\partial t}-\frac{\partial^2 P}{\partial x^2}dt = 0$$

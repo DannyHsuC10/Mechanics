@@ -4,6 +4,8 @@ layout: base
 
 # Kinematics of particles
 
+Particle kinematics describes motion without first asking which forces cause it. The formulas connect position, velocity, and acceleration in Cartesian and polar coordinates.
+
 ## Linear motion of particles
 
 <div style="text-align: center;">
@@ -11,13 +13,17 @@ layout: base
 </div>
 
 * **position**
+
 $$x(t) = a_1t^n+a_2t^{n-1}+a_3t^{n-2}+...+a_nt^{0}$$
+
 * **velocity**
+
 $$v = \frac{dx}{dt} = \dot x$$
 
 $$\int v(t)\ dt = x(t)$$
 
 * **acceleration**
+
 $$a = \frac{dv}{dt} = \dot v = \frac{d^2x}{dt^2}=  \ddot x$$
 
 $$\int a(t)\ dt = v(t)$$
@@ -25,6 +31,7 @@ $$\int a(t)\ dt = v(t)$$
 $$\int\int a(t)\ dt = x(t)$$
 
 * **jeck**
+
 $$j = \frac{da}{dt} = \dot a = \frac{d^2v}{dt^2}=  \ddot v$$
 
 $$\frac{d^3x}{dt^3} = \dddot x$$

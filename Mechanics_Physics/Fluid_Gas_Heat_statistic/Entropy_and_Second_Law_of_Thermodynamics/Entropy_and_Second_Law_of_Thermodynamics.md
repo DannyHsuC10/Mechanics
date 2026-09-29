@@ -4,6 +4,8 @@ layout: base
 
 # Entropy & Second Law of Thermodynamics
 
+The second law constrains the direction of thermodynamic processes through entropy. These notes connect entropy changes to engines, heat pumps, free energy, and statistical descriptions.
+
 * **Entropy** : the measure of a system's thermal energy per unit temperature that is unavailable for doing useful work
 * Entropy is irreversible
 
@@ -30,8 +32,11 @@ $$\int_i^f\frac{dQ}{T} = \int_i^fnR\frac{dV}{V}+\int_i^fnC_V\frac{dT}{T}$$
 $$\Delta S \ge 0$$
 
 * Endothermic
+
 $$\Delta S_{gas} = \frac{+|Q|}{T}$$
+
 * Exothermic
+
 $$\Delta S_{res} = \frac{-|Q|}{T}$$
 
 ## Heat engine
@@ -71,6 +76,7 @@ Engine efficiency : $\eta_e$
 
 A machine that uses energy to transfer heat
 work $\Longrightarrow$ heat
+
 $$\eta = \frac{|Q_L|}{|W|}$$
 
 $$\eta = \frac{|Q_L|}{|Q_H|-|Q_L|}$$
@@ -87,6 +93,7 @@ $$W = \frac{N!}{n_1!n_2!}$$
 * number of particles : $N$
 * Number of particles in different states : $n$
 eg : Ground state, excited state, plasma state, Solid, liquid, gas
+
 $$S = k\ln W$$
 
 $$S = k\ln W = \int_i^fnR\frac{dV}{V}+\int_i^fnC_V\frac{dT}{T}$$
@@ -94,6 +101,7 @@ $$S = k\ln W = \int_i^fnR\frac{dV}{V}+\int_i^fnC_V\frac{dT}{T}$$
 ## Enthalpy & Free Energy
 
 Enthalpy : Represents the total heat content of the system
+
 $$H = E_{int}+PV$$
 
 * Enthalpy : $H$
@@ -101,6 +109,7 @@ $$H = E_{int}+PV$$
 $$dH = dE_{int}+PdV+VdP$$
 
 The degree to which heat influx increases enthalpy
+
 $$dQ = dE_{int}+PdV$$
 
 $$dQ = dH-VdP$$
@@ -109,7 +118,7 @@ $$H = \left(\frac{\partial H}{\partial T}\right)_PdT+\left(\frac{\partial H}{\pa
 
 $$dQ = \left(\frac{\partial H}{\partial T}\right)_PdT+\left(\frac{\partial H}{\partial P}-V\right)_TdP$$
 
-$$dQ = C_pn\Delta T $$
+$$dQ = C_pn\Delta T$$
 
 $$C_p = \left(\frac{\partial H}{\partial T}\right)_P$$
 
@@ -150,13 +159,19 @@ $$S = -\left(\frac{\partial G}{\partial T}\right)_P$$
 
 1. from internal energy:
 $dE_{int} = TdS-PdV$
+
 $$\left(\frac{\partial T}{\partial V}\right)_S = -\left(\frac{\partial P}{\partial S}\right)_V$$
+
 2. from enthalpy:
 $dH = TdS+VdP$
+
 $$\left(\frac{\partial T}{\partial P}\right)_S = \left(\frac{\partial V}{\partial S}\right)_P$$
+
 3. from Helmholtz free energy:
 $dF = -SdT-PdV$
+
 $$\left(\frac{\partial S}{\partial V}\right)_T = \left(\frac{\partial P}{\partial T}\right)_V$$
+
 4. from Gibbs free energy:
 $dG = -SdT+VdP$
 

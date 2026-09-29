@@ -4,6 +4,8 @@ layout: base
 
 # Cam and follower
 
+A cam converts an input rotation into a prescribed follower motion. The notes connect the follower displacement to velocity, acceleration, and the geometry of contact.
+
 <div style="text-align: center;">
 <img src="Cam-And-Follower-Terminology.webp" alt="image" width="300">
 </div>

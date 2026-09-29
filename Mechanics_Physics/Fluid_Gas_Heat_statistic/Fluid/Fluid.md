@@ -4,7 +4,11 @@ layout: base
 
 # Fluid
 
+These fluid relationships connect density, pressure, and the forces acting on a fluid. Keep static pressure and flow-dependent quantities distinct when selecting a model.
+
 ## Density
+
+Density connects the amount of mass to the volume it occupies.
 
 $$\rho = \frac{M}{V}$$
 

@@ -4,6 +4,8 @@ layout: base
 
 # Linkage
 
+Linkages guide motion through connected rigid members and joints. These notes compare four-bar, quick-return, and slider-crank mechanisms using geometry and mobility.
+
 ## Four-bar linkage
 
 <div style="text-align: center;">
@@ -23,10 +25,15 @@ $$t_\text{out} = t_\text{total}(1-\frac\theta\pi)$$
 * Number of Pairs : $P$
 * Number of Linkage : $L$
 **fixed**
+
 $$P=  \frac32L-2$$
+
 **Single degree of freedom**
+
 $$P>\frac32L-2$$
+
 **Multiple degrees of freedom**
+
 $$P<\frac32L-2$$
 
 ## Four-bar linkage motion
@@ -71,6 +78,7 @@ $$x_C = r\cos\theta+l\cos\phi$$
 $$r\sin\theta = l\sin\phi$$
 
 **step 2**
+
 $$v_B = \omega_2r_{AB} = \omega_2(-r\sin\theta+r\cos\theta)$$
 
 $$v_C = v_B+\omega_3r_{BC}+v_{rel}$$

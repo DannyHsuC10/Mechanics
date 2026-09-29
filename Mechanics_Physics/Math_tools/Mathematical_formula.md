@@ -4,6 +4,8 @@ layout: base
 
 # Mathematical formula
 
+These mathematical identities support the derivations used throughout the collection. Check domains, differentiation variables, and approximation limits before applying a result.
+
 ## Trigonometric function
 
 $$sin^2\theta+cos^2\theta = 1$$
@@ -142,6 +144,7 @@ $$\int \frac{dx}{(x^2+a)^{\frac{3}{2}}} = \frac{x}{a^2\sqrt{x^2+a^2}}$$
 $$\int \frac{dx}{(x^2+a^2)^{\frac{3}{2}}} = \frac{1}{a^2\sqrt{x^2+a^2}}$$
 
 ## x<<1 extreme approximation
+
 $$(1+x)^n \simeq 1+nx$$
 
 $$e^x \simeq 1+x$$
@@ -153,7 +156,9 @@ $$sin(x) \simeq x$$
 $$cos(x) \simeq 1$$
 
 $$tan(x) \simeq x$$
+
 ## Factorial
+
 $$0! = 1$$
 
 $$n! = 1\times2\times3...\times n$$
@@ -167,5 +172,7 @@ $$\Gamma(n) = \int_0^\infty t^{n-1} e^{-t}  dt = (n-1)!$$
 $$\Gamma(\frac12) = \sqrt{\pi} = -0.5!$$
 
 $$\Gamma(n+1) =n\Gamma(n)$$
+
 ## Other
+
 $$e^{i\theta} = \cos(\theta)+i\sin(\theta)$$

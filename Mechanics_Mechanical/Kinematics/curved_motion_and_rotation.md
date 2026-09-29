@@ -4,8 +4,9 @@ layout: base
 
 # curved motion & rotation
 
-## projectile
+Curved motion requires both the magnitude and direction of velocity to be tracked. These notes compare projectile motion, rotation, and the tangential and normal parts of circular motion.
 
+## projectile
 
 <div style="text-align: center;">
 <img src="upload_4dbaf4685261b29fa0aebab79cb49df8.png" alt="image" width="400">
@@ -128,9 +129,9 @@ $$r\alpha = a$$
 
 | linear motioa | rotation |
 |:---:|:---:|
-|$$\omega = \omega_i+\alpha t$$|$$v = v_i+at$$|
-|$$\theta = \theta_i+\omega_it+\frac12\alpha t^2$$|$$x = x_i+v_it+\frac12at^2$$|
-|$$\omega^2 = \omega_i+2\alpha\Delta\theta$$|$$v^2 = v_i^2+2a\Delta x$$|
+|$\omega = \omega_i+\alpha t$|$v = v_i+at$|
+|$\theta = \theta_i+\omega_it+\frac12\alpha t^2$|$x = x_i+v_it+\frac12at^2$|
+|$\omega^2 = \omega_i+2\alpha\Delta\theta$|$v^2 = v_i^2+2a\Delta x$|
 
 **if $\omega$ is a constant**
 

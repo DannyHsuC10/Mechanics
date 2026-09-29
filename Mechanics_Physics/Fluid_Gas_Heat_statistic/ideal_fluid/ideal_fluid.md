@@ -4,6 +4,8 @@ layout: base
 
 # Ideal fluid
 
+Ideal-fluid models simplify flow by imposing assumptions such as incompressibility and negligible viscosity. The continuity and Bernoulli relationships connect area, speed, pressure, and elevation under their applicable conditions.
+
 <div style="text-align: center;">
 <img src="upload_0a3db6afea85490ca6358544daefccc8.png" alt="image" width="400">
 </div>
@@ -24,6 +26,7 @@ layout: base
 
 Volume : $V$
 Velocity : $v$
+
 $$\Delta V = A\Delta x = Av\Delta t$$
 
 $$\Delta V = A_1v_1\Delta t = A_2v_2\Delta t$$

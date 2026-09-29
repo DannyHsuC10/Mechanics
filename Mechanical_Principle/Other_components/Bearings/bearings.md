@@ -4,7 +4,11 @@ layout: base
 
 # Bearings
 
+Bearings support rotating components while allowing relative motion. The notes distinguish sliding, rolling, journal, and thrust-contact models used to estimate friction.
+
 ## Friction
+
+Choose the contact model and direction of impending or actual sliding before assigning the friction force.
 
 ### Sliding friction
 
@@ -13,9 +17,12 @@ $$f_s = \mu_kN$$
 ### Rolling friction
 
 * rolling resistance constant : $C_{rr}$
+
 $$f_r = C_{rr}N$$
+
 * Surface subsidence : $Z$
 * Roller diameter : $d$
+
 $$C_{rr} = \sqrt{Z/d}$$
 
 ## Axle friection (journal bearings)
@@ -57,6 +64,7 @@ $$= \frac{\mu_kF}{\pi(R^2_1-R^2_2)}\int_0^{2\pi}1/3(R_1^3-R_2^3)\ d\theta$$
 $$\frac{2\mu_kF(R^3_1-R^3_2)}{3\pi(R^2_1-R^2_2)}$$
 
 if $R_2 = 0$ and $R_2 = R$
+
 $$M = 2/3\mu_kFR$$
 
 $$M_{max} = 2/3\mu_sFR$$

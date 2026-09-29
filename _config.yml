@@ -1,1 +1,22 @@
-theme: jekyll-theme-cayman
+theme: jekyll-theme-architect
+title: DH3868
+description: Mechanics, physics, and mechanical engineering notes
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: base
+exclude:
+  - Private
+  - Webpage_package
+  - python_Document_Management_Tools
+  - tools
+  - .site-check
+  - _prepared_site
+  - Gemfile
+  - Gemfile.lock

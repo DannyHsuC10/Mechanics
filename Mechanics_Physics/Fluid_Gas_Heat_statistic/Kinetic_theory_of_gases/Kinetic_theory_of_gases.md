@@ -4,6 +4,8 @@ layout: base
 
 # Kinetic theory of gases
 
+Kinetic theory connects gas pressure and temperature to molecular motion. The equations introduce characteristic speeds, mean free path, heat capacity, and the effects of molecular degrees of freedom.
+
 ## Mole
 
 $$n = \frac{N}{N_{A}}$$
@@ -13,18 +15,26 @@ $$n = \frac{N}{N_{A}}$$
 * Avogadro constant : $N_A = 6.02\times 10^{23}$
 
 $$M = N_Am = \frac{N}{n}m$$
+
 * mass : $m$
 * molar mass : $M$
+
 $$N_A = \frac Nn$$
 
 $$m = M\frac{n}{N} = \frac M{N_A}$$
+
 ## Ideal gas law
+
+The ideal-gas relation connects equilibrium pressure, volume, amount of gas, and absolute temperature.
+
 $$PV = nRT$$
+
 * pressure : $P$
 * volume : $V$
 * number of moles : $n$
 * gas constant : $R = 8.31J/mol\cdot K$
 * temperature : $T$
+
 $$k = \frac R{N_A} = \frac{8.31J/mol\cdot K}{6.02\times 10^{23}mol^{-1}} = 1.3\times 10^{-23}J/K$$
 
 Boltzmann constant : $k$
@@ -32,7 +42,9 @@ Boltzmann constant : $k$
 $$PV = NkT$$
 
 $$P = \frac{nRT}{V}$$
+
 ## Ideal gas work
+
 $$W = \int_{V_i}^{V_f}PdV = \int_{V_i}^{V_f}\frac{nRT}{V}dV$$
 
 $$= nRT\int_{V_i}^{V_f}\frac{dV}{V}$$
@@ -40,12 +52,14 @@ $$= nRT\int_{V_i}^{V_f}\frac{dV}{V}$$
 $$= nRT(ln(V_df)-ln(V_i))$$
 
 $$= nRT\cdot ln(\frac{V_f}{V_i})$$
+
 ## Root mean square speed
+
 Gas can move in all directions
 1. Left ($x_+$)
 1. Right ($x_-$)
 1. Front($y_+$)
-1. back($y_-$) 
+1. back($y_-$)
 1. up($z_+$)
 1. down($z_-$)
 
@@ -75,7 +89,7 @@ $$F_x = F_y = F_z = \frac13F$$
 
 $$F = \frac13\frac{2mv^2}{x}+\frac13\frac{2mv^2}{y}+\frac13\frac{2mv^2}{z}$$
 
-assume that the volume is symmetrical about its three dimensions. 
+assume that the volume is symmetrical about its three dimensions.
 
 $$x = y = z = L$$
 
@@ -120,7 +134,9 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 $$v_{rms} = \sqrt{\frac{3RT}{M}}$$
 
 * Root mean square velocity : $v_{rms}$
+
 ## gas kinetic energy
+
 $$K = \frac12mv^2$$
 
 * kinetic energy : $K$
@@ -128,10 +144,13 @@ $$K = \frac12mv^2$$
 $$v_{avg}^2 = \frac{3kT}{m}$$
 
 $$K = N\frac12m\frac{3kT}{m}$$
+
 * number of particles : $N$
+
 $$K = \frac{3N}2kT$$
 
 ## mean free path
+
 mean free path is the average distance over which a moving particle travels before substantially changing its direction.
 
 $$\lambda = \frac{\text {path length}}{\text {number of collisions}}$$
@@ -158,7 +177,7 @@ $$V = Av_{rel}\Delta t$$
 
 $$V = Av_{rel}\Delta t = \pi d^2v_{rel}\Delta t$$
 
-assume $|v_1| = |v_2| = |v_{rms}|$
+Assume $\lvert v_1\rvert = \lvert v_2\rvert = \lvert v_{rms}\rvert$.
 
 $$(\vec v_1-\vec v_2)^2 = \vec v_1^2+\vec v_2^2-2\vec v_1\cdot \vec v_2$$
 
@@ -185,13 +204,17 @@ $$N = (P/kT)V$$
 $$\lambda = \frac {V}{\pi d^2\sqrt2N} = \frac {V}{\pi d^2\sqrt2(P/kT)V}$$
 
 $$\lambda = \frac {1}{\pi d^2\sqrt2(P/kT)} = \frac {kT}{\sqrt2\pi d^2P}$$
+
 ## [Maxwell–Boltzmann distribution](../../../Special/Maxwell-Boltzmann_distribution.md)
 
 * Maxwell–Boltzmann distribution is a Probability density function (PDF).
+
 $$f(v) = (\frac{m}{2\pi kT})^{\frac{3}{2}}4\pi v^2e^{(-mv^2/2kT)}$$
 
 ### Most probable speed (by Maxwell–Boltzmann distribution)
+
 The maximum value occurs when the slope is 0
+
 $$\frac{df(v)}{dv} = 0$$
 
 $$((\frac{m}{2\pi kT})^{\frac{3}{2}}4\pi)\frac{d v^2e^{(-mv^2/2kT)}}{dv} = 0$$
@@ -200,7 +223,7 @@ $$\frac{d v^2e^{(-mv^2/2kT)}}{dv} = 0$$
 
 let $-mv^2/2kT = u$
 
-$$\frac{du}{dv} = \frac{-mv}{kT} = $$
+$$\frac{du}{dv} = \frac{-mv}{kT} =$$
 
 $$\frac{d v^2e^{u}}{dv} = 2ve^{u}+v^2e^{u}u' = 0$$
 
@@ -221,12 +244,14 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$v_{rms} = \sqrt{\frac{2RT}{M}}$$
+
 ### Average speed (by Maxwell–Boltzmann distribution)
+
 $$v_{avg} = \sum_{i=1}^{n} v_i \cdot P_i$$
 
 * Probability : $P$
 
-$$ P(a \leq v \leq b) = \int_a^b f(v) \, dv $$
+$$P(a \leq v \leq b) = \int_a^b f(v) \, dv$$
 
 $$v_{avg} = \int_0^\infty vf(v)dv$$
 
@@ -261,6 +286,7 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$v_{rms} = \sqrt{\frac{8RT}{\pi M}}$$
+
 ###  Root mean square speed(by Maxwell–Boltzmann distribution)
 
 $$v_{rms} = \sqrt{v^2} = (\int_0^\infty v^2f(v)dv)^{1/2}$$
@@ -310,8 +336,11 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$v_{rms} = \sqrt{\frac{3RT}{M}}$$
+
 ## Ideal gas specific heat (monatomic ideal gas)
-**Isochoric Process** : the volume of the system remains constant. so $\Delta V = 0$ and $E_{int} = Q$ 
+
+**Isochoric Process** : the volume of the system remains constant. so $\Delta V = 0$ and $E_{int} = Q$
+
 $$PV = NkT$$
 
 $$E_{int} = K = \frac32NkT = \frac12Nmv^2$$
@@ -327,25 +356,28 @@ $$\Delta E_{int} = Q = C_Vn\Delta T$$
 
 * The Specific heat capacity at constant volume : $C_V$
 
-$$\Delta E_{int} = C_Vn\Delta T = \frac{3}{2}Nk\Delta T $$
+$$\Delta E_{int} = C_Vn\Delta T = \frac{3}{2}Nk\Delta T$$
 
 $$C_V = \frac{3}{2}\frac{Nk}{n}$$
 
 * because of $Nk = nR$
 
 $$C_V = \frac{3Nk}{n2} = \frac{3}{2}R$$
+
 **Adiabatic Process** : No heat is exchanged with the surroundings. so $PV = NkT$ is a constant.
-$$ \Delta E_{int} = Q - W $$
+
+$$\Delta E_{int} = Q - W$$
 
 First Laws of Thermodynamics : $Q = \Delta E_{int} + P \Delta V$
 
-$$ Q = \Delta E_{int} + P \Delta V = \frac{3}{2} n R \Delta T + n R \Delta T $$
+$$Q = \Delta E_{int} + P \Delta V = \frac{3}{2} n R \Delta T + n R \Delta T$$
 
 $$C_pn\Delta T = \frac{3}{2}nR\Delta T+n R \Delta T$$
 
 $$C_P = \frac{5}{2}R$$
 
 $$C_P = C_V+R$$
+
 ## Degrees of freedom and molar heat capacity
 
 |  Molecule  |      Gas      | Movement | Rotation | Degrees of Freedom($f$) |

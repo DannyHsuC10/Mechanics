@@ -3,6 +3,9 @@ layout: base
 ---
 
 # Light
+
+Light exhibits wave behavior in propagation and interaction with materials. These notes introduce scattering, reflection, refraction, and related optical effects.
+
 * [Light](Light.m)
 
 ---

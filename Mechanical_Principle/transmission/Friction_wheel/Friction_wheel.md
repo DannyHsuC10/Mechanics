@@ -3,7 +3,13 @@ layout: base
 ---
 
 # Friction wheel
+
+Friction wheels transmit motion through tangential contact forces. Compare contact speed and available friction when estimating the speed ratio and transmitted power.
+
 ## Power
+
+Power measures the rate of energy transfer. Use the translational or rotational expression that matches the mechanism.
+
 $$P = Fv = fv$$
 
 $$f = \mu N$$
@@ -11,18 +17,25 @@ $$f = \mu N$$
 $$P = \mu Nv = \mu F \frac{\pi DN}{60}$$
 
 $$\text{PS} = \mu F \frac{\pi DN}{735\times60}$$
+
 ## Transmission distance
+
 | type                  | Internal contact | External contact |
 |:--------------------- |:----------------:|:----------------:|
-| Transmission distance |     $$R-r$$      |     $$R+r$$      |
+| Transmission distance |     $R-r$      |     $R+r$      |
+
 ## speed ratio
+
 $$v_1 = v_2$$
 
 $$v_1 = r_1\omega_1 = v_2 = r_r\omega_2$$
 
 $$\frac{\omega_1}{\omega_2} = \frac{N_1}{N_2} = \frac{R_2}{R_1} = \frac{D_2}{D_1}$$
+
 ## Conical friction wheel
+
 ### External contact
+
 $$\frac{N_1}{N_2} = \frac{\sin\beta}{\sin\alpha} = \frac{\sin(\theta-\alpha)}{\sin\alpha}$$
 
 $$= \frac{\sin\theta\cos\alpha-\cos\theta\sin\alpha}{\sin\alpha}$$
@@ -62,7 +75,7 @@ $$\tan\beta = \frac{\sin\theta}{\frac{N_2}{N_1}-\cos\theta}$$
 ## Perpendicular disks
 
 <div style="text-align: center;">
-<img src="1024px-TEZ-Reibradgetriebe_7271.JPG" alt="image" width="300">
+<img src="1024px-TEZ-Reibradgetriebe_7271.jpg" alt="image" width="300">
 </div>
 
 $$v_A = v_B$$

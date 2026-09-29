@@ -3,6 +3,9 @@ layout: base
 ---
 
 # heat
+
+Heat transfer changes temperature or the state of a material. These relationships cover specific heat, temperature conversion, and basic transfer mechanisms.
+
 * [heat](heat.m)
 
 ## Specific heat

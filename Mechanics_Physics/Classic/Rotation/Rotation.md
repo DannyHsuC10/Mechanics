@@ -4,6 +4,8 @@ layout: base
 
 # Rotation
 
+Angular position, velocity, and acceleration describe rotation about an axis. The equations compare rotational quantities with their translational counterparts and introduce inertia, torque, and work.
+
 $$\theta = \frac{S}{r}$$
 
 * unit
@@ -42,6 +44,8 @@ $$K = \frac{1}{2}I𝜔^2$$
 
 ## Moment of inertia
 
+Moment of inertia weights each mass element by its squared distance from the rotation axis.
+
 $$I = \sum m_ir_i^2$$
 
 $$F = ma$$
@@ -62,6 +66,8 @@ $$Fr = (mr^2)\frac{a}{r}$$
 
 ## Parallel Axis Theorem
 
+This theorem relates the moment of inertia about a centroidal axis to that about a parallel displaced axis.
+
 $$K_r = \frac{1}{2}I𝜔^2$$
 
 $$K_r^{\prime} = \frac{1}{2}I_{com}𝜔^2+\frac{1}{2}mv^2$$
@@ -80,11 +86,14 @@ $$I^{\prime} = I_{com}+mr^2$$
 
 ## Torque
 
+Torque measures the rotational effect of a force about a specified point or axis. The perpendicular lever arm determines its magnitude.
+
 <div style="text-align: center;">
 <img src="upload_5a3bb78d843a257f6fab02da4956cf53.png" alt="image" width="300">
 </div>
 
 * $𝜏 = Fr$
+
 $$𝜏 = Frsin(\theta)$$
 
 $$\vec{𝜏} = \vec{r}\times \vec{F} = -\vec{F}\times \vec{r}$$

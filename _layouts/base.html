@@ -2,17 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-  <title>{{ page.title }}</title>
-
-  <!-- Mermaid -->
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: 'default'
-    });
-  </script>
+  <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
+  <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
 
   <!-- MathJax -->
   <script>
@@ -26,34 +19,33 @@
   <script defer
     src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
   </script>
-
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/calculators.js' | relative_url }}"></script>
 </head>
 
 <body>
-
-  <!-- ===== 開頭段 (在外層容器外) ===== -->
-  <header class="page-intro">
-    <h1 class="page-title">DH3868</h1>
+  <header class="page-header">
+    <div class="inner">
+      <a class="site-home" href="{{ '/' | relative_url }}"><span class="page-title">{{ site.title | escape }}</span></a>
+      <p class="page-tagline">{{ site.description | escape }}</p>
+    </div>
   </header>
 
-  <!-- ===== 內容區塊 (小框框) ===== -->
-  <div class="content">
-    <main id="content" class="markdown-body">
-      {{ content }}
-    </main>
+  <div class="content-wrapper">
+    <div class="inner page-layout">
+      <main id="content" class="markdown-body">
+        {{ content }}
+      </main>
+      <aside class="sidebar" aria-label="Page navigation">
+        <a class="home-link" href="{{ '/' | relative_url }}">Home / README</a>
+        <nav id="page-toc" aria-label="On this page"></nav>
+      </aside>
+    </div>
   </div>
 
-  <!-- ===== 結尾段 (在外層容器外) ===== -->
   <footer class="page-end">
-    <p>
+    <div class="inner">
       ← <a href="{{ '/' | relative_url }}">Back to HOME</a>
-    </p>
+    </div>
   </footer>
-
-
 </body>
-
 </html>
-
-

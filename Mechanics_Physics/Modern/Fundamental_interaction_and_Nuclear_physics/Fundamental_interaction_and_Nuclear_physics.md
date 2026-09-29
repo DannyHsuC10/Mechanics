@@ -4,6 +4,8 @@ layout: base
 
 # Fundamental interaction & Nuclear physics
 
+These introductory notes connect atomic structure to nuclear reactions and fundamental interactions. The sections compare energy changes and outline how nuclear processes are used in power generation.
+
 ## State
 
 | state  | velocity | temperature |
@@ -38,6 +40,7 @@ nuclear reaction
 
 **energy**
 Atomic mass $\simeq$ Nucleus mass $\simeq$ Nuclear energy
+
 $$E = mc^2$$
 
 ## Nuclear reaction
@@ -63,7 +66,7 @@ $$E = mc^2$$
 
 |   Interaction   |   Mediators    | Relative strength | Long-distance behavior (potential) |  Range (m)   |
 |:---------------:|:--------------:|:-----------------:|:----------------------------------:|:------------:|
-|      Weak       | W and Z bosons |    $$10^{33}$$    | $${\frac {1}{r}}e^{-m_{(W,Z)}r}$$  | $$10^{-18}$$ |
-|     Strong      |     gluons     |    $$10^{38}$$    |             $$\sim r$$             | $$10^{-15}$$ |
-|   Gravitation   |   gravitons    |         1         |         $$\frac{1}{r^2}$$          |  $$\infty$$  |
-| Electromagnetic |    photons     |    $$10^{36}$$    |       $$\frac{1}{r^{2.04}}$$       |  $$\infty$$  |
+|      Weak       | W and Z bosons |    $10^{33}$    | ${\frac {1}{r}}e^{-m_{(W,Z)}r}$  | $10^{-18}$ |
+|     Strong      |     gluons     |    $10^{38}$    |             $\sim r$             | $10^{-15}$ |
+|   Gravitation   |   gravitons    |         1         |         $\frac{1}{r^2}$          |  $\infty$  |
+| Electromagnetic |    photons     |    $10^{36}$    |       $\frac{1}{r^{2.04}}$       |  $\infty$  |

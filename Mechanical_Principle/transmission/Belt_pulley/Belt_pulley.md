@@ -4,6 +4,8 @@ layout: base
 
 # Belt pulley
 
+A belt drive transfers power between rotating pulleys through belt tension and contact friction. The geometry below distinguishes open and crossed belts before calculating length, contact angle, and speed ratio.
+
 ## Transmission method
 
 ### Open Belt Drive
@@ -29,18 +31,21 @@ layout: base
 >https://www.vcalc.com/equation/?uuid=788be105-ed67-11e3-b7aa-bc764e2038f2
 
 $$\text{BL} = (\pi\frac D2+2u)+(\pi\frac d2-2v)+2b = \frac{\pi(D+d)}2+2(u-v)+2b$$
+
 ****
+
 $$2u-2v = 2R\theta-2r\theta = 2\theta(R-r) = 2\theta(\frac D2-\frac d2) = \theta(D-d)$$
 
 $$S = r\theta$$
 
-* when $\theta$ is very small $\sin
-\theta = \theta$
+* When $\theta$ is very small, $\sin\theta \simeq \theta$ (with the angle in radians).
 
 $$\theta = \sin^{-1}(\frac{R-r}L) = \sin^{-1}(\frac{\frac D2-\frac d2}L) = \sin^{-1}(\frac{D-d}{2L})\simeq\frac{D-d}{2L}$$
 
 $$2(u-v) = \frac{D-d}{2L}(D-d) = \frac{(D-d)^2}{2L}$$
+
 ****
+
 $$b = L\cos\theta = L-L(1-\cos\theta)$$
 
 $$\cos \theta = \cos^2\frac\theta2-\sin^2\frac\theta2$$
@@ -52,7 +57,9 @@ $$b = L-2L\sin^2\frac\theta2\simeq L-2L(\frac\theta2)^2$$
 $$L-2L(\frac\theta2)^2 = L-2L(\frac{D-d}{4L})^2 = L-\frac{(D-d)^2}{8L}$$
 
 $$2b = 2L-\frac{(D-d)^2}{4L}$$
+
 ****
+
 $$\text{BL} = \frac{\pi(D+d)}2+\frac{(D-d)^2}{2L}+2L-\frac{(D-d)^2}{4L}$$
 
 $$\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D-d)^2}{4L}$$
@@ -83,6 +90,8 @@ $$\theta_1 = \theta_2 = \frac\pi2+2\phi = \frac\pi2+(\frac{D+d}{2L})$$
 
 ## Speed ratio
 
+Compare the output angular speed with the input speed using a consistent sign convention.
+
 $$v_1 = \pi(D_1+t)N_1$$
 
 $$v_2 = \pi(D_2+t)N_2$$
@@ -96,6 +105,7 @@ if $t<<1$
 $$\frac{N_1}{N_2} = \frac{D_2}{D_1}$$
 
 Consider efficiency
+
 $$\frac{N_1}{N_2} = \frac{D_2+t}{D_1+t}(1-\eta)$$
 
 if $t<<1$
@@ -103,6 +113,8 @@ if $t<<1$
 $$\frac{N_1}{N_2} = \frac{D_2}{D_1}(1-\eta)$$
 
 ## Power
+
+Power measures the rate of energy transfer. Use the translational or rotational expression that matches the mechanism.
 
 $$F_0 = \frac12(F_1-F_2)$$
 

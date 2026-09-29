@@ -4,9 +4,12 @@ layout: base
 
 # Rotation of rigid bodies
 
+Rigid-body rotation links angular motion to torque, angular momentum, and kinetic energy. Keep the rotation axis and corresponding moment of inertia consistent throughout a calculation.
+
 ## Rotation
 
 * 1 revolution $= 2\pi$ rad $=360^o$
+
 $$\omega = \dot \theta$$
 
 $$\dot\theta = d\theta/dt$$
@@ -20,6 +23,7 @@ $$v = dr/dt = \omega r$$
 $$a = dv/dt = \alpha r$$
 
 ***
+
 $$\theta = \theta_i+\omega t$$
 
 $$\omega = \omega_i+\alpha t$$

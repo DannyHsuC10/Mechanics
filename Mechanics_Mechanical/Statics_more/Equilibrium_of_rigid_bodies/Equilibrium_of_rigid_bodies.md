@@ -4,9 +4,12 @@ layout: base
 
 # Equilibrium of rigid bodies
 
+A rigid body is in static equilibrium when the resultant force and moment vanish. The two- and three-dimensional cases show how support constraints determine the unknown reactions.
+
 ## Equilibrium of a rigid body in two dimension
 
 In this case, forces are all in xy plane.
+
 $$F_z = 0 \qquad M_x = M_y = 0$$
 
 equations of equilibrium :
@@ -23,6 +26,7 @@ Then the equation is not enough to solve the unknown.
 ## Equilibrium of a twe-force body
 
 if the two-force body is in equilibrium, the two forces must have the same magnitude, same line of action, and opposite direction.
+
 $$F_A = F_B$$
 
 ## Equilibrium of a three-force body
@@ -32,6 +36,7 @@ if the three force body is in equilibrium, the line of action of the three force
 ## Equilibrium of a rigid body in three dimension
 
 equations of equilibrium :
+
 $$\sum F_i = 0$$
 
 $$\sum F_{xi} = \sum F_{yi} = \sum F_{zi} = 0$$

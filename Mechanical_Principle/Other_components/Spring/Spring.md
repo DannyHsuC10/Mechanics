@@ -4,12 +4,15 @@ layout: base
 
 # Spring
 
+Springs store elastic energy and provide a restoring force or torque. These notes relate spring geometry and stiffness, then compare the effect of connecting springs in series or parallel.
+
 ## Diameter
 
 * Outer diameter : $D_o$
 * inner diameter : $D_i$
 * Middle diameter : $D_m$
 * Wire diameter : $d$
+
 $$D_m  = \frac{D_i+D_o}2$$
 
 $$D_m = D_o-d$$
@@ -32,7 +35,9 @@ $$k = \frac Fx$$
 ### In Series
 
 * **2 spring**
+
 $$k_\text{total} = \frac{k_1k_2}{k_1+k_2}$$
+
 * **n spring**
 
 $$k_\text{total} = \frac1{\frac1{k_1}+\frac1{k_2}+\frac1{k_3}+...\frac1{k_n}} = (\sum\frac1{k_i})^{-1}$$
@@ -40,11 +45,13 @@ $$k_\text{total} = \frac1{\frac1{k_1}+\frac1{k_2}+\frac1{k_3}+...\frac1{k_n}} = 
 ### In Parallel
 
 * **2 spring**
+
 $$k_\text{total} = k_1+k_2$$
+
 * **n spring**
 
 $$k_\text{total} = k_1+k_2+k_3+...k_n = \sum k_i$$
 
 ## Something special?
 
-[Click it](../../../Special/Spring)
+[Click it](../../../Special/spring.md)

@@ -4,12 +4,15 @@ layout: base
 
 # Shear Forces and Bending Moment
 
+Beam loading produces internal shear forces and bending moments that vary along the span. Their relationships lead to stress and curvature estimates for the selected beam model.
+
 ## Loads, Shear Forces, and Bending Moments in Beam
 
 ### Loads & Shear Forces
 
 * Loads : $q$
 * Shear Force : $V$
+
 $$\sum F_y = 0$$
 
 $$-q\ dx = dV$$

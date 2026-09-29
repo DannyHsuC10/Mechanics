@@ -4,6 +4,8 @@ layout: base
 
 # Bending moment
 
+A beam carries transverse loads through internal shear and bending. Identify the supports and cross-section before applying the bending-stress and section-property relationships.
+
 ## Types of beams
 
 ### Statically determinate beam

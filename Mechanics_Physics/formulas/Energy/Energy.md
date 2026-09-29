@@ -3,9 +3,14 @@ layout: base
 ---
 
 # Energy
+
+This reference compares mechanical energy with photon energy, thermal radiation, and mass–energy equivalence. Use the relevant model and units for each physical setting.
+
 * [Energy](Energy.m)
 
 ## Work
+
+Work accumulates the component of force along a displacement. The integral form is useful when the force varies along the path.
 
 <div style="text-align: center;">
 <img src="upload_ce8c2c92e8a5998db1c2474e8df34183.png" alt="image" width="350">
@@ -20,7 +25,9 @@ if $\theta > 90^o , W < 0$
 if $\theta < 90^o , W > 0$
 
 $\theta =0 , W = Fx$
+
 ## Potential energy & kinetic energy
+
 * Kinetic energy
 <div style="text-align: center;">
 <img src="upload_00d696ad8e747e6b1581499e321778af.png" alt="image" width="250">
@@ -41,16 +48,22 @@ $U_g = mgh$
 $U_k = \frac{1}{2}kx^2$
 * Electric energy
 $U = QV$
+
 ## Conservation of mechanical energy
+
 <div style="text-align: center;">
 <img src="upload_dbd4ed32776009afb9d4ec1e076e969c.png" alt="image" width="250">
 </div>
 
 * $U_i+K_i = U_f+K_f$
 * $\frac{1}{2}mv_i^2+mgh_i = \frac{1}{2}mv_f^2+mgh_f$
+
 ## Mass-energy equivalence
+
 * $E = mc^2$
+
 ## Black-body radiation
+
 <div style="text-align: center;">
 <img src="upload_623c2f16338e5af0ea46761584d550ab.png" alt="image" width="250">
 </div>
@@ -67,7 +80,7 @@ $\nu =$ frequency of the electromagnetic radiation
 
 $c =$ speed of light in a vacuum
 
-$k =$ Boltzmann constant$
+$k =$ Boltzmann constant
 
 $T =$ absolute temperature of the body
 

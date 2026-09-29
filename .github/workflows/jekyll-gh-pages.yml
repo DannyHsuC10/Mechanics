@@ -29,12 +29,21 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
+        id: pages
         uses: actions/configure-pages@v5
+      - name: Check Markdown and prepare public pages
+        run: |
+          python3 tools/site_content.py
+          python3 tools/site_content.py --prepare _prepared_site
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
+          source: ./_prepared_site
           destination: ./_site
+      - name: Verify generated pages and formulas
+        env:
+          SITE_BASEURL: ${{ steps.pages.outputs.base_path }}
+        run: python3 tools/check_build.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

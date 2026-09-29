@@ -4,6 +4,8 @@ layout: base
 
 # Zeroth & First Laws of Thermodynamics
 
+Temperature describes thermal equilibrium, and the first law accounts for energy transferred as heat and work. The notes apply these ideas to expansion, heat capacity, and heat transfer.
+
 ## The Zeroth Laws of Thermodynamics
 
 <div style="text-align: center;">
@@ -17,6 +19,7 @@ Any object has a property called temperature.  When two objects reach thermal eq
 * the temperature at which the triple point of water (solid, liquid, gas) coexists : $T3$
 
 $T3=273.16K$ (extrapolation method)
+
 $$T = CP$$
 
 * barometric pressure : $P$
@@ -31,7 +34,7 @@ $$T = T_3(\frac{P}{P_3})$$
 
 The temperature measured by continuously reducing the air pressure approximates the ideal temperature.
 
-## Conversion of temperature 
+## Conversion of temperature
 
 $$F = \frac95C+32$$
 
@@ -42,6 +45,7 @@ $$K = (F-32)(\frac59)+273.15$$
 ## Thermal expansion
 
 **linear**
+
 $$\alpha_L = \frac{1}{L}\frac{dL}{dT}$$
 
 $$\Delta L = L\alpha_L\Delta T$$
@@ -52,7 +56,9 @@ $$\Delta L = L\alpha_L\Delta T$$
 * change in temperature : ${\Delta T}$
 
 **volumetric**
+
 $$\alpha_V = \frac{1}{V}\frac{dV}{dT}$$
+
 $$\Delta V = V\alpha_V\Delta T$$
 
 * volumetric thermal expansion : $\alpha_{V}$
@@ -83,7 +89,7 @@ $$W = \int Fdx = \int P dV$$
 
 $$dW = F(dx) = PA(dx) = P(dV)$$
 
-$$\Delta E_{int} = Q - W $$
+$$\Delta E_{int} = Q - W$$
 
 * change in internal energy : $\Delta E_{int}$
 * heat added : $Q$
@@ -102,12 +108,15 @@ No heat is exchanged with the surroundings.
 $$P V^\gamma = C$$
 
 * constant : $C$
+
 $$\gamma = \frac{C_P}{C_V}$$
+
 * The Specific heat capacity at constant pressure : $C_P$
 * The Specific heat capacity at constant volume : $C_V$
 * adiabatic index : $\gamma$
 
 $$Q = C_Vn\Delta T$$
+
 $$Q = C_Pn\Delta T$$
 
 * The number of moles of gas : $n$
@@ -150,6 +159,8 @@ $$Q = 0 \qquad W = 0$$
 
 ## Heat transfer rate
 
+The heat-transfer rate measures thermal energy transferred per unit time.
+
 $$P = \dot{Q} = \frac Qt$$
 
 1. **Heat Conduction**
@@ -164,6 +175,7 @@ $$P_{cond} = KA\frac{T_H-T_L}{L}$$
 * distance between the two isothermal planes : $L$
 * area of the surface : $A$
 * temperature : $T$
+
 $$K =\frac{P_{cond} L}{A \Delta T}$$
 
 2. **convection**
@@ -172,11 +184,12 @@ $$K =\frac{P_{cond} L}{A \Delta T}$$
 <img src="upload_0a10cabe4e672abcbd8fe42aa3fa31e4.png" alt="image" width="450">
 </div>
 
-$$ P_{conv} = hA\Delta T $$
+$$P_{conv} = hA\Delta T$$
 
 * heat transfer coefficient : $h$
 * difference in temperature between a solid surface and surrounding fluid : $\Delta T$
 * area of the surface : $A$
+
 $$h = \frac {P_{conv}}{A\Delta T}$$
 
 3. **radiation**

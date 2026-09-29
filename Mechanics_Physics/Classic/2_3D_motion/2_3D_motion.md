@@ -4,6 +4,8 @@ layout: base
 
 # 2,3D motion
 
+Motion in two or three dimensions is described with position, velocity, and acceleration vectors. The examples separate components to analyze projectiles, circular motion, and relative motion.
+
 position vector $= \vec{r}$
 
 $$\vec{r} = x\vec{i}+y\vec{j}+z\vec{k}$$
@@ -22,6 +24,8 @@ $$Δ\vec{r}= (x_f-x_i)\vec{i}+(y_f-y_i)\vec{j}+(z_f-z_i)\vec{k}$$
 
 ## Velocity
 
+Velocity is the time derivative of position. Its direction distinguishes it from scalar speed.
+
 $$v = \frac{dr}{dt}$$
 
 $$\vec{v}= v_x\vec{i}+v_y\vec{j}+v_z\vec{k}$$
@@ -29,6 +33,8 @@ $$\vec{v}= v_x\vec{i}+v_y\vec{j}+v_z\vec{k}$$
 $$vx = \frac{dx}{dt}\qquad vy = \frac{dy}{dt}\qquad vz = \frac{dz}{dt}$$
 
 ## Acceleration
+
+Acceleration is the time derivative of velocity. A change in direction can produce acceleration even at constant speed.
 
 $$\vec{a_{avg}} = \frac{\vec{v_f}-\vec{v_i}}{t_f-t_i} = \frac{Δ\vec{v}}{Δt}$$
 
@@ -75,6 +81,7 @@ $$y-y_i = v_isin𝜃t+\frac{1}{2}gt^2$$
 * The relationship between the position, velocity and acceleration of projectile. ''without (t) variable''
 
 * $y = y_i+Δx⋅v_itan𝜃+\frac{1}{2}g(\frac{Δx}{V_icos𝜃})^2$
+
 $$t = \frac{Δx}{v_icos𝜃}$$
 
 $$y = y_i+v_isin𝜃t+\frac{1}{2}gt^2$$
@@ -117,7 +124,7 @@ centripetal acceleration　: $a_c$
 
 Tangential acceleration　: $a_t$
 
-$$ a^2 = a_t^2+a_c^2$$
+$$a^2 = a_t^2+a_c^2$$
 
 * centripetal acceleration  (green)
 

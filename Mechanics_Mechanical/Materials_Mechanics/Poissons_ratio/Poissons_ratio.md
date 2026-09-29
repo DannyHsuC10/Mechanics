@@ -4,13 +4,18 @@ layout: base
 
 # Poisson's ratio $\nu$
 
+Poisson's ratio relates transverse strain to axial strain under uniaxial loading. The later relationships extend elastic deformation to multiple stress directions and uniform pressure.
+
 <div style="text-align: center;">
 <img src="upload_1588dcf70d7751b3098d7adecb60b71d.png" alt="image" width="250">
 </div>
 
 $$\nu = \frac{\varepsilon_1}{\varepsilon_2} = \frac{\frac{dL_1}{L_1}}{\frac{dL_2}{L_2}}$$
+
 * Force direction : $L_2\ \text{direction}$
+
 ## Poisson's ratio range
+
 $$0<\nu<0.5$$
 
 if The volume will not change $dV = 0$
@@ -22,6 +27,7 @@ if The volume will not change $dV = 0$
 **Axle**
 $\text{Axial strain} = \frac{dL}L$
 $\text{Radial strain} = \frac{dD}D$
+
 $$LA = (L-dL)(A+dA)$$
 
 $$L\frac{\pi}{4}D^2 = (L-dL)\frac{\pi}{4}(D+dD)^2$$
@@ -45,6 +51,7 @@ $$\nu_\max = \frac12$$
 ## Multi-directional stress and strain
 
 **One direction force**
+
 $$\frac{dx}x = \frac{P_x}{AE}$$
 
 $$\frac{dy}y = -\nu\frac{dx}x = -\nu\frac{P_x}{AE}$$
@@ -52,6 +59,7 @@ $$\frac{dy}y = -\nu\frac{dx}x = -\nu\frac{P_x}{AE}$$
 $$\frac{dz}z  = -\nu\frac{dx}x = -\nu\frac{P_x}{AE}$$
 
 **Multiple directional forces**
+
 $$\frac{dx}x = \sum^n_{i = 1}\frac{P_i\vec x}{A_{yz}E}-\nu\frac{P_i\vec y}{A_{xz}E}-\nu\frac{P_i\vec z}{A_{xyE}}$$
 
 $$\varepsilon_x = \frac{\sigma_x-(\sigma_y+\sigma_z)\nu}{E}$$

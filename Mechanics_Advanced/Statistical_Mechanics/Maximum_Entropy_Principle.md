@@ -3,6 +3,9 @@ layout: base
 ---
 
 # Maximum Entropy Principle
+
+The maximum-entropy method finds a probability distribution consistent with known constraints. The derivation uses normalization and mean energy to introduce Lagrange multipliers and equilibrium weights.
+
 Solving for the energy distribution of macroscopic systems
 
 $$\boxed{\text{Probability distribution of microstates } {p_i}}$$
@@ -16,24 +19,31 @@ Boltzmann constant : $k_B$
 achievable phase space volume : $\Omega$
 
 ### Macrostate
+
 $$dS = \frac{dQ}{T}$$
 
 The cost of achieving uniform energy distribution in macroscopic systems
+
 ### Microstate
+
 $$S = k_B\ln\Omega$$
 
 The degree of uncertainty regarding the microscopic state.
 
 ## Limitations
+
 * Do not assume information that is not given
 * Do not favor any additional microstates
 * Maintain maximum neutrality towards the unknown
 
 ### probability : $p$
+
 The probability must meet the normalization condition.
 
 $$\sum_i p_i = 1$$
+
 ### energy $E$
+
 Using total energy as the boundary condition
 
 $$\sum_i p_i E_i = U$$
@@ -68,6 +78,7 @@ $$Z = \sum_i e^{-\beta E_i}$$
 $$\beta = \frac{1}{k_B T}$$
 
 ## Energy probability distribution
+
 In phase space, each microstate corresponds to a phase space point:
 
 * The higher the energy of a state, the lower its probability of occurrence.

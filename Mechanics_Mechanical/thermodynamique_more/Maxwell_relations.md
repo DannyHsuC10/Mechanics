@@ -4,15 +4,24 @@ layout: base
 
 # Maxwell relations
 
+Thermodynamic potentials connect changes in energy, entropy, pressure, and volume. Their differential forms provide the derivative identities collected on this page.
+
 ## Gibbs–Helmholtz equation
 
 * Internal energy : $E_{int}$
+
 $$dE_{int} = TdS-PdV$$
+
 * Enthalpy : $H$
+
 $$dH = TdS+PdV$$
+
 * Helmholtz Free Energy : $F$
+
 $$dF = -SdT-PdV$$
+
 Gibbs Free Energy : $G$
+
 $$dG = -SdT+VdP$$
 
 ## Maxwell relations
@@ -68,8 +77,11 @@ $$\left( \frac{\partial V}{\partial T} \right)_P = \frac{\partial}{\partial T} \
 $$\left( \frac{\partial S}{\partial P} \right)_T = - \left( \frac{\partial V}{\partial T} \right)_P$$
 
 ## Clausius–Clapeyron equation
+
 Changes rate in pressure and temperature during phase transition
+
 $$G_{gas} = G_{liquid}$$
+
 * latent heat : $L$
 
 $$dG = -S\,dT + V\,dP$$
@@ -137,8 +149,10 @@ $$dE_{int} = C_VdT+(\frac{\partial E_{int}}{\partial V})_TdV$$
 $$TdS = C_VdT+(\frac{\partial E_{int}}{\partial V})_TdV+PdV$$
 
 $$T(\frac{\partial P}{\partial T})_V = (\frac{\partial E_{int}}{\partial V})_T+P$$
+
 ***
 Why?
+
 $$dE_{int} = (\frac{\partial E_{int}}{\partial T})_VdT+(\frac{\partial E_{int}}{\partial V})_TdV$$
 
 $$TdS = dE_{int}+PdV$$
@@ -154,7 +168,9 @@ $$(\frac{\partial S}{\partial V})_T = \frac{dE_{int}}{TdV}+\frac{P}T$$
 $$\left( \frac{\partial S}{\partial V} \right)_T =  \left( \frac{\partial P}{\partial T} \right)_V$$
 
 $$T(\frac{\partial P}{\partial T})_V = (\frac{\partial E_{int}}{\partial V})_T+P$$
+
 ***
+
 $$dS = \frac{C_V}{T}dT+(\frac{\partial P}{\partial T})_VdV$$
 
 $$dS = (\frac{\partial S}{\partial T})_PdT+(\frac{\partial S}{\partial V})_TdP$$
@@ -166,6 +182,7 @@ $$(\frac{\partial S}{\partial P})_T = -(\frac{\partial V}{\partial T})_P$$
 $$dS = \frac{C_P}{T}dT-(\frac{\partial V}{\partial T})_PdP$$
 
 ## Specific Heat
+
 $$T(\frac{\partial P}{\partial T})_V = (\frac{\partial E_{int}}{\partial V})_T+P$$
 
 $$(\frac{\partial E_{int}}{\partial V})_T =T(\frac{\partial P}{\partial T})_V -P$$
@@ -183,6 +200,7 @@ $$(\frac{\partial C_P}{\partial P})_T = T(\frac{\partial^2 V}{\partial T^2})_P$$
 $$C_P-C_{P0} = -T\int_0^P(\frac{\partial^2 V}{\partial T^2})_PdP$$
 
 $$C_P-C_V = -T(\frac{\partial V}{\partial T})^2_P(\frac{\partial P}{\partial V})_P = \frac{VT\beta^2}{\alpha}$$
+
 * Mayer relation
 
 $$\beta = \frac1V(\frac{\partial V}{\partial T})_P$$
@@ -190,6 +208,7 @@ $$\beta = \frac1V(\frac{\partial V}{\partial T})_P$$
 $$\alpha = -(\frac{\partial P}{\partial V})_T$$
 
 ## Joule–Thomson effect
+
 $$\mu_{JT} = (\frac{\partial T}{\partial P})_H$$
 
 $$\mu_{JT} = -\frac1{C_P}(V-T(\frac{\partial V}{\partial T})_P)$$

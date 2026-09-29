@@ -4,6 +4,8 @@ layout: base
 
 # Constants
 
+This table collects physical constants used throughout the notes. Check the units and required precision before inserting a listed value into a calculation.
+
 Alpha particle mass : $m_a = 6.6446565\times10^{-27}kg$
 
 Atomic mass constant : $m_\mu = 1.66053886\times10^{-27}kg$

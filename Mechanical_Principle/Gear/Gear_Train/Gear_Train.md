@@ -4,11 +4,12 @@ layout: base
 
 # Gear Train
 
+A gear train combines individual meshes to obtain a required output speed and direction. Track the driver, driven gear, and carrier separately when comparing fixed-axis and planetary arrangements.
+
 ## Type of mechanical transmission element
 
 <div style="text-align: center;">
-<img src="upload_18e74879215d4eecc9987409180abf6f.png
-" alt="image" width="300">
+<img src="upload_18e74879215d4eecc9987409180abf6f.png" alt="image" width="300">
 </div>
 
 ## Speed Ratio
@@ -16,8 +17,7 @@ layout: base
 **Simple Gear Train**
 
 <div style="text-align: center;">
-<img src="large.png
-" alt="image" width="300">
+<img src="large.png" alt="image" width="300">
 </div>
 
 >https://grabcad.com/library/simple-gear-train-3

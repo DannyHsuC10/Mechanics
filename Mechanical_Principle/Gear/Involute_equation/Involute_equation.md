@@ -4,10 +4,10 @@ layout: base
 
 # Involute equation
 
+An involute is traced by the end of a taut line unwinding from a base circle. The geometric steps below express that curve using the base radius and unwinding parameter.
+
 <div style="text-align: center;">
-<img src="upload_c579a4bf8d82b4447efff50502ce8bf3.jpg
-" alt="image" width="500
-">
+<img src="upload_c579a4bf8d82b4447efff50502ce8bf3.jpg" alt="image" width="500">
 </div>
 
 * $\overline{OB} = r$
@@ -19,13 +19,13 @@ layout: base
 
 $$x = r\cos\phi+r\phi\cos(\frac\pi2-\phi)$$
 
-$$ = r (\cos\phi+r\phi\cos(\frac\pi2-\phi))$$
+$$= r (\cos\phi+r\phi\cos(\frac\pi2-\phi))$$
 
 $$x = r(\cos\phi+\phi\sin\phi)$$
 
 $$y = r\sin\phi-r\phi\sin(\frac\pi2-\phi)$$
 
-$$ = r(\sin\phi-\phi\sin(\frac\pi2-\phi))$$
+$$= r(\sin\phi-\phi\sin(\frac\pi2-\phi))$$
 
 $$y = r(\sin\phi-\phi\cos\phi)$$
 
@@ -37,9 +37,9 @@ $$= \sqrt{r^2\cos^2\phi+r^2\phi^2\sin^2\phi+r^2\sin^2\phi+r^2\phi^2\cos^2\phi}$$
 
 $$= \sqrt{r^2+(r\phi)^2}$$
 
-$$ = \sqrt{r^2+r^2\phi^2}$$
+$$= \sqrt{r^2+r^2\phi^2}$$
 
-$$ = \sqrt{r^2(1+\phi^2)}$$
+$$= \sqrt{r^2(1+\phi^2)}$$
 
 $$r\sqrt{(1+\phi^2)}$$
 

@@ -4,14 +4,24 @@ layout: base
 
 # Mechanics (Physics)
 
+These notes connect motion, forces, energy, and thermal behavior with the physical laws that describe them. Start with classical mechanics, or use the mathematics and formula sections as quick references.
+
 ## [Classic](Classic/Classic.md)
-Describing the motion of objects such as projectiles, parts of machinery, spacecraft, planets, stars, galaxies, deformable solids, fluids, macromolecules and other objects. 
+
+Describing the motion of objects such as projectiles, parts of machinery, spacecraft, planets, stars, galaxies, deformable solids, fluids, macromolecules and other objects.
+
 ## [Fluid & Gas & Heat & statistic](Fluid_Gas_Heat_statistic/Fluid_Gas_Heat_statistic.md)
+
 Describing heat transfer, thermodynamics, fluid mechanics, and combustion. Discussing the overall impact rather than the motion of a single object
+
 ## [SHM](SHM/SHM.md)
-SHM is a special type of periodic motion an object experiences by means of a restoring force whose magnitude is directly proportional to the distance of the object from an equilibrium position and acts towards the equilibrium position. 
+
+SHM is a special type of periodic motion an object experiences by means of a restoring force whose magnitude is directly proportional to the distance of the object from an equilibrium position and acts towards the equilibrium position.
+
 ## [Modern](Modern/Modern.md)
+
 Relativity and Fundamental interaction, Nuclear physics.
+
 ## Math tools
 
 1. [Vector](Math_tools/Vector.md)

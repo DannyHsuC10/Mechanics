@@ -4,6 +4,8 @@ layout: base
 
 # Force & motion
 
+These notes apply force balances to common mechanical situations such as pulleys, springs, and curved motion. Draw a free-body diagram and choose positive directions before substituting into the equations.
+
 ## Newton's laws of motion
 
 1. if $F = 0$ , then $v_i = v_f$
@@ -17,10 +19,13 @@ layout: base
 </div>
 
 **Fixed pulley**
+
 $$T = w$$
 
 $$F_{fix} = 2T$$
+
 **Movable pulley**
+
 $$T = \frac w2$$
 
 $$F_{fix}= T$$
@@ -105,7 +110,8 @@ $$\frac{F}{sin(\theta)} = \frac{w}{sin(90^o-\theta)}$$
 
 $$\frac{ma}{sin(\theta)} = \frac{mg}{sin(90^o-\theta)}$$
 
-* when $\theta >> 1$ , then $cos(\theta) \simeq 1$ 
+* when $\theta >> 1$ , then $cos(\theta) \simeq 1$
+
 $$a = gsin(\theta)$$
 
 $$\frac{v^2}{r} = g\frac{h}{d}$$

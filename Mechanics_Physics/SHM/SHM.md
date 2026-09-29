@@ -4,6 +4,8 @@ layout: base
 
 # SHM
 
+Oscillations and waves describe motion that repeats or propagates through a system. These topics connect the spring model to damping, resonance, interference, and sound.
+
 ## 1. [Oscillation](Oscillation/Oscillation.md)
 
 * [Vibration](matlab/Vibration.m)

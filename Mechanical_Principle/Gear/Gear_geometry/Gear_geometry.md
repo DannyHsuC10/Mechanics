@@ -3,7 +3,11 @@ layout: base
 ---
 
 # Gear geometry
+
+This page constructs an involute tooth profile from reference circles and angular offsets. The accompanying Python example assembles the flanks, root region, and tooth tip into a complete gear outline.
+
 ## Parameter
+
 <div style="text-align: center;">
 <img src="upload_711de5c7f2aab0dcf0092f088bee6449.png" alt="image" width="400">
 </div>

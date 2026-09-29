@@ -4,6 +4,8 @@ layout: base
 
 # Entropy
 
+Entropy is a state property used to compare thermodynamic processes and assess irreversibility. Choose the appropriate substance model and process assumptions when evaluating an entropy change.
+
 $$dS = dQ/T$$
 
 $$Q = mC\ dT$$
@@ -14,8 +16,11 @@ Heat is energy transferred quantity
 ## Pure Substance
 
 * Any process
+
 $$\Delta S = S_f-S_i$$
+
 * Isentropic process
+
 $$S_i = S_f$$
 
 ## Incompressible
@@ -27,6 +32,7 @@ $$S = \int^{T_f}_{T_i}\frac{mC}{T}dT$$
 $$S = mC\ln(\frac{T_f}{T_i})$$
 
 * Isentropic process
+
 $$T_i = T_f$$
 
 ## Ideal gas(fixed specific heat)
@@ -96,6 +102,7 @@ $$(\frac{T_f}{T_i}) = (\frac{P_f}{P_i})^{(\gamma-1)/\gamma}$$
 * Any process
 Entropy change due to temperature change : $S_f^0-S_i^0$
 Entropy change due to pressure change : $-R\ln(\frac{P_i}{P_f})$
+
 $$S^0 = \int^T_{T_{ref}}\frac{C_p}TdT$$
 
 $$S_f-S_i = S_f^0-S_i^0-R\ln(\frac{P_i}{P_f})$$
@@ -111,6 +118,7 @@ $$S_f^0 = S_i^0-R\ln(\frac{P_i}{P_f})$$
 * Isentropic process
 
 constant : $C$
+
 $$PV^\gamma = C$$
 
 $$P = CV^{-\gamma}$$

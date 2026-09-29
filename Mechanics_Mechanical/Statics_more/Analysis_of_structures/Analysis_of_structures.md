@@ -4,6 +4,8 @@ layout: base
 
 # Analysis of structures
 
+Structural analysis begins by identifying members, joints, supports, and the loads they transfer. The counts and equilibrium relations below help distinguish stable structures from mechanisms.
+
 <div style="text-align: center;">
 <img src="upload_d3e84eb3ba18a5e549a903fda19ef12b.png" alt="image" width="800">
 </div>
@@ -15,6 +17,7 @@ layout: base
 </div>
 
 One truss with two joint
+
 $$m = 2n-3$$
 
 $$2n = m+3$$
@@ -43,6 +46,9 @@ $$m = 3n-6$$
 ## Equilibrium
 
 * statically indeterminate :
+
 $$\text{unknowns}>\text{equation}$$
+
 * nonrigid :
+
 $$\text{unknowns}<\text{equation}$$

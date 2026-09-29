@@ -4,6 +4,8 @@ layout: base
 
 # Analysis of Stresses and Strains
 
+Stress transformation describes how internal forces appear on differently oriented planes. These notes introduce plane stress and Mohr's circle, then connect beam loading to deflection.
+
 * axial load :
 $\sigma = P/A$
 * torsional load in circular shaft :
@@ -28,7 +30,8 @@ $$\tau_{x1y1} = -(\sigma_x-\sigma_y)\sin\theta\cos\theta+\tau_{xy}(\cos^2\theta-
 
 ****
 
-from trigonometric identities : 
+from trigonometric identities :
+
 $$\cos^2\theta = \frac12(1+\cos2\theta)$$
 
 $$\sin^2\theta = \frac12(1-\cos2\theta)$$

@@ -4,6 +4,8 @@ layout: base
 
 # Energy
 
+These notes relate work, energy, and power to changes in mechanical state. Identify which forces are conservative before applying an energy-conservation argument.
+
 ## work of a force
 
 **force**
@@ -41,6 +43,7 @@ $$dU = -F\ dx$$
 $$U = \int kx\ dx = \frac12k(\Delta x)$$
 
 **gravitational force**
+
 $$F = \frac{GMm}{r^2}$$
 
 $$dU = -F\ dr = -\frac{GMm}{r^2}\ dr$$
@@ -48,6 +51,8 @@ $$dU = -F\ dr = -\frac{GMm}{r^2}\ dr$$
 $$U = \int_i^f dU = \frac{GMm}{r_f}-\frac{GMm}{r_i}$$
 
 ## Kinetic energy
+
+Kinetic energy measures the energy associated with motion. Separate translational and rotational contributions when both are present.
 
 $$K = \frac12mv^2$$
 

@@ -4,16 +4,22 @@ layout: base
 
 # Friction
 
+Friction affects both sliding and overturning limits. The examples compare contact conditions and show how the applied-force direction changes equilibrium.
+
 <div style="text-align: center;">
 <img src="upload_91f64c08f4e4f6a2ba317b64fff970f6.png" alt="image" width="300">
 </div>
 
 $$f = \mu N$$
+
 * $\mu>0$
+
 $$f_s = \mu_sN$$
 
 $$f_k = \mu_kN$$
+
 ## Friction Angle & Repose Angle
+
 <div style="text-align: center;">
 <img src="upload_24f99c21eb3cbdc1f731fe05611497d8.png" alt="image" width="300">
 </div>
@@ -43,10 +49,15 @@ $$tan(\phi) = tan(\theta)$$
 ## Friction conditions
 
 1. rest
+
 $$F = f_s$$
+
 2. Maximum static friction
+
 $$F = f_{smax} = \mu_sN$$
+
 3. Movement
+
 $$f_k = \mu_kN$$
 
 ## topple over
@@ -58,6 +69,7 @@ $$f_k = \mu_kN$$
 if center of mass is center of shape.
 * height : $h$
 * Bottom length : $b$
+
 $$\sum F_y = 0$$
 
 $$N = w = mg$$
@@ -79,6 +91,7 @@ $$h = \frac b{2\mu}$$
 ## Slope and Horizontal force
 
 **Push uphill**
+
 $$F \ge w\frac{tan(\phi)+tan(\theta)}{1-tan(\phi)tan(\theta)}$$
 
 $$F \ge w\ tan(\phi+\theta)$$
@@ -114,6 +127,7 @@ Maximum static friction
 
 There are more reaction forces in these systems than equilibrium equations, so they cannot be uniquely determined. This means that they are sensitive to small perturbations because there are "infinitely many solutions".
 **Balancing equations:**
+
 $$N_B = f_A$$
 
 $$N_A+f_B = w$$

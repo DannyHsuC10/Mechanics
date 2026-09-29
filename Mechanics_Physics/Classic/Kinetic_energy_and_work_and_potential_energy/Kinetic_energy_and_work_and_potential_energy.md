@@ -4,9 +4,12 @@ layout: base
 
 # Kinetic energy & work & potential energy
 
+The work–energy theorem connects the work done on a body to its change in kinetic energy. Conservative forces can also be described through potential energy, simplifying suitable motion problems.
+
 ## Kinetic energy conservation
 
 unit : $1 jonle = 1 J =kg^2⋅m^2/s^2$
+
 $$K = \frac{1}{2}mv^2$$
 
 $$ΔK = K_f-K_i$$
@@ -40,6 +43,7 @@ $$W = ΔE$$
 $$W_g = mg⋅cos𝜃⋅Δx$$
 
 * rise
+
 $$W_g = mg⋅cos(\pi)⋅Δx = -mg⋅Δx$$
 
 $$W_a+W_g = 0$$
@@ -47,6 +51,7 @@ $$W_a+W_g = 0$$
 $$W_a = W_g$$
 
 * fall
+
 $$W_g = mg⋅cos(0)⋅Δx = -mg⋅Δx$$
 
 $$W_a-W_g = 0$$
@@ -70,6 +75,7 @@ $$W_s = \int_{x_i}^{x_f}-kx, dx$$
 $$W_s = -k\int_{x_i}^{x_f}x, dx$$
 
 $$W_s = -\frac{1}{2}kx^2 \Big|_{x_i}^{x_f} = -\frac{1}{2}kx_f^2 + \frac{1}{2}kx_i^2$$
+
 If $x_i = 0$
 
 $$W_s = U_s = -\frac{1}{2}kx^2$$
@@ -81,6 +87,7 @@ $$ΔK = K_f-K_i = U_s$$
 <div style="text-align: center;">
 <img src="upload_1938f1f986f980b72e0de7a84c4de4cf.png" alt="image" width="400">
 </div>
+
 $$ΔW = ΔFx$$
 
 $$W = ΣΔW = ΣΔFx$$
@@ -95,7 +102,7 @@ $$W = \int_{r_i}^{r_f}F, dr$$
 
 $$W = \int_{x_i}^{x_f}F_x, dx+\int_{y_i}^{y_f}F_y, dy+\int_{z_i}^{z_f}F_z, dz$$
 
-$$W = \int_{x_i}^{x_f}F(x), dx = \int_{x_i}^{x_f}ma, dx $$
+$$W = \int_{x_i}^{x_f}F(x), dx = \int_{x_i}^{x_f}ma, dx$$
 
 $$\frac{dv}{dt} = \frac{dV}{dx}\frac{dx}{dt}$$
 
@@ -109,6 +116,8 @@ $$W = \int_{v_i}^{v_f}mv, dv = \frac{1}{2}m(v_f^2-v_i^2)$$
 
 ## Power
 
+Power measures the rate of energy transfer. Use the translational or rotational expression that matches the mechanism.
+
 unit:
 $1watt = 1W = 1J/s = 0.738ft⋅1b/s$
 
@@ -119,6 +128,7 @@ $1kW⋅hr = 10^3W⋅3600s = 3.6⋅10^6J = 3.6MJ$
 $$P = \frac{dW}{dt} = Fdx/dt$$
 
 $$P = Fv$$
+
 ## Conservation force
 
 <div style="text-align: center;">
@@ -149,6 +159,7 @@ if the condition always holds the force is conservation force
 $$ΔU = \int_{y_i}^{y_f}-mg, dy = mgy\Big|_{y_i}^{y_f}$$
 
 $$ΔU = mg(y_f-y_i) = mgΔy$$
+
 if $y_i = 0$
 
 $$U = mgy$$
@@ -158,6 +169,7 @@ $$U = mgy$$
 $$ΔU = \int_{x_i}^{x_f}-kx, dx = -\frac{1}{2}kx^2\Big|_{y_i}^{y_f}$$
 
 $$ΔU = -\frac{1}{2}k(x_f^2-x_i^2) = Δx$$
+
 if $x_i = 0$
 
 $$U = -\frac{1}{2}kx^2$$
@@ -189,7 +201,7 @@ $$U(x)+K(x) = E(x)$$
 $$K(x) = E(x)-U(x)$$
 
 * Stable equilibrium
-The system resists the disturbance and returns to its original position. 
+The system resists the disturbance and returns to its original position.
 
 * Unstable equilibrium
 The system moves further away from its original position after the disturbance.

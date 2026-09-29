@@ -4,6 +4,8 @@ layout: base
 
 # Torsion
 
+Torsion describes the deformation of a member subjected to a twisting moment. Relate torque to shear stress and angle of twist using the cross-section and material assumptions stated below.
+
 <div style="text-align: center;">
 <img src="upload_50bffedc91d768564f50ae3d451fd603.png" alt="image" width="400">
 </div>

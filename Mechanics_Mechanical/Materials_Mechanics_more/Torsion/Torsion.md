@@ -4,6 +4,8 @@ layout: base
 
 # Torsion
 
+Torsion describes the deformation of a member subjected to a twisting moment. Relate torque to shear stress and angle of twist using the cross-section and material assumptions stated below.
+
 ## Torsion
 
 $$T = Pd$$
@@ -42,6 +44,7 @@ $$\phi = \theta L = \frac{TL}{GI_p}$$
 * torsional stiffness : $k = \frac{GI_p}{L}$
 
 $$\tau = G\rho\theta = G\rho\frac{T}{GI_p} = \frac{T\rho}{I_p}$$
+
 ## Stresses and Strains in Pure Shear
 
 <div style="text-align: center;">

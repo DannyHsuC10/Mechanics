@@ -4,6 +4,8 @@ layout: base
 
 # Mechanics (Mechanical Pro)
 
+These engineering notes extend the basic mechanics collection to three-dimensional systems, structural analysis, thermodynamics, and material behavior. Each topic links to the corresponding equations and diagrams.
+
 ## Statics
 
 1. [Statics concepts](Statics_more/Statics_concepts/Statics_concepts.md)

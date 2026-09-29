@@ -4,6 +4,8 @@ layout: base
 
 # Physics notations
 
+This list is a quick reference for symbols used in the mechanics notes. A symbol may have different meanings in different topics, so the local definition takes priority.
+
 * $A$ : area
 * $a$ : Acceleration
 * $\alpha$ : Angular acceleration
@@ -40,7 +42,7 @@ layout: base
 * $\lambda$ : Wavelength
 * $M$ : Molar mass
 * $m$ : Mass
-* $N$ : normal force , Number of particles 
+* $N$ : normal force , Number of particles
 * $n$ : Number of moles
 * $\eta$ : Efficiency
 * $\theta$ : Angle

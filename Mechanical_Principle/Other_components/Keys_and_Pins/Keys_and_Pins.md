@@ -4,13 +4,20 @@ layout: base
 
 # Keys and Pins
 
+Keys and pins transfer loads between connected machine parts. Begin with torque and power, then use the contact and shear areas appropriate to the connection.
+
 ## Unit conversion and Basic calculations
 
 * RPM
+
 $$\omega = \frac{2\pi N}{60}$$
+
 * work
+
 $$W = T\theta = Fx$$
+
 $$P = \tau\omega = Fv$$
+
 * horsepower
 
 $$1\text{PS} = 75\text{kgf}\cdot\text{m/sec} = 735\text{watt}$$

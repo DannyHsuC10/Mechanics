@@ -4,6 +4,8 @@ layout: base
 
 # simple harmonic pendulum
 
+Pendulum motion can be approximated as simple harmonic motion for sufficiently small angular displacements. The period relationships depend on the pendulum geometry and restoring torque.
+
 <div style="text-align: center;">
 <img src="upload_6ce7667a5a969bfd18aa5e30ba9f011b.png" alt="image" width="500">
 </div>

@@ -4,6 +4,8 @@ layout: base
 
 # Involute Polar coordinates
 
+This derivation rewrites an involute curve in polar coordinates for plotting a gear tooth. Distinguish the curve parameter from the polar angle when following the substitutions.
+
 $$x = a(\cos \phi+\phi\sin \phi)$$
 
 $$y = a(\sin \phi-\phi\cos \phi)$$
@@ -25,6 +27,7 @@ $$tan\theta = \frac{1+\phi\tan \phi}{\tan \phi-\phi}$$
 $$\theta = \tan^{-1}(\frac{1+\phi\tan \phi}{\tan \phi-\phi})$$
 
 ****
+
 $$R = \sqrt{x^2+y^2}$$
 
 $$= \sqrt{(r(\cos \phi+\phi\sin \phi))^2+(r(\sin \phi-\phi\cos \phi))^2}$$

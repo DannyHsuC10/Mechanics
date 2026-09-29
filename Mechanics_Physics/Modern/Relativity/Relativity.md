@@ -4,12 +4,16 @@ layout: base
 
 # Relativity
 
+Relativity relates measurements made by observers in relative motion. The equations compare time intervals, lengths, and energy, followed by a conceptual introduction to spacetime diagrams.
+
 ## Mass–energy equivalence
 
 $c \simeq 3\times 10^8m/s$
 $E$ : energy(J)
 $M$ : mass(kg)
+
 $$E = mc^2$$
+
 ## Relative length
 
 <div style="text-align: center;">
@@ -17,12 +21,15 @@ $$E = mc^2$$
 </div>
 
 $$l' = l\sqrt{1-\frac{v^2}{c^2}}$$
+
 ## Relative mass
+
 <div style="text-align: center;">
 <img src="upload_3fe6f1c9d30a62d20f18c7cfaec57b02.png" alt="image" width="300">
 </div>
 
 $$m' = \frac{m_0}{\sqrt{1-\frac{v2}{c2}}}$$
+
 ## Relative time
 
 $$\Delta t' = \frac{\Delta t}{\sqrt{1-\frac{v^2}{c^2}}}$$
@@ -31,7 +38,7 @@ $$\Delta t' = \frac{\Delta t}{\sqrt{1-\frac{v^2}{c^2}}}$$
 
 The position is not equal to the original position plus time multiplied by time
 
-<div style="text-align: center;">
+<div style="text-align: center;" markdown="1">
 
 $$\vec u' = \vec u-\vec v$$
 
@@ -93,7 +100,9 @@ $$y' = l\cdot sin(\theta-\phi)$$
 $$= l\cdot cos\theta\cdot cos\phi-l\cdot sin\theta\cdot sin\phi$$
 
 $$= x\cdot sin\phi+y\cdot sin\phi$$
+
 ***
+
 $$y = ict$$
 
 $$y' = ict'$$

@@ -4,6 +4,8 @@ layout: base
 
 # Second moment of area
 
+The second moment of area measures how cross-sectional area is distributed about an axis. Specify the axis before using shape formulas, the parallel-axis theorem, or a section modulus.
+
 <div style="text-align: center;">
 <img src="upload_0cf8f2c730ebfc66df14eb890bcfd8fa.png" alt="image" width="500">
 </div>
@@ -12,6 +14,7 @@ $$\Delta F = Cy\Delta A$$
 
 * constant : $C$
 * distanec form $\Delta A$ to the axis : $y$
+
 $$F = \int\ dF = \int Cy\ dA = C\int y\ dA$$
 
 $$M = \int y\ dF = C\int y^2dA$$
@@ -26,7 +29,7 @@ $$J_0 = \int r^2 dA$$
 
 $$r^2 = x^2+y^2$$
 
-$$J_0 = \int r^2\ dA = \int(x^2+y^2)dA $$
+$$J_0 = \int r^2\ dA = \int(x^2+y^2)dA$$
 
 $$= I_x+I_y$$
 
