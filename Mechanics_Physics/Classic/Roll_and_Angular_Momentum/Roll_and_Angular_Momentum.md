@@ -22,7 +22,7 @@ $$v_{top} = 2𝜔r = 2v_{com}$$
 
 * energy
 
-$$\frac{1}{2}mv_{com}^2+\frac{1}{2}I_{com}^2$$
+$$\boxed{\frac{1}{2}mv_{com}^2+\frac{1}{2}I_{com}^2}$$
 
 ## Down hill rolling
 
@@ -60,7 +60,7 @@ $$f_s = \frac{Ia}{R^2}$$
 
 $$F_{net} = mg-\frac{Ia}{R^2}$$
 
-$$a = F_{net}/m = \frac{Ia}{mR^2}+g$$
+$$\boxed{a = F_{net}/m = \frac{Ia}{mR^2}+g}$$
 
 ## Angular Momentum
 
@@ -108,7 +108,7 @@ $$mgr\cdot sin\theta = I𝜔_s𝜔_p$$
 
 $$𝜔_p = \frac{mgr\cdot sin\theta}{I𝜔_s}$$
 
-$$T_p = 2\pi/𝜔_p = \frac{2\pi I𝜔_s}{mgr\cdot sin\theta} = \frac{4\pi^2 I}{T_s𝜏}$$
+$$\boxed{T_p = 2\pi/𝜔_p = \frac{2\pi I𝜔_s}{mgr\cdot sin\theta} = \frac{4\pi^2 I}{T_s𝜏}}$$
 
 * Angular velocity of spin
 

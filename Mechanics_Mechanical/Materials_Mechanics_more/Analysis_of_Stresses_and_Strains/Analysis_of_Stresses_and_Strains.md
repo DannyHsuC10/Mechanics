@@ -78,7 +78,7 @@ $$\frac{d^4y}{dx^4} = -\frac{q}{EI}$$
 
 $$EI\nu'' = M\qquad EI\nu''' = V\qquad EI\nu'''' = -q$$
 
-$$\kappa = \frac{\nu''}{(1+\nu''^2)^{3/2}}$$
+$$\boxed{\kappa = \frac{\nu''}{(1+\nu''^2)^{3/2}}}$$
 
 ## Method of Superposition
 
@@ -88,6 +88,6 @@ $$\kappa = \frac{\nu''}{(1+\nu''^2)^{3/2}}$$
 
 the slope and deflection due to uniform load of intensity
 
-$$\delta = \frac{5qL^4}{384EI}$$
+$$\boxed{\delta = \frac{5qL^4}{384EI}}$$
 
 $$\theta_A = \theta_B = \frac{qL^3}{24EI}$$

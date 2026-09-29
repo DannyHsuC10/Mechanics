@@ -62,7 +62,7 @@ $$\frac{dz}z  = -\nu\frac{dx}x = -\nu\frac{P_x}{AE}$$
 
 $$\frac{dx}x = \sum^n_{i = 1}\frac{P_i\vec x}{A_{yz}E}-\nu\frac{P_i\vec y}{A_{xz}E}-\nu\frac{P_i\vec z}{A_{xyE}}$$
 
-$$\varepsilon_x = \frac{\sigma_x-(\sigma_y+\sigma_z)\nu}{E}$$
+$$\boxed{\varepsilon_x = \frac{\sigma_x-(\sigma_y+\sigma_z)\nu}{E}}$$
 
 ## Forces in multiple directions are equal
 

@@ -12,7 +12,7 @@ $c \simeq 3\times 10^8m/s$
 $E$ : energy(J)
 $M$ : mass(kg)
 
-$$E = mc^2$$
+$$\boxed{E = mc^2}$$
 
 ## Relative length
 
@@ -20,7 +20,7 @@ $$E = mc^2$$
 <img src="upload_d8387ecb239ccc59fc83d1625a5e3414.png" alt="image" width="300">
 </div>
 
-$$l' = l\sqrt{1-\frac{v^2}{c^2}}$$
+$$\boxed{l' = l\sqrt{1-\frac{v^2}{c^2}}}$$
 
 ## Relative mass
 
@@ -28,11 +28,11 @@ $$l' = l\sqrt{1-\frac{v^2}{c^2}}$$
 <img src="upload_3fe6f1c9d30a62d20f18c7cfaec57b02.png" alt="image" width="300">
 </div>
 
-$$m' = \frac{m_0}{\sqrt{1-\frac{v2}{c2}}}$$
+$$\boxed{m' = \frac{m_0}{\sqrt{1-\frac{v2}{c2}}}}$$
 
 ## Relative time
 
-$$\Delta t' = \frac{\Delta t}{\sqrt{1-\frac{v^2}{c^2}}}$$
+$$\boxed{\Delta t' = \frac{\Delta t}{\sqrt{1-\frac{v^2}{c^2}}}}$$
 
 ## length in relativity
 

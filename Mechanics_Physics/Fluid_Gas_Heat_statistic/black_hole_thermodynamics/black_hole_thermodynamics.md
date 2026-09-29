@@ -20,7 +20,7 @@ The horizon has constant surface gravity for a stationary black hole.
 
 $$E = mc^2$$
 
-$$dE = \frac{\kappa}{8\pi}dA+\Omega dJ+\Phi dQ = T_HdS_{BH}+\Omega dJ$$
+$$\boxed{dE = \frac{\kappa}{8\pi}dA+\Omega dJ+\Phi dQ = T_HdS_{BH}+\Omega dJ}$$
 
 * energy : $E$
 * surface gravity : $\kappa$

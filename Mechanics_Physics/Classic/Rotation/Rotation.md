@@ -6,7 +6,7 @@ layout: base
 
 Angular position, velocity, and acceleration describe rotation about an axis. The equations compare rotational quantities with their translational counterparts and introduce inertia, torque, and work.
 
-$$\theta = \frac{S}{r}$$
+$$\boxed{\theta = \frac{S}{r}}$$
 
 * unit
 $1rev = 360^\circ = (2\pi) rad$
@@ -40,7 +40,7 @@ $$K = \frac{1}{2}(\sum m_ir_i^2)𝜔^2$$
 
 $$I = \sum m_ir_i^2$$
 
-$$K = \frac{1}{2}I𝜔^2$$
+$$\boxed{K = \frac{1}{2}I𝜔^2}$$
 
 ## Moment of inertia
 
@@ -82,7 +82,7 @@ $$K_r^{\prime} = \frac{1}{2}𝜔^2(I_{com}+mr^2)$$
 
 $$K_r^{\prime} = \frac{1}{2}𝜔^2I^{\prime}$$
 
-$$I^{\prime} = I_{com}+mr^2$$
+$$\boxed{I^{\prime} = I_{com}+mr^2}$$
 
 ## Torque
 
@@ -126,7 +126,9 @@ $$\Delta K = W = \frac{1}{2}I𝜔_f^2-\frac{1}{2}I𝜔_i^2$$
 
 $$W = Fs = F(r\theta) = 𝜏\theta$$
 
-$$P = FV = F(𝜔r) = 𝜏𝜔$$
+$$P = FV = F(𝜔r)$$
+
+$$\boxed{P = 𝜏𝜔}$$
 
 ## Formula comparison
 

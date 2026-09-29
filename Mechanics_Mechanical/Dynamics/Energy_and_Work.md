@@ -18,13 +18,13 @@ $$K = \frac12mv^2$$
 
 $$U_g = mgh = wh$$
 
-$$U_k = \frac12kx^2$$
+$$\boxed{U_k = \frac12kx^2}$$
 
 ## Work
 
 Work accumulates the component of force along a displacement. The integral form is useful when the force varies along the path.
 
-$$W = Fx$$
+$$\boxed{W = Fx}$$
 
 ## conservation of mechanical energy
 

@@ -41,7 +41,7 @@ Boltzmann constant : $k$
 
 $$PV = NkT$$
 
-$$P = \frac{nRT}{V}$$
+$$\boxed{P = \frac{nRT}{V}}$$
 
 ## Ideal gas work
 
@@ -131,7 +131,7 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 
 * molar mass : $M$
 
-$$v_{rms} = \sqrt{\frac{3RT}{M}}$$
+$$\boxed{v_{rms} = \sqrt{\frac{3RT}{M}}}$$
 
 * Root mean square velocity : $v_{rms}$
 
@@ -147,7 +147,7 @@ $$K = N\frac12m\frac{3kT}{m}$$
 
 * number of particles : $N$
 
-$$K = \frac{3N}2kT$$
+$$\boxed{K = \frac{3N}2kT}$$
 
 ## mean free path
 
@@ -203,7 +203,7 @@ $$N = (P/kT)V$$
 
 $$\lambda = \frac {V}{\pi d^2\sqrt2N} = \frac {V}{\pi d^2\sqrt2(P/kT)V}$$
 
-$$\lambda = \frac {1}{\pi d^2\sqrt2(P/kT)} = \frac {kT}{\sqrt2\pi d^2P}$$
+$$\boxed{\lambda = \frac {1}{\pi d^2\sqrt2(P/kT)} = \frac {kT}{\sqrt2\pi d^2P}}$$
 
 ## [Maxwell–Boltzmann distribution](../../../Special/Maxwell-Boltzmann_distribution.md)
 
@@ -243,7 +243,7 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 
 * molar mass : $M$
 
-$$v_{rms} = \sqrt{\frac{2RT}{M}}$$
+$$\boxed{v_{rms} = \sqrt{\frac{2RT}{M}}}$$
 
 ### Average speed (by Maxwell–Boltzmann distribution)
 
@@ -285,7 +285,7 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 
 * molar mass : $M$
 
-$$v_{rms} = \sqrt{\frac{8RT}{\pi M}}$$
+$$\boxed{v_{rms} = \sqrt{\frac{8RT}{\pi M}}}$$
 
 ###  Root mean square speed(by Maxwell–Boltzmann distribution)
 
@@ -335,7 +335,7 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 
 * molar mass : $M$
 
-$$v_{rms} = \sqrt{\frac{3RT}{M}}$$
+$$\boxed{v_{rms} = \sqrt{\frac{3RT}{M}}}$$
 
 ## Ideal gas specific heat (monatomic ideal gas)
 

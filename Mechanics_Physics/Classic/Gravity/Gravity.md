@@ -9,10 +9,9 @@ Gravitational force determines surface weight, escape conditions, and orbital mo
 <div style="text-align: center;">
 <img src="upload_1cb174a8e5011f584a3e3d6456a39ad3.png" alt="image" width="500">
 </div>
-
-$$F = \frac{GMm}{r^2}$$
-
 $$\vec F = \frac{GMm}{r^2}\vec r$$
+
+$$\boxed{F = \frac{GMm}{r^2}}$$
 
 ## Surface gravity
 
@@ -42,7 +41,7 @@ $$= (-\frac{GMm}{\infty})-(-\frac{GMm}{r})$$
 
 $$= 0-(-\frac{GMm}{r})$$
 
-$$W_g= \frac{GMm}{r}$$
+$$\boxed{W_g= \frac{GMm}{r}}$$
 
 ## Gravity inside the earth
 
@@ -50,13 +49,13 @@ $$D = \frac{M_e}{\frac{4}{3}\pi R^3}$$
 
 $$M = D\frac{4}{3}\pi r^3 = M_e\frac{r^3}{R^3}$$
 
-$$F =\frac{GMm}{r^2} = \frac{GM_em}{R^3}r$$
+$$\boxed{F =\frac{GMm}{r^2} = \frac{GM_em}{R^3}r}$$
 
 ## Escape velocity
 
 $$E = K+U = \frac{1}{2}mv^2-(\frac{GMm}{r}) = 0$$
 
-$$v = \sqrt{\frac{2GM}{R}}$$
+$$\boxed{v = \sqrt{\frac{2GM}{R}}}$$
 
 ## Kepler's laws of planetary motion
 

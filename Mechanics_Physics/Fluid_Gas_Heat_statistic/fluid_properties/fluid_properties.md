@@ -12,7 +12,7 @@ Real fluids exhibit viscosity and surface effects that ideal-fluid models omit. 
 <img src="upload_ed617eef255ff5628bf87f5498c2bf8e.png" alt="image" width="400">
 </div>
 
-$$F = \mu A\frac uy$$
+$$\boxed{F = \mu A\frac uy}$$
 
 * velocity of the fluid : $u$
 * viscosity : $\mu$ , $(\frac{M}{TL})$
@@ -23,7 +23,7 @@ $$\tau = \mu\frac{𝜕u}{𝜕y}$$
 
 * Kinematic viscosity : $\nu$
 
-$$\nu = \frac{\mu}{\rho}$$
+$$\boxed{\nu = \frac{\mu}{\rho}}$$
 
 ## Turbulent power-law
 
@@ -50,7 +50,7 @@ The higher the viscosity $\mu$, the more easily the fluid is affected by the pip
 
 ## Velocity of the fluid
 
-$$u = \frac{1}{4\mu}\frac{dP}{dx}(r_o^2-r^2)$$
+$$\boxed{u = \frac{1}{4\mu}\frac{dP}{dx}(r_o^2-r^2)}$$
 
 * Pressure gradient : $\frac{dP}{dx}$
 This is the main force that propels the fluid to flow along the pipe
@@ -77,7 +77,7 @@ $$=\frac{2\pi}{4\mu}\frac{dP}{dx}(\frac{r_0^4}{2}-\frac{r_0^4}{4})$$
 
 $$=\frac{2\pi}{4\mu}\frac{dP}{dx}\frac{r_0^4}{4}$$
 
-$$Q = \frac{\pi r^4_0}{8\mu}(\frac{dP}{dx})$$
+$$\boxed{Q = \frac{\pi r^4_0}{8\mu}(\frac{dP}{dx})}$$
 
 ## Surface Tension
 
@@ -98,17 +98,17 @@ $$2\gamma L+V\rho = F_y+F_b = w$$
 
 * The weight of an object supported by surface tension : $w$
 
-$$\gamma = \frac{2L}F$$
+$$\boxed{\gamma = \frac{2L}F}$$
 
 ## Lift and Drag
 
 * **Lift**
 
-$$F_L = C_L(\frac12\rho A_N)u^2$$
+$$\boxed{F_L = C_L(\frac12\rho A_N)u^2}$$
 
 * **Drag**
 
-$$F_D = C_D(\frac12\rho A_N)u^2$$
+$$\boxed{F_D = C_D(\frac12\rho A_N)u^2}$$
 
 ## Coandă effect
 
@@ -131,7 +131,7 @@ $$F_L =C_L(
 
 * Linear motion and rotation
 
-$$F_L' = C_L(\frac12\rho A_N)(v+\omega r)^2$$
+$$\boxed{F_L' = C_L(\frac12\rho A_N)(v+\omega r)^2}$$
 
 <div style="text-align: center;">
 <img src="upload_6e8a7861124cbab3368c795dc379c8bb.png" alt="image" width="400">

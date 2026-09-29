@@ -38,7 +38,7 @@ $$y(x,t) = y_msin(kx-\omega t)$$
 
 where $\omega t$ t is the phase
 
-$$k = \frac{2\pi}{\lambda}$$
+$$\boxed{k = \frac{2\pi}{\lambda}}$$
 
 ## Cycle & Angle Frequency & Frequency
 
@@ -50,7 +50,7 @@ $$y(0,t) = y_msin(-\omega t_i-\omega \Delta t)$$
 
 $$f = \frac1T = \frac\omega {2\pi}$$
 
-$$\omega = \frac{2\pi}{T}$$
+$$\boxed{\omega = \frac{2\pi}{T}}$$
 
 ## Velocity of travel wave
 
@@ -62,7 +62,7 @@ $$v = \frac{dx}{dt} = \frac\omega k$$
 
 $$v = \frac{2\pi}{k}\cdot\frac\omega{2\pi}$$
 
-$$v = \lambda f$$
+$$\boxed{v = \lambda f}$$
 
 ## Wave analysis
 
@@ -141,7 +141,7 @@ dx} = \sqrt{\frac\mu\tau}$$
 $$\frac{dx}{
 dt} = \sqrt{\frac\tau\mu}$$
 
-$$v = \sqrt{\frac\tau\mu}$$
+$$\boxed{v = \sqrt{\frac\tau\mu}}$$
 
 ## Wave energy transmission rate
 

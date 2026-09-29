@@ -13,9 +13,9 @@ $$\delta = \varepsilon L = \frac{\sigma L}{E} = \frac{PL}{AE}$$
 
 $$fk = 1$$
 
-$$k = \frac{EA}{L}$$
+$$\boxed{k = \frac{EA}{L}}$$
 
-$$f = \frac{L}{EA}$$
+$$\boxed{f = \frac{L}{EA}}$$
 
 ## Stress and Deformation
 
@@ -59,9 +59,9 @@ $$\sigma_\theta = \frac{P\cos\theta}{A/\cos\theta} = \sigma_x\cos^2\theta = \sig
 
 $$\tau_\theta = -\frac{V}{A_t} = \frac{P\sin\theta}{A/\cos\theta} = -\sigma_x\sin\theta\cos\theta = -\frac{\sigma_x}{2}\sin2\theta$$
 
-$$\sigma_\max = \sigma_x$$
+$$\sigma_{max} = \sigma_x$$
 
-$$\tau_\max = \sigma_x/2$$
+$$\tau_{max} = \sigma_x/2$$
 
 ## Strain Energy
 
@@ -73,4 +73,4 @@ $$U = W = \int P\ d\delta$$
 
 $$U = W = \frac{P\delta}{2}$$
 
-$$U = \frac{P^2L}{2EA} = \frac{EA\delta^2}{2.L}$$
+$$\boxed{U = \frac{P^2L}{2EA} = \frac{EA\delta^2}{2L}}$$

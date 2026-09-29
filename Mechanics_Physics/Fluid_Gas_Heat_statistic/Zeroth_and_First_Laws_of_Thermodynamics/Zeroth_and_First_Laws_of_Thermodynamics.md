@@ -28,7 +28,7 @@ $$P = P_0-\rho gh$$
 
 $$T_3 = Cp_3$$
 
-$$T = T_3(\frac{P}{P_3})$$
+$$\boxed{T = T_3(\frac{P}{P_3})}$$
 
 ## Ideal temperature
 
@@ -36,11 +36,11 @@ The temperature measured by continuously reducing the air pressure approximates 
 
 ## Conversion of temperature
 
-$$F = \frac95C+32$$
+$$\boxed{F = \frac95C+32}$$
 
-$$K = 273.15+C$$
+$$\boxed{K = 273.15+C}$$
 
-$$K = (F-32)(\frac59)+273.15$$
+$$\boxed{K = (F-32)(\frac59)+273.15}$$
 
 ## Thermal expansion
 
@@ -48,7 +48,7 @@ $$K = (F-32)(\frac59)+273.15$$
 
 $$\alpha_L = \frac{1}{L}\frac{dL}{dT}$$
 
-$$\Delta L = L\alpha_L\Delta T$$
+$$\boxed{\Delta L = L\alpha_L\Delta T}$$
 
 * linear thermal expansion : $\alpha_{L}$
 * length : ${L}$
@@ -59,7 +59,7 @@ $$\Delta L = L\alpha_L\Delta T$$
 
 $$\alpha_V = \frac{1}{V}\frac{dV}{dT}$$
 
-$$\Delta V = V\alpha_V\Delta T$$
+$$\boxed{\Delta V = V\alpha_V\Delta T}$$
 
 * volumetric thermal expansion : $\alpha_{V}$
 * volume : ${V}$
@@ -79,7 +79,7 @@ $$Q = C\Delta T$$
 
 $$C = c\cdot m$$
 
-$$Q = cm\Delta T$$
+$$\boxed{Q = cm\Delta T}$$
 
 * Specific heat : $c$
 
@@ -176,7 +176,7 @@ $$P_{cond} = KA\frac{T_H-T_L}{L}$$
 * area of the surface : $A$
 * temperature : $T$
 
-$$K =\frac{P_{cond} L}{A \Delta T}$$
+$$\boxed{K =\frac{P_{cond} L}{A \Delta T}}$$
 
 2. **convection**
 
@@ -190,11 +190,11 @@ $$P_{conv} = hA\Delta T$$
 * difference in temperature between a solid surface and surrounding fluid : $\Delta T$
 * area of the surface : $A$
 
-$$h = \frac {P_{conv}}{A\Delta T}$$
+$$\boxed{h = \frac {P_{conv}}{A\Delta T}}$$
 
 3. **radiation**
 
-$$P_{rad} = \sigma\varepsilon AT^4$$
+$$\boxed{P_{rad} = \sigma\varepsilon AT^4}$$
 
 * The Stefan-Boltzmann Constant : $\sigma$
 * emissivity coefficient of the object "(1) for a black body" : $\varepsilon$

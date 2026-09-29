@@ -35,7 +35,7 @@ $$v = v_i+at$$
 
 $$x = x_i+v_it+\frac12at^2$$
 
-$$v^2 = v_i^2+2a\Delta x$$
+$$\boxed{v = \sqrt{(v_i^2+2a\Delta x)}}$$
 
 ## Free fall
 
@@ -43,7 +43,7 @@ $$v = gt$$
 
 $$h = \frac12gt^2$$
 
-$$v^2 = 2gh$$
+$$\boxed{v = \sqrt{2gh}}$$
 
 ## slope
 

@@ -53,7 +53,7 @@ $$\frac{F}{A} = G\frac{\Delta \phi}{L}$$
 <img src="upload_0aa25e90d38761d9c567aa1b3bbc54a4.png" alt="image" width="400">
 </div>
 
-$$P = B\frac{\Delta V}{V}$$
+$$\boxed{P = B\frac{\Delta V}{V}}$$
 
 * Pressure : $P$
 * Bulk modulus : $B$

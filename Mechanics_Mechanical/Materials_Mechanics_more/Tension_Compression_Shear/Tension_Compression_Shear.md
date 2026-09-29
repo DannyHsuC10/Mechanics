@@ -59,7 +59,7 @@ $$A_0L_0 = AL$$
 
 $$\frac{L}{L_0} = \frac{A_0}{A} = 1+\varepsilon$$
 
-$$\sigma_T = \sigma(1+\varepsilon)$$
+$$\boxed{\sigma_T = \sigma(1+\varepsilon)}$$
 
 ## Linear Elasticity, Hooke's Law and Poisson's Ratio
 
@@ -81,7 +81,7 @@ $$\tau = V/A$$
 
 $$\tau = G\gamma$$
 
-$$G=  \frac{E}{1(+\nu)}$$
+$$\boxed{G=  \frac{E}{1(+\nu)}}$$
 
 ## deformation
 

@@ -10,7 +10,7 @@ The work–energy theorem connects the work done on a body to its change in kine
 
 unit : $1 jonle = 1 J =kg^2⋅m^2/s^2$
 
-$$K = \frac{1}{2}mv^2$$
+$$\boxed{K = \frac{1}{2}mv^2}$$
 
 $$ΔK = K_f-K_i$$
 
@@ -127,7 +127,7 @@ $1kW⋅hr = 10^3W⋅3600s = 3.6⋅10^6J = 3.6MJ$
 
 $$P = \frac{dW}{dt} = Fdx/dt$$
 
-$$P = Fv$$
+$$\boxed{P = Fv}$$
 
 ## Conservation force
 
@@ -162,7 +162,7 @@ $$ΔU = mg(y_f-y_i) = mgΔy$$
 
 if $y_i = 0$
 
-$$U = mgy$$
+$$\boxed{U = mgy}$$
 
 ## elastic potential energy
 
@@ -172,7 +172,7 @@ $$ΔU = -\frac{1}{2}k(x_f^2-x_i^2) = Δx$$
 
 if $x_i = 0$
 
-$$U = -\frac{1}{2}kx^2$$
+$$\boxed{U = -\frac{1}{2}kx^2}$$
 
 ## Law of conservation of mechanical energy
 

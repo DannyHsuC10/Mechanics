@@ -18,7 +18,7 @@ $$K = \frac12(mv^2+I\omega^2)$$
 
 $$I = mr^2$$
 
-$$K = \frac12m(v^2+(r\omega)^2)$$
+$$\boxed{K = \frac12m(v^2+(r\omega)^2)}$$
 
 ## Center of Gravity
 
@@ -89,9 +89,9 @@ $$m_1(v_{1i}-v_{1f})(v_{1i}+v_{1f}) = m_2(v_{2i}-v_{2f})(v_{2i}+v_{2f})$$
 * $m_1v_{1i}+m_2v_{2i} = m_1v_{1f}+m_2v_{2f}$
 * $v_{1i}+v_{1f} = v_{2i}+v_{2f}$
 
-$$v_{1f} = \frac{v_{1i}(m_1-m_2)+2m_2v_{2i}}{m_1+m_2}$$
+$$\boxed{v_{1f} = \frac{v_{1i}(m_1-m_2)+2m_2v_{2i}}{m_1+m_2}}$$
 
-$$v_{2f} = \frac{v_{2i}(m_1-m_2)+2m_2v_{1i}}{m_1+m_2}$$
+$$\boxed{v_{2f} = \frac{v_{2i}(m_1-m_2)+2m_2v_{1i}}{m_1+m_2}}$$
 
 ### 1D Completely inelastic collision
 
@@ -113,7 +113,7 @@ $$e = \frac{v_{2f}-v_{1f}}{v_{1i}-v_{2i}}$$
 
 $$e(v_{1i}-v_{2i}) = (v_{2f}-v_{1f})$$
 
-$$e = \sqrt{\frac{E_{sys\ f}}{E_{sys\ i}}}$$
+$$\boxed{e = \sqrt{\frac{E_{sys\ f}}{E_{sys\ i}}}}$$
 
 [why?](../../../Special/Energy_and_Coefficient_of_restitution.md)
 

@@ -30,7 +30,7 @@ $$XYZ_{moc}(x,y,z) = \frac{1}{M}\sum{(m_ix_i,m_iy_i,m_iz_i)}$$
 
 Density connects the amount of mass to the volume it occupies.
 
-$$D = \frac{m}{V}$$
+$$\boxed{D = \frac{m}{V}}$$
 
 ## Momentum and Impulse
 
@@ -90,9 +90,9 @@ $$m_1v_{1i}+m_2v_{2i} = m_1v_{1f}+m_2v_{2f}$$
 
 $$m_1(v_{1i}-v_{1f}) = m_2(v_{2f}-v_{2i})\quad-(1)$$
 
-$$v_{1f} = \frac{m_1v_{1i}+m_2(v_{2i}-v_{2f})}{m_1}\quad-(2)$$
+$$\boxed{v_{1f} = \frac{m_1v_{1i}+m_2(v_{2i}-v_{2f})}{m_1}\quad-(2)}$$
 
-$$v_{2f} = \frac{m_2v_{2i}+m_1(v_{1i}-v_{1f})}{m_2}\quad-(3)$$
+$$\boxed{v_{2f} = \frac{m_2v_{2i}+m_1(v_{1i}-v_{1f})}{m_2}\quad-(3)}$$
 
 $$\frac{1}{2}m_1v_{1i}^2+\frac{1}{2}m_2v_{2i}^2 = \frac{1}{2}m_1v_{1f}^2+\frac{1}{2}m_2v_{2f}^2$$
 

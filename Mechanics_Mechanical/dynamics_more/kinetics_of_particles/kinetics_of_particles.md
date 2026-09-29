@@ -139,7 +139,7 @@ $$\dot r = \frac{dr}{dt} = \frac{dr}{d\theta}\dot\theta = \frac{l}{r^2}\frac{dr}
 
 $$l = r^2\omega$$
 
-$$\vec v_r = \omega\frac{dr}{d\theta} = \frac{d}{d\theta}(\frac{-l}r)$$
+$$\boxed{\vec v_r = \omega\frac{dr}{d\theta} = \frac{d}{d\theta}(\frac{-l}r)}$$
 
 **acceleration**
 
@@ -152,7 +152,7 @@ $$\ddot r = -l^2u^2\frac{d^2u}{d\theta^2}$$
 
 $$\frac{l}{r} = r\omega = v_t$$
 
-$$\vec a_r = \frac{v_t^2}{r}\frac{d^2}{d\theta^2}$$
+$$\boxed{\vec a_r = \frac{v_t^2}{r}\frac{d^2}{d\theta^2}}$$
 
 ***
 
@@ -217,7 +217,7 @@ $$v_{esc} = (2GM/r)^{1/2} = (2gR^2/r)^{1/2}$$
 
 if $R = r$
 
-$$v_{esc} = (2gR)^{1/2}$$
+$$\boxed{v_{esc} = (2gR)^{1/2}}$$
 
 1. if $v > v_{esc}$ , $\varepsilon > 1$ : hyperbolic
 2. if $v = v_{esc}$ , $\varepsilon > 1$ : parabola
@@ -243,4 +243,4 @@ $$= 2ar_{min}-r_{min}^2 = r_{min}(2a-r_{min}) = r_{min}r_{max}$$
 
 $$\Delta t = \frac{2\pi(r_{min}+r_{max})(r_{min}r_{max})^{1/2}}{2l}$$
 
-$$\Delta t = \frac{\pi(r_{min}+r_{max})(r_{min}r_{max})^{1/2}}{l}$$
+$$\boxed{\Delta t = \frac{\pi(r_{min}+r_{max})(r_{min}r_{max})^{1/2}}{l}}$$

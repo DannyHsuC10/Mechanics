@@ -158,7 +158,7 @@ $$b = 2m\omega_i$$
 
 $$b = 2m\sqrt{\frac km}$$
 
-$$b = 2\sqrt{km}$$
+$$\boxed{b = 2\sqrt{km}}$$
 
 ## Graph
 

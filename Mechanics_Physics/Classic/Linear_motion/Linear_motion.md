@@ -39,7 +39,7 @@ $$v = \lim_{Δt \to 0}\frac{Δx}{Δt} = \frac{dx}{dt}$$
 * Speed & Velocity
 Velocity is a vector but speed is a scalar.
 
-$$speed = \frac{path}{time} \qquad velocity = \frac{displacement}{time}$$
+$$\boxed{speed = \frac{path}{time} \qquad velocity = \frac{displacement}{time}}$$
 
 ## Acceleration
 
@@ -84,8 +84,8 @@ The integral of velocity with respect to time is position.
 
 $$a = \frac{dv}{dt} \qquad v = ∫adt$$
 
-$$v = at+v_i$$
+$$\boxed{v = at+v_i}$$
 
 $$x = \frac{dV}{dt} \qquad x = ∫vdt = ∫(at+v_i)dt$$
 
-$$x =  x_i+v_it+\frac{1}{2}at^2$$
+$$\boxed{x =  x_i+v_it+\frac{1}{2}at^2}$$

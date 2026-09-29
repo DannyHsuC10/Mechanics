@@ -27,7 +27,7 @@ $$dV = \frac{dx}{x}+\frac{dy}{y}+\frac{dz}{z}$$
 
 $$\frac{P_x}{A_{\perp x}} = \frac{P_y}{A_{\perp y}} = \frac{P_z}{A_{\perp z}}$$
 
-$$\frac{dV}{V} = 3\frac{P}{A}\frac1E_V(1-2\mu)$$
+$$\boxed{\frac{dV}{V} = 3\frac{P}{A}\frac1E_V(1-2\mu)}$$
 
 ## Volume elastic modulus
 
@@ -37,4 +37,6 @@ $$E_V = \frac{\frac{P}{A}}{\frac{dV}{V}}$$
 
 $$= \frac{\frac{P}{A}}{ 3\frac{P}{A}\frac1E_V(1-2\mu)}$$
 
-$$= \frac{E}{3(1-2\mu)} = \frac{E}{3-6\mu}$$
+$$\boxed{E_V = \frac{E}{3(1-2\mu)} = \frac{E}{3-6\mu}}$$
+
+

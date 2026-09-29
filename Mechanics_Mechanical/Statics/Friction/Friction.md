@@ -10,7 +10,7 @@ Friction affects both sliding and overturning limits. The examples compare conta
 <img src="upload_91f64c08f4e4f6a2ba317b64fff970f6.png" alt="image" width="300">
 </div>
 
-$$f = \mu N$$
+$$\boxed{f = \mu N}$$
 
 * $\mu>0$
 
@@ -86,7 +86,7 @@ $$wb/2 = Fh$$
 
 $$mgb/2 = \mu mgh$$
 
-$$h = \frac b{2\mu}$$
+$$\boxed{h = \frac b{2\mu}}$$
 
 ## Slope and Horizontal force
 

@@ -8,27 +8,27 @@ Torsion describes the deformation of a member subjected to a twisting moment. Re
 
 ## Torsion
 
-$$T = Pd$$
+$$\boxed{T = Pd}$$
 
 <div style="text-align: center;">
 <img src="upload_9fe19d6d64dca571a1d4fe4c243426d2.png" alt="image" width="500">
 </div>
 
-$$\gamma_\max = \frac{bb'}{ab} = \frac{rd\phi}{dx}$$
+$$\gamma_{max} = \frac{bb'}{ab} = \frac{rd\phi}{dx}$$
 
 $$\theta = \phi/L$$
 
-$$\gamma_\max = r\phi/L$$
+$$\gamma_{max} = r\phi/L$$
 
-$$\gamma = \rho\theta = \rho\gamma_\max/r$$
+$$\gamma = \rho\theta = \rho\gamma_{max}/r$$
 
 ## shear modulus of elasticituy (G)
 
 $$\tau = G\gamma$$
 
-$$\tau_\max = Gr\theta$$
+$$\tau_{max} = Gr\theta$$
 
-$$\tau = G\rho\theta = \frac{\rho}{r}\tau_\max$$
+$$\tau = G\rho\theta = \frac{\rho}{r}\tau_{max}$$
 
 $$dM = \tau\rho dA$$
 
@@ -65,4 +65,4 @@ $$\tau_\theta = \tau(\cos^2\theta-\sin^2\theta) = \tau\cos2\theta$$
 |  $-\tau$  | $\pm90^o$ |
 | $\pm\tau$ | $\pm45^o$ |
 
-$$\varepsilon_\max = \frac{\sigma_\max}{E}-\frac{\nu\sigma_\min}{E} = \frac{\tau}{E}(1+\nu) = \gamma/2$$
+$$\varepsilon_{max} = \frac{\sigma_{max}}{E}-\frac{\nu\sigma_{min}}{E} = \frac{\tau}{E}(1+\nu) = \gamma/2$$

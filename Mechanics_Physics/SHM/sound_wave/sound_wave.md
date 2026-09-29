@@ -95,7 +95,7 @@ $$S'_m = 2S_m(cos\frac\phi2)$$
 
 $$\frac\phi{2\pi} = \frac{\Delta  L}\lambda$$
 
-$$\phi = \frac{\Delta  L}\lambda2\pi$$
+$$\boxed{\phi = \frac{\Delta  L}\lambda2\pi}$$
 
 if $\phi = n2\pi$ and $n$ is a natural number
 fully constructive interference
@@ -137,7 +137,7 @@ $$P_{avg} = \frac12(\rho Av)(\omega S_m)^2$$
 
 $$\frac PA = \frac12(\rho v)(\omega S_m)^2$$
 
-$$I = \frac12(\rho v)(\omega S_m)^2$$
+$$\boxed{I = \frac12(\rho v)(\omega S_m)^2}$$
 
 ## Decibel
 
@@ -195,7 +195,7 @@ $$f' = \frac {v_s}{\lambda} = \frac {v_s}{-v_Bt+v_st}$$
 
 $$= \frac {v_s}{(-v_B+v_s)t} = \frac {v_s}{(-v_B+v_s)/f}$$
 
-$$f' = f\frac {v_s}{(-v_B+v_s)}$$
+$$\boxed{f' = f\frac {v_s}{(-v_B+v_s)}}$$
 
 ## Supersonic speed & shock wave
 

@@ -10,7 +10,7 @@ The second moment of area measures how cross-sectional area is distributed about
 
 * Second moment of area : $I =\int r^2dA$
 * parallel axis theorem : $I_s = I_x+AL^2$
-* Section Modulus : $Z = \frac{I_x}{y_\max}$
+* Section Modulus : $Z = \frac{I_x}{y_{max}}$
 * Radius of Gyration : $K = \sqrt{\frac{I}{A}}\ ,I = AK^2$
 * Polar Second moment of area : $J = I_x+I_y$
 * Polar Radius of Gyration : $K_J = \sqrt{\frac{J}{A}}$
@@ -27,7 +27,7 @@ $$I_x = \frac{bh^3}{12}$$
 
 $$I_y = \frac{hb^3}{12}$$
 
-$$I_a = \frac{bh^3}{3}$$
+$$\boxed{I_a = \frac{bh^3}{3}}$$
 
 * **triangle**
 
@@ -39,9 +39,9 @@ $$I_x = \frac{bh^3}{36}$$
 
 $$I_y = \frac{hb^3}{36}$$
 
-$$I_a = \frac{bh^3}{12}$$
+$$\boxed{I_a = \frac{bh^3}{12}}$$
 
-$$I_b = \frac{bh^3}{4}$$
+$$\boxed{I_b = \frac{bh^3}{4}}$$
 
 * **circle**
 <div style="text-align: center;">
@@ -50,18 +50,18 @@ $$I_b = \frac{bh^3}{4}$$
 
 $$I_x = I_y = \frac{\pi R^4}{4}$$
 
-$$I_a = \frac54\pi R^4$$
+$$\boxed{I_a = \frac54\pi R^4}$$
 
 * **half circle**
 <div style="text-align: center;">
 <img src="upload_7cf28dc9968176944a457f29d9f53eb3.png" alt="image" width="250">
 </div>
 
-$$I_x = I_y = \frac{\pi R^4}{8}$$
+$$\boxed{I_x = I_y = \frac{\pi R^4}{8}}$$
 
 * **Quarter circle**
 <div style="text-align: center;">
 <img src="upload_65589c35a8c62c8c5f0d3edc580c6886.png" alt="image" width="250">
 </div>
 
-$$I_x = I_y = \frac{\pi R^4}{16}$$
+$$\boxed{I_x = I_y = \frac{\pi R^4}{16}}$$

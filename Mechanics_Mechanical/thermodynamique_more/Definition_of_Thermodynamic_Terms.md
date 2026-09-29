@@ -12,16 +12,16 @@ $$\Delta E = Q$$
 
 * Latent heat (heat absorbed or released by a unit mass of a substance when a phase change occurs, without changing the temperature) : $L$
 
-$$Q = mL$$
+$$\boxed{Q = mL}$$
 
 * Specific heat (the ease with which a unit mass of a substance changes its temperature by the amount of heat absorbed or released without a phase change) : $C$
 
-$$Q = mC\Delta T$$
+$$\boxed{Q = mC\Delta T}$$
 
 * Enthalpy (internal energy and mechanical energy generated, is the ability of the system to store energy) : $H$
 if $\Delta P = 0$ then $\Delta H = Q$
 
-$$H = E_{int}+PV$$
+$$\boxed{H = E_{int}+PV}$$
 
 * Internal energy (the sum of the kinetic energy and potential energy of the molecules in the entire system, and the change in internal energy is the amount of heat added to the system minus the work done by the system) : $E_{int}$
 

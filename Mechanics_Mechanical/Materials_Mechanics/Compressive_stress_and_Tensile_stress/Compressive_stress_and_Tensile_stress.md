@@ -26,7 +26,7 @@ Axial tension and compression relate an applied load to normal stress and length
 
 $$\text{Stress} = \frac FA$$
 
-$$\sigma = \frac PA$$
+$$\boxed{\sigma = \frac PA}$$
 
 unit :
 * $1 MPa = 10^6Pa = 10^6N/m^2 = 1N/mm^2$
@@ -39,7 +39,7 @@ unit :
 
 $$\text{strain} = \frac{dL}{L}$$
 
-$$\varepsilon = \frac\delta L$$
+$$\boxed{\varepsilon = \frac\delta L}$$
 
 ## Elastic modulus
 
@@ -52,7 +52,7 @@ $$E = \frac{P/A}{\delta/L} = \tan(\theta)$$
 
 $$\sigma = E\varepsilon$$
 
-$$\delta = \frac{PL}{AE}$$
+$$\boxed{\delta = \frac{PL}{AE}}$$
 
 ## Internal Force
 

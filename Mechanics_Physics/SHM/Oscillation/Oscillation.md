@@ -36,7 +36,7 @@ $$𝜔(t+T) = 𝜔t+2\pi$$
 
 $$𝜔T = 2\pi$$
 
-$$𝜔 = \frac{2\pi}{T} = 2\pi f$$
+$$\boxed{𝜔 = \frac{2\pi}{T} = 2\pi f}$$
 
 ## Velocity
 

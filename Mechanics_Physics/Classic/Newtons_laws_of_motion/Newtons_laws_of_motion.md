@@ -18,7 +18,7 @@ The inertial coordinate system is based on Newton's first law of motion. However
 
 ## Newton's second laws of motion
 
-$$\vec{F_{net}} = m\vec{a}$$
+$$\boxed{\vec{F_{net}} = m\vec{a}}$$
 
 $$\vec{F_{x}} = m\vec{a_x} \qquad \vec{F_{y}} = m\vec{a_y} \qquad \vec{F_{z}} = m\vec{a_z}$$
 

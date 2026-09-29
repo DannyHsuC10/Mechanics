@@ -81,7 +81,7 @@ $$N = W$$
 
 $$\sum M = 0$$
 
-$$M = Nd$$
+$$\boxed{M = Nd}$$
 
 * offset position : $d$
 
@@ -111,7 +111,7 @@ if $R_2 = 0$ and $R_2 = R$
 
 $$M = 2/3\mu_kFR$$
 
-$$M_{max} = 2/3\mu_sFR$$
+$$\boxed{M_{max} = 2/3\mu_sFR}$$
 
 ## Belt Friction
 
@@ -141,7 +141,7 @@ $$ln(T_2)-ln(T_1) = \mu_s\phi$$
 
 $$ln(T_2/T_1) = \mu_s\phi$$
 
-$$T_2/T_1 = e^{\mu_s\phi}$$
+$$\boxed{T_2/T_1 = e^{\mu_s\phi}}$$
 
 **V-shaped**
 

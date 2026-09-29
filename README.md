@@ -4,7 +4,7 @@ layout: base
 
 # DH3868
 
-Explore mechanics from basic physical laws to engineering applications. Choose a subject below for notes, worked relationships, diagrams, and supporting code.
+Choose a subject below for notes, worked relationships, diagrams, and supporting code.
 
 ## Mechanics
 

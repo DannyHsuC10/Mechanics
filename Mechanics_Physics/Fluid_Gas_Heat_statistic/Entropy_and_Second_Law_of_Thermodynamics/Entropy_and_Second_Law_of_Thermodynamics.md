@@ -60,7 +60,7 @@ $$\eta = \frac{|Q_H|-|Q_L|}{|Q_H|} = 1-\frac{|Q_L|}{|Q_H|}$$
 
 $$\eta = 1-\frac{T_L}{T_H}$$
 
-$$\eta_c = 1-\frac{T_L}{T_H}$$
+$$\boxed{\eta_c = 1-\frac{T_L}{T_H}}$$
 
 carnot Engine efficiency : $\eta_c$
 
@@ -81,7 +81,7 @@ $$\eta = \frac{|Q_L|}{|W|}$$
 
 $$\eta = \frac{|Q_L|}{|Q_H|-|Q_L|}$$
 
-$$\eta = \frac{|T_L|}{|T_H|-|T_L|}$$
+$$\boxed{\eta = \frac{|T_L|}{|T_H|-|T_L|}}$$
 
 ## Entropy statistics
 
@@ -179,12 +179,10 @@ $$\left(\frac{\partial S}{\partial P}\right)_T = -\left(\frac{\partial V}{\parti
 
 ## consider Van der Waals force
 
-$$(P+\frac{a}{V^2})(V-b) = RT$$
+$$\boxed{(P+\frac{a}{V^2})(V-b) = RT}$$
 
 * pressure : $P$
 * volume : $V$
 * temperature : $T$
 * Gas constant : $R$
 * Van der Waals constant : $a,b$
-
-$$\left(\frac{\partial T}{\partial V}\right)_S = \frac{-a}{C_VV^2}$$

@@ -25,13 +25,13 @@ $$\theta = \frac{\phi}{L}$$
 
 $$\tau \propto R$$
 
-$$\frac{\tau}{R} = \frac{\tau_1}{R_1} = \frac{\tau_2}{R_2} = \frac{\tau_\max}{R_{tt}}$$
+$$\frac{\tau}{R} = \frac{\tau_1}{R_1} = \frac{\tau_2}{R_2} = \frac{\tau_{max}}{R_{tt}}$$
 
 $$\tau = \frac{TR}{J}$$
 
 $$J = \frac{\pi R^4}{2}$$
 
-$$\phi = \frac{TL}{GJ}$$
+$$\boxed{\phi = \frac{TL}{GJ}}$$
 
 ## Material properties
 

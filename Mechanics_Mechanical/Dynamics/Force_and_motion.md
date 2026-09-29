@@ -50,19 +50,19 @@ $$T_{top} = F+w = ma+mg$$
 
 $$T_{top} = m(\frac{v^2}{r}+g)$$
 
-$$v_{top} = \sqrt{gr}$$
+$$\boxed{v_{top} = \sqrt{gr}}$$
 
 $$T_{mid} = F = ma$$
 
 $$T_{mid} = \frac{mv^2}{r}$$
 
-$$v_{mid} = \sqrt{3gr}$$
+$$\boxed{v_{mid} = \sqrt{3gr}}$$
 
 $$T_{bottom} = F-w = ma-mg$$
 
 $$T_{bottom} = m(\frac{v^2}{r}-g)$$
 
-$$v_{bottom} = \sqrt{5gr}$$
+$$\boxed{v_{bottom} = \sqrt{5gr}}$$
 
 ## Spring
 
@@ -78,11 +78,11 @@ $$x = \frac{mg}{k}$$
 
 * consider Spring height : $x_i$
 
-$$x = x_i+\frac{mg}{k}$$
+$$\boxed{x = x_i+\frac{mg}{k}}$$
 
 * consider spring mass : $m_s$
 
-$$x = x_i+\frac{mg}{k}+\frac{m_sg}{2k}$$
+$$\boxed{x = x_i+\frac{mg}{k}+\frac{m_sg}{2k}}$$
 
 ## Vehicle turning
 
@@ -98,7 +98,7 @@ $$\mu N = ma$$
 
 $$\mu mg = m\frac{v^2}{r}$$
 
-$$v = \sqrt{\mu gr}$$
+$$\boxed{v = \sqrt{\mu gr}}$$
 
 ## Superelevation
 
@@ -119,4 +119,4 @@ $$\frac{v^2}{r} = g\frac{h}{d}$$
 * height : $h$
 * Track : $d$
 
-$$h = \frac{dv^2}{gr}$$
+$$\boxed{h = \frac{dv^2}{gr}}$$

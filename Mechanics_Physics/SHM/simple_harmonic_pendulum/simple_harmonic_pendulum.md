@@ -14,7 +14,7 @@ Pendulum motion can be approximated as simple harmonic motion for sufficiently s
 
 $$\tau = -k\theta$$
 
-$$T = 2\pi\sqrt{\frac{I}{k}}$$
+$$\boxed{T = 2\pi\sqrt{\frac{I}{k}}}$$
 
 ## Swing motion
 
@@ -38,7 +38,7 @@ $$I = mr^2$$
 
 $$T = 2\pi\sqrt{\frac{mL^2}{mgL}}$$
 
-$$T = 2\pi\sqrt{\frac{L}{g}}$$
+$$\boxed{T = 2\pi\sqrt{\frac{L}{g}}}$$
 
 ## Gravity measurement
 
@@ -48,4 +48,4 @@ $$(\frac{T}{2\pi})^2 = \frac{L}{g}$$
 
 $$\frac{4\pi^2}{T^2} = \frac{g}{L}$$
 
-$$g = \frac{4\pi^2L}{T^2}$$
+$$\boxed{g = \frac{4\pi^2L}{T^2}}$$

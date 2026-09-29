@@ -74,4 +74,4 @@ $$\tau = \frac{dM}{dx}\frac1{Ib}\int y\ dA = \frac{V}{Ib}\int y\ dA$$
 
 $$Q = \int y\ dA$$
 
-$$\tau = \frac{VQ}{Ib}$$
+$$\boxed{\tau = \frac{VQ}{Ib}}$$

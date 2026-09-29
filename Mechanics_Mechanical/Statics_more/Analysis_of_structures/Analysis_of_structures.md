@@ -27,7 +27,7 @@ $$2n = m+3$$
 
 ## Mechanism analysis
 
-$$P = \frac32N-2$$
+$$\boxed{P = \frac32N-2}$$
 
 * number of pairs : $P$
 * number of link : $N$
@@ -38,7 +38,7 @@ No constraints : $2P < 3N-4$
 
 ## Space Stable structure analysis
 
-$$m = 3n-6$$
+$$\boxed{m = 3n-6}$$
 
 * number of joint : $n$
 * number of Truss : $m$

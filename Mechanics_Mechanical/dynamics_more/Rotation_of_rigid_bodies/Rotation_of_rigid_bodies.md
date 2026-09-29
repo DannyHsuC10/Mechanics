@@ -30,7 +30,7 @@ $$\omega = \omega_i+\alpha t$$
 
 $$\omega^2 = \omega_i^2+2\alpha\Delta\theta$$
 
-$$\theta = \theta_i+\omega_i t+\frac12\alpha t^2$$
+$$\boxed{\theta = \theta_i+\omega_i t+\frac12\alpha t^2}$$
 
 ## Centripetal acceleration
 
@@ -46,8 +46,8 @@ $$L = I\omega$$
 
 $$L = mr^2\omega = rmv$$
 
-$$L = rp$$
+$$\boxed{L = rp}$$
 
 ## Rotational Energy
 
-$$K_\omega = \frac12I\omega^2$$
+$$\boxed{K_\omega = \frac12I\omega^2}$$

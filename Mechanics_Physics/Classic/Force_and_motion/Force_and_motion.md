@@ -129,7 +129,7 @@ $$a = g⋅sin𝜃$$
 
 ## Damping force
 
-$$D_1 = bv$$
+$$\boxed{D_1 = bv}$$
 
 $$mg-bv = ma$$
 
@@ -169,13 +169,13 @@ $$g-\frac bmv = ge^{-\frac bmt}$$
 
 $$1-\frac {bv}{mg} = e^{-\frac bmt}$$
 
-$$v = \frac{mg}{b}(1-e^{-bt/m})$$
+$$\boxed{v = \frac{mg}{b}(1-e^{-bt/m})}$$
 
 when $a = 0$ then $v = v_T =$ Terminal velocity
 
 $$0 = g-\frac{bv_T}{m}$$
 
-$$v_T = \frac{mg}{b}$$
+$$\boxed{v_T = \frac{mg}{b}}$$
 
 ## Backward force & Terminal velocity
 
@@ -189,7 +189,7 @@ $$v_T = \frac{mg}{b}$$
 * Constant : $C$
 * Velocity : $v$
 
-$$D_2 = \frac{1}{2}C\rho Av^2$$
+$$\boxed{D_2 = \frac{1}{2}C\rho Av^2}$$
 
 when $a \not= 0$ Terminal velocity has not been reached yet
 
@@ -199,7 +199,7 @@ $$D_2-mg = 0$$
 
 $$\frac{1}{2}C\rho Av_T^2-mg = 0$$
 
-$$v_T = \sqrt\frac{2mg}{C\rho A}$$
+$$\boxed{v_T = \sqrt\frac{2mg}{C\rho A}}$$
 
 ## Centripetal force & Centrifugal force
 

@@ -44,7 +44,7 @@ $$M = \int V(x)dx$$
 <img src="upload_f698eb9c34ae9788b1df82310c15f764.png" alt="image" width="150">
 </div>
 
-$$\sigma = \frac{My}{I}$$
+$$\boxed{\sigma = \frac{My}{I}}$$
 
 ## Shear stress in beam
 
@@ -52,7 +52,7 @@ $$\sigma = \frac{My}{I}$$
 <img src="upload_901e25b63f7ad89c93aed246e3f28d52.png" alt="image" width="350">
 </div>
 
-$$\tau = \frac{VQ}{Ib}$$
+$$\boxed{\tau = \frac{VQ}{Ib}}$$
 
 * **Rectangular beam**
 
@@ -60,7 +60,7 @@ $$\tau = \frac{VQ}{Ib}$$
 <img src="upload_d3ef7e6a1c659c4c41bf634ba70e4bf4.png" alt="image" width="200">
 </div>
 
-$$\tau_\max = \frac{3V}{2A}$$
+$$\boxed{\tau_{max} = \frac{3V}{2A}}$$
 
 * **Circular beam**
 
@@ -68,7 +68,7 @@ $$\tau_\max = \frac{3V}{2A}$$
 <img src="upload_ff883198bf80b6e03f6ae07001761036.png" alt="image" width="200">
 </div>
 
-$$\tau_\max = \frac{4V}{3A}$$
+$$\boxed{\tau_{max} = \frac{4V}{3A}}$$
 
 ## Complex cross section of beam
 

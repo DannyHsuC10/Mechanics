@@ -31,7 +31,7 @@ $$P_2 = P_1+\rho g(y_1-y_2)$$
 
 $$P_2 = P_1+Dgh$$
 
-$$\Delta P = \rho gh$$
+$$\boxed{\Delta P = \rho gh}$$
 
 ## Communicating vessels
 

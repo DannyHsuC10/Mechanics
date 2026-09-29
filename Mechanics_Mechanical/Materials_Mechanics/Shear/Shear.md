@@ -19,25 +19,25 @@ $$\gamma = \frac\delta L$$
 
 $$A_{tt} = \pi Dt$$
 
-$$\tau = \frac{P}{\pi dt}$$
+$$\boxed{\tau = \frac{P}{\pi dt}}$$
 
 * rivet single shear
 
 $$A_{tt} = \frac\pi4d^2$$
 
-$$\tau = \frac p{\frac14\pi d^2}$$
+$$\boxed{\tau = \frac p{\frac14\pi d^2}}$$
 
 * rivet double shear
 
 $$A_{tt} = \frac\pi4d^2$$
 
-$$\tau = \frac p{\frac12\pi d^2}$$
+$$\boxed{\tau = \frac p{\frac12\pi d^2}}$$
 
 ## Elastic modulus &  Shear modulus of elasticity
 
-$$G = \frac{E}{2(1+\mu)}$$
+$$\boxed{G = \frac{E}{2(1+\mu)}}$$
 
-$$E_v = \frac{E}{3(1-2\mu)}$$
+$$\boxed{E_v = \frac{E}{3(1-2\mu)}}$$
 
 $$\frac9E = \frac3G+\frac1K$$
 
@@ -71,13 +71,13 @@ $$\tau_\theta = -\tau'_\theta$$
 
 * principal plane : a plane within a stressed body where the shear stress is zero, and only normal stresses (tension or compression).
 
-$\theta = 0, \cos^2\theta = 1, \sin2\theta = 0, \sigma_\theta = \sigma_x = \sigma_\max, \tau = 0$
+$\theta = 0, \cos^2\theta = 1, \sin2\theta = 0, \sigma_\theta = \sigma_x = \sigma_{max}, \tau = 0$
 
 $\theta = 90^o, \cos^2\theta = 0, \sin2\theta = 0, \sigma_\theta = 0, \tau_\theta = 0$
 
 * Maximum shear stress plane :
 
-$\theta = 45^o, \cos^2\theta = \frac12, \sin2\theta = 1,\sigma_\theta = \frac12\sigma_x, \tau_\theta = \frac12\sigma_x = \tau_\max$
+$\theta = 45^o, \cos^2\theta = \frac12, \sin2\theta = 1,\sigma_\theta = \frac12\sigma_x, \tau_\theta = \frac12\sigma_x = \tau_{max}$
 
 ## Incline shear stress
 
@@ -102,7 +102,7 @@ $$\tau'_\theta+\tau_\theta = 0$$
 $$\tau_\theta = -\tau'_\theta$$
 
 * if $\theta = 45^o$ Pure shear occurs and $2\tau_\theta = P$
-* if $\theta = 90^o$, $\max\sigma_\theta$
+* if $\theta = 90^o$, ${max}\sigma_\theta$
 * if $\theta = 0$, $\min\sigma_\theta$
 * **Biaxial**
 
@@ -148,9 +148,9 @@ $$\tau_\theta = \frac12(\sigma_x-\sigma_y)sin2\theta$$
 
 | $\theta$ | $\cos2\theta$ | $\sin2\theta$ |       $\sigma_\theta$        |        $\tau_\theta$         |
 |:--------:|:-------------:|:-------------:|:----------------------------:|:----------------------------:|
-|  $0^o$   |      $1$      |      $0$      |   $\sigma_x = \sigma_\max$   |             $0$              |
+|  $0^o$   |      $1$      |      $0$      |   $\sigma_x = \sigma_{max}$   |             $0$              |
 |  $45^o$  |      $0$      |      $1$      | $\frac12(\sigma_x+\sigma_y)$ | $\frac12(\sigma_x-\sigma_y)$ |
-|  $90^o$  |     $-1$      |      $0$      |   $\sigma_y = \sigma_\max$   |             $0$              |
+|  $90^o$  |     $-1$      |      $0$      |   $\sigma_y = \sigma_{max}$   |             $0$              |
 
 ## Pure shear
 

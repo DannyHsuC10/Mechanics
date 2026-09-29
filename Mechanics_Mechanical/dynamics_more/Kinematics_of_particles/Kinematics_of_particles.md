@@ -164,4 +164,4 @@ $$\frac{dS}{dx} = \sqrt{1^2+\frac{dy}{dx}^2}$$
 
 $$\frac{dS}{dx} = \sqrt{1^2+dy'^2}$$
 
-$$r = \frac{\sqrt{1+dy'^2}}{\frac{y''}{1+y'^2}} = \frac{(1+dy'^2)^{\frac{3}{2}}}{y''}$$
+$$\boxed{r = \frac{\sqrt{1+dy'^2}}{\frac{y''}{1+y'^2}} = \frac{(1+dy'^2)^{\frac{3}{2}}}{y''}}$$

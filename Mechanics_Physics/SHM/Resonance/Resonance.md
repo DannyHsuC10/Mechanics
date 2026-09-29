@@ -16,7 +16,7 @@ $$x_{m0} = \frac Fk$$
 
 $$\omega_0^2 = \frac km$$
 
-$$x_{m0} = \frac{F_0}{m\omega_0^2}$$
+$$\boxed{x_{m0} = \frac{F_0}{m\omega_0^2}}$$
 
 ## Power
 

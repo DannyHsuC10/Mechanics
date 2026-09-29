@@ -12,7 +12,7 @@ $$\vec{r} = x\vec{i}+y\vec{j}+z\vec{k}$$
 
 ## Moving distance
 
-$$r = \sqrt{x^2 + y^2 + z^2}$$
+$$\boxed{r = \sqrt{x^2 + y^2 + z^2}}$$
 
 $$Δ\vec{r} = \vec{r_f}-\vec{r_i}$$
 
@@ -139,13 +139,13 @@ $$a = (\frac{2𝜋r}{t})^2/r = \frac{4𝜋^2r}{t^2} = \frac{v^2}{r}$$
 
 $$\theta = \frac{S}{r} = \frac{vt}{r}$$
 
-$$a = \frac{v^2}{r}$$
+$$\boxed{a = \frac{v^2}{r}}$$
 
 * Tangential acceleration  (pink)
 
 $$𝛼 = \frac{d𝜔}{dt}$$
 
-$$a = r⋅𝛼$$
+$$\boxed{a = r⋅𝛼}$$
 
 ## relatioin motion
 
