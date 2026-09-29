@@ -2,6 +2,7 @@
 Private/
 .obsidian/
 
+
 # 忽略的檔案種類
 *.mat
 *.zip
@@ -41,3 +42,5 @@ __pycache__/
 .sass-cache/
 _site/
 _prepared_site/
+
+

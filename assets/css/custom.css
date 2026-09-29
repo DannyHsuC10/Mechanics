@@ -60,7 +60,7 @@ body {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(0, 720px) minmax(150px, 190px);
+  grid-template-columns: minmax(0, 720px) minmax(240px, 280px);
   justify-content: center;
   align-items: start;
   gap: 32px;
@@ -274,7 +274,7 @@ body {
   color: #555555;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
   .page-header {
     min-height: 0;
     padding: 26px 0 24px;
