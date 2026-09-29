@@ -131,6 +131,17 @@ $$a = g⋅sin𝜃$$
 
 $$\boxed{D_1 = bv}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-084"
+  data-expression="b*v"
+  data-inputs="b:drag coefficient kg/s,v:speed m/s"
+  data-result="D_1"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$mg-bv = ma$$
 
 $$a = g-\frac bmv$$
@@ -171,11 +182,33 @@ $$1-\frac {bv}{mg} = e^{-\frac bmt}$$
 
 $$\boxed{v = \frac{mg}{b}(1-e^{-bt/m})}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-085"
+  data-expression="m*g/b*(1-e^(0-b*t/m))"
+  data-inputs="m:mass kg,g:gravity m/s^2,b:drag coefficient kg/s,t:time s"
+  data-result="v"
+  data-unit=""
+  data-constants="e=2.718281828459045"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 when $a = 0$ then $v = v_T =$ Terminal velocity
 
 $$0 = g-\frac{bv_T}{m}$$
 
 $$\boxed{v_T = \frac{mg}{b}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-086"
+  data-expression="m*g/b"
+  data-inputs="m:mass kg,g:gravity m/s^2,b:drag coefficient kg/s"
+  data-result="v_T"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Backward force & Terminal velocity
 
@@ -191,6 +224,17 @@ $$\boxed{v_T = \frac{mg}{b}}$$
 
 $$\boxed{D_2 = \frac{1}{2}C\rho Av^2}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-087"
+  data-expression="0.5*C*rho*A*v^2"
+  data-inputs="C:drag coefficient,rho:fluid density kg/m^3,A:area m^2,v:speed m/s"
+  data-result="D_2"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 when $a \not= 0$ Terminal velocity has not been reached yet
 
 when $a = 0$ then $v = v_T =$ Terminal velocity
@@ -200,6 +244,17 @@ $$D_2-mg = 0$$
 $$\frac{1}{2}C\rho Av_T^2-mg = 0$$
 
 $$\boxed{v_T = \sqrt\frac{2mg}{C\rho A}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-088"
+  data-expression="(2*m*g/(C*rho*A))^0.5"
+  data-inputs="m:mass kg,g:gravity m/s^2,C:drag coefficient,rho:fluid density kg/m^3,A:area m^2"
+  data-result="v_T"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Centripetal force & Centrifugal force
 

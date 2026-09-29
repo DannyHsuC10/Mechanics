@@ -14,14 +14,47 @@ $$\Delta E = Q$$
 
 $$\boxed{Q = mL}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-063"
+  data-expression="m*L"
+  data-inputs="m:mass kg,L:latent heat J/kg"
+  data-result="Q"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * Specific heat (the ease with which a unit mass of a substance changes its temperature by the amount of heat absorbed or released without a phase change) : $C$
 
 $$\boxed{Q = mC\Delta T}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-064"
+  data-expression="m*C*delta_T"
+  data-inputs="m:mass kg,C:specific heat J/(kg K),delta_T:temperature change K"
+  data-result="Q"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * Enthalpy (internal energy and mechanical energy generated, is the ability of the system to store energy) : $H$
 if $\Delta P = 0$ then $\Delta H = Q$
 
 $$\boxed{H = E_{int}+PV}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-065"
+  data-expression="E_int+P*V"
+  data-inputs="E_int:internal energy J,P:pressure Pa,V:volume m^3"
+  data-result="H"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * Internal energy (the sum of the kinetic energy and potential energy of the molecules in the entire system, and the change in internal energy is the amount of heat added to the system minus the work done by the system) : $E_{int}$
 

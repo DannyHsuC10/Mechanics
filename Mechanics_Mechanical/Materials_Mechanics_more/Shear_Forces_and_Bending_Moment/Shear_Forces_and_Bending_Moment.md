@@ -75,3 +75,14 @@ $$\tau = \frac{dM}{dx}\frac1{Ib}\int y\ dA = \frac{V}{Ib}\int y\ dA$$
 $$Q = \int y\ dA$$
 
 $$\boxed{\tau = \frac{VQ}{Ib}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-052"
+  data-expression="V*Q/(I*b)"
+  data-inputs="V:shear force N,Q:first moment of area m^3,I:second moment of area m^4,b:width m"
+  data-result="tau"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>

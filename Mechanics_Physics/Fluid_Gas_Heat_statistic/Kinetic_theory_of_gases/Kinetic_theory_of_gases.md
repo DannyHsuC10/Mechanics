@@ -43,6 +43,17 @@ $$PV = NkT$$
 
 $$\boxed{P = \frac{nRT}{V}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-121"
+  data-expression="n*R*T/V"
+  data-inputs="n:amount mol,R:gas constant J/(mol K),T:temperature K,V:volume m^3"
+  data-result="P"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Ideal gas work
 
 $$W = \int_{V_i}^{V_f}PdV = \int_{V_i}^{V_f}\frac{nRT}{V}dV$$
@@ -133,6 +144,17 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 
 $$\boxed{v_{rms} = \sqrt{\frac{3RT}{M}}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-122"
+  data-expression="(3*R*T/M)^0.5"
+  data-inputs="R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
+  data-result="v_rms"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * Root mean square velocity : $v_{rms}$
 
 ## gas kinetic energy
@@ -148,6 +170,17 @@ $$K = N\frac12m\frac{3kT}{m}$$
 * number of particles : $N$
 
 $$\boxed{K = \frac{3N}2kT}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-123"
+  data-expression="1.5*N*k*T"
+  data-inputs="N:number of particles,k:Boltzmann constant J/K,T:temperature K"
+  data-result="K"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## mean free path
 
@@ -205,6 +238,17 @@ $$\lambda = \frac {V}{\pi d^2\sqrt2N} = \frac {V}{\pi d^2\sqrt2(P/kT)V}$$
 
 $$\boxed{\lambda = \frac {1}{\pi d^2\sqrt2(P/kT)} = \frac {kT}{\sqrt2\pi d^2P}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-124"
+  data-expression="k*T/(2^0.5*pi*d^2*P)"
+  data-inputs="k:Boltzmann constant J/K,T:temperature K,d:collision diameter m,P:pressure Pa"
+  data-result="lambda"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## [Maxwell–Boltzmann distribution](../../../Special/Maxwell-Boltzmann_distribution.md)
 
 * Maxwell–Boltzmann distribution is a Probability density function (PDF).
@@ -244,6 +288,17 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$\boxed{v_{rms} = \sqrt{\frac{2RT}{M}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-125"
+  data-expression="(2*R*T/M)^0.5"
+  data-inputs="R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
+  data-result="v_rms (as labeled)"
+  data-unit=""
+  data-constants=""
+  data-note="Uses the printed factor 2; the formula corresponds to the most probable speed even though the source labels it v_rms.">
+</div>
 
 ### Average speed (by Maxwell–Boltzmann distribution)
 
@@ -286,6 +341,17 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$\boxed{v_{rms} = \sqrt{\frac{8RT}{\pi M}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-126"
+  data-expression="(8*R*T/(pi*M))^0.5"
+  data-inputs="R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
+  data-result="v_rms (as labeled)"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Uses the printed factor 8/pi; the formula corresponds to mean speed even though the source labels it v_rms.">
+</div>
 
 ###  Root mean square speed(by Maxwell–Boltzmann distribution)
 
@@ -336,6 +402,17 @@ $$\frac Nn = \frac{RT}{kT} = M$$
 * molar mass : $M$
 
 $$\boxed{v_{rms} = \sqrt{\frac{3RT}{M}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-127"
+  data-expression="(3*R*T/M)^0.5"
+  data-inputs="R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
+  data-result="v_rms"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Ideal gas specific heat (monatomic ideal gas)
 

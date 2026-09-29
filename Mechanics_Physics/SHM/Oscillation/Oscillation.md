@@ -38,6 +38,17 @@ $$𝜔T = 2\pi$$
 
 $$\boxed{𝜔 = \frac{2\pi}{T} = 2\pi f}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-143"
+  data-expression="2*pi/T"
+  data-inputs="T:period s"
+  data-result="omega"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Uses the period-based equality. The period T must be positive.">
+</div>
+
 ## Velocity
 
 Velocity is the time derivative of position. Its direction distinguishes it from scalar speed.

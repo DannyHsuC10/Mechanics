@@ -29,6 +29,17 @@ $$2n = m+3$$
 
 $$\boxed{P = \frac32N-2}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-058"
+  data-expression="1.5*N-2"
+  data-inputs="N:number of joints"
+  data-result="P"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * number of pairs : $P$
 * number of link : $N$
 
@@ -39,6 +50,17 @@ No constraints : $2P < 3N-4$
 ## Space Stable structure analysis
 
 $$\boxed{m = 3n-6}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-059"
+  data-expression="3*n-6"
+  data-inputs="n:number of joints"
+  data-result="m"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * number of joint : $n$
 * number of Truss : $m$

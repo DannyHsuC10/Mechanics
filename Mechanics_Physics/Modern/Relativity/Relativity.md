@@ -14,6 +14,17 @@ $M$ : mass(kg)
 
 $$\boxed{E = mc^2}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-138"
+  data-expression="m*c^2"
+  data-inputs="m:mass kg,c:speed of light m/s"
+  data-result="E"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Relative length
 
 <div style="text-align: center;">
@@ -21,6 +32,17 @@ $$\boxed{E = mc^2}$$
 </div>
 
 $$\boxed{l' = l\sqrt{1-\frac{v^2}{c^2}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-139"
+  data-expression="l*(1-v^2/c^2)^0.5"
+  data-inputs="l:proper length m,v:relative speed m/s,c:speed of light m/s"
+  data-result="l_prime"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Relative mass
 
@@ -30,9 +52,27 @@ $$\boxed{l' = l\sqrt{1-\frac{v^2}{c^2}}}$$
 
 $$\boxed{m' = \frac{m_0}{\sqrt{1-\frac{v2}{c2}}}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-140"
+  data-pending="The source prints v2/c2 rather than squared variables. Clarify whether these are products or missing exponents before numerical evaluation."
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Relative time
 
 $$\boxed{\Delta t' = \frac{\Delta t}{\sqrt{1-\frac{v^2}{c^2}}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-141"
+  data-expression="delta_t/(1-v^2/c^2)^0.5"
+  data-inputs="delta_t:proper time s,v:relative speed m/s,c:speed of light m/s"
+  data-result="Delta t_prime"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## length in relativity
 

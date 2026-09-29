@@ -160,6 +160,17 @@ $$b = 2m\sqrt{\frac km}$$
 
 $$\boxed{b = 2\sqrt{km}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-142"
+  data-expression="2*(k*m)^0.5"
+  data-inputs="k:stiffness N/m,m:mass kg"
+  data-result="b"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Graph
 
 <div style="text-align: center;">

@@ -28,6 +28,17 @@ $$\text{Stress} = \frac FA$$
 
 $$\boxed{\sigma = \frac PA}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-029"
+  data-expression="P/A"
+  data-inputs="P:axial force N,A:area m^2"
+  data-result="sigma"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 unit :
 * $1 MPa = 10^6Pa = 10^6N/m^2 = 1N/mm^2$
 * $1 GPa = 10^9Pa = 10^3N/mm^2 = 1kN/mm^2$
@@ -41,6 +52,17 @@ $$\text{strain} = \frac{dL}{L}$$
 
 $$\boxed{\varepsilon = \frac\delta L}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-030"
+  data-expression="delta/L"
+  data-inputs="delta:extension m,L:original length m"
+  data-result="epsilon"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Elastic modulus
 
 <div style="text-align: center;">
@@ -53,6 +75,17 @@ $$E = \frac{P/A}{\delta/L} = \tan(\theta)$$
 $$\sigma = E\varepsilon$$
 
 $$\boxed{\delta = \frac{PL}{AE}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-031"
+  data-expression="P*L/(A*E)"
+  data-inputs="P:axial force N,L:length m,A:area m^2,E:Young modulus Pa"
+  data-result="delta"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Internal Force
 

@@ -29,6 +29,17 @@ $$I_y = \frac{hb^3}{12}$$
 
 $$\boxed{I_a = \frac{bh^3}{3}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-033"
+  data-expression="b*h^3/3"
+  data-inputs="b:width m,h:height m"
+  data-result="I_a"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * **triangle**
 
 <div style="text-align: center;">
@@ -41,7 +52,29 @@ $$I_y = \frac{hb^3}{36}$$
 
 $$\boxed{I_a = \frac{bh^3}{12}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-034"
+  data-expression="b*h^3/12"
+  data-inputs="b:width m,h:height m"
+  data-result="I_a"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$\boxed{I_b = \frac{bh^3}{4}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-035"
+  data-expression="b*h^3/4"
+  data-inputs="b:width m,h:height m"
+  data-result="I_b"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * **circle**
 <div style="text-align: center;">
@@ -52,6 +85,17 @@ $$I_x = I_y = \frac{\pi R^4}{4}$$
 
 $$\boxed{I_a = \frac54\pi R^4}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-036"
+  data-expression="1.25*pi*R^4"
+  data-inputs="R:radius m"
+  data-result="I_a"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * **half circle**
 <div style="text-align: center;">
 <img src="upload_7cf28dc9968176944a457f29d9f53eb3.png" alt="image" width="250">
@@ -59,9 +103,31 @@ $$\boxed{I_a = \frac54\pi R^4}$$
 
 $$\boxed{I_x = I_y = \frac{\pi R^4}{8}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-037"
+  data-expression="pi*R^4/8"
+  data-inputs="R:radius m"
+  data-result="I_x = I_y"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * **Quarter circle**
 <div style="text-align: center;">
 <img src="upload_65589c35a8c62c8c5f0d3edc580c6886.png" alt="image" width="250">
 </div>
 
 $$\boxed{I_x = I_y = \frac{\pi R^4}{16}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-038"
+  data-expression="pi*R^4/16"
+  data-inputs="R:radius m"
+  data-result="I_x = I_y"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>

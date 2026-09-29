@@ -97,6 +97,17 @@ $$\frac\phi{2\pi} = \frac{\Delta  L}\lambda$$
 
 $$\boxed{\phi = \frac{\Delta  L}\lambda2\pi}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-150"
+  data-expression="delta_L/lambda*2*pi"
+  data-inputs="delta_L:path difference m,lambda:wavelength m"
+  data-result="phi"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 if $\phi = n2\pi$ and $n$ is a natural number
 fully constructive interference
 
@@ -138,6 +149,17 @@ $$P_{avg} = \frac12(\rho Av)(\omega S_m)^2$$
 $$\frac PA = \frac12(\rho v)(\omega S_m)^2$$
 
 $$\boxed{I = \frac12(\rho v)(\omega S_m)^2}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-151"
+  data-expression="0.5*rho*v*(omega*S_m)^2"
+  data-inputs="rho:density kg/m^3,v:wave speed m/s,omega:angular frequency rad/s,S_m:displacement amplitude m"
+  data-result="I"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Decibel
 
@@ -196,6 +218,17 @@ $$f' = \frac {v_s}{\lambda} = \frac {v_s}{-v_Bt+v_st}$$
 $$= \frac {v_s}{(-v_B+v_s)t} = \frac {v_s}{(-v_B+v_s)/f}$$
 
 $$\boxed{f' = f\frac {v_s}{(-v_B+v_s)}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-152"
+  data-expression="f*v_s/(v_s-v_B)"
+  data-inputs="f:source frequency Hz,v_s:sound speed m/s,v_B:source velocity toward observer m/s"
+  data-result="f_prime"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Supersonic speed & shock wave
 

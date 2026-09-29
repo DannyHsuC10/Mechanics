@@ -205,6 +205,13 @@ function evaluateExpression(expression, values) {
 }
 
 function createCalculator(container) {
+  if (container.dataset.pending) {
+    const notice = document.createElement("p");
+    notice.className = "calculator calculator-pending";
+    notice.textContent = "Calculator pending: " + container.dataset.pending;
+    container.replaceWith(notice);
+    return;
+  }
   const expression = container.dataset.expression;
   const inputsConfig = parseInputs(container.dataset.inputs);
   const constants = parseConstants(container.dataset.constants);
@@ -217,6 +224,17 @@ function createCalculator(container) {
 
   const form = document.createElement("form");
   form.className = "calculator";
+  form.setAttribute("aria-label", `Calculate ${resultLabel}`);
+  const title = document.createElement("p");
+  title.className = "calculator-title";
+  title.textContent = `Calculate ${resultLabel}`;
+  form.appendChild(title);
+  if (container.dataset.note) {
+    const note = document.createElement("p");
+    note.className = "calculator-note";
+    note.textContent = container.dataset.note;
+    form.appendChild(note);
+  }
 
   const grid = document.createElement("div");
   grid.className = "calculator-grid";
@@ -225,10 +243,11 @@ function createCalculator(container) {
 
   inputsConfig.forEach((inputConfig) => {
     const label = document.createElement("label");
-    label.textContent = inputConfig.name;
+    label.textContent = inputConfig.name + (inputConfig.placeholder ? ` — ${inputConfig.placeholder}` : "");
 
     const input = document.createElement("input");
     input.type = "text";
+    input.inputMode = "decimal";
     input.placeholder = inputConfig.placeholder;
 
     label.appendChild(input);
@@ -268,7 +287,7 @@ function createCalculator(container) {
     try {
       const result = evaluateExpression(expression, values);
       const unitText = resultUnit ? ` ${resultUnit}` : "";
-      message.textContent = `${resultLabel} = ${result}${unitText}`;
+      message.textContent = `${resultLabel} = ${Number(result.toPrecision(10))}${unitText}`;
     } catch (error) {
       message.textContent = error.message;
     }

@@ -40,6 +40,17 @@ where $\omega t$ t is the phase
 
 $$\boxed{k = \frac{2\pi}{\lambda}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-153"
+  data-expression="2*pi/lambda"
+  data-inputs="lambda:wavelength m"
+  data-result="k"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Cycle & Angle Frequency & Frequency
 
 * when $x = 0$
@@ -52,6 +63,17 @@ $$f = \frac1T = \frac\omega {2\pi}$$
 
 $$\boxed{\omega = \frac{2\pi}{T}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-154"
+  data-expression="2*pi/T"
+  data-inputs="T:period s"
+  data-result="omega"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Velocity of travel wave
 
 $$kx-\omega t = constant$$
@@ -63,6 +85,17 @@ $$v = \frac{dx}{dt} = \frac\omega k$$
 $$v = \frac{2\pi}{k}\cdot\frac\omega{2\pi}$$
 
 $$\boxed{v = \lambda f}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-155"
+  data-expression="lambda*f"
+  data-inputs="lambda:wavelength m,f:frequency Hz"
+  data-result="v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Wave analysis
 
@@ -142,6 +175,17 @@ $$\frac{dx}{
 dt} = \sqrt{\frac\tau\mu}$$
 
 $$\boxed{v = \sqrt{\frac\tau\mu}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-156"
+  data-expression="(tau/mu)^0.5"
+  data-inputs="tau:tension N,mu:linear mass density kg/m"
+  data-result="v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Wave energy transmission rate
 

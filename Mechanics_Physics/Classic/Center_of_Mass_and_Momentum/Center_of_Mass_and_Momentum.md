@@ -32,6 +32,17 @@ Density connects the amount of mass to the volume it occupies.
 
 $$\boxed{D = \frac{m}{V}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-080"
+  data-expression="m/V"
+  data-inputs="m:mass kg,V:volume m^3"
+  data-result="D"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Momentum and Impulse
 
 Impulse accounts for the effect of a force over a time interval and equals the change in momentum.
@@ -92,7 +103,29 @@ $$m_1(v_{1i}-v_{1f}) = m_2(v_{2f}-v_{2i})\quad-(1)$$
 
 $$\boxed{v_{1f} = \frac{m_1v_{1i}+m_2(v_{2i}-v_{2f})}{m_1}\quad-(2)}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-081"
+  data-expression="(m_1*v_1i+m_2*(v_2i-v_2f))/m_1"
+  data-inputs="m_1:mass 1 kg,v_1i:initial velocity 1 m/s,m_2:mass 2 kg,v_2i:initial velocity 2 m/s,v_2f:final velocity 2 m/s"
+  data-result="v_1f"
+  data-unit=""
+  data-constants=""
+  data-note="The trailing (2) is an equation number, not a subtraction.">
+</div>
+
 $$\boxed{v_{2f} = \frac{m_2v_{2i}+m_1(v_{1i}-v_{1f})}{m_2}\quad-(3)}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-082"
+  data-expression="(m_2*v_2i+m_1*(v_1i-v_1f))/m_2"
+  data-inputs="m_2:mass 2 kg,v_2i:initial velocity 2 m/s,m_1:mass 1 kg,v_1i:initial velocity 1 m/s,v_1f:final velocity 1 m/s"
+  data-result="v_2f"
+  data-unit=""
+  data-constants=""
+  data-note="The trailing (3) is an equation number, not a subtraction.">
+</div>
 
 $$\frac{1}{2}m_1v_{1i}^2+\frac{1}{2}m_2v_{2i}^2 = \frac{1}{2}m_1v_{1f}^2+\frac{1}{2}m_2v_{2f}^2$$
 

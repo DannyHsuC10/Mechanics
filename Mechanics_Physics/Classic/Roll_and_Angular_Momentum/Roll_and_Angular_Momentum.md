@@ -24,6 +24,17 @@ $$v_{top} = 2𝜔r = 2v_{com}$$
 
 $$\boxed{\frac{1}{2}mv_{com}^2+\frac{1}{2}I_{com}^2}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-101"
+  data-expression="0.5*m*v_com^2+0.5*I_com^2"
+  data-inputs="m:mass as written,v_com:speed as written,I_com:inertia as written"
+  data-result="Boxed expression"
+  data-unit=""
+  data-constants=""
+  data-note="Evaluates the printed expression literally. The rotational term I_com squared needs review before this result can be interpreted as energy.">
+</div>
+
 ## Down hill rolling
 
 <div style="text-align: center;">
@@ -61,6 +72,17 @@ $$f_s = \frac{Ia}{R^2}$$
 $$F_{net} = mg-\frac{Ia}{R^2}$$
 
 $$\boxed{a = F_{net}/m = \frac{Ia}{mR^2}+g}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-102"
+  data-expression="F_net/m"
+  data-inputs="F_net:net force N,m:mass kg"
+  data-result="a"
+  data-unit=""
+  data-constants=""
+  data-note="Uses a = F_net/m. The later equality has a sign inconsistency with the preceding derivation and is not used.">
+</div>
 
 ## Angular Momentum
 
@@ -109,6 +131,17 @@ $$mgr\cdot sin\theta = I𝜔_s𝜔_p$$
 $$𝜔_p = \frac{mgr\cdot sin\theta}{I𝜔_s}$$
 
 $$\boxed{T_p = 2\pi/𝜔_p = \frac{2\pi I𝜔_s}{mgr\cdot sin\theta} = \frac{4\pi^2 I}{T_s𝜏}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-103"
+  data-expression="2*pi/omega_p"
+  data-inputs="omega_p:precession angular speed rad/s"
+  data-result="T_p"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Uses the first equality: enter the precession angular speed in radians per second.">
+</div>
 
 * Angular velocity of spin
 

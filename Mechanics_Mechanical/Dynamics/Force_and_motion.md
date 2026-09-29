@@ -52,17 +52,50 @@ $$T_{top} = m(\frac{v^2}{r}+g)$$
 
 $$\boxed{v_{top} = \sqrt{gr}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-004"
+  data-expression="(g*r)^0.5"
+  data-inputs="g:gravity m/s^2,r:radius m"
+  data-result="v_top"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$T_{mid} = F = ma$$
 
 $$T_{mid} = \frac{mv^2}{r}$$
 
 $$\boxed{v_{mid} = \sqrt{3gr}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-005"
+  data-expression="(3*g*r)^0.5"
+  data-inputs="g:gravity m/s^2,r:radius m"
+  data-result="v_mid"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$T_{bottom} = F-w = ma-mg$$
 
 $$T_{bottom} = m(\frac{v^2}{r}-g)$$
 
 $$\boxed{v_{bottom} = \sqrt{5gr}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-006"
+  data-expression="(5*g*r)^0.5"
+  data-inputs="g:gravity m/s^2,r:radius m"
+  data-result="v_bottom"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Spring
 
@@ -80,9 +113,31 @@ $$x = \frac{mg}{k}$$
 
 $$\boxed{x = x_i+\frac{mg}{k}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-007"
+  data-expression="x_i+m*g/k"
+  data-inputs="x_i:initial position m,m:mass kg,g:gravity m/s^2,k:stiffness N/m"
+  data-result="x"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * consider spring mass : $m_s$
 
 $$\boxed{x = x_i+\frac{mg}{k}+\frac{m_sg}{2k}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-008"
+  data-expression="x_i+m*g/k+m_s*g/(2*k)"
+  data-inputs="x_i:initial position m,m:mass kg,g:gravity m/s^2,k:stiffness N/m,m_s:spring mass kg"
+  data-result="x"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Vehicle turning
 
@@ -99,6 +154,17 @@ $$\mu N = ma$$
 $$\mu mg = m\frac{v^2}{r}$$
 
 $$\boxed{v = \sqrt{\mu gr}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-009"
+  data-expression="(mu*g*r)^0.5"
+  data-inputs="mu:friction coefficient,g:gravity m/s^2,r:radius m"
+  data-result="v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Superelevation
 
@@ -120,3 +186,14 @@ $$\frac{v^2}{r} = g\frac{h}{d}$$
 * Track : $d$
 
 $$\boxed{h = \frac{dv^2}{gr}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-010"
+  data-expression="d*v^2/(g*r)"
+  data-inputs="d:track width m,v:speed m/s,g:gravity m/s^2,r:radius m"
+  data-result="h"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>

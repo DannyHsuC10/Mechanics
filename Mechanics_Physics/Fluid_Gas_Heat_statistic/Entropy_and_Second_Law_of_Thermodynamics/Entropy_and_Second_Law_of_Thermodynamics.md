@@ -62,6 +62,17 @@ $$\eta = 1-\frac{T_L}{T_H}$$
 
 $$\boxed{\eta_c = 1-\frac{T_L}{T_H}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-109"
+  data-expression="1-T_L/T_H"
+  data-inputs="T_L:cold temperature K,T_H:hot temperature K"
+  data-result="eta_c"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 carnot Engine efficiency : $\eta_c$
 
 $$\eta_e \le 1-\frac{T_L}{T_H}$$
@@ -82,6 +93,17 @@ $$\eta = \frac{|Q_L|}{|W|}$$
 $$\eta = \frac{|Q_L|}{|Q_H|-|Q_L|}$$
 
 $$\boxed{\eta = \frac{|T_L|}{|T_H|-|T_L|}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-110"
+  data-expression="(T_L^2)^0.5/((T_H^2)^0.5-(T_L^2)^0.5)"
+  data-inputs="T_L:cold temperature K,T_H:hot temperature K"
+  data-result="eta"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Entropy statistics
 
@@ -180,6 +202,17 @@ $$\left(\frac{\partial S}{\partial P}\right)_T = -\left(\frac{\partial V}{\parti
 ## consider Van der Waals force
 
 $$\boxed{(P+\frac{a}{V^2})(V-b) = RT}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-111"
+  data-expression="R*T/(V-b)-a/V^2"
+  data-inputs="R:gas constant,T:temperature K,V:volume as defined,b:volume correction,a:attraction coefficient"
+  data-result="P"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * pressure : $P$
 * volume : $V$

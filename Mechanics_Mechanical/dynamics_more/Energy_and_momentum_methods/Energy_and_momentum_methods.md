@@ -20,6 +20,17 @@ $$I = mr^2$$
 
 $$\boxed{K = \frac12m(v^2+(r\omega)^2)}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-011"
+  data-expression="0.5*m*(v^2+(r*omega)^2)"
+  data-inputs="m:mass kg,v:speed m/s,r:radius m,omega:angular speed rad/s"
+  data-result="K"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Center of Gravity
 
 $$\bar x = \frac{\sum Wx}{\sum W}$$
@@ -91,7 +102,29 @@ $$m_1(v_{1i}-v_{1f})(v_{1i}+v_{1f}) = m_2(v_{2i}-v_{2f})(v_{2i}+v_{2f})$$
 
 $$\boxed{v_{1f} = \frac{v_{1i}(m_1-m_2)+2m_2v_{2i}}{m_1+m_2}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-012"
+  data-expression="(v_1i*(m_1-m_2)+2*m_2*v_2i)/(m_1+m_2)"
+  data-inputs="v_1i:initial velocity 1 m/s,m_1:mass 1 kg,m_2:mass 2 kg,v_2i:initial velocity 2 m/s"
+  data-result="v_1f"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$\boxed{v_{2f} = \frac{v_{2i}(m_1-m_2)+2m_2v_{1i}}{m_1+m_2}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-013"
+  data-expression="(v_2i*(m_1-m_2)+2*m_2*v_1i)/(m_1+m_2)"
+  data-inputs="v_2i:initial velocity 2 m/s,m_1:mass 1 kg,m_2:mass 2 kg,v_1i:initial velocity 1 m/s"
+  data-result="v_2f"
+  data-unit=""
+  data-constants=""
+  data-note="Evaluates the coefficients exactly as printed; the second collision equation should be reviewed before physical use.">
+</div>
 
 ### 1D Completely inelastic collision
 
@@ -114,6 +147,17 @@ $$e = \frac{v_{2f}-v_{1f}}{v_{1i}-v_{2i}}$$
 $$e(v_{1i}-v_{2i}) = (v_{2f}-v_{1f})$$
 
 $$\boxed{e = \sqrt{\frac{E_{sys\ f}}{E_{sys\ i}}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-014"
+  data-expression="(E_f/E_i)^0.5"
+  data-inputs="E_f:final energy J,E_i:initial energy J"
+  data-result="e"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 [why?](../../../Special/Energy_and_Coefficient_of_restitution.md)
 

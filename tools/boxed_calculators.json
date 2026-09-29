@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "boxed-001",
+    "file": "Mechanics_Advanced/Statistical_Mechanics/Maximum_Entropy_Principle.md",
+    "tex": "\\text{Probability distribution of microstates } {p_i}",
+    "pending": "This box names a probability distribution but provides no numerical rule. Add the distribution or its constraints to configure a calculator."
+  },
+  {
+    "id": "boxed-002",
+    "file": "Mechanics_Mechanical/Dynamics/Energy_and_Work.md",
+    "tex": "U_k = \\frac12kx^2",
+    "expression": "0.5*k*x^2",
+    "result": "U_k",
+    "inputs": "k:spring stiffness N/m,x:extension m"
+  },
+  {
+    "id": "boxed-003",
+    "file": "Mechanics_Mechanical/Dynamics/Energy_and_Work.md",
+    "tex": "W = Fx",
+    "expression": "F*x",
+    "result": "W",
+    "inputs": "F:force N,x:displacement m"
+  },
+  {
+    "id": "boxed-004",
+    "file": "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "tex": "v_{top} = \\sqrt{gr}",
+    "expression": "(g*r)^0.5",
+    "result": "v_top",
+    "inputs": "g:gravity m/s^2,r:radius m"
+  },
+  {
+    "id": "boxed-005",
+    "file": "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "tex": "v_{mid} = \\sqrt{3gr}",
+    "expression": "(3*g*r)^0.5",
+    "result": "v_mid",
+    "inputs": "g:gravity m/s^2,r:radius m"
+  },
+  {
+    "id": "boxed-006",
+    "file": "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "tex": "v_{bottom} = \\sqrt{5gr}",
+    "expression": "(5*g*r)^0.5",
+    "result": "v_bottom",
+    "inputs": "g:gravity m/s^2,r:radius m"
+  },
+  {
+    "id": "boxed-007",
+    "file": "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "tex": "x = x_i+\\frac{mg}{k}",
+    "expression": "x_i+m*g/k",
+    "result": "x",
+    "inputs": "x_i:initial position m,m:mass kg,g:gravity m/s^2,k:stiffness N/m"
+  },
+  {
+    "id": "boxed-008",
+    "file": "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "tex": "x = x_i+\\frac{mg}{k}+\\frac{m_sg}{2k}",
+    "expression": "x_i+m*g/k+m_s*g/(2*k)",
+    "result": "x",
+    "inputs": "x_i:initial position m,m:mass kg,g:gravity m/s^2,k:stiffness N/m,m_s:spring mass kg"
+  },
+  {
+    "id": "boxed-009",
+    "file": "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "tex": "v = \\sqrt{\\mu gr}",
+    "expression": "(mu*g*r)^0.5",
+    "result": "v",
+    "inputs": "mu:friction coefficient,g:gravity m/s^2,r:radius m"
+  },
+  {
+    "id": "boxed-010",
+    "file": "Mechanics_Mechanical/Dynamics/Force_and_motion.md",
+    "tex": "h = \\frac{dv^2}{gr}",
+    "expression": "d*v^2/(g*r)",
+    "result": "h",
+    "inputs": "d:track width m,v:speed m/s,g:gravity m/s^2,r:radius m"
+  },
+  {
+    "id": "boxed-011",
+    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "tex": "K = \\frac12m(v^2+(r\\omega)^2)",
+    "expression": "0.5*m*(v^2+(r*omega)^2)",
+    "result": "K",
+    "inputs": "m:mass kg,v:speed m/s,r:radius m,omega:angular speed rad/s"
+  },
+  {
+    "id": "boxed-012",
+    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "tex": "v_{1f} = \\frac{v_{1i}(m_1-m_2)+2m_2v_{2i}}{m_1+m_2}",
+    "expression": "(v_1i*(m_1-m_2)+2*m_2*v_2i)/(m_1+m_2)",
+    "result": "v_1f",
+    "inputs": "v_1i:initial velocity 1 m/s,m_1:mass 1 kg,m_2:mass 2 kg,v_2i:initial velocity 2 m/s"
+  },
+  {
+    "id": "boxed-013",
+    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "tex": "v_{2f} = \\frac{v_{2i}(m_1-m_2)+2m_2v_{1i}}{m_1+m_2}",
+    "expression": "(v_2i*(m_1-m_2)+2*m_2*v_1i)/(m_1+m_2)",
+    "result": "v_2f",
+    "inputs": "v_2i:initial velocity 2 m/s,m_1:mass 1 kg,m_2:mass 2 kg,v_1i:initial velocity 1 m/s",
+    "note": "Evaluates the coefficients exactly as printed; the second collision equation should be reviewed before physical use."
+  },
+  {
+    "id": "boxed-014",
+    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "tex": "e = \\sqrt{\\frac{E_{sys\\ f}}{E_{sys\\ i}}}",
+    "expression": "(E_f/E_i)^0.5",
+    "result": "e",
+    "inputs": "E_f:final energy J,E_i:initial energy J"
+  },
+  {
+    "id": "boxed-015",
+    "file": "Mechanics_Mechanical/dynamics_more/Kinematics_of_particles/Kinematics_of_particles.md",
+    "tex": "r = \\frac{\\sqrt{1+dy'^2}}{\\frac{y''}{1+y'^2}} = \\frac{(1+dy'^2)^{\\frac{3}{2}}}{y''}",
+    "pending": "The printed dy-prime and y-prime notation is inconsistent between the equalities. Clarify the intended first and second derivatives before numerical evaluation."
+  },
+  {
+    "id": "boxed-016",
+    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
+    "tex": "\\vec v_r = \\omega\\frac{dr}{d\\theta} = \\frac{d}{d\\theta}(\\frac{-l}r)",
+    "expression": "omega*dr_dtheta",
+    "result": "v_r",
+    "inputs": "omega:angular speed rad/s,dr_dtheta:radial derivative m/rad",
+    "note": "Evaluates the first equality. Supply dr/dtheta numerically at the point of interest."
+  },
+  {
+    "id": "boxed-017",
+    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
+    "tex": "\\vec a_r = \\frac{v_t^2}{r}\\frac{d^2}{d\\theta^2}",
+    "pending": "The second derivative has no operand in this boxed expression. Specify the differentiated function before configuring a numerical calculator."
+  },
+  {
+    "id": "boxed-018",
+    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
+    "tex": "v_{esc} = (2gR)^{1/2}",
+    "expression": "(2*g*R)^0.5",
+    "result": "v_esc",
+    "inputs": "g:gravity m/s^2,R:radius m"
+  },
+  {
+    "id": "boxed-019",
+    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
+    "tex": "\\Delta t = \\frac{\\pi(r_{min}+r_{max})(r_{min}r_{max})^{1/2}}{l}",
+    "expression": "pi*(r_min+r_max)*(r_min*r_max)^0.5/l",
+    "result": "Delta t",
+    "inputs": "r_min:minimum radius m,r_max:maximum radius m,l:angular momentum per mass m^2/s",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-020",
+    "file": "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
+    "tex": "\\theta = \\theta_i+\\omega_i t+\\frac12\\alpha t^2",
+    "expression": "theta_i+omega_i*t+0.5*alpha*t^2",
+    "result": "theta",
+    "inputs": "theta_i:initial angle rad,omega_i:initial angular speed rad/s,t:time s,alpha:angular acceleration rad/s^2"
+  },
+  {
+    "id": "boxed-021",
+    "file": "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
+    "tex": "L = rp",
+    "expression": "r*p",
+    "result": "L",
+    "inputs": "r:radius m,p:linear momentum kg m/s"
+  },
+  {
+    "id": "boxed-022",
+    "file": "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
+    "tex": "K_\\omega = \\frac12I\\omega^2",
+    "expression": "0.5*I*omega^2",
+    "result": "K_omega",
+    "inputs": "I:moment of inertia kg m^2,omega:angular speed rad/s"
+  },
+  {
+    "id": "boxed-023",
+    "file": "Mechanics_Mechanical/Kinematics/Linear_motion.md",
+    "tex": "v = \\sqrt{(v_i^2+2a\\Delta x)}",
+    "expression": "(v_i^2+2*a*delta_x)^0.5",
+    "result": "v",
+    "inputs": "v_i:initial speed m/s,a:acceleration m/s^2,delta_x:displacement m"
+  },
+  {
+    "id": "boxed-024",
+    "file": "Mechanics_Mechanical/Kinematics/Linear_motion.md",
+    "tex": "v = \\sqrt{2gh}",
+    "expression": "(2*g*h)^0.5",
+    "result": "v",
+    "inputs": "g:gravity m/s^2,h:height m"
+  },
+  {
+    "id": "boxed-025",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Bending_moment/Bending_moment.md",
+    "tex": "\\sigma = \\frac{My}{I}",
+    "expression": "M*y/I",
+    "result": "sigma",
+    "inputs": "M:bending moment N m,y:distance from neutral axis m,I:second moment of area m^4"
+  },
+  {
+    "id": "boxed-026",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Bending_moment/Bending_moment.md",
+    "tex": "\\tau = \\frac{VQ}{Ib}",
+    "expression": "V*Q/(I*b)",
+    "result": "tau",
+    "inputs": "V:shear force N,Q:first moment of area m^3,I:second moment of area m^4,b:width m"
+  },
+  {
+    "id": "boxed-027",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Bending_moment/Bending_moment.md",
+    "tex": "\\tau_{max} = \\frac{3V}{2A}",
+    "expression": "3*V/(2*A)",
+    "result": "tau_max",
+    "inputs": "V:shear force N,A:area m^2"
+  },
+  {
+    "id": "boxed-028",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Bending_moment/Bending_moment.md",
+    "tex": "\\tau_{max} = \\frac{4V}{3A}",
+    "expression": "4*V/(3*A)",
+    "result": "tau_max",
+    "inputs": "V:shear force N,A:area m^2"
+  },
+  {
+    "id": "boxed-029",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Compressive_stress_and_Tensile_stress/Compressive_stress_and_Tensile_stress.md",
+    "tex": "\\sigma = \\frac PA",
+    "expression": "P/A",
+    "result": "sigma",
+    "inputs": "P:axial force N,A:area m^2"
+  },
+  {
+    "id": "boxed-030",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Compressive_stress_and_Tensile_stress/Compressive_stress_and_Tensile_stress.md",
+    "tex": "\\varepsilon = \\frac\\delta L",
+    "expression": "delta/L",
+    "result": "epsilon",
+    "inputs": "delta:extension m,L:original length m"
+  },
+  {
+    "id": "boxed-031",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Compressive_stress_and_Tensile_stress/Compressive_stress_and_Tensile_stress.md",
+    "tex": "\\delta = \\frac{PL}{AE}",
+    "expression": "P*L/(A*E)",
+    "result": "delta",
+    "inputs": "P:axial force N,L:length m,A:area m^2,E:Young modulus Pa"
+  },
+  {
+    "id": "boxed-032",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Poissons_ratio/Poissons_ratio.md",
+    "tex": "\\varepsilon_x = \\frac{\\sigma_x-(\\sigma_y+\\sigma_z)\\nu}{E}",
+    "expression": "(sigma_x-(sigma_y+sigma_z)*nu)/E",
+    "result": "epsilon_x",
+    "inputs": "sigma_x:normal stress x Pa,sigma_y:normal stress y Pa,sigma_z:normal stress z Pa,nu:Poisson ratio,E:Young modulus Pa"
+  },
+  {
+    "id": "boxed-033",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Second_moment_of_area/Second_moment_of_area.md",
+    "tex": "I_a = \\frac{bh^3}{3}",
+    "expression": "b*h^3/3",
+    "result": "I_a",
+    "inputs": "b:width m,h:height m"
+  },
+  {
+    "id": "boxed-034",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Second_moment_of_area/Second_moment_of_area.md",
+    "tex": "I_a = \\frac{bh^3}{12}",
+    "expression": "b*h^3/12",
+    "result": "I_a",
+    "inputs": "b:width m,h:height m"
+  },
+  {
+    "id": "boxed-035",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Second_moment_of_area/Second_moment_of_area.md",
+    "tex": "I_b = \\frac{bh^3}{4}",
+    "expression": "b*h^3/4",
+    "result": "I_b",
+    "inputs": "b:width m,h:height m"
+  },
+  {
+    "id": "boxed-036",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Second_moment_of_area/Second_moment_of_area.md",
+    "tex": "I_a = \\frac54\\pi R^4",
+    "expression": "1.25*pi*R^4",
+    "result": "I_a",
+    "inputs": "R:radius m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-037",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Second_moment_of_area/Second_moment_of_area.md",
+    "tex": "I_x = I_y = \\frac{\\pi R^4}{8}",
+    "expression": "pi*R^4/8",
+    "result": "I_x = I_y",
+    "inputs": "R:radius m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-038",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Second_moment_of_area/Second_moment_of_area.md",
+    "tex": "I_x = I_y = \\frac{\\pi R^4}{16}",
+    "expression": "pi*R^4/16",
+    "result": "I_x = I_y",
+    "inputs": "R:radius m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-039",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Shear/Shear.md",
+    "tex": "\\tau = \\frac{P}{\\pi dt}",
+    "expression": "P/(pi*d*t)",
+    "result": "tau",
+    "inputs": "P:force N,d:diameter m,t:thickness m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-040",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Shear/Shear.md",
+    "tex": "\\tau = \\frac p{\\frac14\\pi d^2}",
+    "expression": "p/(0.25*pi*d^2)",
+    "result": "tau",
+    "inputs": "p:force N,d:diameter m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-041",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Shear/Shear.md",
+    "tex": "\\tau = \\frac p{\\frac12\\pi d^2}",
+    "expression": "p/(0.5*pi*d^2)",
+    "result": "tau",
+    "inputs": "p:force N,d:diameter m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-042",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Shear/Shear.md",
+    "tex": "G = \\frac{E}{2(1+\\mu)}",
+    "expression": "E/(2*(1+mu))",
+    "result": "G",
+    "inputs": "E:Young modulus Pa,mu:Poisson ratio"
+  },
+  {
+    "id": "boxed-043",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Shear/Shear.md",
+    "tex": "E_v = \\frac{E}{3(1-2\\mu)}",
+    "expression": "E/(3*(1-2*mu))",
+    "result": "E_v",
+    "inputs": "E:Young modulus Pa,mu:Poisson ratio"
+  },
+  {
+    "id": "boxed-044",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Torsion/Torsion.md",
+    "tex": "\\phi = \\frac{TL}{GJ}",
+    "expression": "T*L/(G*J)",
+    "result": "phi",
+    "inputs": "T:torque N m,L:length m,G:shear modulus Pa,J:polar second moment m^4"
+  },
+  {
+    "id": "boxed-045",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Volumetric_strain/Volumetric_strain.md",
+    "tex": "\\frac{dV}{V} = 3\\frac{P}{A}\\frac1E_V(1-2\\mu)",
+    "expression": "3*(P/A)/E_V*(1-2*mu)",
+    "result": "dV/V",
+    "inputs": "P:force N,A:area m^2,E_V:modulus Pa,mu:Poisson ratio",
+    "note": "Evaluates the displayed factors literally; confirm the definition of E_V before physical use."
+  },
+  {
+    "id": "boxed-046",
+    "file": "Mechanics_Mechanical/Materials_Mechanics/Volumetric_strain/Volumetric_strain.md",
+    "tex": "E_V = \\frac{E}{3(1-2\\mu)} = \\frac{E}{3-6\\mu}",
+    "expression": "E/(3*(1-2*mu))",
+    "result": "E_V",
+    "inputs": "E:Young modulus Pa,mu:Poisson ratio"
+  },
+  {
+    "id": "boxed-047",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md",
+    "tex": "\\kappa = \\frac{\\nu''}{(1+\\nu''^2)^{3/2}}",
+    "expression": "nu_second/(1+nu_second^2)^1.5",
+    "result": "kappa",
+    "inputs": "nu_second:second derivative as written",
+    "note": "Uses nu double-prime in both numerator and denominator exactly as printed; check the derivative notation before physical use."
+  },
+  {
+    "id": "boxed-048",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md",
+    "tex": "\\delta = \\frac{5qL^4}{384EI}",
+    "expression": "5*q*L^4/(384*E*I)",
+    "result": "delta",
+    "inputs": "q:load per length N/m,L:span m,E:Young modulus Pa,I:second moment of area m^4"
+  },
+  {
+    "id": "boxed-049",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
+    "tex": "k = \\frac{EA}{L}",
+    "expression": "E*A/L",
+    "result": "k",
+    "inputs": "E:Young modulus Pa,A:area m^2,L:length m"
+  },
+  {
+    "id": "boxed-050",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
+    "tex": "f = \\frac{L}{EA}",
+    "expression": "L/(E*A)",
+    "result": "f",
+    "inputs": "L:length m,E:Young modulus Pa,A:area m^2"
+  },
+  {
+    "id": "boxed-051",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
+    "tex": "U = \\frac{P^2L}{2EA} = \\frac{EA\\delta^2}{2L}",
+    "expression": "P^2*L/(2*E*A)",
+    "result": "U",
+    "inputs": "P:axial force N,L:length m,E:Young modulus Pa,A:area m^2",
+    "note": "Uses the force-based equality; enter axial load P."
+  },
+  {
+    "id": "boxed-052",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Shear_Forces_and_Bending_Moment/Shear_Forces_and_Bending_Moment.md",
+    "tex": "\\tau = \\frac{VQ}{Ib}",
+    "expression": "V*Q/(I*b)",
+    "result": "tau",
+    "inputs": "V:shear force N,Q:first moment of area m^3,I:second moment of area m^4,b:width m"
+  },
+  {
+    "id": "boxed-053",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md",
+    "tex": "\\sigma_T = \\sigma(1+\\varepsilon)",
+    "expression": "sigma*(1+epsilon)",
+    "result": "sigma_T",
+    "inputs": "sigma:engineering stress Pa,epsilon:engineering strain"
+  },
+  {
+    "id": "boxed-054",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md",
+    "tex": "G=  \\frac{E}{1(+\\nu)}",
+    "expression": "E/(1*nu)",
+    "result": "G",
+    "inputs": "E:modulus,nu:coefficient as written",
+    "note": "Literal evaluation of E/[1(+nu)] = E/nu. The printed denominator needs review before physical use."
+  },
+  {
+    "id": "boxed-055",
+    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Torsion/Torsion.md",
+    "tex": "T = Pd",
+    "expression": "P*d",
+    "result": "T",
+    "inputs": "P:force N,d:moment arm m"
+  },
+  {
+    "id": "boxed-056",
+    "file": "Mechanics_Mechanical/Statics/Friction/Friction.md",
+    "tex": "f = \\mu N",
+    "expression": "mu*N",
+    "result": "f",
+    "inputs": "mu:friction coefficient,N:normal force N"
+  },
+  {
+    "id": "boxed-057",
+    "file": "Mechanics_Mechanical/Statics/Friction/Friction.md",
+    "tex": "h = \\frac b{2\\mu}",
+    "expression": "b/(2*mu)",
+    "result": "h",
+    "inputs": "b:width m,mu:friction coefficient"
+  },
+  {
+    "id": "boxed-058",
+    "file": "Mechanics_Mechanical/Statics_more/Analysis_of_structures/Analysis_of_structures.md",
+    "tex": "P = \\frac32N-2",
+    "expression": "1.5*N-2",
+    "result": "P",
+    "inputs": "N:number of joints"
+  },
+  {
+    "id": "boxed-059",
+    "file": "Mechanics_Mechanical/Statics_more/Analysis_of_structures/Analysis_of_structures.md",
+    "tex": "m = 3n-6",
+    "expression": "3*n-6",
+    "result": "m",
+    "inputs": "n:number of joints"
+  },
+  {
+    "id": "boxed-060",
+    "file": "Mechanics_Mechanical/Statics_more/friction/friction.md",
+    "tex": "M = Nd",
+    "expression": "N*d",
+    "result": "M",
+    "inputs": "N:normal force N,d:moment arm m"
+  },
+  {
+    "id": "boxed-061",
+    "file": "Mechanics_Mechanical/Statics_more/friction/friction.md",
+    "tex": "M_{max} = 2/3\\mu_sFR",
+    "expression": "2/3*mu_s*F*R",
+    "result": "M_max",
+    "inputs": "mu_s:static friction coefficient,F:force N,R:radius m"
+  },
+  {
+    "id": "boxed-062",
+    "file": "Mechanics_Mechanical/Statics_more/friction/friction.md",
+    "tex": "T_2/T_1 = e^{\\mu_s\\phi}",
+    "expression": "e^(mu_s*phi)",
+    "result": "T_2/T_1",
+    "inputs": "mu_s:friction coefficient,phi:wrap angle rad",
+    "constants": "e=2.718281828459045"
+  },
+  {
+    "id": "boxed-063",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
+    "tex": "Q = mL",
+    "expression": "m*L",
+    "result": "Q",
+    "inputs": "m:mass kg,L:latent heat J/kg"
+  },
+  {
+    "id": "boxed-064",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
+    "tex": "Q = mC\\Delta T",
+    "expression": "m*C*delta_T",
+    "result": "Q",
+    "inputs": "m:mass kg,C:specific heat J/(kg K),delta_T:temperature change K"
+  },
+  {
+    "id": "boxed-065",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
+    "tex": "H = E_{int}+PV",
+    "expression": "E_int+P*V",
+    "result": "H",
+    "inputs": "E_int:internal energy J,P:pressure Pa,V:volume m^3"
+  },
+  {
+    "id": "boxed-066",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "tex": "\\eta_{\\text{carnot}} = 1-\\frac{T_L}{T_H}",
+    "expression": "1-T_L/T_H",
+    "result": "eta_carnot",
+    "inputs": "T_L:cold temperature K,T_H:hot temperature K"
+  },
+  {
+    "id": "boxed-067",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "tex": "\\eta_{\\text{otto}} = 1-\\frac{1}{r^{\\gamma-1}}",
+    "expression": "1-1/r^(gamma-1)",
+    "result": "eta_otto",
+    "inputs": "r:compression ratio,gamma:heat capacity ratio"
+  },
+  {
+    "id": "boxed-068",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "tex": "\\eta_{\\text{diesel}} = 1-\\frac{1}{r^{\\gamma-1}}(\\frac{r^\\gamma_c-1}{\\gamma(r_c-1)})",
+    "expression": "1-1/r^(gamma-1)*(r_c^gamma-1)/(gamma*(r_c-1))",
+    "result": "eta_diesel",
+    "inputs": "r:compression ratio,gamma:heat capacity ratio,r_c:cutoff ratio",
+    "note": "r_c means the cutoff ratio; r_c raised to gamma is used in the numerator. Efficiency is returned as a fraction."
+  },
+  {
+    "id": "boxed-069",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "tex": "\\eta_{\\text{brayton}} = 1-\\frac{1}{r_P^{(\\gamma-1)/\\gamma}}",
+    "expression": "1-1/r_P^((gamma-1)/gamma)",
+    "result": "eta_brayton",
+    "inputs": "r_P:pressure ratio,gamma:heat capacity ratio"
+  },
+  {
+    "id": "boxed-070",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "tex": "\\eta_{\\text{regen}} = 1-r_Tr_P^{(\\gamma-1)/\\gamma}",
+    "expression": "1-r_T*r_P^((gamma-1)/gamma)",
+    "result": "eta_regen",
+    "inputs": "r_T:temperature ratio,r_P:pressure ratio,gamma:heat capacity ratio"
+  },
+  {
+    "id": "boxed-071",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "tex": "\\eta_C = \\frac{W_{C,out}}{W_{C,in}}",
+    "expression": "W_out/W_in",
+    "result": "eta_C",
+    "inputs": "W_out:output work J,W_in:input work J"
+  },
+  {
+    "id": "boxed-072",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "tex": "\\eta_T=  \\frac{W_{T,out}}{W_{T,in}}",
+    "expression": "W_out/W_in",
+    "result": "eta_T",
+    "inputs": "W_out:output work J,W_in:input work J"
+  },
+  {
+    "id": "boxed-073",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "tex": "PV = nPT",
+    "expression": "n*T",
+    "result": "V (for nonzero P)",
+    "inputs": "n:amount as written,T:temperature as written",
+    "note": "The source reads PV = nPT. For nonzero P it gives V = nT; this is not the usual ideal-gas equation. Review the source before physical use."
+  },
+  {
+    "id": "boxed-074",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "tex": "(P+\\frac a{v^2})(v-b) = nRT",
+    "expression": "n*R*T/(v-b)-a/v^2",
+    "result": "P",
+    "inputs": "n:amount mol,R:gas constant,T:temperature K,v:volume as defined,b:volume correction,a:attraction coefficient",
+    "note": "Solves the displayed equation for P. Keep the volume and correction coefficients in a consistent unit system; v must differ from b."
+  },
+  {
+    "id": "boxed-075",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "tex": "P = \\frac{nRT}{V^2}(1-\\frac c{VT^3})(V+B)-m\\frac A{V^2}",
+    "expression": "n*R*T/V^2*(1-c/(V*T^3))*(V+B)-m*A/V^2",
+    "result": "P",
+    "inputs": "n:amount,R:gas constant,T:temperature,V:volume,c:coefficient,B:coefficient,m:amount factor,A:coefficient",
+    "note": "Uses every factor exactly as printed. Supply coefficients in the unit system of this equation."
+  },
+  {
+    "id": "boxed-076",
+    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "tex": "P = \\frac{RT}{V^2}(B_0RT-A_0-\\frac{C_0}{T^2})\\frac{1}{V^2}+\\frac{bRT-a}{v^3}+\\frac{a\\alpha}{V^6}+\\frac c{V^3T^2}(1+\\frac{\\gamma}{v^2})e^{-\\gamma/V^2}",
+    "expression": "R*T/V^2*(B_0*R*T-A_0-C_0/T^2)/V^2+(b*R*T-a)/v^3+a*alpha/V^6+c/(V^3*T^2)*(1+gamma/v^2)*e^(0-gamma/V^2)",
+    "result": "P",
+    "inputs": "R:gas constant,T:temperature,V:uppercase volume,B_0:coefficient,A_0:coefficient,C_0:coefficient,b:coefficient,a:coefficient,v:lowercase volume,alpha:coefficient,c:coefficient,gamma:coefficient",
+    "constants": "e=2.718281828459045",
+    "note": "Uses every factor exactly as printed. Uppercase V and lowercase v are separate inputs; verify the notation and coefficient units."
+  },
+  {
+    "id": "boxed-077",
+    "file": "Mechanics_Physics/Classic/2_3D_motion/2_3D_motion.md",
+    "tex": "r = \\sqrt{x^2 + y^2 + z^2}",
+    "expression": "(x^2+y^2+z^2)^0.5",
+    "result": "r",
+    "inputs": "x:x coordinate m,y:y coordinate m,z:z coordinate m"
+  },
+  {
+    "id": "boxed-078",
+    "file": "Mechanics_Physics/Classic/2_3D_motion/2_3D_motion.md",
+    "tex": "a = \\frac{v^2}{r}",
+    "expression": "v^2/r",
+    "result": "a",
+    "inputs": "v:speed m/s,r:radius m"
+  },
+  {
+    "id": "boxed-079",
+    "file": "Mechanics_Physics/Classic/2_3D_motion/2_3D_motion.md",
+    "tex": "a = r⋅𝛼",
+    "expression": "r*alpha",
+    "result": "a",
+    "inputs": "r:radius m,alpha:angular acceleration rad/s^2"
+  },
+  {
+    "id": "boxed-080",
+    "file": "Mechanics_Physics/Classic/Center_of_Mass_and_Momentum/Center_of_Mass_and_Momentum.md",
+    "tex": "D = \\frac{m}{V}",
+    "expression": "m/V",
+    "result": "D",
+    "inputs": "m:mass kg,V:volume m^3"
+  },
+  {
+    "id": "boxed-081",
+    "file": "Mechanics_Physics/Classic/Center_of_Mass_and_Momentum/Center_of_Mass_and_Momentum.md",
+    "tex": "v_{1f} = \\frac{m_1v_{1i}+m_2(v_{2i}-v_{2f})}{m_1}\\quad-(2)",
+    "expression": "(m_1*v_1i+m_2*(v_2i-v_2f))/m_1",
+    "result": "v_1f",
+    "inputs": "m_1:mass 1 kg,v_1i:initial velocity 1 m/s,m_2:mass 2 kg,v_2i:initial velocity 2 m/s,v_2f:final velocity 2 m/s",
+    "note": "The trailing (2) is an equation number, not a subtraction."
+  },
+  {
+    "id": "boxed-082",
+    "file": "Mechanics_Physics/Classic/Center_of_Mass_and_Momentum/Center_of_Mass_and_Momentum.md",
+    "tex": "v_{2f} = \\frac{m_2v_{2i}+m_1(v_{1i}-v_{1f})}{m_2}\\quad-(3)",
+    "expression": "(m_2*v_2i+m_1*(v_1i-v_1f))/m_2",
+    "result": "v_2f",
+    "inputs": "m_2:mass 2 kg,v_2i:initial velocity 2 m/s,m_1:mass 1 kg,v_1i:initial velocity 1 m/s,v_1f:final velocity 1 m/s",
+    "note": "The trailing (3) is an equation number, not a subtraction."
+  },
+  {
+    "id": "boxed-083",
+    "file": "Mechanics_Physics/Classic/Elasticity_and_Balance/Elasticity_and_Balance.md",
+    "tex": "P = B\\frac{\\Delta V}{V}",
+    "expression": "B*delta_V/V",
+    "result": "P",
+    "inputs": "B:bulk modulus Pa,delta_V:volume change m^3,V:original volume m^3"
+  },
+  {
+    "id": "boxed-084",
+    "file": "Mechanics_Physics/Classic/Force_and_motion/Force_and_motion.md",
+    "tex": "D_1 = bv",
+    "expression": "b*v",
+    "result": "D_1",
+    "inputs": "b:drag coefficient kg/s,v:speed m/s"
+  },
+  {
+    "id": "boxed-085",
+    "file": "Mechanics_Physics/Classic/Force_and_motion/Force_and_motion.md",
+    "tex": "v = \\frac{mg}{b}(1-e^{-bt/m})",
+    "expression": "m*g/b*(1-e^(0-b*t/m))",
+    "result": "v",
+    "inputs": "m:mass kg,g:gravity m/s^2,b:drag coefficient kg/s,t:time s",
+    "constants": "e=2.718281828459045"
+  },
+  {
+    "id": "boxed-086",
+    "file": "Mechanics_Physics/Classic/Force_and_motion/Force_and_motion.md",
+    "tex": "v_T = \\frac{mg}{b}",
+    "expression": "m*g/b",
+    "result": "v_T",
+    "inputs": "m:mass kg,g:gravity m/s^2,b:drag coefficient kg/s"
+  },
+  {
+    "id": "boxed-087",
+    "file": "Mechanics_Physics/Classic/Force_and_motion/Force_and_motion.md",
+    "tex": "D_2 = \\frac{1}{2}C\\rho Av^2",
+    "expression": "0.5*C*rho*A*v^2",
+    "result": "D_2",
+    "inputs": "C:drag coefficient,rho:fluid density kg/m^3,A:area m^2,v:speed m/s"
+  },
+  {
+    "id": "boxed-088",
+    "file": "Mechanics_Physics/Classic/Force_and_motion/Force_and_motion.md",
+    "tex": "v_T = \\sqrt\\frac{2mg}{C\\rho A}",
+    "expression": "(2*m*g/(C*rho*A))^0.5",
+    "result": "v_T",
+    "inputs": "m:mass kg,g:gravity m/s^2,C:drag coefficient,rho:fluid density kg/m^3,A:area m^2"
+  },
+  {
+    "id": "boxed-089",
+    "file": "Mechanics_Physics/Classic/Gravity/Gravity.md",
+    "tex": "F = \\frac{GMm}{r^2}",
+    "expression": "G*M*m/r^2",
+    "result": "F",
+    "inputs": "G:gravitational constant,M:source mass kg,m:test mass kg,r:distance m"
+  },
+  {
+    "id": "boxed-090",
+    "file": "Mechanics_Physics/Classic/Gravity/Gravity.md",
+    "tex": "W_g= \\frac{GMm}{r}",
+    "expression": "G*M*m/r",
+    "result": "W_g",
+    "inputs": "G:gravitational constant,M:source mass kg,m:test mass kg,r:distance m"
+  },
+  {
+    "id": "boxed-091",
+    "file": "Mechanics_Physics/Classic/Gravity/Gravity.md",
+    "tex": "F =\\frac{GMm}{r^2} = \\frac{GM_em}{R^3}r",
+    "expression": "G*M_e*m*r/R^3",
+    "result": "F",
+    "inputs": "G:gravitational constant,M_e:total sphere mass kg,m:test mass kg,r:interior radius m,R:sphere radius m",
+    "note": "Uses the final equality for a point inside a uniform sphere, with r no larger than R."
+  },
+  {
+    "id": "boxed-092",
+    "file": "Mechanics_Physics/Classic/Gravity/Gravity.md",
+    "tex": "v = \\sqrt{\\frac{2GM}{R}}",
+    "expression": "(2*G*M/R)^0.5",
+    "result": "v",
+    "inputs": "G:gravitational constant,M:mass kg,R:radius m"
+  },
+  {
+    "id": "boxed-093",
+    "file": "Mechanics_Physics/Classic/Kinetic_energy_and_work_and_potential_energy/Kinetic_energy_and_work_and_potential_energy.md",
+    "tex": "K = \\frac{1}{2}mv^2",
+    "expression": "0.5*m*v^2",
+    "result": "K",
+    "inputs": "m:mass kg,v:speed m/s"
+  },
+  {
+    "id": "boxed-094",
+    "file": "Mechanics_Physics/Classic/Kinetic_energy_and_work_and_potential_energy/Kinetic_energy_and_work_and_potential_energy.md",
+    "tex": "P = Fv",
+    "expression": "F*v",
+    "result": "P",
+    "inputs": "F:force along motion N,v:speed m/s"
+  },
+  {
+    "id": "boxed-095",
+    "file": "Mechanics_Physics/Classic/Kinetic_energy_and_work_and_potential_energy/Kinetic_energy_and_work_and_potential_energy.md",
+    "tex": "U = mgy",
+    "expression": "m*g*y",
+    "result": "U",
+    "inputs": "m:mass kg,g:gravity m/s^2,y:height m"
+  },
+  {
+    "id": "boxed-096",
+    "file": "Mechanics_Physics/Classic/Kinetic_energy_and_work_and_potential_energy/Kinetic_energy_and_work_and_potential_energy.md",
+    "tex": "U = -\\frac{1}{2}kx^2",
+    "expression": "0-0.5*k*x^2",
+    "result": "U",
+    "inputs": "k:stiffness N/m,x:displacement m",
+    "note": "Preserves the negative sign shown in the source expression."
+  },
+  {
+    "id": "boxed-097",
+    "file": "Mechanics_Physics/Classic/Linear_motion/Linear_motion.md",
+    "tex": "speed = \\frac{path}{time} \\qquad velocity = \\frac{displacement}{time}",
+    "expression": "path/time",
+    "result": "speed",
+    "inputs": "path:distance m,time:elapsed time s",
+    "extra": {
+      "expression": "displacement/time",
+      "inputs": "displacement:signed displacement m,time:elapsed time s",
+      "result": "velocity",
+      "note": "Velocity uses signed displacement; speed uses the total path length."
+    }
+  },
+  {
+    "id": "boxed-098",
+    "file": "Mechanics_Physics/Classic/Linear_motion/Linear_motion.md",
+    "tex": "v = at+v_i",
+    "expression": "a*t+v_i",
+    "result": "v",
+    "inputs": "a:acceleration m/s^2,t:time s,v_i:initial velocity m/s"
+  },
+  {
+    "id": "boxed-099",
+    "file": "Mechanics_Physics/Classic/Linear_motion/Linear_motion.md",
+    "tex": "x =  x_i+v_it+\\frac{1}{2}at^2",
+    "expression": "x_i+v_i*t+0.5*a*t^2",
+    "result": "x",
+    "inputs": "x_i:initial position m,v_i:initial velocity m/s,t:time s,a:acceleration m/s^2"
+  },
+  {
+    "id": "boxed-100",
+    "file": "Mechanics_Physics/Classic/Newtons_laws_of_motion/Newtons_laws_of_motion.md",
+    "tex": "\\vec{F_{net}} = m\\vec{a}",
+    "expression": "m*a",
+    "result": "F_net component",
+    "inputs": "m:mass kg,a:acceleration component m/s^2",
+    "note": "Calculate one Cartesian component at a time using the matching acceleration component."
+  },
+  {
+    "id": "boxed-101",
+    "file": "Mechanics_Physics/Classic/Roll_and_Angular_Momentum/Roll_and_Angular_Momentum.md",
+    "tex": "\\frac{1}{2}mv_{com}^2+\\frac{1}{2}I_{com}^2",
+    "expression": "0.5*m*v_com^2+0.5*I_com^2",
+    "result": "Boxed expression",
+    "inputs": "m:mass as written,v_com:speed as written,I_com:inertia as written",
+    "note": "Evaluates the printed expression literally. The rotational term I_com squared needs review before this result can be interpreted as energy."
+  },
+  {
+    "id": "boxed-102",
+    "file": "Mechanics_Physics/Classic/Roll_and_Angular_Momentum/Roll_and_Angular_Momentum.md",
+    "tex": "a = F_{net}/m = \\frac{Ia}{mR^2}+g",
+    "expression": "F_net/m",
+    "result": "a",
+    "inputs": "F_net:net force N,m:mass kg",
+    "note": "Uses a = F_net/m. The later equality has a sign inconsistency with the preceding derivation and is not used."
+  },
+  {
+    "id": "boxed-103",
+    "file": "Mechanics_Physics/Classic/Roll_and_Angular_Momentum/Roll_and_Angular_Momentum.md",
+    "tex": "T_p = 2\\pi/𝜔_p = \\frac{2\\pi I𝜔_s}{mgr\\cdot sin\\theta} = \\frac{4\\pi^2 I}{T_s𝜏}",
+    "expression": "2*pi/omega_p",
+    "result": "T_p",
+    "inputs": "omega_p:precession angular speed rad/s",
+    "constants": "pi=3.141592653589793",
+    "note": "Uses the first equality: enter the precession angular speed in radians per second."
+  },
+  {
+    "id": "boxed-104",
+    "file": "Mechanics_Physics/Classic/Rotation/Rotation.md",
+    "tex": "\\theta = \\frac{S}{r}",
+    "expression": "S/r",
+    "result": "theta",
+    "inputs": "S:arc length m,r:radius m"
+  },
+  {
+    "id": "boxed-105",
+    "file": "Mechanics_Physics/Classic/Rotation/Rotation.md",
+    "tex": "K = \\frac{1}{2}I𝜔^2",
+    "expression": "0.5*I*omega^2",
+    "result": "K",
+    "inputs": "I:moment of inertia kg m^2,omega:angular speed rad/s"
+  },
+  {
+    "id": "boxed-106",
+    "file": "Mechanics_Physics/Classic/Rotation/Rotation.md",
+    "tex": "I^{\\prime} = I_{com}+mr^2",
+    "expression": "I_com+m*r^2",
+    "result": "I_prime",
+    "inputs": "I_com:central inertia kg m^2,m:mass kg,r:axis offset m"
+  },
+  {
+    "id": "boxed-107",
+    "file": "Mechanics_Physics/Classic/Rotation/Rotation.md",
+    "tex": "P = 𝜏𝜔",
+    "expression": "tau*omega",
+    "result": "P",
+    "inputs": "tau:torque N m,omega:angular speed rad/s"
+  },
+  {
+    "id": "boxed-108",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/black_hole_thermodynamics/black_hole_thermodynamics.md",
+    "tex": "dE = \\frac{\\kappa}{8\\pi}dA+\\Omega dJ+\\Phi dQ = T_HdS_{BH}+\\Omega dJ",
+    "expression": "kappa/(8*pi)*dA+Omega*dJ+Phi*dQ",
+    "result": "dE",
+    "inputs": "kappa:surface gravity,dA:area differential,Omega:angular potential,dJ:angular momentum differential,Phi:electric potential,dQ:charge differential",
+    "constants": "pi=3.141592653589793",
+    "note": "Evaluates the first differential equality in the unit convention used on this page; supply numerical differentials, not total quantities."
+  },
+  {
+    "id": "boxed-109",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Entropy_and_Second_Law_of_Thermodynamics/Entropy_and_Second_Law_of_Thermodynamics.md",
+    "tex": "\\eta_c = 1-\\frac{T_L}{T_H}",
+    "expression": "1-T_L/T_H",
+    "result": "eta_c",
+    "inputs": "T_L:cold temperature K,T_H:hot temperature K"
+  },
+  {
+    "id": "boxed-110",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Entropy_and_Second_Law_of_Thermodynamics/Entropy_and_Second_Law_of_Thermodynamics.md",
+    "tex": "\\eta = \\frac{|T_L|}{|T_H|-|T_L|}",
+    "expression": "(T_L^2)^0.5/((T_H^2)^0.5-(T_L^2)^0.5)",
+    "result": "eta",
+    "inputs": "T_L:cold temperature K,T_H:hot temperature K"
+  },
+  {
+    "id": "boxed-111",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Entropy_and_Second_Law_of_Thermodynamics/Entropy_and_Second_Law_of_Thermodynamics.md",
+    "tex": "(P+\\frac{a}{V^2})(V-b) = RT",
+    "expression": "R*T/(V-b)-a/V^2",
+    "result": "P",
+    "inputs": "R:gas constant,T:temperature K,V:volume as defined,b:volume correction,a:attraction coefficient"
+  },
+  {
+    "id": "boxed-112",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Fluid/Fluid.md",
+    "tex": "\\Delta P = \\rho gh",
+    "expression": "rho*g*h",
+    "result": "Delta P",
+    "inputs": "rho:density kg/m^3,g:gravity m/s^2,h:depth m"
+  },
+  {
+    "id": "boxed-113",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "F = \\mu A\\frac uy",
+    "expression": "mu*A*u/y",
+    "result": "F",
+    "inputs": "mu:dynamic viscosity Pa s,A:area m^2,u:velocity m/s,y:gap m"
+  },
+  {
+    "id": "boxed-114",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "\\nu = \\frac{\\mu}{\\rho}",
+    "expression": "mu/rho",
+    "result": "nu",
+    "inputs": "mu:dynamic viscosity Pa s,rho:density kg/m^3"
+  },
+  {
+    "id": "boxed-115",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "u = \\frac{1}{4\\mu}\\frac{dP}{dx}(r_o^2-r^2)",
+    "expression": "pressure_gradient*(r_o^2-r^2)/(4*mu)",
+    "result": "u",
+    "inputs": "pressure_gradient:dP/dx Pa/m,r_o:outer radius m,r:radial position m,mu:dynamic viscosity Pa s",
+    "note": "Supply the signed numerical pressure gradient dP/dx; this calculator does not differentiate a function."
+  },
+  {
+    "id": "boxed-116",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "Q = \\frac{\\pi r^4_0}{8\\mu}(\\frac{dP}{dx})",
+    "expression": "pi*r_0^4*pressure_gradient/(8*mu)",
+    "result": "Q",
+    "inputs": "r_0:pipe radius m,pressure_gradient:dP/dx Pa/m,mu:dynamic viscosity Pa s",
+    "constants": "pi=3.141592653589793",
+    "note": "Supply the signed numerical pressure gradient dP/dx; this calculator does not differentiate a function."
+  },
+  {
+    "id": "boxed-117",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "\\gamma = \\frac{2L}F",
+    "expression": "2*L/F",
+    "result": "gamma",
+    "inputs": "L:length m,F:force N",
+    "note": "Evaluates 2L/F exactly as printed, with result in m/N. Review the source before interpreting this as surface tension."
+  },
+  {
+    "id": "boxed-118",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "F_L = C_L(\\frac12\\rho A_N)u^2",
+    "expression": "C_L*0.5*rho*A_N*u^2",
+    "result": "F_L",
+    "inputs": "C_L:lift coefficient,rho:density kg/m^3,A_N:reference area m^2,u:speed m/s"
+  },
+  {
+    "id": "boxed-119",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "F_D = C_D(\\frac12\\rho A_N)u^2",
+    "expression": "C_D*0.5*rho*A_N*u^2",
+    "result": "F_D",
+    "inputs": "C_D:drag coefficient,rho:density kg/m^3,A_N:reference area m^2,u:speed m/s"
+  },
+  {
+    "id": "boxed-120",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
+    "tex": "F_L' = C_L(\\frac12\\rho A_N)(v+\\omega r)^2",
+    "expression": "C_L*0.5*rho*A_N*(v+omega*r)^2",
+    "result": "F_L_prime",
+    "inputs": "C_L:lift coefficient,rho:density kg/m^3,A_N:reference area m^2,v:speed m/s,omega:angular speed rad/s,r:radius m"
+  },
+  {
+    "id": "boxed-121",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "tex": "P = \\frac{nRT}{V}",
+    "expression": "n*R*T/V",
+    "result": "P",
+    "inputs": "n:amount mol,R:gas constant J/(mol K),T:temperature K,V:volume m^3"
+  },
+  {
+    "id": "boxed-122",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "tex": "v_{rms} = \\sqrt{\\frac{3RT}{M}}",
+    "expression": "(3*R*T/M)^0.5",
+    "result": "v_rms",
+    "inputs": "R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
+  },
+  {
+    "id": "boxed-123",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "tex": "K = \\frac{3N}2kT",
+    "expression": "1.5*N*k*T",
+    "result": "K",
+    "inputs": "N:number of particles,k:Boltzmann constant J/K,T:temperature K"
+  },
+  {
+    "id": "boxed-124",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "tex": "\\lambda = \\frac {1}{\\pi d^2\\sqrt2(P/kT)} = \\frac {kT}{\\sqrt2\\pi d^2P}",
+    "expression": "k*T/(2^0.5*pi*d^2*P)",
+    "result": "lambda",
+    "inputs": "k:Boltzmann constant J/K,T:temperature K,d:collision diameter m,P:pressure Pa",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-125",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "tex": "v_{rms} = \\sqrt{\\frac{2RT}{M}}",
+    "expression": "(2*R*T/M)^0.5",
+    "result": "v_rms (as labeled)",
+    "inputs": "R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol",
+    "note": "Uses the printed factor 2; the formula corresponds to the most probable speed even though the source labels it v_rms."
+  },
+  {
+    "id": "boxed-126",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "tex": "v_{rms} = \\sqrt{\\frac{8RT}{\\pi M}}",
+    "expression": "(8*R*T/(pi*M))^0.5",
+    "result": "v_rms (as labeled)",
+    "inputs": "R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol",
+    "constants": "pi=3.141592653589793",
+    "note": "Uses the printed factor 8/pi; the formula corresponds to mean speed even though the source labels it v_rms."
+  },
+  {
+    "id": "boxed-127",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
+    "tex": "v_{rms} = \\sqrt{\\frac{3RT}{M}}",
+    "expression": "(3*R*T/M)^0.5",
+    "result": "v_rms",
+    "inputs": "R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
+  },
+  {
+    "id": "boxed-128",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "T = T_3(\\frac{P}{P_3})",
+    "expression": "T_3*P/P_3",
+    "result": "T",
+    "inputs": "T_3:reference temperature K,P:pressure Pa,P_3:reference pressure Pa"
+  },
+  {
+    "id": "boxed-129",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "F = \\frac95C+32",
+    "expression": "9/5*C+32",
+    "result": "F",
+    "inputs": "C:temperature Celsius"
+  },
+  {
+    "id": "boxed-130",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "K = 273.15+C",
+    "expression": "273.15+C",
+    "result": "K",
+    "inputs": "C:temperature Celsius"
+  },
+  {
+    "id": "boxed-131",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "K = (F-32)(\\frac59)+273.15",
+    "expression": "(F-32)*5/9+273.15",
+    "result": "K",
+    "inputs": "F:temperature Fahrenheit"
+  },
+  {
+    "id": "boxed-132",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "\\Delta L = L\\alpha_L\\Delta T",
+    "expression": "L*alpha_L*delta_T",
+    "result": "Delta L",
+    "inputs": "L:original length m,alpha_L:linear expansion coefficient 1/K,delta_T:temperature change K"
+  },
+  {
+    "id": "boxed-133",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "\\Delta V = V\\alpha_V\\Delta T",
+    "expression": "V*alpha_V*delta_T",
+    "result": "Delta V",
+    "inputs": "V:original volume m^3,alpha_V:volume expansion coefficient 1/K,delta_T:temperature change K"
+  },
+  {
+    "id": "boxed-134",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "Q = cm\\Delta T",
+    "expression": "c*m*delta_T",
+    "result": "Q",
+    "inputs": "c:specific heat J/(kg K),m:mass kg,delta_T:temperature change K"
+  },
+  {
+    "id": "boxed-135",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "K =\\frac{P_{cond} L}{A \\Delta T}",
+    "expression": "P_cond*L/(A*delta_T)",
+    "result": "K",
+    "inputs": "P_cond:heat transfer rate W,L:thickness m,A:area m^2,delta_T:temperature difference K"
+  },
+  {
+    "id": "boxed-136",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "h = \\frac {P_{conv}}{A\\Delta T}",
+    "expression": "P_conv/(A*delta_T)",
+    "result": "h",
+    "inputs": "P_conv:heat transfer rate W,A:area m^2,delta_T:temperature difference K"
+  },
+  {
+    "id": "boxed-137",
+    "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Zeroth_and_First_Laws_of_Thermodynamics/Zeroth_and_First_Laws_of_Thermodynamics.md",
+    "tex": "P_{rad} = \\sigma\\varepsilon AT^4",
+    "expression": "sigma*epsilon*A*T^4",
+    "result": "P_rad",
+    "inputs": "sigma:Stefan Boltzmann constant W/(m^2 K^4),epsilon:emissivity,A:area m^2,T:temperature K"
+  },
+  {
+    "id": "boxed-138",
+    "file": "Mechanics_Physics/Modern/Relativity/Relativity.md",
+    "tex": "E = mc^2",
+    "expression": "m*c^2",
+    "result": "E",
+    "inputs": "m:mass kg,c:speed of light m/s"
+  },
+  {
+    "id": "boxed-139",
+    "file": "Mechanics_Physics/Modern/Relativity/Relativity.md",
+    "tex": "l' = l\\sqrt{1-\\frac{v^2}{c^2}}",
+    "expression": "l*(1-v^2/c^2)^0.5",
+    "result": "l_prime",
+    "inputs": "l:proper length m,v:relative speed m/s,c:speed of light m/s"
+  },
+  {
+    "id": "boxed-140",
+    "file": "Mechanics_Physics/Modern/Relativity/Relativity.md",
+    "tex": "m' = \\frac{m_0}{\\sqrt{1-\\frac{v2}{c2}}}",
+    "pending": "The source prints v2/c2 rather than squared variables. Clarify whether these are products or missing exponents before numerical evaluation."
+  },
+  {
+    "id": "boxed-141",
+    "file": "Mechanics_Physics/Modern/Relativity/Relativity.md",
+    "tex": "\\Delta t' = \\frac{\\Delta t}{\\sqrt{1-\\frac{v^2}{c^2}}}",
+    "expression": "delta_t/(1-v^2/c^2)^0.5",
+    "result": "Delta t_prime",
+    "inputs": "delta_t:proper time s,v:relative speed m/s,c:speed of light m/s"
+  },
+  {
+    "id": "boxed-142",
+    "file": "Mechanics_Physics/SHM/Damping_harmonics_moion/Damping_harmonics_moion.md",
+    "tex": "b = 2\\sqrt{km}",
+    "expression": "2*(k*m)^0.5",
+    "result": "b",
+    "inputs": "k:stiffness N/m,m:mass kg"
+  },
+  {
+    "id": "boxed-143",
+    "file": "Mechanics_Physics/SHM/Oscillation/Oscillation.md",
+    "tex": "𝜔 = \\frac{2\\pi}{T} = 2\\pi f",
+    "expression": "2*pi/T",
+    "result": "omega",
+    "inputs": "T:period s",
+    "constants": "pi=3.141592653589793",
+    "note": "Uses the period-based equality. The period T must be positive."
+  },
+  {
+    "id": "boxed-144",
+    "file": "Mechanics_Physics/SHM/Resonance/Resonance.md",
+    "tex": "x_{m0} = \\frac{F_0}{m\\omega_0^2}",
+    "expression": "F_0/(m*omega_0^2)",
+    "result": "x_m0",
+    "inputs": "F_0:force amplitude N,m:mass kg,omega_0:natural angular frequency rad/s"
+  },
+  {
+    "id": "boxed-145",
+    "file": "Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md",
+    "tex": "\\omega = \\sqrt{\\frac{k}{m}}",
+    "expression": "(k/m)^0.5",
+    "result": "omega",
+    "inputs": "k:stiffness N/m,m:mass kg"
+  },
+  {
+    "id": "boxed-146",
+    "file": "Mechanics_Physics/SHM/Simple_Harmonic_Oscillation/Simple_Harmonic_Oscillation.md",
+    "tex": "T = 2\\pi\\sqrt{\\frac{m+\\frac{1}{3}m_s}{k}}",
+    "expression": "2*pi*((m+m_s/3)/k)^0.5",
+    "result": "T",
+    "inputs": "m:attached mass kg,m_s:spring mass kg,k:stiffness N/m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-147",
+    "file": "Mechanics_Physics/SHM/simple_harmonic_pendulum/simple_harmonic_pendulum.md",
+    "tex": "T = 2\\pi\\sqrt{\\frac{I}{k}}",
+    "expression": "2*pi*(I/k)^0.5",
+    "result": "T",
+    "inputs": "I:moment of inertia kg m^2,k:torsional stiffness N m/rad",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-148",
+    "file": "Mechanics_Physics/SHM/simple_harmonic_pendulum/simple_harmonic_pendulum.md",
+    "tex": "T = 2\\pi\\sqrt{\\frac{L}{g}}",
+    "expression": "2*pi*(L/g)^0.5",
+    "result": "T",
+    "inputs": "L:pendulum length m,g:gravity m/s^2",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-149",
+    "file": "Mechanics_Physics/SHM/simple_harmonic_pendulum/simple_harmonic_pendulum.md",
+    "tex": "g = \\frac{4\\pi^2L}{T^2}",
+    "expression": "4*pi^2*L/T^2",
+    "result": "g",
+    "inputs": "L:pendulum length m,T:period s",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-150",
+    "file": "Mechanics_Physics/SHM/sound_wave/sound_wave.md",
+    "tex": "\\phi = \\frac{\\Delta  L}\\lambda2\\pi",
+    "expression": "delta_L/lambda*2*pi",
+    "result": "phi",
+    "inputs": "delta_L:path difference m,lambda:wavelength m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-151",
+    "file": "Mechanics_Physics/SHM/sound_wave/sound_wave.md",
+    "tex": "I = \\frac12(\\rho v)(\\omega S_m)^2",
+    "expression": "0.5*rho*v*(omega*S_m)^2",
+    "result": "I",
+    "inputs": "rho:density kg/m^3,v:wave speed m/s,omega:angular frequency rad/s,S_m:displacement amplitude m"
+  },
+  {
+    "id": "boxed-152",
+    "file": "Mechanics_Physics/SHM/sound_wave/sound_wave.md",
+    "tex": "f' = f\\frac {v_s}{(-v_B+v_s)}",
+    "expression": "f*v_s/(v_s-v_B)",
+    "result": "f_prime",
+    "inputs": "f:source frequency Hz,v_s:sound speed m/s,v_B:source velocity toward observer m/s"
+  },
+  {
+    "id": "boxed-153",
+    "file": "Mechanics_Physics/SHM/wave/wave.md",
+    "tex": "k = \\frac{2\\pi}{\\lambda}",
+    "expression": "2*pi/lambda",
+    "result": "k",
+    "inputs": "lambda:wavelength m",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-154",
+    "file": "Mechanics_Physics/SHM/wave/wave.md",
+    "tex": "\\omega = \\frac{2\\pi}{T}",
+    "expression": "2*pi/T",
+    "result": "omega",
+    "inputs": "T:period s",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "boxed-155",
+    "file": "Mechanics_Physics/SHM/wave/wave.md",
+    "tex": "v = \\lambda f",
+    "expression": "lambda*f",
+    "result": "v",
+    "inputs": "lambda:wavelength m,f:frequency Hz"
+  },
+  {
+    "id": "boxed-156",
+    "file": "Mechanics_Physics/SHM/wave/wave.md",
+    "tex": "v = \\sqrt{\\frac\\tau\\mu}",
+    "expression": "(tau/mu)^0.5",
+    "result": "v",
+    "inputs": "tau:tension N,mu:linear mass density kg/m"
+  }
+]

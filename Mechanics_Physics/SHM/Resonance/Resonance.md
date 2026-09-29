@@ -18,6 +18,17 @@ $$\omega_0^2 = \frac km$$
 
 $$\boxed{x_{m0} = \frac{F_0}{m\omega_0^2}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-144"
+  data-expression="F_0/(m*omega_0^2)"
+  data-inputs="F_0:force amplitude N,m:mass kg,omega_0:natural angular frequency rad/s"
+  data-result="x_m0"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Power
 
 Power measures the rate of energy transfer. Use the translational or rotational expression that matches the mechanism.

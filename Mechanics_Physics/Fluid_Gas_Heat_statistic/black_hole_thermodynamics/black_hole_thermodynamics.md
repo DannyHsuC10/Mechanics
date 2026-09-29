@@ -22,6 +22,17 @@ $$E = mc^2$$
 
 $$\boxed{dE = \frac{\kappa}{8\pi}dA+\Omega dJ+\Phi dQ = T_HdS_{BH}+\Omega dJ}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-108"
+  data-expression="kappa/(8*pi)*dA+Omega*dJ+Phi*dQ"
+  data-inputs="kappa:surface gravity,dA:area differential,Omega:angular potential,dJ:angular momentum differential,Phi:electric potential,dQ:charge differential"
+  data-result="dE"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Evaluates the first differential equality in the unit convention used on this page; supply numerical differentials, not total quantities.">
+</div>
+
 * energy : $E$
 * surface gravity : $\kappa$
 * horizon area : $A$

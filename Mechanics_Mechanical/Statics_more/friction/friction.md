@@ -83,6 +83,17 @@ $$\sum M = 0$$
 
 $$\boxed{M = Nd}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-060"
+  data-expression="N*d"
+  data-inputs="N:normal force N,d:moment arm m"
+  data-result="M"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * offset position : $d$
 
 ## Disk friction (thrust bearing)
@@ -113,6 +124,17 @@ $$M = 2/3\mu_kFR$$
 
 $$\boxed{M_{max} = 2/3\mu_sFR}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-061"
+  data-expression="2/3*mu_s*F*R"
+  data-inputs="mu_s:static friction coefficient,F:force N,R:radius m"
+  data-result="M_max"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Belt Friction
 
 <div style="text-align: center;">
@@ -142,6 +164,17 @@ $$ln(T_2)-ln(T_1) = \mu_s\phi$$
 $$ln(T_2/T_1) = \mu_s\phi$$
 
 $$\boxed{T_2/T_1 = e^{\mu_s\phi}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-062"
+  data-expression="e^(mu_s*phi)"
+  data-inputs="mu_s:friction coefficient,phi:wrap angle rad"
+  data-result="T_2/T_1"
+  data-unit=""
+  data-constants="e=2.718281828459045"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 **V-shaped**
 

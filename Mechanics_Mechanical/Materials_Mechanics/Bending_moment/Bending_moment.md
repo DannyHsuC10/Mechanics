@@ -46,6 +46,17 @@ $$M = \int V(x)dx$$
 
 $$\boxed{\sigma = \frac{My}{I}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-025"
+  data-expression="M*y/I"
+  data-inputs="M:bending moment N m,y:distance from neutral axis m,I:second moment of area m^4"
+  data-result="sigma"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Shear stress in beam
 
 <div style="text-align: center;">
@@ -53,6 +64,17 @@ $$\boxed{\sigma = \frac{My}{I}}$$
 </div>
 
 $$\boxed{\tau = \frac{VQ}{Ib}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-026"
+  data-expression="V*Q/(I*b)"
+  data-inputs="V:shear force N,Q:first moment of area m^3,I:second moment of area m^4,b:width m"
+  data-result="tau"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * **Rectangular beam**
 
@@ -62,6 +84,17 @@ $$\boxed{\tau = \frac{VQ}{Ib}}$$
 
 $$\boxed{\tau_{max} = \frac{3V}{2A}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-027"
+  data-expression="3*V/(2*A)"
+  data-inputs="V:shear force N,A:area m^2"
+  data-result="tau_max"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * **Circular beam**
 
 <div style="text-align: center;">
@@ -69,6 +102,17 @@ $$\boxed{\tau_{max} = \frac{3V}{2A}}$$
 </div>
 
 $$\boxed{\tau_{max} = \frac{4V}{3A}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-028"
+  data-expression="4*V/(3*A)"
+  data-inputs="V:shear force N,A:area m^2"
+  data-result="tau_max"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Complex cross section of beam
 

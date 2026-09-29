@@ -10,6 +10,17 @@ Torsion describes the deformation of a member subjected to a twisting moment. Re
 
 $$\boxed{T = Pd}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-055"
+  data-expression="P*d"
+  data-inputs="P:force N,d:moment arm m"
+  data-result="T"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 <div style="text-align: center;">
 <img src="upload_9fe19d6d64dca571a1d4fe4c243426d2.png" alt="image" width="500">
 </div>

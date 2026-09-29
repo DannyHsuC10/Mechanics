@@ -20,6 +20,17 @@ The inertial coordinate system is based on Newton's first law of motion. However
 
 $$\boxed{\vec{F_{net}} = m\vec{a}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-100"
+  data-expression="m*a"
+  data-inputs="m:mass kg,a:acceleration component m/s^2"
+  data-result="F_net component"
+  data-unit=""
+  data-constants=""
+  data-note="Calculate one Cartesian component at a time using the matching acceleration component.">
+</div>
+
 $$\vec{F_{x}} = m\vec{a_x} \qquad \vec{F_{y}} = m\vec{a_y} \qquad \vec{F_{z}} = m\vec{a_z}$$
 
 * Unit : $N$

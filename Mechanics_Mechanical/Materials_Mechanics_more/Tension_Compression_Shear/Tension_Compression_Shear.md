@@ -61,6 +61,17 @@ $$\frac{L}{L_0} = \frac{A_0}{A} = 1+\varepsilon$$
 
 $$\boxed{\sigma_T = \sigma(1+\varepsilon)}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-053"
+  data-expression="sigma*(1+epsilon)"
+  data-inputs="sigma:engineering stress Pa,epsilon:engineering strain"
+  data-result="sigma_T"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Linear Elasticity, Hooke's Law and Poisson's Ratio
 
 * Poisson's Ratio : $\nu$
@@ -82,6 +93,17 @@ $$\tau = V/A$$
 $$\tau = G\gamma$$
 
 $$\boxed{G=  \frac{E}{1(+\nu)}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-054"
+  data-expression="E/(1*nu)"
+  data-inputs="E:modulus,nu:coefficient as written"
+  data-result="G"
+  data-unit=""
+  data-constants=""
+  data-note="Literal evaluation of E/[1(+nu)] = E/nu. The printed denominator needs review before physical use.">
+</div>
 
 ## deformation
 

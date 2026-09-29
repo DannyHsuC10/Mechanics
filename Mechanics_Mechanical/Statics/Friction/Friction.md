@@ -12,6 +12,17 @@ Friction affects both sliding and overturning limits. The examples compare conta
 
 $$\boxed{f = \mu N}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-056"
+  data-expression="mu*N"
+  data-inputs="mu:friction coefficient,N:normal force N"
+  data-result="f"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * $\mu>0$
 
 $$f_s = \mu_sN$$
@@ -87,6 +98,17 @@ $$wb/2 = Fh$$
 $$mgb/2 = \mu mgh$$
 
 $$\boxed{h = \frac b{2\mu}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-057"
+  data-expression="b/(2*mu)"
+  data-inputs="b:width m,mu:friction coefficient"
+  data-result="h"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Slope and Horizontal force
 

@@ -39,4 +39,8 @@ Modern Kramdown emits MathJax delimiters directly. The `site.js` adapter also su
 
 The active layout, stylesheet, and calculator were copied from `Webpage_package`. The active stylesheet adds responsive navigation, image sizing, and horizontal scrolling for wide tables and equations. The package remains as the supplied reference.
 
-The calculator script is included by the layout but creates no interface unless a page contains a `data-calculator` element. No calculator widgets were added to the study notes. Usage examples remain in `Webpage_package/README.md`.
+The calculator script creates a form for each `data-calculator` element. The boxed equations have reviewed definitions in `tools/boxed_calculators.json`, including English input descriptions. Four ambiguous boxes show a pending notice; their original formulas remain unchanged. Suspicious but unambiguous expressions are evaluated literally and carry a note. Usage examples remain in `Webpage_package/README.md`.
+
+Run `python tools/add_boxed_calculators.py` to add missing markers. It scans all Markdown outside generated/tool directories, refuses unconfigured boxes, and does not duplicate existing markers. To revise an existing calculator, update both its Markdown marker and the matching JSON definition. Run `node tools/check_calculators.cjs` to validate coverage, inputs, numerical examples, and error handling.
+
+Calculators use consistent SI input units unless the local note specifies otherwise. `pi` and `e` are built-in per-widget constants; physical constants such as `g` and `R` remain editable inputs. Equivalent chained equations use the equality identified by the calculator inputs or note. The speed/velocity box has separate forms for both quantities.

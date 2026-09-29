@@ -80,6 +80,17 @@ $$EI\nu'' = M\qquad EI\nu''' = V\qquad EI\nu'''' = -q$$
 
 $$\boxed{\kappa = \frac{\nu''}{(1+\nu''^2)^{3/2}}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-047"
+  data-expression="nu_second/(1+nu_second^2)^1.5"
+  data-inputs="nu_second:second derivative as written"
+  data-result="kappa"
+  data-unit=""
+  data-constants=""
+  data-note="Uses nu double-prime in both numerator and denominator exactly as printed; check the derivative notation before physical use.">
+</div>
+
 ## Method of Superposition
 
 <div style="text-align: center;">
@@ -89,5 +100,16 @@ $$\boxed{\kappa = \frac{\nu''}{(1+\nu''^2)^{3/2}}}$$
 the slope and deflection due to uniform load of intensity
 
 $$\boxed{\delta = \frac{5qL^4}{384EI}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-048"
+  data-expression="5*q*L^4/(384*E*I)"
+  data-inputs="q:load per length N/m,L:span m,E:Young modulus Pa,I:second moment of area m^4"
+  data-result="delta"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 $$\theta_A = \theta_B = \frac{qL^3}{24EI}$$

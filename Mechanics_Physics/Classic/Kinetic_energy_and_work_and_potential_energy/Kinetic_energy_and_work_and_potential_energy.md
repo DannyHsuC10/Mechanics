@@ -12,6 +12,17 @@ unit : $1 jonle = 1 J =kg^2⋅m^2/s^2$
 
 $$\boxed{K = \frac{1}{2}mv^2}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-093"
+  data-expression="0.5*m*v^2"
+  data-inputs="m:mass kg,v:speed m/s"
+  data-result="K"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$ΔK = K_f-K_i$$
 
 $$K_f = K_i+W$$
@@ -129,6 +140,17 @@ $$P = \frac{dW}{dt} = Fdx/dt$$
 
 $$\boxed{P = Fv}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-094"
+  data-expression="F*v"
+  data-inputs="F:force along motion N,v:speed m/s"
+  data-result="P"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Conservation force
 
 <div style="text-align: center;">
@@ -164,6 +186,17 @@ if $y_i = 0$
 
 $$\boxed{U = mgy}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-095"
+  data-expression="m*g*y"
+  data-inputs="m:mass kg,g:gravity m/s^2,y:height m"
+  data-result="U"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## elastic potential energy
 
 $$ΔU = \int_{x_i}^{x_f}-kx, dx = -\frac{1}{2}kx^2\Big|_{y_i}^{y_f}$$
@@ -173,6 +206,17 @@ $$ΔU = -\frac{1}{2}k(x_f^2-x_i^2) = Δx$$
 if $x_i = 0$
 
 $$\boxed{U = -\frac{1}{2}kx^2}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-096"
+  data-expression="0-0.5*k*x^2"
+  data-inputs="k:stiffness N/m,x:displacement m"
+  data-result="U"
+  data-unit=""
+  data-constants=""
+  data-note="Preserves the negative sign shown in the source expression.">
+</div>
 
 ## Law of conservation of mechanical energy
 

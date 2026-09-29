@@ -41,6 +41,26 @@ Velocity is a vector but speed is a scalar.
 
 $$\boxed{speed = \frac{path}{time} \qquad velocity = \frac{displacement}{time}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-097"
+  data-expression="path/time"
+  data-inputs="path:distance m,time:elapsed time s"
+  data-result="speed"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-097-extra"
+  data-expression="displacement/time"
+  data-inputs="displacement:signed displacement m,time:elapsed time s"
+  data-result="velocity"
+  data-note="Velocity uses signed displacement; speed uses the total path length.">
+</div>
+
 ## Acceleration
 
 Acceleration is slope of velocity versus time.
@@ -86,6 +106,28 @@ $$a = \frac{dv}{dt} \qquad v = ∫adt$$
 
 $$\boxed{v = at+v_i}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-098"
+  data-expression="a*t+v_i"
+  data-inputs="a:acceleration m/s^2,t:time s,v_i:initial velocity m/s"
+  data-result="v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$x = \frac{dV}{dt} \qquad x = ∫vdt = ∫(at+v_i)dt$$
 
 $$\boxed{x =  x_i+v_it+\frac{1}{2}at^2}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-099"
+  data-expression="x_i+v_i*t+0.5*a*t^2"
+  data-inputs="x_i:initial position m,v_i:initial velocity m/s,t:time s,a:acceleration m/s^2"
+  data-result="x"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>

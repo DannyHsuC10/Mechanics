@@ -33,6 +33,17 @@ $$J = \frac{\pi R^4}{2}$$
 
 $$\boxed{\phi = \frac{TL}{GJ}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-044"
+  data-expression="T*L/(G*J)"
+  data-inputs="T:torque N m,L:length m,G:shear modulus Pa,J:polar second moment m^4"
+  data-result="phi"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Material properties
 
 tensile strength : $\sigma_{T\ ult}$

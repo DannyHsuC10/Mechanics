@@ -33,6 +33,17 @@ $$P_2 = P_1+Dgh$$
 
 $$\boxed{\Delta P = \rho gh}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-112"
+  data-expression="rho*g*h"
+  data-inputs="rho:density kg/m^3,g:gravity m/s^2,h:depth m"
+  data-result="Delta P"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Communicating vessels
 
 <div style="text-align: center;">

@@ -29,6 +29,17 @@ $$\frac{P_x}{A_{\perp x}} = \frac{P_y}{A_{\perp y}} = \frac{P_z}{A_{\perp z}}$$
 
 $$\boxed{\frac{dV}{V} = 3\frac{P}{A}\frac1E_V(1-2\mu)}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-045"
+  data-expression="3*(P/A)/E_V*(1-2*mu)"
+  data-inputs="P:force N,A:area m^2,E_V:modulus Pa,mu:Poisson ratio"
+  data-result="dV/V"
+  data-unit=""
+  data-constants=""
+  data-note="Evaluates the displayed factors literally; confirm the definition of E_V before physical use.">
+</div>
+
 ## Volume elastic modulus
 
 $$\frac{F}{A} = E_V\frac{dV}{V}$$
@@ -38,5 +49,16 @@ $$E_V = \frac{\frac{P}{A}}{\frac{dV}{V}}$$
 $$= \frac{\frac{P}{A}}{ 3\frac{P}{A}\frac1E_V(1-2\mu)}$$
 
 $$\boxed{E_V = \frac{E}{3(1-2\mu)} = \frac{E}{3-6\mu}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-046"
+  data-expression="E/(3*(1-2*mu))"
+  data-inputs="E:Young modulus Pa,mu:Poisson ratio"
+  data-result="E_V"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 

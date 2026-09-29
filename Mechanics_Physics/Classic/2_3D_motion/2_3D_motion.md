@@ -14,6 +14,17 @@ $$\vec{r} = x\vec{i}+y\vec{j}+z\vec{k}$$
 
 $$\boxed{r = \sqrt{x^2 + y^2 + z^2}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-077"
+  data-expression="(x^2+y^2+z^2)^0.5"
+  data-inputs="x:x coordinate m,y:y coordinate m,z:z coordinate m"
+  data-result="r"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$Δ\vec{r} = \vec{r_f}-\vec{r_i}$$
 
 <div style="text-align: center;">
@@ -141,11 +152,33 @@ $$\theta = \frac{S}{r} = \frac{vt}{r}$$
 
 $$\boxed{a = \frac{v^2}{r}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-078"
+  data-expression="v^2/r"
+  data-inputs="v:speed m/s,r:radius m"
+  data-result="a"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * Tangential acceleration  (pink)
 
 $$𝛼 = \frac{d𝜔}{dt}$$
 
 $$\boxed{a = r⋅𝛼}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-079"
+  data-expression="r*alpha"
+  data-inputs="r:radius m,alpha:angular acceleration rad/s^2"
+  data-result="a"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## relatioin motion
 

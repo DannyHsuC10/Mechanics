@@ -327,3 +327,8 @@ body {
 #page-toc a { color: #2879d0; text-decoration: none; }
 #page-toc a:hover { text-decoration: underline; }
 :target { scroll-margin-top: 1rem; }
+.calculator-title { font-weight: 700; margin: 0 0 0.5rem; }
+.calculator-note { font-size: 0.92rem; margin: 0 0 1rem; }
+.calculator-pending { border-left: 4px solid #b58224; }
+.calculator input { box-sizing: border-box; min-width: 0; }
+.calculator label { min-width: 0; overflow-wrap: anywhere; }

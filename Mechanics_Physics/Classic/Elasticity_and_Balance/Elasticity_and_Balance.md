@@ -55,5 +55,16 @@ $$\frac{F}{A} = G\frac{\Delta \phi}{L}$$
 
 $$\boxed{P = B\frac{\Delta V}{V}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-083"
+  data-expression="B*delta_V/V"
+  data-inputs="B:bulk modulus Pa,delta_V:volume change m^3,V:original volume m^3"
+  data-result="P"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * Pressure : $P$
 * Bulk modulus : $B$

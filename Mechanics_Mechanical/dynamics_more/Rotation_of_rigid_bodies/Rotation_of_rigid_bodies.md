@@ -32,6 +32,17 @@ $$\omega^2 = \omega_i^2+2\alpha\Delta\theta$$
 
 $$\boxed{\theta = \theta_i+\omega_i t+\frac12\alpha t^2}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-020"
+  data-expression="theta_i+omega_i*t+0.5*alpha*t^2"
+  data-inputs="theta_i:initial angle rad,omega_i:initial angular speed rad/s,t:time s,alpha:angular acceleration rad/s^2"
+  data-result="theta"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Centripetal acceleration
 
 $$a_r = \frac{v^2}{r}$$
@@ -48,6 +59,28 @@ $$L = mr^2\omega = rmv$$
 
 $$\boxed{L = rp}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-021"
+  data-expression="r*p"
+  data-inputs="r:radius m,p:linear momentum kg m/s"
+  data-result="L"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Rotational Energy
 
 $$\boxed{K_\omega = \frac12I\omega^2}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-022"
+  data-expression="0.5*I*omega^2"
+  data-inputs="I:moment of inertia kg m^2,omega:angular speed rad/s"
+  data-result="K_omega"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>

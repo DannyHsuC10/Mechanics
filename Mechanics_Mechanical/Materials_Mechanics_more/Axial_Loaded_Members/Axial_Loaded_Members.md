@@ -15,7 +15,29 @@ $$fk = 1$$
 
 $$\boxed{k = \frac{EA}{L}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-049"
+  data-expression="E*A/L"
+  data-inputs="E:Young modulus Pa,A:area m^2,L:length m"
+  data-result="k"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$\boxed{f = \frac{L}{EA}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-050"
+  data-expression="L/(E*A)"
+  data-inputs="L:length m,E:Young modulus Pa,A:area m^2"
+  data-result="f"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Stress and Deformation
 
@@ -74,3 +96,14 @@ $$U = W = \int P\ d\delta$$
 $$U = W = \frac{P\delta}{2}$$
 
 $$\boxed{U = \frac{P^2L}{2EA} = \frac{EA\delta^2}{2L}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-051"
+  data-expression="P^2*L/(2*E*A)"
+  data-inputs="P:axial force N,L:length m,E:Young modulus Pa,A:area m^2"
+  data-result="U"
+  data-unit=""
+  data-constants=""
+  data-note="Uses the force-based equality; enter axial load P.">
+</div>

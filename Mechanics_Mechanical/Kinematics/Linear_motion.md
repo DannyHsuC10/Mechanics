@@ -37,6 +37,17 @@ $$x = x_i+v_it+\frac12at^2$$
 
 $$\boxed{v = \sqrt{(v_i^2+2a\Delta x)}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-023"
+  data-expression="(v_i^2+2*a*delta_x)^0.5"
+  data-inputs="v_i:initial speed m/s,a:acceleration m/s^2,delta_x:displacement m"
+  data-result="v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Free fall
 
 $$v = gt$$
@@ -44,6 +55,17 @@ $$v = gt$$
 $$h = \frac12gt^2$$
 
 $$\boxed{v = \sqrt{2gh}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-024"
+  data-expression="(2*g*h)^0.5"
+  data-inputs="g:gravity m/s^2,h:height m"
+  data-result="v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## slope
 

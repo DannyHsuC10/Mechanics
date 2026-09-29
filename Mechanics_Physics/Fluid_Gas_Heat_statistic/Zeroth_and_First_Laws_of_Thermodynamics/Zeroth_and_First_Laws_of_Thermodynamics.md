@@ -30,6 +30,17 @@ $$T_3 = Cp_3$$
 
 $$\boxed{T = T_3(\frac{P}{P_3})}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-128"
+  data-expression="T_3*P/P_3"
+  data-inputs="T_3:reference temperature K,P:pressure Pa,P_3:reference pressure Pa"
+  data-result="T"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Ideal temperature
 
 The temperature measured by continuously reducing the air pressure approximates the ideal temperature.
@@ -38,9 +49,42 @@ The temperature measured by continuously reducing the air pressure approximates 
 
 $$\boxed{F = \frac95C+32}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-129"
+  data-expression="9/5*C+32"
+  data-inputs="C:temperature Celsius"
+  data-result="F"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$\boxed{K = 273.15+C}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-130"
+  data-expression="273.15+C"
+  data-inputs="C:temperature Celsius"
+  data-result="K"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$\boxed{K = (F-32)(\frac59)+273.15}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-131"
+  data-expression="(F-32)*5/9+273.15"
+  data-inputs="F:temperature Fahrenheit"
+  data-result="K"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Thermal expansion
 
@@ -49,6 +93,17 @@ $$\boxed{K = (F-32)(\frac59)+273.15}$$
 $$\alpha_L = \frac{1}{L}\frac{dL}{dT}$$
 
 $$\boxed{\Delta L = L\alpha_L\Delta T}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-132"
+  data-expression="L*alpha_L*delta_T"
+  data-inputs="L:original length m,alpha_L:linear expansion coefficient 1/K,delta_T:temperature change K"
+  data-result="Delta L"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * linear thermal expansion : $\alpha_{L}$
 * length : ${L}$
@@ -60,6 +115,17 @@ $$\boxed{\Delta L = L\alpha_L\Delta T}$$
 $$\alpha_V = \frac{1}{V}\frac{dV}{dT}$$
 
 $$\boxed{\Delta V = V\alpha_V\Delta T}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-133"
+  data-expression="V*alpha_V*delta_T"
+  data-inputs="V:original volume m^3,alpha_V:volume expansion coefficient 1/K,delta_T:temperature change K"
+  data-result="Delta V"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * volumetric thermal expansion : $\alpha_{V}$
 * volume : ${V}$
@@ -80,6 +146,17 @@ $$Q = C\Delta T$$
 $$C = c\cdot m$$
 
 $$\boxed{Q = cm\Delta T}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-134"
+  data-expression="c*m*delta_T"
+  data-inputs="c:specific heat J/(kg K),m:mass kg,delta_T:temperature change K"
+  data-result="Q"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * Specific heat : $c$
 
@@ -178,6 +255,17 @@ $$P_{cond} = KA\frac{T_H-T_L}{L}$$
 
 $$\boxed{K =\frac{P_{cond} L}{A \Delta T}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-135"
+  data-expression="P_cond*L/(A*delta_T)"
+  data-inputs="P_cond:heat transfer rate W,L:thickness m,A:area m^2,delta_T:temperature difference K"
+  data-result="K"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 2. **convection**
 
 <div style="text-align: center;">
@@ -192,9 +280,31 @@ $$P_{conv} = hA\Delta T$$
 
 $$\boxed{h = \frac {P_{conv}}{A\Delta T}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-136"
+  data-expression="P_conv/(A*delta_T)"
+  data-inputs="P_conv:heat transfer rate W,A:area m^2,delta_T:temperature difference K"
+  data-result="h"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 3. **radiation**
 
 $$\boxed{P_{rad} = \sigma\varepsilon AT^4}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-137"
+  data-expression="sigma*epsilon*A*T^4"
+  data-inputs="sigma:Stefan Boltzmann constant W/(m^2 K^4),epsilon:emissivity,A:area m^2,T:temperature K"
+  data-result="P_rad"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * The Stefan-Boltzmann Constant : $\sigma$
 * emissivity coefficient of the object "(1) for a black body" : $\varepsilon$

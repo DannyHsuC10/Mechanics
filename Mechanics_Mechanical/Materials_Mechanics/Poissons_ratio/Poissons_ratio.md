@@ -64,6 +64,17 @@ $$\frac{dx}x = \sum^n_{i = 1}\frac{P_i\vec x}{A_{yz}E}-\nu\frac{P_i\vec y}{A_{xz
 
 $$\boxed{\varepsilon_x = \frac{\sigma_x-(\sigma_y+\sigma_z)\nu}{E}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-032"
+  data-expression="(sigma_x-(sigma_y+sigma_z)*nu)/E"
+  data-inputs="sigma_x:normal stress x Pa,sigma_y:normal stress y Pa,sigma_z:normal stress z Pa,nu:Poisson ratio,E:Young modulus Pa"
+  data-result="epsilon_x"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Forces in multiple directions are equal
 
 $$P_x = P_y = P_z = P$$

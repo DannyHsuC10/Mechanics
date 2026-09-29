@@ -141,6 +141,17 @@ $$l = r^2\omega$$
 
 $$\boxed{\vec v_r = \omega\frac{dr}{d\theta} = \frac{d}{d\theta}(\frac{-l}r)}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-016"
+  data-expression="omega*dr_dtheta"
+  data-inputs="omega:angular speed rad/s,dr_dtheta:radial derivative m/rad"
+  data-result="v_r"
+  data-unit=""
+  data-constants=""
+  data-note="Evaluates the first equality. Supply dr/dtheta numerically at the point of interest.">
+</div>
+
 **acceleration**
 
 $$\ddot r = \frac{d\dot r}{dt} = \frac{d\dot r}{d\theta}\dot\theta = \frac{l}{r^2}\frac{d}{d\theta}(-l\frac{d}{d\theta}(\frac1r)) = -\frac{l^2}{r^2}\frac{d^2}{d\theta^2}(\frac1r)$$
@@ -153,6 +164,13 @@ $$\ddot r = -l^2u^2\frac{d^2u}{d\theta^2}$$
 $$\frac{l}{r} = r\omega = v_t$$
 
 $$\boxed{\vec a_r = \frac{v_t^2}{r}\frac{d^2}{d\theta^2}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-017"
+  data-pending="The second derivative has no operand in this boxed expression. Specify the differentiated function before configuring a numerical calculator."
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ***
 
@@ -219,6 +237,17 @@ if $R = r$
 
 $$\boxed{v_{esc} = (2gR)^{1/2}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-018"
+  data-expression="(2*g*R)^0.5"
+  data-inputs="g:gravity m/s^2,R:radius m"
+  data-result="v_esc"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 1. if $v > v_{esc}$ , $\varepsilon > 1$ : hyperbolic
 2. if $v = v_{esc}$ , $\varepsilon > 1$ : parabola
 3. if $v < v_{esc}$ , $\varepsilon > 1$ : ellipse
@@ -244,3 +273,14 @@ $$= 2ar_{min}-r_{min}^2 = r_{min}(2a-r_{min}) = r_{min}r_{max}$$
 $$\Delta t = \frac{2\pi(r_{min}+r_{max})(r_{min}r_{max})^{1/2}}{2l}$$
 
 $$\boxed{\Delta t = \frac{\pi(r_{min}+r_{max})(r_{min}r_{max})^{1/2}}{l}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-019"
+  data-expression="pi*(r_min+r_max)*(r_min*r_max)^0.5/l"
+  data-inputs="r_min:minimum radius m,r_max:maximum radius m,l:angular momentum per mass m^2/s"
+  data-result="Delta t"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>

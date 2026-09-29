@@ -20,11 +20,33 @@ $$U_g = mgh = wh$$
 
 $$\boxed{U_k = \frac12kx^2}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-002"
+  data-expression="0.5*k*x^2"
+  data-inputs="k:spring stiffness N/m,x:extension m"
+  data-result="U_k"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Work
 
 Work accumulates the component of force along a displacement. The integral form is useful when the force varies along the path.
 
 $$\boxed{W = Fx}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-003"
+  data-expression="F*x"
+  data-inputs="F:force N,x:displacement m"
+  data-result="W"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## conservation of mechanical energy
 

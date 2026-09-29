@@ -16,6 +16,17 @@ $$k = m\omega^2$$
 
 $$\boxed{\omega = \sqrt{\frac{k}{m}}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-145"
+  data-expression="(k/m)^0.5"
+  data-inputs="k:stiffness N/m,m:mass kg"
+  data-result="omega"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * [How to solve SHM by ODE ?](../../../Special/SHM_ODE.md)
 
 $$T = 2\pi/\omega = 2\pi\sqrt{\frac{m}{k}}$$
@@ -24,6 +35,17 @@ $$T = 2\pi/\omega = 2\pi\sqrt{\frac{m}{k}}$$
 [why ??](../../../Special/spring.md)
 
 $$\boxed{T = 2\pi\sqrt{\frac{m+\frac{1}{3}m_s}{k}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-146"
+  data-expression="2*pi*((m+m_s/3)/k)^0.5"
+  data-inputs="m:attached mass kg,m_s:spring mass kg,k:stiffness N/m"
+  data-result="T"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Energy
 

@@ -21,11 +21,33 @@ $$A_{tt} = \pi Dt$$
 
 $$\boxed{\tau = \frac{P}{\pi dt}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-039"
+  data-expression="P/(pi*d*t)"
+  data-inputs="P:force N,d:diameter m,t:thickness m"
+  data-result="tau"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * rivet single shear
 
 $$A_{tt} = \frac\pi4d^2$$
 
 $$\boxed{\tau = \frac p{\frac14\pi d^2}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-040"
+  data-expression="p/(0.25*pi*d^2)"
+  data-inputs="p:force N,d:diameter m"
+  data-result="tau"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 * rivet double shear
 
@@ -33,11 +55,44 @@ $$A_{tt} = \frac\pi4d^2$$
 
 $$\boxed{\tau = \frac p{\frac12\pi d^2}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-041"
+  data-expression="p/(0.5*pi*d^2)"
+  data-inputs="p:force N,d:diameter m"
+  data-result="tau"
+  data-unit=""
+  data-constants="pi=3.141592653589793"
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Elastic modulus &  Shear modulus of elasticity
 
 $$\boxed{G = \frac{E}{2(1+\mu)}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-042"
+  data-expression="E/(2*(1+mu))"
+  data-inputs="E:Young modulus Pa,mu:Poisson ratio"
+  data-result="G"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 $$\boxed{E_v = \frac{E}{3(1-2\mu)}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-043"
+  data-expression="E/(3*(1-2*mu))"
+  data-inputs="E:Young modulus Pa,mu:Poisson ratio"
+  data-result="E_v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 $$\frac9E = \frac3G+\frac1K$$
 

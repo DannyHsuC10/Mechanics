@@ -8,6 +8,17 @@ Angular position, velocity, and acceleration describe rotation about an axis. Th
 
 $$\boxed{\theta = \frac{S}{r}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-104"
+  data-expression="S/r"
+  data-inputs="S:arc length m,r:radius m"
+  data-result="theta"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 * unit
 $1rev = 360^\circ = (2\pi) rad$
 $1rad = 57.3^\circ = (0.159)rev$
@@ -41,6 +52,17 @@ $$K = \frac{1}{2}(\sum m_ir_i^2)𝜔^2$$
 $$I = \sum m_ir_i^2$$
 
 $$\boxed{K = \frac{1}{2}I𝜔^2}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-105"
+  data-expression="0.5*I*omega^2"
+  data-inputs="I:moment of inertia kg m^2,omega:angular speed rad/s"
+  data-result="K"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Moment of inertia
 
@@ -83,6 +105,17 @@ $$K_r^{\prime} = \frac{1}{2}𝜔^2(I_{com}+mr^2)$$
 $$K_r^{\prime} = \frac{1}{2}𝜔^2I^{\prime}$$
 
 $$\boxed{I^{\prime} = I_{com}+mr^2}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-106"
+  data-expression="I_com+m*r^2"
+  data-inputs="I_com:central inertia kg m^2,m:mass kg,r:axis offset m"
+  data-result="I_prime"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Torque
 
@@ -129,6 +162,17 @@ $$W = Fs = F(r\theta) = 𝜏\theta$$
 $$P = FV = F(𝜔r)$$
 
 $$\boxed{P = 𝜏𝜔}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-107"
+  data-expression="tau*omega"
+  data-inputs="tau:torque N m,omega:angular speed rad/s"
+  data-result="P"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Formula comparison
 

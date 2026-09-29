@@ -13,6 +13,17 @@ $$\vec F = \frac{GMm}{r^2}\vec r$$
 
 $$\boxed{F = \frac{GMm}{r^2}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-089"
+  data-expression="G*M*m/r^2"
+  data-inputs="G:gravitational constant,M:source mass kg,m:test mass kg,r:distance m"
+  data-result="F"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Surface gravity
 
 $$F = ma$$
@@ -43,6 +54,17 @@ $$= 0-(-\frac{GMm}{r})$$
 
 $$\boxed{W_g= \frac{GMm}{r}}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-090"
+  data-expression="G*M*m/r"
+  data-inputs="G:gravitational constant,M:source mass kg,m:test mass kg,r:distance m"
+  data-result="W_g"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
 ## Gravity inside the earth
 
 $$D = \frac{M_e}{\frac{4}{3}\pi R^3}$$
@@ -51,11 +73,33 @@ $$M = D\frac{4}{3}\pi r^3 = M_e\frac{r^3}{R^3}$$
 
 $$\boxed{F =\frac{GMm}{r^2} = \frac{GM_em}{R^3}r}$$
 
+<div
+  data-calculator=""
+  data-boxed-id="boxed-091"
+  data-expression="G*M_e*m*r/R^3"
+  data-inputs="G:gravitational constant,M_e:total sphere mass kg,m:test mass kg,r:interior radius m,R:sphere radius m"
+  data-result="F"
+  data-unit=""
+  data-constants=""
+  data-note="Uses the final equality for a point inside a uniform sphere, with r no larger than R.">
+</div>
+
 ## Escape velocity
 
 $$E = K+U = \frac{1}{2}mv^2-(\frac{GMm}{r}) = 0$$
 
 $$\boxed{v = \sqrt{\frac{2GM}{R}}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="boxed-092"
+  data-expression="(2*G*M/R)^0.5"
+  data-inputs="G:gravitational constant,M:mass kg,R:radius m"
+  data-result="v"
+  data-unit=""
+  data-constants=""
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
 
 ## Kepler's laws of planetary motion
 
