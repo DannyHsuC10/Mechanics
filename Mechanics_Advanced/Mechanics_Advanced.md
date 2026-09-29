@@ -36,7 +36,7 @@ Under construction!!!
 ## Practical considerations for Molecular Dynamics
 
 These notes review the numerical and modeling choices needed for molecular dynamics. Follow the topics from force fields and time integration to boundary conditions, temperature, pressure, and water models.
->created by : https://github.com/ComputeCanada
+>created by : https://github.com/ComputeCanada/molmodsim-md-theory-lesson-novice
 
 1. [Force_Fields_and_Interactions](Practical_considerations_for_Molecular_Dynamics/01-Force_Fields_and_Interactions.md)
 1. [Fast_Methods_to_Evaluate_Forces](Practical_considerations_for_Molecular_Dynamics/02-Fast_Methods_to_Evaluate_Forces.md)
