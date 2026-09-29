@@ -4,29 +4,36 @@ layout: base
 
 # Mechanical Principle
 
-### [Gear](Gear/gear.md)
+## Gear
 A gear also called a toothed wheel, is a rotating machine part typically used to transmit rotational motion or torque by means of a series of "teeth" that engage with compatible teeth of another gear or other part.
+1. [Gear](Gear/gear/Gear.md)
+1. [Gear Train](Gear/Gear_Train/Gear_Train.md)
+1. [Involute equation](Gear/Involute_equation/Involute_equation.md)
+1. [Involute Polar coordinates](Gear/Involute_Polar_coordinates/Involute_Polar_coordinates.md)
+1. [Gear geometry](Gear/Gear_geometry/Gear_geometry.md)
+1. [Special Angle](Gear/Special_Angle/Special_Angle.md)
+
+> **Download code**
+>* [gear](matlab/gear.m)
+>* [Gear Ratio](matlab/GearRatio.m)
+>* [gear plot](gear.py)
+
+
+
 
 ## Transmission
 1. [**Sprocket**](transmission/Sprocket/Sprocket.md) 
-    
-    * [Chain tension effect](matlab/chain_gear.m)
-
 1. [**Thread**](transmission/Thread/Thread.md) 
-
-    * [Thread Friction](matlab/Thread_Friction.m)
-
 1. [**Pulley**](transmission/Pulley/pulley.md)
-
 1. [**Belt pulley**](transmission/Belt_pulley/Belt_pulley.md) 
-
-    * [Tensions ratio](matlab/Tensions_ratio.m)
-
 1. [**Cam**](transmission/Cam/Cam.md) 
-    
-    * [cam](matlab/cam.m)
-
 1. [**Friction wheel**](transmission/Friction_wheel/Friction_wheel.md)
+
+> **Download code**
+>* [Chain tension effect](matlab/chain_gear.m)
+>* [Thread Friction](matlab/Thread_Friction.m)
+>* [Tensions ratio](matlab/Tensions_ratio.m)
+>* [cam](matlab/cam.m)
 
 ## Other components
 
