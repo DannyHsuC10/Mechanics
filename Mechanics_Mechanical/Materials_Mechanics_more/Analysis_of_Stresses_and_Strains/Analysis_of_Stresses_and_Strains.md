@@ -78,17 +78,17 @@ $$\frac{d^4y}{dx^4} = -\frac{q}{EI}$$
 
 $$EI\nu'' = M\qquad EI\nu''' = V\qquad EI\nu'''' = -q$$
 
-$$\boxed{\kappa = \frac{\nu''}{(1+\nu''^2)^{3/2}}}$$
+$$\boxed{\kappa = \frac{\nu''}{(1+(\nu')^2)^{3/2}}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-047"
-  data-expression="nu_second/(1+nu_second^2)^1.5"
-  data-inputs="nu_second:second derivative as written"
+  data-expression="nu_second/(1+nu_first^2)^1.5"
+  data-inputs="nu_second:second derivative 1/m,nu_first:first derivative dimensionless"
   data-result="kappa"
-  data-unit=""
+  data-unit="1/m"
   data-constants=""
-  data-note="Uses nu double-prime in both numerator and denominator exactly as printed; check the derivative notation before physical use.">
+  data-note="Signed curvature for deflection nu(x), using the sign convention of this page. Enter nu_first = dnu/dx and nu_second = d2nu/dx2; nu here denotes deflection rather than Poisson ratio.">
 </div>
 
 ## Method of Superposition

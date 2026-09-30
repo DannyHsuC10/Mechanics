@@ -131,28 +131,29 @@ $$\boxed{Q = \frac{\pi r^4_0}{8\mu}(\frac{dP}{dx})}$$
 
 $$2\gamma L = F_y$$
 
-* suface tension per unit lenght : $\gamma$
-* perimeter of the Object : $L$
+* Surface tension (force per unit contact length): $\gamma$
+* Effective total contact length in the relation above: $2L$.
 
 <div style="text-align: center;">
 <img src="upload_aa2167159f81dbc86eac8ffeb1038cf1.png" alt="image" width="200">
 </div>
 
-$$2\gamma L+V\rho = F_y+F_b = w$$
+$$2\gamma L+V\rho g = F_y+F_b = w$$
 
 * The weight of an object supported by surface tension : $w$
+* Here V is submerged volume, rho is fluid density, and F is the net surface-tension force after accounting for buoyancy. The effective contact length includes the force-direction projection.
 
-$$\boxed{\gamma = \frac{2L}F}$$
+$$\boxed{\gamma = \frac{F}{2L}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-117"
-  data-expression="2*L/F"
-  data-inputs="L:length m,F:force N"
+  data-expression="F/(2*L)"
+  data-inputs="F:net surface tension force N,L:half of effective total contact length m"
   data-result="gamma"
-  data-unit=""
+  data-unit="N/m"
   data-constants=""
-  data-note="Evaluates 2L/F exactly as printed, with result in m/N. Review the source before interpreting this as surface tension.">
+  data-note="Uses F = gamma*(2L), with effective total contact length 2L. For a film with two faces, L is the contact length on one face. If L already denotes the total effective contact length, use F/L instead.">
 </div>
 
 ## Lift and Drag

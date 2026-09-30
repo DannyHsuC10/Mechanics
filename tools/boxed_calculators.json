@@ -1,11 +1,5 @@
 [
   {
-    "id": "boxed-001",
-    "file": "Mechanics_Advanced/Statistical_Mechanics/Maximum_Entropy_Principle.md",
-    "tex": "\\text{Probability distribution of microstates } {p_i}",
-    "pending": "This box names a probability distribution but provides no numerical rule. Add the distribution or its constraints to configure a calculator."
-  },
-  {
     "id": "boxed-002",
     "file": "Mechanics_Mechanical/Dynamics/Energy_and_Work.md",
     "tex": "U_k = \\frac12kx^2",
@@ -96,11 +90,12 @@
   {
     "id": "boxed-013",
     "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
-    "tex": "v_{2f} = \\frac{v_{2i}(m_1-m_2)+2m_2v_{1i}}{m_1+m_2}",
-    "expression": "(v_2i*(m_1-m_2)+2*m_2*v_1i)/(m_1+m_2)",
+    "tex": "v_{2f} = \\frac{v_{2i}(m_2-m_1)+2m_1v_{1i}}{m_1+m_2}",
+    "expression": "(v_2i*(m_2-m_1)+2*m_1*v_1i)/(m_1+m_2)",
     "result": "v_2f",
     "inputs": "v_2i:initial velocity 2 m/s,m_1:mass 1 kg,m_2:mass 2 kg,v_1i:initial velocity 1 m/s",
-    "note": "Evaluates the coefficients exactly as printed; the second collision equation should be reviewed before physical use."
+    "note": "For a one-dimensional perfectly elastic collision. Use signed velocities along the same axis and positive masses.",
+    "unit": "m/s"
   },
   {
     "id": "boxed-014",
@@ -111,12 +106,6 @@
     "inputs": "E_f:final energy J,E_i:initial energy J"
   },
   {
-    "id": "boxed-015",
-    "file": "Mechanics_Mechanical/dynamics_more/Kinematics_of_particles/Kinematics_of_particles.md",
-    "tex": "r = \\frac{\\sqrt{1+dy'^2}}{\\frac{y''}{1+y'^2}} = \\frac{(1+dy'^2)^{\\frac{3}{2}}}{y''}",
-    "pending": "The printed dy-prime and y-prime notation is inconsistent between the equalities. Clarify the intended first and second derivatives before numerical evaluation."
-  },
-  {
     "id": "boxed-016",
     "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
     "tex": "\\vec v_r = \\omega\\frac{dr}{d\\theta} = \\frac{d}{d\\theta}(\\frac{-l}r)",
@@ -124,12 +113,6 @@
     "result": "v_r",
     "inputs": "omega:angular speed rad/s,dr_dtheta:radial derivative m/rad",
     "note": "Evaluates the first equality. Supply dr/dtheta numerically at the point of interest."
-  },
-  {
-    "id": "boxed-017",
-    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
-    "tex": "\\vec a_r = \\frac{v_t^2}{r}\\frac{d^2}{d\\theta^2}",
-    "pending": "The second derivative has no operand in this boxed expression. Specify the differentiated function before configuring a numerical calculator."
   },
   {
     "id": "boxed-018",
@@ -357,11 +340,11 @@
   {
     "id": "boxed-045",
     "file": "Mechanics_Mechanical/Materials_Mechanics/Volumetric_strain/Volumetric_strain.md",
-    "tex": "\\frac{dV}{V} = 3\\frac{P}{A}\\frac1E_V(1-2\\mu)",
-    "expression": "3*(P/A)/E_V*(1-2*mu)",
+    "tex": "\\frac{dV}{V} = 3\\frac{P}{A}\\frac{1-2\\mu}{E} = \\frac{P/A}{E_V}",
+    "expression": "3*(P/A)*(1-2*mu)/E",
     "result": "dV/V",
-    "inputs": "P:force N,A:area m^2,E_V:modulus Pa,mu:Poisson ratio",
-    "note": "Evaluates the displayed factors literally; confirm the definition of E_V before physical use."
+    "inputs": "P:signed force N,A:area m^2,mu:Poisson ratio,E:Young modulus Pa",
+    "note": "Small strains in an isotropic linear elastic solid. P/A is positive in tension and negative in compression. E is Young modulus; E_V is bulk modulus. For positive compressive pressure p use P/A = -p."
   },
   {
     "id": "boxed-046",
@@ -374,11 +357,12 @@
   {
     "id": "boxed-047",
     "file": "Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md",
-    "tex": "\\kappa = \\frac{\\nu''}{(1+\\nu''^2)^{3/2}}",
-    "expression": "nu_second/(1+nu_second^2)^1.5",
+    "tex": "\\kappa = \\frac{\\nu''}{(1+(\\nu')^2)^{3/2}}",
+    "expression": "nu_second/(1+nu_first^2)^1.5",
     "result": "kappa",
-    "inputs": "nu_second:second derivative as written",
-    "note": "Uses nu double-prime in both numerator and denominator exactly as printed; check the derivative notation before physical use."
+    "inputs": "nu_second:second derivative 1/m,nu_first:first derivative dimensionless",
+    "note": "Signed curvature for deflection nu(x), using the sign convention of this page. Enter nu_first = dnu/dx and nu_second = d2nu/dx2; nu here denotes deflection rather than Poisson ratio.",
+    "unit": "1/m"
   },
   {
     "id": "boxed-048",
@@ -432,11 +416,12 @@
   {
     "id": "boxed-054",
     "file": "Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md",
-    "tex": "G=  \\frac{E}{1(+\\nu)}",
-    "expression": "E/(1*nu)",
+    "tex": "G=  \\frac{E}{2(1+\\nu)}",
+    "expression": "E/(2*(1+nu))",
     "result": "G",
-    "inputs": "E:modulus,nu:coefficient as written",
-    "note": "Literal evaluation of E/[1(+nu)] = E/nu. The printed denominator needs review before physical use."
+    "inputs": "E:Young modulus Pa,nu:Poisson ratio",
+    "note": "Enter Young modulus E in pascals and the dimensionless Poisson ratio nu. The result is the shear modulus G in pascals.",
+    "unit": "Pa"
   },
   {
     "id": "boxed-055",
@@ -587,11 +572,12 @@
   {
     "id": "boxed-073",
     "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
-    "tex": "PV = nPT",
-    "expression": "n*T",
-    "result": "V (for nonzero P)",
-    "inputs": "n:amount as written,T:temperature as written",
-    "note": "The source reads PV = nPT. For nonzero P it gives V = nT; this is not the usual ideal-gas equation. Review the source before physical use."
+    "tex": "PV = nRT",
+    "expression": "n*R*T/P",
+    "result": "V",
+    "inputs": "n:amount mol,R:gas constant J/(mol K),T:absolute temperature K,P:absolute pressure Pa",
+    "note": "Solves the ideal-gas equation for volume V. Use positive absolute temperature and pressure; R is approximately 8.314462618 J/(mol K).",
+    "unit": "m^3"
   },
   {
     "id": "boxed-074",
@@ -614,12 +600,13 @@
   {
     "id": "boxed-076",
     "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
-    "tex": "P = \\frac{RT}{V^2}(B_0RT-A_0-\\frac{C_0}{T^2})\\frac{1}{V^2}+\\frac{bRT-a}{v^3}+\\frac{a\\alpha}{V^6}+\\frac c{V^3T^2}(1+\\frac{\\gamma}{v^2})e^{-\\gamma/V^2}",
-    "expression": "R*T/V^2*(B_0*R*T-A_0-C_0/T^2)/V^2+(b*R*T-a)/v^3+a*alpha/V^6+c/(V^3*T^2)*(1+gamma/v^2)*e^(0-gamma/V^2)",
+    "tex": "P = \\frac{RT}{V_m}+\\frac{B_0RT-A_0-C_0/T^2}{V_m^2}+\\frac{bRT-a}{V_m^3}+\\frac{a\\alpha}{V_m^6}+\\frac{c}{V_m^3T^2}\\left(1+\\frac{\\gamma}{V_m^2}\\right)e^{-\\gamma/V_m^2}",
+    "expression": "R*T/V_m+(B_0*R*T-A_0-C_0/T^2)/V_m^2+(b*R*T-a)/V_m^3+a*alpha/V_m^6+c/(V_m^3*T^2)*(1+gamma/V_m^2)*e^(-gamma/V_m^2)",
     "result": "P",
-    "inputs": "R:gas constant,T:temperature,V:uppercase volume,B_0:coefficient,A_0:coefficient,C_0:coefficient,b:coefficient,a:coefficient,v:lowercase volume,alpha:coefficient,c:coefficient,gamma:coefficient",
+    "inputs": "R:gas constant J/(mol K),T:temperature K,V_m:molar volume m^3/mol,B_0:coefficient m^3/mol,A_0:coefficient Pa m^6/mol^2,C_0:coefficient Pa m^6 K^2/mol^2,b:coefficient m^6/mol^2,a:coefficient Pa m^9/mol^3,alpha:coefficient m^9/mol^3,c:coefficient Pa m^9 K^2/mol^3,gamma:coefficient m^6/mol^2",
     "constants": "e=2.718281828459045",
-    "note": "Uses every factor exactly as printed. Uppercase V and lowercase v are separate inputs; verify the notation and coefficient units."
+    "note": "Original eight-parameter Benedict-Webb-Rubin equation. V_m is molar volume (total volume divided by amount), not total volume. Use a consistent SI coefficient set for the fluid and its valid temperature/density range.",
+    "unit": "Pa"
   },
   {
     "id": "boxed-077",
@@ -780,11 +767,12 @@
   {
     "id": "boxed-096",
     "file": "Mechanics_Physics/Classic/Kinetic_energy_and_work_and_potential_energy/Kinetic_energy_and_work_and_potential_energy.md",
-    "tex": "U = -\\frac{1}{2}kx^2",
-    "expression": "0-0.5*k*x^2",
+    "tex": "U = \\frac{1}{2}kx^2",
+    "expression": "0.5*k*x^2",
     "result": "U",
     "inputs": "k:stiffness N/m,x:displacement m",
-    "note": "Preserves the negative sign shown in the source expression."
+    "note": "Elastic potential energy of a linear spring, with U = 0 at its unstretched position. Enter stiffness k and extension or compression x.",
+    "unit": "J"
   },
   {
     "id": "boxed-097",
@@ -828,20 +816,22 @@
   {
     "id": "boxed-101",
     "file": "Mechanics_Physics/Classic/Roll_and_Angular_Momentum/Roll_and_Angular_Momentum.md",
-    "tex": "\\frac{1}{2}mv_{com}^2+\\frac{1}{2}I_{com}^2",
-    "expression": "0.5*m*v_com^2+0.5*I_com^2",
-    "result": "Boxed expression",
-    "inputs": "m:mass as written,v_com:speed as written,I_com:inertia as written",
-    "note": "Evaluates the printed expression literally. The rotational term I_com squared needs review before this result can be interpreted as energy."
+    "tex": "K = \\frac{1}{2}mv_{com}^2+\\frac{1}{2}I_{com}\\omega^2",
+    "expression": "0.5*m*v_com^2+0.5*I_com*omega^2",
+    "result": "K",
+    "inputs": "m:mass kg,v_com:center of mass speed m/s,I_com:central moment of inertia kg m^2,omega:angular speed rad/s",
+    "note": "Total kinetic energy is translation of the center of mass plus rotation about it. For rolling without slipping, v_com = omega*r.",
+    "unit": "J"
   },
   {
     "id": "boxed-102",
     "file": "Mechanics_Physics/Classic/Roll_and_Angular_Momentum/Roll_and_Angular_Momentum.md",
-    "tex": "a = F_{net}/m = \\frac{Ia}{mR^2}+g",
-    "expression": "F_net/m",
+    "tex": "a = \\frac{F_{net}}{m} = g-\\frac{Ia}{mR^2} = \\frac{g}{1+I/(mR^2)}",
+    "expression": "g/(1+I/(m*R^2))",
     "result": "a",
-    "inputs": "F_net:net force N,m:mass kg",
-    "note": "Uses a = F_net/m. The later equality has a sign inconsistency with the preceding derivation and is not used."
+    "inputs": "g:gravity m/s^2,I:central moment of inertia kg m^2,m:mass kg,R:string winding radius m",
+    "note": "Downward acceleration of a yo-yo unwinding from a fixed massless string without slipping. R is the axle radius where the string winds, not necessarily the outer body radius.",
+    "unit": "m/s^2"
   },
   {
     "id": "boxed-103",
@@ -965,11 +955,12 @@
   {
     "id": "boxed-117",
     "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/fluid_properties/fluid_properties.md",
-    "tex": "\\gamma = \\frac{2L}F",
-    "expression": "2*L/F",
+    "tex": "\\gamma = \\frac{F}{2L}",
+    "expression": "F/(2*L)",
     "result": "gamma",
-    "inputs": "L:length m,F:force N",
-    "note": "Evaluates 2L/F exactly as printed, with result in m/N. Review the source before interpreting this as surface tension."
+    "inputs": "F:net surface tension force N,L:half of effective total contact length m",
+    "note": "Uses F = gamma*(2L), with effective total contact length 2L. For a film with two faces, L is the contact length on one face. If L already denotes the total effective contact length, use F/L instead.",
+    "unit": "N/m"
   },
   {
     "id": "boxed-118",
@@ -1031,21 +1022,23 @@
   {
     "id": "boxed-125",
     "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
-    "tex": "v_{rms} = \\sqrt{\\frac{2RT}{M}}",
+    "tex": "v_p = \\sqrt{\\frac{2RT}{M}}",
     "expression": "(2*R*T/M)^0.5",
-    "result": "v_rms (as labeled)",
+    "result": "v_p",
     "inputs": "R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol",
-    "note": "Uses the printed factor 2; the formula corresponds to the most probable speed even though the source labels it v_rms."
+    "note": "Most probable speed (the peak of the Maxwell-Boltzmann speed distribution). Use absolute temperature T and molar mass M in kg/mol.",
+    "unit": "m/s"
   },
   {
     "id": "boxed-126",
     "file": "Mechanics_Physics/Fluid_Gas_Heat_statistic/Kinetic_theory_of_gases/Kinetic_theory_of_gases.md",
-    "tex": "v_{rms} = \\sqrt{\\frac{8RT}{\\pi M}}",
+    "tex": "v_{avg} = \\sqrt{\\frac{8RT}{\\pi M}}",
     "expression": "(8*R*T/(pi*M))^0.5",
-    "result": "v_rms (as labeled)",
+    "result": "v_avg",
     "inputs": "R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol",
     "constants": "pi=3.141592653589793",
-    "note": "Uses the printed factor 8/pi; the formula corresponds to mean speed even though the source labels it v_rms."
+    "note": "Mean speed in the Maxwell-Boltzmann speed distribution. This is distinct from the root mean square speed; use molar mass M in kg/mol.",
+    "unit": "m/s"
   },
   {
     "id": "boxed-127",
@@ -1154,8 +1147,12 @@
   {
     "id": "boxed-140",
     "file": "Mechanics_Physics/Modern/Relativity/Relativity.md",
-    "tex": "m' = \\frac{m_0}{\\sqrt{1-\\frac{v2}{c2}}}",
-    "pending": "The source prints v2/c2 rather than squared variables. Clarify whether these are products or missing exponents before numerical evaluation."
+    "tex": "m' = \\frac{m_0}{\\sqrt{1-\\frac{v^2}{c^2}}}",
+    "expression": "m_0/(1-v^2/c^2)^0.5",
+    "inputs": "m_0:rest mass kg,v:relative speed m/s,c:speed of light m/s",
+    "result": "m_prime",
+    "unit": "kg",
+    "note": "Relativistic mass convention: m_prime = gamma*m_0 = total energy/c^2. Rest mass m_0 is invariant. Use c = 299792458 m/s and a speed magnitude smaller than c."
   },
   {
     "id": "boxed-141",

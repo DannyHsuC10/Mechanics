@@ -113,17 +113,17 @@ $$\boxed{v_{1f} = \frac{v_{1i}(m_1-m_2)+2m_2v_{2i}}{m_1+m_2}}$$
   data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
 </div>
 
-$$\boxed{v_{2f} = \frac{v_{2i}(m_1-m_2)+2m_2v_{1i}}{m_1+m_2}}$$
+$$\boxed{v_{2f} = \frac{v_{2i}(m_2-m_1)+2m_1v_{1i}}{m_1+m_2}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-013"
-  data-expression="(v_2i*(m_1-m_2)+2*m_2*v_1i)/(m_1+m_2)"
+  data-expression="(v_2i*(m_2-m_1)+2*m_1*v_1i)/(m_1+m_2)"
   data-inputs="v_2i:initial velocity 2 m/s,m_1:mass 1 kg,m_2:mass 2 kg,v_1i:initial velocity 1 m/s"
   data-result="v_2f"
-  data-unit=""
+  data-unit="m/s"
   data-constants=""
-  data-note="Evaluates the coefficients exactly as printed; the second collision equation should be reviewed before physical use.">
+  data-note="For a one-dimensional perfectly elastic collision. Use signed velocities along the same axis and positive masses.">
 </div>
 
 ### 1D Completely inelastic collision

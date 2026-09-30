@@ -6,17 +6,17 @@ layout: base
 
 Gas equations of state relate pressure, volume, and temperature. This page begins with the ideal-gas model and then introduces corrections for nonideal behavior.
 
-$$\boxed{PV = nPT}$$
+$$\boxed{PV = nRT}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-073"
-  data-expression="n*T"
-  data-inputs="n:amount as written,T:temperature as written"
-  data-result="V (for nonzero P)"
-  data-unit=""
+  data-expression="n*R*T/P"
+  data-inputs="n:amount mol,R:gas constant J/(mol K),T:absolute temperature K,P:absolute pressure Pa"
+  data-result="V"
+  data-unit="m^3"
   data-constants=""
-  data-note="The source reads PV = nPT. For nonzero P it gives V = nT; this is not the usual ideal-gas equation. Review the source before physical use.">
+  data-note="Solves the ideal-gas equation for volume V. Use positive absolute temperature and pressure; R is approximately 8.314462618 J/(mol K).">
 </div>
 
 ## Improve accuracy
@@ -68,15 +68,17 @@ $$B = B_0(1-b/V)$$
 
 ## Improve accuracy(Benedict Webb Rubin)
 
-$$\boxed{P = \frac{RT}{V^2}(B_0RT-A_0-\frac{C_0}{T^2})\frac{1}{V^2}+\frac{bRT-a}{v^3}+\frac{a\alpha}{V^6}+\frac c{V^3T^2}(1+\frac{\gamma}{v^2})e^{-\gamma/V^2}}$$
+This equation uses molar volume $V_m=V/n$ throughout. Its leading ideal-gas term is $RT/V_m$; the remaining terms are additive density corrections with fluid-specific coefficients.
+
+$$\boxed{P = \frac{RT}{V_m}+\frac{B_0RT-A_0-C_0/T^2}{V_m^2}+\frac{bRT-a}{V_m^3}+\frac{a\alpha}{V_m^6}+\frac{c}{V_m^3T^2}\left(1+\frac{\gamma}{V_m^2}\right)e^{-\gamma/V_m^2}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-076"
-  data-expression="R*T/V^2*(B_0*R*T-A_0-C_0/T^2)/V^2+(b*R*T-a)/v^3+a*alpha/V^6+c/(V^3*T^2)*(1+gamma/v^2)*e^(0-gamma/V^2)"
-  data-inputs="R:gas constant,T:temperature,V:uppercase volume,B_0:coefficient,A_0:coefficient,C_0:coefficient,b:coefficient,a:coefficient,v:lowercase volume,alpha:coefficient,c:coefficient,gamma:coefficient"
+  data-expression="R*T/V_m+(B_0*R*T-A_0-C_0/T^2)/V_m^2+(b*R*T-a)/V_m^3+a*alpha/V_m^6+c/(V_m^3*T^2)*(1+gamma/V_m^2)*e^(-gamma/V_m^2)"
+  data-inputs="R:gas constant J/(mol K),T:temperature K,V_m:molar volume m^3/mol,B_0:coefficient m^3/mol,A_0:coefficient Pa m^6/mol^2,C_0:coefficient Pa m^6 K^2/mol^2,b:coefficient m^6/mol^2,a:coefficient Pa m^9/mol^3,alpha:coefficient m^9/mol^3,c:coefficient Pa m^9 K^2/mol^3,gamma:coefficient m^6/mol^2"
   data-result="P"
-  data-unit=""
+  data-unit="Pa"
   data-constants="e=2.718281828459045"
-  data-note="Uses every factor exactly as printed. Uppercase V and lowercase v are separate inputs; verify the notation and coefficient units.">
+  data-note="Original eight-parameter Benedict-Webb-Rubin equation. V_m is molar volume (total volume divided by amount), not total volume. Use a consistent SI coefficient set for the fluid and its valid temperature/density range.">
 </div>

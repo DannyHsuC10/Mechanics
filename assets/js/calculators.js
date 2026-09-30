@@ -6,6 +6,20 @@ const OPERATORS = {
   "^": { precedence: 3, associativity: "right", apply: (a, b) => a ** b }
 };
 
+// Trigonometric arguments and inverse-trigonometric results use radians.
+const FUNCTIONS = {
+  sin: Math.sin,
+  cos: Math.cos,
+  tan: Math.tan,
+  arcsin: Math.asin,
+  arccos: Math.acos,
+  arctan: Math.atan,
+  asin: Math.asin,
+  acos: Math.acos,
+  atan: Math.atan,
+  ln: Math.log
+};
+
 function splitList(value) {
   return (value || "")
     .split(",")
@@ -38,165 +52,130 @@ function parseConstants(value) {
 function tokenize(expression) {
   const tokens = [];
   let index = 0;
-  let previousType = "operator";
-
   while (index < expression.length) {
     const char = expression[index];
-
-    if (/\s/.test(char)) {
-      index += 1;
-      continue;
-    }
-
-    const isUnaryMinus = char === "-" && (previousType === "operator" || previousType === "(");
-    const isSignedNumber = isUnaryMinus && /[0-9.]/.test(expression[index + 1] || "");
-
-    if (/[0-9.]/.test(char) || isSignedNumber) {
-      const match = expression.slice(index).match(/^-?\d*\.?\d+(?:e[+-]?\d+)?/i);
-
-      if (!match) {
-        throw new Error("Invalid number.");
-      }
-
+    if (/\s/.test(char)) { index++; continue; }
+    if (/[0-9.]/.test(char)) {
+      const match = expression.slice(index).match(/^(?:\d+(?:\.\d*)?|\.\d+)(?:e[+-]?\d+)?/i);
+      if (!match || !Number.isFinite(Number(match[0]))) throw new Error("Invalid number.");
       tokens.push({ type: "number", value: Number(match[0]) });
       index += match[0].length;
-      previousType = "number";
       continue;
     }
-
     if (/[A-Za-z_]/.test(char)) {
-      const match = expression.slice(index).match(/^[A-Za-z_][A-Za-z0-9_]*/);
-      tokens.push({ type: "identifier", value: match[0] });
-      index += match[0].length;
-      previousType = "identifier";
+      const name = expression.slice(index).match(/^[A-Za-z_][A-Za-z0-9_]*/)[0];
+      index += name.length;
+      const isFunction = expression.slice(index).trimStart().startsWith("(");
+      tokens.push({ type: isFunction ? "function" : "identifier", value: name });
       continue;
     }
-
     if (char === "(" || char === ")") {
       tokens.push({ type: char });
-      index += 1;
-      previousType = char;
-      continue;
-    }
-
-    if (Object.hasOwn(OPERATORS, char)) {
-      if (isUnaryMinus) {
-        tokens.push({ type: "number", value: 0 });
-      }
-
+    } else if (Object.hasOwn(OPERATORS, char)) {
       tokens.push({ type: "operator", value: char });
-      index += 1;
-      previousType = "operator";
-      continue;
+    } else {
+      throw new Error(`Unsupported character: ${char}`);
     }
-
-    throw new Error(`Unsupported character: ${char}`);
+    index++;
   }
-
   return tokens;
 }
 
 function toRpn(tokens) {
   const output = [];
-  const operators = [];
-
-  tokens.forEach((token) => {
+  let index = 0;
+  const isOperator = (...names) => tokens[index]?.type === "operator" && names.includes(tokens[index].value);
+  function closeParenthesis() {
+    if (tokens[index]?.type !== ")") throw new Error("Mismatched parentheses.");
+    index++;
+  }
+  function primary() {
+    const token = tokens[index++];
+    if (!token) throw new Error("Invalid expression.");
     if (token.type === "number" || token.type === "identifier") {
       output.push(token);
-      return;
+    } else if (token.type === "(") {
+      sum();
+      closeParenthesis();
+    } else if (token.type === "function") {
+      if (!Object.hasOwn(FUNCTIONS, token.value)) throw new Error(`Unsupported function: ${token.value}`);
+      if (tokens[index++]?.type !== "(") throw new Error("Expected function parentheses.");
+      sum();
+      closeParenthesis();
+      output.push(token);
+    } else {
+      throw new Error("Invalid expression.");
     }
-
-    if (token.type === "operator") {
-      const current = OPERATORS[token.value];
-
-      while (operators.length > 0) {
-        const top = operators[operators.length - 1];
-
-        if (top.type !== "operator") {
-          break;
-        }
-
-        const previous = OPERATORS[top.value];
-        const shouldPop =
-          previous.precedence > current.precedence ||
-          (previous.precedence === current.precedence &&
-            current.associativity === "left");
-
-        if (!shouldPop) {
-          break;
-        }
-
-        output.push(operators.pop());
-      }
-
-      operators.push(token);
-      return;
-    }
-
-    if (token.type === "(") {
-      operators.push(token);
-      return;
-    }
-
-    if (token.type === ")") {
-      while (operators.length > 0 && operators[operators.length - 1].type !== "(") {
-        output.push(operators.pop());
-      }
-
-      if (operators.length === 0) {
-        throw new Error("Mismatched parentheses.");
-      }
-
-      operators.pop();
-    }
-  });
-
-  while (operators.length > 0) {
-    const token = operators.pop();
-
-    if (token.type === "(" || token.type === ")") {
-      throw new Error("Mismatched parentheses.");
-    }
-
-    output.push(token);
   }
-
+  function power() {
+    primary();
+    if (isOperator("^")) {
+      const operator = tokens[index++];
+      // A signed exponent is allowed, and powers associate to the right.
+      unary();
+      output.push(operator);
+    }
+  }
+  function unary() {
+    if (isOperator("+", "-")) {
+      const sign = tokens[index++].value;
+      unary();
+      output.push({ type: "unary", value: sign });
+    } else {
+      // Exponentiation binds tighter than a leading sign: -2^2 = -(2^2).
+      power();
+    }
+  }
+  function product() {
+    unary();
+    while (isOperator("*", "/")) {
+      const operator = tokens[index++];
+      unary();
+      output.push(operator);
+    }
+  }
+  function sum() {
+    product();
+    while (isOperator("+", "-")) {
+      const operator = tokens[index++];
+      product();
+      output.push(operator);
+    }
+  }
+  sum();
+  if (index !== tokens.length) throw new Error("Invalid expression. Use explicit multiplication and balanced parentheses.");
   return output;
 }
 
 function evaluateRpn(tokens, values) {
   const stack = [];
-
-  tokens.forEach((token) => {
+  function push(value) {
+    if (!Number.isFinite(value)) throw new Error("Could not calculate a finite result.");
+    stack.push(value);
+  }
+  for (const token of tokens) {
     if (token.type === "number") {
-      stack.push(token.value);
-      return;
-    }
-
-    if (token.type === "identifier") {
-      if (!Object.hasOwn(values, token.value)) {
-        throw new Error(`Missing value: ${token.value}`);
-      }
-
-      stack.push(values[token.value]);
-      return;
-    }
-
-    if (token.type === "operator") {
-      if (stack.length < 2) {
-        throw new Error("Invalid expression.");
-      }
-
+      push(token.value);
+    } else if (token.type === "identifier") {
+      if (!Object.hasOwn(values, token.value)) throw new Error(`Missing value: ${token.value}`);
+      push(values[token.value]);
+    } else if (token.type === "operator") {
+      if (stack.length < 2) throw new Error("Invalid expression.");
       const right = stack.pop();
       const left = stack.pop();
-      stack.push(OPERATORS[token.value].apply(left, right));
+      push(OPERATORS[token.value].apply(left, right));
+    } else if (token.type === "unary" || token.type === "function") {
+      if (stack.length < 1) throw new Error("Invalid expression.");
+      const value = stack.pop();
+      if (token.type === "unary") {
+        push(token.value === "-" ? -value : value);
+      } else {
+        if (!Object.hasOwn(FUNCTIONS, token.value)) throw new Error(`Unsupported function: ${token.value}`);
+        push(FUNCTIONS[token.value](value));
+      }
     }
-  });
-
-  if (stack.length !== 1 || !Number.isFinite(stack[0])) {
-    throw new Error("Could not calculate a finite result.");
   }
-
+  if (stack.length !== 1) throw new Error("Invalid expression.");
   return stack[0];
 }
 

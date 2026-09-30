@@ -164,11 +164,4 @@ $$\frac{dS}{dx} = \sqrt{1^2+\frac{dy}{dx}^2}$$
 
 $$\frac{dS}{dx} = \sqrt{1^2+dy'^2}$$
 
-$$\boxed{r = \frac{\sqrt{1+dy'^2}}{\frac{y''}{1+y'^2}} = \frac{(1+dy'^2)^{\frac{3}{2}}}{y''}}$$
-
-<div
-  data-calculator=""
-  data-boxed-id="boxed-015"
-  data-pending="The printed dy-prime and y-prime notation is inconsistent between the equalities. Clarify the intended first and second derivatives before numerical evaluation."
-  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
-</div>
+$$r = \frac{\sqrt{1+dy'^2}}{\frac{y''}{1+y'^2}} = \frac{(1+dy'^2)^{\frac{3}{2}}}{y''}$$

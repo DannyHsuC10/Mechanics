@@ -22,17 +22,17 @@ $$v_{top} = 2𝜔r = 2v_{com}$$
 
 * energy
 
-$$\boxed{\frac{1}{2}mv_{com}^2+\frac{1}{2}I_{com}^2}$$
+$$\boxed{K = \frac{1}{2}mv_{com}^2+\frac{1}{2}I_{com}\omega^2}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-101"
-  data-expression="0.5*m*v_com^2+0.5*I_com^2"
-  data-inputs="m:mass as written,v_com:speed as written,I_com:inertia as written"
-  data-result="Boxed expression"
-  data-unit=""
+  data-expression="0.5*m*v_com^2+0.5*I_com*omega^2"
+  data-inputs="m:mass kg,v_com:center of mass speed m/s,I_com:central moment of inertia kg m^2,omega:angular speed rad/s"
+  data-result="K"
+  data-unit="J"
   data-constants=""
-  data-note="Evaluates the printed expression literally. The rotational term I_com squared needs review before this result can be interpreted as energy.">
+  data-note="Total kinetic energy is translation of the center of mass plus rotation about it. For rolling without slipping, v_com = omega*r.">
 </div>
 
 ## Down hill rolling
@@ -61,27 +61,29 @@ $$a = g\cdot sin\theta-\frac{Ia}{mR^2}$$
 
 ## YO-YO
 
+Take downward as positive. The upward string tension is F_t, and R is the string winding radius. The string is fixed, massless, and does not slip on the axle.
+
 <div style="text-align: center;">
 <img src="upload_53d378503d6bd0b747ea7fa402a16939.png" alt="image" width="150">
 </div>
 
-$$𝜏 = Fr = f_sr = r\mu mg\cdot cos\theta = I𝛼$$
+$$\tau = F_tR = I\alpha,\qquad a=\alpha R$$
 
-$$f_s = \frac{Ia}{R^2}$$
+$$F_t = \frac{Ia}{R^2}$$
 
 $$F_{net} = mg-\frac{Ia}{R^2}$$
 
-$$\boxed{a = F_{net}/m = \frac{Ia}{mR^2}+g}$$
+$$\boxed{a = \frac{F_{net}}{m} = g-\frac{Ia}{mR^2} = \frac{g}{1+I/(mR^2)}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-102"
-  data-expression="F_net/m"
-  data-inputs="F_net:net force N,m:mass kg"
+  data-expression="g/(1+I/(m*R^2))"
+  data-inputs="g:gravity m/s^2,I:central moment of inertia kg m^2,m:mass kg,R:string winding radius m"
   data-result="a"
-  data-unit=""
+  data-unit="m/s^2"
   data-constants=""
-  data-note="Uses a = F_net/m. The later equality has a sign inconsistency with the preceding derivation and is not used.">
+  data-note="Downward acceleration of a yo-yo unwinding from a fixed massless string without slipping. R is the axle radius where the string winds, not necessarily the outer body radius.">
 </div>
 
 ## Angular Momentum

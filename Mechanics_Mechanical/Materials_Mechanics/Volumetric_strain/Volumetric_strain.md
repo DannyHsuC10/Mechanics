@@ -19,25 +19,27 @@ $$= 1+\frac{dx}{x}+\frac{dy}{y}+\frac{dz}{z}+\frac{dxdy}{xy}+\frac{dydz}{yz}+\fr
 
 $$= 1+\frac{dx}{x}+\frac{dy}{y}+\frac{dz}{z}$$
 
-$$\frac{dV+V}{V} = 1+dV = 1+\frac{dx}{x}+\frac{dy}{y}+\frac{dz}{z}$$
+$$\frac{dV+V}{V} = 1+\frac{dV}{V} = 1+\frac{dx}{x}+\frac{dy}{y}+\frac{dz}{z}$$
 
-$$dV = \frac{dx}{x}+\frac{dy}{y}+\frac{dz}{z}$$
+$$\frac{dV}{V} = \frac{dx}{x}+\frac{dy}{y}+\frac{dz}{z}$$
 
 ## Uniform stress
 
+Here E is Young modulus, E_V is bulk modulus, and mu is Poisson ratio. Normal stress P/A is tensile-positive. A positive compressive pressure p therefore gives dV/V = -p/E_V. The relations assume small strain and isotropic linear elasticity.
+
 $$\frac{P_x}{A_{\perp x}} = \frac{P_y}{A_{\perp y}} = \frac{P_z}{A_{\perp z}}$$
 
-$$\boxed{\frac{dV}{V} = 3\frac{P}{A}\frac1E_V(1-2\mu)}$$
+$$\boxed{\frac{dV}{V} = 3\frac{P}{A}\frac{1-2\mu}{E} = \frac{P/A}{E_V}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-045"
-  data-expression="3*(P/A)/E_V*(1-2*mu)"
-  data-inputs="P:force N,A:area m^2,E_V:modulus Pa,mu:Poisson ratio"
+  data-expression="3*(P/A)*(1-2*mu)/E"
+  data-inputs="P:signed force N,A:area m^2,mu:Poisson ratio,E:Young modulus Pa"
   data-result="dV/V"
   data-unit=""
   data-constants=""
-  data-note="Evaluates the displayed factors literally; confirm the definition of E_V before physical use.">
+  data-note="Small strains in an isotropic linear elastic solid. P/A is positive in tension and negative in compression. E is Young modulus; E_V is bulk modulus. For positive compressive pressure p use P/A = -p.">
 </div>
 
 ## Volume elastic modulus
@@ -46,7 +48,7 @@ $$\frac{F}{A} = E_V\frac{dV}{V}$$
 
 $$E_V = \frac{\frac{P}{A}}{\frac{dV}{V}}$$
 
-$$= \frac{\frac{P}{A}}{ 3\frac{P}{A}\frac1E_V(1-2\mu)}$$
+$$= \frac{\frac{P}{A}}{ 3\frac{P}{A}\frac{1-2\mu}{E}}$$
 
 $$\boxed{E_V = \frac{E}{3(1-2\mu)} = \frac{E}{3-6\mu}}$$
 

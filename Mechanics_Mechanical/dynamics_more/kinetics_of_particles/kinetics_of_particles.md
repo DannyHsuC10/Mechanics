@@ -163,14 +163,7 @@ $$\ddot r = -l^2u^2\frac{d^2u}{d\theta^2}$$
 
 $$\frac{l}{r} = r\omega = v_t$$
 
-$$\boxed{\vec a_r = \frac{v_t^2}{r}\frac{d^2}{d\theta^2}}$$
-
-<div
-  data-calculator=""
-  data-boxed-id="boxed-017"
-  data-pending="The second derivative has no operand in this boxed expression. Specify the differentiated function before configuring a numerical calculator."
-  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
-</div>
+$$\vec a_r = \frac{v_t^2}{r}\frac{d^2}{d\theta^2}$$
 
 ***
 

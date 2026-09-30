@@ -92,17 +92,17 @@ $$\tau = V/A$$
 
 $$\tau = G\gamma$$
 
-$$\boxed{G=  \frac{E}{1(+\nu)}}$$
+$$\boxed{G=  \frac{E}{2(1+\nu)}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-054"
-  data-expression="E/(1*nu)"
-  data-inputs="E:modulus,nu:coefficient as written"
+  data-expression="E/(2*(1+nu))"
+  data-inputs="E:Young modulus Pa,nu:Poisson ratio"
   data-result="G"
-  data-unit=""
+  data-unit="Pa"
   data-constants=""
-  data-note="Literal evaluation of E/[1(+nu)] = E/nu. The printed denominator needs review before physical use.">
+  data-note="Enter Young modulus E in pascals and the dimensionless Poisson ratio nu. The result is the shear modulus G in pascals.">
 </div>
 
 ## deformation

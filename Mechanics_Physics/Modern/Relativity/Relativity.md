@@ -50,13 +50,17 @@ $$\boxed{l' = l\sqrt{1-\frac{v^2}{c^2}}}$$
 <img src="upload_3fe6f1c9d30a62d20f18c7cfaec57b02.png" alt="image" width="300">
 </div>
 
-$$\boxed{m' = \frac{m_0}{\sqrt{1-\frac{v2}{c2}}}}$$
+$$\boxed{m' = \frac{m_0}{\sqrt{1-\frac{v^2}{c^2}}}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-140"
-  data-pending="The source prints v2/c2 rather than squared variables. Clarify whether these are products or missing exponents before numerical evaluation."
-  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+  data-expression="m_0/(1-v^2/c^2)^0.5"
+  data-inputs="m_0:rest mass kg,v:relative speed m/s,c:speed of light m/s"
+  data-result="m_prime"
+  data-unit="kg"
+  data-constants=""
+  data-note="Relativistic mass convention: m_prime = gamma*m_0 = total energy/c^2. Rest mass m_0 is invariant. Use c = 299792458 m/s and a speed magnitude smaller than c.">
 </div>
 
 ## Relative time

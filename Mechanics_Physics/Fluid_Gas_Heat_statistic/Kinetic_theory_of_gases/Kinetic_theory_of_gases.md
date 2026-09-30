@@ -138,7 +138,7 @@ $$\sqrt{\frac{3kT}{m}} = v$$
 
 $$PV = NkT = nRT$$
 
-$$\frac Nn = \frac{RT}{kT} = M$$
+$$\frac{N}{n}=N_A=\frac{R}{k},\qquad M=N_A m$$
 
 * molar mass : $M$
 
@@ -283,21 +283,21 @@ $$v_{p} = \sqrt{\frac{2kT}{m}}$$
 
 $$PV = NkT = nRT$$
 
-$$\frac Nn = \frac{RT}{kT} = M$$
+$$\frac{N}{n}=N_A=\frac{R}{k},\qquad M=N_A m$$
 
 * molar mass : $M$
 
-$$\boxed{v_{rms} = \sqrt{\frac{2RT}{M}}}$$
+$$\boxed{v_p = \sqrt{\frac{2RT}{M}}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-125"
   data-expression="(2*R*T/M)^0.5"
   data-inputs="R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
-  data-result="v_rms (as labeled)"
-  data-unit=""
+  data-result="v_p"
+  data-unit="m/s"
   data-constants=""
-  data-note="Uses the printed factor 2; the formula corresponds to the most probable speed even though the source labels it v_rms.">
+  data-note="Most probable speed (the peak of the Maxwell-Boltzmann speed distribution). Use absolute temperature T and molar mass M in kg/mol.">
 </div>
 
 ### Average speed (by Maxwell–Boltzmann distribution)
@@ -332,25 +332,25 @@ $$v_{avg} = (\frac{8kT}{m\pi})^{1/2}\times\Gamma(2)$$
 
 $$v_{avg} = (\frac{8kT}{m\pi})^{1/2}\times1!$$
 
-$$v_{avg} = \sqrt{\frac{8RT}{\pi m}}$$
+$$v_{avg} = \sqrt{\frac{8kT}{\pi m}}$$
 
 $$PV = NkT = nRT$$
 
-$$\frac Nn = \frac{RT}{kT} = M$$
+$$\frac{N}{n}=N_A=\frac{R}{k},\qquad M=N_A m$$
 
 * molar mass : $M$
 
-$$\boxed{v_{rms} = \sqrt{\frac{8RT}{\pi M}}}$$
+$$\boxed{v_{avg} = \sqrt{\frac{8RT}{\pi M}}}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-126"
   data-expression="(8*R*T/(pi*M))^0.5"
   data-inputs="R:gas constant J/(mol K),T:temperature K,M:molar mass kg/mol"
-  data-result="v_rms (as labeled)"
-  data-unit=""
+  data-result="v_avg"
+  data-unit="m/s"
   data-constants="pi=3.141592653589793"
-  data-note="Uses the printed factor 8/pi; the formula corresponds to mean speed even though the source labels it v_rms.">
+  data-note="Mean speed in the Maxwell-Boltzmann speed distribution. This is distinct from the root mean square speed; use molar mass M in kg/mol.">
 </div>
 
 ###  Root mean square speed(by Maxwell–Boltzmann distribution)
@@ -397,7 +397,7 @@ $$v_{rms} = \sqrt{\frac{3kT}{m}}$$
 
 $$PV = NkT = nRT$$
 
-$$\frac Nn = \frac{RT}{kT} = M$$
+$$\frac{N}{n}=N_A=\frac{R}{k},\qquad M=N_A m$$
 
 * molar mass : $M$
 

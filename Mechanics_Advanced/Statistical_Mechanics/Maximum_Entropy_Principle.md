@@ -8,14 +8,7 @@ The maximum-entropy method finds a probability distribution consistent with know
 
 Solving for the energy distribution of macroscopic systems
 
-$$\boxed{\text{Probability distribution of microstates } {p_i}}$$
-
-<div
-  data-calculator=""
-  data-boxed-id="boxed-001"
-  data-pending="This box names a probability distribution but provides no numerical rule. Add the distribution or its constraints to configure a calculator."
-  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
-</div>
+$$\text{Probability distribution of microstates } {p_i}$$
 
 ## Entropy
 

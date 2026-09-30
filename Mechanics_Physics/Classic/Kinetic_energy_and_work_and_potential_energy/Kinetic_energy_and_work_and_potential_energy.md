@@ -199,23 +199,25 @@ $$\boxed{U = mgy}$$
 
 ## elastic potential energy
 
-$$ΔU = \int_{x_i}^{x_f}-kx, dx = -\frac{1}{2}kx^2\Big|_{y_i}^{y_f}$$
+$$\Delta U = -\int_{x_i}^{x_f}F_s\,dx = \int_{x_i}^{x_f}kx\,dx = \frac{1}{2}kx^2\Big|_{x_i}^{x_f}$$
 
-$$ΔU = -\frac{1}{2}k(x_f^2-x_i^2) = Δx$$
+$$\Delta U = \frac{1}{2}k(x_f^2-x_i^2) = -W_s$$
 
-if $x_i = 0$
+The spring force is $F_s=-kx$, so the change in potential energy is the negative of the work done by the spring.
 
-$$\boxed{U = -\frac{1}{2}kx^2}$$
+Choose $U=0$ at $x=0$.
+
+$$\boxed{U = \frac{1}{2}kx^2}$$
 
 <div
   data-calculator=""
   data-boxed-id="boxed-096"
-  data-expression="0-0.5*k*x^2"
+  data-expression="0.5*k*x^2"
   data-inputs="k:stiffness N/m,x:displacement m"
   data-result="U"
-  data-unit=""
+  data-unit="J"
   data-constants=""
-  data-note="Preserves the negative sign shown in the source expression.">
+  data-note="Elastic potential energy of a linear spring, with U = 0 at its unstretched position. Enter stiffness k and extension or compression x.">
 </div>
 
 ## Law of conservation of mechanical energy
@@ -224,11 +226,11 @@ $$E = K+U$$
 
 $$ΔK = W_K$$
 
-$$ΔU = W_U$$
+$$ΔU = -W_U$$
 
-$$ΔK = ΔU$$
+$$ΔK = -ΔU$$
 
-$$K_f-K_i = U_f-U_i$$
+$$K_f-K_i = -(U_f-U_i)$$
 
 $$K_i+U_i = K_f+U_f$$
 
