@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 18: Wheel Loads (輪胎動態垂直負載精確計算)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=696)，書頁 665–708（PDF 第 696–739 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 665–708（PDF 第 696–739 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -29,14 +29,36 @@ $$
 以車身中線為 $y=0$、向右為正，可把原書左右輪距不等的力矩式整理成：
 
 $$
-y_{CG}=\frac{(W_2-W_1)t_F+(W_4-W_3)t_R}{2W}.
+\boxed{y_{CG}=\frac{(W_2-W_1)t_F+(W_4-W_3)t_R}{2W}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-025"
+  data-expression="((W_2-W_1)*t_F+(W_4-W_3)*t_R)/(2*(W_1+W_2+W_3+W_4))"
+  data-inputs="W_2:right front wheel load N,W_1:left front wheel load N,t_F:front track m,W_4:right rear wheel load N,W_3:left rear wheel load N,t_R:rear track m"
+  data-result="y_CG"
+  data-unit="m"
+  data-constants=""
+  data-note="Computes total W from all four measured wheel loads. Positive y_CG points right. Use level-ground static measurements and a positive total weight.">
+</div>
 
 若輪距相同 $t$：
 
 $$
-y_{CG}=t\left(\frac{W_2+W_4}{W}-\frac12\right).
+\boxed{y_{CG}=t\left(\frac{W_2+W_4}{W}-\frac12\right).}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-026"
+  data-expression="t*((W_2+W_4)/W-0.5)"
+  data-inputs="t:common front and rear track m,W_2:right front load N,W_4:right rear load N,W:total four-wheel weight N"
+  data-result="y_CG"
+  data-unit="m"
+  data-constants=""
+  data-note="Only for equal front and rear track widths. W includes all four wheel loads, not just the right side; positive offset points right.">
+</div>
 
 反過來只知道 $W,a,y_{CG}$ 並不能唯一求出四輪角重，還少一個對角預載／底盤相容條件。後續簡化式若假設左右按比例分配，會特別注明。
 
@@ -227,8 +249,19 @@ $$
 $$
 
 $$
-\Delta W_R=W\frac a\ell(\cos\theta-1)+W\frac h\ell(A_x+\sin\theta).
+\boxed{\Delta W_R=W\frac a\ell(\cos\theta-1)+W\frac h\ell(A_x+\sin\theta).}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-027"
+  data-expression="W*a/ell*(cos(theta)-1)+W*h/ell*(A_x+sin(theta))"
+  data-inputs="W:vehicle weight N,a:front axle to CG m,ell:wheelbase m,theta:uphill slope angle rad,h:CG height m,A_x:along-slope acceleration in g"
+  data-result="delta_W_R"
+  data-unit="N"
+  data-constants=""
+  data-note="Change of rear axle load relative to flat static load. theta &gt; 0 is uphill; A_x is acceleration divided by g. This is not the final rear load.">
+</div>
 
 若路面有垂直曲率半徑 $R_v$，以 $\epsilon=-1$ 表坡頂、$\epsilon=+1$ 表谷底，原書兩組式可合併為：
 
@@ -239,10 +272,21 @@ $$
 $$
 
 $$
-\Delta W_R=W\frac a\ell
+\boxed{\Delta W_R=W\frac a\ell
 \left(\cos\theta+\epsilon\frac{V^2}{gR_v}-1\right)
-+W\frac h\ell(A_x+\sin\theta).
++W\frac h\ell(A_x+\sin\theta).}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-028"
+  data-expression="W*a/ell*(cos(theta)+epsilon*V^2/(g*R_v)-1)+W*h/ell*(A_x+sin(theta))"
+  data-inputs="W:vehicle weight N,a:front axle to CG m,ell:wheelbase m,theta:uphill slope angle rad,epsilon:crest -1 or valley +1,V:speed m/s,g:gravity m/s^2,R_v:positive vertical curve radius m,h:CG height m,A_x:along-slope acceleration in g"
+  data-result="delta_W_R"
+  data-unit="N"
+  data-constants=""
+  data-note="Use epsilon = -1 at a crest or +1 in a valley. R_v &gt; 0 and angles are radians. Add to flat static rear load; a negative final wheel load means loss of contact.">
+</div>
 
 這使用前後軸法向近似平行的大曲率半徑假設。算出負輪載時表示離地，不能繼續用四輪接地模型。
 
@@ -332,9 +376,20 @@ $$
 $$
 
 $$
-\Delta W_R=\frac{K_R[WA_yH-(W'-W)y'']}{t_RD_\phi}
-+WA_y\frac a\ell\frac{z_{RR}}{t_R}.
+\boxed{\Delta W_R=\frac{K_R[WA_yH-(W'-W)y'']}{t_RD_\phi}
++WA_y\frac a\ell\frac{z_{RR}}{t_R}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-029"
+  data-expression="K_R*(W*A_y*H-(W_prime-W)*y_offset)/(t_R*(K_F+K_R-W*A_y*y_offset-W_prime*H))+W*A_y*a/ell*z_RR/t_R"
+  data-inputs="K_R:rear roll stiffness N m/rad,W:vehicle weight N,A_y:banking-adjusted lateral acceleration in g,H:CG height above roll axis m,W_prime:banking-adjusted normal load N,y_offset:rightward CG offset m,t_R:rear track m,K_F:front roll stiffness N m/rad,a:front axle to CG m,ell:wheelbase m,z_RR:rear roll center height m"
+  data-result="delta_W_R"
+  data-unit="N"
+  data-constants=""
+  data-note="Computes D_phi from the definition above; it must be nonzero. Use the banking-adjusted A_y and W_prime. Positive transfer is right to left in this section. This is the single-mass offset-CG model.">
+</div>
 
 以上正值定義為右向左轉移。有效基礎輪載用：
 
@@ -348,11 +403,22 @@ $$
 ## 15. 加總與核對（pp. 707–708）
 
 $$
-W_i^{\mathrm{final}}=W_i^{\mathrm{base}}
+\boxed{W_i^{\mathrm{final}}=W_i^{\mathrm{base}}
 +\Delta W_i^{\mathrm{lateral}}
 +\Delta W_i^{\mathrm{longitudinal}}
 +\Delta W_i^{\mathrm{aero}}
-+\Delta W_i^{\mathrm{torque}}.
++\Delta W_i^{\mathrm{torque}}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-030"
+  data-expression="W_base+dW_lateral+dW_longitudinal+dW_aero+dW_torque"
+  data-inputs="W_base:base load for this wheel N,dW_lateral:signed lateral increment N,dW_longitudinal:signed longitudinal increment N,dW_aero:signed aero increment N,dW_torque:signed torque increment N"
+  data-result="W_final"
+  data-unit="N"
+  data-constants=""
+  data-note="Run separately for each wheel and enter zero for unused increments. All increments must use compatible models and signs; do not count banking or slope corrections twice. Negative final load invalidates the all-wheels-contact model.">
+</div>
 
 只在各子模型的線性化與幾何假設相容時疊加。Banking 或坡度後的 $W_i^{\mathrm{base}}$ 已改變，不能再重複加一次「靜態重量修正」。最後核對總負載、前後俯仰力矩、左右側傾力矩與每輪非負；有輪離地、止擋接觸或顯著幾何移動時，須改用新的接觸／剛度條件重新求解。

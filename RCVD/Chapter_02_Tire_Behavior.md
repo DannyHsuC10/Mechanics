@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 2: Tire Behavior (輪胎行為特性)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=44)，書頁 13–82（PDF 第 44–113 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 13–82（PDF 第 44–113 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -195,9 +195,20 @@ $$
 本節沿用原書 $F_R$ 的滾動損耗定義及其 $SR$ 滑移率約定。含滑移及側滑的關係式為：
 
 $$
-F_R=\left[(SR+1)\frac{T_{\mathrm{in}}}{R_l}-F_x\right]\cos\alpha
--F_y\sin\alpha.
+\boxed{F_R=\left[(SR+1)\frac{T_{\mathrm{in}}}{R_l}-F_x\right]\cos\alpha
+-F_y\sin\alpha.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-001"
+  data-expression="((SR+1)*T_in/R_l-F_x)*cos(alpha)-F_y*sin(alpha)"
+  data-inputs="SR:slip ratio as a fraction,T_in:input torque N m,R_l:loaded radius m,F_x:longitudinal force N,alpha:slip angle rad,F_y:lateral force N"
+  data-result="F_R"
+  data-unit="N"
+  data-constants=""
+  data-note="Use the signed forces and slip-ratio convention defined in this chapter. Enter alpha in radians and R_l &gt; 0.">
+</div>
 
 原書 Eq. (2.2) 解出輸入扭矩：
 
@@ -211,11 +222,22 @@ $$
 再加入外傾角對力矩投影的修正（p. 75）：
 
 $$
-T_{\mathrm{in}}=
+\boxed{T_{\mathrm{in}}=
 \frac{F_xR_l}{SR+1}+
 \frac{F_RR_l\cos\gamma}{(SR+1)\cos\alpha}+
-\frac{F_yR_l\tan\alpha}{SR+1}+M_z\sin\gamma.
+\frac{F_yR_l\tan\alpha}{SR+1}+M_z\sin\gamma.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-002"
+  data-expression="F_x*R_l/(SR+1)+F_R*R_l*cos(gamma)/((SR+1)*cos(alpha))+F_y*R_l*tan(alpha)/(SR+1)+M_z*sin(gamma)"
+  data-inputs="F_x:longitudinal force N,R_l:loaded radius m,SR:slip ratio as a fraction,F_R:rolling resistance N,gamma:camber angle rad,alpha:slip angle rad,F_y:lateral force N,M_z:aligning moment N m"
+  data-result="T_in"
+  data-unit="N m"
+  data-constants=""
+  data-note="Enter both angles in radians. SR must differ from -1 and cos(alpha) must be nonzero. Preserve the chapter force and moment signs.">
+</div>
 
 這些是原書對其阻力與滑移定義的表達，不可把其他試驗機的 $S$ 未經換算代入；$SR=-1$ 或 $\cos\alpha=0$ 時不可使用此解式。無滑移的基本輪軸力矩式 Eq. (2.1) 為：
 

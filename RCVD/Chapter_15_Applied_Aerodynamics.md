@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 15: Applied Aerodynamics (賽車應用空氣動力學實務)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=520)，書頁 489–578（PDF 第 520–609 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 489–578（PDF 第 520–609 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -214,7 +214,18 @@ $$
 **整理推導：** 若完全忽略負載敏感度，且 $D_f=k_AV^2$，則：
 
 $$
-V^2=\frac{\mu W}{W/(gR)-\mu k_A}.
+\boxed{V^2=\frac{\mu W}{W/(gR)-\mu k_A}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-017"
+  data-expression="mu*W/(W/(g*R)-mu*k_A)"
+  data-inputs="mu:constant friction coefficient,W:vehicle weight N,g:gravity m/s^2,R:turn radius m,k_A:downforce coefficient N s^2/m^2"
+  data-result="V_squared"
+  data-unit="m^2/s^2"
+  data-constants=""
+  data-note="Outputs V squared, not speed. Assumes constant friction and downforce = k_A*V^2. Only a positive denominator gives a finite physical speed limit; zero or negative denominator means this idealized model supplies no finite limit.">
+</div>
 
 分母接近零時，這個理想模型失去有限速度上限；實車仍受功率、輪胎、空力失速與結構等條件限制。這正是本章比較輪胎負載敏感度的目的。

@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 3: Aerodynamic Fundamentals (空氣動力學基礎)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=114)，書頁 83–112（PDF 第 114–143 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 83–112（PDF 第 114–143 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -40,8 +40,19 @@ $$
 因此量到總壓與靜壓，就可求速度：
 
 $$
-V=\sqrt{\frac{2(H-p)}{\rho}}.
+\boxed{V=\sqrt{\frac{2(H-p)}{\rho}}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-003"
+  data-expression="(2*(H-p)/rho)^0.5"
+  data-inputs="H:total pressure Pa,p:static pressure Pa,rho:air density kg/m^3"
+  data-result="V"
+  data-unit="m/s"
+  data-constants=""
+  data-note="Incompressible pressure-based speed. Use matching pressure references with H &gt;= p and rho &gt; 0.">
+</div>
 
 若加入高度變化，整理成能量式為 $p+\rho V^2/2+\rho gz=\mathrm{constant}$。車身附近通常忽略空氣重力項，但不能忽略分離、邊界層與尾流造成的總壓損失。不同流線也未必具有相同總壓。
 
@@ -74,8 +85,19 @@ $$
 ## 4. Reynolds number 與模型相似（pp. 101–106）
 
 $$
-Re=\frac{\rho VL}{\mu}=\frac{VL}{\nu}.
+\boxed{Re=\frac{\rho VL}{\mu}=\frac{VL}{\nu}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-004"
+  data-expression="rho*V*L/mu"
+  data-inputs="rho:density kg/m^3,V:speed m/s,L:reference length m,mu:dynamic viscosity Pa s"
+  data-result="Re"
+  data-unit=""
+  data-constants=""
+  data-note="Uses the first equality rho*V*L/mu. mu is dynamic viscosity; do not substitute kinematic viscosity nu. Use positive density and viscosity.">
+</div>
 
 $L$ 是選定的特徵長度；翼弦、車長和輪胎直徑不能交替使用而不交代。若風洞模型與實車使用相同空氣性質，幾何比例 $\lambda=L_m/L_f$，要求相同 $Re$ 時：
 

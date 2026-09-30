@@ -8,8 +8,10 @@ const context = vm.createContext({document: {addEventListener() {}}});
 vm.runInContext(fs.readFileSync(path.join(root, 'assets/js/calculators.js'), 'utf8'), context);
 const evaluate = context.evaluateExpression;
 const definitions = JSON.parse(fs.readFileSync(path.join(__dirname, 'boxed_calculators.json'), 'utf8'));
+const widgetDefinitions = definitions.flatMap(s => [s, ...(s.extra ? [{...s.extra, id:s.id+'-extra'}] : [])]);
 const cases = [
   ...require('./mechanical_calculator_cases.json'),
+  ...require('./rcvd_calculator_cases.json'),
   ['boxed-013', {m_1:2,m_2:3,v_1i:4,v_2i:-1}, 3],
   ['boxed-045', {P:1000,A:0.01,E:200e9,mu:0.3}, 6e-7],
   ['boxed-047', {nu_first:Math.sqrt(3),nu_second:8}, 1],
@@ -33,10 +35,35 @@ const cases = [
   ['boxed-152', {f:100,v_s:340,v_B:0}, 100]
 ];
 for (const [id, values, expected] of cases) {
-  const s = definitions.find(x => x.id === id);
+  const s = widgetDefinitions.find(x => x.id === id);
   const actual = evaluate(s.expression, {...context.parseConstants(s.constants), ...values});
-  assert.ok(Math.abs(actual - expected) < 1e-9, `${id}: ${actual} != ${expected}`);
+  assert.ok(Math.abs(actual - expected) < 1e-10 * Math.max(1, Math.abs(expected)), `${id}: ${actual} != ${expected}`);
 }
+// Cross-check equivalent physical relationships, including signed/nonzero inputs.
+const runWidget = (id, values) => {
+  const s = widgetDefinitions.find(x => x.id === id);
+  return evaluate(s.expression, {...context.parseConstants(s.constants), ...values});
+};
+const close = (actual, expected) => assert.ok(Math.abs(actual-expected) < 1e-9*Math.max(1,Math.abs(expected)));
+for (const alpha of [-0.2, 0.05, 0.3]) {
+  const values = {SR:0.12,T_in:430,R_l:0.31,F_x:1100,alpha,F_y:-350};
+  const F_R = runWidget('rcvd-001', values);
+  close(runWidget('rcvd-002', {...values,F_R,gamma:0,M_z:0}), values.T_in);
+}
+for (const alpha_bar of [-2,-0.3,0,0.7,3]) {
+  const fit = {B_prime:0.714,C_prime:1.4,D_prime:1,E_prime:-0.2,alpha_bar};
+  const eta = runWidget('rcvd-015',fit);
+  close(runWidget('rcvd-016',fit),fit.D_prime*Math.sin(fit.C_prime*Math.atan(fit.B_prime*eta)));
+}
+for (const K_phiB of [0,10000,80000]) {
+  const s = {K_phit:200000,K_phiw:50000,K_phiB};
+  const K_target = runWidget('rcvd-020',s);
+  close(runWidget('rcvd-021',{...s,K_target}),K_phiB);
+}
+const steady = {...require('./rcvd_calculator_cases.json').find(x => x[0]==='rcvd-007')[1], F_e:300,M_e:-150};
+const beta = runWidget('rcvd-007',steady), r = runWidget('rcvd-008',steady);
+close(steady.Y_beta*beta+(steady.Y_r-steady.m*steady.V)*r+steady.Y_delta*steady.delta+steady.F_e,0);
+close(steady.N_beta*beta+steady.N_r*r+steady.N_delta*steady.delta+steady.M_e,0);
 assert.throws(() => evaluate('1/x', {x:0}));
 assert.throws(() => evaluate('(0-x)^0.5', {x:1}));
 assert.throws(() => evaluate('m*a', {m:2}));
@@ -74,8 +101,11 @@ for (const s of definitions) {
     assert.ok(marker?.includes(`data-expression="${s.expression}"`), `Expression differs from definition: ${s.id}`);
     assert.ok(marker?.includes(`data-inputs="${s.inputs}"`), `Inputs differ from definition: ${s.id}`);
   }
-  if (s.pending) { pending++; continue; }
-  for (const spec of [s, ...(s.extra ? [s.extra] : [])]) {
+  if (s.pending) pending++;
+  for (const spec of [s, ...(s.extra ? [{...s.extra, id:s.id+'-extra'}] : [])].filter(x => !x.pending)) {
+    const marker = source.match(new RegExp('<div\\s+data-calculator=""\\s+data-boxed-id="'+spec.id+'"[\\s\\S]*?</div>'))?.[0];
+    assert.ok(marker?.includes(`data-expression="${spec.expression}"`), `Expression differs: ${spec.id}`);
+    assert.ok(marker?.includes(`data-inputs="${spec.inputs}"`), `Inputs differ: ${spec.id}`);
     const configured = context.parseInputs(spec.inputs).map(x => x.name);
     const constants = context.parseConstants(spec.constants);
     const tokens = context.tokenize(spec.expression);
@@ -104,8 +134,8 @@ function element(tag) {
     replaceWith(node) { this.replacement = node; }};
 }
 context.document.createElement = element;
-for (const [id, values, expected] of require('./mechanical_calculator_cases.json')) {
-  const spec = definitions.find(x => x.id === id);
+for (const [id, values, expected] of [...require('./mechanical_calculator_cases.json'), ...require('./rcvd_calculator_cases.json')]) {
+  const spec = widgetDefinitions.find(x => x.id === id);
   const marker = element('div');
   marker.dataset = {expression:spec.expression, inputs:spec.inputs, result:spec.result,
     unit:spec.unit, constants:spec.constants, note:spec.note};

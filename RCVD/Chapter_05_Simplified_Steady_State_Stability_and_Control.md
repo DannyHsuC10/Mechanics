@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 5: Simplified Steady-State Stability and Control (簡化穩態穩定性與控制)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=154)，書頁 123–230（PDF 第 154–261 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 123–230（PDF 第 154–261 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -30,12 +30,34 @@ $$
 $$
 
 $$
-Y=(C_F+C_R)\beta+\frac{aC_F-bC_R}{V}r-C_F\delta,
+\boxed{Y=(C_F+C_R)\beta+\frac{aC_F-bC_R}{V}r-C_F\delta,}
 $$
 
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-005"
+  data-expression="(C_F+C_R)*beta+(a*C_F-b*C_R)/V*r-C_F*delta"
+  data-inputs="C_F:signed front axle stiffness N/rad,C_R:signed rear axle stiffness N/rad,beta:body sideslip rad,a:CG to front axle m,b:CG to rear axle m,V:speed m/s,r:yaw rate rad/s,delta:road wheel steer rad"
+  data-result="Y"
+  data-unit="N"
+  data-constants=""
+  data-note="Use negative signed axle stiffnesses C_F and C_R as defined in Chapter 5; angles are radians and V &gt; 0. This is a local linear tire model.">
+</div>
+
 $$
-N=(aC_F-bC_R)\beta+\frac{a^2C_F+b^2C_R}{V}r-aC_F\delta.
+\boxed{N=(aC_F-bC_R)\beta+\frac{a^2C_F+b^2C_R}{V}r-aC_F\delta.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-006"
+  data-expression="(a*C_F-b*C_R)*beta+(a^2*C_F+b^2*C_R)/V*r-a*C_F*delta"
+  data-inputs="C_F:signed front axle stiffness N/rad,C_R:signed rear axle stiffness N/rad,beta:body sideslip rad,a:CG to front axle m,b:CG to rear axle m,V:speed m/s,r:yaw rate rad/s,delta:road wheel steer rad"
+  data-result="N"
+  data-unit="N m"
+  data-constants=""
+  data-note="Use negative signed axle stiffnesses C_F and C_R as defined in Chapter 5; angles are radians and V &gt; 0. This is a local linear tire model.">
+</div>
 
 線性輪胎只在實測曲線局部有效。前後外力與側滑角不宜直接套入輪胎飽和區。
 
@@ -88,12 +110,34 @@ $$
 令 $F_e$ 是施於重心的外加側力，$M_e$ 是外加偏航力矩。原書 Eqs. (5.18)–(5.25) 可整合為下列同一解式：
 
 $$
-\beta=\frac{N_r(Y_\delta\delta+F_e)-(Y_r-mV)(N_\delta\delta+M_e)}{Q},
+\boxed{\beta=\frac{N_r(Y_\delta\delta+F_e)-(Y_r-mV)(N_\delta\delta+M_e)}{Q},}
 $$
 
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-007"
+  data-expression="(N_r*(Y_delta*delta+F_e)-(Y_r-m*V)*(N_delta*delta+M_e))/(N_beta*Y_r-N_beta*m*V-Y_beta*N_r)"
+  data-inputs="N_r:yaw damping derivative N m s/rad,Y_delta:steer force derivative N/rad,delta:road wheel steer rad,F_e:external lateral force N,Y_r:yaw rate force derivative N s/rad,m:vehicle mass kg,V:speed m/s,N_delta:steer moment derivative N m/rad,M_e:external yaw moment N m,N_beta:sideslip moment derivative N m/rad,Y_beta:sideslip force derivative N/rad"
+  data-result="beta"
+  data-unit="rad"
+  data-constants=""
+  data-note="Q is computed from the six signed stability derivatives using the definition above. Use SI units and radians; a zero Q has no unique steady solution. Set unused external force or moment to zero.">
+</div>
+
 $$
-r=\frac{Y_\beta(N_\delta\delta+M_e)-N_\beta(Y_\delta\delta+F_e)}{Q}.
+\boxed{r=\frac{Y_\beta(N_\delta\delta+M_e)-N_\beta(Y_\delta\delta+F_e)}{Q}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-008"
+  data-expression="(Y_beta*(N_delta*delta+M_e)-N_beta*(Y_delta*delta+F_e))/(N_beta*Y_r-N_beta*m*V-Y_beta*N_r)"
+  data-inputs="N_r:yaw damping derivative N m s/rad,Y_delta:steer force derivative N/rad,delta:road wheel steer rad,F_e:external lateral force N,Y_r:yaw rate force derivative N s/rad,m:vehicle mass kg,V:speed m/s,N_delta:steer moment derivative N m/rad,M_e:external yaw moment N m,N_beta:sideslip moment derivative N m/rad,Y_beta:sideslip force derivative N/rad"
+  data-result="r"
+  data-unit="rad/s"
+  data-constants=""
+  data-note="Q is computed from the six signed stability derivatives using the definition above. Use SI units and radians; a zero Q has no unique steady solution. Set unused external force or moment to zero.">
+</div>
 
 逐項展開的擾動增益為：
 
@@ -200,8 +244,19 @@ $$
 $SM$ 無因次，不是長度。它為正時，中性轉向點在重心後方，本模型轉向不足。以正剛度表示 $K$ 與 $SM$ 的關係為：
 
 $$
-K=\frac{m(C_{\alpha F}+C_{\alpha R})}{\ell C_{\alpha F}C_{\alpha R}}SM.
+\boxed{K=\frac{m(C_{\alpha F}+C_{\alpha R})}{\ell C_{\alpha F}C_{\alpha R}}SM.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-009"
+  data-expression="m*(C_alphaF+C_alphaR)/(ell*C_alphaF*C_alphaR)*SM"
+  data-inputs="m:vehicle mass kg,C_alphaF:positive front axle stiffness N/rad,C_alphaR:positive rear axle stiffness N/rad,ell:wheelbase m,SM:static margin fraction"
+  data-result="K"
+  data-unit="s^2/m^2"
+  data-constants=""
+  data-note="Use positive axle stiffness magnitudes here. SM is a dimensionless fraction rather than a percentage; K is the coefficient in 1 + K*V^2.">
+</div>
 
 輪胎可類比為對側向速度的阻尼器：
 
@@ -296,9 +351,20 @@ $$
 固定速度的方向盤靈敏度，以路輪 $UG$ 為 deg/g、$i_s$ 為方向盤／路輪比：
 
 $$
-S_{SW}\ [g/100^\circ]
-=\frac{100}{i_s\left[UG+(180/\pi)g\ell/V^2\right]}.
+\boxed{S_{SW}\ [g/100^\circ]
+=\frac{100}{i_s\left[UG+(180/\pi)g\ell/V^2\right]}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-010"
+  data-expression="100/(i_s*(UG+(180/pi)*g*ell/V^2))"
+  data-inputs="i_s:steering wheel to road wheel angle ratio,UG:understeer gradient deg/g,g:gravity m/s^2,ell:wheelbase m,V:speed m/s"
+  data-result="S_SW"
+  data-unit="g/100 deg"
+  data-constants="pi=3.141592653589793"
+  data-note="UG is in degrees per g for this formula. Use steering-wheel/road-wheel ratio i_s and V &gt; 0. A near-zero denominator is outside a reliable linear gain estimate.">
+</div>
 
 分母接近零或輪胎進入非線性時，此低加速度線性式不再可靠。原書 p. 218 說明轉角斜率同時混合穩定、阻尼與控制能力；斜率變大不能單獨證明車更穩定。
 

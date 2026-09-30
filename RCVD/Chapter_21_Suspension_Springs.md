@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 21: Suspension Springs (懸吊彈簧類型與設計計算)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=786)，書頁 755–780（PDF 第 786–811 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 755–780（PDF 第 786–811 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -84,8 +84,19 @@ k_w=m_w(2\pi f_n)^2,
 $$
 
 $$
-L=\frac{\pi Gd^4}{32R^2k_w}.
+\boxed{L=\frac{\pi Gd^4}{32R^2k_w}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-033"
+  data-expression="pi*G*d^4/(32*R^2*k_w)"
+  data-inputs="G:shear modulus Pa,d:solid bar diameter m,R:lever arm m,k_w:wheel rate N/m"
+  data-result="L"
+  data-unit="m"
+  data-constants="pi=3.141592653589793"
+  data-note="Solid torsion bar with the wheel acting directly at the lever end. Use SI units and positive G, d, R and k_w; convert linkage motion ratio before applying this equation.">
+</div>
 
 最後一式假設輪端直接作用於臂端；若經過連桿，須先依 Chapter 16 換算。原書取 $R=5$ in 的示例得到約 $d=0.386$ in、$L=10.41$ in，但那是其 225 lbf、2 Hz 與指定應力的結果，不是可直接移植的尺寸。
 
@@ -116,8 +127,19 @@ $$
 原書要求將未修正應力乘上 Wahl factor，以考慮線材曲率等效應：
 
 $$
-\tau_{\mathrm{corrected}}=K_W\frac{8DF}{\pi d^3}.
+\boxed{\tau_{\mathrm{corrected}}=K_W\frac{8DF}{\pi d^3}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-034"
+  data-expression="K_W*8*D*F/(pi*d^3)"
+  data-inputs="K_W:Wahl correction factor,D:mean coil diameter m,F:axial spring force N,d:wire diameter m"
+  data-result="tau_corrected"
+  data-unit="Pa"
+  data-constants="pi=3.141592653589793"
+  data-note="Supply K_W from the Wahl-factor equation above. D is mean coil diameter, not outer diameter. Lengths are meters and the output is pascals; divide by 1e6 for MPa.">
+</div>
 
 原書以圖／參考資料給出因子，例如 $D/d=5$ 時約 1.3，$D/d=12$ 時約 1.1；不能省略後拿未修正值直接對照材料極限。本筆記不另假造書中未列的材料疲勞係數。
 

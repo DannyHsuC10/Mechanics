@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 17: Suspension Geometry (懸吊幾何學與運動學設計)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=638)，書頁 607–664（PDF 第 638–695 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 607–664（PDF 第 638–695 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -74,21 +74,54 @@ $$
 先從整車平衡求總負載轉移，不論懸吊是否有 anti：
 
 $$
-\Delta W_x=\frac{W A_xh}{\ell}.
+\boxed{\Delta W_x=\frac{W A_xh}{\ell}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-022"
+  data-expression="W*A_x*h/ell"
+  data-inputs="W:vehicle weight N,A_x:longitudinal acceleration in g,h:CG height m,ell:wheelbase m"
+  data-result="delta_W_x"
+  data-unit="N"
+  data-constants=""
+  data-note="W is weight, not mass. A_x = a_x/g is dimensionless (enter 0.5 for half a g); the result is the signed axle-to-axle load transfer.">
+</div>
 
 制動段以 $A_B>0$ 表示減速度大小，$B_F$ 為前制動力占比（0–1）。前懸吊幾何承受的反作用力若為 $F_{z,\mathrm{geom}}=WA_BB_F\tan\phi_F$，則前 anti-dive 百分比為：
 
 $$
-AD_F=100\frac{F_{z,\mathrm{geom}}}{WA_Bh/\ell}
-=100B_F\frac{\ell}{h}\tan\phi_F.
+\boxed{AD_F=100\frac{F_{z,\mathrm{geom}}}{WA_Bh/\ell}
+=100B_F\frac{\ell}{h}\tan\phi_F.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-023"
+  data-expression="100*B_F*ell/h*tan(phi_F)"
+  data-inputs="B_F:front brake force fraction,ell:wheelbase m,h:CG height m,phi_F:front contact patch to IC angle rad"
+  data-result="AD_F"
+  data-unit="%"
+  data-constants=""
+  data-note="Uses the final equality for outboard brakes. Enter B_F between 0 and 1, h &gt; 0 and phi_F in radians. The side-view line runs from contact patch to instant center.">
+</div>
 
 外置煞車的側視角 $\phi_F$ 是**接地點到 IC** 的連線角；後軸 anti-lift 對應：
 
 $$
-AL_R=100(1-B_F)\frac{\ell}{h}\tan\phi_R.
+\boxed{AL_R=100(1-B_F)\frac{\ell}{h}\tan\phi_R.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-024"
+  data-expression="100*(1-B_F)*ell/h*tan(phi_R)"
+  data-inputs="B_F:front brake force fraction,ell:wheelbase m,h:CG height m,phi_R:rear contact patch to IC angle rad"
+  data-result="AL_R"
+  data-unit="%"
+  data-constants=""
+  data-note="Outboard-brake rear anti-lift. Enter front brake fraction B_F between 0 and 1 and rear side-view angle phi_R in radians; h must be positive.">
+</div>
 
 100% anti 指這個工況下的縱向負載轉移反力完全由幾何傳遞、彈簧不必以相同方式壓縮／伸長，不代表輪胎沒有負載轉移。
 

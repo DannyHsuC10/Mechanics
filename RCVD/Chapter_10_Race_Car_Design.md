@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 10: Race Car Design (賽車設計流程與工程螺旋)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=398)，書頁 367–372（PDF 第 398–403 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 367–372（PDF 第 398–403 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -44,8 +44,19 @@ $$
 重心高度 $h=\sum_i m_ih_i/m$，不是以前後軸反力除以側傾剛度得到。若在 $\boldsymbol r_b$ 加入配重 $m_b$，則：
 
 $$
-\boldsymbol r'_{CG}=\frac{m\boldsymbol r_{CG}+m_b\boldsymbol r_b}{m+m_b}.
+\boxed{\boldsymbol r'_{CG}=\frac{m\boldsymbol r_{CG}+m_b\boldsymbol r_b}{m+m_b}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-013"
+  data-expression="(m*r_CG+m_b*r_b)/(m+m_b)"
+  data-inputs="m:original vehicle mass kg,r_CG:original CG coordinate m,m_b:added ballast mass kg,r_b:ballast coordinate m"
+  data-result="r_CG_new (one coordinate)"
+  data-unit="m"
+  data-constants=""
+  data-note="Evaluate the vector formula component by component: run once for x, once for y and once for z using the same coordinate origin. m + m_b must be positive. Signed m_b can model removed mass at its known location.">
+</div>
 
 燃油消耗也用同一公式逐個油量狀態計算，不能只核對滿油重心。
 

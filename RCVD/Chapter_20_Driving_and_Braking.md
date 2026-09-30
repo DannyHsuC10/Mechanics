@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 20: Driving and Braking (驅動、制動與差速器動力學)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=760)，書頁 729–754（PDF 第 760–785 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 729–754（PDF 第 760–785 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -113,8 +113,19 @@ $$
 **理想同時達峰的分配推導：**
 
 $$
-B_F=\frac{F_{BF,\max}}{F_{BF,\max}+F_{BR,\max}}.
+\boxed{B_F=\frac{F_{BF,\max}}{F_{BF,\max}+F_{BR,\max}}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-032"
+  data-expression="F_BF_max/(F_BF_max+F_BR_max)"
+  data-inputs="F_BF_max:front axle peak braking force N,F_BR_max:rear axle peak braking force N"
+  data-result="B_F"
+  data-unit=""
+  data-constants=""
+  data-note="Supply nonnegative peak forces evaluated at the same braking condition, including load transfer and tire load sensitivity. Total force must be positive. Output is a front-force fraction, not hydraulic bias.">
+</div>
 
 乾濕地摩擦係數與可達減速度不同，負載轉移也不同，所以原書要求兩種路面都算，找出調整範圍。前後相同胎並不意味着應固定 50:50 制動。
 

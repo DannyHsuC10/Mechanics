@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 7: Steady-State Pair Analysis (穩態車軸配對分析)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=310)，書頁 279–292（PDF 第 310–323 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 279–292（PDF 第 310–323 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -93,8 +93,25 @@ $$
 原書 MRA 模型使用 $W_s,H_s,y_s''$（簧上重量、重心至側傾軸距離、向右為正的橫向偏移），以及前後側傾剛度 $K_F,K_R$。對待分析車軸 $a$：
 
 $$
-P_K=\frac{K_a}{K_F+K_R-W_sH_s+W_sy_s''A_Z},
+\boxed{P_K=\frac{K_a}{K_F+K_R-W_sH_s+W_sy_s''A_Z},}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-011"
+  data-pending="The printed A_Z is not clearly defined. The full offset-CG formula is pending clarification; do not substitute A_y or assume A_Z = 1. The calculator below is only for a centered CG (y_s double-prime = 0)."
+  data-note="Enter the variables in consistent SI units. The calculator evaluates the boxed expression.">
+</div>
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-011-extra"
+  data-expression="K_a/(K_F+K_R-W_s*H_s)"
+  data-inputs="K_a:analyzed axle roll stiffness N m/rad,K_F:front roll stiffness N m/rad,K_R:rear roll stiffness N m/rad,W_s:sprung weight N,H_s:CG height above roll axis m"
+  data-result="P_K (centered CG only)"
+  data-unit=""
+  data-note="Restricted to y_s double-prime = 0, so the undefined A_Z term vanishes. K_a is the front or rear axle stiffness being analyzed. The denominator must be nonzero; P_K need not lie between 0 and 1.">
+</div>
 
 $$
 (L_L-L_R)_a=\frac{2A_y}{t_a}
@@ -102,8 +119,19 @@ $$
 $$
 
 $$
-h_e=\frac{P_KH_sW_s+W_{sa}Z_{Ra}+W_{ua}Z_{Wa}}{W_a}.
+\boxed{h_e=\frac{P_KH_sW_s+W_{sa}Z_{Ra}+W_{ua}Z_{Wa}}{W_a}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-012"
+  data-expression="(P_K*H_s*W_s+W_sa*Z_Ra+W_ua*Z_Wa)/W_a"
+  data-inputs="P_K:validated axle stiffness factor,H_s:sprung CG above roll axis m,W_s:total sprung weight N,W_sa:axle sprung weight N,Z_Ra:axle roll center height m,W_ua:axle unsprung weight N,Z_Wa:unsprung CG height m,W_a:total axle weight N"
+  data-result="h_e"
+  data-unit="m"
+  data-constants=""
+  data-note="Enter an independently valid P_K. For an offset CG do not infer P_K from the undefined A_Z; use the Chapter 18 load model. Use W_a = W_sa + W_ua &gt; 0.">
+</div>
 
 $W_{sa},W_{ua}$ 是該軸簧上與簧下重量，$Z_{Ra}$ 是側傾中心高度，$Z_{Wa}$ 是簧下重心高度。**原頁疑點：** p. 288 的分母印為 $A_Z$，但該段未清楚定義此下標，不能擅自改成 $A_y$ 或任意設成 1。此處保留原印式作對照；重心在中線 $y_s''=0$ 時該項自然消失，偏置車輛的實際計算則使用 Chapter 18 明確定義的負載方程，再由負載差反算 $h_e$。
 

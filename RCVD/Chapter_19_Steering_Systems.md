@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 19: Steering Systems (轉向系統幾何與力矩反饋)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=740)，書頁 709–728（PDF 第 740–759 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 709–728（PDF 第 740–759 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -32,8 +32,19 @@ $$
 **可比較的工程定義：** 在指定外輪角下，可定義：
 
 $$
-\%Ack=100\frac{\cot\delta_{\mathrm{out}}-\cot\delta_{\mathrm{in}}}{t/\ell}.
+\boxed{\%Ack=100\frac{\cot\delta_{\mathrm{out}}-\cot\delta_{\mathrm{in}}}{t/\ell}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-031"
+  data-expression="100*(cos(delta_out)/sin(delta_out)-cos(delta_in)/sin(delta_in))/(t/ell)"
+  data-inputs="delta_out:outer road wheel angle rad,delta_in:inner road wheel angle rad,t:track width m,ell:wheelbase m"
+  data-result="Ackermann"
+  data-unit="%"
+  data-constants=""
+  data-note="Uses the percentage definition in this note. Enter both road-wheel angles in radians. Avoid zero or near-zero steering angles where cotangents are singular or ill-conditioned.">
+</div>
 
 這是本筆記用來量化構圖的定義，不聲稱所有車隊都採同一種百分比；零轉角附近餘切會發散，不宜直接計算。
 

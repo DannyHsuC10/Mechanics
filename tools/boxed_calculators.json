@@ -1588,5 +1588,351 @@
     "result": "P",
     "unit": "mm",
     "note": "Thread pitch equals lead divided by the positive integer number of starts. Enter lead in mm."
+  },
+  {
+    "id": "rcvd-001",
+    "file": "RCVD/Chapter_02_Tire_Behavior.md",
+    "tex": "F_R=\\left[(SR+1)\\frac{T_{\\mathrm{in}}}{R_l}-F_x\\right]\\cos\\alpha\n-F_y\\sin\\alpha.",
+    "expression": "((SR+1)*T_in/R_l-F_x)*cos(alpha)-F_y*sin(alpha)",
+    "inputs": "SR:slip ratio as a fraction,T_in:input torque N m,R_l:loaded radius m,F_x:longitudinal force N,alpha:slip angle rad,F_y:lateral force N",
+    "result": "F_R",
+    "unit": "N",
+    "note": "Use the signed forces and slip-ratio convention defined in this chapter. Enter alpha in radians and R_l > 0."
+  },
+  {
+    "id": "rcvd-002",
+    "file": "RCVD/Chapter_02_Tire_Behavior.md",
+    "tex": "T_{\\mathrm{in}}=\n\\frac{F_xR_l}{SR+1}+\n\\frac{F_RR_l\\cos\\gamma}{(SR+1)\\cos\\alpha}+\n\\frac{F_yR_l\\tan\\alpha}{SR+1}+M_z\\sin\\gamma.",
+    "expression": "F_x*R_l/(SR+1)+F_R*R_l*cos(gamma)/((SR+1)*cos(alpha))+F_y*R_l*tan(alpha)/(SR+1)+M_z*sin(gamma)",
+    "inputs": "F_x:longitudinal force N,R_l:loaded radius m,SR:slip ratio as a fraction,F_R:rolling resistance N,gamma:camber angle rad,alpha:slip angle rad,F_y:lateral force N,M_z:aligning moment N m",
+    "result": "T_in",
+    "unit": "N m",
+    "note": "Enter both angles in radians. SR must differ from -1 and cos(alpha) must be nonzero. Preserve the chapter force and moment signs."
+  },
+  {
+    "id": "rcvd-003",
+    "file": "RCVD/Chapter_03_Aerodynamic_Fundamentals.md",
+    "tex": "V=\\sqrt{\\frac{2(H-p)}{\\rho}}.",
+    "expression": "(2*(H-p)/rho)^0.5",
+    "inputs": "H:total pressure Pa,p:static pressure Pa,rho:air density kg/m^3",
+    "result": "V",
+    "unit": "m/s",
+    "note": "Incompressible pressure-based speed. Use matching pressure references with H >= p and rho > 0."
+  },
+  {
+    "id": "rcvd-004",
+    "file": "RCVD/Chapter_03_Aerodynamic_Fundamentals.md",
+    "tex": "Re=\\frac{\\rho VL}{\\mu}=\\frac{VL}{\\nu}.",
+    "expression": "rho*V*L/mu",
+    "inputs": "rho:density kg/m^3,V:speed m/s,L:reference length m,mu:dynamic viscosity Pa s",
+    "result": "Re",
+    "unit": "",
+    "note": "Uses the first equality rho*V*L/mu. mu is dynamic viscosity; do not substitute kinematic viscosity nu. Use positive density and viscosity."
+  },
+  {
+    "id": "rcvd-005",
+    "file": "RCVD/Chapter_05_Simplified_Steady_State_Stability_and_Control.md",
+    "tex": "Y=(C_F+C_R)\\beta+\\frac{aC_F-bC_R}{V}r-C_F\\delta,",
+    "expression": "(C_F+C_R)*beta+(a*C_F-b*C_R)/V*r-C_F*delta",
+    "inputs": "C_F:signed front axle stiffness N/rad,C_R:signed rear axle stiffness N/rad,beta:body sideslip rad,a:CG to front axle m,b:CG to rear axle m,V:speed m/s,r:yaw rate rad/s,delta:road wheel steer rad",
+    "result": "Y",
+    "unit": "N",
+    "note": "Use negative signed axle stiffnesses C_F and C_R as defined in Chapter 5; angles are radians and V > 0. This is a local linear tire model."
+  },
+  {
+    "id": "rcvd-006",
+    "file": "RCVD/Chapter_05_Simplified_Steady_State_Stability_and_Control.md",
+    "tex": "N=(aC_F-bC_R)\\beta+\\frac{a^2C_F+b^2C_R}{V}r-aC_F\\delta.",
+    "expression": "(a*C_F-b*C_R)*beta+(a^2*C_F+b^2*C_R)/V*r-a*C_F*delta",
+    "inputs": "C_F:signed front axle stiffness N/rad,C_R:signed rear axle stiffness N/rad,beta:body sideslip rad,a:CG to front axle m,b:CG to rear axle m,V:speed m/s,r:yaw rate rad/s,delta:road wheel steer rad",
+    "result": "N",
+    "unit": "N m",
+    "note": "Use negative signed axle stiffnesses C_F and C_R as defined in Chapter 5; angles are radians and V > 0. This is a local linear tire model."
+  },
+  {
+    "id": "rcvd-007",
+    "file": "RCVD/Chapter_05_Simplified_Steady_State_Stability_and_Control.md",
+    "tex": "\\beta=\\frac{N_r(Y_\\delta\\delta+F_e)-(Y_r-mV)(N_\\delta\\delta+M_e)}{Q},",
+    "expression": "(N_r*(Y_delta*delta+F_e)-(Y_r-m*V)*(N_delta*delta+M_e))/(N_beta*Y_r-N_beta*m*V-Y_beta*N_r)",
+    "inputs": "N_r:yaw damping derivative N m s/rad,Y_delta:steer force derivative N/rad,delta:road wheel steer rad,F_e:external lateral force N,Y_r:yaw rate force derivative N s/rad,m:vehicle mass kg,V:speed m/s,N_delta:steer moment derivative N m/rad,M_e:external yaw moment N m,N_beta:sideslip moment derivative N m/rad,Y_beta:sideslip force derivative N/rad",
+    "result": "beta",
+    "unit": "rad",
+    "note": "Q is computed from the six signed stability derivatives using the definition above. Use SI units and radians; a zero Q has no unique steady solution. Set unused external force or moment to zero."
+  },
+  {
+    "id": "rcvd-008",
+    "file": "RCVD/Chapter_05_Simplified_Steady_State_Stability_and_Control.md",
+    "tex": "r=\\frac{Y_\\beta(N_\\delta\\delta+M_e)-N_\\beta(Y_\\delta\\delta+F_e)}{Q}.",
+    "expression": "(Y_beta*(N_delta*delta+M_e)-N_beta*(Y_delta*delta+F_e))/(N_beta*Y_r-N_beta*m*V-Y_beta*N_r)",
+    "inputs": "N_r:yaw damping derivative N m s/rad,Y_delta:steer force derivative N/rad,delta:road wheel steer rad,F_e:external lateral force N,Y_r:yaw rate force derivative N s/rad,m:vehicle mass kg,V:speed m/s,N_delta:steer moment derivative N m/rad,M_e:external yaw moment N m,N_beta:sideslip moment derivative N m/rad,Y_beta:sideslip force derivative N/rad",
+    "result": "r",
+    "unit": "rad/s",
+    "note": "Q is computed from the six signed stability derivatives using the definition above. Use SI units and radians; a zero Q has no unique steady solution. Set unused external force or moment to zero."
+  },
+  {
+    "id": "rcvd-009",
+    "file": "RCVD/Chapter_05_Simplified_Steady_State_Stability_and_Control.md",
+    "tex": "K=\\frac{m(C_{\\alpha F}+C_{\\alpha R})}{\\ell C_{\\alpha F}C_{\\alpha R}}SM.",
+    "expression": "m*(C_alphaF+C_alphaR)/(ell*C_alphaF*C_alphaR)*SM",
+    "inputs": "m:vehicle mass kg,C_alphaF:positive front axle stiffness N/rad,C_alphaR:positive rear axle stiffness N/rad,ell:wheelbase m,SM:static margin fraction",
+    "result": "K",
+    "unit": "s^2/m^2",
+    "note": "Use positive axle stiffness magnitudes here. SM is a dimensionless fraction rather than a percentage; K is the coefficient in 1 + K*V^2."
+  },
+  {
+    "id": "rcvd-010",
+    "file": "RCVD/Chapter_05_Simplified_Steady_State_Stability_and_Control.md",
+    "tex": "S_{SW}\\ [g/100^\\circ]\n=\\frac{100}{i_s\\left[UG+(180/\\pi)g\\ell/V^2\\right]}.",
+    "expression": "100/(i_s*(UG+(180/pi)*g*ell/V^2))",
+    "inputs": "i_s:steering wheel to road wheel angle ratio,UG:understeer gradient deg/g,g:gravity m/s^2,ell:wheelbase m,V:speed m/s",
+    "result": "S_SW",
+    "unit": "g/100 deg",
+    "note": "UG is in degrees per g for this formula. Use steering-wheel/road-wheel ratio i_s and V > 0. A near-zero denominator is outside a reliable linear gain estimate.",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "rcvd-011",
+    "file": "RCVD/Chapter_07_Steady_State_Pair_Analysis.md",
+    "tex": "P_K=\\frac{K_a}{K_F+K_R-W_sH_s+W_sy_s''A_Z},",
+    "pending": "The printed A_Z is not clearly defined. The full offset-CG formula is pending clarification; do not substitute A_y or assume A_Z = 1. The calculator below is only for a centered CG (y_s double-prime = 0).",
+    "extra": {
+      "expression": "K_a/(K_F+K_R-W_s*H_s)",
+      "inputs": "K_a:analyzed axle roll stiffness N m/rad,K_F:front roll stiffness N m/rad,K_R:rear roll stiffness N m/rad,W_s:sprung weight N,H_s:CG height above roll axis m",
+      "result": "P_K (centered CG only)",
+      "unit": "",
+      "note": "Restricted to y_s double-prime = 0, so the undefined A_Z term vanishes. K_a is the front or rear axle stiffness being analyzed. The denominator must be nonzero; P_K need not lie between 0 and 1."
+    }
+  },
+  {
+    "id": "rcvd-012",
+    "file": "RCVD/Chapter_07_Steady_State_Pair_Analysis.md",
+    "tex": "h_e=\\frac{P_KH_sW_s+W_{sa}Z_{Ra}+W_{ua}Z_{Wa}}{W_a}.",
+    "expression": "(P_K*H_s*W_s+W_sa*Z_Ra+W_ua*Z_Wa)/W_a",
+    "inputs": "P_K:validated axle stiffness factor,H_s:sprung CG above roll axis m,W_s:total sprung weight N,W_sa:axle sprung weight N,Z_Ra:axle roll center height m,W_ua:axle unsprung weight N,Z_Wa:unsprung CG height m,W_a:total axle weight N",
+    "result": "h_e",
+    "unit": "m",
+    "note": "Enter an independently valid P_K. For an offset CG do not infer P_K from the undefined A_Z; use the Chapter 18 load model. Use W_a = W_sa + W_ua > 0."
+  },
+  {
+    "id": "rcvd-013",
+    "file": "RCVD/Chapter_10_Race_Car_Design.md",
+    "tex": "\\boldsymbol r'_{CG}=\\frac{m\\boldsymbol r_{CG}+m_b\\boldsymbol r_b}{m+m_b}.",
+    "expression": "(m*r_CG+m_b*r_b)/(m+m_b)",
+    "inputs": "m:original vehicle mass kg,r_CG:original CG coordinate m,m_b:added ballast mass kg,r_b:ballast coordinate m",
+    "result": "r_CG_new (one coordinate)",
+    "unit": "m",
+    "note": "Evaluate the vector formula component by component: run once for x, once for y and once for z using the same coordinate origin. m + m_b must be positive. Signed m_b can model removed mass at its known location."
+  },
+  {
+    "id": "rcvd-014",
+    "file": "RCVD/Chapter_12_Chassis_Set_Up.md",
+    "tex": "B_{\\mathrm{load}}(V)=\n\\frac{W_F+D_{fF}(V)}{W+D_{fF}(V)+D_{fR}(V)}.",
+    "expression": "(W_F+D_fF)/(W+D_fF+D_fR)",
+    "inputs": "W_F:static front axle weight N,D_fF:front downforce at selected speed N,W:total vehicle weight N,D_fR:rear downforce at selected speed N",
+    "result": "B_load",
+    "unit": "",
+    "note": "Enter both downforces from the aero data at the same chosen speed and ride height. Positive values add load. The result is a fraction; multiply by 100 for percent. Total load must be positive."
+  },
+  {
+    "id": "rcvd-015",
+    "file": "RCVD/Chapter_14_Tire_Data_Treatment.md",
+    "tex": "\\eta=(1-E')\\bar\\alpha+\n\\frac{E'}{B'}\\arctan(B'\\bar\\alpha).",
+    "expression": "(1-E_prime)*alpha_bar+E_prime/B_prime*arctan(B_prime*alpha_bar)",
+    "inputs": "E_prime:fitted E prime,B_prime:fitted B prime,alpha_bar:normalized slip input",
+    "result": "eta",
+    "unit": "",
+    "note": "alpha_bar is the dimensionless normalized input defined above, not raw slip angle. Use coefficients from the relevant tire fit and B_prime != 0. Inverse trigonometric functions use radians."
+  },
+  {
+    "id": "rcvd-016",
+    "file": "RCVD/Chapter_14_Tire_Data_Treatment.md",
+    "tex": "\\bar F=D'\\sin\\left\\{C'\\arctan\\left[\nB'\\bar\\alpha-E'\\bigl(B'\\bar\\alpha-\\arctan(B'\\bar\\alpha)\\bigr)\n\\right]\\right\\}.",
+    "expression": "D_prime*sin(C_prime*arctan(B_prime*alpha_bar-E_prime*(B_prime*alpha_bar-arctan(B_prime*alpha_bar))))",
+    "inputs": "D_prime:fitted D prime,C_prime:fitted C prime,B_prime:fitted B prime,alpha_bar:normalized slip input,E_prime:fitted E prime",
+    "result": "F_bar",
+    "unit": "",
+    "note": "Returns normalized force or moment for the selected fit, not force in newtons. Supply measured fit coefficients; the examples in this chapter are not universal tire constants."
+  },
+  {
+    "id": "rcvd-017",
+    "file": "RCVD/Chapter_15_Applied_Aerodynamics.md",
+    "tex": "V^2=\\frac{\\mu W}{W/(gR)-\\mu k_A}.",
+    "expression": "mu*W/(W/(g*R)-mu*k_A)",
+    "inputs": "mu:constant friction coefficient,W:vehicle weight N,g:gravity m/s^2,R:turn radius m,k_A:downforce coefficient N s^2/m^2",
+    "result": "V_squared",
+    "unit": "m^2/s^2",
+    "note": "Outputs V squared, not speed. Assumes constant friction and downforce = k_A*V^2. Only a positive denominator gives a finite physical speed limit; zero or negative denominator means this idealized model supplies no finite limit."
+  },
+  {
+    "id": "rcvd-018",
+    "file": "RCVD/Chapter_16_Ride_and_Roll_Rates.md",
+    "tex": "K_{\\phi,\\mathrm{springs}}=\\frac{k_rt^2}{2}.",
+    "expression": "k_r*t^2/2",
+    "inputs": "k_r:each side ride rate N/m,t:track width m",
+    "result": "K_phi_springs",
+    "unit": "N m/rad",
+    "note": "Use the ride rate of one side (including tire compliance) and the full track width in meters. Both sides have equal rates."
+  },
+  {
+    "id": "rcvd-019",
+    "file": "RCVD/Chapter_16_Ride_and_Roll_Rates.md",
+    "tex": "K_\\phi=\\frac{k_Lk_R}{k_L+k_R}t^2.",
+    "expression": "k_L*k_R/(k_L+k_R)*t^2",
+    "inputs": "k_L:left vertical rate N/m,k_R:right vertical rate N/m,t:track width m",
+    "result": "K_phi",
+    "unit": "N m/rad",
+    "note": "Use positive rates. This formula permits heave adjustment with no additional net vertical force; it is not the fixed-heave formula."
+  },
+  {
+    "id": "rcvd-020",
+    "file": "RCVD/Chapter_16_Ride_and_Roll_Rates.md",
+    "tex": "K_{\\phi,\\mathrm{effective}}\n=\\frac{K_{\\phi t}(K_{\\phi w}+K_{\\phi B})}\n{K_{\\phi t}+K_{\\phi w}+K_{\\phi B}}.",
+    "expression": "K_phit*(K_phiw+K_phiB)/(K_phit+K_phiw+K_phiB)",
+    "inputs": "K_phit:tire roll stiffness N m/rad,K_phiw:wheel center spring roll stiffness N m/rad,K_phiB:added anti-roll stiffness N m/rad",
+    "result": "K_phi_effective",
+    "unit": "N m/rad",
+    "note": "All angular stiffnesses must be expressed per radian and at the same axle reference. Tire compliance is in series with the wheel-center spring and bar combination."
+  },
+  {
+    "id": "rcvd-021",
+    "file": "RCVD/Chapter_16_Ride_and_Roll_Rates.md",
+    "tex": "K_{\\phi B}\n=\\frac{K_{\\phi,\\mathrm{target}}K_{\\phi t}}\n{K_{\\phi t}-K_{\\phi,\\mathrm{target}}}-K_{\\phi w}.",
+    "expression": "K_target*K_phit/(K_phit-K_target)-K_phiw",
+    "inputs": "K_target:target effective roll stiffness N m/rad,K_phit:tire roll stiffness N m/rad,K_phiw:wheel center spring roll stiffness N m/rad",
+    "result": "K_phiB",
+    "unit": "N m/rad",
+    "note": "Require 0 < K_target < K_phit. A negative answer means existing springs are already stiffer than the target; it is not a realizable positive added bar stiffness."
+  },
+  {
+    "id": "rcvd-022",
+    "file": "RCVD/Chapter_17_Suspension_Geometry.md",
+    "tex": "\\Delta W_x=\\frac{W A_xh}{\\ell}.",
+    "expression": "W*A_x*h/ell",
+    "inputs": "W:vehicle weight N,A_x:longitudinal acceleration in g,h:CG height m,ell:wheelbase m",
+    "result": "delta_W_x",
+    "unit": "N",
+    "note": "W is weight, not mass. A_x = a_x/g is dimensionless (enter 0.5 for half a g); the result is the signed axle-to-axle load transfer."
+  },
+  {
+    "id": "rcvd-023",
+    "file": "RCVD/Chapter_17_Suspension_Geometry.md",
+    "tex": "AD_F=100\\frac{F_{z,\\mathrm{geom}}}{WA_Bh/\\ell}\n=100B_F\\frac{\\ell}{h}\\tan\\phi_F.",
+    "expression": "100*B_F*ell/h*tan(phi_F)",
+    "inputs": "B_F:front brake force fraction,ell:wheelbase m,h:CG height m,phi_F:front contact patch to IC angle rad",
+    "result": "AD_F",
+    "unit": "%",
+    "note": "Uses the final equality for outboard brakes. Enter B_F between 0 and 1, h > 0 and phi_F in radians. The side-view line runs from contact patch to instant center."
+  },
+  {
+    "id": "rcvd-024",
+    "file": "RCVD/Chapter_17_Suspension_Geometry.md",
+    "tex": "AL_R=100(1-B_F)\\frac{\\ell}{h}\\tan\\phi_R.",
+    "expression": "100*(1-B_F)*ell/h*tan(phi_R)",
+    "inputs": "B_F:front brake force fraction,ell:wheelbase m,h:CG height m,phi_R:rear contact patch to IC angle rad",
+    "result": "AL_R",
+    "unit": "%",
+    "note": "Outboard-brake rear anti-lift. Enter front brake fraction B_F between 0 and 1 and rear side-view angle phi_R in radians; h must be positive."
+  },
+  {
+    "id": "rcvd-025",
+    "file": "RCVD/Chapter_18_Wheel_Loads.md",
+    "tex": "y_{CG}=\\frac{(W_2-W_1)t_F+(W_4-W_3)t_R}{2W}.",
+    "expression": "((W_2-W_1)*t_F+(W_4-W_3)*t_R)/(2*(W_1+W_2+W_3+W_4))",
+    "inputs": "W_2:right front wheel load N,W_1:left front wheel load N,t_F:front track m,W_4:right rear wheel load N,W_3:left rear wheel load N,t_R:rear track m",
+    "result": "y_CG",
+    "unit": "m",
+    "note": "Computes total W from all four measured wheel loads. Positive y_CG points right. Use level-ground static measurements and a positive total weight."
+  },
+  {
+    "id": "rcvd-026",
+    "file": "RCVD/Chapter_18_Wheel_Loads.md",
+    "tex": "y_{CG}=t\\left(\\frac{W_2+W_4}{W}-\\frac12\\right).",
+    "expression": "t*((W_2+W_4)/W-0.5)",
+    "inputs": "t:common front and rear track m,W_2:right front load N,W_4:right rear load N,W:total four-wheel weight N",
+    "result": "y_CG",
+    "unit": "m",
+    "note": "Only for equal front and rear track widths. W includes all four wheel loads, not just the right side; positive offset points right."
+  },
+  {
+    "id": "rcvd-027",
+    "file": "RCVD/Chapter_18_Wheel_Loads.md",
+    "tex": "\\Delta W_R=W\\frac a\\ell(\\cos\\theta-1)+W\\frac h\\ell(A_x+\\sin\\theta).",
+    "expression": "W*a/ell*(cos(theta)-1)+W*h/ell*(A_x+sin(theta))",
+    "inputs": "W:vehicle weight N,a:front axle to CG m,ell:wheelbase m,theta:uphill slope angle rad,h:CG height m,A_x:along-slope acceleration in g",
+    "result": "delta_W_R",
+    "unit": "N",
+    "note": "Change of rear axle load relative to flat static load. theta > 0 is uphill; A_x is acceleration divided by g. This is not the final rear load."
+  },
+  {
+    "id": "rcvd-028",
+    "file": "RCVD/Chapter_18_Wheel_Loads.md",
+    "tex": "\\Delta W_R=W\\frac a\\ell\n\\left(\\cos\\theta+\\epsilon\\frac{V^2}{gR_v}-1\\right)\n+W\\frac h\\ell(A_x+\\sin\\theta).",
+    "expression": "W*a/ell*(cos(theta)+epsilon*V^2/(g*R_v)-1)+W*h/ell*(A_x+sin(theta))",
+    "inputs": "W:vehicle weight N,a:front axle to CG m,ell:wheelbase m,theta:uphill slope angle rad,epsilon:crest -1 or valley +1,V:speed m/s,g:gravity m/s^2,R_v:positive vertical curve radius m,h:CG height m,A_x:along-slope acceleration in g",
+    "result": "delta_W_R",
+    "unit": "N",
+    "note": "Use epsilon = -1 at a crest or +1 in a valley. R_v > 0 and angles are radians. Add to flat static rear load; a negative final wheel load means loss of contact."
+  },
+  {
+    "id": "rcvd-029",
+    "file": "RCVD/Chapter_18_Wheel_Loads.md",
+    "tex": "\\Delta W_R=\\frac{K_R[WA_yH-(W'-W)y'']}{t_RD_\\phi}\n+WA_y\\frac a\\ell\\frac{z_{RR}}{t_R}.",
+    "expression": "K_R*(W*A_y*H-(W_prime-W)*y_offset)/(t_R*(K_F+K_R-W*A_y*y_offset-W_prime*H))+W*A_y*a/ell*z_RR/t_R",
+    "inputs": "K_R:rear roll stiffness N m/rad,W:vehicle weight N,A_y:banking-adjusted lateral acceleration in g,H:CG height above roll axis m,W_prime:banking-adjusted normal load N,y_offset:rightward CG offset m,t_R:rear track m,K_F:front roll stiffness N m/rad,a:front axle to CG m,ell:wheelbase m,z_RR:rear roll center height m",
+    "result": "delta_W_R",
+    "unit": "N",
+    "note": "Computes D_phi from the definition above; it must be nonzero. Use the banking-adjusted A_y and W_prime. Positive transfer is right to left in this section. This is the single-mass offset-CG model."
+  },
+  {
+    "id": "rcvd-030",
+    "file": "RCVD/Chapter_18_Wheel_Loads.md",
+    "tex": "W_i^{\\mathrm{final}}=W_i^{\\mathrm{base}}\n+\\Delta W_i^{\\mathrm{lateral}}\n+\\Delta W_i^{\\mathrm{longitudinal}}\n+\\Delta W_i^{\\mathrm{aero}}\n+\\Delta W_i^{\\mathrm{torque}}.",
+    "expression": "W_base+dW_lateral+dW_longitudinal+dW_aero+dW_torque",
+    "inputs": "W_base:base load for this wheel N,dW_lateral:signed lateral increment N,dW_longitudinal:signed longitudinal increment N,dW_aero:signed aero increment N,dW_torque:signed torque increment N",
+    "result": "W_final",
+    "unit": "N",
+    "note": "Run separately for each wheel and enter zero for unused increments. All increments must use compatible models and signs; do not count banking or slope corrections twice. Negative final load invalidates the all-wheels-contact model."
+  },
+  {
+    "id": "rcvd-031",
+    "file": "RCVD/Chapter_19_Steering_Systems.md",
+    "tex": "\\%Ack=100\\frac{\\cot\\delta_{\\mathrm{out}}-\\cot\\delta_{\\mathrm{in}}}{t/\\ell}.",
+    "expression": "100*(cos(delta_out)/sin(delta_out)-cos(delta_in)/sin(delta_in))/(t/ell)",
+    "inputs": "delta_out:outer road wheel angle rad,delta_in:inner road wheel angle rad,t:track width m,ell:wheelbase m",
+    "result": "Ackermann",
+    "unit": "%",
+    "note": "Uses the percentage definition in this note. Enter both road-wheel angles in radians. Avoid zero or near-zero steering angles where cotangents are singular or ill-conditioned."
+  },
+  {
+    "id": "rcvd-032",
+    "file": "RCVD/Chapter_20_Driving_and_Braking.md",
+    "tex": "B_F=\\frac{F_{BF,\\max}}{F_{BF,\\max}+F_{BR,\\max}}.",
+    "expression": "F_BF_max/(F_BF_max+F_BR_max)",
+    "inputs": "F_BF_max:front axle peak braking force N,F_BR_max:rear axle peak braking force N",
+    "result": "B_F",
+    "unit": "",
+    "note": "Supply nonnegative peak forces evaluated at the same braking condition, including load transfer and tire load sensitivity. Total force must be positive. Output is a front-force fraction, not hydraulic bias."
+  },
+  {
+    "id": "rcvd-033",
+    "file": "RCVD/Chapter_21_Suspension_Springs.md",
+    "tex": "L=\\frac{\\pi Gd^4}{32R^2k_w}.",
+    "expression": "pi*G*d^4/(32*R^2*k_w)",
+    "inputs": "G:shear modulus Pa,d:solid bar diameter m,R:lever arm m,k_w:wheel rate N/m",
+    "result": "L",
+    "unit": "m",
+    "note": "Solid torsion bar with the wheel acting directly at the lever end. Use SI units and positive G, d, R and k_w; convert linkage motion ratio before applying this equation.",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "rcvd-034",
+    "file": "RCVD/Chapter_21_Suspension_Springs.md",
+    "tex": "\\tau_{\\mathrm{corrected}}=K_W\\frac{8DF}{\\pi d^3}.",
+    "expression": "K_W*8*D*F/(pi*d^3)",
+    "inputs": "K_W:Wahl correction factor,D:mean coil diameter m,F:axial spring force N,d:wire diameter m",
+    "result": "tau_corrected",
+    "unit": "Pa",
+    "note": "Supply K_W from the Wahl-factor equation above. D is mean coil diameter, not outer diameter. Lengths are meters and the output is pascals; divide by 1e6 for MPa.",
+    "constants": "pi=3.141592653589793"
   }
 ]

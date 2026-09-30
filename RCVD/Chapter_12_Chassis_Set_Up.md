@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 12: Chassis Set-Up (底盤設定與調校指南)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=418)，書頁 387–412（PDF 第 418–443 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 387–412（PDF 第 418–443 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -129,9 +129,19 @@ $$
 空力前配比不是總輪載的前配比，後者為：
 
 $$
-B_{\mathrm{load}}(V)=
-\frac{W_F+D_{fF}(V)}{W+D_{fF}(V)+D_{fR}(V)}.
-$$
+\boxed{B_{\mathrm{load}}(V)=
+\frac{W_F+D_{fF}(V)}{W+D_{fF}(V)+D_{fR}(V)}.}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-014"
+  data-expression="(W_F+D_fF)/(W+D_fF+D_fR)"
+  data-inputs="W_F:static front axle weight N,D_fF:front downforce at selected speed N,W:total vehicle weight N,D_fR:rear downforce at selected speed N"
+  data-result="B_load"
+  data-unit=""
+  data-constants=""
+  data-note="Enter both downforces from the aero data at the same chosen speed and ride height. Positive values add load. The result is a fraction; multiply by 100 for percent. Total load must be positive.">
+</div>
 
 若下壓力總和為零，$B_{\mathrm{aero}}$ 沒有定義。車高與俯仰改變空力圖譜時，須重新計算，不能只用 $V^2$ 放大固定係數。
 

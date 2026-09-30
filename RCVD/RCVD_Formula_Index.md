@@ -4,7 +4,7 @@ layout: base
 
 # RCVD 公式筆記索引與使用說明
 
-來源是本資料夾的 [rcvd ocr.pdf](rcvd%20ocr.pdf)，共 926 頁。原有 23 份章節筆記；本次擴充 Chapter 2–12、14–23，共 21 份。Chapter 1、13 保留原狀。
+來源是本資料夾的 rcvd ocr.pdf，共 926 頁。原有 23 份章節筆記；本次擴充 Chapter 2–12、14–23，共 21 份。Chapter 1、13 保留原狀。
 
 ## 1. 閱讀方式
 

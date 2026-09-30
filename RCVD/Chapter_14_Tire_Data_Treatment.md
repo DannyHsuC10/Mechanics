@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 14: Tire Data Treatment (輪胎數據處理與無因次化擬合模型)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=504)，書頁 473–488（PDF 第 504–519 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 473–488（PDF 第 504–519 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -56,17 +56,39 @@ $$
 $$
 
 $$
-\eta=(1-E')\bar\alpha+
-\frac{E'}{B'}\arctan(B'\bar\alpha).
+\boxed{\eta=(1-E')\bar\alpha+
+\frac{E'}{B'}\arctan(B'\bar\alpha).}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-015"
+  data-expression="(1-E_prime)*alpha_bar+E_prime/B_prime*arctan(B_prime*alpha_bar)"
+  data-inputs="E_prime:fitted E prime,B_prime:fitted B prime,alpha_bar:normalized slip input"
+  data-result="eta"
+  data-unit=""
+  data-constants=""
+  data-note="alpha_bar is the dimensionless normalized input defined above, not raw slip angle. Use coefficients from the relevant tire fit and B_prime != 0. Inverse trigonometric functions use radians.">
+</div>
 
 等價合併式為：
 
 $$
-\bar F=D'\sin\left\{C'\arctan\left[
+\boxed{\bar F=D'\sin\left\{C'\arctan\left[
 B'\bar\alpha-E'\bigl(B'\bar\alpha-\arctan(B'\bar\alpha)\bigr)
-\right]\right\}.
+\right]\right\}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-016"
+  data-expression="D_prime*sin(C_prime*arctan(B_prime*alpha_bar-E_prime*(B_prime*alpha_bar-arctan(B_prime*alpha_bar))))"
+  data-inputs="D_prime:fitted D prime,C_prime:fitted C prime,B_prime:fitted B prime,alpha_bar:normalized slip input,E_prime:fitted E prime"
+  data-result="F_bar"
+  data-unit=""
+  data-constants=""
+  data-note="Returns normalized force or moment for the selected fit, not force in newtons. Supply measured fit coefficients; the examples in this chapter are not universal tire constants.">
+</div>
 
 原書圖 14.1 的示例參數為 $B'=0.714,C'=1.40,D'=1.0,E'=-0.20$；回正力矩圖 14.2 另用 $B'=0.852,C'=2.3,D'=0.51,E'=-2.75$。這些只是該組數據的 fit，不能直接視為自己的輪胎係數。
 

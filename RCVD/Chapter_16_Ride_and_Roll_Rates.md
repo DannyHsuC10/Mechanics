@@ -4,7 +4,7 @@ layout: base
 
 # Chapter 16: Ride and Roll Rates (行駛與側傾剛度計算)
 
-> 來源：[RCVD 原書 PDF](rcvd%20ocr.pdf#page=610)，書頁 579–606（PDF 第 610–637 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
+> 來源：RCVD 原書 PDF，書頁 579–606（PDF 第 610–637 頁）。以下頁碼均指**書上印刷頁碼**；PDF 頁碼 = 書頁 + 31。
 >
 > 整理方式：以原書關係式為主，統一成可代入的 LaTeX，並用中文解釋。標為「整理推導」的式子是從書中模型重寫或延伸，並非原書逐字公式。圖表提供的輪胎、空力及材料數據仍須由相應圖表或實測取得，不能用通用常數替代。
 
@@ -59,14 +59,36 @@ $$
 左右相同 ride rate $k_r$、輪距 $t$ 時：
 
 $$
-K_{\phi,\mathrm{springs}}=\frac{k_rt^2}{2}.
+\boxed{K_{\phi,\mathrm{springs}}=\frac{k_rt^2}{2}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-018"
+  data-expression="k_r*t^2/2"
+  data-inputs="k_r:each side ride rate N/m,t:track width m"
+  data-result="K_phi_springs"
+  data-unit="N m/rad"
+  data-constants=""
+  data-note="Use the ride rate of one side (including tire compliance) and the full track width in meters. Both sides have equal rates.">
+</div>
 
 原書對左右不同剛度，在無額外淨垂直力、允許升沉調整的條件下給出：
 
 $$
-K_\phi=\frac{k_Lk_R}{k_L+k_R}t^2.
+\boxed{K_\phi=\frac{k_Lk_R}{k_L+k_R}t^2.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-019"
+  data-expression="k_L*k_R/(k_L+k_R)*t^2"
+  data-inputs="k_L:left vertical rate N/m,k_R:right vertical rate N/m,t:track width m"
+  data-result="K_phi"
+  data-unit="N m/rad"
+  data-constants=""
+  data-note="Use positive rates. This formula permits heave adjustment with no additional net vertical force; it is not the fixed-heave formula.">
+</div>
 
 若車身升沉被強制固定，則是另一個條件，角剛度為 $(k_L+k_R)t^2/4$；兩式不能混用。左右相同時兩者一致。
 
@@ -89,18 +111,40 @@ K_{\phi t}=\frac{k_tt^2}{2},
 $$
 
 $$
-K_{\phi,\mathrm{effective}}
+\boxed{K_{\phi,\mathrm{effective}}
 =\frac{K_{\phi t}(K_{\phi w}+K_{\phi B})}
-{K_{\phi t}+K_{\phi w}+K_{\phi B}}.
+{K_{\phi t}+K_{\phi w}+K_{\phi B}}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-020"
+  data-expression="K_phit*(K_phiw+K_phiB)/(K_phit+K_phiw+K_phiB)"
+  data-inputs="K_phit:tire roll stiffness N m/rad,K_phiw:wheel center spring roll stiffness N m/rad,K_phiB:added anti-roll stiffness N m/rad"
+  data-result="K_phi_effective"
+  data-unit="N m/rad"
+  data-constants=""
+  data-note="All angular stiffnesses must be expressed per radian and at the same axle reference. Tire compliance is in series with the wheel-center spring and bar combination.">
+</div>
 
 若期望接地端有效側傾剛度為 $K_{\phi,\mathrm{target}}$，所需額外輪心端防傾剛度是：
 
 $$
-K_{\phi B}
+\boxed{K_{\phi B}
 =\frac{K_{\phi,\mathrm{target}}K_{\phi t}}
-{K_{\phi t}-K_{\phi,\mathrm{target}}}-K_{\phi w}.
+{K_{\phi t}-K_{\phi,\mathrm{target}}}-K_{\phi w}.}
 $$
+
+<div
+  data-calculator=""
+  data-boxed-id="rcvd-021"
+  data-expression="K_target*K_phit/(K_phit-K_target)-K_phiw"
+  data-inputs="K_target:target effective roll stiffness N m/rad,K_phit:tire roll stiffness N m/rad,K_phiw:wheel center spring roll stiffness N m/rad"
+  data-result="K_phiB"
+  data-unit="N m/rad"
+  data-constants=""
+  data-note="Require 0 &lt; K_target &lt; K_phit. A negative answer means existing springs are already stiffer than the target; it is not a realizable positive added bar stiffness.">
+</div>
 
 不能簡單把「目標接地側傾剛度－現有接地彈簧剛度」當成防傾桿本體剛度。若反算為負，代表現有彈簧已比目標硬；若目標大於輪胎角剛度，該線性串聯系統無法實現。
 
