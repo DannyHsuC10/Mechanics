@@ -116,8 +116,6 @@ $$C12=4\epsilon\sigma^{12},C6=4\epsilon\sigma^{6}$$
 - Avoid huge number of parameters for each combination of different atom types.
 - Different force fields use different combining rules.
 
-![Combining rules ]({{ page.root }}/fig/combining_rules.svg){: width="380" }
-
 - The arithmetic mean (Lorentz) is motivated by collision of hard spheres
 - The geometric mean (Berthelot) has little physical argument.
 
@@ -218,8 +216,6 @@ $$A_{ij}=\sqrt{(A_{ii}A_{jj})} \qquad B_{ij}=2/(\frac{1}{B_{ii}}+\frac{1}{B_{jj}
 
 $$V_{Dihed}=k_\phi(1+cos(n\phi-\delta)) + ...$$
 
-![graph: torsion/dihedral potential]({{ page.root }}/fig/dihedral.png){: width="300" }
-
 - n represents the number of potential maxima or minima generated in a 360° rotation.
 
 ![graph: torsion/dihedral potential](https://computecanada.github.io/molmodsim-md-theory-lesson-novice/fig/dihedral.png)
@@ -281,8 +277,6 @@ $$k_BT$$
 $$\frac{kcal}{mol}$$
 
 >| Bond vibrations      | ~ 100 ‐ 500      |
-
-$$\frac{kcal}{mol \cdot \unicode{x212B}^2}$$
 
 >| Bond angle bending   | ~ 10 - 50        |
 

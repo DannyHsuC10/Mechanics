@@ -42,7 +42,7 @@ $\qquad\boldsymbol{v}(t+\delta{t})=\boldsymbol{v}(t)+\frac{1}{2}\boldsymbol{a}(t
 $$\qquad\boldsymbol{r}(t+\delta{t})=2\boldsymbol{r}(t)-\boldsymbol{r}(t-\delta{t})+\boldsymbol{a}(t)\delta{t}^2$$
 
 >
->- The Verlet algorithm  [(Verlet, 1967)]({{ page.root }}/reference.html#verlet-1967) requires positions at two time steps. It is inconvenient when starting a simulation when only current positions are available.
+>- The Verlet algorithm requires positions at two time steps. It is inconvenient when starting a simulation when only current positions are available.
 >
 >While velocities are not needed to compute trajectories, they are useful for calculating observables e.g. the kinetic energy. The velocities can only be computed once the next positions are calculated:
 >
