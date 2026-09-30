@@ -1290,5 +1290,303 @@
     "expression": "(tau/mu)^0.5",
     "result": "v",
     "inputs": "tau:tension N,mu:linear mass density kg/m"
+  },
+  {
+    "id": "mechanical-001",
+    "file": "Mechanical_Principle/Gear/gear/Gear.md",
+    "tex": "N_p = \\frac{2k}{3\\sin^2\\phi}(1+\\sqrt{1+3\\sin^2\\phi})",
+    "expression": "2*k/(3*sin(phi)^2)*(1+(1+3*sin(phi)^2)^0.5)",
+    "inputs": "k:addendum coefficient,phi:pressure angle rad",
+    "result": "N_p",
+    "unit": "teeth",
+    "note": "Enter phi in radians and k as the dimensionless tooth-depth coefficient. This is the continuous tooth-count limit; an actual tooth count must be an integer."
+  },
+  {
+    "id": "mechanical-002",
+    "file": "Mechanical_Principle/Gear/gear/Gear.md",
+    "tex": "N_P = \\frac{2k}{(1+2m)\\sin^2\\phi}(m+\\sqrt{m^2+(1+2m)\\sin^2\\phi})",
+    "expression": "2*k/((1+2*m)*sin(phi)^2)*(m+(m^2+(1+2*m)*sin(phi)^2)^0.5)",
+    "inputs": "k:addendum coefficient,m:gear ratio,phi:pressure angle rad",
+    "result": "N_P",
+    "unit": "teeth",
+    "note": "Enter phi in radians and the positive gear ratio m. This returns the continuous limit before selecting an integer tooth count."
+  },
+  {
+    "id": "mechanical-003",
+    "file": "Mechanical_Principle/Gear/gear/Gear.md",
+    "tex": "N_G = \\frac{N_p^2\\sin^2\\phi-4k^2}{4k-2N_p\\sin^2\\phi}",
+    "expression": "(N_p^2*sin(phi)^2-4*k^2)/(4*k-2*N_p*sin(phi)^2)",
+    "inputs": "N_p:pinion tooth count,k:addendum coefficient,phi:pressure angle rad",
+    "result": "N_G",
+    "unit": "teeth",
+    "note": "Enter phi in radians. The denominator must be nonzero; a nonpositive output is not a usable gear tooth count."
+  },
+  {
+    "id": "mechanical-004",
+    "file": "Mechanical_Principle/Gear/gear/Gear.md",
+    "tex": "N_P = \\frac{2k}{\\sin^2\\phi}",
+    "expression": "2*k/sin(phi)^2",
+    "inputs": "k:addendum coefficient,phi:pressure angle rad",
+    "result": "N_P",
+    "unit": "teeth",
+    "note": "Enter phi in radians with nonzero sine. The calculator returns the continuous minimum; round upward when choosing the minimum integer tooth count."
+  },
+  {
+    "id": "mechanical-005",
+    "file": "Mechanical_Principle/Other_components/Bearings/bearings.md",
+    "tex": "C_{rr} = \\sqrt{Z/d}",
+    "expression": "(Z/d)^0.5",
+    "inputs": "Z:surface subsidence m,d:roller diameter m",
+    "result": "C_rr",
+    "unit": "",
+    "note": "Evaluate the stated rolling-resistance model using Z >= 0 and d > 0 in the same length unit."
+  },
+  {
+    "id": "mechanical-006",
+    "file": "Mechanical_Principle/Other_components/Bearings/bearings.md",
+    "tex": "M = Nd",
+    "expression": "N*d",
+    "inputs": "N:normal force N,d:offset distance m",
+    "result": "M",
+    "unit": "N m",
+    "note": "Here d is the force offset from the shaft center; it is not the roller diameter used above."
+  },
+  {
+    "id": "mechanical-007",
+    "file": "Mechanical_Principle/Other_components/Bearings/bearings.md",
+    "tex": "M = \\frac{2\\mu_kF(R^3_1-R^3_2)}{3\\pi(R^2_1-R^2_2)}",
+    "expression": "2*mu_k*F*(R_1^3-R_2^3)/(3*pi*(R_1^2-R_2^2))",
+    "inputs": "mu_k:kinetic friction coefficient,F:axial force N,R_1:outer radius m,R_2:inner radius m",
+    "result": "M",
+    "unit": "N m",
+    "note": "Evaluates the boxed formula exactly, including pi in the denominator. That factor is inconsistent with the solid-disk limit printed below; the source formula needs review. Use R_1 > R_2 >= 0.",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "mechanical-008",
+    "file": "Mechanical_Principle/Other_components/Bearings/bearings.md",
+    "tex": "M_{max} = 2/3\\mu_sFR",
+    "expression": "2/3*mu_s*F*R",
+    "inputs": "mu_s:static friction coefficient,F:axial force N,R:disk radius m",
+    "result": "M_max",
+    "unit": "N m",
+    "note": "The printed 2/3 mu_s F R is evaluated as (2/3) multiplied by mu_s, F and R."
+  },
+  {
+    "id": "mechanical-009",
+    "file": "Mechanical_Principle/Other_components/Brakes/brakes.md",
+    "tex": "F = \\frac{\\tau(a-\\mu b)}{\\mu rl}",
+    "expression": "tau*(a-mu*b)/(mu*r*l)",
+    "inputs": "tau:braking torque N m,a:normal-force lever arm m,mu:friction coefficient,b:friction-force lever arm m,r:drum radius m,l:actuation lever arm m",
+    "result": "F",
+    "unit": "N",
+    "note": "Evaluates the stated block-brake force. Use positive mu, r and l. A zero or negative a - mu*b indicates the self-locking boundary or a change in the required force direction."
+  },
+  {
+    "id": "mechanical-010",
+    "file": "Mechanical_Principle/Other_components/Brakes/brakes.md",
+    "tex": "F = \\frac{\\tau(a-\\mu b)}{\\mu rl}",
+    "expression": "tau*(a-mu*b)/(mu*r*l)",
+    "inputs": "tau:braking torque N m,a:normal-force lever arm m,mu:friction coefficient,b:friction-force lever arm m,r:drum radius m,l:actuation lever arm m",
+    "result": "F",
+    "unit": "N",
+    "note": "The reverse-direction box currently repeats the forward-direction formula. This calculator preserves that expression; confirm the friction moment sign for the actual rotation direction."
+  },
+  {
+    "id": "mechanical-011",
+    "file": "Mechanical_Principle/Other_components/Brakes/brakes.md",
+    "tex": "F = \\frac{Ta}{rl(e^{\\mu\\theta}-1)}",
+    "expression": "T*a/(r*l*(e^(mu*theta)-1))",
+    "inputs": "T:braking torque N m,a:band lever arm m,r:drum radius m,l:actuation lever arm m,mu:friction coefficient,theta:wrap angle rad",
+    "result": "F",
+    "unit": "N",
+    "note": "T denotes torque here. Enter wrap angle theta in radians; use positive r, l and mu*theta.",
+    "constants": "e=2.718281828459045"
+  },
+  {
+    "id": "mechanical-012",
+    "file": "Mechanical_Principle/Other_components/Brakes/brakes.md",
+    "tex": "F = \\frac{Tae^{\\mu\\theta}}{rl(e^{\\mu\\theta}-1)}",
+    "expression": "T*a*e^(mu*theta)/(r*l*(e^(mu*theta)-1))",
+    "inputs": "T:braking torque N m,a:band lever arm m,r:drum radius m,l:actuation lever arm m,mu:friction coefficient,theta:wrap angle rad",
+    "result": "F",
+    "unit": "N",
+    "note": "Evaluate the reverse band-brake expression with theta in radians. T is braking torque and e is supplied automatically.",
+    "constants": "e=2.718281828459045"
+  },
+  {
+    "id": "mechanical-013",
+    "file": "Mechanical_Principle/Other_components/Brakes/brakes.md",
+    "tex": "F = \\frac{2\\tau}{\\mu D_m}",
+    "expression": "2*tau/(mu*D_m)",
+    "inputs": "tau:braking torque N m,mu:friction coefficient,D_m:mean contact diameter m",
+    "result": "F",
+    "unit": "N",
+    "note": "Use the mean contact diameter D_m, not its radius. This evaluates the single friction-force relation shown above."
+  },
+  {
+    "id": "mechanical-014",
+    "file": "Mechanical_Principle/Other_components/Periodic_motion_mechanism/Periodic_motion_mechanism.md",
+    "tex": "t_\\text{on} = \\frac t{2\\pi}(\\pi(1-\\frac2N)) = \\frac t2-\\frac tN",
+    "expression": "t/2-t/N",
+    "inputs": "t:complete cycle period s,N:number of slots",
+    "result": "t_on",
+    "unit": "s",
+    "note": "Use the complete input-rotation period t and an integer slot count N > 4 as stated on this page. This evaluates the final equality in the box."
+  },
+  {
+    "id": "mechanical-015",
+    "file": "Mechanical_Principle/Other_components/Periodic_motion_mechanism/Periodic_motion_mechanism.md",
+    "tex": "t_\\text{off} = \\frac t{2\\pi}(\\pi(1+\\frac2N)) = \\frac t2+\\frac tN",
+    "expression": "t/2+t/N",
+    "inputs": "t:complete cycle period s,N:number of slots",
+    "result": "t_off",
+    "unit": "s",
+    "note": "Use the complete cycle period t and integer N > 4. Motion time plus dwell time equals t."
+  },
+  {
+    "id": "mechanical-016",
+    "file": "Mechanical_Principle/Other_components/Spring/Spring.md",
+    "tex": "D_m  = \\frac{D_i+D_o}2",
+    "expression": "(D_i+D_o)/2",
+    "inputs": "D_i:inner diameter mm,D_o:outer diameter mm",
+    "result": "D_m",
+    "unit": "mm",
+    "note": "Enter both diameters in mm with D_o > D_i >= 0 to obtain the mean coil diameter."
+  },
+  {
+    "id": "mechanical-017",
+    "file": "Mechanical_Principle/Other_components/Spring/Spring.md",
+    "tex": "d = \\frac{D_o-D_i}2",
+    "expression": "(D_o-D_i)/2",
+    "inputs": "D_o:outer diameter mm,D_i:inner diameter mm",
+    "result": "d",
+    "unit": "mm",
+    "note": "The wire diameter is half the difference between outer and inner coil diameters. Use D_o > D_i >= 0."
+  },
+  {
+    "id": "mechanical-018",
+    "file": "Mechanical_Principle/Other_components/Spring/Spring.md",
+    "tex": "k_\\text{total} = \\frac{k_1k_2}{k_1+k_2}",
+    "expression": "k_1*k_2/(k_1+k_2)",
+    "inputs": "k_1:first spring stiffness N/mm,k_2:second spring stiffness N/mm",
+    "result": "k_total",
+    "unit": "N/mm",
+    "note": "Equivalent stiffness of two positive linear spring stiffnesses connected in series."
+  },
+  {
+    "id": "mechanical-019",
+    "file": "Mechanical_Principle/Other_components/Spring/Spring.md",
+    "tex": "k_\\text{total} = k_1+k_2",
+    "expression": "k_1+k_2",
+    "inputs": "k_1:first spring stiffness N/mm,k_2:second spring stiffness N/mm",
+    "result": "k_total",
+    "unit": "N/mm",
+    "note": "Equivalent stiffness of two linear springs in parallel with equal displacement."
+  },
+  {
+    "id": "mechanical-020",
+    "file": "Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md",
+    "tex": "\\text{BL} = \\frac{\\pi(D+d)}2+2L+\\frac{(D-d)^2}{4L}",
+    "expression": "pi*(D+d)/2+2*L+(D-d)^2/(4*L)",
+    "inputs": "D:large pulley diameter m,d:small pulley diameter m,L:center distance m",
+    "result": "BL",
+    "unit": "m",
+    "note": "Approximate open-belt length. Use consistent diameters and L > 0; the derivation assumes abs(D-d)/(2L) is small.",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "mechanical-021",
+    "file": "Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md",
+    "tex": "\\text{BL} = \\frac{\\pi(D+d)}2+2L+\\frac{(D+d)^2}{4L}",
+    "expression": "pi*(D+d)/2+2*L+(D+d)^2/(4*L)",
+    "inputs": "D:first pulley diameter m,d:second pulley diameter m,L:center distance m",
+    "result": "BL",
+    "unit": "m",
+    "note": "Approximate crossed-belt length. Use L > 0; the approximation is best when (D+d)/(2L) is small.",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "mechanical-022",
+    "file": "Mechanical_Principle/transmission/Belt_pulley/Belt_pulley.md",
+    "tex": "\\frac{F_2}{F_1} = e^{\\mu\\theta}",
+    "expression": "e^(mu*theta)",
+    "inputs": "mu:friction coefficient,theta:wrap angle rad",
+    "result": "F_2/F_1",
+    "unit": "",
+    "note": "Evaluates the boxed ratio F_2/F_1 exactly. Earlier on this page the reciprocal F_1/F_2 is used instead; confirm which side is tight before interpreting the result. Enter theta in radians.",
+    "constants": "e=2.718281828459045"
+  },
+  {
+    "id": "mechanical-023",
+    "file": "Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md",
+    "tex": "\\alpha = \\arctan(\\frac{\\sin\\theta}{\\cos\\theta-\\frac{N_1}{N_2}})",
+    "expression": "arctan(sin(theta)/(cos(theta)-N_1/N_2))",
+    "inputs": "theta:shaft angle rad,N_1:first wheel speed rpm,N_2:second wheel speed rpm",
+    "result": "alpha",
+    "unit": "rad",
+    "note": "Enter theta in radians and nonzero speeds. Returns the principal arctangent between -pi/2 and pi/2; the physical cone angle may require a different branch. The denominator must be nonzero."
+  },
+  {
+    "id": "mechanical-024",
+    "file": "Mechanical_Principle/transmission/Friction_wheel/Friction_wheel.md",
+    "tex": "\\beta = \\arctan(\\frac{\\sin\\theta}{\\frac{N_2}{N_1}-\\cos\\theta})",
+    "expression": "arctan(sin(theta)/(N_2/N_1-cos(theta)))",
+    "inputs": "theta:shaft angle rad,N_2:second wheel speed rpm,N_1:first wheel speed rpm",
+    "result": "beta",
+    "unit": "rad",
+    "note": "Enter theta in radians and nonzero speeds. Returns the principal arctangent; check the physical cone-angle branch. The denominator must be nonzero."
+  },
+  {
+    "id": "mechanical-025",
+    "file": "Mechanical_Principle/transmission/Pulley/pulley.md",
+    "tex": "M = 2^{(n+1)}-1",
+    "expression": "2^(n+1)-1",
+    "inputs": "n:number of movable pulleys",
+    "result": "M",
+    "unit": "",
+    "note": "Ideal mechanical advantage of the stated multi-Spanish-burton arrangement. Use a positive integer n; friction and rope elasticity are excluded."
+  },
+  {
+    "id": "mechanical-026",
+    "file": "Mechanical_Principle/transmission/Pulley/pulley.md",
+    "tex": "M = \\frac WF = \\frac{2D}{D-d}",
+    "expression": "2*D/(D-d)",
+    "inputs": "D:large pulley diameter m,d:small pulley diameter m",
+    "result": "M",
+    "unit": "",
+    "note": "Ideal load-to-effort ratio W/F. Use D > d > 0 with both diameters in the same unit; D = d makes the expression undefined."
+  },
+  {
+    "id": "mechanical-027",
+    "file": "Mechanical_Principle/transmission/Sprocket/Sprocket.md",
+    "tex": "L = \\frac\\pi2(D_1+D_2)+2C\\frac{(D_1-D_2)^2}{4C}",
+    "expression": "pi/2*(D_1+D_2)+2*C*(D_1-D_2)^2/(4*C)",
+    "inputs": "D_1:first sprocket diameter,D_2:second sprocket diameter,C:center distance",
+    "result": "L (as written)",
+    "unit": "",
+    "note": "Evaluates the boxed expression literally: 2C multiplies the following fraction. The resulting terms have incompatible length dimensions and a plus sign may be missing. This is a raw numerical result, not a validated chain length. Use C > 0.",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "mechanical-028",
+    "file": "Mechanical_Principle/transmission/Sprocket/Sprocket.md",
+    "tex": "P = Fv = F\\frac{\\pi DN}{60}",
+    "expression": "F*pi*D*N/60",
+    "inputs": "F:tangential chain force N,D:pitch diameter m,N:rotational speed rpm",
+    "result": "P",
+    "unit": "W",
+    "note": "Uses v = pi*D*N/60 with D in meters and N in revolutions per minute. F is tangential driving force.",
+    "constants": "pi=3.141592653589793"
+  },
+  {
+    "id": "mechanical-029",
+    "file": "Mechanical_Principle/transmission/Thread/Thread.md",
+    "tex": "P = \\frac Ln",
+    "expression": "L/n",
+    "inputs": "L:lead mm,n:number of starts",
+    "result": "P",
+    "unit": "mm",
+    "note": "Thread pitch equals lead divided by the positive integer number of starts. Enter lead in mm."
   }
 ]

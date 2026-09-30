@@ -68,9 +68,31 @@ $$\frac{\cos\theta\tan\alpha-\sin\theta}{\tan\alpha}$$
 
 $$\frac{N_1}{N_2}\tan\alpha = \cos\theta\tan\alpha-\sin\theta$$
 
-$$\tan\alpha = \frac{\sin\theta}{\cos\theta-\frac{N_1}{N_2}}$$
+$$\boxed{\alpha = \arctan(\frac{\sin\theta}{\cos\theta-\frac{N_1}{N_2}})}$$
 
-$$\tan\beta = \frac{\sin\theta}{\frac{N_2}{N_1}-\cos\theta}$$
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-023"
+  data-expression="arctan(sin(theta)/(cos(theta)-N_1/N_2))"
+  data-inputs="theta:shaft angle rad,N_1:first wheel speed rpm,N_2:second wheel speed rpm"
+  data-result="alpha"
+  data-unit="rad"
+  data-constants=""
+  data-note="Enter theta in radians and nonzero speeds. Returns the principal arctangent between -pi/2 and pi/2; the physical cone angle may require a different branch. The denominator must be nonzero.">
+</div>
+
+$$\boxed{\beta = \arctan(\frac{\sin\theta}{\frac{N_2}{N_1}-\cos\theta})}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-024"
+  data-expression="arctan(sin(theta)/(N_2/N_1-cos(theta)))"
+  data-inputs="theta:shaft angle rad,N_2:second wheel speed rpm,N_1:first wheel speed rpm"
+  data-result="beta"
+  data-unit="rad"
+  data-constants=""
+  data-note="Enter theta in radians and nonzero speeds. Returns the principal arctangent; check the physical cone-angle branch. The denominator must be nonzero.">
+</div>
 
 ## Perpendicular disks
 

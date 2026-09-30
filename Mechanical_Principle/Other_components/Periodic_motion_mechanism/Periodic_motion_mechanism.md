@@ -49,6 +49,28 @@ $$t_\text{on} : \theta_\text{off} = \pi(1-\frac2N) : \pi(1+\frac2N)$$
 
 $$\omega = \frac t{2\pi}$$
 
-$$t_\text{on} = \frac t{2\pi}(\pi(1-\frac2N)) = \frac t2-\frac tN$$
+$$\boxed{t_\text{on} = \frac t{2\pi}(\pi(1-\frac2N)) = \frac t2-\frac tN}$$
 
-$$t_\text{off} = \frac t{2\pi}(\pi(1+\frac2N)) = \frac t2+\frac tN$$
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-014"
+  data-expression="t/2-t/N"
+  data-inputs="t:complete cycle period s,N:number of slots"
+  data-result="t_on"
+  data-unit="s"
+  data-constants=""
+  data-note="Use the complete input-rotation period t and an integer slot count N &gt; 4 as stated on this page. This evaluates the final equality in the box.">
+</div>
+
+$$\boxed{t_\text{off} = \frac t{2\pi}(\pi(1+\frac2N)) = \frac t2+\frac tN}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-015"
+  data-expression="t/2+t/N"
+  data-inputs="t:complete cycle period s,N:number of slots"
+  data-result="t_off"
+  data-unit="s"
+  data-constants=""
+  data-note="Use the complete cycle period t and integer N &gt; 4. Motion time plus dwell time equals t.">
+</div>

@@ -91,7 +91,18 @@ $$\text{IMA} = \frac WF =\frac {2F+F}{F} = 3$$
 
 * Number of movable pulleys : $n$
 
-$$M = 2^{(n+1)}-1$$
+$$\boxed{M = 2^{(n+1)}-1}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-025"
+  data-expression="2^(n+1)-1"
+  data-inputs="n:number of movable pulleys"
+  data-result="M"
+  data-unit=""
+  data-constants=""
+  data-note="Ideal mechanical advantage of the stated multi-Spanish-burton arrangement. Use a positive integer n; friction and rope elasticity are excluded.">
+</div>
 
 ### Luff upon luff
 
@@ -114,4 +125,15 @@ $$F(\pi D) = \frac W2(\pi D)-\frac W2(\pi d)$$
 
 $$FD = \frac W2(D-d)$$
 
-$$M = \frac WF = \frac{2D}{D-d}$$
+$$\boxed{M = \frac WF = \frac{2D}{D-d}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-026"
+  data-expression="2*D/(D-d)"
+  data-inputs="D:large pulley diameter m,d:small pulley diameter m"
+  data-result="M"
+  data-unit=""
+  data-constants=""
+  data-note="Ideal load-to-effort ratio W/F. Use D &gt; d &gt; 0 with both diameters in the same unit; D = d makes the expression undefined.">
+</div>

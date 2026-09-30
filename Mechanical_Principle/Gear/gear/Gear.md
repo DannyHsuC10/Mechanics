@@ -123,20 +123,63 @@ Bottom land : **<font color="#efe514">yellow</font>**
 
 **Idler gear**
 
-$$N_p = \frac{2k}{3\sin^2\phi}(1+\sqrt{1+3\sin^2\phi})$$
+$$\boxed{N_p = \frac{2k}{3\sin^2\phi}(1+\sqrt{1+3\sin^2\phi})}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-001"
+  data-expression="2*k/(3*sin(phi)^2)*(1+(1+3*sin(phi)^2)^0.5)"
+  data-inputs="k:addendum coefficient,phi:pressure angle rad"
+  data-result="N_p"
+  data-unit="teeth"
+  data-constants=""
+  data-note="Enter phi in radians and k as the dimensionless tooth-depth coefficient. This is the continuous tooth-count limit; an actual tooth count must be an integer.">
+</div>
 
 **Non-idler gear**
 
-$$N_P = \frac{2k}{(1+2m)\sin^2\phi}(m+\sqrt{m^2+(1+2m)\
-sin^2\phi})$$
+$$\boxed{N_P = \frac{2k}{(1+2m)\sin^2\phi}(m+\sqrt{m^2+(1+2m)\sin^2\phi})}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-002"
+  data-expression="2*k/((1+2*m)*sin(phi)^2)*(m+(m^2+(1+2*m)*sin(phi)^2)^0.5)"
+  data-inputs="k:addendum coefficient,m:gear ratio,phi:pressure angle rad"
+  data-result="N_P"
+  data-unit="teeth"
+  data-constants=""
+  data-note="Enter phi in radians and the positive gear ratio m. This returns the continuous limit before selecting an integer tooth count.">
+</div>
 
 **Not incorporating the gear ratio**
 
-$$N_G = \frac{N_p^2\sin^2\phi-4k^2}{4k-2N_p\sin^2\phi}$$
+$$\boxed{N_G = \frac{N_p^2\sin^2\phi-4k^2}{4k-2N_p\sin^2\phi}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-003"
+  data-expression="(N_p^2*sin(phi)^2-4*k^2)/(4*k-2*N_p*sin(phi)^2)"
+  data-inputs="N_p:pinion tooth count,k:addendum coefficient,phi:pressure angle rad"
+  data-result="N_G"
+  data-unit="teeth"
+  data-constants=""
+  data-note="Enter phi in radians. The denominator must be nonzero; a nonpositive output is not a usable gear tooth count.">
+</div>
 
 **Minimum number of teeth**
 
-$$N_P = \frac{2k}{\sin^2\phi}$$
+$$\boxed{N_P = \frac{2k}{\sin^2\phi}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-004"
+  data-expression="2*k/sin(phi)^2"
+  data-inputs="k:addendum coefficient,phi:pressure angle rad"
+  data-result="N_P"
+  data-unit="teeth"
+  data-constants=""
+  data-note="Enter phi in radians with nonzero sine. The calculator returns the continuous minimum; round upward when choosing the minimum integer tooth count.">
+</div>
 
 ## Eliminate interference
 

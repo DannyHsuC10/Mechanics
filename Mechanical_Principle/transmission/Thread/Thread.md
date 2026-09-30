@@ -23,7 +23,18 @@ $$\tan\theta = \frac L{\pi D}$$
 
 $$\tan \phi = \frac{\pi D}L$$
 
-$$\frac Ln = P$$
+$$\boxed{P = \frac Ln}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-029"
+  data-expression="L/n"
+  data-inputs="L:lead mm,n:number of starts"
+  data-result="P"
+  data-unit="mm"
+  data-constants=""
+  data-note="Thread pitch equals lead divided by the positive integer number of starts. Enter lead in mm.">
+</div>
 
 ## Basic profile
 

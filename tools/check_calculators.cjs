@@ -9,6 +9,7 @@ vm.runInContext(fs.readFileSync(path.join(root, 'assets/js/calculators.js'), 'ut
 const evaluate = context.evaluateExpression;
 const definitions = JSON.parse(fs.readFileSync(path.join(__dirname, 'boxed_calculators.json'), 'utf8'));
 const cases = [
+  ...require('./mechanical_calculator_cases.json'),
   ['boxed-013', {m_1:2,m_2:3,v_1i:4,v_2i:-1}, 3],
   ['boxed-045', {P:1000,A:0.01,E:200e9,mu:0.3}, 6e-7],
   ['boxed-047', {nu_first:Math.sqrt(3),nu_second:8}, 1],
@@ -103,6 +104,25 @@ function element(tag) {
     replaceWith(node) { this.replacement = node; }};
 }
 context.document.createElement = element;
+for (const [id, values, expected] of require('./mechanical_calculator_cases.json')) {
+  const spec = definitions.find(x => x.id === id);
+  const marker = element('div');
+  marker.dataset = {expression:spec.expression, inputs:spec.inputs, result:spec.result,
+    unit:spec.unit, constants:spec.constants, note:spec.note};
+  context.createCalculator(marker);
+  const form = marker.replacement;
+  const labels = form.children.find(child => child.className === 'calculator-grid').children;
+  const inputs = context.parseInputs(spec.inputs);
+  labels.forEach((label, i) => { label.children[0].value = String(values[inputs[i].name]); });
+  form.handlers.submit({preventDefault() {}});
+  const output = form.children.at(-1).textContent;
+  const actual = Number(output.slice(output.indexOf(' = ') + 3).split(' ')[0]);
+  assert.ok(Math.abs(actual - expected) < 1e-8 * Math.max(1, Math.abs(expected)), `${id}: ${output}`);
+  assert.ok(output.endsWith(spec.unit || ''), `${id}: result unit`);
+  labels[0].children[0].value = '';
+  form.handlers.submit({preventDefault() {}});
+  assert.equal(form.children.at(-1).textContent, 'Please enter valid numbers.', id);
+}
 const marker = element('div');
 marker.dataset = {expression:'2*-sin(x)', inputs:'x:angle in radians', result:'y',
   unit:'m', note:'Use radians.'};

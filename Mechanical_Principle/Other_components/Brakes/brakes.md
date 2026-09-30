@@ -18,11 +18,33 @@ $$\sum M_o = 0\qquad Na-fb-Fl = 0$$
 
 $$\frac{\tau}{\mu r}a-\frac{\tau}{r}b-Fl = 0$$
 
-$$F = \frac{\tau(a-\mu b)}{\mu rl}$$
+$$\boxed{F = \frac{\tau(a-\mu b)}{\mu rl}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-009"
+  data-expression="tau*(a-mu*b)/(mu*r*l)"
+  data-inputs="tau:braking torque N m,a:normal-force lever arm m,mu:friction coefficient,b:friction-force lever arm m,r:drum radius m,l:actuation lever arm m"
+  data-result="F"
+  data-unit="N"
+  data-constants=""
+  data-note="Evaluates the stated block-brake force. Use positive mu, r and l. A zero or negative a - mu*b indicates the self-locking boundary or a change in the required force direction.">
+</div>
 
 **reverse**
 
-$$F = \frac{\tau(a-\mu b)}{\mu rl}$$
+$$\boxed{F = \frac{\tau(a-\mu b)}{\mu rl}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-010"
+  data-expression="tau*(a-mu*b)/(mu*r*l)"
+  data-inputs="tau:braking torque N m,a:normal-force lever arm m,mu:friction coefficient,b:friction-force lever arm m,r:drum radius m,l:actuation lever arm m"
+  data-result="F"
+  data-unit="N"
+  data-constants=""
+  data-note="The reverse-direction box currently repeats the forward-direction formula. This calculator preserves that expression; confirm the friction moment sign for the actual rotation direction.">
+</div>
 
 * if $a-\mu b<0$, self lock
 
@@ -44,11 +66,33 @@ $$\sum M_o = 0\qquad F_2a-Fl = 0$$
 
 $$\frac T{r(e^{\mu\theta}-1)}a-Fl = 0$$
 
-$$F = \frac{Ta}{rl(e^{\mu\theta}-1)}$$
+$$\boxed{F = \frac{Ta}{rl(e^{\mu\theta}-1)}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-011"
+  data-expression="T*a/(r*l*(e^(mu*theta)-1))"
+  data-inputs="T:braking torque N m,a:band lever arm m,r:drum radius m,l:actuation lever arm m,mu:friction coefficient,theta:wrap angle rad"
+  data-result="F"
+  data-unit="N"
+  data-constants="e=2.718281828459045"
+  data-note="T denotes torque here. Enter wrap angle theta in radians; use positive r, l and mu*theta.">
+</div>
 
 **reverse**
 
-$$F = \frac{Tae^{\mu\theta}}{rl(e^{\mu\theta}-1)}$$
+$$\boxed{F = \frac{Tae^{\mu\theta}}{rl(e^{\mu\theta}-1)}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-012"
+  data-expression="T*a*e^(mu*theta)/(r*l*(e^(mu*theta)-1))"
+  data-inputs="T:braking torque N m,a:band lever arm m,r:drum radius m,l:actuation lever arm m,mu:friction coefficient,theta:wrap angle rad"
+  data-result="F"
+  data-unit="N"
+  data-constants="e=2.718281828459045"
+  data-note="Evaluate the reverse band-brake expression with theta in radians. T is braking torque and e is supplied automatically.">
+</div>
 
 ## Disc brake
 
@@ -60,7 +104,18 @@ $$D_m = \frac{D_o+D_i}{2}$$
 
 $$\tau = f\frac{D_m}2 = \mu F\frac{D_m}2$$
 
-$$F = \frac{2\tau}{\mu D_m}$$
+$$\boxed{F = \frac{2\tau}{\mu D_m}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-013"
+  data-expression="2*tau/(mu*D_m)"
+  data-inputs="tau:braking torque N m,mu:friction coefficient,D_m:mean contact diameter m"
+  data-result="F"
+  data-unit="N"
+  data-constants=""
+  data-note="Use the mean contact diameter D_m, not its radius. This evaluates the single friction-force relation shown above.">
+</div>
 
 ## Brake cooling
 

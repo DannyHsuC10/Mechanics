@@ -1,5 +1,6 @@
 """Insert reviewed calculator definitions immediately after boxed math blocks."""
 import html
+import argparse
 import json
 import re
 from collections import defaultdict
@@ -7,9 +8,10 @@ from pathlib import Path
 from site_content import ROOT, documents, segments, math_spans
 
 
-def boxed_formulas():
+def boxed_formulas(directory=None):
     found = []
-    for path in documents():
+    paths = sorted(directory.rglob('*.md')) if directory else documents()
+    for path in paths:
         text = path.read_text(encoding='utf-8-sig')
         for code, part, offset in segments(text):
             if code:
@@ -26,13 +28,13 @@ def boxed_formulas():
     return found
 
 
-def main():
+def main(directory=None):
     specs = json.loads((Path(__file__).with_name('boxed_calculators.json')).read_text(encoding='utf-8'))
     by_key = defaultdict(list)
     for spec in specs:
         by_key[(spec['file'], spec['tex'])].append(spec)
     edits = defaultdict(list)
-    boxes = boxed_formulas()
+    boxes = boxed_formulas(directory)
     missing = [b for b in boxes if (b['file'], b['tex']) not in by_key]
     if missing:
         raise SystemExit('Unconfigured boxed formulas: ' + repr(missing))
@@ -65,4 +67,10 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--directory', help='Limit insertion to this repository directory.')
+    args = parser.parse_args()
+    directory = (ROOT / args.directory).resolve() if args.directory else None
+    if directory and (not directory.is_relative_to(ROOT) or not directory.is_dir()):
+        parser.error('--directory must be an existing directory inside the repository')
+    main(directory)

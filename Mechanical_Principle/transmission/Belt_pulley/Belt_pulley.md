@@ -66,11 +66,33 @@ $$\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D-d)^2}{4L}$$
 
 ### Open Belt Drive
 
-$$\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D-d)^2}{4L}$$
+$$\boxed{\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D-d)^2}{4L}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-020"
+  data-expression="pi*(D+d)/2+2*L+(D-d)^2/(4*L)"
+  data-inputs="D:large pulley diameter m,d:small pulley diameter m,L:center distance m"
+  data-result="BL"
+  data-unit="m"
+  data-constants="pi=3.141592653589793"
+  data-note="Approximate open-belt length. Use consistent diameters and L &gt; 0; the derivation assumes abs(D-d)/(2L) is small.">
+</div>
 
 ### Cross Belt Drive
 
-$$\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D+d)^2}{4L}$$
+$$\boxed{\text{BL} = \frac{\pi(D+d)}2+2L+\frac{(D+d)^2}{4L}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-021"
+  data-expression="pi*(D+d)/2+2*L+(D+d)^2/(4*L)"
+  data-inputs="D:first pulley diameter m,d:second pulley diameter m,L:center distance m"
+  data-result="BL"
+  data-unit="m"
+  data-constants="pi=3.141592653589793"
+  data-note="Approximate crossed-belt length. Use L &gt; 0; the approximation is best when (D+d)/(2L) is small.">
+</div>
 
 ## Contact angle
 
@@ -170,7 +192,18 @@ $$\ln(F_1)-\ln(F_2) = \mu\theta$$
 
 $$\ln(\frac{F_2}{F_1}) = \mu\theta$$
 
-$$\frac{F_2}{F_1} = e^{\mu\theta}$$
+$$\boxed{\frac{F_2}{F_1} = e^{\mu\theta}}$$
+
+<div
+  data-calculator=""
+  data-boxed-id="mechanical-022"
+  data-expression="e^(mu*theta)"
+  data-inputs="mu:friction coefficient,theta:wrap angle rad"
+  data-result="F_2/F_1"
+  data-unit=""
+  data-constants="e=2.718281828459045"
+  data-note="Evaluates the boxed ratio F_2/F_1 exactly. Earlier on this page the reciprocal F_1/F_2 is used instead; confirm which side is tight before interpreting the result. Enter theta in radians.">
+</div>
 
 ## Step pulley
 
