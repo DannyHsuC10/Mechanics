@@ -36,4 +36,6 @@ Supporting derivations that connect springs, inertia, collisions, and particle d
 
 [RCVD](RCVD/RCVD_Formula_Index.md)
 
+## Private
+
 [Private](Private/Private.md)
