@@ -106,6 +106,22 @@ body {
   text-decoration: underline;
 }
 
+.back-link {
+  padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  font-weight: 700;
+  text-align: left;
+  cursor: pointer;
+}
+
+.back-link:disabled {
+  color: #777777;
+  cursor: default;
+  text-decoration: none;
+}
+
 .page-end {
   padding: 24px 0 32px;
   color: #777777;

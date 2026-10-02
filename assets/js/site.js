@@ -7,13 +7,17 @@ document.querySelectorAll('script[type^="math/tex"]').forEach((source) => {
   source.replaceWith(target);
 });
 
-// Keep the home URL as the fallback for direct visits and modified clicks.
+// Navigate through browser history; this control never falls back to Home.
 const backLink = document.getElementById('back-link');
 if (backLink) {
-  backLink.addEventListener('click', (event) => {
-    if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+  const updateBackLink = () => {
+    backLink.disabled = window.history.length <= 1;
+    backLink.title = backLink.disabled ? 'No previous page in this tab' : 'Back to previous page';
+  };
+  updateBackLink();
+  window.addEventListener('pageshow', updateBackLink);
+  backLink.addEventListener('click', () => {
     if (window.history.length > 1) {
-      event.preventDefault();
       window.history.back();
     }
   });
