@@ -36,7 +36,10 @@
         {{ content }}
       </main>
       <aside class="sidebar" aria-label="Page navigation">
-        <a class="home-link" href="{{ '/' | relative_url }}">Home / README</a>
+        <div class="sidebar-links">
+          <a class="home-link" href="{{ '/' | relative_url }}">Home / README</a>
+          <a class="home-link" id="back-link" href="{{ '/' | relative_url }}">← Back to previous page</a>
+        </div>
         <nav id="page-toc" aria-label="On this page"></nav>
       </aside>
     </div>

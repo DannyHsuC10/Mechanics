@@ -87,6 +87,14 @@ body {
   box-shadow: inset 0 1px 0 #ffffff;
 }
 
+.sidebar-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px 12px;
+}
+
 .home-link {
   display: block;
   color: #2879d0;

@@ -7,6 +7,18 @@ document.querySelectorAll('script[type^="math/tex"]').forEach((source) => {
   source.replaceWith(target);
 });
 
+// Keep the home URL as the fallback for direct visits and modified clicks.
+const backLink = document.getElementById('back-link');
+if (backLink) {
+  backLink.addEventListener('click', (event) => {
+    if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+    if (window.history.length > 1) {
+      event.preventDefault();
+      window.history.back();
+    }
+  });
+}
+
 const toc = document.getElementById('page-toc');
 const headings = [...document.querySelectorAll('main h2')];
 if (toc && headings.length) {
