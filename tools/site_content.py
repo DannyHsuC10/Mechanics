@@ -122,7 +122,7 @@ def prepare(destination):
     if destination.exists():
         raise SystemExit('Use a new, empty destination directory.')
     public = ['_layouts','assets','Mechanical_Principle','Mechanics_Advanced',
-              'Mechanics_Mechanical','Mechanics_Physics','Special']
+              'Mechanics_Mechanical','Mechanics_Physics','Special','RCVD']
     destination.mkdir(parents=True)
     for name in public:
         shutil.copytree(ROOT/name,destination/name,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))

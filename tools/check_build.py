@@ -65,7 +65,7 @@ for p,parsed in pages.items():
         elif ref.fragment and target in pages and unquote(ref.fragment) not in pages[target].ids:
             issues.append([str(p.relative_to(destination)),'missing anchor',url])
     formulas.extend(dict(f,file=str(p.relative_to(destination)),line=0) for f in parsed.formulas)
-public={'Mechanical_Principle','Mechanics_Advanced','Mechanics_Mechanical','Mechanics_Physics','Special','README.md'}
+public={'Mechanical_Principle','Mechanics_Advanced','Mechanics_Mechanical','Mechanics_Physics','Special','RCVD','README.md'}
 expected_pages=0
 for p in documents():
     if p.relative_to(ROOT).parts[0] not in public: continue
