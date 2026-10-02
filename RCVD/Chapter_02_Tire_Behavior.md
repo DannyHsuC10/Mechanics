@@ -246,9 +246,9 @@ T=F_xR_l+M_y\cos\gamma+M_z\sin\gamma,
 \qquad M_y=F_RR_l=Zd.
 $$
 
-$d$ 為正向負載合力的縱向偏移。翻覆力矩的大小則由垂直力橫向偏移 $e$ 給出 $|M_x|=Z|e|$，號誌依偏移方向決定。
+$d$ 為正向負載合力的縱向偏移。翻覆力矩的大小則由垂直力橫向偏移 $e$ 給出 $\lvert M_x\rvert=Z\lvert e\rvert$，號誌依偏移方向決定。
 
-前後輪側滑所造成的誘導阻力，以力與側滑角的對應大小表示為 $D_{\mathrm{ind}}=|F_{yF}\sin\alpha_F|+|F_{yR}\sin\alpha_R|$；若用帶符號的力，應先作上述路徑方向投影。
+前後輪側滑所造成的誘導阻力，以力與側滑角的對應大小表示為 $D_{\mathrm{ind}}=\lvert F_{yF}\sin\alpha_F\rvert+\lvert F_{yR}\sin\alpha_R\rvert$；若用帶符號的力，應先作上述路徑方向投影。
 
 $$
 P=DV,

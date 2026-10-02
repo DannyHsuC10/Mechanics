@@ -230,7 +230,7 @@ z_{RA}=z_{RF}+\frac{a_s}{\ell}(z_{RR}-z_{RF}),
 \qquad H_s=h_s-z_{RA}.
 $$
 
-目標側傾梯度 $RG=|\phi|/A_y$（rad/g）對應初估：
+目標側傾梯度 $RG=\lvert\phi\rvert/A_y$（rad/g）對應初估：
 
 $$
 K_{\phi,\mathrm{total}}\simeq\frac{W_sH_s}{RG}.
