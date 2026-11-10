@@ -11,6 +11,13 @@ from urllib.parse import unquote, urlsplit
 ROOT = Path(__file__).resolve().parents[1]
 SKIP = {'.git', '.obsidian', '.site-check', '.pnpm-store', '_site', '_prepared_site', 'node_modules', 'tools'}
 
+# Remove a section from this set to resume publishing it.
+PAUSED_SECTIONS = {'RCVD'}
+PUBLIC_SECTIONS = {
+    'Mechanical_Principle', 'Mechanics_Advanced', 'Mechanics_Mechanical',
+    'Mechanics_Physics', 'Special', 'RCVD',
+} - PAUSED_SECTIONS
+
 def documents():
     paths=[]
     for directory,subdirs,files in os.walk(ROOT):
@@ -121,10 +128,8 @@ def prepare(destination):
     destination = Path(destination).resolve()
     if destination.exists():
         raise SystemExit('Use a new, empty destination directory.')
-    public = ['_layouts','assets','Mechanical_Principle','Mechanics_Advanced',
-              'Mechanics_Mechanical','Mechanics_Physics','Special','RCVD']
     destination.mkdir(parents=True)
-    for name in public:
+    for name in ('_layouts', 'assets', *sorted(PUBLIC_SECTIONS)):
         shutil.copytree(ROOT/name,destination/name,ignore=shutil.ignore_patterns('__pycache__','*.pyc'))
     for name in ['_config.yml','README.md','LICENSE']:
         shutil.copy2(ROOT/name,destination/name)
@@ -132,6 +137,9 @@ def prepare(destination):
         text = p.read_text(encoding='utf-8-sig')
         if p.name == 'README.md' and p.parent == destination:
             text = re.sub(r'^.*\]\(Private/Private\.md\).*\n?', '', text, flags=re.M)
+            if 'RCVD' in PAUSED_SECTIONS:
+                text = re.sub(r'^.*\]\(RCVD/[^\n]*\n?', '', text, flags=re.M)
+                text = re.sub(r'^## FSAE\n[ \t\n]*(?=^## |\Z)', '', text, flags=re.M)
             text = text.replace('layout: base','layout: base\npermalink: /')
         if text.startswith('---\n'):
             heading = re.search(r'^# (.+)$',text,re.M)

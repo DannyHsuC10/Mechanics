@@ -9,7 +9,7 @@ title: 網站建置、工具與版型維護說明
 
 原始 Markdown 保存文章與計算機設定，`tools` 負責整理及檢查；Jekyll 使用 `_layouts` 組合 HTML；讀者開啟網頁後，`assets` 裡的 CSS 與 JavaScript 才負責外觀、公式顯示、大綱及計算機互動。
 
-**下次部署時先看第 4 節的操作流程，執行指令細節看第 6 節，最後用第 10 節的清單確認。** 本文已更新為 RCVD 納入公開建置的本機設定；線上發布是否成功仍以對應提交的 Actions 結果為準。
+**下次部署時先看第 4 節的操作流程，執行指令細節看第 6 節，最後用第 10 節的清單確認。** RCVD 目前暫停發布。線上狀態以對應提交的 Actions 部署結果為準。
 
 ## 1. 整體流程
 
@@ -62,20 +62,17 @@ workflow 名稱是 `Deploy Jekyll with GitHub Pages dependencies preinstalled`�
 
 ## 3. 哪些檔案會發布
 
-發布範圍由 [tools/site_content.py](tools/site_content.py) 的 `prepare()` 決定。現有清單是：
+發布範圍由 [tools/site_content.py](tools/site_content.py) 控制。`PUBLIC_SECTIONS` 列出可發布的章節，再扣掉 `PAUSED_SECTIONS`。`prepare()` 複製發布中的章節和 `_layouts`、`assets`，`check_build.py` 使用同一份設定檢查產物。
 
 ```python
-public = [
-    '_layouts', 'assets', 'Mechanical_Principle', 'Mechanics_Advanced',
-    'Mechanics_Mechanical', 'Mechanics_Physics', 'Special', 'RCVD'
-]
+PAUSED_SECTIONS = {'RCVD'}
 ```
 
 另外會複製根目錄的 `_config.yml`、`README.md`、`LICENSE`。**並非所有已提交的資料夾都會自動成為網站的一部分。**
 
 整理過程還會：
 
-1. 從網站版 README 刪除指向 `Private/Private.md` 的連結，保留原始 README 不變。
+1. 從網站版 README 移除私人筆記入口，並在 RCVD 暫停時隱藏 RCVD 入口。
 2. 為網站首頁加入 `permalink: /`。
 3. 對已有 front matter 的文章，視情況從第一個一級標題補上 `title`。
 4. 將程式碼區塊以外的行內數學改成 Kramdown 可處理的格式，維持獨立公式。
@@ -84,18 +81,17 @@ public = [
 
 ### RCVD 與 Private 的現況
 
-- **RCVD**：已加入 `prepare()` 的發布清單，以及 `check_build.py` 的預期頁面集合。README 的 FSAE 區段連到 `RCVD/RCVD_Formula_Index.md`，具備產生並檢查 RCVD 網頁所需的設定。
+- **RCVD** 暫停時，整個資料夾會從網站產物排除。要恢復發布，將 `PAUSED_SECTIONS` 改成 `set()`，下一次部署就會重新產生 RCVD 頁面和首頁入口。
 - **Private**：未複製到公開來源，[_config.yml](_config.yml) 也列入 `exclude`；首頁連結會被整理程式移除，產出檢查還會拒絕意外發布 Private。
 - **本說明文件**：目前是根目錄的維護文件，也不在指定複製清單中；加入 `layout: base` 本身不會讓它自動公開。
 
 ### 要新增公開章節時
 
-先確認要公開的內容範圍，再同步處理：
+先確認要公開的內容範圍，再依序處理。
 
-1. 在 `site_content.py` 的 `public` 清單加入資料夾。
-2. 在 `check_build.py` 的 `public` 集合加入同一章節資料夾，讓檢查要求其頁面確實產生。
-3. 確認 `_config.yml` 沒有排除它，並檢查首頁及章節目錄的連結。
-4. 以新的暫存目錄建置，完成產出檢查後再提交發布設定。
+1. 在 `site_content.py` 的 `PUBLIC_SECTIONS` 加入資料夾。
+2. 確認 `_config.yml` 沒有排除它，並檢查首頁及章節目錄的連結。
+3. 以新的暫存目錄建置，完成產出檢查後再提交發布設定。
 
 `prepare()` 會複製清單內資料夾的檔案，包含圖片與其他附件；它不是只複製 Markdown。若要公開 Private 中的少數筆記，應先整理到獨立公開目錄，避免將整個私人資料夾一起加入。
 
@@ -107,7 +103,8 @@ public = [
 | --- | --- | --- |
 | 更新已公開的文章、公式或圖片 | 不需要 | 修改原始檔，執行相關檢查後提交 |
 | 在已公開資料夾內新增文章或子資料夾 | 不需要，整個資料夾會遞迴複製 | 加入 front matter，更新章節目錄，確認附件與連結 |
-| 第一次發布新的頂層資料夾，例如 RCVD | 需要，同步修改兩份清單 | 建立目錄入口、更新首頁並確認沒有被排除 |
+| 第一次發布新的頂層資料夾 | 加入 `PUBLIC_SECTIONS` | 建立目錄入口、更新首頁並確認沒有被排除 |
+| 恢復發布 RCVD | 從 `PAUSED_SECTIONS` 移除 `RCVD` | 確認首頁入口及章節頁面隨部署恢復 |
 | 把 Private 裡部分筆記公開 | 先將選定內容整理到獨立公開資料夾 | 檢查附件與相對連結，再按新資料夾流程操作 |
 | 修改共用 CSS、JS 或版型 | 不需要，assets 與 _layouts 已在清單內 | 驗證受影響頁面；修改運算邏輯時執行計算機測試 |
 
@@ -134,33 +131,13 @@ layout: base
 
 依實際檔名建立連結，留意大小寫。圖片與其他附件也要放在會發布的位置；若某附件不打算公開，文章不要保留指向它的下載連結。
 
-### 4.3 步驟二：同步修改兩份清單
+### 4.3 步驟二：設定發布範圍
 
-**第一份決定「複製什麼」**：在 `tools/site_content.py` 的 `prepare()` 中加入資料夾名稱。本次 RCVD 已完成：
-
-```python
-public = [
-    '_layouts', 'assets', 'Mechanical_Principle', 'Mechanics_Advanced',
-    'Mechanics_Mechanical', 'Mechanics_Physics', 'Special', 'RCVD'
-]
-```
-
-**第二份決定「哪些文章必須出現在產出中」**：在 `tools/check_build.py` 的 `public` 集合加入同一名稱。本次 RCVD 已完成：
-
-```python
-public = {
-    'Mechanical_Principle', 'Mechanics_Advanced', 'Mechanics_Mechanical',
-    'Mechanics_Physics', 'Special', 'RCVD', 'README.md'
-}
-```
-
-兩份清單職責不同，不要直接互相覆蓋。第一份還包含 `_layouts` 與 `assets`，第二份則包含首頁 `README.md`。
-
-下次若新增頂層資料夾 `NewTopic`，保留現有項目，再於兩份清單各加入 `'NewTopic'`。如果只是新增 `RCVD` 裡的一個章節，就不用再次改清單。一般新增章節不需要修改 workflow YAML。
+新增頂層資料夾 `NewTopic` 時，在 `tools/site_content.py` 的 `PUBLIC_SECTIONS` 加入 `'NewTopic'`。`RCVD` 已列在其中，恢復發布時只需從 `PAUSED_SECTIONS` 移除它。既有章節內的新增文章沿用該章節的發布設定。
 
 ### 4.4 步驟三：檢查排除設定並新增首頁入口
 
-確認 `_config.yml` 的 `exclude` 沒有包含要公開的目錄。RCVD 目前沒有被排除，Private 則繼續維持排除。
+確認 `_config.yml` 的 `exclude` 沒有包含要公開的目錄。RCVD 的暫停設定在 `tools/site_content.py`。
 
 根目錄 README 的 RCVD 入口已設定為：
 
@@ -194,7 +171,7 @@ python tools/site_content.py
 - 有計算機新增或修改：執行 `node tools/check_calculators.cjs`；只新增框選標記不會自動生成計算機，詳見第 7 節。
 - 首次公開新資料夾：依第 6 節用新的暫存路徑完成 `--prepare`、Jekyll 與 `check_build.py`。
 
-以 RCVD 為例，建置後應看到輸出目錄中的 `RCVD/RCVD_Formula_Index.html` 及各章節 `.html`，首頁入口則指向該目錄頁。沒有本機 Jekyll 時仍可由 Actions 建置，但必須查看 build 結果，不能以本機來源檢查通過代替網站產出驗證。
+恢復發布 RCVD 時，建置後應看到 `RCVD/RCVD_Formula_Index.html`、各章節 `.html` 和首頁入口。暫停發布時，確認產物沒有 `RCVD` 目錄及首頁入口。沒有本機 Jekyll 時，可查看 Actions 的建置和部署結果。
 
 ### 4.6 步驟五：提交文章、附件與設定後推送
 
@@ -224,7 +201,7 @@ git push origin main
 
 1. 打開 GitHub 儲存庫的 Actions，找到這次推送所對應的執行與 commit。
 2. 確認 **build 與 deploy 都成功**；失敗時查看第一個失敗步驟，不要只看 push 的結果。
-3. 打開 Pages 首頁，點選 FSAE → RCVD，確認目錄及幾個章節可開啟。
+3. 恢復發布後，從 Pages 首頁點選 FSAE → RCVD，確認目錄及幾個章節可開啟。暫停發布後，確認首頁入口消失，舊網址回傳 404。
 4. 檢查圖片、LaTeX、返回首頁與右側目錄；有計算機的頁面代入一組已知數值。
 
 在目前 `/Mechanics` 網址基底下，RCVD 入口的網址路徑應為 `/Mechanics/RCVD/RCVD_Formula_Index.html`。若部署成功仍看到舊畫面，先確認查看的是正確網址與本次提交的部署，再重新整理或用無痕視窗比較。
@@ -233,7 +210,7 @@ git push origin main
 
 **修改原始文章／附件 → 更新目錄（若有新增文章）→ 執行相關檢查 → 提交 → push 至 main → 確認 Actions → 查看網頁。**
 
-同一公開資料夾的新章節會隨遞迴複製進入建置，不必每次新增章節都修改兩份 `public` 清單。已存在的 `_prepared_site` 不需手動推送到 GitHub；Actions 會從提交的原始檔重新產生網站。
+同一公開資料夾的新章節會隨遞迴複製進入建置。Actions 會從提交的原始檔重新產生 `_prepared_site` 和網站。
 
 ## 5. tools 裡每個檔案的用途
 
@@ -431,7 +408,7 @@ layout: base
 | 現象／需求 | 應先檢查 |
 | --- | --- |
 | push 成功但網站仍是舊內容 | Actions 最新執行與 deploy 狀態 |
-| 新章節完全沒產出 | `prepare()` 發布清單、`_config.yml` 排除設定、`check_build.py` 預期清單 |
+| 新章節完全沒產出 | `PUBLIC_SECTIONS`、`PAUSED_SECTIONS`、`_config.yml` 排除設定 |
 | 首頁的 Private 連結不見 | `site_content.py` 的首頁連結移除規則 |
 | 有框選公式但沒有計算機 | JSON 定義、插入後的 `data-calculator`、頁面是否載入主腳本 |
 | 修改公式後答案仍用舊式 | JSON 與 Markdown 的 `data-expression` 是否一起更新 |
@@ -442,7 +419,7 @@ layout: base
 
 ## 10. 部署前後確認清單
 
-- [ ] 新資料夾已加入 `site_content.py` 與 `check_build.py` 的兩份清單；既有公開資料夾的更新可略過此項。
+- [ ] 新資料夾已加入 `site_content.py` 的 `PUBLIC_SECTIONS`；既有公開資料夾的更新可略過此項。
 - [ ] `_config.yml` 沒有排除要公開的內容。
 - [ ] 新文章有 front matter，首頁／章節目錄有正確入口。
 - [ ] 文章、圖片與所需附件都已納入 Git，沒有僅存在於本機的必要檔案。

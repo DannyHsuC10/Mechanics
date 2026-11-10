@@ -7,7 +7,7 @@ import html
 import re
 import os
 import sys
-from site_content import ROOT, documents, segments, math_spans
+from site_content import PAUSED_SECTIONS, PUBLIC_SECTIONS, ROOT, documents, segments, math_spans
 
 class Page(HTMLParser):
     def __init__(self):
@@ -65,7 +65,7 @@ for p,parsed in pages.items():
         elif ref.fragment and target in pages and unquote(ref.fragment) not in pages[target].ids:
             issues.append([str(p.relative_to(destination)),'missing anchor',url])
     formulas.extend(dict(f,file=str(p.relative_to(destination)),line=0) for f in parsed.formulas)
-public={'Mechanical_Principle','Mechanics_Advanced','Mechanics_Mechanical','Mechanics_Physics','Special','RCVD','README.md'}
+public=PUBLIC_SECTIONS | {'README.md'}
 expected_pages=0
 for p in documents():
     if p.relative_to(ROOT).parts[0] not in public: continue
@@ -79,7 +79,7 @@ for p in documents():
     normalize=lambda s: ' '.join(s.split())
     if list(map(normalize,expected))!=list(map(normalize,actual)):
         issues.append([str(p.relative_to(ROOT)),'math changed during Markdown rendering',len(expected),len(actual)])
-for name in ['Private','Webpage_package','tools','python_Document_Management_Tools']:
+for name in sorted(PAUSED_SECTIONS | {'Private','Webpage_package','tools','python_Document_Management_Tools'}):
     if (destination/name).exists(): issues.append([name,'unexpected published directory'])
 (ROOT/'.site-check').mkdir(exist_ok=True)
 (ROOT/'.site-check/rendered-math.json').write_text(json.dumps({'formulas':formulas}),encoding='utf-8')

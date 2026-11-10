@@ -59,4 +59,4 @@ Run `python tools/add_boxed_calculators.py --directory RCVD` to insert missing R
 
 `tools/rcvd_calculator_cases.json` supplies numerical and form-submission cases to `node tools/check_calculators.cjs`. Additional checks cover torque inversion, the equivalent tire fit, steady force/moment balance and roll-stiffness inversion. Notes distinguish weight from mass, fractional acceleration in g, radians, per-radian stiffness and degree-based steering sensitivity. Physical validity conditions are documented in the widgets; the shared evaluator reports arithmetic errors but does not enforce every model assumption.
 
-RCVD is not currently included in the public preparation allowlist in `tools/site_content.py`. Its local Markdown calculators and rendering can be checked without changing that publication setting.
+RCVD publication is paused through `PAUSED_SECTIONS` in `tools/site_content.py`. Remove `RCVD` from that set to restore the chapter pages and homepage link on the next deployment.
