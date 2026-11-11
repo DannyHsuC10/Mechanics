@@ -133,6 +133,11 @@ if not issues:
     node_ids = {path: index for index, path in enumerate(notes)}
     edges = set()
     for source in notes:
+        notes[source]['outgoing'] = [
+            node_ids[target]
+            for target, alt in pages[source].graph_targets.items()
+            if target in notes and alt is None
+        ]
         for target, alt in pages[source].graph_targets.items():
             if target not in node_ids:
                 attachment = attachment_node(target, alt, destination)

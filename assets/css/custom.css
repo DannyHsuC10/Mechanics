@@ -27,7 +27,7 @@ body {
 }
 
 .content-wrapper .inner {
-  width: 1120px;
+  width: 1320px;
 }
 
 .page-header {
@@ -66,11 +66,11 @@ body {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(0, 720px) minmax(240px, 280px);
-  grid-template-areas: "article sidebar";
+  grid-template-columns: minmax(170px, 220px) minmax(0, 720px) minmax(240px, 280px);
+  grid-template-areas: "tree article sidebar";
   justify-content: center;
   align-items: start;
-  gap: 32px;
+  gap: 24px;
 }
 
 .markdown-body {
@@ -82,11 +82,9 @@ body {
   color: #373737;
 }
 
-.sidebar {
+.sidebar,
+.note-tree {
   --sidebar-top: calc(var(--page-header-height) + var(--content-padding-top) + 1px);
-  grid-area: sidebar;
-  display: flex;
-  flex-direction: column;
   position: sticky;
   top: var(--sidebar-top);
   width: 100%;
@@ -97,6 +95,82 @@ body {
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 #ffffff;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-tree {
+  grid-area: tree;
+  min-width: 0;
+}
+
+.note-tree summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.note-tree nav {
+  margin-top: 0.65rem;
+}
+
+.note-tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.note-tree li > ul {
+  margin-left: 0.65rem;
+  padding-left: 0.45rem;
+  border-left: 1px solid #d8e0ea;
+}
+
+.note-tree-row {
+  display: grid;
+  grid-template-columns: 1.55rem minmax(0, 1fr);
+  align-items: start;
+}
+
+.note-tree-toggle {
+  width: 1.55rem;
+  height: 1.75rem;
+  padding: 0;
+  color: #3d536a;
+  background: none;
+  border: 0;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.note-tree-toggle:hover {
+  background: #e5edf6;
+}
+
+.note-tree a {
+  display: block;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.2rem;
+  color: #205f9f;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.note-tree-row a {
+  grid-column: 2;
+}
+
+.note-tree a:hover {
+  text-decoration: underline;
+}
+
+.note-tree a[aria-current="page"] {
+  background: #e1eefc;
+  font-weight: 700;
 }
 
 .sidebar-links {
@@ -339,18 +413,24 @@ body {
   .page-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "article" "sidebar";
+    grid-template-areas: "tree" "article" "sidebar";
     gap: 22px;
   }
 
   .article-layout {
-    grid-template-areas: "sidebar" "article";
+    grid-template-areas: "tree" "sidebar" "article";
   }
 
-  .sidebar {
+  .sidebar,
+  .note-tree {
     position: static;
     width: auto;
     height: auto;
+  }
+
+  .note-tree nav {
+    max-height: 40vh;
+    overflow-y: auto;
   }
 
   #page-toc {

@@ -33,7 +33,7 @@ python tools/check_build.py
 
 The preparation command requires a new destination directory so it cannot silently overwrite an existing build. GitHub Actions uses a fresh checkout and runs these steps with the GitHub Pages Jekyll builder. Local builds require Jekyll, `kramdown-parser-gfm`, and `jekyll-theme-architect`.
 
-After a successful build check, `check_build.py` writes `assets/note-graph.json` into the site output. The graph uses links between published notes, plus MATLAB `.m` files and images that those notes link to or embed.
+After a successful build check, `check_build.py` writes `assets/note-graph.json` into the site output. The graph uses links between published notes, plus MATLAB `.m` files and images that those notes link to or embed. The Browse notes panel follows the outgoing links between published notes, starting from the homepage.
 
 Modern Kramdown emits MathJax delimiters directly. The `site.js` adapter also supports the legacy math script elements emitted by older GitHub Pages versions. It builds page navigation and loads Mermaid only for pages containing diagrams.
 

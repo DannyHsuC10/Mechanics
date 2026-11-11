@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=4">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=5">
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
   <script defer src="{{ '/assets/js/site.js' | relative_url }}?v=2"></script>
   <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=4">
-  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=4"></script>
+  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=5"></script>
 
   <!-- MathJax -->
   <script>
@@ -43,7 +43,7 @@
     </div>
     <nav id="page-toc" aria-label="On this page"></nav>
     <section class="note-graph-preview" aria-labelledby="note-graph-preview-heading"
-      data-source="{{ '/assets/note-graph.json' | relative_url }}?v=2" data-site-root="{{ '/' | relative_url }}" hidden>
+      data-source="{{ '/assets/note-graph.json' | relative_url }}?v=3" data-site-root="{{ '/' | relative_url }}" hidden>
       <h2 id="note-graph-preview-heading"><a href="{{ '/' | relative_url }}#note-graph">Note graph</a></h2>
       <div class="note-graph-plot">
         <svg role="group" aria-label="Note graph preview"><g></g></svg>
@@ -54,6 +54,13 @@
 
   <div class="content-wrapper">
     <div class="inner page-layout{% unless page.url == '/' %} article-layout{% endunless %}">
+      <details class="note-tree">
+        <summary>Browse notes</summary>
+        <nav aria-label="Browse notes">
+          <a class="note-tree-home" href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>Home / README</a>
+          <ul class="note-tree-links"></ul>
+        </nav>
+      </details>
       {% unless page.url == '/' %}{{ page_sidebar }}{% endunless %}
       <main id="content" class="markdown-body">
         {% if page.url == '/' %}

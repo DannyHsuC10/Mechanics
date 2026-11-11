@@ -3,6 +3,13 @@
   const preview = document.querySelector('.note-graph-preview');
   if (!preview) return;
   const status = root?.querySelector('.note-graph-status');
+  const siteRoot = new URL(preview.dataset.siteRoot, document.baseURI);
+  const noteTree = document.querySelector('.note-tree');
+  if (noteTree) {
+    const narrow = window.matchMedia('(max-width: 1080px)');
+    noteTree.open = !narrow.matches;
+    narrow.addEventListener('change', () => { noteTree.open = !narrow.matches; });
+  }
   const topics = {
     Home: ['Home', '#f5f7fb'],
     Mechanics_Physics: ['Physics', '#63b5ff'],
@@ -93,13 +100,77 @@
     return element;
   }
 
+  function renderNoteTree(nodes) {
+    if (!noteTree) return;
+    const home = nodes.findIndex((node) => node.path === 'index.html');
+    if (home < 0) return;
+
+    const pathname = decodeURIComponent(window.location.pathname);
+    const current = pathname === decodeURIComponent(siteRoot.pathname) ? home :
+      nodes.findIndex((node) => node.kind === 'note' && decodeURIComponent(new URL(node.path, siteRoot).pathname) === pathname);
+    const parents = new Map([[home, null]]);
+    const pending = [home];
+    for (const id of pending) {
+      if (id === current) break;
+      for (const child of nodes[id].outgoing ?? []) {
+        if (parents.has(child)) continue;
+        parents.set(child, id);
+        pending.push(child);
+      }
+    }
+    const currentBranch = [];
+    if (parents.has(current)) {
+      for (let id = current; id !== home; id = parents.get(id)) currentBranch.unshift(id);
+    }
+
+    function addLinks(list, parent, ancestors, activeBranch) {
+      for (const id of nodes[parent].outgoing ?? []) {
+        if (ancestors.has(id)) continue;
+        const note = nodes[id];
+        const visited = new Set(ancestors).add(id);
+        const item = document.createElement('li');
+        const row = document.createElement('div');
+        row.className = 'note-tree-row';
+        const link = document.createElement('a');
+        link.href = new URL(note.path, siteRoot).href;
+        link.textContent = note.title;
+        if (id === current) link.setAttribute('aria-current', 'page');
+        item.append(row);
+        list.append(item);
+
+        if ((note.outgoing ?? []).some((child) => !visited.has(child))) {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'note-tree-toggle';
+          const children = document.createElement('ul');
+          item.append(children);
+          row.append(button);
+          const onCurrentBranch = id === activeBranch[0];
+          function setExpanded(expanded) {
+            if (expanded && !children.hasChildNodes()) {
+              addLinks(children, id, visited, onCurrentBranch ? activeBranch.slice(1) : []);
+            }
+            children.hidden = !expanded;
+            button.textContent = expanded ? '▾' : '▸';
+            button.setAttribute('aria-expanded', String(expanded));
+            button.setAttribute('aria-label', `${expanded ? 'Collapse' : 'Expand'} ${note.title}`);
+          }
+          setExpanded(onCurrentBranch);
+          button.addEventListener('click', () => setExpanded(children.hidden));
+        }
+        row.append(link);
+      }
+    }
+
+    addLinks(noteTree.querySelector('.note-tree-links'), home, new Set([home]), currentBranch);
+  }
+
   function render(data) {
     const svg = root?.querySelector('svg');
     const world = root?.querySelector('.note-graph-world');
     const previewSvg = preview.querySelector('svg');
     const previewWorld = previewSvg.querySelector('g');
     const layers = world ? [world, previewWorld] : [previewWorld];
-    const siteRoot = new URL(preview.dataset.siteRoot, document.baseURI);
     const nodes = data.nodes;
     const edges = data.edges.map(([a, b]) => [nodes[a], nodes[b]]);
     const notes = nodes.filter((node) => node.kind === 'note');
@@ -313,7 +384,10 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     })
-    .then(render)
+    .then((data) => {
+      renderNoteTree(data.nodes);
+      render(data);
+    })
     .catch(() => {
       if (status) status.textContent = 'The note graph could not load.';
     });
