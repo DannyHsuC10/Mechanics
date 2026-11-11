@@ -27,7 +27,9 @@ body {
 }
 
 .content-wrapper .inner {
-  width: 100%;
+  width: auto;
+  max-width: none;
+  margin-inline: 24px 32px;
 }
 
 .page-header {
@@ -412,6 +414,10 @@ body {
   .content-wrapper {
     --content-padding-top: 24px;
     padding-bottom: 34px;
+  }
+
+  .content-wrapper .inner {
+    margin-inline: 1rem;
   }
 
   .page-layout {
