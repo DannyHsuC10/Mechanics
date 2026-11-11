@@ -27,7 +27,7 @@ body {
 }
 
 .content-wrapper .inner {
-  width: 1320px;
+  width: 100%;
 }
 
 .page-header {
@@ -66,7 +66,7 @@ body {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(170px, 220px) minmax(0, 720px) minmax(240px, 280px);
+  grid-template-columns: minmax(170px, 1fr) minmax(0, 720px) minmax(240px, 1fr);
   grid-template-areas: "tree article sidebar";
   justify-content: center;
   align-items: start;
@@ -99,12 +99,16 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+  justify-self: end;
+  max-width: 280px;
   display: flex;
   flex-direction: column;
 }
 
 .note-tree {
   grid-area: tree;
+  justify-self: start;
+  max-width: 220px;
   min-width: 0;
 }
 
@@ -424,7 +428,9 @@ body {
   .sidebar,
   .note-tree {
     position: static;
+    justify-self: stretch;
     width: auto;
+    max-width: none;
     height: auto;
   }
 
