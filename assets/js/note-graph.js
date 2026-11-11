@@ -11,14 +11,14 @@
     narrow.addEventListener('change', () => { noteTree.open = !narrow.matches; });
   }
   const topics = {
-    Home: ['Home', '#f5f7fb'],
-    Mechanics_Physics: ['Physics', '#63b5ff'],
-    Mechanics_Mechanical: ['Engineering', '#4fd5b0'],
-    Mechanics_Advanced: ['Advanced', '#c9a2ff'],
-    Mechanical_Principle: ['Machine elements', '#ffc478'],
-    Special: ['Special', '#f399bd'],
+    Home: ['Home', 'var(--ink)'],
+    Mechanics_Physics: ['Physics', 'var(--blue)'],
+    Mechanics_Mechanical: ['Engineering', '#287362'],
+    Mechanics_Advanced: ['Advanced', '#70558e'],
+    Mechanical_Principle: ['Machine elements', '#93662b'],
+    Special: ['Special', '#99506c'],
   };
-  const attachmentColors = {matlab: '#f1aa5e', image: '#9cbed4'};
+  const attachmentColors = {matlab: 'var(--graph-matlab)', image: 'var(--graph-image)'};
 
   function arrange(nodes, edges, sections) {
     const subjects = sections.filter((section) => section !== 'Home');
@@ -176,7 +176,7 @@
     const notes = nodes.filter((node) => node.kind === 'note');
     const attachments = nodes.filter((node) => node.kind !== 'note');
     const sections = [...new Set(notes.map((node) => node.section))];
-    const topic = (section) => topics[section] || [section.replaceAll('_', ' '), '#a9c5d8'];
+    const topic = (section) => topics[section] || [section.replaceAll('_', ' '), '#526f87'];
     const camera = {x: 0, y: 0, scale: 1};
     const filters = new Map();
     let width, height, matches, summary;

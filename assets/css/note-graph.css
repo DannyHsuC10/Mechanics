@@ -1,8 +1,13 @@
+:root {
+  --graph-matlab: #a65e1c;
+  --graph-image: #53788e;
+}
+
 .note-graph-jump {
   display: inline-block;
-  margin-top: 0.8rem;
-  color: #fff;
-  font-weight: 700;
+  margin-top: 0.35rem;
+  color: var(--blue);
+  font-weight: 650;
   text-underline-offset: 0.2em;
 }
 
@@ -38,9 +43,9 @@
   width: 100%;
   min-width: 0;
   padding: 0.5rem 0.75rem;
-  color: #23344a;
+  color: var(--ink);
   background: #fff;
-  border: 1px solid #bfcbd7;
+  border: 1px solid var(--input-line);
   border-radius: 0.35rem;
   font: inherit;
 }
@@ -48,7 +53,7 @@
 .note-graph-attachments {
   gap: 0.45rem 1.15rem;
   margin-bottom: 0.65rem;
-  color: #23344a;
+  color: var(--muted);
 }
 
 .note-graph-attachments label {
@@ -59,22 +64,22 @@
 }
 
 .note-graph-attachments input {
-  accent-color: #2e7bcf;
+  accent-color: var(--blue);
 }
 
 .note-graph-marker {
   width: 0.6rem;
   height: 0.6rem;
-  border: 1px solid #657b94;
+  border: 1px solid var(--input-line);
   border-radius: 50%;
 }
 
 .note-graph-marker.matlab {
-  background: #f1aa5e;
+  background: var(--graph-matlab);
 }
 
 .note-graph-marker.image {
-  background: #9cbed4;
+  background: var(--graph-image);
 }
 
 .note-graph-zoom {
@@ -85,9 +90,9 @@
 .note-graph button {
   min-height: 2.3rem;
   padding: 0.3rem 0.65rem;
-  color: #23344a;
-  background: #f5f8fb;
-  border: 1px solid #cbd6e0;
+  color: var(--blue);
+  background: var(--surface);
+  border: 1px solid var(--line);
   border-radius: 0.35rem;
   cursor: pointer;
   font: inherit;
@@ -95,23 +100,22 @@
 
 .note-graph button:hover,
 .note-graph button[aria-pressed="true"] {
-  color: #144a87;
-  background: #e5f1ff;
-  border-color: #70a8df;
+  background: var(--blue-tint);
+  border-color: var(--blue);
 }
 
 .note-graph :focus-visible {
-  outline: 2px solid #2e7bcf;
+  outline: 2px solid var(--blue);
   outline-offset: 2px;
 }
 
 .note-graph-plot {
   overflow: hidden;
-  background-color: #111e30;
-  background-image: radial-gradient(#2b3b51 0.8px, transparent 0.8px);
+  background-color: #f8fafc;
+  background-image: radial-gradient(#d5e0eb 0.8px, transparent 0.8px);
   background-size: 20px 20px;
-  border: 1px solid #27394f;
-  border-radius: 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
 }
 
 .note-graph-plot svg {
@@ -130,7 +134,7 @@
 .note-graph-preview {
   flex-shrink: 0;
   margin-top: 1rem;
-  border-top: 1px solid #d8d8d8;
+  border-top: 1px solid var(--line);
 }
 
 .note-graph-preview h2 {
@@ -139,7 +143,7 @@
 }
 
 .note-graph-preview h2 a {
-  color: #2879d0;
+  color: var(--blue);
 }
 
 .note-graph-preview .note-graph-plot svg {
@@ -149,8 +153,8 @@
 }
 
 .note-graph-plot line {
-  stroke: #7690ad;
-  stroke-opacity: 0.45;
+  stroke: #71869c;
+  stroke-opacity: 0.55;
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
   pointer-events: none;
@@ -161,8 +165,8 @@
 }
 
 .note-graph-node circle {
-  stroke: #111e30;
-  stroke-width: 1;
+  stroke: #fff;
+  stroke-width: 0.6;
   vector-effect: non-scaling-stroke;
 }
 
@@ -172,7 +176,7 @@
 
 .note-graph-plot line.is-active,
 .note-graph-node.is-active circle {
-  stroke: #f5f7fb;
+  stroke: var(--blue);
   stroke-opacity: 1;
   stroke-width: 2;
 }
@@ -194,7 +198,7 @@
   width: 0.7rem;
   height: 0.7rem;
   background: var(--note-color);
-  border: 1px solid #657b94;
+  border: 1px solid var(--input-line);
   border-radius: 50%;
   content: '';
 }
@@ -202,6 +206,6 @@
 .markdown-body .note-graph-status {
   min-height: 1.5rem;
   margin: 0.65rem 0 0;
-  color: #4c5c70;
+  color: var(--muted);
   font-size: 0.9rem;
 }
