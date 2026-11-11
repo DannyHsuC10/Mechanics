@@ -1,3 +1,13 @@
+const pageHeader = document.querySelector('.page-header');
+if (pageHeader) {
+  const updateHeaderHeight = () => {
+    const height = pageHeader.getBoundingClientRect().height;
+    document.documentElement.style.setProperty('--page-header-height', `${height}px`);
+  };
+  updateHeaderHeight();
+  new ResizeObserver(updateHeaderHeight).observe(pageHeader);
+}
+
 // Kramdown emits legacy MathJax script elements. Convert them before MathJax 3 starts.
 document.querySelectorAll('script[type^="math/tex"]').forEach((source) => {
   const display = source.type.includes('mode=display');

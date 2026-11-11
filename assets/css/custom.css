@@ -6,7 +6,9 @@
 }
 
 html {
+  --page-header-height: 150px;
   font-size: 16px;
+  scroll-padding-top: var(--page-header-height);
 }
 
 body {
@@ -29,6 +31,9 @@ body {
 }
 
 .page-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
   min-height: 150px;
   padding: 34px 0 30px;
   background: #2e7bcf;
@@ -78,10 +83,12 @@ body {
 
 .sidebar {
   grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
   position: sticky;
-  top: 1rem;
+  top: calc(var(--page-header-height) + 1rem);
   width: 100%;
-  max-height: calc(100vh - 2rem);
+  max-height: calc(100vh - var(--page-header-height) - 2rem);
   overflow: auto;
   padding: 14px;
   background: #f8f8f8;
@@ -92,6 +99,7 @@ body {
 
 .sidebar-links {
   display: flex;
+  flex-shrink: 0;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
@@ -354,6 +362,7 @@ body {
 }
 .markdown-body p, .markdown-body li { overflow-wrap: anywhere; }
 #page-toc {
+  min-height: 0;
   max-height: min(12rem, 23vh);
   overflow-y: auto;
 }
