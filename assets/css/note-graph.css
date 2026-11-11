@@ -1,0 +1,149 @@
+.note-graph-jump {
+  display: inline-block;
+  margin-top: 0.8rem;
+  color: #fff;
+  font-weight: 700;
+  text-underline-offset: 0.2em;
+}
+
+.note-graph {
+  margin-top: 2.5rem;
+}
+
+.note-graph [hidden],
+.note-graph .is-hidden {
+  display: none;
+}
+
+.note-graph-controls,
+.note-graph-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.note-graph-controls {
+  justify-content: space-between;
+  margin-bottom: 0.65rem;
+}
+
+.note-graph-controls input {
+  flex: 1 1 10rem;
+  width: 100%;
+  min-width: 0;
+  padding: 0.5rem 0.75rem;
+  color: #23344a;
+  background: #fff;
+  border: 1px solid #bfcbd7;
+  border-radius: 0.35rem;
+  font: inherit;
+}
+
+.note-graph-zoom {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.note-graph button {
+  min-height: 2.3rem;
+  padding: 0.3rem 0.65rem;
+  color: #23344a;
+  background: #f5f8fb;
+  border: 1px solid #cbd6e0;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  font: inherit;
+}
+
+.note-graph button:hover,
+.note-graph button[aria-pressed="true"] {
+  color: #144a87;
+  background: #e5f1ff;
+  border-color: #70a8df;
+}
+
+.note-graph :focus-visible {
+  outline: 2px solid #2e7bcf;
+  outline-offset: 2px;
+}
+
+.note-graph-plot {
+  overflow: hidden;
+  background-color: #111e30;
+  background-image: radial-gradient(#2b3b51 0.8px, transparent 0.8px);
+  background-size: 20px 20px;
+  border: 1px solid #27394f;
+  border-radius: 0.5rem;
+}
+
+.note-graph-plot svg {
+  display: block;
+  width: 100%;
+  height: clamp(330px, 60vw, 460px);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.note-graph-plot svg:active {
+  cursor: grabbing;
+}
+
+.note-graph-plot line {
+  stroke: #7690ad;
+  stroke-opacity: 0.45;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+  pointer-events: none;
+}
+
+.note-graph-node {
+  cursor: pointer;
+}
+
+.note-graph-node circle {
+  stroke: #111e30;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.note-graph-plot .is-muted {
+  opacity: 0.2;
+}
+
+.note-graph-plot line.is-active,
+.note-graph-node.is-active circle {
+  stroke: #f5f7fb;
+  stroke-opacity: 1;
+  stroke-width: 2;
+}
+
+.note-graph-legend {
+  margin-top: 0.65rem;
+  gap: 0.4rem;
+}
+
+.note-graph-legend button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding-inline: 0.55rem;
+  font-size: 0.85rem;
+}
+
+.note-graph-legend button[style]::before {
+  width: 0.7rem;
+  height: 0.7rem;
+  background: var(--note-color);
+  border: 1px solid #657b94;
+  border-radius: 50%;
+  content: '';
+}
+
+.markdown-body .note-graph-status {
+  min-height: 1.5rem;
+  margin: 0.65rem 0 0;
+  color: #4c5c70;
+  font-size: 0.9rem;
+}

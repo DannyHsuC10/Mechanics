@@ -1,7 +1,7 @@
 """Validate public Jekyll output, local links, images, and preserved math."""
 from html.parser import HTMLParser
 from pathlib import Path
-from urllib.parse import unquote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 import json
 import html
 import re
@@ -19,20 +19,29 @@ class Page(HTMLParser):
         self.in_main=False
         self.skip=0
         self.text=[]
+        self.title=''
+        self.in_title=False
+        self.note_links=set()
+        self.note_targets=set()
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
         if tag=='main': self.in_main=True
+        if tag=='title': self.in_title=True
         if tag in ('pre','code'): self.skip+=1
         if 'id' in attrs: self.ids.add(attrs['id'])
         for key in ('href','src'):
             if attrs.get(key): self.urls.append(attrs[key])
+        if self.in_main and not self.skip and tag=='a' and attrs.get('href'):
+            self.note_links.add(attrs['href'])
         if tag=='script' and attrs.get('type','').startswith('math/tex'):
             self.current={'tex':'','display':'mode=display' in attrs['type']}
     def handle_data(self,data):
         if self.current is not None: self.current['tex']+=data
+        elif self.in_title: self.title+=data
         elif self.in_main and not self.skip: self.text.append(data)
     def handle_endtag(self,tag):
         if tag=='main': self.in_main=False
+        if tag=='title': self.in_title=False
         if tag in ('pre','code'): self.skip=max(0,self.skip-1)
         if tag=='script' and self.current is not None:
             self.formulas.append(self.current)
@@ -64,9 +73,12 @@ for p,parsed in pages.items():
             issues.append([str(p.relative_to(destination)),'incorrect path case',url])
         elif ref.fragment and target in pages and unquote(ref.fragment) not in pages[target].ids:
             issues.append([str(p.relative_to(destination)),'missing anchor',url])
+        elif target != p and target in pages and url in parsed.note_links:
+            parsed.note_targets.add(target)
     formulas.extend(dict(f,file=str(p.relative_to(destination)),line=0) for f in parsed.formulas)
 public=PUBLIC_SECTIONS | {'README.md'}
 expected_pages=0
+notes={}
 for p in documents():
     if p.relative_to(ROOT).parts[0] not in public: continue
     expected_pages+=1
@@ -74,6 +86,12 @@ for p in documents():
     if target not in pages:
         issues.append([str(p.relative_to(ROOT)),'missing page'])
         continue
+    path = target.relative_to(destination).as_posix()
+    notes[target] = {
+        'path': quote(path),
+        'title': pages[target].title.strip().removesuffix(' | Mechanics') or p.stem,
+        'section': path.split('/', 1)[0] if '/' in path else 'Home',
+    }
     expected=[m[1] if m[1] is not None else m[2] for code,part,_ in segments(p.read_text(encoding='utf-8')) if not code for m in math_spans(part)]
     actual=[f['tex'] for f in pages[target].formulas]
     normalize=lambda s: ' '.join(s.split())
@@ -83,5 +101,16 @@ for name in sorted(PAUSED_SECTIONS | {'Private','Webpage_package','tools','pytho
     if (destination/name).exists(): issues.append([name,'unexpected published directory'])
 (ROOT/'.site-check').mkdir(exist_ok=True)
 (ROOT/'.site-check/rendered-math.json').write_text(json.dumps({'formulas':formulas}),encoding='utf-8')
+if not issues:
+    # Use rendered links between public notes, including the homepage index.
+    note_ids = {path: index for index, path in enumerate(notes)}
+    edges = {
+        tuple(sorted((source_id, note_ids[target])))
+        for source, source_id in note_ids.items()
+        for target in pages[source].note_targets
+        if target in note_ids
+    }
+    graph = {'nodes': list(notes.values()), 'edges': sorted(edges)}
+    (destination/'assets/note-graph.json').write_text(json.dumps(graph, ensure_ascii=False), encoding='utf-8')
 print(json.dumps({'expected_pages':expected_pages,'rendered_pages':len(pages),'rendered_formulas':len(formulas),'issues':issues},indent=2))
 raise SystemExit(bool(issues))
