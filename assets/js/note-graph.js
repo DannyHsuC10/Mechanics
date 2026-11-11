@@ -11,9 +11,9 @@
     narrow.addEventListener('change', () => { noteTree.open = !narrow.matches; });
   }
   const topics = {
-    Home: ['Home', 'var(--ink)'],
-    Mechanics_Physics: ['Physics', 'var(--blue)'],
-    Mechanics_Mechanical: ['Engineering', '#287362'],
+    Home: ['Home', 'var(--night)'],
+    Mechanics_Physics: ['Physics', 'var(--accent)'],
+    Mechanics_Mechanical: ['Engineering', '#3b638a'],
     Mechanics_Advanced: ['Advanced', '#70558e'],
     Mechanical_Principle: ['Machine elements', '#93662b'],
     Special: ['Special', '#99506c'],

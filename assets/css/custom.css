@@ -7,13 +7,16 @@
 
 html {
   --page-header-height: 90px;
-  --ink: #0f172a;
+  --ink: #142638;
+  --night: #111d31;
   --muted: #475569;
-  --line: #dbe2ea;
-  --surface: #f1f5f9;
-  --blue: #255889;
-  --blue-tint: #eaf1f8;
-  --input-line: #a9b9ca;
+  --line: #d4dfe9;
+  --surface: #f7f9fc;
+  --accent: #076d64;
+  --accent-hover: #065b54;
+  --accent-tint: #eef7f8;
+  --input-line: #cbd8e2;
+  --panel-padding: clamp(16px, 2vw, 26px);
   font-size: 16px;
   scroll-padding-top: var(--page-header-height);
 }
@@ -21,7 +24,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: #fff;
+  background: #edf2f7;
   font-family: "Segoe UI", "Microsoft JhengHei UI", sans-serif;
   font-size: 14px;
   line-height: 1.64;
@@ -43,27 +46,43 @@ body {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 16px 0;
-  background: var(--surface);
-  border-bottom: 1px solid var(--line);
+  padding: 10px 0;
+  background: var(--night);
+  color: #fff;
+  border-bottom: 4px solid #58b2b9;
+}
+
+.page-header .inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 16px;
+  width: auto;
+  max-width: none;
+  margin-inline: 24px 32px;
+}
+
+.page-header .site-home,
+.page-tagline {
+  grid-column: 1;
 }
 
 .page-title {
   margin: 0;
-  color: var(--ink);
-  font-size: 24px;
+  color: inherit;
+  font-size: clamp(1.55rem, 3vw, 1.75rem);
   font-weight: 750;
   line-height: 1.2;
 }
 
 .page-tagline {
   margin: 0.25rem 0 0;
-  color: var(--muted);
-  font-size: 13px;
+  color: #d4e3ee;
+  font-size: 0.875rem;
 }
 
 .content-wrapper {
-  --content-padding-top: 24px;
+  --content-padding-top: clamp(16px, 2vw, 32px);
   padding: var(--content-padding-top) 0 32px;
   border-bottom: 1px solid var(--line);
 }
@@ -74,7 +93,17 @@ body {
   grid-template-areas: "tree article .";
   justify-content: center;
   align-items: start;
-  gap: 24px;
+  gap: clamp(14px, 2vw, 24px);
+}
+
+.markdown-body,
+.note-tree-panel {
+  min-width: 0;
+  padding: var(--panel-padding);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 2px 7px #182e4210;
 }
 
 .markdown-body {
@@ -82,7 +111,6 @@ body {
   width: 720px;
   max-width: 100%;
   margin: 0 auto;
-  min-width: 0;
 }
 
 .note-tree-panel {
@@ -95,13 +123,8 @@ body {
   top: var(--sidebar-top);
   width: 100%;
   max-width: 360px;
-  min-width: 0;
   height: calc(100vh - var(--sidebar-top) - 1rem);
   overflow: auto;
-  padding: 12px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: 6px;
 }
 
 .note-tree {
@@ -112,7 +135,7 @@ body {
 
 .note-tree summary {
   cursor: pointer;
-  color: var(--blue);
+  color: var(--accent);
   font-weight: 650;
 }
 
@@ -151,14 +174,14 @@ body {
 }
 
 .note-tree-toggle:hover {
-  background: var(--blue-tint);
+  background: var(--accent-tint);
 }
 
 .note-tree a {
   display: block;
   padding: 0.2rem 0.3rem;
   border-radius: 0.2rem;
-  color: var(--blue);
+  color: var(--accent);
   text-decoration: none;
   overflow-wrap: anywhere;
 }
@@ -172,7 +195,7 @@ body {
 }
 
 .note-tree a[aria-current="page"] {
-  background: #deebf7;
+  background: var(--accent-tint);
   font-weight: 700;
 }
 
@@ -180,18 +203,20 @@ body {
   align-self: flex-start;
   flex-shrink: 0;
   margin: 0 0 0.65rem;
-  padding: 0;
-  border: 0;
-  background: none;
-  color: var(--blue);
+  padding: 5px 9px;
+  border: 1px solid var(--input-line);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--accent);
   font: inherit;
   font-weight: 700;
   text-align: left;
   cursor: pointer;
 }
 
-.back-link:hover {
-  text-decoration: underline;
+.back-link:not(:disabled):hover {
+  border-color: var(--accent);
+  background: var(--accent-tint);
 }
 
 .back-link:disabled {
@@ -207,7 +232,7 @@ body {
 }
 
 .page-end a {
-  color: var(--blue);
+  color: var(--accent);
   font-weight: 700;
   text-decoration: none;
 }
@@ -254,7 +279,7 @@ body {
 }
 
 .markdown-body a {
-  color: var(--blue);
+  color: var(--accent);
   font-weight: 650;
   text-decoration: none;
 }
@@ -308,7 +333,7 @@ body {
 }
 
 .markdown-body th {
-  background: var(--blue-tint);
+  background: #eff4f8;
   font-weight: 700;
 }
 
@@ -326,7 +351,7 @@ body {
   padding: 10px 12px;
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
 .calculator-grid {
@@ -349,28 +374,33 @@ body {
   color: var(--ink);
   background: #fff;
   border: 1px solid var(--input-line);
-  border-radius: 3px;
+  border-radius: 5px;
   font: inherit;
 }
 
-.calculator input:focus {
-  outline: 2px solid var(--blue);
-  outline-offset: 1px;
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.page-header :focus-visible {
+  outline-color: #9cdee3;
 }
 
 .calculator button {
+  min-height: 36px;
   padding: 0.55rem 0.9rem;
   color: #fff;
-  background: var(--blue);
-  border: 1px solid var(--blue);
-  border-radius: 3px;
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: 6px;
   cursor: pointer;
   font: inherit;
   font-weight: 700;
 }
 
 .calculator button:hover {
-  background: #1c456c;
+  background: var(--accent-hover);
 }
 
 .markdown-body .calculator-message {
@@ -379,15 +409,12 @@ body {
 }
 
 @media (max-width: 1080px) {
-  .page-header {
-    padding: 12px 0;
-  }
-
   .content-wrapper {
     --content-padding-top: 16px;
   }
 
-  .content-wrapper .inner {
+  .content-wrapper .inner,
+  .page-header .inner {
     margin-inline: 1rem;
   }
 
@@ -416,7 +443,19 @@ body {
   }
 }
 
-.site-home { text-decoration: none; }
+@media (max-width: 600px) {
+  .page-header .inner {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .page-header .note-graph-jump {
+    grid-area: auto;
+    justify-self: start;
+    margin-top: 8px;
+  }
+}
+
+.site-home { justify-self: start; color: inherit; text-decoration: none; }
 .page-title { display: block; }
 .markdown-body img { max-width: 100%; height: auto; }
 .center-img { display: block; margin: 1em auto; }

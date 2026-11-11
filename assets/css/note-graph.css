@@ -5,10 +5,19 @@
 
 .note-graph-jump {
   display: inline-block;
-  margin-top: 0.35rem;
-  color: var(--blue);
-  font-weight: 650;
-  text-underline-offset: 0.2em;
+  grid-area: 1 / 2 / 3 / 3;
+  padding: 7px 9px;
+  border: 1px solid #506179;
+  border-radius: 6px;
+  background: #1d2b44;
+  color: #f0f6fc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.note-graph-jump:hover {
+  background: #294157;
+  border-color: #79a4af;
 }
 
 .note-graph {
@@ -64,7 +73,7 @@
 }
 
 .note-graph-attachments input {
-  accent-color: var(--blue);
+  accent-color: var(--accent);
 }
 
 .note-graph-marker {
@@ -90,28 +99,28 @@
 .note-graph button {
   min-height: 2.3rem;
   padding: 0.3rem 0.65rem;
-  color: var(--blue);
-  background: var(--surface);
-  border: 1px solid var(--line);
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--input-line);
   border-radius: 0.35rem;
   cursor: pointer;
   font: inherit;
 }
 
-.note-graph button:hover,
-.note-graph button[aria-pressed="true"] {
-  background: var(--blue-tint);
-  border-color: var(--blue);
+.note-graph button:hover {
+  background: var(--accent-tint);
+  border-color: var(--accent);
 }
 
-.note-graph :focus-visible {
-  outline: 2px solid var(--blue);
-  outline-offset: 2px;
+.note-graph button[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
 }
 
 .note-graph-plot {
   overflow: hidden;
-  background-color: #f8fafc;
+  background-color: var(--surface);
   background-image: radial-gradient(#d5e0eb 0.8px, transparent 0.8px);
   background-size: 20px 20px;
   border: 1px solid var(--line);
@@ -143,7 +152,7 @@
 }
 
 .note-graph-preview h2 a {
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .note-graph-preview .note-graph-plot svg {
@@ -176,7 +185,7 @@
 
 .note-graph-plot line.is-active,
 .note-graph-node.is-active circle {
-  stroke: var(--blue);
+  stroke: var(--accent);
   stroke-opacity: 1;
   stroke-width: 2;
 }
