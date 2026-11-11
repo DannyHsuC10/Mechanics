@@ -33,24 +33,6 @@ if (backLink) {
   });
 }
 
-const toc = document.getElementById('page-toc');
-const headings = [...document.querySelectorAll('main h2')];
-if (toc && headings.length) {
-  const label = document.createElement('p');
-  label.textContent = 'On this page';
-  const list = document.createElement('ul');
-  headings.forEach((heading, index) => {
-    if (!heading.id) heading.id = `section-${index + 1}`;
-    const item = document.createElement('li');
-    const link = document.createElement('a');
-    link.href = `#${heading.id}`;
-    link.textContent = heading.textContent;
-    item.appendChild(link);
-    list.appendChild(item);
-  });
-  toc.append(label, list);
-}
-
 // Only load the diagram renderer on pages that contain a Mermaid diagram.
 const diagrams = document.querySelectorAll('pre code.language-mermaid');
 if (diagrams.length) {

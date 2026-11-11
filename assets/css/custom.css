@@ -68,8 +68,8 @@ body {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(min(21vw, 300px), 1fr) minmax(0, 720px) minmax(clamp(240px, 22vw, 340px), 1fr);
-  grid-template-areas: "tree article sidebar";
+  grid-template-columns: minmax(min(25vw, 360px), 1fr) minmax(0, 720px) minmax(0, 1fr);
+  grid-template-areas: "tree article .";
   justify-content: center;
   align-items: start;
   gap: 24px;
@@ -84,14 +84,17 @@ body {
   color: #373737;
 }
 
-.sidebar,
 .note-tree-panel {
   --sidebar-top: calc(var(--page-header-height) + var(--content-padding-top) + 1px);
+  grid-area: tree;
+  justify-self: start;
   display: flex;
   flex-direction: column;
   position: sticky;
   top: var(--sidebar-top);
   width: 100%;
+  max-width: 360px;
+  min-width: 0;
   height: calc(100vh - var(--sidebar-top) - 1rem);
   overflow: auto;
   padding: 14px;
@@ -99,19 +102,6 @@ body {
   border: 1px solid #d8d8d8;
   border-radius: 3px;
   box-shadow: inset 0 1px 0 #ffffff;
-}
-
-.sidebar {
-  grid-area: sidebar;
-  justify-self: end;
-  max-width: 340px;
-}
-
-.note-tree-panel {
-  grid-area: tree;
-  justify-self: start;
-  max-width: 300px;
-  min-width: 0;
 }
 
 .note-tree {
@@ -185,41 +175,22 @@ body {
   font-weight: 700;
 }
 
-.sidebar-links {
-  display: flex;
-  flex-shrink: 0;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 8px 12px;
-}
-
-#page-toc {
-  flex: 1;
-  min-height: 3rem;
-  overflow-y: auto;
-}
-
-.home-link {
-  display: block;
-  color: #2879d0;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-.home-link:hover {
-  text-decoration: underline;
-}
-
 .back-link {
-  margin-inline-start: auto;
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin: 0 0 0.65rem;
   padding: 0;
   border: 0;
   background: none;
+  color: #2879d0;
   font: inherit;
   font-weight: 700;
-  text-align: right;
+  text-align: left;
   cursor: pointer;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
 
 .back-link:disabled {
@@ -430,15 +401,10 @@ body {
   .page-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "tree" "article" "sidebar";
+    grid-template-areas: "tree" "article";
     gap: 22px;
   }
 
-  .article-layout {
-    grid-template-areas: "tree" "sidebar" "article";
-  }
-
-  .sidebar,
   .note-tree-panel {
     position: static;
     justify-self: stretch;
@@ -450,10 +416,6 @@ body {
   .note-tree nav {
     max-height: 40vh;
     overflow-y: auto;
-  }
-
-  #page-toc {
-    flex: 0 0 min(12rem, 23vh);
   }
 
   .calculator-grid {
@@ -473,10 +435,6 @@ body {
   padding: 0.25rem 0;
 }
 .markdown-body p, .markdown-body li { overflow-wrap: anywhere; }
-#page-toc ul { padding-left: 1rem; }
-#page-toc li { margin: 0.5rem 0; }
-#page-toc a { color: #2879d0; text-decoration: none; }
-#page-toc a:hover { text-decoration: underline; }
 :target { scroll-margin-top: 1rem; }
 .calculator-title { font-weight: 700; margin: 0 0 0.5rem; }
 .calculator-note { font-size: 0.92rem; margin: 0 0 1rem; }

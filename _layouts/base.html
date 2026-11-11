@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=11">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=12">
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
-  <script defer src="{{ '/assets/js/site.js' | relative_url }}?v=2"></script>
+  <script defer src="{{ '/assets/js/site.js' | relative_url }}?v=3"></script>
   <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=4">
   <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=5"></script>
 
@@ -35,19 +35,10 @@
     </div>
   </header>
 
-  {% capture page_sidebar %}
-  <aside class="sidebar" aria-label="Page navigation">
-    <div class="sidebar-links">
-      <a class="home-link" href="{{ '/' | relative_url }}">Home / README</a>
-      <button class="home-link back-link" id="back-link" type="button" disabled>← Back to previous page</button>
-    </div>
-    <nav id="page-toc" aria-label="On this page"></nav>
-  </aside>
-  {% endcapture %}
-
   <div class="content-wrapper">
-    <div class="inner page-layout{% unless page.url == '/' %} article-layout{% endunless %}">
+    <div class="inner page-layout">
       <aside class="note-tree-panel" aria-label="Site navigation">
+        <button class="back-link" id="back-link" type="button" disabled>← Back to previous page</button>
         <details class="note-tree">
           <summary>Browse notes</summary>
           <nav aria-label="Browse notes">
@@ -63,7 +54,6 @@
           </div>
         </section>
       </aside>
-      {% unless page.url == '/' %}{{ page_sidebar }}{% endunless %}
       <main id="content" class="markdown-body">
         {% if page.url == '/' %}
         <section class="note-graph" id="note-graph" aria-labelledby="note-graph-heading">
@@ -93,7 +83,6 @@
         {% endif %}
         {{ content }}
       </main>
-      {% if page.url == '/' %}{{ page_sidebar }}{% endif %}
     </div>
   </div>
 
