@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=2">
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
   <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
   <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=3">
@@ -35,8 +35,26 @@
     </div>
   </header>
 
+  {% capture page_sidebar %}
+  <aside class="sidebar" aria-label="Page navigation">
+    <div class="sidebar-links">
+      <a class="home-link" href="{{ '/' | relative_url }}">Home / README</a>
+      <button class="home-link back-link" id="back-link" type="button" disabled>← Back to previous page</button>
+    </div>
+    <nav id="page-toc" aria-label="On this page"></nav>
+    <section class="note-graph-preview" aria-labelledby="note-graph-preview-heading"
+      data-source="{{ '/assets/note-graph.json' | relative_url }}?v=2" data-site-root="{{ '/' | relative_url }}" hidden>
+      <h2 id="note-graph-preview-heading"><a href="{{ '/' | relative_url }}#note-graph">Note graph</a></h2>
+      <div class="note-graph-plot">
+        <svg role="group" aria-label="Note graph preview"><g></g></svg>
+      </div>
+    </section>
+  </aside>
+  {% endcapture %}
+
   <div class="content-wrapper">
-    <div class="inner page-layout">
+    <div class="inner page-layout{% unless page.url == '/' %} article-layout{% endunless %}">
+      {% unless page.url == '/' %}{{ page_sidebar }}{% endunless %}
       <main id="content" class="markdown-body">
         {% if page.url == '/' %}
         <section class="note-graph" id="note-graph" aria-labelledby="note-graph-heading">
@@ -66,20 +84,7 @@
         {% endif %}
         {{ content }}
       </main>
-      <aside class="sidebar" aria-label="Page navigation">
-        <div class="sidebar-links">
-          <a class="home-link" href="{{ '/' | relative_url }}">Home / README</a>
-          <button class="home-link back-link" id="back-link" type="button" disabled>← Back to previous page</button>
-        </div>
-        <nav id="page-toc" aria-label="On this page"></nav>
-        <section class="note-graph-preview" aria-labelledby="note-graph-preview-heading"
-          data-source="{{ '/assets/note-graph.json' | relative_url }}?v=2" data-site-root="{{ '/' | relative_url }}" hidden>
-          <h2 id="note-graph-preview-heading"><a href="{{ '/' | relative_url }}#note-graph">Note graph</a></h2>
-          <div class="note-graph-plot">
-            <svg role="group" aria-label="Note graph preview"><g></g></svg>
-          </div>
-        </section>
-      </aside>
+      {% if page.url == '/' %}{{ page_sidebar }}{% endif %}
     </div>
   </div>
 

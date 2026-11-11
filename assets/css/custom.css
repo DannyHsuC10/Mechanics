@@ -61,12 +61,14 @@ body {
 .page-layout {
   display: grid;
   grid-template-columns: minmax(0, 720px) minmax(240px, 280px);
+  grid-template-areas: "article sidebar";
   justify-content: center;
   align-items: start;
   gap: 32px;
 }
 
 .markdown-body {
+  grid-area: article;
   width: 720px;
   max-width: 100%;
   margin: 0 auto;
@@ -75,6 +77,7 @@ body {
 }
 
 .sidebar {
+  grid-area: sidebar;
   position: sticky;
   top: 1rem;
   width: 100%;
@@ -319,13 +322,17 @@ body {
   .page-layout {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "article" "sidebar";
     gap: 22px;
+  }
+
+  .article-layout {
+    grid-template-areas: "sidebar" "article";
   }
 
   .sidebar {
     position: static;
     width: auto;
-    order: 2;
     max-height: none;
   }
 
@@ -346,6 +353,10 @@ body {
   padding: 0.25rem 0;
 }
 .markdown-body p, .markdown-body li { overflow-wrap: anywhere; }
+#page-toc {
+  max-height: min(12rem, 23vh);
+  overflow-y: auto;
+}
 #page-toc ul { padding-left: 1rem; }
 #page-toc li { margin: 0.5rem 0; }
 #page-toc a { color: #2879d0; text-decoration: none; }
