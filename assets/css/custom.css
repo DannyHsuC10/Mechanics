@@ -68,7 +68,7 @@ body {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(min(21vw, 300px), 1fr) minmax(0, 720px) minmax(240px, 1fr);
+  grid-template-columns: minmax(min(21vw, 300px), 1fr) minmax(0, 720px) minmax(clamp(240px, 22vw, 340px), 1fr);
   grid-template-areas: "tree article sidebar";
   justify-content: center;
   align-items: start;
@@ -104,7 +104,7 @@ body {
 .sidebar {
   grid-area: sidebar;
   justify-self: end;
-  max-width: 280px;
+  max-width: 340px;
 }
 
 .note-tree-panel {
@@ -212,12 +212,13 @@ body {
 }
 
 .back-link {
+  margin-inline-start: auto;
   padding: 0;
   border: 0;
   background: none;
   font: inherit;
   font-weight: 700;
-  text-align: left;
+  text-align: right;
   cursor: pointer;
 }
 
