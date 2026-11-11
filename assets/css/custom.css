@@ -57,7 +57,8 @@ body {
 }
 
 .content-wrapper {
-  padding: 35px 0 45px;
+  --content-padding-top: 35px;
+  padding: var(--content-padding-top) 0 45px;
   background: #ffffff;
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #d8d8d8;
@@ -82,13 +83,14 @@ body {
 }
 
 .sidebar {
+  --sidebar-top: calc(var(--page-header-height) + var(--content-padding-top) + 1px);
   grid-area: sidebar;
   display: flex;
   flex-direction: column;
   position: sticky;
-  top: calc(var(--page-header-height) + 1rem);
+  top: var(--sidebar-top);
   width: 100%;
-  max-height: calc(100vh - var(--page-header-height) - 2rem);
+  height: calc(100vh - var(--sidebar-top) - 1rem);
   overflow: auto;
   padding: 14px;
   background: #f8f8f8;
@@ -104,6 +106,12 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 8px 12px;
+}
+
+#page-toc {
+  flex: 1;
+  min-height: 3rem;
+  overflow-y: auto;
 }
 
 .home-link {
@@ -324,7 +332,8 @@ body {
   }
 
   .content-wrapper {
-    padding: 24px 0 34px;
+    --content-padding-top: 24px;
+    padding-bottom: 34px;
   }
 
   .page-layout {
@@ -341,7 +350,11 @@ body {
   .sidebar {
     position: static;
     width: auto;
-    max-height: none;
+    height: auto;
+  }
+
+  #page-toc {
+    flex: 0 0 min(12rem, 23vh);
   }
 
   .calculator-grid {
@@ -361,11 +374,6 @@ body {
   padding: 0.25rem 0;
 }
 .markdown-body p, .markdown-body li { overflow-wrap: anywhere; }
-#page-toc {
-  min-height: 0;
-  max-height: min(12rem, 23vh);
-  overflow-y: auto;
-}
 #page-toc ul { padding-left: 1rem; }
 #page-toc li { margin: 0.5rem 0; }
 #page-toc a { color: #2879d0; text-decoration: none; }
