@@ -6,10 +6,8 @@
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
   <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
-  {% if page.url == '/' %}
   <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=3">
-  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=3"></script>
-  {% endif %}
+  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=4"></script>
 
   <!-- MathJax -->
   <script>
@@ -41,8 +39,7 @@
     <div class="inner page-layout">
       <main id="content" class="markdown-body">
         {% if page.url == '/' %}
-        <section class="note-graph" id="note-graph" aria-labelledby="note-graph-heading"
-          data-source="{{ '/assets/note-graph.json' | relative_url }}?v=2" data-site-root="{{ '/' | relative_url }}">
+        <section class="note-graph" id="note-graph" aria-labelledby="note-graph-heading">
           <h2 id="note-graph-heading">Note graph</h2>
           <p>Click a node to open a note, MATLAB file, or image. Lines show which notes link to it.</p>
           <div class="note-graph-controls" hidden>
@@ -75,14 +72,13 @@
           <button class="home-link back-link" id="back-link" type="button" disabled>← Back to previous page</button>
         </div>
         <nav id="page-toc" aria-label="On this page"></nav>
-        {% if page.url == '/' %}
-        <section class="note-graph-preview" aria-labelledby="note-graph-preview-heading" hidden>
-          <h2 id="note-graph-preview-heading"><a href="#note-graph">Note graph</a></h2>
+        <section class="note-graph-preview" aria-labelledby="note-graph-preview-heading"
+          data-source="{{ '/assets/note-graph.json' | relative_url }}?v=2" data-site-root="{{ '/' | relative_url }}" hidden>
+          <h2 id="note-graph-preview-heading"><a href="{{ '/' | relative_url }}#note-graph">Note graph</a></h2>
           <div class="note-graph-plot">
             <svg role="group" aria-label="Note graph preview"><g></g></svg>
           </div>
         </section>
-        {% endif %}
       </aside>
     </div>
   </div>

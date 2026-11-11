@@ -1,6 +1,8 @@
 (() => {
   const root = document.getElementById('note-graph');
-  const status = root.querySelector('.note-graph-status');
+  const preview = document.querySelector('.note-graph-preview');
+  if (!preview) return;
+  const status = root?.querySelector('.note-graph-status');
   const topics = {
     Home: ['Home', '#f5f7fb'],
     Mechanics_Physics: ['Physics', '#63b5ff'],
@@ -92,17 +94,12 @@
   }
 
   function render(data) {
-    const svg = root.querySelector('svg');
-    const world = root.querySelector('.note-graph-world');
-    const preview = document.querySelector('.note-graph-preview');
+    const svg = root?.querySelector('svg');
+    const world = root?.querySelector('.note-graph-world');
     const previewSvg = preview.querySelector('svg');
     const previewWorld = previewSvg.querySelector('g');
-    const controls = root.querySelector('.note-graph-controls');
-    const search = controls.querySelector('input');
-    const legend = root.querySelector('.note-graph-legend');
-    const attachmentControls = root.querySelector('.note-graph-attachments');
-    const attachmentInputs = [...attachmentControls.querySelectorAll('input')];
-    const siteRoot = new URL(root.dataset.siteRoot, document.baseURI);
+    const layers = world ? [world, previewWorld] : [previewWorld];
+    const siteRoot = new URL(preview.dataset.siteRoot, document.baseURI);
     const nodes = data.nodes;
     const edges = data.edges.map(([a, b]) => [nodes[a], nodes[b]]);
     const notes = nodes.filter((node) => node.kind === 'note');
@@ -111,7 +108,8 @@
     const topic = (section) => topics[section] || [section.replaceAll('_', ' '), '#a9c5d8'];
     const camera = {x: 0, y: 0, scale: 1};
     const filters = new Map();
-    let width, height, visibleNodes, matches, summary;
+    let width, height, matches, summary;
+    let visibleNodes = nodes;
     let sectionFilter = '';
     let hovered = null;
     let focused = null;
@@ -130,7 +128,7 @@
     arrange(notes, edges.filter(([a, b]) => a.kind === 'note' && b.kind === 'note'), sections);
     placeAttachments(notes, attachments);
 
-    const lines = edges.map(([a, b]) => [world, previewWorld].map((layer) => {
+    const lines = edges.map(([a, b]) => layers.map((layer) => {
       const line = svgElement('line', {x1: a.x, y1: a.y, x2: b.x, y2: b.y});
       layer.append(line);
       return line;
@@ -139,7 +137,7 @@
       const isNote = node.kind === 'note';
       const radius = isNote ? 6.7 + Math.min(6.5, Math.sqrt(node.neighbors.size) * 1.5) : 5.7;
       const color = isNote ? topic(node.section)[1] : attachmentColors[node.kind];
-      node.links = [world, previewWorld].map((layer) => {
+      node.links = layers.map((layer) => {
         const link = svgElement('a', {
           href: node.url,
           'aria-label': node.title,
@@ -170,7 +168,7 @@
         line.classList.toggle('is-muted', !!active && a !== active && b !== active);
         line.classList.toggle('is-active', a === active || b === active);
       }));
-      status.textContent = active?.title || summary;
+      if (status) status.textContent = active?.title || summary;
     }
 
     function moveCamera() {
@@ -246,6 +244,18 @@
       legend.append(button);
     }
 
+    preview.hidden = false;
+    if (!root) {
+      fit();
+      return;
+    }
+
+    const controls = root.querySelector('.note-graph-controls');
+    const search = controls.querySelector('input');
+    const legend = root.querySelector('.note-graph-legend');
+    const attachmentControls = root.querySelector('.note-graph-attachments');
+    const attachmentInputs = [...attachmentControls.querySelectorAll('input')];
+
     addFilter('', 'All subjects');
     sections.forEach((section) => addFilter(section, ...topic(section)));
     attachmentInputs.forEach((input) => input.addEventListener('change', filter));
@@ -288,7 +298,7 @@
       if (dragged && event.detail) event.preventDefault();
     }, true);
 
-    controls.hidden = legend.hidden = attachmentControls.hidden = preview.hidden = root.querySelector('.note-graph-plot').hidden = false;
+    controls.hidden = legend.hidden = attachmentControls.hidden = root.querySelector('.note-graph-plot').hidden = false;
     filter();
     new ResizeObserver(([entry]) => {
       ({width, height} = entry.contentRect);
@@ -298,11 +308,13 @@
     }).observe(svg);
   }
 
-  fetch(root.dataset.source)
+  fetch(preview.dataset.source)
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       return response.json();
     })
     .then(render)
-    .catch(() => { status.textContent = 'The note graph could not load.'; });
+    .catch(() => {
+      if (status) status.textContent = 'The note graph could not load.';
+    });
 })();
