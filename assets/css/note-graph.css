@@ -11,12 +11,13 @@
 }
 
 .note-graph [hidden],
-.note-graph .is-hidden {
+.note-graph-plot .is-hidden {
   display: none;
 }
 
 .note-graph-controls,
-.note-graph-legend {
+.note-graph-legend,
+.note-graph-attachments {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -28,7 +29,7 @@
   margin-bottom: 0.65rem;
 }
 
-.note-graph-controls input {
+.note-graph-controls input[type="search"] {
   flex: 1 1 10rem;
   width: 100%;
   min-width: 0;
@@ -38,6 +39,39 @@
   border: 1px solid #bfcbd7;
   border-radius: 0.35rem;
   font: inherit;
+}
+
+.note-graph-attachments {
+  gap: 0.45rem 1.15rem;
+  margin-bottom: 0.65rem;
+  color: #23344a;
+}
+
+.note-graph-attachments label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.note-graph-attachments input {
+  accent-color: #2e7bcf;
+}
+
+.note-graph-marker {
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1px solid #657b94;
+}
+
+.note-graph-marker.matlab {
+  background: #f1aa5e;
+  transform: rotate(45deg);
+}
+
+.note-graph-marker.image {
+  background: #9cbed4;
+  border-radius: 2px;
 }
 
 .note-graph-zoom {
@@ -90,6 +124,26 @@
   cursor: grabbing;
 }
 
+.note-graph-preview {
+  margin-top: 1rem;
+  border-top: 1px solid #d8d8d8;
+}
+
+.note-graph-preview h2 {
+  margin: 0.75rem 0 0.5rem;
+  font-size: 1rem;
+}
+
+.note-graph-preview h2 a {
+  color: #2879d0;
+}
+
+.note-graph-preview .note-graph-plot svg {
+  height: 190px;
+  cursor: default;
+  touch-action: auto;
+}
+
 .note-graph-plot line {
   stroke: #7690ad;
   stroke-opacity: 0.45;
@@ -102,7 +156,7 @@
   cursor: pointer;
 }
 
-.note-graph-node circle {
+.note-graph-node :is(circle, rect) {
   stroke: #111e30;
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
@@ -113,7 +167,7 @@
 }
 
 .note-graph-plot line.is-active,
-.note-graph-node.is-active circle {
+.note-graph-node.is-active :is(circle, rect) {
   stroke: #f5f7fb;
   stroke-opacity: 1;
   stroke-width: 2;

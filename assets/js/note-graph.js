@@ -9,6 +9,7 @@
     Mechanical_Principle: ['Machine elements', '#ffc478'],
     Special: ['Special', '#f399bd'],
   };
+  const attachmentColors = {matlab: '#f1aa5e', image: '#9cbed4'};
 
   function arrange(nodes, edges, sections) {
     const subjects = sections.filter((section) => section !== 'Home');
@@ -62,6 +63,24 @@
     }
   }
 
+  function placeAttachments(notes, attachments) {
+    const placed = [...notes];
+    attachments.forEach((node, index) => {
+      const sources = [...node.neighbors];
+      const x = sources.reduce((sum, source) => sum + source.x, 0) / sources.length;
+      const y = sources.reduce((sum, source) => sum + source.y, 0) / sources.length;
+      let step = 0;
+      do {
+        const angle = (index + step) * 2.4;
+        const radius = 24 + 8 * Math.sqrt(step);
+        node.x = x + radius * Math.cos(angle);
+        node.y = y + radius * Math.sin(angle);
+        step++;
+      } while (placed.some((other) => (node.x - other.x) ** 2 + (node.y - other.y) ** 2 < 17 ** 2));
+      placed.push(node);
+    });
+  }
+
   function svgElement(tag, attributes) {
     const element = document.createElementNS('http://www.w3.org/2000/svg', tag);
     Object.entries(attributes).forEach(([name, value]) => element.setAttribute(name, value));
@@ -71,64 +90,84 @@
   function render(data) {
     const svg = root.querySelector('svg');
     const world = root.querySelector('.note-graph-world');
+    const preview = document.querySelector('.note-graph-preview');
+    const previewSvg = preview.querySelector('svg');
+    const previewWorld = previewSvg.querySelector('g');
     const controls = root.querySelector('.note-graph-controls');
     const search = controls.querySelector('input');
     const legend = root.querySelector('.note-graph-legend');
+    const attachmentControls = root.querySelector('.note-graph-attachments');
+    const attachmentInputs = [...attachmentControls.querySelectorAll('input')];
     const siteRoot = new URL(root.dataset.siteRoot, document.baseURI);
     const nodes = data.nodes;
     const edges = data.edges.map(([a, b]) => [nodes[a], nodes[b]]);
-    const sections = [...new Set(nodes.map((node) => node.section))];
+    const notes = nodes.filter((node) => node.kind === 'note');
+    const attachments = nodes.filter((node) => node.kind !== 'note');
+    const sections = [...new Set(notes.map((node) => node.section))];
     const topic = (section) => topics[section] || [section.replaceAll('_', ' '), '#a9c5d8'];
     const camera = {x: 0, y: 0, scale: 1};
     const filters = new Map();
-    let width, height, visibleNodes, visibleEdges;
+    let width, height, visibleNodes, matches, summary;
     let sectionFilter = '';
     let hovered = null;
     let focused = null;
     let pan = null;
     let dragged = false;
 
-    arrange(nodes, edges, sections);
-    nodes.forEach((node) => { node.neighbors = new Set(); });
-    const lines = edges.map(([a, b]) => {
+    nodes.forEach((node) => {
+      node.neighbors = new Set();
+      node.url = new URL(node.path, siteRoot).href;
+      node.searchText = `${node.title} ${node.path.split('/').pop()}`.toLocaleLowerCase();
+    });
+    edges.forEach(([a, b]) => {
       a.neighbors.add(b);
       b.neighbors.add(a);
-      const line = svgElement('line', {x1: a.x, y1: a.y, x2: b.x, y2: b.y});
-      world.append(line);
-      return line;
     });
+    arrange(notes, edges.filter(([a, b]) => a.kind === 'note' && b.kind === 'note'), sections);
+    placeAttachments(notes, attachments);
+
+    const lines = edges.map(([a, b]) => [world, previewWorld].map((layer) => {
+      const line = svgElement('line', {x1: a.x, y1: a.y, x2: b.x, y2: b.y});
+      layer.append(line);
+      return line;
+    }));
     nodes.forEach((node) => {
       const radius = 6.7 + Math.min(6.5, Math.sqrt(node.neighbors.size) * 1.5);
-      node.link = svgElement('a', {
-        href: new URL(node.path, siteRoot).href,
-        'aria-label': node.title,
-        class: 'note-graph-node',
+      node.links = [world, previewWorld].map((layer) => {
+        const link = svgElement('a', {
+          href: node.url,
+          'aria-label': node.title,
+          class: 'note-graph-node',
+          'data-kind': node.kind,
+        });
+        if (layer === previewWorld) link.setAttribute('tabindex', '-1');
+        const tooltip = svgElement('title', {});
+        tooltip.textContent = node.title;
+        const shape = node.kind === 'note'
+          ? svgElement('circle', {cx: node.x, cy: node.y, r: radius, fill: topic(node.section)[1]})
+          : svgElement('rect', {x: node.x - 5, y: node.y - 5, width: 10, height: 10, rx: 1.5, fill: attachmentColors[node.kind]});
+        if (node.kind === 'matlab') shape.setAttribute('transform', `rotate(45 ${node.x} ${node.y})`);
+        link.append(tooltip, shape);
+        layer.append(link);
+        link.addEventListener('pointerenter', () => { hovered = node; emphasize(); });
+        link.addEventListener('pointerleave', () => { hovered = null; emphasize(); });
+        link.addEventListener('focus', () => { focused = node; emphasize(); });
+        link.addEventListener('blur', () => { focused = null; emphasize(); });
+        return link;
       });
-      const tooltip = svgElement('title', {});
-      tooltip.textContent = node.title;
-      const dot = svgElement('circle', {cx: node.x, cy: node.y, r: radius, fill: topic(node.section)[1]});
-      node.link.append(tooltip, dot);
-      world.append(node.link);
-      node.link.addEventListener('pointerenter', () => { hovered = node; emphasize(); });
-      node.link.addEventListener('pointerleave', () => { hovered = null; emphasize(); });
-      node.link.addEventListener('focus', () => { focused = node; emphasize(); });
-      node.link.addEventListener('blur', () => { focused = null; emphasize(); });
     });
 
     function emphasize() {
       const active = hovered || focused;
-      nodes.forEach((node) => {
-        node.link.classList.toggle('is-muted', !!active && node !== active && !active.neighbors.has(node));
-        node.link.classList.toggle('is-active', node === active);
-      });
-      edges.forEach(([a, b], index) => {
-        lines[index].classList.toggle('is-muted', !!active && a !== active && b !== active);
-        lines[index].classList.toggle('is-active', a === active || b === active);
-      });
-      const count = visibleNodes.length === nodes.length ? nodes.length : `${visibleNodes.length} of ${nodes.length}`;
-      status.textContent = active ? active.title : visibleNodes.length
-        ? `${count} notes · ${visibleEdges} links`
-        : 'No notes match your search.';
+      nodes.forEach((node) => node.links.forEach((link) => {
+        link.classList.toggle('is-muted', !!active && node !== active && !active.neighbors.has(node));
+        link.classList.toggle('is-active', node === active);
+      }));
+      edges.forEach(([a, b], index) => lines[index].forEach((line) => {
+        line.classList.toggle('is-muted', !!active && a !== active && b !== active);
+        line.classList.toggle('is-active', a === active || b === active);
+      }));
+      status.textContent = active?.title || summary;
     }
 
     function moveCamera() {
@@ -136,13 +175,15 @@
     }
 
     function fit() {
-      if (!visibleNodes.length || !width || !height) return;
+      if (!visibleNodes.length) return;
       const xs = visibleNodes.map((node) => node.x);
       const ys = visibleNodes.map((node) => node.y);
       const left = Math.min(...xs);
       const right = Math.max(...xs);
       const top = Math.min(...ys);
       const bottom = Math.max(...ys);
+      previewSvg.setAttribute('viewBox', `${left - 26} ${top - 26} ${right - left + 52} ${bottom - top + 52}`);
+      if (!width || !height) return;
       camera.scale = Math.min(width / (right - left + 64), height / (bottom - top + 64), 1.7);
       camera.x = width / 2 - (left + right) / 2 * camera.scale;
       camera.y = height / 2 - (top + bottom) / 2 * camera.scale;
@@ -160,17 +201,29 @@
     function filter() {
       const query = search.value.trim().toLocaleLowerCase();
       hovered = focused = null;
-      visibleNodes = nodes.filter((node) => {
-        node.visible = (!sectionFilter || sectionFilter === node.section) && node.title.toLocaleLowerCase().includes(query);
-        node.link.classList.toggle('is-hidden', !node.visible);
-        return node.visible;
-      });
-      visibleEdges = 0;
+      const shownKinds = new Set(attachmentInputs.filter((input) => input.checked).map((input) => input.value));
+      const inSection = (note) => !sectionFilter || note.section === sectionFilter;
+      const eligible = new Set(nodes.filter((node) => node.kind === 'note' ? inSection(node) :
+        shownKinds.has(node.kind) && [...node.neighbors].some(inSection)));
+      matches = [...eligible].filter((node) => node.searchText.includes(query));
+      const visible = new Set(matches);
+      if (query) {
+        matches.forEach((node) => node.neighbors.forEach((neighbor) => {
+          if (eligible.has(neighbor) && (node.kind !== 'note' || neighbor.kind !== 'note')) visible.add(neighbor);
+        }));
+      }
+      visibleNodes = [...visible];
+      nodes.forEach((node) => node.links.forEach((link) => link.classList.toggle('is-hidden', !visible.has(node))));
+      let visibleEdges = 0;
       edges.forEach(([a, b], index) => {
-        const visible = a.visible && b.visible;
-        lines[index].classList.toggle('is-hidden', !visible);
-        if (visible) visibleEdges++;
+        const show = visible.has(a) && visible.has(b);
+        lines[index].forEach((line) => line.classList.toggle('is-hidden', !show));
+        if (show) visibleEdges++;
       });
+      const noteCount = visibleNodes.filter((node) => node.kind === 'note').length;
+      summary = visibleNodes.length
+        ? `${noteCount} notes · ${visibleNodes.length - noteCount} files · ${visibleEdges} links`
+        : 'No notes or files match your search.';
       emphasize();
       fit();
     }
@@ -190,11 +243,12 @@
       legend.append(button);
     }
 
-    addFilter('', 'All notes');
+    addFilter('', 'All subjects');
     sections.forEach((section) => addFilter(section, ...topic(section)));
+    attachmentInputs.forEach((input) => input.addEventListener('change', filter));
     search.addEventListener('input', filter);
     search.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' && visibleNodes.length === 1) window.location.assign(visibleNodes[0].link.getAttribute('href'));
+      if (event.key === 'Enter' && matches.length === 1) window.location.assign(matches[0].url);
     });
     controls.querySelector('[data-zoom="out"]').addEventListener('click', () => zoom(1 / 1.35));
     controls.querySelector('[data-zoom="in"]').addEventListener('click', () => zoom(1.35));
@@ -231,7 +285,7 @@
       if (dragged && event.detail) event.preventDefault();
     }, true);
 
-    controls.hidden = legend.hidden = root.querySelector('.note-graph-plot').hidden = false;
+    controls.hidden = legend.hidden = attachmentControls.hidden = preview.hidden = root.querySelector('.note-graph-plot').hidden = false;
     filter();
     new ResizeObserver(([entry]) => {
       ({width, height} = entry.contentRect);

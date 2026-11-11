@@ -9,6 +9,8 @@ import os
 import sys
 from site_content import PAUSED_SECTIONS, PUBLIC_SECTIONS, ROOT, documents, segments, math_spans
 
+IMAGE_EXTENSIONS = {'.avif', '.bmp', '.gif', '.ico', '.jpeg', '.jpg', '.png', '.svg', '.tif', '.tiff', '.webp'}
+
 class Page(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True)
@@ -21,8 +23,8 @@ class Page(HTMLParser):
         self.text=[]
         self.title=''
         self.in_title=False
-        self.note_links=set()
-        self.note_targets=set()
+        self.graph_links={}
+        self.graph_targets={}
     def handle_starttag(self,tag,attrs):
         attrs=dict(attrs)
         if tag=='main': self.in_main=True
@@ -31,8 +33,11 @@ class Page(HTMLParser):
         if 'id' in attrs: self.ids.add(attrs['id'])
         for key in ('href','src'):
             if attrs.get(key): self.urls.append(attrs[key])
-        if self.in_main and not self.skip and tag=='a' and attrs.get('href'):
-            self.note_links.add(attrs['href'])
+        if self.in_main and not self.skip:
+            if tag=='a' and attrs.get('href'):
+                self.graph_links.setdefault(attrs['href'], None)
+            if tag=='img' and attrs.get('src'):
+                self.graph_links[attrs['src']]=attrs.get('alt') or ''
         if tag=='script' and attrs.get('type','').startswith('math/tex'):
             self.current={'tex':'','display':'mode=display' in attrs['type']}
     def handle_data(self,data):
@@ -46,6 +51,24 @@ class Page(HTMLParser):
         if tag=='script' and self.current is not None:
             self.formulas.append(self.current)
             self.current=None
+
+def attachment_node(target, alt, destination):
+    if isinstance(target, Path):
+        path = quote(target.relative_to(destination).as_posix())
+        name = target.name
+    else:
+        path = target
+        url = urlsplit(path)
+        name = Path(unquote(url.path)).name or url.netloc
+
+    extension = Path(name).suffix.lower()
+    if alt is not None or extension in IMAGE_EXTENSIONS:
+        title = alt.strip() if alt else ''
+        if title.lower() in {'image', 'img', 'figure'}:
+            title = ''
+        return {'path': path, 'title': title or name, 'kind': 'image'}
+    if extension == '.m':
+        return {'path': path, 'title': name, 'kind': 'matlab'}
 
 destination=ROOT/(sys.argv[1] if len(sys.argv)>1 else '_site')
 baseurl=os.environ.get('SITE_BASEURL','').rstrip('/')
@@ -61,8 +84,11 @@ for p in destination.rglob('*.html'):
     pages[p.resolve()]=parsed
 for p,parsed in pages.items():
     for url in parsed.urls:
-        if url.startswith(('http:','https:','mailto:','data:','javascript:')): continue
         ref=urlsplit(url)
+        if ref.scheme or ref.netloc:
+            if ref.netloc and ref.scheme in ('', 'http', 'https') and url in parsed.graph_links:
+                parsed.graph_targets[url]=parsed.graph_links[url]
+            continue
         urlpath=unquote(ref.path)
         if baseurl and (urlpath==baseurl or urlpath.startswith(baseurl+'/')):
             urlpath=urlpath[len(baseurl):] or '/'
@@ -73,8 +99,8 @@ for p,parsed in pages.items():
             issues.append([str(p.relative_to(destination)),'incorrect path case',url])
         elif ref.fragment and target in pages and unquote(ref.fragment) not in pages[target].ids:
             issues.append([str(p.relative_to(destination)),'missing anchor',url])
-        elif target != p and target in pages and url in parsed.note_links:
-            parsed.note_targets.add(target)
+        elif target != p and target.is_relative_to(destination) and url in parsed.graph_links:
+            parsed.graph_targets[target]=parsed.graph_links[url]
     formulas.extend(dict(f,file=str(p.relative_to(destination)),line=0) for f in parsed.formulas)
 public=PUBLIC_SECTIONS | {'README.md'}
 expected_pages=0
@@ -90,6 +116,7 @@ for p in documents():
     notes[target] = {
         'path': quote(path),
         'title': pages[target].title.strip().removesuffix(' | Mechanics') or p.stem,
+        'kind': 'note',
         'section': path.split('/', 1)[0] if '/' in path else 'Home',
     }
     expected=[m[1] if m[1] is not None else m[2] for code,part,_ in segments(p.read_text(encoding='utf-8')) if not code for m in math_spans(part)]
@@ -102,15 +129,19 @@ for name in sorted(PAUSED_SECTIONS | {'Private','Webpage_package','tools','pytho
 (ROOT/'.site-check').mkdir(exist_ok=True)
 (ROOT/'.site-check/rendered-math.json').write_text(json.dumps({'formulas':formulas}),encoding='utf-8')
 if not issues:
-    # Use rendered links between public notes, including the homepage index.
-    note_ids = {path: index for index, path in enumerate(notes)}
-    edges = {
-        tuple(sorted((source_id, note_ids[target])))
-        for source, source_id in note_ids.items()
-        for target in pages[source].note_targets
-        if target in note_ids
-    }
-    graph = {'nodes': list(notes.values()), 'edges': sorted(edges)}
+    nodes = list(notes.values())
+    node_ids = {path: index for index, path in enumerate(notes)}
+    edges = set()
+    for source in notes:
+        for target, alt in pages[source].graph_targets.items():
+            if target not in node_ids:
+                attachment = attachment_node(target, alt, destination)
+                if attachment is None:
+                    continue
+                node_ids[target] = len(nodes)
+                nodes.append(attachment)
+            edges.add(tuple(sorted((node_ids[source], node_ids[target]))))
+    graph = {'nodes': nodes, 'edges': sorted(edges)}
     (destination/'assets/note-graph.json').write_text(json.dumps(graph, ensure_ascii=False), encoding='utf-8')
 print(json.dumps({'expected_pages':expected_pages,'rendered_pages':len(pages),'rendered_formulas':len(formulas),'issues':issues},indent=2))
 raise SystemExit(bool(issues))

@@ -7,8 +7,8 @@
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
   <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
   {% if page.url == '/' %}
-  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}">
-  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=2">
+  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=2"></script>
   {% endif %}
 
   <!-- MathJax -->
@@ -43,19 +43,23 @@
         {{ content }}
         {% if page.url == '/' %}
         <section class="note-graph" id="note-graph" aria-labelledby="note-graph-heading"
-          data-source="{{ '/assets/note-graph.json' | relative_url }}" data-site-root="{{ '/' | relative_url }}">
+          data-source="{{ '/assets/note-graph.json' | relative_url }}?v=2" data-site-root="{{ '/' | relative_url }}">
           <h2 id="note-graph-heading">Note graph</h2>
-          <p>Each dot opens a note. Lines show links between notes.</p>
+          <p>Click a node to open a note, MATLAB file, or image. Lines show which notes link to it.</p>
           <div class="note-graph-controls" hidden>
-            <input type="search" aria-label="Search notes" placeholder="Search notes">
+            <input type="search" aria-label="Search notes and files" placeholder="Search notes and files">
             <div class="note-graph-zoom" role="group" aria-label="Graph zoom">
               <button type="button" data-zoom="out" aria-label="Zoom out">−</button>
               <button type="button" data-zoom="in" aria-label="Zoom in">+</button>
               <button type="button" data-zoom="fit">Fit</button>
             </div>
           </div>
+          <div class="note-graph-attachments" role="group" aria-label="Show attachments" hidden>
+            <label><input type="checkbox" value="matlab" checked><span class="note-graph-marker matlab"></span>MATLAB files</label>
+            <label><input type="checkbox" value="image" checked><span class="note-graph-marker image"></span>Images</label>
+          </div>
           <div class="note-graph-plot" hidden>
-            <svg role="group" aria-label="Linked notes. Drag to pan and use the zoom buttons to resize.">
+            <svg role="group" aria-label="Linked notes and files. Drag to pan and use the zoom buttons to resize.">
               <g class="note-graph-world"></g>
             </svg>
           </div>
@@ -71,6 +75,14 @@
           <button class="home-link back-link" id="back-link" type="button" disabled>← Back to previous page</button>
         </div>
         <nav id="page-toc" aria-label="On this page"></nav>
+        {% if page.url == '/' %}
+        <section class="note-graph-preview" aria-labelledby="note-graph-preview-heading" hidden>
+          <h2 id="note-graph-preview-heading"><a href="#note-graph">Note graph</a></h2>
+          <div class="note-graph-plot">
+            <svg role="group" aria-label="Note graph preview"><g></g></svg>
+          </div>
+        </section>
+        {% endif %}
       </aside>
     </div>
   </div>
