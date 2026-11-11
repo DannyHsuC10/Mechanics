@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=16">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}?v=17">
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
   <link rel="icon" type="image/svg+xml" sizes="any" href="{{ '/assets/favicon.svg' | relative_url }}">
   <script defer src="{{ '/assets/js/site.js' | relative_url }}?v=3"></script>
-  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=6">
+  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=7">
   <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=7"></script>
 
   <!-- MathJax -->
@@ -28,8 +28,13 @@
 <body>
   <header class="page-header">
     <div class="inner">
-      <a class="site-home" href="{{ '/' | relative_url }}"><span class="page-title">{{ site.title | escape }}</span></a>
-      <p class="page-tagline">{{ site.description | escape }}</p>
+      <a class="site-home" href="{{ '/' | relative_url }}" aria-labelledby="site-title">
+        <img class="site-icon" src="{{ '/assets/favicon.svg' | relative_url }}" alt="" width="40" height="40">
+        <span>
+          <span class="page-title" id="site-title">{{ site.title | escape }}</span>
+          <span class="page-tagline">{{ site.description | escape }}</span>
+        </span>
+      </a>
       {% if page.url == '/' %}
       <a class="note-graph-jump" href="#note-graph">Explore the note graph ↓</a>
       {% endif %}

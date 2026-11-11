@@ -5,7 +5,7 @@
 
 .note-graph-jump {
   display: inline-block;
-  grid-area: 1 / 2 / 3 / 3;
+  grid-column: 2;
   padding: 7px 9px;
   border: 1px solid #506179;
   border-radius: 6px;

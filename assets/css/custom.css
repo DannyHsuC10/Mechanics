@@ -62,12 +62,25 @@ body {
   margin-inline: 24px 32px;
 }
 
-.page-header .site-home,
-.page-tagline {
+.site-home {
   grid-column: 1;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-icon {
+  flex: none;
+  border: 1px solid #506179;
+  border-radius: 8px;
 }
 
 .page-title {
+  display: block;
   margin: 0;
   color: inherit;
   font-size: clamp(1.55rem, 3vw, 1.75rem);
@@ -76,6 +89,7 @@ body {
 }
 
 .page-tagline {
+  display: block;
   margin: 0.25rem 0 0;
   color: #d4e3ee;
   font-size: 0.875rem;
@@ -456,8 +470,6 @@ body {
   }
 }
 
-.site-home { justify-self: start; color: inherit; text-decoration: none; }
-.page-title { display: block; }
 .markdown-body img { max-width: 100%; height: auto; }
 .center-img { display: block; margin: 1em auto; }
 .markdown-body table { display: block; max-width: 100%; overflow-x: auto; }
