@@ -85,8 +85,10 @@ body {
 }
 
 .sidebar,
-.note-tree {
+.note-tree-panel {
   --sidebar-top: calc(var(--page-header-height) + var(--content-padding-top) + 1px);
+  display: flex;
+  flex-direction: column;
   position: sticky;
   top: var(--sidebar-top);
   width: 100%;
@@ -103,15 +105,19 @@ body {
   grid-area: sidebar;
   justify-self: end;
   max-width: 280px;
-  display: flex;
-  flex-direction: column;
 }
 
-.note-tree {
+.note-tree-panel {
   grid-area: tree;
   justify-self: start;
   max-width: 300px;
   min-width: 0;
+}
+
+.note-tree {
+  flex: 1;
+  min-height: 3rem;
+  overflow-y: auto;
 }
 
 .note-tree summary {
@@ -432,7 +438,7 @@ body {
   }
 
   .sidebar,
-  .note-tree {
+  .note-tree-panel {
     position: static;
     justify-self: stretch;
     width: auto;
