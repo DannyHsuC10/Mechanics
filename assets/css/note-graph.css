@@ -7,7 +7,11 @@
 }
 
 .note-graph {
-  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.markdown-body .note-graph h2 {
+  margin-top: 0;
 }
 
 .note-graph [hidden],
@@ -62,16 +66,15 @@
   width: 0.6rem;
   height: 0.6rem;
   border: 1px solid #657b94;
+  border-radius: 50%;
 }
 
 .note-graph-marker.matlab {
   background: #f1aa5e;
-  transform: rotate(45deg);
 }
 
 .note-graph-marker.image {
   background: #9cbed4;
-  border-radius: 2px;
 }
 
 .note-graph-zoom {
@@ -156,7 +159,7 @@
   cursor: pointer;
 }
 
-.note-graph-node :is(circle, rect) {
+.note-graph-node circle {
   stroke: #111e30;
   stroke-width: 1;
   vector-effect: non-scaling-stroke;
@@ -167,7 +170,7 @@
 }
 
 .note-graph-plot line.is-active,
-.note-graph-node.is-active :is(circle, rect) {
+.note-graph-node.is-active circle {
   stroke: #f5f7fb;
   stroke-opacity: 1;
   stroke-width: 2;

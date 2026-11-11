@@ -7,8 +7,8 @@
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
   <script defer src="{{ '/assets/js/site.js' | relative_url }}"></script>
   {% if page.url == '/' %}
-  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=2">
-  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=2"></script>
+  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=3">
+  <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=3"></script>
   {% endif %}
 
   <!-- MathJax -->
@@ -40,7 +40,6 @@
   <div class="content-wrapper">
     <div class="inner page-layout">
       <main id="content" class="markdown-body">
-        {{ content }}
         {% if page.url == '/' %}
         <section class="note-graph" id="note-graph" aria-labelledby="note-graph-heading"
           data-source="{{ '/assets/note-graph.json' | relative_url }}?v=2" data-site-root="{{ '/' | relative_url }}">
@@ -68,6 +67,7 @@
           <noscript><p>Enable JavaScript to explore the note graph.</p></noscript>
         </section>
         {% endif %}
+        {{ content }}
       </main>
       <aside class="sidebar" aria-label="Page navigation">
         <div class="sidebar-links">

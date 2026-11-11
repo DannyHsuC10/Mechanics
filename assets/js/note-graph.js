@@ -64,6 +64,7 @@
   }
 
   function placeAttachments(notes, attachments) {
+    const minLinkDistance = 42;
     const placed = [...notes];
     attachments.forEach((node, index) => {
       const sources = [...node.neighbors];
@@ -72,11 +73,14 @@
       let step = 0;
       do {
         const angle = (index + step) * 2.4;
-        const radius = 24 + 8 * Math.sqrt(step);
+        const radius = minLinkDistance + 3 + 8 * Math.sqrt(step);
         node.x = x + radius * Math.cos(angle);
         node.y = y + radius * Math.sin(angle);
         step++;
-      } while (placed.some((other) => (node.x - other.x) ** 2 + (node.y - other.y) ** 2 < 17 ** 2));
+      } while (placed.some((other) => {
+        const spacing = node.neighbors.has(other) ? minLinkDistance : 17;
+        return (node.x - other.x) ** 2 + (node.y - other.y) ** 2 < spacing ** 2;
+      }));
       placed.push(node);
     });
   }
@@ -132,7 +136,9 @@
       return line;
     }));
     nodes.forEach((node) => {
-      const radius = 6.7 + Math.min(6.5, Math.sqrt(node.neighbors.size) * 1.5);
+      const isNote = node.kind === 'note';
+      const radius = isNote ? 6.7 + Math.min(6.5, Math.sqrt(node.neighbors.size) * 1.5) : 5.7;
+      const color = isNote ? topic(node.section)[1] : attachmentColors[node.kind];
       node.links = [world, previewWorld].map((layer) => {
         const link = svgElement('a', {
           href: node.url,
@@ -143,11 +149,8 @@
         if (layer === previewWorld) link.setAttribute('tabindex', '-1');
         const tooltip = svgElement('title', {});
         tooltip.textContent = node.title;
-        const shape = node.kind === 'note'
-          ? svgElement('circle', {cx: node.x, cy: node.y, r: radius, fill: topic(node.section)[1]})
-          : svgElement('rect', {x: node.x - 5, y: node.y - 5, width: 10, height: 10, rx: 1.5, fill: attachmentColors[node.kind]});
-        if (node.kind === 'matlab') shape.setAttribute('transform', `rotate(45 ${node.x} ${node.y})`);
-        link.append(tooltip, shape);
+        const dot = svgElement('circle', {cx: node.x, cy: node.y, r: radius, fill: color});
+        link.append(tooltip, dot);
         layer.append(link);
         link.addEventListener('pointerenter', () => { hovered = node; emphasize(); });
         link.addEventListener('pointerleave', () => { hovered = null; emphasize(); });
