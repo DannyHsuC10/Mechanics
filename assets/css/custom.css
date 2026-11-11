@@ -39,7 +39,7 @@ body {
 .content-wrapper .inner {
   width: auto;
   max-width: none;
-  margin-inline: 48px 32px;
+  margin-inline: 96px 32px;
 }
 
 .page-header {
@@ -90,7 +90,7 @@ body {
 .page-layout {
   display: grid;
   /* Keep the article's leading edge near the center on wide screens. */
-  grid-template-columns: max(min(calc(25vw + 50px), 410px), calc(50% - 372px)) minmax(0, 770px);
+  grid-template-columns: max(min(37%, 510px), calc(50% - 348px)) minmax(0, 870px);
   grid-template-areas: "tree article";
   justify-content: start;
   align-items: start;
@@ -109,7 +109,7 @@ body {
 
 .markdown-body {
   grid-area: article;
-  width: 770px;
+  width: 870px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -123,7 +123,7 @@ body {
   position: sticky;
   top: var(--sidebar-top);
   width: 100%;
-  max-width: 410px;
+  max-width: 510px;
   height: calc(100vh - var(--sidebar-top) - 1rem);
   overflow: auto;
 }
