@@ -40,10 +40,13 @@ jobs:
         with:
           source: ./_prepared_site
           destination: ./_site
-      - name: Verify generated pages and formulas
+      - name: Verify generated pages and write the note graph
         env:
           SITE_BASEURL: ${{ steps.pages.outputs.base_path }}
-        run: python3 tools/check_build.py
+        run: |
+          # The Jekyll Docker action creates this directory as root.
+          sudo chown "$(id -u):$(id -g)" _site/assets
+          python3 tools/check_build.py
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
