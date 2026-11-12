@@ -7,7 +7,7 @@
   <title>{{ page.title | default: site.title | escape }} | Mechanics</title>
   <link rel="icon" type="image/svg+xml" sizes="any" href="{{ '/assets/favicon.svg' | relative_url }}">
   <script defer src="{{ '/assets/js/site.js' | relative_url }}?v=3"></script>
-  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=7">
+  <link rel="stylesheet" href="{{ '/assets/css/note-graph.css' | relative_url }}?v=8">
   <script defer src="{{ '/assets/js/note-graph.js' | relative_url }}?v=7"></script>
 
   <!-- MathJax -->
@@ -62,6 +62,7 @@
       </aside>
       <main id="content" class="markdown-body">
         {% if page.url == '/' %}
+        {% capture note_graph %}
         <section class="note-graph" id="note-graph" aria-labelledby="note-graph-heading">
           <h2 id="note-graph-heading">Note graph</h2>
           <p>Click a node to open a note, MATLAB file, or image. Lines show which notes link to it.</p>
@@ -86,8 +87,11 @@
           <p class="note-graph-status" role="status">Loading note graph…</p>
           <noscript><p>Enable JavaScript to explore the note graph.</p></noscript>
         </section>
-        {% endif %}
+        {% endcapture %}
+        {{ content | replace_first: '<!-- note-graph -->', note_graph }}
+        {% else %}
         {{ content }}
+        {% endif %}
       </main>
     </div>
   </div>

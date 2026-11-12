@@ -6,6 +6,8 @@ layout: base
 
 Choose a subject below for notes, worked relationships, diagrams, and supporting code.
 
+<!-- note-graph -->
+
 ## Mechanics
 
 [Mechanics (Physics)](Mechanics_Physics/Mechanics_Physics.md)

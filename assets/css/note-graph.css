@@ -24,10 +24,6 @@
   margin-bottom: 2.5rem;
 }
 
-.markdown-body .note-graph h2 {
-  margin-top: 0;
-}
-
 .note-graph [hidden],
 .note-graph-plot .is-hidden {
   display: none;
