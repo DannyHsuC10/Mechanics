@@ -55,3 +55,8 @@ This collection introduces the mechanics used to analyze machines and load-beari
 >* [Volumetric strain](matlab_base/bulk_modulus.m)
 >* [mohr circle](matlab_base/mohr_circle.m)
 >* [second moment Example](matlab_base/second_moment.m)
+
+## Note
+1. [Statics](note/Statics.md)
+2. [Kinematics](note/Kinematics.md)
+3. [Dynamics](note/Dynamics.md)
