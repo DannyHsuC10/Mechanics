@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Statics
 ## Force
 * 4 unit : time, space, mass, force

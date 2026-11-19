@@ -1,3 +1,7 @@
+---
+layout: base
+---
+
 # Dynamics
 
 ## Newton's laws of motion
