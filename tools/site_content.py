@@ -15,6 +15,7 @@ SKIP = {'.git', '.obsidian', '.site-check', '.pnpm-store', '_site', '_prepared_s
 PAUSED_SECTIONS = {'RCVD'}
 PUBLIC_SECTIONS = {
     'Mechanical_Principle', 'Mechanics_Advanced', 'Mechanics_Mechanical',
+    'Mechanics_Mechanical_Pro',
     'Mechanics_Physics', 'Special', 'RCVD',
 } - PAUSED_SECTIONS
 

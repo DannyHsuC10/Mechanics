@@ -14,6 +14,7 @@
     Home: ['Home', 'var(--night)'],
     Mechanics_Physics: ['Physics', 'var(--accent)'],
     Mechanics_Mechanical: ['Engineering', '#3b638a'],
+    Mechanics_Mechanical_Pro: ['Engineering Pro', '#4b789f'],
     Mechanics_Advanced: ['Advanced', '#70558e'],
     Mechanical_Principle: ['Machine elements', '#93662b'],
     Special: ['Special', '#99506c'],

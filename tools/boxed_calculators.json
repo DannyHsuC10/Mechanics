@@ -73,7 +73,7 @@
   },
   {
     "id": "boxed-011",
-    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
     "tex": "K = \\frac12m(v^2+(r\\omega)^2)",
     "expression": "0.5*m*(v^2+(r*omega)^2)",
     "result": "K",
@@ -81,7 +81,7 @@
   },
   {
     "id": "boxed-012",
-    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
     "tex": "v_{1f} = \\frac{v_{1i}(m_1-m_2)+2m_2v_{2i}}{m_1+m_2}",
     "expression": "(v_1i*(m_1-m_2)+2*m_2*v_2i)/(m_1+m_2)",
     "result": "v_1f",
@@ -89,7 +89,7 @@
   },
   {
     "id": "boxed-013",
-    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
     "tex": "v_{2f} = \\frac{v_{2i}(m_2-m_1)+2m_1v_{1i}}{m_1+m_2}",
     "expression": "(v_2i*(m_2-m_1)+2*m_1*v_1i)/(m_1+m_2)",
     "result": "v_2f",
@@ -99,7 +99,7 @@
   },
   {
     "id": "boxed-014",
-    "file": "Mechanics_Mechanical/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/Energy_and_momentum_methods/Energy_and_momentum_methods.md",
     "tex": "e = \\sqrt{\\frac{E_{sys\\ f}}{E_{sys\\ i}}}",
     "expression": "(E_f/E_i)^0.5",
     "result": "e",
@@ -107,7 +107,7 @@
   },
   {
     "id": "boxed-016",
-    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
     "tex": "\\vec v_r = \\omega\\frac{dr}{d\\theta} = \\frac{d}{d\\theta}(\\frac{-l}r)",
     "expression": "omega*dr_dtheta",
     "result": "v_r",
@@ -116,7 +116,7 @@
   },
   {
     "id": "boxed-018",
-    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
     "tex": "v_{esc} = (2gR)^{1/2}",
     "expression": "(2*g*R)^0.5",
     "result": "v_esc",
@@ -124,7 +124,7 @@
   },
   {
     "id": "boxed-019",
-    "file": "Mechanics_Mechanical/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/kinetics_of_particles/kinetics_of_particles.md",
     "tex": "\\Delta t = \\frac{\\pi(r_{min}+r_{max})(r_{min}r_{max})^{1/2}}{l}",
     "expression": "pi*(r_min+r_max)*(r_min*r_max)^0.5/l",
     "result": "Delta t",
@@ -133,7 +133,7 @@
   },
   {
     "id": "boxed-020",
-    "file": "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
     "tex": "\\theta = \\theta_i+\\omega_i t+\\frac12\\alpha t^2",
     "expression": "theta_i+omega_i*t+0.5*alpha*t^2",
     "result": "theta",
@@ -141,7 +141,7 @@
   },
   {
     "id": "boxed-021",
-    "file": "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
     "tex": "L = rp",
     "expression": "r*p",
     "result": "L",
@@ -149,7 +149,7 @@
   },
   {
     "id": "boxed-022",
-    "file": "Mechanics_Mechanical/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
+    "file": "Mechanics_Mechanical_Pro/dynamics_more/Rotation_of_rigid_bodies/Rotation_of_rigid_bodies.md",
     "tex": "K_\\omega = \\frac12I\\omega^2",
     "expression": "0.5*I*omega^2",
     "result": "K_omega",
@@ -356,7 +356,7 @@
   },
   {
     "id": "boxed-047",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md",
     "tex": "\\kappa = \\frac{\\nu''}{(1+(\\nu')^2)^{3/2}}",
     "expression": "nu_second/(1+nu_first^2)^1.5",
     "result": "kappa",
@@ -366,7 +366,7 @@
   },
   {
     "id": "boxed-048",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Analysis_of_Stresses_and_Strains/Analysis_of_Stresses_and_Strains.md",
     "tex": "\\delta = \\frac{5qL^4}{384EI}",
     "expression": "5*q*L^4/(384*E*I)",
     "result": "delta",
@@ -374,7 +374,7 @@
   },
   {
     "id": "boxed-049",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
     "tex": "k = \\frac{EA}{L}",
     "expression": "E*A/L",
     "result": "k",
@@ -382,7 +382,7 @@
   },
   {
     "id": "boxed-050",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
     "tex": "f = \\frac{L}{EA}",
     "expression": "L/(E*A)",
     "result": "f",
@@ -390,7 +390,7 @@
   },
   {
     "id": "boxed-051",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Axial_Loaded_Members/Axial_Loaded_Members.md",
     "tex": "U = \\frac{P^2L}{2EA} = \\frac{EA\\delta^2}{2L}",
     "expression": "P^2*L/(2*E*A)",
     "result": "U",
@@ -399,7 +399,7 @@
   },
   {
     "id": "boxed-052",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Shear_Forces_and_Bending_Moment/Shear_Forces_and_Bending_Moment.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Shear_Forces_and_Bending_Moment/Shear_Forces_and_Bending_Moment.md",
     "tex": "\\tau = \\frac{VQ}{Ib}",
     "expression": "V*Q/(I*b)",
     "result": "tau",
@@ -407,7 +407,7 @@
   },
   {
     "id": "boxed-053",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md",
     "tex": "\\sigma_T = \\sigma(1+\\varepsilon)",
     "expression": "sigma*(1+epsilon)",
     "result": "sigma_T",
@@ -415,7 +415,7 @@
   },
   {
     "id": "boxed-054",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Tension_Compression_Shear/Tension_Compression_Shear.md",
     "tex": "G=  \\frac{E}{2(1+\\nu)}",
     "expression": "E/(2*(1+nu))",
     "result": "G",
@@ -425,7 +425,7 @@
   },
   {
     "id": "boxed-055",
-    "file": "Mechanics_Mechanical/Materials_Mechanics_more/Torsion/Torsion.md",
+    "file": "Mechanics_Mechanical_Pro/Materials_Mechanics_more/Torsion/Torsion.md",
     "tex": "T = Pd",
     "expression": "P*d",
     "result": "T",
@@ -449,7 +449,7 @@
   },
   {
     "id": "boxed-058",
-    "file": "Mechanics_Mechanical/Statics_more/Analysis_of_structures/Analysis_of_structures.md",
+    "file": "Mechanics_Mechanical_Pro/Statics_more/Analysis_of_structures/Analysis_of_structures.md",
     "tex": "P = \\frac32N-2",
     "expression": "1.5*N-2",
     "result": "P",
@@ -457,7 +457,7 @@
   },
   {
     "id": "boxed-059",
-    "file": "Mechanics_Mechanical/Statics_more/Analysis_of_structures/Analysis_of_structures.md",
+    "file": "Mechanics_Mechanical_Pro/Statics_more/Analysis_of_structures/Analysis_of_structures.md",
     "tex": "m = 3n-6",
     "expression": "3*n-6",
     "result": "m",
@@ -465,7 +465,7 @@
   },
   {
     "id": "boxed-060",
-    "file": "Mechanics_Mechanical/Statics_more/friction/friction.md",
+    "file": "Mechanics_Mechanical_Pro/Statics_more/friction/friction.md",
     "tex": "M = Nd",
     "expression": "N*d",
     "result": "M",
@@ -473,7 +473,7 @@
   },
   {
     "id": "boxed-061",
-    "file": "Mechanics_Mechanical/Statics_more/friction/friction.md",
+    "file": "Mechanics_Mechanical_Pro/Statics_more/friction/friction.md",
     "tex": "M_{max} = 2/3\\mu_sFR",
     "expression": "2/3*mu_s*F*R",
     "result": "M_max",
@@ -481,7 +481,7 @@
   },
   {
     "id": "boxed-062",
-    "file": "Mechanics_Mechanical/Statics_more/friction/friction.md",
+    "file": "Mechanics_Mechanical_Pro/Statics_more/friction/friction.md",
     "tex": "T_2/T_1 = e^{\\mu_s\\phi}",
     "expression": "e^(mu_s*phi)",
     "result": "T_2/T_1",
@@ -490,7 +490,7 @@
   },
   {
     "id": "boxed-063",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
     "tex": "Q = mL",
     "expression": "m*L",
     "result": "Q",
@@ -498,7 +498,7 @@
   },
   {
     "id": "boxed-064",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
     "tex": "Q = mC\\Delta T",
     "expression": "m*C*delta_T",
     "result": "Q",
@@ -506,7 +506,7 @@
   },
   {
     "id": "boxed-065",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Definition_of_Thermodynamic_Terms.md",
     "tex": "H = E_{int}+PV",
     "expression": "E_int+P*V",
     "result": "H",
@@ -514,7 +514,7 @@
   },
   {
     "id": "boxed-066",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Efficiency.md",
     "tex": "\\eta_{\\text{carnot}} = 1-\\frac{T_L}{T_H}",
     "expression": "1-T_L/T_H",
     "result": "eta_carnot",
@@ -522,7 +522,7 @@
   },
   {
     "id": "boxed-067",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Efficiency.md",
     "tex": "\\eta_{\\text{otto}} = 1-\\frac{1}{r^{\\gamma-1}}",
     "expression": "1-1/r^(gamma-1)",
     "result": "eta_otto",
@@ -530,7 +530,7 @@
   },
   {
     "id": "boxed-068",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Efficiency.md",
     "tex": "\\eta_{\\text{diesel}} = 1-\\frac{1}{r^{\\gamma-1}}(\\frac{r^\\gamma_c-1}{\\gamma(r_c-1)})",
     "expression": "1-1/r^(gamma-1)*(r_c^gamma-1)/(gamma*(r_c-1))",
     "result": "eta_diesel",
@@ -539,7 +539,7 @@
   },
   {
     "id": "boxed-069",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Efficiency.md",
     "tex": "\\eta_{\\text{brayton}} = 1-\\frac{1}{r_P^{(\\gamma-1)/\\gamma}}",
     "expression": "1-1/r_P^((gamma-1)/gamma)",
     "result": "eta_brayton",
@@ -547,7 +547,7 @@
   },
   {
     "id": "boxed-070",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Efficiency.md",
     "tex": "\\eta_{\\text{regen}} = 1-r_Tr_P^{(\\gamma-1)/\\gamma}",
     "expression": "1-r_T*r_P^((gamma-1)/gamma)",
     "result": "eta_regen",
@@ -555,7 +555,7 @@
   },
   {
     "id": "boxed-071",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Efficiency.md",
     "tex": "\\eta_C = \\frac{W_{C,out}}{W_{C,in}}",
     "expression": "W_out/W_in",
     "result": "eta_C",
@@ -563,7 +563,7 @@
   },
   {
     "id": "boxed-072",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Efficiency.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Efficiency.md",
     "tex": "\\eta_T=  \\frac{W_{T,out}}{W_{T,in}}",
     "expression": "W_out/W_in",
     "result": "eta_T",
@@ -571,7 +571,7 @@
   },
   {
     "id": "boxed-073",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Ideal_gas_law.md",
     "tex": "PV = nRT",
     "expression": "n*R*T/P",
     "result": "V",
@@ -581,7 +581,7 @@
   },
   {
     "id": "boxed-074",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Ideal_gas_law.md",
     "tex": "(P+\\frac a{v^2})(v-b) = nRT",
     "expression": "n*R*T/(v-b)-a/v^2",
     "result": "P",
@@ -590,7 +590,7 @@
   },
   {
     "id": "boxed-075",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Ideal_gas_law.md",
     "tex": "P = \\frac{nRT}{V^2}(1-\\frac c{VT^3})(V+B)-m\\frac A{V^2}",
     "expression": "n*R*T/V^2*(1-c/(V*T^3))*(V+B)-m*A/V^2",
     "result": "P",
@@ -599,7 +599,7 @@
   },
   {
     "id": "boxed-076",
-    "file": "Mechanics_Mechanical/thermodynamique_more/Ideal_gas_law.md",
+    "file": "Mechanics_Mechanical_Pro/thermodynamique_more/Ideal_gas_law.md",
     "tex": "P = \\frac{RT}{V_m}+\\frac{B_0RT-A_0-C_0/T^2}{V_m^2}+\\frac{bRT-a}{V_m^3}+\\frac{a\\alpha}{V_m^6}+\\frac{c}{V_m^3T^2}\\left(1+\\frac{\\gamma}{V_m^2}\\right)e^{-\\gamma/V_m^2}",
     "expression": "R*T/V_m+(B_0*R*T-A_0-C_0/T^2)/V_m^2+(b*R*T-a)/V_m^3+a*alpha/V_m^6+c/(V_m^3*T^2)*(1+gamma/V_m^2)*e^(-gamma/V_m^2)",
     "result": "P",

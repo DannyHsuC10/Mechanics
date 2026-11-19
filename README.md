@@ -18,7 +18,7 @@ Physical laws, classical motion, waves, thermodynamics, and introductory modern 
 
 Foundations of statics, motion, energy, and the deformation of engineering materials.
 
-[Mechanics (Mechanical Pro)](Mechanics_Mechanical/Mechanics_Mechanical_Pro.md)
+[Mechanics (Mechanical Pro)](Mechanics_Mechanical_Pro/Mechanics_Mechanical_Pro.md)
 
 Further engineering methods for structures, particle dynamics, thermodynamics, and stress analysis.
 
